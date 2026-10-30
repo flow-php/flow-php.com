@@ -125,7 +125,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -143,7 +143,15 @@
                 <span class="phpdocumentor-tag__name">type</span>
             </dt>
                             <dd class="phpdocumentor-tag-list__definition">
-                                                                                                            <section class="phpdocumentor-description"><p>NativeLocalConfiguration = array{protocol: string}</p>
+                                                                                                            <section class="phpdocumentor-description"><p>NativeLocalConfiguration = array{protocol: string, permissions: null|PermissionsShape}</p>
+</section>
+
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">import-type</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>PermissionsShape from Permissions</p>
 </section>
 
                                     </dd>
@@ -184,6 +192,13 @@
     <span>
                                 &nbsp;: <a href="classes/Flow-Filesystem-DestinationStream.html"><abbr title="\Flow\Filesystem\DestinationStream">DestinationStream</abbr></a>    </span>
 </dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_create">create()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-Filesystem-DestinationStream.html"><abbr title="\Flow\Filesystem\DestinationStream">DestinationStream</abbr></a>    </span>
+</dt>
+<dd>Bytes become visible whole at close().</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_fromArray">fromArray()</a>
@@ -281,14 +296,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mount</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a>('file')</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mount</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a>('file')</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Filesystem-Local-Permissions.html"><abbr title="\Flow\Filesystem\Local\Permissions">Permissions</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$permissions</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -300,6 +315,13 @@
                 <span class="phpdocumentor-argument-list__argument__name">$mount</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a></span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Filesystem-Mount.html"><abbr title="\Flow\Filesystem\Mount">Mount</abbr></a>('file')</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$permissions</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Filesystem-Local-Permissions.html"><abbr title="\Flow\Filesystem\Local\Permissions">Permissions</abbr></a>|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -325,7 +347,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
@@ -333,6 +355,55 @@
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">appendTo</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Filesystem-Path.html"><abbr title="\Flow\Filesystem\Path">Path</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Filesystem-DestinationStream.html"><abbr title="\Flow\Filesystem\DestinationStream">DestinationStream</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$path</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Filesystem-Path.html"><abbr title="\Flow\Filesystem\Path">Path</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Filesystem-DestinationStream.html"><abbr title="\Flow\Filesystem\DestinationStream">DestinationStream</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_create">
+        create()
+        <a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_create" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">91</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Bytes become visible whole at close().</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Filesystem-Path.html"><abbr title="\Flow\Filesystem\Path">Path</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Filesystem-DestinationStream.html"><abbr title="\Flow\Filesystem\DestinationStream">DestinationStream</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -373,7 +444,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -423,7 +494,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">98</span>
+    <span class="phpdocumentor-element-found-in__line">108</span>
 
     </aside>
 
@@ -461,7 +532,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">103</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
@@ -516,7 +587,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">136</span>
 
     </aside>
 
@@ -554,7 +625,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">141</span>
 
     </aside>
 
@@ -609,7 +680,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
@@ -647,7 +718,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">157</span>
+    <span class="phpdocumentor-element-found-in__line">164</span>
 
     </aside>
 
@@ -695,14 +766,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">170</span>
+    <span class="phpdocumentor-element-found-in__line">177</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">rm</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Filesystem-Path.html"><abbr title="\Flow\Filesystem\Path">Path</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">rm</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Filesystem-Path.html"><abbr title="\Flow\Filesystem\Path">Path</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$recursive</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -714,6 +785,13 @@
                 <span class="phpdocumentor-argument-list__argument__name">$path</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Filesystem-Path.html"><abbr title="\Flow\Filesystem\Path">Path</abbr></a></span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$recursive</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">true</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -743,7 +821,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">205</span>
+    <span class="phpdocumentor-element-found-in__line">212</span>
 
     </aside>
 
@@ -791,7 +869,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">224</span>
+    <span class="phpdocumentor-element-found-in__line">231</span>
 
     </aside>
 
@@ -840,7 +918,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">229</span>
+    <span class="phpdocumentor-element-found-in__line">236</span>
 
     </aside>
 
@@ -899,6 +977,7 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_appendTo">appendTo()</a></li>
+                                            <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_create">create()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_fromArray">fromArray()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_getSystemTmpDir">getSystemTmpDir()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_list">list()</a></li>

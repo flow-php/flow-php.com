@@ -96,6 +96,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Exception-Exception.html"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Exception\\FileExistsException",
+            "name": "FileExistsException",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Exception-FileExistsException.html"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Exception\\InvalidArgumentException",
             "name": "InvalidArgumentException",
             "summary": "",
@@ -185,6 +190,11 @@ Search.appendIndex(
             "name": "appendTo",
             "summary": "",
             "url": "classes/Flow-Filesystem-Filesystem.html#method_appendTo"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Filesystem\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "Bytes\u0020become\u0020visible\u0020whole\u0020at\u0020close\u0028\u0029.",
+            "url": "classes/Flow-Filesystem-Filesystem.html#method_create"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Filesystem\u003A\u003Anormalize\u0028\u0029",
             "name": "normalize",
@@ -301,6 +311,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Local-Memory-Memory.html#method_close"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\Memory\u003A\u003Aexclusive\u0028\u0029",
+            "name": "exclusive",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Memory-Memory.html#method_exclusive"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\Memory\u003A\u003Afor\u0028\u0029",
             "name": "for",
             "summary": "",
@@ -325,6 +340,11 @@ Search.appendIndex(
             "name": "size",
             "summary": "",
             "url": "classes/Flow-Filesystem-Local-Memory-Memory.html#method_size"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\Memory\u003A\u003Aregister\u0028\u0029",
+            "name": "register",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Memory-Memory.html#method_register"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\Memory\\MemoryStream",
             "name": "MemoryStream",
@@ -411,6 +431,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_appendTo"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\MemoryFilesystem\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "Bytes\u0020become\u0020visible\u0020whole\u0020at\u0020close\u0028\u0029.",
+            "url": "classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_create"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\MemoryFilesystem\u003A\u003Anormalize\u0028\u0029",
             "name": "normalize",
             "summary": "",
@@ -481,6 +506,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_appendTo"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\NativeLocalFilesystem\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "Bytes\u0020become\u0020visible\u0020whole\u0020at\u0020close\u0028\u0029.",
+            "url": "classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_create"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\NativeLocalFilesystem\u003A\u003Anormalize\u0028\u0029",
             "name": "normalize",
             "summary": "",
@@ -530,6 +560,41 @@ Search.appendIndex(
             "name": "writeTo",
             "summary": "Open\u0020destination\u0020stream\u0020for\u0020writing,\u0020if\u0020file\u0020already\u0020exists\u0020it\u0020will\u0020be\u0020overwritten.",
             "url": "classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_writeTo"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Permissions",
+            "name": "Permissions",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Permissions.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Permissions\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Permissions.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Permissions\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Permissions.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Permissions\u003A\u003Aprivate\u0028\u0029",
+            "name": "private",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Permissions.html#method_private"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Permissions\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Permissions.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Permissions\u003A\u003A\u0024file",
+            "name": "file",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Permissions.html#property_file"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\Permissions\u003A\u003A\u0024directory",
+            "name": "directory",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-Permissions.html#property_directory"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\StdOut\\StdOutDestinationStream",
             "name": "StdOutDestinationStream",
@@ -590,6 +655,11 @@ Search.appendIndex(
             "name": "normalize",
             "summary": "",
             "url": "classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\StdOutFilesystem\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "Bytes\u0020become\u0020visible\u0020whole\u0020at\u0020close\u0028\u0029.",
+            "url": "classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_create"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\StdOutFilesystem\u003A\u003AgetSystemTmpDir\u0028\u0029",
             "name": "getSystemTmpDir",
@@ -1616,6 +1686,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Stream-Block-NativeLocalFileBlocksFactory.html#method_blockLocation"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\Block\\NativeLocalFileBlocksFactory\u003A\u003Apermissions\u0028\u0029",
+            "name": "permissions",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-Block-NativeLocalFileBlocksFactory.html#method_permissions"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Stream\\Block\\NativeLocalFileBlocksFactory\u003A\u003Acreate\u0028\u0029",
             "name": "create",
             "summary": "",
@@ -1925,6 +2000,11 @@ Search.appendIndex(
             "name": "openBlank",
             "summary": "",
             "url": "classes/Flow-Filesystem-Stream-NativeLocalDestinationStream.html#method_openBlank"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\NativeLocalDestinationStream\u003A\u003AopenExclusive\u0028\u0029",
+            "name": "openExclusive",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-NativeLocalDestinationStream.html#method_openExclusive"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Stream\\NativeLocalDestinationStream\u003A\u003Aappend\u0028\u0029",
             "name": "append",
@@ -2620,6 +2700,11 @@ Search.appendIndex(
             "name": "appendTo",
             "summary": "",
             "url": "classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_appendTo"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Telemetry\\TraceableFilesystem\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "Bytes\u0020become\u0020visible\u0020whole\u0020at\u0020close\u0028\u0029.",
+            "url": "classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_create"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Telemetry\\TraceableFilesystem\u003A\u003Anormalize\u0028\u0029",
             "name": "normalize",

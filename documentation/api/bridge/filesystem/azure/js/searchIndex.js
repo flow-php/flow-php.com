@@ -36,6 +36,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-Azure-AzureBlobDestinationStream.html#method_openBlank"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\AzureBlobDestinationStream\u003A\u003AopenExclusive\u0028\u0029",
+            "name": "openExclusive",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-Azure-AzureBlobDestinationStream.html#method_openExclusive"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\AzureBlobDestinationStream\u003A\u003Aappend\u0028\u0029",
             "name": "append",
             "summary": "",
@@ -85,6 +90,11 @@ Search.appendIndex(
             "name": "normalize",
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-Azure-AzureBlobFilesystem.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\AzureBlobFilesystem\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-Azure-AzureBlobFilesystem.html#method_create"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\AzureBlobFilesystem\u003A\u003AgetSystemTmpDir\u0028\u0029",
             "name": "getSystemTmpDir",

@@ -356,6 +356,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-SFTP-SFTPFilesystem.html#method_normalize"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\SFTPFilesystem\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-SFTPFilesystem.html#method_create"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\SFTPFilesystem\u003A\u003AgetSystemTmpDir\u0028\u0029",
             "name": "getSystemTmpDir",
             "summary": "",

@@ -931,6 +931,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobService-PutBlockBlob-PutBlockBlobOptions.html#method_withEncryption"
         },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\PutBlockBlob\\PutBlockBlobOptions\u003A\u003AwithIfNoneMatch\u0028\u0029",
+            "name": "withIfNoneMatch",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-PutBlockBlob-PutBlockBlobOptions.html#method_withIfNoneMatch"
+        },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\PutBlockBlob\\PutBlockBlobOptions\u003A\u003AwithRequestId\u0028\u0029",
             "name": "withRequestId",
             "summary": "",
@@ -1025,6 +1030,11 @@ Search.appendIndex(
             "name": "withEncryption",
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobService-PutBlockBlobBlockList-PutBlockBlobBlockListOptions.html#method_withEncryption"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\PutBlockBlobBlockList\\PutBlockBlobBlockListOptions\u003A\u003AwithIfNoneMatch\u0028\u0029",
+            "name": "withIfNoneMatch",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-PutBlockBlobBlockList-PutBlockBlobBlockListOptions.html#method_withIfNoneMatch"
         },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\PutBlockBlobBlockList\\PutBlockBlobBlockListOptions\u003A\u003AwithRequestId\u0028\u0029",
             "name": "withRequestId",
