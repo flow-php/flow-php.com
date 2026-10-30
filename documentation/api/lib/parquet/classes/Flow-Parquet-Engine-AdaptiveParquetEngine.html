@@ -125,7 +125,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Engine/AdaptiveParquetEngine.php"><a href="files/src-lib-parquet-src-flow-parquet-engine-adaptiveparquetengine.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Engine/AdaptiveParquetEngine.php">AdaptiveParquetEngine.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -133,6 +133,29 @@
 
 
 
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">type</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>EngineConfiguration = array{byte_order: string, options: ParquetOptions}</p>
+</section>
+
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">import-type</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>ParquetOptions from Options</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
     
     
@@ -162,6 +185,18 @@
     <a class="" href="classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method_fromArray">fromArray()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method_normalize">normalize()</a>
+    <span>
+                                &nbsp;: <abbr title="\Flow\Parquet\Engine\EngineConfiguration">EngineConfiguration</abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -211,7 +246,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Engine/AdaptiveParquetEngine.php"><a href="files/src-lib-parquet-src-flow-parquet-engine-adaptiveparquetengine.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Engine/AdaptiveParquetEngine.php">AdaptiveParquetEngine.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -259,6 +294,94 @@
         class="phpdocumentor-element
             -method
             -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fromArray">
+        fromArray()
+        <a href="classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method_fromArray" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Engine/AdaptiveParquetEngine.php"><a href="files/src-lib-parquet-src-flow-parquet-engine-adaptiveparquetengine.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Engine/AdaptiveParquetEngine.php">AdaptiveParquetEngine.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">41</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$configuration</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$configuration</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>untrusted: decoded from another process, validated here</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_normalize">
+        normalize()
+        <a href="classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method_normalize" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Engine/AdaptiveParquetEngine.php"><a href="files/src-lib-parquet-src-flow-parquet-engine-adaptiveparquetengine.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Engine/AdaptiveParquetEngine.php">AdaptiveParquetEngine.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">62</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Parquet\Engine\EngineConfiguration">EngineConfiguration</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Parquet\Engine\EngineConfiguration">EngineConfiguration</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_openForRead">
@@ -269,7 +392,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Engine/AdaptiveParquetEngine.php"><a href="files/src-lib-parquet-src-flow-parquet-engine-adaptiveparquetengine.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Engine/AdaptiveParquetEngine.php">AdaptiveParquetEngine.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -318,7 +441,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Engine/AdaptiveParquetEngine.php"><a href="files/src-lib-parquet-src-flow-parquet-engine-adaptiveparquetengine.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Engine/AdaptiveParquetEngine.php">AdaptiveParquetEngine.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -387,7 +510,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Engine/AdaptiveParquetEngine.php"><a href="files/src-lib-parquet-src-flow-parquet-engine-adaptiveparquetengine.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Engine/AdaptiveParquetEngine.php">AdaptiveParquetEngine.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
@@ -468,6 +591,8 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method_fromArray">fromArray()</a></li>
+                                            <li class=""><a href="classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method_normalize">normalize()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method_openForRead">openForRead()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method_openForWrite">openForWrite()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method_writeRows">writeRows()</a></li>

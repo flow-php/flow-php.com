@@ -1,40 +1,55 @@
 Search.appendIndex(
     [
                 {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Logger\\Logger\\DumpLogger",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Logger\\IO\\Loader\\DumpLogger",
             "name": "DumpLogger",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Logger-Logger-DumpLogger.html"
+            "url": "classes/Flow-ETL-Adapter-Logger-IO-Loader-DumpLogger.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Logger\\Logger\\DumpLogger\u003A\u003Alog\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Logger\\IO\\Loader\\DumpLogger\u003A\u003Alog\u0028\u0029",
             "name": "log",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Logger-Logger-DumpLogger.html#method_log"
+            "url": "classes/Flow-ETL-Adapter-Logger-IO-Loader-DumpLogger.html#method_log"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Logger\\PsrLoggerLoader",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Logger\\IO\\Loader\\PsrLoggerLoader",
             "name": "PsrLoggerLoader",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Logger-PsrLoggerLoader.html"
+            "url": "classes/Flow-ETL-Adapter-Logger-IO-Loader-PsrLoggerLoader.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Logger\\PsrLoggerLoader\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Logger\\IO\\Loader\\PsrLoggerLoader\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Logger-PsrLoggerLoader.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Logger-IO-Loader-PsrLoggerLoader.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Logger\\PsrLoggerLoader\u003A\u003Aload\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Logger\\IO\\Loader\\PsrLoggerLoader\u003A\u003Aload\u0028\u0029",
             "name": "load",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Logger-PsrLoggerLoader.html#method_load"
+            "url": "classes/Flow-ETL-Adapter-Logger-IO-Loader-PsrLoggerLoader.html#method_load"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Logger\\IO\\Loader\\PsrLoggerLoader\u003A\u003AfromDescription\u0028\u0029",
+            "name": "fromDescription",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Logger-IO-Loader-PsrLoggerLoader.html#method_fromDescription"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Logger\\IO\\Loader\\PsrLoggerLoader\u003A\u003Adescribe\u0028\u0029",
+            "name": "describe",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Logger-IO-Loader-PsrLoggerLoader.html#method_describe"
         },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
             "url": "namespaces/default.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Logger\\Logger",
-            "name": "Logger",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Logger\\IO\\Loader",
+            "name": "Loader",
             "summary": "",
-            "url": "namespaces/flow-etl-adapter-logger-logger.html"
+            "url": "namespaces/flow-etl-adapter-logger-io-loader.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Logger\\IO",
+            "name": "IO",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-logger-io.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Logger",
             "name": "Logger",

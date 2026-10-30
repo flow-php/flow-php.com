@@ -71,10 +71,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-Azure-AzureBlobFilesystem.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\AzureBlobFilesystem\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-Azure-AzureBlobFilesystem.html#method_fromArray"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\AzureBlobFilesystem\u003A\u003AappendTo\u0028\u0029",
             "name": "appendTo",
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-Azure-AzureBlobFilesystem.html#method_appendTo"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\AzureBlobFilesystem\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-Azure-AzureBlobFilesystem.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\AzureBlobFilesystem\u003A\u003AgetSystemTmpDir\u0028\u0029",
             "name": "getSystemTmpDir",
@@ -171,6 +181,46 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-Azure-AzureBlobSourceStream.html#method_size"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\BlobServiceSource",
+            "name": "BlobServiceSource",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-Azure-BlobServiceSource.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\BlobServiceSource\u003A\u003AblobService\u0028\u0029",
+            "name": "blobService",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-Azure-BlobServiceSource.html#method_blobService"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\BlobServiceSource\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-Azure-BlobServiceSource.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\ConfiguredBlobService",
+            "name": "ConfiguredBlobService",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-Azure-ConfiguredBlobService.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\ConfiguredBlobService\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-Azure-ConfiguredBlobService.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\ConfiguredBlobService\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-Azure-ConfiguredBlobService.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\ConfiguredBlobService\u003A\u003AblobService\u0028\u0029",
+            "name": "blobService",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-Azure-ConfiguredBlobService.html#method_blobService"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\ConfiguredBlobService\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-Azure-ConfiguredBlobService.html#method_normalize"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\DSL\\azure_filesystem_options\u0028\u0029",
             "name": "azure_filesystem_options",
             "summary": "",
@@ -180,6 +230,26 @@ Search.appendIndex(
             "name": "azure_filesystem",
             "summary": "",
             "url": "namespaces/flow-filesystem-bridge-azure-dsl.html#function_azure_filesystem"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\LiveBlobService",
+            "name": "LiveBlobService",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-Azure-LiveBlobService.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\LiveBlobService\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-Azure-LiveBlobService.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\LiveBlobService\u003A\u003AblobService\u0028\u0029",
+            "name": "blobService",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-Azure-LiveBlobService.html#method_blobService"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\LiveBlobService\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-Azure-LiveBlobService.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\Options",
             "name": "Options",
@@ -210,6 +280,16 @@ Search.appendIndex(
             "name": "listBlobOptions",
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-Azure-Options.html#method_listBlobOptions"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\Options\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-Azure-Options.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\Options\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-Azure-Options.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\Options\u003A\u003AtmpDir\u0028\u0029",
             "name": "tmpDir",

@@ -176,10 +176,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Filesystem.html"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Filesystem\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Filesystem.html#method_fromArray"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Filesystem\u003A\u003AappendTo\u0028\u0029",
             "name": "appendTo",
             "summary": "",
             "url": "classes/Flow-Filesystem-Filesystem.html#method_appendTo"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Filesystem\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Filesystem.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Filesystem\u003A\u003AgetSystemTmpDir\u0028\u0029",
             "name": "getSystemTmpDir",
@@ -391,10 +401,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Local-MemoryFilesystem.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\MemoryFilesystem\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_fromArray"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\MemoryFilesystem\u003A\u003AappendTo\u0028\u0029",
             "name": "appendTo",
             "summary": "",
             "url": "classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_appendTo"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\MemoryFilesystem\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-MemoryFilesystem.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\MemoryFilesystem\u003A\u003AgetSystemTmpDir\u0028\u0029",
             "name": "getSystemTmpDir",
@@ -451,10 +471,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\NativeLocalFilesystem\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_fromArray"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\NativeLocalFilesystem\u003A\u003AappendTo\u0028\u0029",
             "name": "appendTo",
             "summary": "",
             "url": "classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_appendTo"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\NativeLocalFilesystem\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\NativeLocalFilesystem\u003A\u003AgetSystemTmpDir\u0028\u0029",
             "name": "getSystemTmpDir",
@@ -546,10 +576,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Local-StdOutFilesystem.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\StdOutFilesystem\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_fromArray"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\StdOutFilesystem\u003A\u003AappendTo\u0028\u0029",
             "name": "appendTo",
             "summary": "",
             "url": "classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_appendTo"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Local\\StdOutFilesystem\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Local-StdOutFilesystem.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Local\\StdOutFilesystem\u003A\u003AgetSystemTmpDir\u0028\u0029",
             "name": "getSystemTmpDir",
@@ -1291,6 +1331,11 @@ Search.appendIndex(
             "summary": "Turn\u0020relative\u0020path\u0020into\u0020absolute\u0020paths\u0020even\u0020when\u0020path\u0020does\u0020not\u0020exists\u0020or\u0020it\u0027s\u0020glob\u0020pattern.",
             "url": "classes/Flow-Filesystem-Path.html#method_realpath"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Path.html#method_fromArray"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Path\u003A\u003AaddPartitions\u0028\u0029",
             "name": "addPartitions",
             "summary": "",
@@ -1380,6 +1425,11 @@ Search.appendIndex(
             "name": "partitionPlaceholders",
             "summary": "",
             "url": "classes/Flow-Filesystem-Path.html#method_partitionPlaceholders"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "The\u0020uri,\u0020its\u0020options\u0020\u0028enum\u0020values\u0020as\u0020\u007Benum,\u0020case\u007D\u0029\u0020and\u0020the\u0020EXPLICIT\u0020partitions\u0020only\u0020\u002D\u0020the\u0020ones\u0020attached\u0020with\nwithPartitions\u0028\u0029,\u0020never\u0020the\u0020ones\u0020parsed\u0020from\u0020the\u0020uri.",
+            "url": "classes/Flow-Filesystem-Path.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Path\u003A\u003Apartitions\u0028\u0029",
             "name": "partitions",
@@ -1561,6 +1611,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Stream-Block-NativeLocalFileBlocksFactory.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\Block\\NativeLocalFileBlocksFactory\u003A\u003AblockLocation\u0028\u0029",
+            "name": "blockLocation",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-Block-NativeLocalFileBlocksFactory.html#method_blockLocation"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Stream\\Block\\NativeLocalFileBlocksFactory\u003A\u003Acreate\u0028\u0029",
             "name": "create",
             "summary": "",
@@ -1640,6 +1695,56 @@ Search.appendIndex(
             "name": "spaceLeft",
             "summary": "",
             "url": "classes/Flow-Filesystem-Stream-Block.html#method_spaceLeft"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\BlockCachedSourceStream",
+            "name": "BlockCachedSourceStream",
+            "summary": "Serves\u0020read\u0028\u0029\u0020from\u0020the\u0020last\u0020two\u0020fixed\u002Dsize\u0020blocks\u0020it\u0020fetched,\u0020so\u0020many\u0020small\u0020reads\u0020that\u0020walk\u0020a\u0020region\u0020forward\u0020\u002D\u0020a\nscan\u0020probing\u0020candidate\u0020positions\u0020\u002D\u0020cost\u0020one\u0020inner\u0020read\u0020per\u0020block\u0020instead\u0020of\u0020one\u0020per\u0020call.",
+            "url": "classes/Flow-Filesystem-Stream-BlockCachedSourceStream.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\BlockCachedSourceStream\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-BlockCachedSourceStream.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\BlockCachedSourceStream\u003A\u003Aclose\u0028\u0029",
+            "name": "close",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-BlockCachedSourceStream.html#method_close"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\BlockCachedSourceStream\u003A\u003Acontent\u0028\u0029",
+            "name": "content",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-BlockCachedSourceStream.html#method_content"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\BlockCachedSourceStream\u003A\u003AisOpen\u0028\u0029",
+            "name": "isOpen",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-BlockCachedSourceStream.html#method_isOpen"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\BlockCachedSourceStream\u003A\u003Aiterate\u0028\u0029",
+            "name": "iterate",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-BlockCachedSourceStream.html#method_iterate"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\BlockCachedSourceStream\u003A\u003Apath\u0028\u0029",
+            "name": "path",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-BlockCachedSourceStream.html#method_path"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\BlockCachedSourceStream\u003A\u003Aread\u0028\u0029",
+            "name": "read",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-BlockCachedSourceStream.html#method_read"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\BlockCachedSourceStream\u003A\u003AreadLines\u0028\u0029",
+            "name": "readLines",
+            "summary": "Yields\u0020the\u0020stream\u0027s\u0020lines\u0020with\u0020the\u0020separator\u0020stripped\u003A\u0020a\u00200\u002Dbyte\u0020stream\u0020yields\u0020nothing,\u0020a\u0020separator\u0020that\u0020ends\u0020the\nstream\u0020opens\u0020no\u0020further\u0020line,\u0020and\u0020every\u0020other\u0020empty\u0020line\u0020is\u0020yielded\u0020as\u0020\u0027\u0027.\u0020The\u0020separator\u0020is\u0020matched\u0020byte\u0020for\nbyte\u003B\u0020no\u0020\u0022\\r\u0022\u0020is\u0020stripped.\u0020\u0022x\\ny\\n\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022y\u0022\u005D,\u0020\u0022x\\n\\ny\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022\u0022,\u0022y\u0022\u005D,\u0020\u0022x\\n\\n\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022\u0022\u005D,\n\u0022x\\r\\ny\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\\r\u0022,\u0022y\u0022\u005D,\u0020\u0022\u0022\u0020\u002D\u003E\u0020\u005B\u005D.",
+            "url": "classes/Flow-Filesystem-Stream-BlockCachedSourceStream.html#method_readLines"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\BlockCachedSourceStream\u003A\u003Asize\u0028\u0029",
+            "name": "size",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-BlockCachedSourceStream.html#method_size"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Stream\\BlockFactory",
             "name": "BlockFactory",
@@ -1898,8 +2003,73 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Filesystem\\Stream\\NativeLocalSourceStream\u003A\u003Asize\u0028\u0029",
             "name": "size",
-            "summary": "",
+            "summary": "The\u0020size\u0020of\u0020the\u0020open\u0020file\u003A\u0020a\u0020stat\u0020of\u0020the\u0020handle,\u0020not\u0020of\u0020the\u0020path,\u0020which\u0020after\u0020a\u0020rename\u002Dover\u0020names\u0020another\u0020file.",
             "url": "classes/Flow-Filesystem-Stream-NativeLocalSourceStream.html#method_size"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\RangeSourceStream",
+            "name": "RangeSourceStream",
+            "summary": "Bytes\u0020\u005B\u0024start,\u0020\u0024end\u0029\u0020of\u0020another\u0020stream,\u0020seen\u0020as\u0020a\u0020whole\u0020stream\u003A\u0020offsets\u0020are\u0020relative\u0020to\u0020\u0024start,\u0020size\u0028\u0029\u0020is\u0020the\nwindow\u0027s\u0020length.\u0020Reads\u0020go\u0020through\u0020the\u0020inner\u0020stream\u0027s\u0020read\u0028\u0029,\u0020so\u0020a\u0020remote\u0020stream\u0020fetches\u0020only\u0020the\u0020window.",
+            "url": "classes/Flow-Filesystem-Stream-RangeSourceStream.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\RangeSourceStream\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-RangeSourceStream.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\RangeSourceStream\u003A\u003Aclose\u0028\u0029",
+            "name": "close",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-RangeSourceStream.html#method_close"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\RangeSourceStream\u003A\u003Acontent\u0028\u0029",
+            "name": "content",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-RangeSourceStream.html#method_content"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\RangeSourceStream\u003A\u003AisOpen\u0028\u0029",
+            "name": "isOpen",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-RangeSourceStream.html#method_isOpen"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\RangeSourceStream\u003A\u003Aiterate\u0028\u0029",
+            "name": "iterate",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-RangeSourceStream.html#method_iterate"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\RangeSourceStream\u003A\u003Apath\u0028\u0029",
+            "name": "path",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-RangeSourceStream.html#method_path"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\RangeSourceStream\u003A\u003Aread\u0028\u0029",
+            "name": "read",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-RangeSourceStream.html#method_read"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\RangeSourceStream\u003A\u003AreadLines\u0028\u0029",
+            "name": "readLines",
+            "summary": "Yields\u0020the\u0020stream\u0027s\u0020lines\u0020with\u0020the\u0020separator\u0020stripped\u003A\u0020a\u00200\u002Dbyte\u0020stream\u0020yields\u0020nothing,\u0020a\u0020separator\u0020that\u0020ends\u0020the\nstream\u0020opens\u0020no\u0020further\u0020line,\u0020and\u0020every\u0020other\u0020empty\u0020line\u0020is\u0020yielded\u0020as\u0020\u0027\u0027.\u0020The\u0020separator\u0020is\u0020matched\u0020byte\u0020for\nbyte\u003B\u0020no\u0020\u0022\\r\u0022\u0020is\u0020stripped.\u0020\u0022x\\ny\\n\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022y\u0022\u005D,\u0020\u0022x\\n\\ny\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022\u0022,\u0022y\u0022\u005D,\u0020\u0022x\\n\\n\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\u0022,\u0022\u0022\u005D,\n\u0022x\\r\\ny\u0022\u0020\u002D\u003E\u0020\u005B\u0022x\\r\u0022,\u0022y\u0022\u005D,\u0020\u0022\u0022\u0020\u002D\u003E\u0020\u005B\u005D.",
+            "url": "classes/Flow-Filesystem-Stream-RangeSourceStream.html#method_readLines"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\RangeSourceStream\u003A\u003Asize\u0028\u0029",
+            "name": "size",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Stream-RangeSourceStream.html#method_size"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\RangeSourceStream\u003A\u003Astart\u0028\u0029",
+            "name": "start",
+            "summary": "First\u0020byte\u0020of\u0020the\u0020window\u0020in\u0020the\u0020inner\u0020stream.",
+            "url": "classes/Flow-Filesystem-Stream-RangeSourceStream.html#method_start"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\RangeSourceStream\u003A\u003Aend\u0028\u0029",
+            "name": "end",
+            "summary": "First\u0020byte\u0020past\u0020the\u0020window\u0020in\u0020the\u0020inner\u0020stream\u003A\u0020start\u0028\u0029\u0020\u002B\u0020size\u0028\u0029.",
+            "url": "classes/Flow-Filesystem-Stream-RangeSourceStream.html#method_end"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Stream\\RangeSourceStream\u003A\u003Astream\u0028\u0029",
+            "name": "stream",
+            "summary": "The\u0020stream\u0020the\u0020window\u0020is\u0020cut\u0020from.",
+            "url": "classes/Flow-Filesystem-Stream-RangeSourceStream.html#method_stream"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Stream\\ResourceContext",
             "name": "ResourceContext",
@@ -2433,7 +2603,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Filesystem\\Telemetry\\TraceableFilesystem",
             "name": "TraceableFilesystem",
-            "summary": "",
+            "summary": "Rebuilt\u0020as\u0020its\u0020inner\u0020filesystem\u003A\u0020the\u0020configuration\u0020is\u0020the\u0020inner\u0027s,\u0020whatever\u0020its\u0020shape.",
             "url": "classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Telemetry\\TraceableFilesystem\u003A\u003A__construct\u0028\u0029",
@@ -2441,10 +2611,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Telemetry\\TraceableFilesystem\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_fromArray"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Telemetry\\TraceableFilesystem\u003A\u003AappendTo\u0028\u0029",
             "name": "appendTo",
             "summary": "",
             "url": "classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_appendTo"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Telemetry\\TraceableFilesystem\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Telemetry\\TraceableFilesystem\u003A\u003AgetSystemTmpDir\u0028\u0029",
             "name": "getSystemTmpDir",

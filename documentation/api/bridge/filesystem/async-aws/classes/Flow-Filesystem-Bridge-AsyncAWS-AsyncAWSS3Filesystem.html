@@ -126,7 +126,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php"><a href="files/src-bridge-filesystem-async-aws-src-flow-filesystem-bridge-asyncaws-asyncawss3filesystem.html"><abbr title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php">AsyncAWSS3Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -134,6 +134,29 @@
 
 
 
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3Filesystem.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">type</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>S3Configuration = array{protocol: string, bucket: string, client: array&lt;Configuration::OPTION_*, null|string&gt;, options: S3Options}</p>
+</section>
+
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">import-type</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>S3Options from Options</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
     
     
@@ -172,6 +195,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3Filesystem.html#method_fromArray">fromArray()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3Filesystem.html#method_getSystemTmpDir">getSystemTmpDir()</a>
     <span>
                                 &nbsp;: <abbr title="\Flow\Filesystem\Path">Path</abbr>    </span>
@@ -193,6 +222,12 @@
     <a class="" href="classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3Filesystem.html#method_mv">mv()</a>
     <span>
                                 &nbsp;: bool    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3Filesystem.html#method_normalize">normalize()</a>
+    <span>
+                                &nbsp;: null|<abbr title="\Flow\Filesystem\Bridge\AsyncAWS\S3Configuration">S3Configuration</abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -253,14 +288,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php"><a href="files/src-bridge-filesystem-async-aws-src-flow-filesystem-bridge-asyncaws-asyncawss3filesystem.html"><abbr title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php">AsyncAWSS3Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Mount">Mount</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mount</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bucket</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\AsyncAws\S3\S3Client">S3Client</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$s3Client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Filesystem-Bridge-AsyncAWS-Options.html"><abbr title="\Flow\Filesystem\Bridge\AsyncAWS\Options">Options</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Mount">Mount</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mount</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bucket</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Filesystem-Bridge-AsyncAWS-S3ClientSource.html"><abbr title="\Flow\Filesystem\Bridge\AsyncAWS\S3ClientSource">S3ClientSource</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Filesystem-Bridge-AsyncAWS-Options.html"><abbr title="\Flow\Filesystem\Bridge\AsyncAWS\Options">Options</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -283,8 +318,8 @@
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$s3Client</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\AsyncAws\S3\S3Client">S3Client</abbr></span>
+                <span class="phpdocumentor-argument-list__argument__name">$client</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Filesystem-Bridge-AsyncAWS-S3ClientSource.html"><abbr title="\Flow\Filesystem\Bridge\AsyncAWS\S3ClientSource">S3ClientSource</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -318,7 +353,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php"><a href="files/src-bridge-filesystem-async-aws-src-flow-filesystem-bridge-asyncaws-asyncawss3filesystem.html"><abbr title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php">AsyncAWSS3Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -356,6 +391,54 @@
         class="phpdocumentor-element
             -method
             -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fromArray">
+        fromArray()
+        <a href="classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3Filesystem.html#method_fromArray" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php"><a href="files/src-bridge-filesystem-async-aws-src-flow-filesystem-bridge-asyncaws-asyncawss3filesystem.html"><abbr title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php">AsyncAWSS3Filesystem.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">48</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$configuration</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$configuration</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_getSystemTmpDir">
@@ -366,7 +449,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php"><a href="files/src-bridge-filesystem-async-aws-src-flow-filesystem-bridge-asyncaws-asyncawss3filesystem.html"><abbr title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php">AsyncAWSS3Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
@@ -404,7 +487,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php"><a href="files/src-bridge-filesystem-async-aws-src-flow-filesystem-bridge-asyncaws-asyncawss3filesystem.html"><abbr title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php">AsyncAWSS3Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
@@ -459,7 +542,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php"><a href="files/src-bridge-filesystem-async-aws-src-flow-filesystem-bridge-asyncaws-asyncawss3filesystem.html"><abbr title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php">AsyncAWSS3Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">140</span>
+    <span class="phpdocumentor-element-found-in__line">185</span>
 
     </aside>
 
@@ -497,7 +580,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php"><a href="files/src-bridge-filesystem-async-aws-src-flow-filesystem-bridge-asyncaws-asyncawss3filesystem.html"><abbr title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php">AsyncAWSS3Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">145</span>
+    <span class="phpdocumentor-element-found-in__line">190</span>
 
     </aside>
 
@@ -544,6 +627,44 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_normalize">
+        normalize()
+        <a href="classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3Filesystem.html#method_normalize" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php"><a href="files/src-bridge-filesystem-async-aws-src-flow-filesystem-bridge-asyncaws-asyncawss3filesystem.html"><abbr title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php">AsyncAWSS3Filesystem.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">81</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|<abbr title="\Flow\Filesystem\Bridge\AsyncAWS\S3Configuration">S3Configuration</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">null|<abbr title="\Flow\Filesystem\Bridge\AsyncAWS\S3Configuration">S3Configuration</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_readFrom">
         readFrom()
         <a href="classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3Filesystem.html#method_readFrom" class="headerlink"><i class="fas fa-link"></i></a>
@@ -552,7 +673,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php"><a href="files/src-bridge-filesystem-async-aws-src-flow-filesystem-bridge-asyncaws-asyncawss3filesystem.html"><abbr title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php">AsyncAWSS3Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">164</span>
+    <span class="phpdocumentor-element-found-in__line">213</span>
 
     </aside>
 
@@ -600,7 +721,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php"><a href="files/src-bridge-filesystem-async-aws-src-flow-filesystem-bridge-asyncaws-asyncawss3filesystem.html"><abbr title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php">AsyncAWSS3Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">171</span>
+    <span class="phpdocumentor-element-found-in__line">220</span>
 
     </aside>
 
@@ -648,7 +769,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php"><a href="files/src-bridge-filesystem-async-aws-src-flow-filesystem-bridge-asyncaws-asyncawss3filesystem.html"><abbr title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php">AsyncAWSS3Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">229</span>
+    <span class="phpdocumentor-element-found-in__line">286</span>
 
     </aside>
 
@@ -696,7 +817,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php"><a href="files/src-bridge-filesystem-async-aws-src-flow-filesystem-bridge-asyncaws-asyncawss3filesystem.html"><abbr title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php">AsyncAWSS3Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">273</span>
+    <span class="phpdocumentor-element-found-in__line">332</span>
 
     </aside>
 
@@ -744,7 +865,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php"><a href="files/src-bridge-filesystem-async-aws-src-flow-filesystem-bridge-asyncaws-asyncawss3filesystem.html"><abbr title="src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/AsyncAWSS3Filesystem.php">AsyncAWSS3Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">278</span>
+    <span class="phpdocumentor-element-found-in__line">337</span>
 
     </aside>
 
@@ -802,10 +923,12 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3Filesystem.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3Filesystem.html#method_appendTo">appendTo()</a></li>
+                                            <li class=""><a href="classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3Filesystem.html#method_fromArray">fromArray()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3Filesystem.html#method_getSystemTmpDir">getSystemTmpDir()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3Filesystem.html#method_list">list()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3Filesystem.html#method_mount">mount()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3Filesystem.html#method_mv">mv()</a></li>
+                                            <li class=""><a href="classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3Filesystem.html#method_normalize">normalize()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3Filesystem.html#method_readFrom">readFrom()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3Filesystem.html#method_rm">rm()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3Filesystem.html#method_status">status()</a></li>

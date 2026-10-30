@@ -11,155 +11,230 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-adapter-text.html#function_to_text"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextEncoder",
-            "name": "TextEncoder",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextEncoder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextEncoder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextEncoder\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextEncoder.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextExtractor",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Extractor\\TextExtractor",
             "name": "TextExtractor",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextExtractor.html"
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Extractor-TextExtractor.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextExtractor\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Extractor\\TextExtractor\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextExtractor.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Extractor-TextExtractor.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextExtractor\u003A\u003AisRepeatable\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Extractor\\TextExtractor\u003A\u003AbatchSize\u0028\u0029",
+            "name": "batchSize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Extractor-TextExtractor.html#method_batchSize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Extractor\\TextExtractor\u003A\u003AisRepeatable\u0028\u0029",
             "name": "isRepeatable",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextExtractor.html#method_isRepeatable"
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Extractor-TextExtractor.html#method_isRepeatable"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextExtractor\u003A\u003Ascan\u0028\u0029",
-            "name": "scan",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Extractor\\TextExtractor\u003A\u003Aextract\u0028\u0029",
+            "name": "extract",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextExtractor.html#method_scan"
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Extractor-TextExtractor.html#method_extract"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextExtractor\u003A\u003Aschema\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Extractor\\TextExtractor\u003A\u003Areader\u0028\u0029",
+            "name": "reader",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Extractor-TextExtractor.html#method_reader"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Extractor\\TextExtractor\u003A\u003Aschema\u0028\u0029",
             "name": "schema",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextExtractor.html#method_schema"
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Extractor-TextExtractor.html#method_schema"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextExtractor\u003A\u003ApartitionSchema\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Extractor\\TextExtractor\u003A\u003ApartitionSchema\u0028\u0029",
             "name": "partitionSchema",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextExtractor.html#method_partitionSchema"
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Extractor-TextExtractor.html#method_partitionSchema"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextExtractor\u003A\u003Asource\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Extractor\\TextExtractor\u003A\u003ApartitionTypes\u0028\u0029",
+            "name": "partitionTypes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Extractor-TextExtractor.html#method_partitionTypes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Extractor\\TextExtractor\u003A\u003Aprunes\u0028\u0029",
+            "name": "prunes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Extractor-TextExtractor.html#method_prunes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Extractor\\TextExtractor\u003A\u003Asplits\u0028\u0029",
+            "name": "splits",
+            "summary": "One\u0020split\u0020per\u0020admitted\u0020file\u003A\u0020line\u002Ddelimited\u0020text\u0020is\u0020cut\u0020per\u0020file\u0020for\u0020now.",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Extractor-TextExtractor.html#method_splits"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Extractor\\TextExtractor\u003A\u003Arefresh\u0028\u0029",
+            "name": "refresh",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Extractor-TextExtractor.html#method_refresh"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Extractor\\TextExtractor\u003A\u003Asource\u0028\u0029",
             "name": "source",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextExtractor.html#method_source"
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Extractor-TextExtractor.html#method_source"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextExtractor\u003A\u003Astatistics\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Extractor\\TextExtractor\u003A\u003Astatistics\u0028\u0029",
             "name": "statistics",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextExtractor.html#method_statistics"
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Extractor-TextExtractor.html#method_statistics"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextExtractor\u003A\u003AwithSchema\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Extractor\\TextExtractor\u003A\u003AwithBatchSize\u0028\u0029",
+            "name": "withBatchSize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Extractor-TextExtractor.html#method_withBatchSize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Extractor\\TextExtractor\u003A\u003AwithMetadataColumns\u0028\u0029",
+            "name": "withMetadataColumns",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Extractor-TextExtractor.html#method_withMetadataColumns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Extractor\\TextExtractor\u003A\u003AwithSchema\u0028\u0029",
             "name": "withSchema",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextExtractor.html#method_withSchema"
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Extractor-TextExtractor.html#method_withSchema"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextFileBatches",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Extractor\\TextFileBatches",
             "name": "TextFileBatches",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextFileBatches.html"
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Extractor-TextFileBatches.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextFileBatches\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Extractor\\TextFileBatches\u003A\u003AfromDescription\u0028\u0029",
+            "name": "fromDescription",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextFileBatches.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Extractor-TextFileBatches.html#method_fromDescription"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextFileBatches\u003A\u003Abatches\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Extractor\\TextFileBatches\u003A\u003Adescribe\u0028\u0029",
+            "name": "describe",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Extractor-TextFileBatches.html#method_describe"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Extractor\\TextFileBatches\u003A\u003Abatches\u0028\u0029",
             "name": "batches",
             "summary": "The\u0020lines\u0020into\u0020the\u0020\u0022text\u0022\u0020column\u003B\u0020any\u0020other\u0020column\u0020\u0024body\u0020declares\u0020is\u0020padded\u0020as\u0020matchTo\u0028\u0029\u0020pads\u0020it.",
-            "url": "classes/Flow-ETL-Adapter-Text-TextFileBatches.html#method_batches"
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Extractor-TextFileBatches.html#method_batches"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextFileBatches\u003A\u003Abatch\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Extractor\\TextFileBatches\u003A\u003Abatch\u0028\u0029",
             "name": "batch",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextFileBatches.html#method_batch"
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Extractor-TextFileBatches.html#method_batch"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextLoader",
-            "name": "TextLoader",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextLoader.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextLoader\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextLoader.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextLoader\u003A\u003ApartitionBy\u0028\u0029",
-            "name": "partitionBy",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextLoader.html#method_partitionBy"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextLoader\u003A\u003Aclosure\u0028\u0029",
-            "name": "closure",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextLoader.html#method_closure"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextLoader\u003A\u003Adiscard\u0028\u0029",
-            "name": "discard",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextLoader.html#method_discard"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextLoader\u003A\u003Adestination\u0028\u0029",
-            "name": "destination",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextLoader.html#method_destination"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextLoader\u003A\u003Aload\u0028\u0029",
-            "name": "load",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextLoader.html#method_load"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextLoader\u003A\u003Aopen\u0028\u0029",
-            "name": "open",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextLoader.html#method_open"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextLoader\u003A\u003AsaveMode\u0028\u0029",
-            "name": "saveMode",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextLoader.html#method_saveMode"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextLoader\u003A\u003AwithNewLineSeparator\u0028\u0029",
-            "name": "withNewLineSeparator",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextLoader.html#method_withNewLineSeparator"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextOpenSink",
-            "name": "TextOpenSink",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextOpenSink.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextOpenSink\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextOpenSink.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextOpenSink\u003A\u003Aclose\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Extractor\\TextFileBatches\u003A\u003Aclose\u0028\u0029",
             "name": "close",
-            "summary": "The\u0020stream\u0020belongs\u0020to\u0020the\u0020FilesSink\u0020that\u0020opened\u0020it.",
-            "url": "classes/Flow-ETL-Adapter-Text-TextOpenSink.html#method_close"
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Extractor-TextFileBatches.html#method_close"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\TextOpenSink\u003A\u003Awrite\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Loader\\TextEncoder",
+            "name": "TextEncoder",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Loader-TextEncoder.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Loader\\TextEncoder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Loader-TextEncoder.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Loader\\TextEncoder\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Loader-TextEncoder.html#method_encode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Loader\\TextFileWriter",
+            "name": "TextFileWriter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Loader-TextFileWriter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Loader\\TextFileWriter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Loader-TextFileWriter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Loader\\TextFileWriter\u003A\u003Aclose\u0028\u0029",
+            "name": "close",
+            "summary": "The\u0020stream\u0020belongs\u0020to\u0020the\u0020FileCommit\u0020that\u0020opened\u0020it.",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Loader-TextFileWriter.html#method_close"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Loader\\TextFileWriter\u003A\u003Awrite\u0028\u0029",
             "name": "write",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Text-TextOpenSink.html#method_write"
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Loader-TextFileWriter.html#method_write"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Loader\\TextLoader",
+            "name": "TextLoader",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Loader-TextLoader.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Loader\\TextLoader\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Loader-TextLoader.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Loader\\TextLoader\u003A\u003AfromDescription\u0028\u0029",
+            "name": "fromDescription",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Loader-TextLoader.html#method_fromDescription"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Loader\\TextLoader\u003A\u003Adescribe\u0028\u0029",
+            "name": "describe",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Loader-TextLoader.html#method_describe"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Loader\\TextLoader\u003A\u003ApartitionBy\u0028\u0029",
+            "name": "partitionBy",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Loader-TextLoader.html#method_partitionBy"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Loader\\TextLoader\u003A\u003Aclosure\u0028\u0029",
+            "name": "closure",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Loader-TextLoader.html#method_closure"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Loader\\TextLoader\u003A\u003Adiscard\u0028\u0029",
+            "name": "discard",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Loader-TextLoader.html#method_discard"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Loader\\TextLoader\u003A\u003Acommit\u0028\u0029",
+            "name": "commit",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Loader-TextLoader.html#method_commit"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Loader\\TextLoader\u003A\u003Adestination\u0028\u0029",
+            "name": "destination",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Loader-TextLoader.html#method_destination"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Loader\\TextLoader\u003A\u003Apartitioning\u0028\u0029",
+            "name": "partitioning",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Loader-TextLoader.html#method_partitioning"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Loader\\TextLoader\u003A\u003AinTask\u0028\u0029",
+            "name": "inTask",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Loader-TextLoader.html#method_inTask"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Loader\\TextLoader\u003A\u003Aload\u0028\u0029",
+            "name": "load",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Loader-TextLoader.html#method_load"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Loader\\TextLoader\u003A\u003Awriter\u0028\u0029",
+            "name": "writer",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Loader-TextLoader.html#method_writer"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Loader\\TextLoader\u003A\u003AsaveMode\u0028\u0029",
+            "name": "saveMode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Loader-TextLoader.html#method_saveMode"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Loader\\TextLoader\u003A\u003AwithNewLineSeparator\u0028\u0029",
+            "name": "withNewLineSeparator",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Text-IO-Loader-TextLoader.html#method_withNewLineSeparator"
         },                {
             "fqsen": "\\",
             "name": "\\",
@@ -185,5 +260,20 @@ Search.appendIndex(
             "name": "Flow",
             "summary": "",
             "url": "namespaces/flow.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Extractor",
+            "name": "Extractor",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-text-io-extractor.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO",
+            "name": "IO",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-text-io.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Text\\IO\\Loader",
+            "name": "Loader",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-text-io-loader.html"
         }            ]
 );

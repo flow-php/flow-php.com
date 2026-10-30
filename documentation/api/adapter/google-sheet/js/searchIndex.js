@@ -1,31 +1,6 @@
 Search.appendIndex(
     [
                 {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\Columns",
-            "name": "Columns",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-Columns.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\Columns\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-Columns.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\Columns\u003A\u003A\u0024sheetName",
-            "name": "sheetName",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-Columns.html#property_sheetName"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\Columns\u003A\u003A\u0024startColumn",
-            "name": "startColumn",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-Columns.html#property_startColumn"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\Columns\u003A\u003A\u0024endColumn",
-            "name": "endColumn",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-Columns.html#property_endColumn"
-        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\from_google_sheet\u0028\u0029",
             "name": "from_google_sheet",
             "summary": "",
@@ -36,250 +11,315 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-adapter-googlesheet.html#function_from_google_sheet_columns"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetExtractor",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\Columns",
+            "name": "Columns",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-Columns.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\Columns\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-Columns.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\Columns\u003A\u003A\u0024sheetName",
+            "name": "sheetName",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-Columns.html#property_sheetName"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\Columns\u003A\u003A\u0024startColumn",
+            "name": "startColumn",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-Columns.html#property_startColumn"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\Columns\u003A\u003A\u0024endColumn",
+            "name": "endColumn",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-Columns.html#property_endColumn"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetExtractor",
             "name": "GoogleSheetExtractor",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetExtractor\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetExtractor\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetExtractor\u003A\u003AisRepeatable\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetExtractor\u003A\u003AbatchSize\u0028\u0029",
+            "name": "batchSize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html#method_batchSize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetExtractor\u003A\u003AisRepeatable\u0028\u0029",
             "name": "isRepeatable",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_isRepeatable"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html#method_isRepeatable"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetExtractor\u003A\u003Aextract\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetExtractor\u003A\u003Aextract\u0028\u0029",
             "name": "extract",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_extract"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html#method_extract"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetExtractor\u003A\u003AinferSchema\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetExtractor\u003A\u003AinferSchema\u0028\u0029",
             "name": "inferSchema",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_inferSchema"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html#method_inferSchema"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetExtractor\u003A\u003Aschema\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetExtractor\u003A\u003Aschema\u0028\u0029",
             "name": "schema",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_schema"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html#method_schema"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetExtractor\u003A\u003Astatistics\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetExtractor\u003A\u003Astatistics\u0028\u0029",
             "name": "statistics",
             "summary": "The\u0020grid\u0027s\u0020allocated\u0020rows\u0020bound\u0020the\u0020populated\u0020ones\u003B\u0020they\u0020come\u0020from\u0020the\u0020sample\u0020schema\u0020inference\u0020already\nfetched,\u0020and\u0020without\u0020one\u0020nothing\u0020is\u0020declared\u0020\u002D\u0020no\u0020request\u0020is\u0020made\u0020just\u0020for\u0020them.\u0020The\u0020Sheets\u0020API\u0020reports\u0020no\nbyte\u0020size.",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_statistics"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html#method_statistics"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetExtractor\u003A\u003AwithDropExtraColumns\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetExtractor\u003A\u003AwithBatchSize\u0028\u0029",
+            "name": "withBatchSize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html#method_withBatchSize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetExtractor\u003A\u003AwithDropExtraColumns\u0028\u0029",
             "name": "withDropExtraColumns",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_withDropExtraColumns"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html#method_withDropExtraColumns"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetExtractor\u003A\u003AwithEmptyToNull\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetExtractor\u003A\u003AwithEmptyToNull\u0028\u0029",
             "name": "withEmptyToNull",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_withEmptyToNull"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html#method_withEmptyToNull"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetExtractor\u003A\u003AwithHeader\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetExtractor\u003A\u003AwithHeader\u0028\u0029",
             "name": "withHeader",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_withHeader"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html#method_withHeader"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetExtractor\u003A\u003AwithOptions\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetExtractor\u003A\u003AwithMetadataColumns\u0028\u0029",
+            "name": "withMetadataColumns",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html#method_withMetadataColumns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetExtractor\u003A\u003AwithOptions\u0028\u0029",
             "name": "withOptions",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_withOptions"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html#method_withOptions"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetExtractor\u003A\u003AwithRowsPerPage\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetExtractor\u003A\u003AwithRowsPerPage\u0028\u0029",
             "name": "withRowsPerPage",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_withRowsPerPage"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html#method_withRowsPerPage"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetExtractor\u003A\u003AwithSchema\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetExtractor\u003A\u003AwithSchema\u0028\u0029",
             "name": "withSchema",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html#method_withSchema"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html#method_withSchema"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetReader",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReader",
             "name": "GoogleSheetReader",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetReader.html"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReader.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetReader\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReader\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetReader.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReader.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetReader\u003A\u003Abatches\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReader\u003A\u003Abatches\u0028\u0029",
             "name": "batches",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetReader.html#method_batches"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReader.html#method_batches"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetReader\u003A\u003ArowCount\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReader\u003A\u003ArowCount\u0028\u0029",
             "name": "rowCount",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetReader.html#method_rowCount"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReader.html#method_rowCount"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetReader\u003A\u003Asample\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReader\u003A\u003Asample\u0028\u0029",
             "name": "sample",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetReader.html#method_sample"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReader.html#method_sample"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetReadOptions",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReadOptions",
             "name": "GoogleSheetReadOptions",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetReadOptions.html"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetReadOptions\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReadOptions\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetReadOptions.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetReadOptions\u003A\u003Adecoder\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReadOptions\u003A\u003Adecoder\u0028\u0029",
             "name": "decoder",
             "summary": "A\u0020fresh\u0020decoder\u0020per\u0020pass\u0020\u002D\u0020the\u0020sample\u0020and\u0020the\u0020read\u0020each\u0020consume\u0020their\u0020own\u0020header\u0020row.",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetReadOptions.html#method_decoder"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#method_decoder"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetReadOptions\u003A\u003Atyper\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReadOptions\u003A\u003Atyper\u0028\u0029",
             "name": "typer",
             "summary": "FORMATTED_VALUE\u0020is\u0020the\u0020only\u0020render\u0020option\u0020under\u0020which\u0020every\u0020cell\u0020arrives\u0020as\u0020a\u0020string,\u0020so\u0020it\u0020is\u0020the\u0020only\u0020one\nwhere\u0020the\u0020string\u0020ladder\u0020has\u0020anything\u0020to\u0020read\u003B\u0020the\u0020others\u0020hand\u0020over\u0020typed\u0020JSON\u0020scalars.",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetReadOptions.html#method_typer"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#method_typer"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetReadOptions\u003A\u003AwithDropExtraColumns\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReadOptions\u003A\u003AwithDropExtraColumns\u0028\u0029",
             "name": "withDropExtraColumns",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetReadOptions.html#method_withDropExtraColumns"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#method_withDropExtraColumns"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetReadOptions\u003A\u003AwithEmptyToNull\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReadOptions\u003A\u003AwithEmptyToNull\u0028\u0029",
             "name": "withEmptyToNull",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetReadOptions.html#method_withEmptyToNull"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#method_withEmptyToNull"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetReadOptions\u003A\u003A\u0024withHeader",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReadOptions\u003A\u003A\u0024withHeader",
             "name": "withHeader",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetReadOptions.html#property_withHeader"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#property_withHeader"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetReadOptions\u003A\u003AwithOptions\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReadOptions\u003A\u003AwithOptions\u0028\u0029",
             "name": "withOptions",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetReadOptions.html#method_withOptions"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#method_withOptions"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetReadOptions\u003A\u003A\u0024dropExtraColumns",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReadOptions\u003A\u003A\u0024dropExtraColumns",
             "name": "dropExtraColumns",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetReadOptions.html#property_dropExtraColumns"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#property_dropExtraColumns"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetReadOptions\u003A\u003A\u0024emptyToNull",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReadOptions\u003A\u003A\u0024emptyToNull",
             "name": "emptyToNull",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetReadOptions.html#property_emptyToNull"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#property_emptyToNull"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetReadOptions\u003A\u003A\u0024options",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReadOptions\u003A\u003A\u0024options",
             "name": "options",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetReadOptions.html#property_options"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#property_options"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetSample",
-            "name": "GoogleSheetSample",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetSample.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetSample\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetSample.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetSample\u003A\u003A\u0024names",
-            "name": "names",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetSample.html#property_names"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetSample\u003A\u003A\u0024rows",
-            "name": "rows",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetSample.html#property_rows"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetSample\u003A\u003A\u0024wholeSheet",
-            "name": "wholeSheet",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetSample.html#property_wholeSheet"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetSample\u003A\u003A\u0024gridRowCount",
-            "name": "gridRowCount",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetSample.html#property_gridRowCount"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetSampler",
-            "name": "GoogleSheetSampler",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetSampler.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetSampler\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetSampler.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetSampler\u003A\u003Abatches\u0028\u0029",
-            "name": "batches",
-            "summary": "The\u0020rows\u0020the\u0020sample\u0020already\u0020holds,\u0020batched,\u0020when\u0020its\u0020range\u0020covered\u0020the\u0020whole\u0020grid\u0020\u002D\u0020so\u0020a\u0020read\u0020does\u0020not\u0020fetch\nthe\u0020same\u0020rows\u0020a\u0020second\u0020time.\u0020Null\u0020when\u0020it\u0020did\u0020not,\u0020and\u0020the\u0020caller\u0020must\u0020read\u0020the\u0020sheet\u0020itself.",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetSampler.html#method_batches"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetSampler\u003A\u003AgridRowCount\u0028\u0029",
-            "name": "gridRowCount",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetSampler.html#method_gridRowCount"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetSampler\u003A\u003Aheader\u0028\u0029",
-            "name": "header",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetSampler.html#method_header"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetSampler\u003A\u003Asample\u0028\u0029",
-            "name": "sample",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetSampler.html#method_sample"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\GoogleSheetSampler\u003A\u003Asamples\u0028\u0029",
-            "name": "samples",
-            "summary": "\u0024rowBudget\u0020is\u0020deliberately\u0020unused\u003A\u0020the\u0020budget\u0020sized\u0020the\u0020single\u0020range\u0020when\u0020this\u0020sampler\u0020was\u0020constructed,\nand\u0020sample\u0028\u0029\u0020is\u0020memoised,\u0020so\u0020advancing\u0020further\u0020cannot\u0020fetch\u0020more.",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetSampler.html#method_samples"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\SheetRange",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\SheetRange",
             "name": "SheetRange",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-SheetRange.html"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-SheetRange.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\SheetRange\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\SheetRange\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-SheetRange.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-SheetRange.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\SheetRange\u003A\u003AnextRows\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\SheetRange\u003A\u003AnextRows\u0028\u0029",
             "name": "nextRows",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-SheetRange.html#method_nextRows"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-SheetRange.html#method_nextRows"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\SheetRange\u003A\u003AtoString\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\SheetRange\u003A\u003AtoString\u0028\u0029",
             "name": "toString",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-SheetRange.html#method_toString"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-SheetRange.html#method_toString"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\SheetRange\u003A\u003A\u0024endRow",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\SheetRange\u003A\u003A\u0024endRow",
             "name": "endRow",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-SheetRange.html#property_endRow"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-SheetRange.html#property_endRow"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\SheetRange\u003A\u003A\u0024columnRange",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\SheetRange\u003A\u003A\u0024columnRange",
             "name": "columnRange",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-SheetRange.html#property_columnRange"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-SheetRange.html#property_columnRange"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\SheetRange\u003A\u003A\u0024startRow",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\SheetRange\u003A\u003A\u0024startRow",
             "name": "startRow",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-SheetRange.html#property_startRow"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-SheetRange.html#property_startRow"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Inference\\GoogleSheetSample",
+            "name": "GoogleSheetSample",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Inference-GoogleSheetSample.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Inference\\GoogleSheetSample\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Inference-GoogleSheetSample.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Inference\\GoogleSheetSample\u003A\u003A\u0024names",
+            "name": "names",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Inference-GoogleSheetSample.html#property_names"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Inference\\GoogleSheetSample\u003A\u003A\u0024rows",
+            "name": "rows",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Inference-GoogleSheetSample.html#property_rows"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Inference\\GoogleSheetSample\u003A\u003A\u0024wholeSheet",
+            "name": "wholeSheet",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Inference-GoogleSheetSample.html#property_wholeSheet"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Inference\\GoogleSheetSample\u003A\u003A\u0024gridRowCount",
+            "name": "gridRowCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Inference-GoogleSheetSample.html#property_gridRowCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Inference\\GoogleSheetSniffer",
+            "name": "GoogleSheetSniffer",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Inference-GoogleSheetSniffer.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Inference\\GoogleSheetSniffer\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Inference-GoogleSheetSniffer.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Inference\\GoogleSheetSniffer\u003A\u003Abatches\u0028\u0029",
+            "name": "batches",
+            "summary": "The\u0020rows\u0020the\u0020sample\u0020already\u0020holds,\u0020batched,\u0020when\u0020its\u0020range\u0020covered\u0020the\u0020whole\u0020grid\u0020\u002D\u0020so\u0020a\u0020read\u0020does\u0020not\u0020fetch\nthe\u0020same\u0020rows\u0020a\u0020second\u0020time.\u0020Null\u0020when\u0020it\u0020did\u0020not,\u0020and\u0020the\u0020caller\u0020must\u0020read\u0020the\u0020sheet\u0020itself.",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Inference-GoogleSheetSniffer.html#method_batches"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Inference\\GoogleSheetSniffer\u003A\u003Abytes\u0028\u0029",
+            "name": "bytes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Inference-GoogleSheetSniffer.html#method_bytes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Inference\\GoogleSheetSniffer\u003A\u003Aclose\u0028\u0029",
+            "name": "close",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Inference-GoogleSheetSniffer.html#method_close"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Inference\\GoogleSheetSniffer\u003A\u003AgridRowCount\u0028\u0029",
+            "name": "gridRowCount",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Inference-GoogleSheetSniffer.html#method_gridRowCount"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Inference\\GoogleSheetSniffer\u003A\u003Aheader\u0028\u0029",
+            "name": "header",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Inference-GoogleSheetSniffer.html#method_header"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Inference\\GoogleSheetSniffer\u003A\u003Asample\u0028\u0029",
+            "name": "sample",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Inference-GoogleSheetSniffer.html#method_sample"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Inference\\GoogleSheetSniffer\u003A\u003Anames\u0028\u0029",
+            "name": "names",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Inference-GoogleSheetSniffer.html#method_names"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Inference\\GoogleSheetSniffer\u003A\u003Asniff\u0028\u0029",
+            "name": "sniff",
+            "summary": "The\u0020budget\u0020sized\u0020the\u0020single\u0020range\u0020when\u0020this\u0020sniffer\u0020was\u0020constructed,\u0020and\u0020sample\u0028\u0029\u0020is\u0020memoised,\u0020so\u0020a\u0020sniff\nfolds\u0020rows\u0020already\u0020fetched.",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Inference-GoogleSheetSniffer.html#method_sniff"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Inference\\GoogleSheetSniffer\u003A\u003Aparts\u0028\u0029",
+            "name": "parts",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Inference-GoogleSheetSniffer.html#method_parts"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Inference\\GoogleSheetSniffer\u003A\u003Aunits\u0028\u0029",
+            "name": "units",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Inference-GoogleSheetSniffer.html#method_units"
         },                {
             "fqsen": "\\",
             "name": "\\",
@@ -305,5 +345,20 @@ Search.appendIndex(
             "name": "Flow",
             "summary": "",
             "url": "namespaces/flow.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor",
+            "name": "Extractor",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-googlesheet-io-extractor.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO",
+            "name": "IO",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-googlesheet-io.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Inference",
+            "name": "Inference",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-googlesheet-io-inference.html"
         }            ]
 );

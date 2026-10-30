@@ -119,7 +119,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Options.php"><a href="files/src-lib-parquet-src-flow-parquet-options.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Options.php">Options.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -127,6 +127,21 @@
 
 
 
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Flow-Parquet-Options.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">type</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>ParquetOptions = array&lt;string, mixed&gt; every option keyed by its Option case name, enums as {enum, case}</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
     
     
@@ -153,6 +168,12 @@
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Parquet-Options.html#method_default">default()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Parquet-Options.html#method_fromArray">fromArray()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
@@ -200,6 +221,13 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Parquet-Options.html#method_normalize">normalize()</a>
+    <span>
+                                &nbsp;: <abbr title="\Flow\Parquet\ParquetOptions">ParquetOptions</abbr>    </span>
+</dt>
+<dd>Every option keyed by its case name; enums as {enum, case}, bloom filter options as {bloom_filter: {fpp, ndv}}.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Parquet-Options.html#method_set">set()</a>
     <span>
                                 &nbsp;: self    </span>
@@ -233,7 +261,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Options.php"><a href="files/src-lib-parquet-src-flow-parquet-options.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Options.php">Options.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -267,7 +295,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Options.php"><a href="files/src-lib-parquet-src-flow-parquet-options.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Options.php">Options.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -295,6 +323,70 @@
         class="phpdocumentor-element
             -method
             -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fromArray">
+        fromArray()
+        <a href="classes/Flow-Parquet-Options.html#method_fromArray" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Options.php"><a href="files/src-lib-parquet-src-flow-parquet-options.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Options.php">Options.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">74</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$data</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>the shape of normalize(): every key an Option case name</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_fromArray_tags">
+        Tags
+        <a href="classes/Flow-Parquet-Options.html#method_fromArray_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-Parquet-Exception-InvalidArgumentException.html"><abbr title="\Flow\Parquet\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></span>
+                                                                                    
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_get">
@@ -305,7 +397,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Options.php"><a href="files/src-lib-parquet-src-flow-parquet-options.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Options.php">Options.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">161</span>
 
     </aside>
 
@@ -353,7 +445,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Options.php"><a href="files/src-lib-parquet-src-flow-parquet-options.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Options.php">Options.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">169</span>
 
     </aside>
 
@@ -401,7 +493,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Options.php"><a href="files/src-lib-parquet-src-flow-parquet-options.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Options.php">Options.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">184</span>
 
     </aside>
 
@@ -449,7 +541,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Options.php"><a href="files/src-lib-parquet-src-flow-parquet-options.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Options.php">Options.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">103</span>
+    <span class="phpdocumentor-element-found-in__line">202</span>
 
     </aside>
 
@@ -517,7 +609,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Options.php"><a href="files/src-lib-parquet-src-flow-parquet-options.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Options.php">Options.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">215</span>
 
     </aside>
 
@@ -565,7 +657,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Options.php"><a href="files/src-lib-parquet-src-flow-parquet-options.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Options.php">Options.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">226</span>
 
     </aside>
 
@@ -613,7 +705,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Options.php"><a href="files/src-lib-parquet-src-flow-parquet-options.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Options.php">Options.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">138</span>
+    <span class="phpdocumentor-element-found-in__line">237</span>
 
     </aside>
 
@@ -653,6 +745,45 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_normalize">
+        normalize()
+        <a href="classes/Flow-Parquet-Options.html#method_normalize" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Options.php"><a href="files/src-lib-parquet-src-flow-parquet-options.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Options.php">Options.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">249</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Every option keyed by its case name; enums as {enum, case}, bloom filter options as {bloom_filter: {fpp, ndv}}.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Parquet\ParquetOptions">ParquetOptions</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Parquet\ParquetOptions">ParquetOptions</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_set">
         set()
         <a href="classes/Flow-Parquet-Options.html#method_set" class="headerlink"><i class="fas fa-link"></i></a>
@@ -661,7 +792,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Options.php"><a href="files/src-lib-parquet-src-flow-parquet-options.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Options.php">Options.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">148</span>
+    <span class="phpdocumentor-element-found-in__line">273</span>
 
     </aside>
 
@@ -726,6 +857,7 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Parquet-Options.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Options.html#method_default">default()</a></li>
+                                            <li class=""><a href="classes/Flow-Parquet-Options.html#method_fromArray">fromArray()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Options.html#method_get">get()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Options.html#method_getArray">getArray()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Options.html#method_getBool">getBool()</a></li>
@@ -733,6 +865,7 @@
                                             <li class=""><a href="classes/Flow-Parquet-Options.html#method_getInt">getInt()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Options.html#method_getString">getString()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Options.html#method_has">has()</a></li>
+                                            <li class=""><a href="classes/Flow-Parquet-Options.html#method_normalize">normalize()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Options.html#method_set">set()</a></li>
                                     </ul>
             </li>

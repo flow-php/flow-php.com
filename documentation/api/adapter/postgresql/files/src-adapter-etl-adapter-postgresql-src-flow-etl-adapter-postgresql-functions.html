@@ -137,7 +137,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -146,7 +146,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">from_pgsql_cursor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Client\Client">Client</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\QueryBuilder\Sql">Sql</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parameters</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlCursorExtractor.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\PostgreSqlCursorExtractor">PostgreSqlCursorExtractor</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">from_pgsql_cursor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Client\Client">Client</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\QueryBuilder\Sql">Sql</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parameters</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-IO-Extractor-PostgreSqlCursorExtractor.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\IO\Extractor\PostgreSqlCursorExtractor">PostgreSqlCursorExtractor</abbr></a></span></code>
 
         <section class="phpdocumentor-description"><p>Uses DECLARE CURSOR + FETCH to stream data without loading entire result set into memory.
 This is the only way to achieve true low memory extraction with PHP's ext-pgsql.</p>
@@ -188,7 +188,7 @@ This is the only way to achieve true low memory extraction with PHP's ext-pgsql.
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlCursorExtractor.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\PostgreSqlCursorExtractor">PostgreSqlCursorExtractor</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-IO-Extractor-PostgreSqlCursorExtractor.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\IO\Extractor\PostgreSqlCursorExtractor">PostgreSqlCursorExtractor</abbr></a></span>
             </section>
 
 </article>
@@ -201,7 +201,7 @@ This is the only way to achieve true low memory extraction with PHP's ext-pgsql.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -210,7 +210,7 @@ This is the only way to achieve true low memory extraction with PHP's ext-pgsql.
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">from_pgsql_limit_offset</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Client\Client">Client</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\QueryBuilder\Sql">Sql</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parameters</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlLimitOffsetExtractor.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\PostgreSqlLimitOffsetExtractor">PostgreSqlLimitOffsetExtractor</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">from_pgsql_limit_offset</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Client\Client">Client</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\QueryBuilder\Sql">Sql</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parameters</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-IO-Extractor-PostgreSqlLimitOffsetExtractor.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\IO\Extractor\PostgreSqlLimitOffsetExtractor">PostgreSqlLimitOffsetExtractor</abbr></a></span></code>
 
         <section class="phpdocumentor-description"><p>Suitable for smaller datasets. For large datasets, consider using keyset pagination
 (from_pgsql_key_set) which is more efficient.</p>
@@ -251,7 +251,7 @@ This is the only way to achieve true low memory extraction with PHP's ext-pgsql.
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlLimitOffsetExtractor.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\PostgreSqlLimitOffsetExtractor">PostgreSqlLimitOffsetExtractor</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-IO-Extractor-PostgreSqlLimitOffsetExtractor.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\IO\Extractor\PostgreSqlLimitOffsetExtractor">PostgreSqlLimitOffsetExtractor</abbr></a></span>
             </section>
 
 </article>
@@ -264,7 +264,7 @@ This is the only way to achieve true low memory extraction with PHP's ext-pgsql.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
@@ -273,7 +273,7 @@ This is the only way to achieve true low memory extraction with PHP's ext-pgsql.
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">from_pgsql_key_set</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Client\Client">Client</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\QueryBuilder\Sql">Sql</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-PostgreSql-Pagination-KeySet.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\Pagination\KeySet">KeySet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$keySet</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parameters</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlKeySetExtractor.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\PostgreSqlKeySetExtractor">PostgreSqlKeySetExtractor</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">from_pgsql_key_set</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Client\Client">Client</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\QueryBuilder\Sql">Sql</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-PostgreSql-IO-Extractor-Pagination-KeySet.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\IO\Extractor\Pagination\KeySet">KeySet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$keySet</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parameters</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-IO-Extractor-PostgreSqlKeySetExtractor.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\IO\Extractor\PostgreSqlKeySetExtractor">PostgreSqlKeySetExtractor</abbr></a></span></code>
 
         <section class="phpdocumentor-description"><p>More efficient than LIMIT/OFFSET for large datasets - uses indexed WHERE conditions
 instead of skipping rows.</p>
@@ -301,7 +301,7 @@ instead of skipping rows.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$keySet</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-PostgreSql-Pagination-KeySet.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\Pagination\KeySet">KeySet</abbr></a></span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-PostgreSql-IO-Extractor-Pagination-KeySet.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\IO\Extractor\Pagination\KeySet">KeySet</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Columns to use for keyset pagination</p>
@@ -323,7 +323,7 @@ instead of skipping rows.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlKeySetExtractor.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\PostgreSqlKeySetExtractor">PostgreSqlKeySetExtractor</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-IO-Extractor-PostgreSqlKeySetExtractor.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\IO\Extractor\PostgreSqlKeySetExtractor">PostgreSqlKeySetExtractor</abbr></a></span>
             </section>
 
 </article>
@@ -336,7 +336,7 @@ instead of skipping rows.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 
@@ -344,7 +344,7 @@ instead of skipping rows.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">pgsql_pagination_key_asc</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$column</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-Pagination-Key.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\Pagination\Key">Key</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">pgsql_pagination_key_asc</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$column</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-IO-Extractor-Pagination-Key.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\IO\Extractor\Pagination\Key">Key</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -362,7 +362,7 @@ instead of skipping rows.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-Pagination-Key.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\Pagination\Key">Key</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-IO-Extractor-Pagination-Key.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\IO\Extractor\Pagination\Key">Key</abbr></a></span>
             </section>
 
 </article>
@@ -375,7 +375,7 @@ instead of skipping rows.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">97</span>
 
     </aside>
 
@@ -383,7 +383,7 @@ instead of skipping rows.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">pgsql_pagination_key_desc</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$column</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-Pagination-Key.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\Pagination\Key">Key</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">pgsql_pagination_key_desc</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$column</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-IO-Extractor-Pagination-Key.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\IO\Extractor\Pagination\Key">Key</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -401,7 +401,7 @@ instead of skipping rows.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-Pagination-Key.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\Pagination\Key">Key</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-IO-Extractor-Pagination-Key.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\IO\Extractor\Pagination\Key">Key</abbr></a></span>
             </section>
 
 </article>
@@ -414,7 +414,7 @@ instead of skipping rows.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
@@ -422,14 +422,14 @@ instead of skipping rows.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">pgsql_pagination_key_set</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-PostgreSql-Pagination-Key.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\Pagination\Key">Key</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$keys</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-Pagination-KeySet.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\Pagination\KeySet">KeySet</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">pgsql_pagination_key_set</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-PostgreSql-IO-Extractor-Pagination-Key.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\IO\Extractor\Pagination\Key">Key</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$keys</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-IO-Extractor-Pagination-KeySet.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\IO\Extractor\Pagination\KeySet">KeySet</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$keys</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-PostgreSql-Pagination-Key.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\Pagination\Key">Key</abbr></a></span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-PostgreSql-IO-Extractor-Pagination-Key.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\IO\Extractor\Pagination\Key">Key</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -440,7 +440,7 @@ instead of skipping rows.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-Pagination-KeySet.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\Pagination\KeySet">KeySet</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-IO-Extractor-Pagination-KeySet.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\IO\Extractor\Pagination\KeySet">KeySet</abbr></a></span>
             </section>
 
 </article>
@@ -453,7 +453,7 @@ instead of skipping rows.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 
     </aside>
 
@@ -461,7 +461,7 @@ instead of skipping rows.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">to_pgsql_table</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Client\Client">Client</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlLoader.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\PostgreSqlLoader">PostgreSqlLoader</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">to_pgsql_table</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Client\Client">Client</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-IO-Loader-PostgreSqlLoader.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\IO\Loader\PostgreSqlLoader">PostgreSqlLoader</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -486,7 +486,7 @@ instead of skipping rows.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-PostgreSqlLoader.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\PostgreSqlLoader">PostgreSqlLoader</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-IO-Loader-PostgreSqlLoader.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\IO\Loader\PostgreSqlLoader">PostgreSqlLoader</abbr></a></span>
             </section>
 
 </article>
@@ -499,16 +499,16 @@ instead of skipping rows.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">111</span>
+    <span class="phpdocumentor-element-found-in__line">118</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Write every sink within PostgreSQL transactions.</p>
+        <p class="phpdocumentor-summary">Write every child within PostgreSQL transactions.</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">to_pgsql_transaction</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Client\Client">Client</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Loader">Loader</abbr>|<abbr title="\Flow\ETL\Sink">Sink</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$sinks</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Sink\Transactional">Transactional</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">to_pgsql_transaction</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Client\Client">Client</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr>|<abbr title="\Flow\ETL\API\Branch">Branch</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$writes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\API\Transactional">Transactional</abbr></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -521,8 +521,8 @@ instead of skipping rows.</p>
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$sinks</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Loader">Loader</abbr>|<abbr title="\Flow\ETL\Sink">Sink</abbr></span>
+                <span class="phpdocumentor-argument-list__argument__name">$writes</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr>|<abbr title="\Flow\ETL\API\Branch">Branch</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -533,7 +533,7 @@ instead of skipping rows.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Sink\Transactional">Transactional</abbr></span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\API\Transactional">Transactional</abbr></span>
             </section>
 
 </article>
@@ -546,7 +546,7 @@ instead of skipping rows.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">125</span>
+    <span class="phpdocumentor-element-found-in__line">132</span>
 
     </aside>
 
@@ -555,7 +555,7 @@ instead of skipping rows.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">pgsql_insert_options</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$skipConflicts</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$conflictColumns</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$conflictConstraint</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$updateColumns</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-LoaderOptions-InsertOptions.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\LoaderOptions\InsertOptions">InsertOptions</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">pgsql_insert_options</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$skipConflicts</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$conflictColumns</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$conflictConstraint</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$updateColumns</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-IO-Loader-LoaderOptions-InsertOptions.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\IO\Loader\LoaderOptions\InsertOptions">InsertOptions</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -602,7 +602,7 @@ instead of skipping rows.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-LoaderOptions-InsertOptions.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\LoaderOptions\InsertOptions">InsertOptions</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-IO-Loader-LoaderOptions-InsertOptions.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\IO\Loader\LoaderOptions\InsertOptions">InsertOptions</abbr></a></span>
             </section>
 
 </article>
@@ -615,7 +615,7 @@ instead of skipping rows.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">140</span>
+    <span class="phpdocumentor-element-found-in__line">147</span>
 
     </aside>
 
@@ -624,7 +624,7 @@ instead of skipping rows.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">pgsql_update_options</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$primaryKeys</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-LoaderOptions-UpdateOptions.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\LoaderOptions\UpdateOptions">UpdateOptions</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">pgsql_update_options</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$primaryKeys</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-IO-Loader-LoaderOptions-UpdateOptions.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\IO\Loader\LoaderOptions\UpdateOptions">UpdateOptions</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -644,7 +644,7 @@ instead of skipping rows.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-LoaderOptions-UpdateOptions.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\LoaderOptions\UpdateOptions">UpdateOptions</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-IO-Loader-LoaderOptions-UpdateOptions.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\IO\Loader\LoaderOptions\UpdateOptions">UpdateOptions</abbr></a></span>
             </section>
 
 </article>
@@ -657,7 +657,7 @@ instead of skipping rows.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">151</span>
+    <span class="phpdocumentor-element-found-in__line">158</span>
 
     </aside>
 
@@ -666,7 +666,7 @@ instead of skipping rows.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">pgsql_delete_options</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$primaryKeys</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-LoaderOptions-DeleteOptions.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\LoaderOptions\DeleteOptions">DeleteOptions</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">pgsql_delete_options</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$primaryKeys</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-IO-Loader-LoaderOptions-DeleteOptions.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\IO\Loader\LoaderOptions\DeleteOptions">DeleteOptions</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -686,7 +686,7 @@ instead of skipping rows.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-LoaderOptions-DeleteOptions.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\LoaderOptions\DeleteOptions">DeleteOptions</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-IO-Loader-LoaderOptions-DeleteOptions.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\IO\Loader\LoaderOptions\DeleteOptions">DeleteOptions</abbr></a></span>
             </section>
 
 </article>
@@ -699,7 +699,7 @@ instead of skipping rows.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">163</span>
+    <span class="phpdocumentor-element-found-in__line">170</span>
 
     </aside>
 
@@ -708,14 +708,14 @@ instead of skipping rows.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">to_pgsql_schema_table</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Schema">Schema</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$databaseSchema</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'public'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-PostgreSql-TypesMap.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\TypesMap">TypesMap</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$typesMap</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Schema\TableOptions">TableOptions</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\PostgreSql\Schema\Table">Table</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">to_pgsql_schema_table</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Values\Schema">Schema</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$databaseSchema</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'public'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-PostgreSql-Values-Schema-TypesMap.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\Values\Schema\TypesMap">TypesMap</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$typesMap</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Schema\TableOptions">TableOptions</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\PostgreSql\Schema\Table">Table</abbr></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$schema</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Schema">Schema</abbr></span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\Values\Schema">Schema</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -738,7 +738,7 @@ instead of skipping rows.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$typesMap</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-PostgreSql-TypesMap.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\TypesMap">TypesMap</abbr></a>|null</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-PostgreSql-Values-Schema-TypesMap.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\Values\Schema\TypesMap">TypesMap</abbr></a>|null</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -771,7 +771,7 @@ instead of skipping rows.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">177</span>
+    <span class="phpdocumentor-element-found-in__line">184</span>
 
     </aside>
 
@@ -780,7 +780,7 @@ instead of skipping rows.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">pgsql_table_to_flow_schema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Schema\Table">Table</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-PostgreSql-TypesMap.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\TypesMap">TypesMap</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$typesMap</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Schema">Schema</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">pgsql_table_to_flow_schema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Schema\Table">Table</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-PostgreSql-Values-Schema-TypesMap.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\Values\Schema\TypesMap">TypesMap</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$typesMap</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Values\Schema">Schema</abbr></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -794,7 +794,7 @@ instead of skipping rows.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$typesMap</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-PostgreSql-TypesMap.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\TypesMap">TypesMap</abbr></a>|null</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-PostgreSql-Values-Schema-TypesMap.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\Values\Schema\TypesMap">TypesMap</abbr></a>|null</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -805,7 +805,7 @@ instead of skipping rows.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Schema">Schema</abbr></span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Values\Schema">Schema</abbr></span>
             </section>
 
 </article>
@@ -818,7 +818,7 @@ instead of skipping rows.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-functions.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">183</span>
+    <span class="phpdocumentor-element-found-in__line">190</span>
 
     </aside>
 
@@ -826,14 +826,14 @@ instead of skipping rows.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">pgsql_schema_sort_by_type</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-PostgreSql-TypesMap.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\TypesMap">TypesMap</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$typesMap</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-Schema-SortingStrategy-TypeStrategy.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\Schema\SortingStrategy\TypeStrategy">TypeStrategy</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">pgsql_schema_sort_by_type</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-PostgreSql-Values-Schema-TypesMap.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\Values\Schema\TypesMap">TypesMap</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$typesMap</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-Values-Schema-SortingStrategy-TypeStrategy.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\Values\Schema\SortingStrategy\TypeStrategy">TypeStrategy</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$typesMap</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-PostgreSql-TypesMap.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\TypesMap">TypesMap</abbr></a>|null</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-PostgreSql-Values-Schema-TypesMap.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\Values\Schema\TypesMap">TypesMap</abbr></a>|null</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -844,7 +844,7 @@ instead of skipping rows.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-Schema-SortingStrategy-TypeStrategy.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\Schema\SortingStrategy\TypeStrategy">TypeStrategy</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-PostgreSql-Values-Schema-SortingStrategy-TypeStrategy.html"><abbr title="\Flow\ETL\Adapter\PostgreSql\Values\Schema\SortingStrategy\TypeStrategy">TypeStrategy</abbr></a></span>
             </section>
 
 </article>

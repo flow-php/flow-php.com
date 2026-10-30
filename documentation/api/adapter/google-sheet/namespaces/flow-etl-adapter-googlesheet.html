@@ -107,14 +107,15 @@
         
 
 
-    <h4 id="toc-classes">
-        Classes
-        <a href="namespaces/flow-etl-adapter-googlesheet.html#toc-classes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    <h4 id="namespaces">
+        Namespaces
+        <a href="namespaces/flow-etl-adapter-googlesheet.html#namespaces" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-GoogleSheet-Columns.html"><abbr title="\Flow\ETL\Adapter\GoogleSheet\Columns">Columns</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html"><abbr title="\Flow\ETL\Adapter\GoogleSheet\GoogleSheetExtractor">GoogleSheetExtractor</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetReader.html"><abbr title="\Flow\ETL\Adapter\GoogleSheet\GoogleSheetReader">GoogleSheetReader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetReadOptions.html"><abbr title="\Flow\ETL\Adapter\GoogleSheet\GoogleSheetReadOptions">GoogleSheetReadOptions</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetSample.html"><abbr title="\Flow\ETL\Adapter\GoogleSheet\GoogleSheetSample">GoogleSheetSample</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetSampler.html"><abbr title="\Flow\ETL\Adapter\GoogleSheet\GoogleSheetSampler">GoogleSheetSampler</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-GoogleSheet-SheetRange.html"><abbr title="\Flow\ETL\Adapter\GoogleSheet\SheetRange">SheetRange</abbr></a></dt>    </dl>
-
+                    <dt class="phpdocumentor-table-of-contents__entry -namespace"><a href="namespaces/flow-etl-adapter-googlesheet-io.html"><abbr title="\Flow\ETL\Adapter\GoogleSheet\IO">IO</abbr></a></dt>
+            </dl>
 
 
 
@@ -140,7 +141,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/functions.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-functions.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -148,7 +149,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">from_google_sheet</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array{type: string, project_id: string, private_key_id: string, private_key: string, client_email: string, client_id: string, auth_uri: string, token_uri: string, auth_provider_x509_cert_url: string, client_x509_cert_url: string}|<abbr title="\Google\Service\Sheets">Sheets</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$auth_config</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$spreadsheet_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sheet_name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$with_header</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows_per_page</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1000</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array{dateTimeRenderOption?: string, majorDimension?: string, valueRenderOption?: string}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html"><abbr title="\Flow\ETL\Adapter\GoogleSheet\GoogleSheetExtractor">GoogleSheetExtractor</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">from_google_sheet</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array{type: string, project_id: string, private_key_id: string, private_key: string, client_email: string, client_id: string, auth_uri: string, token_uri: string, auth_provider_x509_cert_url: string, client_x509_cert_url: string}|<abbr title="\Google\Service\Sheets">Sheets</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$auth_config</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$spreadsheet_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sheet_name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$with_header</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows_per_page</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1000</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array{dateTimeRenderOption?: string, majorDimension?: string, valueRenderOption?: string}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html"><abbr title="\Flow\ETL\Adapter\GoogleSheet\IO\Extractor\GoogleSheetExtractor">GoogleSheetExtractor</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -213,7 +214,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html"><abbr title="\Flow\ETL\Adapter\GoogleSheet\GoogleSheetExtractor">GoogleSheetExtractor</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html"><abbr title="\Flow\ETL\Adapter\GoogleSheet\IO\Extractor\GoogleSheetExtractor">GoogleSheetExtractor</abbr></a></span>
             </section>
 
 </article>
@@ -226,7 +227,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/functions.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-functions.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -234,7 +235,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">from_google_sheet_columns</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array{type: string, project_id: string, private_key_id: string, private_key: string, client_email: string, client_id: string, auth_uri: string, token_uri: string, auth_provider_x509_cert_url: string, client_x509_cert_url: string}|<abbr title="\Google\Service\Sheets">Sheets</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$auth_config</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$spreadsheet_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sheet_name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$start_range_column</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$end_range_column</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$with_header</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows_per_page</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1000</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array{dateTimeRenderOption?: string, majorDimension?: string, valueRenderOption?: string}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html"><abbr title="\Flow\ETL\Adapter\GoogleSheet\GoogleSheetExtractor">GoogleSheetExtractor</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">from_google_sheet_columns</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array{type: string, project_id: string, private_key_id: string, private_key: string, client_email: string, client_id: string, auth_uri: string, token_uri: string, auth_provider_x509_cert_url: string, client_x509_cert_url: string}|<abbr title="\Google\Service\Sheets">Sheets</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$auth_config</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$spreadsheet_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sheet_name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$start_range_column</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$end_range_column</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$with_header</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows_per_page</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1000</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array{dateTimeRenderOption?: string, majorDimension?: string, valueRenderOption?: string}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html"><abbr title="\Flow\ETL\Adapter\GoogleSheet\IO\Extractor\GoogleSheetExtractor">GoogleSheetExtractor</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -313,7 +314,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-GoogleSheet-GoogleSheetExtractor.html"><abbr title="\Flow\ETL\Adapter\GoogleSheet\GoogleSheetExtractor">GoogleSheetExtractor</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html"><abbr title="\Flow\ETL\Adapter\GoogleSheet\IO\Extractor\GoogleSheetExtractor">GoogleSheetExtractor</abbr></a></span>
             </section>
 
 </article>
@@ -331,7 +332,6 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="namespaces/flow-etl-adapter-googlesheet.html#toc-classes">Classes</a></li>
                                                                                                         <li><a href="namespaces/flow-etl-adapter-googlesheet.html#toc-functions">Functions</a></li>
                                                                                                 </ul>
             </li>

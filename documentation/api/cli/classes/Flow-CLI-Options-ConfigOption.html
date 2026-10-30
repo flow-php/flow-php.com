@@ -122,7 +122,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/cli/src/Flow/CLI/Options/ConfigOption.php"><a href="files/src-cli-src-flow-cli-options-configoption.html"><abbr title="src/cli/src/Flow/CLI/Options/ConfigOption.php">ConfigOption.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
@@ -155,9 +155,15 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-CLI-Options-ConfigOption.html#method_configure">configure()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-CLI-Options-ConfigOption.html#method_get">get()</a>
     <span>
-                                &nbsp;: <abbr title="\Flow\ETL\Config">Config</abbr>    </span>
+                                &nbsp;: <abbr title="\Flow\ETL\Runtime\Config">Config</abbr>    </span>
 </dt>
 
     </dl>
@@ -188,7 +194,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/cli/src/Flow/CLI/Options/ConfigOption.php"><a href="files/src-cli-src-flow-cli-options-configoption.html"><abbr title="src/cli/src/Flow/CLI/Options/ConfigOption.php">ConfigOption.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
@@ -224,6 +230,50 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_configure">
+        configure()
+        <a href="classes/Flow-CLI-Options-ConfigOption.html#method_configure" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/cli/src/Flow/CLI/Options/ConfigOption.php"><a href="files/src-cli-src-flow-cli-options-configoption.html"><abbr title="src/cli/src/Flow/CLI/Options/ConfigOption.php">ConfigOption.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">26</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">configure</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Symfony\Component\Console\Command\Command">Command</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$command</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$command</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Symfony\Component\Console\Command\Command">Command</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_get">
         get()
         <a href="classes/Flow-CLI-Options-ConfigOption.html#method_get" class="headerlink"><i class="fas fa-link"></i></a>
@@ -232,14 +282,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/cli/src/Flow/CLI/Options/ConfigOption.php"><a href="files/src-cli-src-flow-cli-options-configoption.html"><abbr title="src/cli/src/Flow/CLI/Options/ConfigOption.php">ConfigOption.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Symfony\Component\Console\Input\InputInterface">InputInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Config">Config</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Symfony\Component\Console\Input\InputInterface">InputInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Runtime\Config">Config</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -262,7 +312,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Config">Config</abbr></span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\Runtime\Config">Config</abbr></span>
             </section>
 
 </article>
@@ -289,6 +339,7 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-CLI-Options-ConfigOption.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Flow-CLI-Options-ConfigOption.html#method_configure">configure()</a></li>
                                             <li class=""><a href="classes/Flow-CLI-Options-ConfigOption.html#method_get">get()</a></li>
                                     </ul>
             </li>

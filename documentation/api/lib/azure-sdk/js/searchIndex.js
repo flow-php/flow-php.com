@@ -186,6 +186,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobService-CopyBlob-CopyBlobOptions.html#method_withVersionId"
         },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\CopyBlob\\CopyBlobOptions\u003A\u003AuserAgentHeader\u0028\u0029",
+            "name": "userAgentHeader",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-CopyBlob-CopyBlobOptions.html#method_userAgentHeader"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\CopyBlob\\CopyBlobOptions\u003A\u003AwithUserAgent\u0028\u0029",
+            "name": "withUserAgent",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-CopyBlob-CopyBlobOptions.html#method_withUserAgent"
+        },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\CreateContainer\\CreateContainerOptions",
             "name": "CreateContainerOptions",
             "summary": "",
@@ -220,6 +230,16 @@ Search.appendIndex(
             "name": "withVersion",
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobService-CreateContainer-CreateContainerOptions.html#method_withVersion"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\CreateContainer\\CreateContainerOptions\u003A\u003AuserAgentHeader\u0028\u0029",
+            "name": "userAgentHeader",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-CreateContainer-CreateContainerOptions.html#method_userAgentHeader"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\CreateContainer\\CreateContainerOptions\u003A\u003AwithUserAgent\u0028\u0029",
+            "name": "withUserAgent",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-CreateContainer-CreateContainerOptions.html#method_withUserAgent"
         },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\CreateContainer\\PublicAccess",
             "name": "PublicAccess",
@@ -291,6 +311,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobService-DeleteBlob-DeleteBlobOptions.html#method_withVersionId"
         },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\DeleteBlob\\DeleteBlobOptions\u003A\u003AuserAgentHeader\u0028\u0029",
+            "name": "userAgentHeader",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-DeleteBlob-DeleteBlobOptions.html#method_userAgentHeader"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\DeleteBlob\\DeleteBlobOptions\u003A\u003AwithUserAgent\u0028\u0029",
+            "name": "withUserAgent",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-DeleteBlob-DeleteBlobOptions.html#method_withUserAgent"
+        },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\DeleteBlob\\DeleteSnapshots",
             "name": "DeleteSnapshots",
             "summary": "",
@@ -350,6 +380,16 @@ Search.appendIndex(
             "name": "withVersion",
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobService-DeleteContainer-DeleteContainerOptions.html#method_withVersion"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\DeleteContainer\\DeleteContainerOptions\u003A\u003AuserAgentHeader\u0028\u0029",
+            "name": "userAgentHeader",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-DeleteContainer-DeleteContainerOptions.html#method_userAgentHeader"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\DeleteContainer\\DeleteContainerOptions\u003A\u003AwithUserAgent\u0028\u0029",
+            "name": "withUserAgent",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-DeleteContainer-DeleteContainerOptions.html#method_withUserAgent"
         },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\GetBlob\\BlobContent",
             "name": "BlobContent",
@@ -446,6 +486,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobService-GetBlob-GetBlobOptions.html#method_withVersionId"
         },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\GetBlob\\GetBlobOptions\u003A\u003AuserAgentHeader\u0028\u0029",
+            "name": "userAgentHeader",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-GetBlob-GetBlobOptions.html#method_userAgentHeader"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\GetBlob\\GetBlobOptions\u003A\u003AwithUserAgent\u0028\u0029",
+            "name": "withUserAgent",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-GetBlob-GetBlobOptions.html#method_withUserAgent"
+        },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\GetBlob\\Range",
             "name": "Range",
             "summary": "",
@@ -536,6 +586,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobService-GetBlobProperties-GetBlobPropertiesOptions.html#method_withVersionId"
         },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\GetBlobProperties\\GetBlobPropertiesOptions\u003A\u003AuserAgentHeader\u0028\u0029",
+            "name": "userAgentHeader",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-GetBlobProperties-GetBlobPropertiesOptions.html#method_userAgentHeader"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\GetBlobProperties\\GetBlobPropertiesOptions\u003A\u003AwithUserAgent\u0028\u0029",
+            "name": "withUserAgent",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-GetBlobProperties-GetBlobPropertiesOptions.html#method_withUserAgent"
+        },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\GetBlockBlobBlockList\\BlockListType",
             "name": "BlockListType",
             "summary": "",
@@ -601,6 +661,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobService-GetBlockBlobBlockList-GetBlockBlobBlockListOptions.html#method_withVersionId"
         },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\GetBlockBlobBlockList\\GetBlockBlobBlockListOptions\u003A\u003AuserAgentHeader\u0028\u0029",
+            "name": "userAgentHeader",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-GetBlockBlobBlockList-GetBlockBlobBlockListOptions.html#method_userAgentHeader"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\GetBlockBlobBlockList\\GetBlockBlobBlockListOptions\u003A\u003AwithUserAgent\u0028\u0029",
+            "name": "withUserAgent",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-GetBlockBlobBlockList-GetBlockBlobBlockListOptions.html#method_withUserAgent"
+        },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\GetContainerProperties\\ContainerProperties",
             "name": "ContainerProperties",
             "summary": "",
@@ -650,6 +720,16 @@ Search.appendIndex(
             "name": "withVersionId",
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobService-GetContainerProperties-GetContainerPropertiesOptions.html#method_withVersionId"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\GetContainerProperties\\GetContainerPropertiesOptions\u003A\u003AuserAgentHeader\u0028\u0029",
+            "name": "userAgentHeader",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-GetContainerProperties-GetContainerPropertiesOptions.html#method_userAgentHeader"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\GetContainerProperties\\GetContainerPropertiesOptions\u003A\u003AwithUserAgent\u0028\u0029",
+            "name": "withUserAgent",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-GetContainerProperties-GetContainerPropertiesOptions.html#method_withUserAgent"
         },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\ListBlobs\\Blob",
             "name": "Blob",
@@ -740,6 +820,16 @@ Search.appendIndex(
             "name": "withVersion",
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobService-ListBlobs-ListBlobOptions.html#method_withVersion"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\ListBlobs\\ListBlobOptions\u003A\u003AuserAgentHeader\u0028\u0029",
+            "name": "userAgentHeader",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-ListBlobs-ListBlobOptions.html#method_userAgentHeader"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\ListBlobs\\ListBlobOptions\u003A\u003AwithUserAgent\u0028\u0029",
+            "name": "withUserAgent",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-ListBlobs-ListBlobOptions.html#method_withUserAgent"
         },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\ListBlobs\\OptionInclude",
             "name": "OptionInclude",
@@ -856,6 +946,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobService-PutBlockBlob-PutBlockBlobOptions.html#method_withVersion"
         },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\PutBlockBlob\\PutBlockBlobOptions\u003A\u003AuserAgentHeader\u0028\u0029",
+            "name": "userAgentHeader",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-PutBlockBlob-PutBlockBlobOptions.html#method_userAgentHeader"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\PutBlockBlob\\PutBlockBlobOptions\u003A\u003AwithUserAgent\u0028\u0029",
+            "name": "withUserAgent",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-PutBlockBlob-PutBlockBlobOptions.html#method_withUserAgent"
+        },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\PutBlockBlobBlock\\PutBlockBlobBlockOptions",
             "name": "PutBlockBlobBlockOptions",
             "summary": "",
@@ -890,6 +990,16 @@ Search.appendIndex(
             "name": "withVersion",
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobService-PutBlockBlobBlock-PutBlockBlobBlockOptions.html#method_withVersion"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\PutBlockBlobBlock\\PutBlockBlobBlockOptions\u003A\u003AuserAgentHeader\u0028\u0029",
+            "name": "userAgentHeader",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-PutBlockBlobBlock-PutBlockBlobBlockOptions.html#method_userAgentHeader"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\PutBlockBlobBlock\\PutBlockBlobBlockOptions\u003A\u003AwithUserAgent\u0028\u0029",
+            "name": "withUserAgent",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-PutBlockBlobBlock-PutBlockBlobBlockOptions.html#method_withUserAgent"
         },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\PutBlockBlobBlockList\\PutBlockBlobBlockListOptions",
             "name": "PutBlockBlobBlockListOptions",
@@ -930,6 +1040,16 @@ Search.appendIndex(
             "name": "withVersion",
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobService-PutBlockBlobBlockList-PutBlockBlobBlockListOptions.html#method_withVersion"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\PutBlockBlobBlockList\\PutBlockBlobBlockListOptions\u003A\u003AuserAgentHeader\u0028\u0029",
+            "name": "userAgentHeader",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-PutBlockBlobBlockList-PutBlockBlobBlockListOptions.html#method_userAgentHeader"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\PutBlockBlobBlockList\\PutBlockBlobBlockListOptions\u003A\u003AwithUserAgent\u0028\u0029",
+            "name": "withUserAgent",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-PutBlockBlobBlockList-PutBlockBlobBlockListOptions.html#method_withUserAgent"
         },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\PutBlockBlobBlockList\\SimpleXMLSerializer",
             "name": "SimpleXMLSerializer",
@@ -1161,21 +1281,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Azure-SDK-EndpointOptions.html#method_toURIParameters"
         },                {
-            "fqsen": "\\Flow\\Azure\\SDK\\Endpoints\\UserAgentHeader",
-            "name": "UserAgentHeader",
-            "summary": "",
-            "url": "classes/Flow-Azure-SDK-Endpoints-UserAgentHeader.html"
-        },                {
-            "fqsen": "\\Flow\\Azure\\SDK\\Endpoints\\UserAgentHeader\u003A\u003AuserAgentHeader\u0028\u0029",
-            "name": "userAgentHeader",
-            "summary": "",
-            "url": "classes/Flow-Azure-SDK-Endpoints-UserAgentHeader.html#method_userAgentHeader"
-        },                {
-            "fqsen": "\\Flow\\Azure\\SDK\\Endpoints\\UserAgentHeader\u003A\u003AwithUserAgent\u0028\u0029",
-            "name": "withUserAgent",
-            "summary": "",
-            "url": "classes/Flow-Azure-SDK-Endpoints-UserAgentHeader.html#method_withUserAgent"
-        },                {
             "fqsen": "\\Flow\\Azure\\SDK\\Exception\\AzureException",
             "name": "AzureException",
             "summary": "",
@@ -1400,11 +1505,6 @@ Search.appendIndex(
             "name": "DSL",
             "summary": "",
             "url": "namespaces/flow-azure-sdk-dsl.html"
-        },                {
-            "fqsen": "\\Flow\\Azure\\SDK\\Endpoints",
-            "name": "Endpoints",
-            "summary": "",
-            "url": "namespaces/flow-azure-sdk-endpoints.html"
         },                {
             "fqsen": "\\Flow\\Azure\\SDK\\Exception",
             "name": "Exception",

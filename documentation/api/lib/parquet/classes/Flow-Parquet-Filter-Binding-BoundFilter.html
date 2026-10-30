@@ -123,7 +123,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Filter/Binding/BoundFilter.php"><a href="files/src-lib-parquet-src-flow-parquet-filter-binding-boundfilter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Filter/Binding/BoundFilter.php">BoundFilter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -178,7 +178,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Parquet-Filter-Binding-BoundFilter.html#method_leaf">leaf()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-Parquet-Filter-Binding-AbsentLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\AbsentLeaf">AbsentLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-RefusedLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\RefusedLeaf">RefusedLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-ResolvedLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\ResolvedLeaf">ResolvedLeaf</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Flow-Parquet-Filter-Binding-AbsentLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\AbsentLeaf">AbsentLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-RefusedLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\RefusedLeaf">RefusedLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-ExactLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\ExactLeaf">ExactLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-InexactLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\InexactLeaf">InexactLeaf</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -196,6 +196,12 @@
 <dd>The root conjuncts rowFilter() leaves out, which the caller evaluates; null when there is none.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Parquet-Filter-Binding-BoundFilter.html#method_resolve">resolve()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-Parquet-Filter-Binding-AbsentLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\AbsentLeaf">AbsentLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-RefusedLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\RefusedLeaf">RefusedLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-ExactLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\ExactLeaf">ExactLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-InexactLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\InexactLeaf">InexactLeaf</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Parquet-Filter-Binding-BoundFilter.html#method_rowFilter">rowFilter()</a>
     <span>
                                 &nbsp;: self|null    </span>
@@ -205,7 +211,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Parquet-Filter-Binding-BoundFilter.html#method_rowLeaf">rowLeaf()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-Parquet-Filter-Binding-AbsentLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\AbsentLeaf">AbsentLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-ResolvedLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\ResolvedLeaf">ResolvedLeaf</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Flow-Parquet-Filter-Binding-AbsentLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\AbsentLeaf">AbsentLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-ExactLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\ExactLeaf">ExactLeaf</abbr></a>    </span>
 </dt>
 
     </dl>
@@ -236,7 +242,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Filter/Binding/BoundFilter.php"><a href="files/src-lib-parquet-src-flow-parquet-filter-binding-boundfilter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Filter/Binding/BoundFilter.php">BoundFilter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">190</span>
 
     </aside>
 
@@ -274,7 +280,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Filter/Binding/BoundFilter.php"><a href="files/src-lib-parquet-src-flow-parquet-filter-binding-boundfilter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Filter/Binding/BoundFilter.php">BoundFilter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">152</span>
 
     </aside>
 
@@ -337,7 +343,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Filter/Binding/BoundFilter.php"><a href="files/src-lib-parquet-src-flow-parquet-filter-binding-boundfilter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Filter/Binding/BoundFilter.php">BoundFilter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">170</span>
 
     </aside>
 
@@ -376,7 +382,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Filter/Binding/BoundFilter.php"><a href="files/src-lib-parquet-src-flow-parquet-filter-binding-boundfilter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Filter/Binding/BoundFilter.php">BoundFilter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">185</span>
 
     </aside>
 
@@ -414,14 +420,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Filter/Binding/BoundFilter.php"><a href="files/src-lib-parquet-src-flow-parquet-filter-binding-boundfilter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Filter/Binding/BoundFilter.php">BoundFilter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">106</span>
+    <span class="phpdocumentor-element-found-in__line">195</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">leaf</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Filter-Comparison.html"><abbr title="\Flow\Parquet\Filter\Comparison">Comparison</abbr></a>|<a href="classes/Flow-Parquet-Filter-In.html"><abbr title="\Flow\Parquet\Filter\In">In</abbr></a>|<a href="classes/Flow-Parquet-Filter-IsNull.html"><abbr title="\Flow\Parquet\Filter\IsNull">IsNull</abbr></a>|<a href="classes/Flow-Parquet-Filter-StartsWith.html"><abbr title="\Flow\Parquet\Filter\StartsWith">StartsWith</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$node</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Parquet-Filter-Binding-AbsentLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\AbsentLeaf">AbsentLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-RefusedLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\RefusedLeaf">RefusedLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-ResolvedLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\ResolvedLeaf">ResolvedLeaf</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">leaf</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Filter-Comparison.html"><abbr title="\Flow\Parquet\Filter\Comparison">Comparison</abbr></a>|<a href="classes/Flow-Parquet-Filter-In.html"><abbr title="\Flow\Parquet\Filter\In">In</abbr></a>|<a href="classes/Flow-Parquet-Filter-IsNull.html"><abbr title="\Flow\Parquet\Filter\IsNull">IsNull</abbr></a>|<a href="classes/Flow-Parquet-Filter-StartsWith.html"><abbr title="\Flow\Parquet\Filter\StartsWith">StartsWith</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$node</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Parquet-Filter-Binding-AbsentLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\AbsentLeaf">AbsentLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-RefusedLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\RefusedLeaf">RefusedLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-ExactLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\ExactLeaf">ExactLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-InexactLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\InexactLeaf">InexactLeaf</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -444,7 +450,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Parquet-Filter-Binding-AbsentLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\AbsentLeaf">AbsentLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-RefusedLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\RefusedLeaf">RefusedLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-ResolvedLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\ResolvedLeaf">ResolvedLeaf</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Parquet-Filter-Binding-AbsentLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\AbsentLeaf">AbsentLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-RefusedLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\RefusedLeaf">RefusedLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-ExactLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\ExactLeaf">ExactLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-InexactLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\InexactLeaf">InexactLeaf</abbr></a></span>
             </section>
 
 </article>
@@ -462,7 +468,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Filter/Binding/BoundFilter.php"><a href="files/src-lib-parquet-src-flow-parquet-filter-binding-boundfilter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Filter/Binding/BoundFilter.php">BoundFilter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">205</span>
 
     </aside>
 
@@ -501,7 +507,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Filter/Binding/BoundFilter.php"><a href="files/src-lib-parquet-src-flow-parquet-filter-binding-boundfilter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Filter/Binding/BoundFilter.php">BoundFilter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">124</span>
+    <span class="phpdocumentor-element-found-in__line">213</span>
 
     </aside>
 
@@ -530,6 +536,68 @@
         class="phpdocumentor-element
             -method
             -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_resolve">
+        resolve()
+        <a href="classes/Flow-Parquet-Filter-Binding-BoundFilter.html#method_resolve" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Filter/Binding/BoundFilter.php"><a href="files/src-lib-parquet-src-flow-parquet-filter-binding-boundfilter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Filter/Binding/BoundFilter.php">BoundFilter.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">69</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">resolve</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Filter-Comparison.html"><abbr title="\Flow\Parquet\Filter\Comparison">Comparison</abbr></a>|<a href="classes/Flow-Parquet-Filter-In.html"><abbr title="\Flow\Parquet\Filter\In">In</abbr></a>|<a href="classes/Flow-Parquet-Filter-IsNull.html"><abbr title="\Flow\Parquet\Filter\IsNull">IsNull</abbr></a>|<a href="classes/Flow-Parquet-Filter-StartsWith.html"><abbr title="\Flow\Parquet\Filter\StartsWith">StartsWith</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$leaf</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Schema.html"><abbr title="\Flow\Parquet\ParquetFile\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Data-DataConverter.html"><abbr title="\Flow\Parquet\ParquetFile\Data\DataConverter">DataConverter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$converters</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Parquet-Filter-Binding-AbsentLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\AbsentLeaf">AbsentLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-RefusedLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\RefusedLeaf">RefusedLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-ExactLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\ExactLeaf">ExactLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-InexactLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\InexactLeaf">InexactLeaf</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$leaf</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-Filter-Comparison.html"><abbr title="\Flow\Parquet\Filter\Comparison">Comparison</abbr></a>|<a href="classes/Flow-Parquet-Filter-In.html"><abbr title="\Flow\Parquet\Filter\In">In</abbr></a>|<a href="classes/Flow-Parquet-Filter-IsNull.html"><abbr title="\Flow\Parquet\Filter\IsNull">IsNull</abbr></a>|<a href="classes/Flow-Parquet-Filter-StartsWith.html"><abbr title="\Flow\Parquet\Filter\StartsWith">StartsWith</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$schema</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Schema.html"><abbr title="\Flow\Parquet\ParquetFile\Schema">Schema</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$converters</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-ParquetFile-Data-DataConverter.html"><abbr title="\Flow\Parquet\ParquetFile\Data\DataConverter">DataConverter</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Parquet-Filter-Binding-AbsentLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\AbsentLeaf">AbsentLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-RefusedLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\RefusedLeaf">RefusedLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-ExactLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\ExactLeaf">ExactLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-InexactLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\InexactLeaf">InexactLeaf</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_rowFilter">
@@ -540,7 +608,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Filter/Binding/BoundFilter.php"><a href="files/src-lib-parquet-src-flow-parquet-filter-binding-boundfilter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Filter/Binding/BoundFilter.php">BoundFilter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">221</span>
 
     </aside>
 
@@ -579,14 +647,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Filter/Binding/BoundFilter.php"><a href="files/src-lib-parquet-src-flow-parquet-filter-binding-boundfilter.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Filter/Binding/BoundFilter.php">BoundFilter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">226</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">rowLeaf</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Filter-Comparison.html"><abbr title="\Flow\Parquet\Filter\Comparison">Comparison</abbr></a>|<a href="classes/Flow-Parquet-Filter-In.html"><abbr title="\Flow\Parquet\Filter\In">In</abbr></a>|<a href="classes/Flow-Parquet-Filter-IsNull.html"><abbr title="\Flow\Parquet\Filter\IsNull">IsNull</abbr></a>|<a href="classes/Flow-Parquet-Filter-StartsWith.html"><abbr title="\Flow\Parquet\Filter\StartsWith">StartsWith</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$node</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Parquet-Filter-Binding-AbsentLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\AbsentLeaf">AbsentLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-ResolvedLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\ResolvedLeaf">ResolvedLeaf</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">rowLeaf</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Filter-Comparison.html"><abbr title="\Flow\Parquet\Filter\Comparison">Comparison</abbr></a>|<a href="classes/Flow-Parquet-Filter-In.html"><abbr title="\Flow\Parquet\Filter\In">In</abbr></a>|<a href="classes/Flow-Parquet-Filter-IsNull.html"><abbr title="\Flow\Parquet\Filter\IsNull">IsNull</abbr></a>|<a href="classes/Flow-Parquet-Filter-StartsWith.html"><abbr title="\Flow\Parquet\Filter\StartsWith">StartsWith</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$node</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Parquet-Filter-Binding-AbsentLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\AbsentLeaf">AbsentLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-ExactLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\ExactLeaf">ExactLeaf</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -609,7 +677,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Parquet-Filter-Binding-AbsentLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\AbsentLeaf">AbsentLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-ResolvedLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\ResolvedLeaf">ResolvedLeaf</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Parquet-Filter-Binding-AbsentLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\AbsentLeaf">AbsentLeaf</abbr></a>|<a href="classes/Flow-Parquet-Filter-Binding-ExactLeaf.html"><abbr title="\Flow\Parquet\Filter\Binding\ExactLeaf">ExactLeaf</abbr></a></span>
             </section>
 
 </article>
@@ -642,6 +710,7 @@
                                             <li class=""><a href="classes/Flow-Parquet-Filter-Binding-BoundFilter.html#method_leaf">leaf()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Filter-Binding-BoundFilter.html#method_leaves">leaves()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Filter-Binding-BoundFilter.html#method_residual">residual()</a></li>
+                                            <li class=""><a href="classes/Flow-Parquet-Filter-Binding-BoundFilter.html#method_resolve">resolve()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Filter-Binding-BoundFilter.html#method_rowFilter">rowFilter()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Filter-Binding-BoundFilter.html#method_rowLeaf">rowLeaf()</a></li>
                                     </ul>

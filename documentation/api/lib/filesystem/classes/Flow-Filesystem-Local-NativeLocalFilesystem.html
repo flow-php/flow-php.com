@@ -125,7 +125,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -133,6 +133,21 @@
 
 
 
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">type</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>NativeLocalConfiguration = array{protocol: string}</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
     
     
@@ -171,6 +186,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_fromArray">fromArray()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_getSystemTmpDir">getSystemTmpDir()</a>
     <span>
                                 &nbsp;: <a href="classes/Flow-Filesystem-Path.html"><abbr title="\Flow\Filesystem\Path">Path</abbr></a>    </span>
@@ -192,6 +213,12 @@
     <a class="" href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_mv">mv()</a>
     <span>
                                 &nbsp;: bool    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_normalize">normalize()</a>
+    <span>
+                                &nbsp;: <abbr title="\Flow\Filesystem\Local\NativeLocalConfiguration">NativeLocalConfiguration</abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -254,7 +281,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -298,7 +325,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -336,6 +363,56 @@
         class="phpdocumentor-element
             -method
             -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fromArray">
+        fromArray()
+        <a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_fromArray" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">55</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$configuration</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$configuration</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>untrusted: decoded from another process, validated here</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_getSystemTmpDir">
@@ -346,7 +423,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
@@ -384,7 +461,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">79</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
@@ -439,7 +516,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">126</span>
 
     </aside>
 
@@ -477,7 +554,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">107</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -524,6 +601,44 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_normalize">
+        normalize()
+        <a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_normalize" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">93</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Filesystem\Local\NativeLocalConfiguration">NativeLocalConfiguration</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\Filesystem\Local\NativeLocalConfiguration">NativeLocalConfiguration</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_readFrom">
         readFrom()
         <a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_readFrom" class="headerlink"><i class="fas fa-link"></i></a>
@@ -532,7 +647,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">157</span>
 
     </aside>
 
@@ -580,7 +695,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">149</span>
+    <span class="phpdocumentor-element-found-in__line">170</span>
 
     </aside>
 
@@ -628,7 +743,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">184</span>
+    <span class="phpdocumentor-element-found-in__line">205</span>
 
     </aside>
 
@@ -676,7 +791,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">203</span>
+    <span class="phpdocumentor-element-found-in__line">224</span>
 
     </aside>
 
@@ -725,7 +840,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-local-nativelocalfilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Local/NativeLocalFilesystem.php">NativeLocalFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">208</span>
+    <span class="phpdocumentor-element-found-in__line">229</span>
 
     </aside>
 
@@ -784,10 +899,12 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_appendTo">appendTo()</a></li>
+                                            <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_fromArray">fromArray()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_getSystemTmpDir">getSystemTmpDir()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_list">list()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_mount">mount()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_mv">mv()</a></li>
+                                            <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_normalize">normalize()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_readFrom">readFrom()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_rm">rm()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Local-NativeLocalFilesystem.html#method_status">status()</a></li>

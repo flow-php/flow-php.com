@@ -106,22 +106,7 @@
 
         
 
-    <h4 id="toc-interfaces">
-        Interfaces
-        <a href="namespaces/flow-etl-adapter-xml.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
 
-    </h4>
-    <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Adapter-XML-XMLWriter.html"><abbr title="\Flow\ETL\Adapter\XML\XMLWriter">XMLWriter</abbr></a></dt>    </dl>
-
-    <h4 id="toc-classes">
-        Classes
-        <a href="namespaces/flow-etl-adapter-xml.html#toc-classes" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-XML-RootlessDocument.html"><abbr title="\Flow\ETL\Adapter\XML\RootlessDocument">RootlessDocument</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-XML-XMLEncoder.html"><abbr title="\Flow\ETL\Adapter\XML\XMLEncoder">XMLEncoder</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-XML-XMLFileBatches.html"><abbr title="\Flow\ETL\Adapter\XML\XMLFileBatches">XMLFileBatches</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-XML-XMLNodeBatches.html"><abbr title="\Flow\ETL\Adapter\XML\XMLNodeBatches">XMLNodeBatches</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-XML-XMLNodeCursor.html"><abbr title="\Flow\ETL\Adapter\XML\XMLNodeCursor">XMLNodeCursor</abbr></a></dt><dd>The walk to every element on a path: the reader stops on each with libxml&#039;s internal errors on, so whatever reads the
-node there reports into failure(), and moves past the node&#039;s subtree when resumed.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-XML-XMLNodes.html"><abbr title="\Flow\ETL\Adapter\XML\XMLNodes">XMLNodes</abbr></a></dt><dd>libxml builds each node in C, so no element, attribute or text of the document passes through PHP.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-XML-XMLOpenSink.html"><abbr title="\Flow\ETL\Adapter\XML\XMLOpenSink">XMLOpenSink</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html"><abbr title="\Flow\ETL\Adapter\XML\XMLParserExtractor">XMLParserExtractor</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-XML-XMLValueNodes.html"><abbr title="\Flow\ETL\Adapter\XML\XMLValueNodes">XMLValueNodes</abbr></a></dt>    </dl>
 
     <h4 id="namespaces">
         Namespaces
@@ -129,9 +114,7 @@ node there reports into failure(), and moves past the node&#039;s subtree when r
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -namespace"><a href="namespaces/flow-etl-adapter-xml-abstraction.html"><abbr title="\Flow\ETL\Adapter\XML\Abstraction">Abstraction</abbr></a></dt>
-                    <dt class="phpdocumentor-table-of-contents__entry -namespace"><a href="namespaces/flow-etl-adapter-xml-loader.html"><abbr title="\Flow\ETL\Adapter\XML\Loader">Loader</abbr></a></dt>
-                    <dt class="phpdocumentor-table-of-contents__entry -namespace"><a href="namespaces/flow-etl-adapter-xml-xmlwriter.html"><abbr title="\Flow\ETL\Adapter\XML\XMLWriter">XMLWriter</abbr></a></dt>
+                    <dt class="phpdocumentor-table-of-contents__entry -namespace"><a href="namespaces/flow-etl-adapter-xml-io.html"><abbr title="\Flow\ETL\Adapter\XML\IO">IO</abbr></a></dt>
             </dl>
 
 
@@ -158,7 +141,7 @@ node there reports into failure(), and moves past the node&#039;s subtree when r
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/functions.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-functions.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -167,7 +150,7 @@ node there reports into failure(), and moves past the node&#039;s subtree when r
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">from_xml</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$xml_node_path</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">''</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html"><abbr title="\Flow\ETL\Adapter\XML\XMLParserExtractor">XMLParserExtractor</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">from_xml</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$xml_node_path</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">''</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-XML-IO-Extractor-XMLParserExtractor.html"><abbr title="\Flow\ETL\Adapter\XML\IO\Extractor\XMLParserExtractor">XMLParserExtractor</abbr></a></span></code>
 
         <section class="phpdocumentor-description"><root>
   <elements>
@@ -212,7 +195,7 @@ of node names separated with slash.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-XML-XMLParserExtractor.html"><abbr title="\Flow\ETL\Adapter\XML\XMLParserExtractor">XMLParserExtractor</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-XML-IO-Extractor-XMLParserExtractor.html"><abbr title="\Flow\ETL\Adapter\XML\IO\Extractor\XMLParserExtractor">XMLParserExtractor</abbr></a></span>
             </section>
 
 </article>
@@ -225,7 +208,7 @@ of node names separated with slash.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/functions.php"><a href="files/src-adapter-etl-adapter-xml-src-flow-etl-adapter-xml-functions.html"><abbr title="src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -233,7 +216,7 @@ of node names separated with slash.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">to_xml</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$root_element_name</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'rows'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row_element_name</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'row'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attribute_prefix</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'_'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date_time_format</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'Y-m-d\TH:i:s.uP'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-XML-XMLWriter.html"><abbr title="\Flow\ETL\Adapter\XML\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$xml_writer</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Adapter-XML-XMLWriter-StringXMLWriter.html"><abbr title="\Flow\ETL\Adapter\XML\XMLWriter\StringXMLWriter">StringXMLWriter</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html"><abbr title="\Flow\ETL\Adapter\XML\Loader\XMLLoader">XMLLoader</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">to_xml</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$root_element_name</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'rows'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row_element_name</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'row'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attribute_prefix</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'_'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date_time_format</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'Y-m-d\TH:i:s.uP'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-XML-IO-Loader-XMLWriter.html"><abbr title="\Flow\ETL\Adapter\XML\IO\Loader\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$xml_writer</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Adapter-XML-IO-Loader-XMLWriter-StringXMLWriter.html"><abbr title="\Flow\ETL\Adapter\XML\IO\Loader\XMLWriter\StringXMLWriter">StringXMLWriter</abbr></a>()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Local\NativeLocalFilesystem">NativeLocalFilesystem</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-XML-IO-Loader-XMLLoader.html"><abbr title="\Flow\ETL\Adapter\XML\IO\Loader\XMLLoader">XMLLoader</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -291,8 +274,8 @@ of node names separated with slash.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$xml_writer</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-XML-XMLWriter.html"><abbr title="\Flow\ETL\Adapter\XML\XMLWriter">XMLWriter</abbr></a></span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-ETL-Adapter-XML-XMLWriter-StringXMLWriter.html"><abbr title="\Flow\ETL\Adapter\XML\XMLWriter\StringXMLWriter">StringXMLWriter</abbr></a>()</span>            </dt>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-XML-IO-Loader-XMLWriter.html"><abbr title="\Flow\ETL\Adapter\XML\IO\Loader\XMLWriter">XMLWriter</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-ETL-Adapter-XML-IO-Loader-XMLWriter-StringXMLWriter.html"><abbr title="\Flow\ETL\Adapter\XML\IO\Loader\XMLWriter\StringXMLWriter">StringXMLWriter</abbr></a>()</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -309,7 +292,7 @@ of node names separated with slash.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-XML-Loader-XMLLoader.html"><abbr title="\Flow\ETL\Adapter\XML\Loader\XMLLoader">XMLLoader</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-XML-IO-Loader-XMLLoader.html"><abbr title="\Flow\ETL\Adapter\XML\IO\Loader\XMLLoader">XMLLoader</abbr></a></span>
             </section>
 
 </article>
@@ -327,9 +310,7 @@ of node names separated with slash.</p>
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="namespaces/flow-etl-adapter-xml.html#toc-classes">Classes</a></li>
-                                                                <li><a href="namespaces/flow-etl-adapter-xml.html#toc-interfaces">Interfaces</a></li>
-                                                                                    <li><a href="namespaces/flow-etl-adapter-xml.html#toc-functions">Functions</a></li>
+                                                                                                        <li><a href="namespaces/flow-etl-adapter-xml.html#toc-functions">Functions</a></li>
                                                                                                 </ul>
             </li>
 

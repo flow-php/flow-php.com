@@ -1,6 +1,31 @@
 Search.appendIndex(
     [
                 {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\ConfiguredSFTPClient",
+            "name": "ConfiguredSFTPClient",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-ConfiguredSFTPClient.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\ConfiguredSFTPClient\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-ConfiguredSFTPClient.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\ConfiguredSFTPClient\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-ConfiguredSFTPClient.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\ConfiguredSFTPClient\u003A\u003Aclient\u0028\u0029",
+            "name": "client",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-ConfiguredSFTPClient.html#method_client"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\ConfiguredSFTPClient\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-ConfiguredSFTPClient.html#method_normalize"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\DirectoryEntries",
             "name": "DirectoryEntries",
             "summary": "",
@@ -86,6 +111,26 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-filesystem-bridge-sftp-dsl.html#function_sftp_filesystem_options"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\LiveSFTPClient",
+            "name": "LiveSFTPClient",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-LiveSFTPClient.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\LiveSFTPClient\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-LiveSFTPClient.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\LiveSFTPClient\u003A\u003Aclient\u0028\u0029",
+            "name": "client",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-LiveSFTPClient.html#method_client"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\LiveSFTPClient\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-LiveSFTPClient.html#method_normalize"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\Options",
             "name": "Options",
             "summary": "",
@@ -110,6 +155,16 @@ Search.appendIndex(
             "name": "readChunkSize",
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-SFTP-Options.html#method_readChunkSize"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\Options\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-Options.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\Options\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-Options.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\Options\u003A\u003AtmpDir\u0028\u0029",
             "name": "tmpDir",
@@ -145,6 +200,36 @@ Search.appendIndex(
             "name": "DEFAULT_READ_CHUNK_SIZE",
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-SFTP-Options.html#constant_DEFAULT_READ_CHUNK_SIZE"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\SFTPClientSource",
+            "name": "SFTPClientSource",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-SFTPClientSource.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\SFTPClientSource\u003A\u003Aclient\u0028\u0029",
+            "name": "client",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-SFTPClientSource.html#method_client"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\SFTPClientSource\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-SFTPClientSource.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\SFTPCredential",
+            "name": "SFTPCredential",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-SFTPCredential.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\SFTPCredential\u003A\u003Alogin\u0028\u0029",
+            "name": "login",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-SFTPCredential.html#method_login"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\SFTPCredential\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-SFTPCredential.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\SFTPDestinationStream\\SFTPBlockLifecycle",
             "name": "SFTPBlockLifecycle",
@@ -256,10 +341,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-SFTP-SFTPFilesystem.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\SFTPFilesystem\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-SFTPFilesystem.html#method_fromArray"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\SFTPFilesystem\u003A\u003AappendTo\u0028\u0029",
             "name": "appendTo",
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-SFTP-SFTPFilesystem.html#method_appendTo"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\SFTPFilesystem\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-SFTPFilesystem.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\SFTPFilesystem\u003A\u003AgetSystemTmpDir\u0028\u0029",
             "name": "getSystemTmpDir",
@@ -305,6 +400,46 @@ Search.appendIndex(
             "name": "writeTo",
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-SFTP-SFTPFilesystem.html#method_writeTo"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\SFTPPassword",
+            "name": "SFTPPassword",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-SFTPPassword.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\SFTPPassword\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-SFTPPassword.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\SFTPPassword\u003A\u003Alogin\u0028\u0029",
+            "name": "login",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-SFTPPassword.html#method_login"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\SFTPPassword\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-SFTPPassword.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\SFTPPrivateKey",
+            "name": "SFTPPrivateKey",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-SFTPPrivateKey.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\SFTPPrivateKey\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-SFTPPrivateKey.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\SFTPPrivateKey\u003A\u003Alogin\u0028\u0029",
+            "name": "login",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-SFTPPrivateKey.html#method_login"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\SFTPPrivateKey\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-SFTP-SFTPPrivateKey.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\SFTP\\SFTPSourceStream",
             "name": "SFTPSourceStream",

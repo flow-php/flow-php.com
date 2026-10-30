@@ -156,51 +156,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-CLI-Command-SchemaFormatCommand.html#method_execute"
         },                {
-            "fqsen": "\\Flow\\CLI\\Command\\Traits\\ConfigOptions",
-            "name": "ConfigOptions",
-            "summary": "",
-            "url": "classes/Flow-CLI-Command-Traits-ConfigOptions.html"
-        },                {
-            "fqsen": "\\Flow\\CLI\\Command\\Traits\\CSVOptions",
-            "name": "CSVOptions",
-            "summary": "",
-            "url": "classes/Flow-CLI-Command-Traits-CSVOptions.html"
-        },                {
-            "fqsen": "\\Flow\\CLI\\Command\\Traits\\DBOptions",
-            "name": "DBOptions",
-            "summary": "",
-            "url": "classes/Flow-CLI-Command-Traits-DBOptions.html"
-        },                {
-            "fqsen": "\\Flow\\CLI\\Command\\Traits\\ExcelOptions",
-            "name": "ExcelOptions",
-            "summary": "",
-            "url": "classes/Flow-CLI-Command-Traits-ExcelOptions.html"
-        },                {
-            "fqsen": "\\Flow\\CLI\\Command\\Traits\\JSONOptions",
-            "name": "JSONOptions",
-            "summary": "",
-            "url": "classes/Flow-CLI-Command-Traits-JSONOptions.html"
-        },                {
-            "fqsen": "\\Flow\\CLI\\Command\\Traits\\ParquetOptions",
-            "name": "ParquetOptions",
-            "summary": "",
-            "url": "classes/Flow-CLI-Command-Traits-ParquetOptions.html"
-        },                {
-            "fqsen": "\\Flow\\CLI\\Command\\Traits\\SchemaInferenceOptions",
-            "name": "SchemaInferenceOptions",
-            "summary": "",
-            "url": "classes/Flow-CLI-Command-Traits-SchemaInferenceOptions.html"
-        },                {
-            "fqsen": "\\Flow\\CLI\\Command\\Traits\\StatisticsOptions",
-            "name": "StatisticsOptions",
-            "summary": "",
-            "url": "classes/Flow-CLI-Command-Traits-StatisticsOptions.html"
-        },                {
-            "fqsen": "\\Flow\\CLI\\Command\\Traits\\XMLOptions",
-            "name": "XMLOptions",
-            "summary": "",
-            "url": "classes/Flow-CLI-Command-Traits-XMLOptions.html"
-        },                {
             "fqsen": "\\Flow\\CLI\\option_bool\u0028\u0029",
             "name": "option_bool",
             "summary": "",
@@ -466,6 +421,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-CLI-Loader-ProgressBarLoader.html#method_load"
         },                {
+            "fqsen": "\\Flow\\CLI\\Loader\\ProgressBarLoader\u003A\u003AfromDescription\u0028\u0029",
+            "name": "fromDescription",
+            "summary": "",
+            "url": "classes/Flow-CLI-Loader-ProgressBarLoader.html#method_fromDescription"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Loader\\ProgressBarLoader\u003A\u003Adescribe\u0028\u0029",
+            "name": "describe",
+            "summary": "",
+            "url": "classes/Flow-CLI-Loader-ProgressBarLoader.html#method_describe"
+        },                {
             "fqsen": "\\Flow\\CLI\\Options\\ConfigOption",
             "name": "ConfigOption",
             "summary": "",
@@ -476,10 +441,60 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-CLI-Options-ConfigOption.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\CLI\\Options\\ConfigOption\u003A\u003Aconfigure\u0028\u0029",
+            "name": "configure",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-ConfigOption.html#method_configure"
+        },                {
             "fqsen": "\\Flow\\CLI\\Options\\ConfigOption\u003A\u003Aget\u0028\u0029",
             "name": "get",
             "summary": "",
             "url": "classes/Flow-CLI-Options-ConfigOption.html#method_get"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\CSVInputOptions",
+            "name": "CSVInputOptions",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-CSVInputOptions.html"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\CSVInputOptions\u003A\u003Aconfigure\u0028\u0029",
+            "name": "configure",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-CSVInputOptions.html#method_configure"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\CSVOutputOptions",
+            "name": "CSVOutputOptions",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-CSVOutputOptions.html"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\CSVOutputOptions\u003A\u003Aconfigure\u0028\u0029",
+            "name": "configure",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-CSVOutputOptions.html#method_configure"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\DbConnectionOptions",
+            "name": "DbConnectionOptions",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-DbConnectionOptions.html"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\DbConnectionOptions\u003A\u003Aconfigure\u0028\u0029",
+            "name": "configure",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-DbConnectionOptions.html#method_configure"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\DbConnectionOptions\u003A\u003AHELP",
+            "name": "HELP",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-DbConnectionOptions.html#constant_HELP"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\ExcelInputOptions",
+            "name": "ExcelInputOptions",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-ExcelInputOptions.html"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\ExcelInputOptions\u003A\u003Aconfigure\u0028\u0029",
+            "name": "configure",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-ExcelInputOptions.html#method_configure"
         },                {
             "fqsen": "\\Flow\\CLI\\Options\\FileFormat",
             "name": "FileFormat",
@@ -581,6 +596,61 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-CLI-Options-IncludeFileOption.html#method_include"
         },                {
+            "fqsen": "\\Flow\\CLI\\Options\\JSONInputOptions",
+            "name": "JSONInputOptions",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-JSONInputOptions.html"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\JSONInputOptions\u003A\u003Aconfigure\u0028\u0029",
+            "name": "configure",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-JSONInputOptions.html#method_configure"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\JSONOutputOptions",
+            "name": "JSONOutputOptions",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-JSONOutputOptions.html"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\JSONOutputOptions\u003A\u003Aconfigure\u0028\u0029",
+            "name": "configure",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-JSONOutputOptions.html#method_configure"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\ParquetInputOptions",
+            "name": "ParquetInputOptions",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-ParquetInputOptions.html"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\ParquetInputOptions\u003A\u003Aconfigure\u0028\u0029",
+            "name": "configure",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-ParquetInputOptions.html#method_configure"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\SchemaInferenceOptions",
+            "name": "SchemaInferenceOptions",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-SchemaInferenceOptions.html"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\SchemaInferenceOptions\u003A\u003Aconfigure\u0028\u0029",
+            "name": "configure",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-SchemaInferenceOptions.html#method_configure"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\SchemaInferenceOptions\u003A\u003Aapply\u0028\u0029",
+            "name": "apply",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-SchemaInferenceOptions.html#method_apply"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\StatisticsOptions",
+            "name": "StatisticsOptions",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-StatisticsOptions.html"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\StatisticsOptions\u003A\u003Aconfigure\u0028\u0029",
+            "name": "configure",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-StatisticsOptions.html#method_configure"
+        },                {
             "fqsen": "\\Flow\\CLI\\Options\\TypedOption",
             "name": "TypedOption",
             "summary": "",
@@ -631,6 +701,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-CLI-Options-TypedOption.html#method_asStringNullable"
         },                {
+            "fqsen": "\\Flow\\CLI\\Options\\XMLInputOptions",
+            "name": "XMLInputOptions",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-XMLInputOptions.html"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\XMLInputOptions\u003A\u003Aconfigure\u0028\u0029",
+            "name": "configure",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-XMLInputOptions.html#method_configure"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\XMLOutputOptions",
+            "name": "XMLOutputOptions",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-XMLOutputOptions.html"
+        },                {
+            "fqsen": "\\Flow\\CLI\\Options\\XMLOutputOptions\u003A\u003Aconfigure\u0028\u0029",
+            "name": "configure",
+            "summary": "",
+            "url": "classes/Flow-CLI-Options-XMLOutputOptions.html#method_configure"
+        },                {
             "fqsen": "\\Flow\\CLI\\PipelineFactory",
             "name": "PipelineFactory",
             "summary": "",
@@ -675,11 +765,6 @@ Search.appendIndex(
             "name": "Command",
             "summary": "",
             "url": "namespaces/flow-cli-command.html"
-        },                {
-            "fqsen": "\\Flow\\CLI\\Command\\Traits",
-            "name": "Traits",
-            "summary": "",
-            "url": "namespaces/flow-cli-command-traits.html"
         },                {
             "fqsen": "\\Flow\\CLI",
             "name": "CLI",

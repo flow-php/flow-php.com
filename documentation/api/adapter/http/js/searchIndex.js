@@ -1,21 +1,6 @@
 Search.appendIndex(
     [
                 {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\ContentTypeDetector",
-            "name": "ContentTypeDetector",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-ContentTypeDetector.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\ContentTypeDetector\u003A\u003AdetectFromResponse\u0028\u0029",
-            "name": "detectFromResponse",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-ContentTypeDetector.html#method_detectFromResponse"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\ContentTypeDetector\u003A\u003AdetectFromHeader\u0028\u0029",
-            "name": "detectFromHeader",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-ContentTypeDetector.html#method_detectFromHeader"
-        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Http\\from_dynamic_http_requests\u0028\u0029",
             "name": "from_dynamic_http_requests",
             "summary": "",
@@ -116,700 +101,740 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-adapter-http.html#function_http_stop_when_max_results"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\DynamicExtractor\\NextRequestFactory",
-            "name": "NextRequestFactory",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\http_stop_when_any_of\u0028\u0029",
+            "name": "http_stop_when_any_of",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-DynamicExtractor-NextRequestFactory.html"
+            "url": "namespaces/flow-etl-adapter-http.html#function_http_stop_when_any_of"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\DynamicExtractor\\NextRequestFactory\u003A\u003Acreate\u0028\u0029",
-            "name": "create",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\http_stop_when_all_of\u0028\u0029",
+            "name": "http_stop_when_all_of",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-DynamicExtractor-NextRequestFactory.html#method_create"
+            "url": "namespaces/flow-etl-adapter-http.html#function_http_stop_when_all_of"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\HttpDecoder",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\ContentTypeDetector",
+            "name": "ContentTypeDetector",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-ContentTypeDetector.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\ContentTypeDetector\u003A\u003AdetectFromResponse\u0028\u0029",
+            "name": "detectFromResponse",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-ContentTypeDetector.html#method_detectFromResponse"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\ContentTypeDetector\u003A\u003AdetectFromHeader\u0028\u0029",
+            "name": "detectFromHeader",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-ContentTypeDetector.html#method_detectFromHeader"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\HttpDecoder",
             "name": "HttpDecoder",
             "summary": "A\u0020row\u0020carries\u0020the\u0020body\u0020as\u0020raw\u0020text,\u0020so\u0020response_body\u0020holds\u0020one\u0020type\u0020whatever\u0020the\u0020content\u0020type\u0020is.",
-            "url": "classes/Flow-ETL-Adapter-Http-HttpDecoder.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-HttpDecoder.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\HttpDecoder\u003A\u003Adecode\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\HttpDecoder\u003A\u003Adecode\u0028\u0029",
             "name": "decode",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-HttpDecoder.html#method_decode"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-HttpDecoder.html#method_decode"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\HttpDecoder\u003A\u003AstructuredBody\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\HttpDecoder\u003A\u003AstructuredBody\u0028\u0029",
             "name": "structuredBody",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-HttpDecoder.html#method_structuredBody"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-HttpDecoder.html#method_structuredBody"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\HttpExchange",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\HttpExchange",
             "name": "HttpExchange",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-HttpExchange.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-HttpExchange.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\HttpExchange\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\HttpExchange\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-HttpExchange.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-HttpExchange.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\HttpExchange\u003A\u003A\u0024request",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\HttpExchange\u003A\u003A\u0024request",
             "name": "request",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-HttpExchange.html#property_request"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-HttpExchange.html#property_request"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\HttpExchange\u003A\u003A\u0024response",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\HttpExchange\u003A\u003A\u0024response",
             "name": "response",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-HttpExchange.html#property_response"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-HttpExchange.html#property_response"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\DecodedResponse",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\NextRequestFactory",
+            "name": "NextRequestFactory",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-NextRequestFactory.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\NextRequestFactory\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-NextRequestFactory.html#method_create"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\DecodedResponse",
             "name": "DecodedResponse",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-DecodedResponse.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-DecodedResponse.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\DecodedResponse\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\DecodedResponse\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-DecodedResponse.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-DecodedResponse.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\DecodedResponse\u003A\u003Abody\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\DecodedResponse\u003A\u003Abody\u0028\u0029",
             "name": "body",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-DecodedResponse.html#method_body"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-DecodedResponse.html#method_body"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\DecodedResponse\u003A\u003Aheader\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\DecodedResponse\u003A\u003Aheader\u0028\u0029",
             "name": "header",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-DecodedResponse.html#method_header"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-DecodedResponse.html#method_header"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\DecodedResponse\u003A\u003Aresponse\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\DecodedResponse\u003A\u003Aresponse\u0028\u0029",
             "name": "response",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-DecodedResponse.html#method_response"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-DecodedResponse.html#method_response"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\DecodedResponse\u003A\u003AstatusCode\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\DecodedResponse\u003A\u003AstatusCode\u0028\u0029",
             "name": "statusCode",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-DecodedResponse.html#method_statusCode"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-DecodedResponse.html#method_statusCode"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\InjectInto",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\InjectInto",
             "name": "InjectInto",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-InjectInto.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-InjectInto.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\InjectInto\u003A\u003AQueryParam",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\InjectInto\u003A\u003AQueryParam",
             "name": "QueryParam",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-InjectInto.html#enumcase_QueryParam"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-InjectInto.html#enumcase_QueryParam"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\InjectInto\u003A\u003AHeader",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\InjectInto\u003A\u003AHeader",
             "name": "Header",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-InjectInto.html#enumcase_Header"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-InjectInto.html#enumcase_Header"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\InjectInto\u003A\u003ABodyPath",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\InjectInto\u003A\u003ABodyPath",
             "name": "BodyPath",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-InjectInto.html#enumcase_BodyPath"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-InjectInto.html#enumcase_BodyPath"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\InjectInto\u003A\u003AReplaceUri",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\InjectInto\u003A\u003AReplaceUri",
             "name": "ReplaceUri",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-InjectInto.html#enumcase_ReplaceUri"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-InjectInto.html#enumcase_ReplaceUri"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\LinkHeaderParser",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\LinkHeaderParser",
             "name": "LinkHeaderParser",
             "summary": "Minimal\u0020RFC\u00208288\u0020\u0060Link\u0060\u0020header\u0020parser.\u0020Malformed\u0020input\u0020yields\u0020no\u0020match\u0020\u0028never\u0020throws\u0029.",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-LinkHeaderParser.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-LinkHeaderParser.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\LinkHeaderParser\u003A\u003Anext\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\LinkHeaderParser\u003A\u003Anext\u0028\u0029",
             "name": "next",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-LinkHeaderParser.html#method_next"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-LinkHeaderParser.html#method_next"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\PageState",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\PageState",
             "name": "PageState",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-PageState.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-PageState.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\PageState\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\PageState\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-PageState.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-PageState.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\PageState\u003A\u003Aadvance\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\PageState\u003A\u003Aadvance\u0028\u0029",
             "name": "advance",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-PageState.html#method_advance"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-PageState.html#method_advance"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\PageState\u003A\u003A\u0024pagesFetched",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\PageState\u003A\u003A\u0024pagesFetched",
             "name": "pagesFetched",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-PageState.html#property_pagesFetched"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-PageState.html#property_pagesFetched"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\PageState\u003A\u003A\u0024resultsFetched",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\PageState\u003A\u003A\u0024resultsFetched",
             "name": "resultsFetched",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-PageState.html#property_resultsFetched"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-PageState.html#property_resultsFetched"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\PaginationStrategy",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\PaginationStrategy",
             "name": "PaginationStrategy",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-PaginationStrategy.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-PaginationStrategy.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\PaginationStrategy\u003A\u003AinitialRequest\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\PaginationStrategy\u003A\u003AinitialRequest\u0028\u0029",
             "name": "initialRequest",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-PaginationStrategy.html#method_initialRequest"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-PaginationStrategy.html#method_initialRequest"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\PaginationStrategy\u003A\u003AnextRequest\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\PaginationStrategy\u003A\u003AnextRequest\u0028\u0029",
             "name": "nextRequest",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-PaginationStrategy.html#method_nextRequest"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-PaginationStrategy.html#method_nextRequest"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Paginator",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Paginator",
             "name": "Paginator",
-            "summary": "Orchestrates\u0020a\u0020\u007B\u0040see\u0020PaginationStrategy\u007D\u003A\u0020stop\u0020conditions,\u0020\u0060\u003E\u003D400\u0060\u0020handling,\u0020identical\u002Drequest\u0020loop\u0020guard\u0020and\npage\u002Dstate\u0020advancement.\u0020Implement\u0020\u007B\u0040see\u0020PaginationStrategy\u007D\u0020to\u0020add\u0020a\u0020new\u0020pagination\u0020style\u003B\u0020drop\u0020to\n\u007B\u0040see\u0020\\Flow\\ETL\\Adapter\\Http\\DynamicExtractor\\NextRequestFactory\u007D\u0020for\u0020fully\u0020bespoke\u0020request\u0020derivation.",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Paginator.html"
+            "summary": "Orchestrates\u0020a\u0020\u007B\u0040see\u0020PaginationStrategy\u007D\u003A\u0020stop\u0020conditions,\u0020\u0060\u003E\u003D400\u0060\u0020handling,\u0020identical\u002Drequest\u0020loop\u0020guard\u0020and\npage\u002Dstate\u0020advancement.\u0020Implement\u0020\u007B\u0040see\u0020PaginationStrategy\u007D\u0020to\u0020add\u0020a\u0020new\u0020pagination\u0020style\u003B\u0020drop\u0020to\n\u007B\u0040see\u0020\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\NextRequestFactory\u007D\u0020for\u0020fully\u0020bespoke\u0020request\u0020derivation.",
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Paginator.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Paginator\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Paginator\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Paginator.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Paginator.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Paginator\u003A\u003AinitialRequest\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Paginator\u003A\u003AinitialRequest\u0028\u0029",
             "name": "initialRequest",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Paginator.html#method_initialRequest"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Paginator.html#method_initialRequest"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Paginator\u003A\u003AnextRequest\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Paginator\u003A\u003AnextRequest\u0028\u0029",
             "name": "nextRequest",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Paginator.html#method_nextRequest"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Paginator.html#method_nextRequest"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\RelativeUriResolver",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\RelativeUriResolver",
             "name": "RelativeUriResolver",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-RelativeUriResolver.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-RelativeUriResolver.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\RelativeUriResolver\u003A\u003Aresolve\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\RelativeUriResolver\u003A\u003Aresolve\u0028\u0029",
             "name": "resolve",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-RelativeUriResolver.html#method_resolve"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-RelativeUriResolver.html#method_resolve"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\RequestComparator",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\RequestComparator",
             "name": "RequestComparator",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-RequestComparator.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-RequestComparator.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\RequestComparator\u003A\u003Aequals\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\RequestComparator\u003A\u003Aequals\u0028\u0029",
             "name": "equals",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-RequestComparator.html#method_equals"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-RequestComparator.html#method_equals"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\RequestOption",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\RequestOption",
             "name": "RequestOption",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-RequestOption.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\RequestOption\u003A\u003AbodyPath\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\RequestOption\u003A\u003AbodyPath\u0028\u0029",
             "name": "bodyPath",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html#method_bodyPath"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-RequestOption.html#method_bodyPath"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\RequestOption\u003A\u003Aheader\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\RequestOption\u003A\u003Aheader\u0028\u0029",
             "name": "header",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html#method_header"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-RequestOption.html#method_header"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\RequestOption\u003A\u003AqueryParam\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\RequestOption\u003A\u003AqueryParam\u0028\u0029",
             "name": "queryParam",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html#method_queryParam"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-RequestOption.html#method_queryParam"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\RequestOption\u003A\u003AreplaceUri\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\RequestOption\u003A\u003AreplaceUri\u0028\u0029",
             "name": "replaceUri",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html#method_replaceUri"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-RequestOption.html#method_replaceUri"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\RequestOption\u003A\u003Aapply\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\RequestOption\u003A\u003Aapply\u0028\u0029",
             "name": "apply",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html#method_apply"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-RequestOption.html#method_apply"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\RequestOption\u003A\u003A\u0024into",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\RequestOption\u003A\u003A\u0024into",
             "name": "into",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html#property_into"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-RequestOption.html#property_into"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\RequestOption\u003A\u003A\u0024name",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\RequestOption\u003A\u003A\u0024name",
             "name": "name",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-RequestOption.html#property_name"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-RequestOption.html#property_name"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\ResultCounter",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\ResultCounter",
             "name": "ResultCounter",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-ResultCounter.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-ResultCounter.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\ResultCounter\u003A\u003AcountResults\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\ResultCounter\u003A\u003AcountResults\u0028\u0029",
             "name": "countResults",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-ResultCounter.html#method_countResults"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-ResultCounter.html#method_countResults"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\AllOf",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\AllOf",
             "name": "AllOf",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-AllOf.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-AllOf.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\AllOf\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\AllOf\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-AllOf.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-AllOf.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\AllOf\u003A\u003AshouldStop\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\AllOf\u003A\u003AshouldStop\u0028\u0029",
             "name": "shouldStop",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-AllOf.html#method_shouldStop"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-AllOf.html#method_shouldStop"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\AnyOf",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\AnyOf",
             "name": "AnyOf",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-AnyOf.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-AnyOf.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\AnyOf\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\AnyOf\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-AnyOf.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-AnyOf.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\AnyOf\u003A\u003AshouldStop\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\AnyOf\u003A\u003AshouldStop\u0028\u0029",
             "name": "shouldStop",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-AnyOf.html#method_shouldStop"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-AnyOf.html#method_shouldStop"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\EmptyPath",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\EmptyPath",
             "name": "EmptyPath",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-EmptyPath.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-EmptyPath.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\EmptyPath\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\EmptyPath\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-EmptyPath.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-EmptyPath.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\EmptyPath\u003A\u003AshouldStop\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\EmptyPath\u003A\u003AshouldStop\u0028\u0029",
             "name": "shouldStop",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-EmptyPath.html#method_shouldStop"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-EmptyPath.html#method_shouldStop"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\EmptyResponseBody",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\EmptyResponseBody",
             "name": "EmptyResponseBody",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-EmptyResponseBody.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-EmptyResponseBody.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\EmptyResponseBody\u003A\u003AshouldStop\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\EmptyResponseBody\u003A\u003AshouldStop\u0028\u0029",
             "name": "shouldStop",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-EmptyResponseBody.html#method_shouldStop"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-EmptyResponseBody.html#method_shouldStop"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\FlagFalse",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\FlagFalse",
             "name": "FlagFalse",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-FlagFalse.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-FlagFalse.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\FlagFalse\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\FlagFalse\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-FlagFalse.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-FlagFalse.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\FlagFalse\u003A\u003AshouldStop\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\FlagFalse\u003A\u003AshouldStop\u0028\u0029",
             "name": "shouldStop",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-FlagFalse.html#method_shouldStop"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-FlagFalse.html#method_shouldStop"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\FlagTrue",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\FlagTrue",
             "name": "FlagTrue",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-FlagTrue.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-FlagTrue.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\FlagTrue\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\FlagTrue\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-FlagTrue.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-FlagTrue.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\FlagTrue\u003A\u003AshouldStop\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\FlagTrue\u003A\u003AshouldStop\u0028\u0029",
             "name": "shouldStop",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-FlagTrue.html#method_shouldStop"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-FlagTrue.html#method_shouldStop"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\MaxPages",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\MaxPages",
             "name": "MaxPages",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-MaxPages.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-MaxPages.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\MaxPages\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\MaxPages\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-MaxPages.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-MaxPages.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\MaxPages\u003A\u003AshouldStop\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\MaxPages\u003A\u003AshouldStop\u0028\u0029",
             "name": "shouldStop",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-MaxPages.html#method_shouldStop"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-MaxPages.html#method_shouldStop"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\MaxResults",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\MaxResults",
             "name": "MaxResults",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-MaxResults.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-MaxResults.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\MaxResults\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\MaxResults\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-MaxResults.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-MaxResults.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\MaxResults\u003A\u003AshouldStop\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\MaxResults\u003A\u003AshouldStop\u0028\u0029",
             "name": "shouldStop",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-MaxResults.html#method_shouldStop"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-MaxResults.html#method_shouldStop"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\NeverStop",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\NeverStop",
             "name": "NeverStop",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-NeverStop.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-NeverStop.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\NeverStop\u003A\u003AshouldStop\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\NeverStop\u003A\u003AshouldStop\u0028\u0029",
             "name": "shouldStop",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-NeverStop.html#method_shouldStop"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-NeverStop.html#method_shouldStop"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\PathMissing",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\PathMissing",
             "name": "PathMissing",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-PathMissing.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-PathMissing.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\PathMissing\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\PathMissing\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-PathMissing.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-PathMissing.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\PathMissing\u003A\u003AshouldStop\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\PathMissing\u003A\u003AshouldStop\u0028\u0029",
             "name": "shouldStop",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-PathMissing.html#method_shouldStop"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-PathMissing.html#method_shouldStop"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\TotalReached",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\TotalReached",
             "name": "TotalReached",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-TotalReached.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-TotalReached.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\TotalReached\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\TotalReached\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-TotalReached.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-TotalReached.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\\TotalReached\u003A\u003AshouldStop\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\\TotalReached\u003A\u003AshouldStop\u0028\u0029",
             "name": "shouldStop",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen-TotalReached.html#method_shouldStop"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen-TotalReached.html#method_shouldStop"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen",
             "name": "StopWhen",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\u003A\u003AshouldStop\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen\u003A\u003AshouldStop\u0028\u0029",
             "name": "shouldStop",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html#method_shouldStop"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen.html#method_shouldStop"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\u003A\u003Aand\u0028\u0029",
-            "name": "and",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html#method_and"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen\u003A\u003Aor\u0028\u0029",
-            "name": "or",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-StopWhen.html#method_or"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\CursorFromBody",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\CursorFromBody",
             "name": "CursorFromBody",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-CursorFromBody.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-CursorFromBody.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\CursorFromBody\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\CursorFromBody\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-CursorFromBody.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-CursorFromBody.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\CursorFromBody\u003A\u003AinitialRequest\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\CursorFromBody\u003A\u003AinitialRequest\u0028\u0029",
             "name": "initialRequest",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-CursorFromBody.html#method_initialRequest"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-CursorFromBody.html#method_initialRequest"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\CursorFromBody\u003A\u003AnextRequest\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\CursorFromBody\u003A\u003AnextRequest\u0028\u0029",
             "name": "nextRequest",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-CursorFromBody.html#method_nextRequest"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-CursorFromBody.html#method_nextRequest"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\LastRecordCursor",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\LastRecordCursor",
             "name": "LastRecordCursor",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-LastRecordCursor.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-LastRecordCursor.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\LastRecordCursor\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\LastRecordCursor\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-LastRecordCursor.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-LastRecordCursor.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\LastRecordCursor\u003A\u003AcountResults\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\LastRecordCursor\u003A\u003AcountResults\u0028\u0029",
             "name": "countResults",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-LastRecordCursor.html#method_countResults"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-LastRecordCursor.html#method_countResults"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\LastRecordCursor\u003A\u003AinitialRequest\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\LastRecordCursor\u003A\u003AinitialRequest\u0028\u0029",
             "name": "initialRequest",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-LastRecordCursor.html#method_initialRequest"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-LastRecordCursor.html#method_initialRequest"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\LastRecordCursor\u003A\u003AnextRequest\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\LastRecordCursor\u003A\u003AnextRequest\u0028\u0029",
             "name": "nextRequest",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-LastRecordCursor.html#method_nextRequest"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-LastRecordCursor.html#method_nextRequest"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\LinkHeader",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\LinkHeader",
             "name": "LinkHeader",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-LinkHeader.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-LinkHeader.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\LinkHeader\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\LinkHeader\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-LinkHeader.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-LinkHeader.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\LinkHeader\u003A\u003AinitialRequest\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\LinkHeader\u003A\u003AinitialRequest\u0028\u0029",
             "name": "initialRequest",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-LinkHeader.html#method_initialRequest"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-LinkHeader.html#method_initialRequest"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\LinkHeader\u003A\u003AnextRequest\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\LinkHeader\u003A\u003AnextRequest\u0028\u0029",
             "name": "nextRequest",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-LinkHeader.html#method_nextRequest"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-LinkHeader.html#method_nextRequest"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\NextUrlFromBody",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\NextUrlFromBody",
             "name": "NextUrlFromBody",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-NextUrlFromBody.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-NextUrlFromBody.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\NextUrlFromBody\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\NextUrlFromBody\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-NextUrlFromBody.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-NextUrlFromBody.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\NextUrlFromBody\u003A\u003AinitialRequest\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\NextUrlFromBody\u003A\u003AinitialRequest\u0028\u0029",
             "name": "initialRequest",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-NextUrlFromBody.html#method_initialRequest"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-NextUrlFromBody.html#method_initialRequest"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\NextUrlFromBody\u003A\u003AnextRequest\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\NextUrlFromBody\u003A\u003AnextRequest\u0028\u0029",
             "name": "nextRequest",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-NextUrlFromBody.html#method_nextRequest"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-NextUrlFromBody.html#method_nextRequest"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\OffsetLimit",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\OffsetLimit",
             "name": "OffsetLimit",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-OffsetLimit.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-OffsetLimit.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\OffsetLimit\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\OffsetLimit\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-OffsetLimit.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-OffsetLimit.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\OffsetLimit\u003A\u003AcountResults\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\OffsetLimit\u003A\u003AcountResults\u0028\u0029",
             "name": "countResults",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-OffsetLimit.html#method_countResults"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-OffsetLimit.html#method_countResults"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\OffsetLimit\u003A\u003AinitialRequest\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\OffsetLimit\u003A\u003AinitialRequest\u0028\u0029",
             "name": "initialRequest",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-OffsetLimit.html#method_initialRequest"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-OffsetLimit.html#method_initialRequest"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\OffsetLimit\u003A\u003AnextRequest\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\OffsetLimit\u003A\u003AnextRequest\u0028\u0029",
             "name": "nextRequest",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-OffsetLimit.html#method_nextRequest"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-OffsetLimit.html#method_nextRequest"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\PageNumber",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\PageNumber",
             "name": "PageNumber",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-PageNumber.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-PageNumber.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\PageNumber\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\PageNumber\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-PageNumber.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-PageNumber.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\PageNumber\u003A\u003AcountResults\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\PageNumber\u003A\u003AcountResults\u0028\u0029",
             "name": "countResults",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-PageNumber.html#method_countResults"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-PageNumber.html#method_countResults"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\PageNumber\u003A\u003AinitialRequest\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\PageNumber\u003A\u003AinitialRequest\u0028\u0029",
             "name": "initialRequest",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-PageNumber.html#method_initialRequest"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-PageNumber.html#method_initialRequest"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy\\PageNumber\u003A\u003AnextRequest\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy\\PageNumber\u003A\u003AnextRequest\u0028\u0029",
             "name": "nextRequest",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-Pagination-Strategy-PageNumber.html#method_nextRequest"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Strategy-PageNumber.html#method_nextRequest"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientDynamicExtractor",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientDynamicExtractor",
             "name": "PsrHttpClientDynamicExtractor",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientDynamicExtractor.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientDynamicExtractor.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientDynamicExtractor\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientDynamicExtractor\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientDynamicExtractor.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientDynamicExtractor.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientDynamicExtractor\u003A\u003Aextract\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientDynamicExtractor\u003A\u003Aextract\u0028\u0029",
             "name": "extract",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientDynamicExtractor.html#method_extract"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientDynamicExtractor.html#method_extract"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientDynamicExtractor\u003A\u003Aschema\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientDynamicExtractor\u003A\u003Aschema\u0028\u0029",
             "name": "schema",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientDynamicExtractor.html#method_schema"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientDynamicExtractor.html#method_schema"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientDynamicExtractor\u003A\u003AwithPostRequest\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientDynamicExtractor\u003A\u003AwithPostRequest\u0028\u0029",
             "name": "withPostRequest",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientDynamicExtractor.html#method_withPostRequest"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientDynamicExtractor.html#method_withPostRequest"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientDynamicExtractor\u003A\u003AwithPreRequest\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientDynamicExtractor\u003A\u003AwithPreRequest\u0028\u0029",
             "name": "withPreRequest",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientDynamicExtractor.html#method_withPreRequest"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientDynamicExtractor.html#method_withPreRequest"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientDynamicExtractor\u003A\u003AwithSchema\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientDynamicExtractor\u003A\u003AwithSchema\u0028\u0029",
             "name": "withSchema",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientDynamicExtractor.html#method_withSchema"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientDynamicExtractor.html#method_withSchema"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientDynamicExtractor\u003A\u003Astatistics\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientDynamicExtractor\u003A\u003Astatistics\u0028\u0029",
             "name": "statistics",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientDynamicExtractor.html#method_statistics"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientDynamicExtractor.html#method_statistics"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientPaginatedExtractor",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientDynamicExtractor\u003A\u003AisRepeatable\u0028\u0029",
+            "name": "isRepeatable",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientDynamicExtractor.html#method_isRepeatable"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientPaginatedExtractor",
             "name": "PsrHttpClientPaginatedExtractor",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientPaginatedExtractor.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientPaginatedExtractor.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientPaginatedExtractor\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientPaginatedExtractor\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientPaginatedExtractor.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientPaginatedExtractor.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientPaginatedExtractor\u003A\u003Aextract\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientPaginatedExtractor\u003A\u003Aextract\u0028\u0029",
             "name": "extract",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientPaginatedExtractor.html#method_extract"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientPaginatedExtractor.html#method_extract"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientPaginatedExtractor\u003A\u003Aschema\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientPaginatedExtractor\u003A\u003Aschema\u0028\u0029",
             "name": "schema",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientPaginatedExtractor.html#method_schema"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientPaginatedExtractor.html#method_schema"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientPaginatedExtractor\u003A\u003AwithPostRequest\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientPaginatedExtractor\u003A\u003AwithPostRequest\u0028\u0029",
             "name": "withPostRequest",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientPaginatedExtractor.html#method_withPostRequest"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientPaginatedExtractor.html#method_withPostRequest"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientPaginatedExtractor\u003A\u003AwithPreRequest\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientPaginatedExtractor\u003A\u003AwithPreRequest\u0028\u0029",
             "name": "withPreRequest",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientPaginatedExtractor.html#method_withPreRequest"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientPaginatedExtractor.html#method_withPreRequest"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientPaginatedExtractor\u003A\u003AwithSchema\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientPaginatedExtractor\u003A\u003AwithSchema\u0028\u0029",
             "name": "withSchema",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientPaginatedExtractor.html#method_withSchema"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientPaginatedExtractor.html#method_withSchema"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientPaginatedExtractor\u003A\u003Astatistics\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientPaginatedExtractor\u003A\u003Astatistics\u0028\u0029",
             "name": "statistics",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientPaginatedExtractor.html#method_statistics"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientPaginatedExtractor.html#method_statistics"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientStaticExtractor",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientPaginatedExtractor\u003A\u003AisRepeatable\u0028\u0029",
+            "name": "isRepeatable",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientPaginatedExtractor.html#method_isRepeatable"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientStaticExtractor",
             "name": "PsrHttpClientStaticExtractor",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientStaticExtractor.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientStaticExtractor.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientStaticExtractor\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientStaticExtractor\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientStaticExtractor.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientStaticExtractor.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientStaticExtractor\u003A\u003Aextract\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientStaticExtractor\u003A\u003AbatchSize\u0028\u0029",
+            "name": "batchSize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientStaticExtractor.html#method_batchSize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientStaticExtractor\u003A\u003Aextract\u0028\u0029",
             "name": "extract",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientStaticExtractor.html#method_extract"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientStaticExtractor.html#method_extract"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientStaticExtractor\u003A\u003Aschema\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientStaticExtractor\u003A\u003Aschema\u0028\u0029",
             "name": "schema",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientStaticExtractor.html#method_schema"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientStaticExtractor.html#method_schema"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientStaticExtractor\u003A\u003AwithPostRequest\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientStaticExtractor\u003A\u003AwithBatchSize\u0028\u0029",
+            "name": "withBatchSize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientStaticExtractor.html#method_withBatchSize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientStaticExtractor\u003A\u003AwithPostRequest\u0028\u0029",
             "name": "withPostRequest",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientStaticExtractor.html#method_withPostRequest"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientStaticExtractor.html#method_withPostRequest"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientStaticExtractor\u003A\u003AwithPreRequest\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientStaticExtractor\u003A\u003AwithPreRequest\u0028\u0029",
             "name": "withPreRequest",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientStaticExtractor.html#method_withPreRequest"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientStaticExtractor.html#method_withPreRequest"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientStaticExtractor\u003A\u003AwithSchema\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientStaticExtractor\u003A\u003AwithSchema\u0028\u0029",
             "name": "withSchema",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientStaticExtractor.html#method_withSchema"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientStaticExtractor.html#method_withSchema"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\PsrHttpClientStaticExtractor\u003A\u003Astatistics\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientStaticExtractor\u003A\u003Astatistics\u0028\u0029",
             "name": "statistics",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-PsrHttpClientStaticExtractor.html#method_statistics"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientStaticExtractor.html#method_statistics"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\ResponseType",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\PsrHttpClientStaticExtractor\u003A\u003AisRepeatable\u0028\u0029",
+            "name": "isRepeatable",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-PsrHttpClientStaticExtractor.html#method_isRepeatable"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\ResponseType",
             "name": "ResponseType",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-ResponseType.html"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-ResponseType.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\ResponseType\u003A\u003AHTML",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\ResponseType\u003A\u003AHTML",
             "name": "HTML",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-ResponseType.html#enumcase_HTML"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-ResponseType.html#enumcase_HTML"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\ResponseType\u003A\u003AJSON",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\ResponseType\u003A\u003AJSON",
             "name": "JSON",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-ResponseType.html#enumcase_JSON"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-ResponseType.html#enumcase_JSON"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\ResponseType\u003A\u003ATEXT",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\ResponseType\u003A\u003ATEXT",
             "name": "TEXT",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-ResponseType.html#enumcase_TEXT"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-ResponseType.html#enumcase_TEXT"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\ResponseType\u003A\u003AXML",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\ResponseType\u003A\u003AXML",
             "name": "XML",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Http-ResponseType.html#enumcase_XML"
+            "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-ResponseType.html#enumcase_XML"
         },                {
             "fqsen": "\\",
             "name": "\\",
@@ -836,24 +861,29 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\DynamicExtractor",
-            "name": "DynamicExtractor",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor",
+            "name": "Extractor",
             "summary": "",
-            "url": "namespaces/flow-etl-adapter-http-dynamicextractor.html"
+            "url": "namespaces/flow-etl-adapter-http-io-extractor.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO",
+            "name": "IO",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-http-io.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination",
             "name": "Pagination",
             "summary": "",
-            "url": "namespaces/flow-etl-adapter-http-pagination.html"
+            "url": "namespaces/flow-etl-adapter-http-io-extractor-pagination.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\StopWhen",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\StopWhen",
             "name": "StopWhen",
             "summary": "",
-            "url": "namespaces/flow-etl-adapter-http-pagination-stopwhen.html"
+            "url": "namespaces/flow-etl-adapter-http-io-extractor-pagination-stopwhen.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\Pagination\\Strategy",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Strategy",
             "name": "Strategy",
             "summary": "",
-            "url": "namespaces/flow-etl-adapter-http-pagination-strategy.html"
+            "url": "namespaces/flow-etl-adapter-http-io-extractor-pagination-strategy.html"
         }            ]
 );

@@ -170,6 +170,13 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Parquet-Engine-Arrow-RustRowGroupChunks.html#method_decoded">decoded()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Called by name from arrow-ext RustParquetFooter::rowGroupChunks() with the chunks its footer cache decoded.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Parquet-Engine-Arrow-RustRowGroupChunks.html#method_fromThrift">fromThrift()</a>
     <span>
                                 &nbsp;: self    </span>
@@ -211,7 +218,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Engine/Arrow/RustRowGroupChunks.php"><a href="files/src-lib-parquet-src-flow-parquet-engine-arrow-rustrowgroupchunks.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Engine/Arrow/RustRowGroupChunks.php">RustRowGroupChunks.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -266,7 +273,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Engine/Arrow/RustRowGroupChunks.php"><a href="files/src-lib-parquet-src-flow-parquet-engine-arrow-rustrowgroupchunks.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Engine/Arrow/RustRowGroupChunks.php">RustRowGroupChunks.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">83</span>
 
     </aside>
 
@@ -306,6 +313,71 @@
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_decoded">
+        decoded()
+        <a href="classes/Flow-Parquet-Engine-Arrow-RustRowGroupChunks.html#method_decoded" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Engine/Arrow/RustRowGroupChunks.php"><a href="files/src-lib-parquet-src-flow-parquet-engine-arrow-rustrowgroupchunks.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Engine/Arrow/RustRowGroupChunks.php">RustRowGroupChunks.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">44</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Called by name from arrow-ext RustParquetFooter::rowGroupChunks() with the chunks its footer cache decoded.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">decoded</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, int&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowCounts</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;int, <a href="classes/Flow-Parquet-ParquetFile-RowGroup-ColumnChunk.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroup\ColumnChunk">ColumnChunk</abbr></a>&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$chunks</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, <a href="classes/Flow-Parquet-ParquetFile-ColumnOrder.html"><abbr title="\Flow\Parquet\ParquetFile\ColumnOrder">ColumnOrder</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$orders</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$rowCounts</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, int&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$chunks</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, array&lt;int, <a href="classes/Flow-Parquet-ParquetFile-RowGroup-ColumnChunk.html"><abbr title="\Flow\Parquet\ParquetFile\RowGroup\ColumnChunk">ColumnChunk</abbr></a>&gt;&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>decoded ColumnChunks per flat path, one per row group</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$orders</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, <a href="classes/Flow-Parquet-ParquetFile-ColumnOrder.html"><abbr title="\Flow\Parquet\ParquetFile\ColumnOrder">ColumnOrder</abbr></a>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_fromThrift">
         fromThrift()
         <a href="classes/Flow-Parquet-Engine-Arrow-RustRowGroupChunks.html#method_fromThrift" class="headerlink"><i class="fas fa-link"></i></a>
@@ -314,7 +386,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Engine/Arrow/RustRowGroupChunks.php"><a href="files/src-lib-parquet-src-flow-parquet-engine-arrow-rustrowgroupchunks.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Engine/Arrow/RustRowGroupChunks.php">RustRowGroupChunks.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -377,7 +449,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/Engine/Arrow/RustRowGroupChunks.php"><a href="files/src-lib-parquet-src-flow-parquet-engine-arrow-rustrowgroupchunks.html"><abbr title="src/lib/parquet/src/Flow/Parquet/Engine/Arrow/RustRowGroupChunks.php">RustRowGroupChunks.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">107</span>
 
     </aside>
 
@@ -426,6 +498,7 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Parquet-Engine-Arrow-RustRowGroupChunks.html#method_chunk">chunk()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Engine-Arrow-RustRowGroupChunks.html#method_columnOrder">columnOrder()</a></li>
+                                            <li class=""><a href="classes/Flow-Parquet-Engine-Arrow-RustRowGroupChunks.html#method_decoded">decoded()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Engine-Arrow-RustRowGroupChunks.html#method_fromThrift">fromThrift()</a></li>
                                             <li class=""><a href="classes/Flow-Parquet-Engine-Arrow-RustRowGroupChunks.html#method_rowCounts">rowCounts()</a></li>
                                     </ul>

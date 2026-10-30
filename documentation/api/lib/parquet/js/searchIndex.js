@@ -1066,20 +1066,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#method_add"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\WriteFlatColumnValues\u003A\u003AaddRaw\u0028\u0029",
-            "name": "addRaw",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#method_addRaw"
-        },                {
             "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\WriteFlatColumnValues\u003A\u003A\u0024definitionLevels",
             "name": "definitionLevels",
             "summary": "",
             "url": "classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#property_definitionLevels"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\WriteFlatColumnValues\u003A\u003AdefinitionLevelsCount\u0028\u0029",
-            "name": "definitionLevelsCount",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#method_definitionLevelsCount"
         },                {
             "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\WriteFlatColumnValues\u003A\u003AflatPath\u0028\u0029",
             "name": "flatPath",
@@ -1115,16 +1105,6 @@ Search.appendIndex(
             "name": "rowsCount",
             "summary": "",
             "url": "classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#method_rowsCount"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\WriteFlatColumnValues\u003A\u003AskipRows\u0028\u0029",
-            "name": "skipRows",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#method_skipRows"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\WriteFlatColumnValues\u003A\u003AsplitByRows\u0028\u0029",
-            "name": "splitByRows",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Dremel-ColumnData-WriteFlatColumnValues.html#method_splitByRows"
         },                {
             "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\WriteFlatColumnValues\u003A\u003A\u0024values",
             "name": "values",
@@ -1276,6 +1256,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\AdaptiveParquetEngine\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\AdaptiveParquetEngine\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-AdaptiveParquetEngine.html#method_normalize"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Engine\\AdaptiveParquetEngine\u003A\u003AopenForRead\u0028\u0029",
             "name": "openForRead",
             "summary": "The\u0020file\u0020on\u0020\u0024stream,\u0020its\u0020footer\u0020read\u0020by\u0020the\u0020returned\u0020reader,\u0020which\u0020owns\u0020the\u0020stream\u0020from\u0020here\u0020on.",
@@ -1356,6 +1346,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Engine-Arrow-RustRowGroupChunks.html"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\RustRowGroupChunks\u003A\u003Adecoded\u0028\u0029",
+            "name": "decoded",
+            "summary": "Called\u0020by\u0020name\u0020from\u0020arrow\u002Dext\u0020RustParquetFooter\u003A\u003ArowGroupChunks\u0028\u0029\u0020with\u0020the\u0020chunks\u0020its\u0020footer\u0020cache\u0020decoded.",
+            "url": "classes/Flow-Parquet-Engine-Arrow-RustRowGroupChunks.html#method_decoded"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\RustRowGroupChunks\u003A\u003AfromThrift\u0028\u0029",
             "name": "fromThrift",
             "summary": "Called\u0020by\u0020name\u0020from\u0020arrow\u002Dext\u0020RustParquetFooter\u003A\u003ArowGroupChunks\u0028\u0029,\u0020pinned\u0020by\u0020phpt\u0020056.",
@@ -1435,6 +1430,16 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-Parquet-Engine-PhpParquetEngine.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetEngine\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-PhpParquetEngine.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetEngine\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Engine-PhpParquetEngine.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetEngine\u003A\u003AopenForRead\u0028\u0029",
             "name": "openForRead",
@@ -1646,6 +1651,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Filter-Binding-BoundFilter.html"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\BoundFilter\u003A\u003Aresolve\u0028\u0029",
+            "name": "resolve",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-BoundFilter.html#method_resolve"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\BoundFilter\u003A\u003Abind\u0028\u0029",
             "name": "bind",
             "summary": "Never\u0020throws\u0020for\u0020a\u0020reason\u0020that\u0020depends\u0020on\u0020the\u0020file\u003A\u0020a\u0020leaf\u0020the\u0020file\u0020cannot\u0020answer\u0020is\u0020absent\u0020or\u0020refused.",
@@ -1726,15 +1736,80 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Filter-Binding-EqualRange.html#property_high"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\LeafResolver",
-            "name": "LeafResolver",
-            "summary": "A\u0020filter\u0020leaf\u0020against\u0020a\u0020file\u0020schema\u003A\u0020pruning\u0020and\u0020evaluation\u0020read\u0020the\u0020same\u0020column,\u0020domain,\u0020literals\u0020and\u0020physical\nvalues.",
-            "url": "classes/Flow-Parquet-Filter-Binding-LeafResolver.html"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\LeafResolver\u003A\u003Aresolve\u0028\u0029",
-            "name": "resolve",
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\ExactLeaf",
+            "name": "ExactLeaf",
             "summary": "",
-            "url": "classes/Flow-Parquet-Filter-Binding-LeafResolver.html#method_resolve"
+            "url": "classes/Flow-Parquet-Filter-Binding-ExactLeaf.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\ExactLeaf\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-ExactLeaf.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\ExactLeaf\u003A\u003A\u0024column",
+            "name": "column",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-ExactLeaf.html#property_column"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\ExactLeaf\u003A\u003A\u0024domain",
+            "name": "domain",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-ExactLeaf.html#property_domain"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\ExactLeaf\u003A\u003A\u0024root",
+            "name": "root",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-ExactLeaf.html#property_root"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\ExactLeaf\u003A\u003A\u0024fields",
+            "name": "fields",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-ExactLeaf.html#property_fields"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\ExactLeaf\u003A\u003A\u0024literals",
+            "name": "literals",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-ExactLeaf.html#property_literals"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\ExactLeaf\u003A\u003A\u0024intervals",
+            "name": "intervals",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-ExactLeaf.html#property_intervals"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\InexactLeaf",
+            "name": "InexactLeaf",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-InexactLeaf.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\InexactLeaf\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-InexactLeaf.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\InexactLeaf\u003A\u003A\u0024column",
+            "name": "column",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-InexactLeaf.html#property_column"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\InexactLeaf\u003A\u003A\u0024domain",
+            "name": "domain",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-InexactLeaf.html#property_domain"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\InexactLeaf\u003A\u003A\u0024root",
+            "name": "root",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-InexactLeaf.html#property_root"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\InexactLeaf\u003A\u003A\u0024fields",
+            "name": "fields",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-InexactLeaf.html#property_fields"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\InexactLeaf\u003A\u003A\u0024literals",
+            "name": "literals",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Filter-Binding-InexactLeaf.html#property_literals"
         },                {
             "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\LiteralDomain",
             "name": "LiteralDomain",
@@ -2075,46 +2150,6 @@ Search.appendIndex(
             "name": "reason",
             "summary": "",
             "url": "classes/Flow-Parquet-Filter-Binding-RefusedLeaf.html#property_reason"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\ResolvedLeaf",
-            "name": "ResolvedLeaf",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Filter-Binding-ResolvedLeaf.html"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\ResolvedLeaf\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Filter-Binding-ResolvedLeaf.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\ResolvedLeaf\u003A\u003A\u0024column",
-            "name": "column",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Filter-Binding-ResolvedLeaf.html#property_column"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\ResolvedLeaf\u003A\u003A\u0024domain",
-            "name": "domain",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Filter-Binding-ResolvedLeaf.html#property_domain"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\ResolvedLeaf\u003A\u003A\u0024root",
-            "name": "root",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Filter-Binding-ResolvedLeaf.html#property_root"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\ResolvedLeaf\u003A\u003A\u0024fields",
-            "name": "fields",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Filter-Binding-ResolvedLeaf.html#property_fields"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\ResolvedLeaf\u003A\u003A\u0024literals",
-            "name": "literals",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Filter-Binding-ResolvedLeaf.html#property_literals"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\ResolvedLeaf\u003A\u003A\u0024intervals",
-            "name": "intervals",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Filter-Binding-ResolvedLeaf.html#property_intervals"
         },                {
             "fqsen": "\\Flow\\Parquet\\Filter\\ColumnRef",
             "name": "ColumnRef",
@@ -2991,6 +3026,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Options.html#method_default"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Options\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Options.html#method_fromArray"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Options\u003A\u003Aget\u0028\u0029",
             "name": "get",
             "summary": "",
@@ -3026,6 +3066,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Options.html#method_has"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Options\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "Every\u0020option\u0020keyed\u0020by\u0020its\u0020case\u0020name\u003B\u0020enums\u0020as\u0020\u007Benum,\u0020case\u007D,\u0020bloom\u0020filter\u0020options\u0020as\u0020\u007Bbloom_filter\u003A\u0020\u007Bfpp,\u0020ndv\u007D\u007D.",
+            "url": "classes/Flow-Parquet-Options.html#method_normalize"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Options\u003A\u003Aset\u0028\u0029",
             "name": "set",
             "summary": "",
@@ -3035,6 +3080,16 @@ Search.appendIndex(
             "name": "ParquetEngine",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetEngine.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetEngine\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetEngine.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetEngine\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetEngine.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetEngine\u003A\u003AopenForRead\u0028\u0029",
             "name": "openForRead",
@@ -3671,66 +3726,6 @@ Search.appendIndex(
             "summary": "Every\u0020row\u0020group\u0027s\u0020row\u0020count,\u0020in\u0020file\u0020order.",
             "url": "classes/Flow-Parquet-ParquetFile-MetadataRowGroupChunks.html#method_rowCounts"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Page\\ColumnData",
-            "name": "ColumnData",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Page-ColumnData.html"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Page\\ColumnData\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Page-ColumnData.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Page\\ColumnData\u003A\u003Ainitialize\u0028\u0029",
-            "name": "initialize",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Page-ColumnData.html#method_initialize"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Page\\ColumnData\u003A\u003AisEmpty\u0028\u0029",
-            "name": "isEmpty",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Page-ColumnData.html#method_isEmpty"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Page\\ColumnData\u003A\u003Amerge\u0028\u0029",
-            "name": "merge",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Page-ColumnData.html#method_merge"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Page\\ColumnData\u003A\u003Asize\u0028\u0029",
-            "name": "size",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Page-ColumnData.html#method_size"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Page\\ColumnData\u003A\u003AsplitLastRow\u0028\u0029",
-            "name": "splitLastRow",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Page-ColumnData.html#method_splitLastRow"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Page\\ColumnData\u003A\u003A\u0024type",
-            "name": "type",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Page-ColumnData.html#property_type"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Page\\ColumnData\u003A\u003A\u0024logicalType",
-            "name": "logicalType",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Page-ColumnData.html#property_logicalType"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Page\\ColumnData\u003A\u003A\u0024repetitions",
-            "name": "repetitions",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Page-ColumnData.html#property_repetitions"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Page\\ColumnData\u003A\u003A\u0024definitions",
-            "name": "definitions",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Page-ColumnData.html#property_definitions"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Page\\ColumnData\u003A\u003A\u0024values",
-            "name": "values",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Page-ColumnData.html#property_values"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Page\\ColumnPageHeader",
             "name": "ColumnPageHeader",
             "summary": "",
@@ -4286,86 +4281,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-RowGroup-ColumnChunk.html#method_valuesCount"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\FlowColumnChunk",
-            "name": "FlowColumnChunk",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-RowGroup-FlowColumnChunk.html"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\FlowColumnChunk\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-RowGroup-FlowColumnChunk.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\FlowColumnChunk\u003A\u003A\u0024chunk",
-            "name": "chunk",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-RowGroup-FlowColumnChunk.html#property_chunk"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\FlowColumnChunk\u003A\u003A\u0024rowsOffset",
-            "name": "rowsOffset",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-RowGroup-FlowColumnChunk.html#property_rowsOffset"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\FlowColumnChunk\u003A\u003A\u0024rowsInGroup",
-            "name": "rowsInGroup",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-RowGroup-FlowColumnChunk.html#property_rowsInGroup"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\StatisticsReader",
-            "name": "StatisticsReader",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-RowGroup-StatisticsReader.html"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\StatisticsReader\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-RowGroup-StatisticsReader.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\StatisticsReader\u003A\u003AdistinctCount\u0028\u0029",
-            "name": "distinctCount",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-RowGroup-StatisticsReader.html#method_distinctCount"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\StatisticsReader\u003A\u003AisMaxValueExact\u0028\u0029",
-            "name": "isMaxValueExact",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-RowGroup-StatisticsReader.html#method_isMaxValueExact"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\StatisticsReader\u003A\u003AisMinValueExact\u0028\u0029",
-            "name": "isMinValueExact",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-RowGroup-StatisticsReader.html#method_isMinValueExact"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\StatisticsReader\u003A\u003Amax\u0028\u0029",
-            "name": "max",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-RowGroup-StatisticsReader.html#method_max"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\StatisticsReader\u003A\u003AmaxValue\u0028\u0029",
-            "name": "maxValue",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-RowGroup-StatisticsReader.html#method_maxValue"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\StatisticsReader\u003A\u003Amin\u0028\u0029",
-            "name": "min",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-RowGroup-StatisticsReader.html#method_min"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\StatisticsReader\u003A\u003AminValue\u0028\u0029",
-            "name": "minValue",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-RowGroup-StatisticsReader.html#method_minValue"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\StatisticsReader\u003A\u003AnanCount\u0028\u0029",
-            "name": "nanCount",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-RowGroup-StatisticsReader.html#method_nanCount"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\\StatisticsReader\u003A\u003AnullCount\u0028\u0029",
-            "name": "nullCount",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-RowGroup-StatisticsReader.html#method_nullCount"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup",
             "name": "RowGroup",
             "summary": "",
@@ -4381,11 +4296,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-RowGroup.html#method_fromThrift"
         },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\u003A\u003AaddColumnChunk\u0028\u0029",
-            "name": "addColumnChunk",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-RowGroup.html#method_addColumnChunk"
-        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\u003A\u003AcolumnChunks\u0028\u0029",
             "name": "columnChunks",
             "summary": "",
@@ -4400,11 +4310,6 @@ Search.appendIndex(
             "name": "rowsCount",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-RowGroup.html#method_rowsCount"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\u003A\u003AsetRowsCount\u0028\u0029",
-            "name": "setRowsCount",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-RowGroup.html#method_setRowsCount"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\RowGroup\u003A\u003AtotalByteSize\u0028\u0029",
             "name": "totalByteSize",
@@ -5906,10 +5811,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Statistics.html#property_max"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Statistics\u003A\u003A\u0024maxValue",
+            "name": "maxValue",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Statistics.html#property_maxValue"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Statistics\u003A\u003A\u0024min",
             "name": "min",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Statistics.html#property_min"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Statistics\u003A\u003A\u0024minValue",
+            "name": "minValue",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Statistics.html#property_minValue"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Statistics\u003A\u003A\u0024nullCount",
             "name": "nullCount",
@@ -5920,16 +5835,6 @@ Search.appendIndex(
             "name": "distinctCount",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Statistics.html#property_distinctCount"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Statistics\u003A\u003A\u0024maxValue",
-            "name": "maxValue",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Statistics.html#property_maxValue"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Statistics\u003A\u003A\u0024minValue",
-            "name": "minValue",
-            "summary": "",
-            "url": "classes/Flow-Parquet-ParquetFile-Statistics.html#property_minValue"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Statistics\u003A\u003A\u0024isMaxValueExact",
             "name": "isMaxValueExact",
@@ -6096,6 +6001,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Query.html#property_filter"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\ChunkBuffer",
+            "name": "ChunkBuffer",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-ChunkBuffer.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\ChunkBuffer\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-ChunkBuffer.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\ChunkBuffer\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-ChunkBuffer.html#method_of"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Reader\\ColumnChunkReader",
             "name": "ColumnChunkReader",
             "summary": "",
@@ -6123,7 +6043,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\Reader\\ColumnChunkViewer\u003A\u003Aview\u0028\u0029",
             "name": "view",
-            "summary": "",
+            "summary": "The\u0020chunk\u0027s\u0020dictionary\u0020page\u0020header,\u0020if\u0020any,\u0020then\u0020its\u0020data\u0020page\u0020headers.",
             "url": "classes/Flow-Parquet-Reader-ColumnChunkViewer.html#method_view"
         },                {
             "fqsen": "\\Flow\\Parquet\\Reader\\ColumnDataDecoder",
@@ -6341,6 +6261,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Reader-ReadPlan.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\ReadPlan\u003A\u003AforFilter\u0028\u0029",
+            "name": "forFilter",
+            "summary": "The\u0020rows\u0020to\u0020read\u003A\u0020the\u0020file\u0027s\u0020rows\u0020from\u0020\u0024rawOffset\u0020on,\u0020minus\u0020the\u0020row\u0020groups\u0020and\u0020pages\u0020whose\u0020statistics\u0020or\u0020bloom\nfilters\u0020prove\u0020no\u0020row\u0020matches\u0020\u0024filter.\u0020The\u0020conjuncts\u0020of\u0020\u0024filter\u0020the\u0020file\u0020answers\u0020exactly\u0020are\u0020evaluated\u0020on\u0020rows\n\u0028ReadPlan\u003A\u003A\u0024rowFilter\u0029\u003B\u0020the\u0020caller\u0020evaluates\u0020the\u0020rest.",
+            "url": "classes/Flow-Parquet-Reader-ReadPlan.html#method_forFilter"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Reader\\ReadPlan\u003A\u003Awindow\u0028\u0029",
             "name": "window",
             "summary": "Every\u0020row\u0020of\u0020the\u0020window,\u0020each\u0020a\u0020match.",
@@ -6370,16 +6295,6 @@ Search.appendIndex(
             "name": "limit",
             "summary": "",
             "url": "classes/Flow-Parquet-Reader-ReadPlan.html#property_limit"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Reader\\ReadPlanner",
-            "name": "ReadPlanner",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Reader-ReadPlanner.html"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Reader\\ReadPlanner\u003A\u003Aplan\u0028\u0029",
-            "name": "plan",
-            "summary": "The\u0020rows\u0020to\u0020read\u003A\u0020the\u0020file\u0027s\u0020rows\u0020from\u0020\u0024rawOffset\u0020on,\u0020minus\u0020the\u0020row\u0020groups\u0020and\u0020pages\u0020whose\u0020statistics\u0020or\u0020bloom\nfilters\u0020prove\u0020no\u0020row\u0020matches\u0020\u0024filter.\u0020The\u0020conjuncts\u0020of\u0020\u0024filter\u0020the\u0020file\u0020answers\u0020exactly\u0020are\u0020evaluated\u0020on\u0020rows\n\u0028ReadPlan\u003A\u003A\u0024rowFilter\u0029\u003B\u0020the\u0020caller\u0020evaluates\u0020the\u0020rest.",
-            "url": "classes/Flow-Parquet-Reader-ReadPlanner.html#method_plan"
         },                {
             "fqsen": "\\Flow\\Parquet\\Reader\\RowSelection",
             "name": "RowSelection",
@@ -10691,11 +10606,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilders.html#method_addColumnByFlatPath"
         },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilders\u003A\u003Abuilders\u0028\u0029",
-            "name": "builders",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Writer-ColumnChunkBuilders.html#method_builders"
-        },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\ColumnChunkBuilders\u003A\u003AclosePages\u0028\u0029",
             "name": "closePages",
             "summary": "Close\u0020all\u0020pages\u0020in\u0020the\u0020column\u0020chunk\u0020builders.",
@@ -10885,11 +10795,6 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-PageContainer.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Parquet\\Writer\\PageContainer\u003A\u003AdataSize\u0028\u0029",
-            "name": "dataSize",
-            "summary": "",
-            "url": "classes/Flow-Parquet-Writer-PageContainer.html#method_dataSize"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\PageContainer\u003A\u003AheaderSize\u0028\u0029",
             "name": "headerSize",

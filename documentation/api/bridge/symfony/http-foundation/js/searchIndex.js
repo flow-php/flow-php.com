@@ -13,7 +13,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream\u003A\u003Aopen\u0028\u0029",
             "name": "open",
-            "summary": "",
+            "summary": "A\u0020DataFrame\u0020source\u0020runs\u0020under\u0020its\u0020own\u0020config,\u0020and\u0020the\u0020response\u0020appends\u0020its\u0020steps\u0020to\u0020that\u0020frame.",
             "url": "classes/Flow-Bridge-Symfony-HttpFoundation-DataStream.html#method_open"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\DataStream\u003A\u003Aas\u0028\u0029",

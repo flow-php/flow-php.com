@@ -21,155 +21,165 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-adapter-seal.html#function_seal_schema_to_flow"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\Operation",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\IO\\Loader\\Operation",
             "name": "Operation",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-Operation.html"
+            "url": "classes/Flow-ETL-Adapter-Seal-IO-Loader-Operation.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\Operation\u003A\u003ADELETE",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\IO\\Loader\\Operation\u003A\u003ADELETE",
             "name": "DELETE",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-Operation.html#enumcase_DELETE"
+            "url": "classes/Flow-ETL-Adapter-Seal-IO-Loader-Operation.html#enumcase_DELETE"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\Operation\u003A\u003AUPSERT",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\IO\\Loader\\Operation\u003A\u003AUPSERT",
             "name": "UPSERT",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-Operation.html#enumcase_UPSERT"
+            "url": "classes/Flow-ETL-Adapter-Seal-IO-Loader-Operation.html#enumcase_UPSERT"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SchemaConverter",
-            "name": "SchemaConverter",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SchemaConverter.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SchemaConverter\u003A\u003AtoFlowSchema\u0028\u0029",
-            "name": "toFlowSchema",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SchemaConverter.html#method_toFlowSchema"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SchemaConverter\u003A\u003AtoSealSchema\u0028\u0029",
-            "name": "toSealSchema",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SchemaConverter.html#method_toSealSchema"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealEncoder",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\IO\\Loader\\SealEncoder",
             "name": "SealEncoder",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealEncoder.html"
+            "url": "classes/Flow-ETL-Adapter-Seal-IO-Loader-SealEncoder.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealEncoder\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\IO\\Loader\\SealEncoder\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealEncoder.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Seal-IO-Loader-SealEncoder.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealEncoder\u003A\u003Aencode\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\IO\\Loader\\SealEncoder\u003A\u003Aencode\u0028\u0029",
             "name": "encode",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealEncoder.html#method_encode"
+            "url": "classes/Flow-ETL-Adapter-Seal-IO-Loader-SealEncoder.html#method_encode"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealEncoder\u003A\u003Acolumn\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\IO\\Loader\\SealEncoder\u003A\u003Acolumn\u0028\u0029",
             "name": "column",
             "summary": "A\u0020column\u0027s\u0020document\u0020fields\u003A\u0020datetime\u0020\/\u0020date\u0020text\u0020from\u0020the\u0020physicals,\u0020json\u0020and\u0020containers\u0020as\u0020normalized\u0020arrays,\nphysicals\u0020where\u0020the\u0020physical\u0020is\u0020the\u0020value\u0020\u0028scalars,\u0020a\u0020time\u0027s\u0020microseconds,\u0020null\u0029,\u0020TextValues\u0020for\u0020every\u0020other\u0020type.",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealEncoder.html#method_column"
+            "url": "classes/Flow-ETL-Adapter-Seal-IO-Loader-SealEncoder.html#method_column"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealLoader",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\IO\\Loader\\SealLoader",
             "name": "SealLoader",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealLoader.html"
+            "url": "classes/Flow-ETL-Adapter-Seal-IO-Loader-SealLoader.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealLoader\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\IO\\Loader\\SealLoader\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealLoader.html#method___construct"
+            "url": "classes/Flow-ETL-Adapter-Seal-IO-Loader-SealLoader.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealLoader\u003A\u003Aload\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\IO\\Loader\\SealLoader\u003A\u003Aload\u0028\u0029",
             "name": "load",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealLoader.html#method_load"
+            "url": "classes/Flow-ETL-Adapter-Seal-IO-Loader-SealLoader.html#method_load"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealLoader\u003A\u003AwithBulkSize\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\IO\\Loader\\SealLoader\u003A\u003AfromDescription\u0028\u0029",
+            "name": "fromDescription",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Seal-IO-Loader-SealLoader.html#method_fromDescription"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\IO\\Loader\\SealLoader\u003A\u003Adescribe\u0028\u0029",
+            "name": "describe",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Seal-IO-Loader-SealLoader.html#method_describe"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\IO\\Loader\\SealLoader\u003A\u003AwithBulkSize\u0028\u0029",
             "name": "withBulkSize",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealLoader.html#method_withBulkSize"
+            "url": "classes/Flow-ETL-Adapter-Seal-IO-Loader-SealLoader.html#method_withBulkSize"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealLoader\u003A\u003AwithDateFormat\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\IO\\Loader\\SealLoader\u003A\u003AwithDateFormat\u0028\u0029",
             "name": "withDateFormat",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealLoader.html#method_withDateFormat"
+            "url": "classes/Flow-ETL-Adapter-Seal-IO-Loader-SealLoader.html#method_withDateFormat"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealLoader\u003A\u003AwithDateTimeFormat\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\IO\\Loader\\SealLoader\u003A\u003AwithDateTimeFormat\u0028\u0029",
             "name": "withDateTimeFormat",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealLoader.html#method_withDateTimeFormat"
+            "url": "classes/Flow-ETL-Adapter-Seal-IO-Loader-SealLoader.html#method_withDateTimeFormat"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealLoader\u003A\u003AwithIdentifierColumn\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\IO\\Loader\\SealLoader\u003A\u003AwithIdentifierColumn\u0028\u0029",
             "name": "withIdentifierColumn",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealLoader.html#method_withIdentifierColumn"
+            "url": "classes/Flow-ETL-Adapter-Seal-IO-Loader-SealLoader.html#method_withIdentifierColumn"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealMetadata",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\Values\\Schema\\SchemaConverter",
+            "name": "SchemaConverter",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Seal-Values-Schema-SchemaConverter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\Values\\Schema\\SchemaConverter\u003A\u003AtoFlowSchema\u0028\u0029",
+            "name": "toFlowSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Seal-Values-Schema-SchemaConverter.html#method_toFlowSchema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\Values\\Schema\\SchemaConverter\u003A\u003AtoSealSchema\u0028\u0029",
+            "name": "toSealSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Seal-Values-Schema-SchemaConverter.html#method_toSealSchema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\Values\\Schema\\SealMetadata",
             "name": "SealMetadata",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealMetadata.html"
+            "url": "classes/Flow-ETL-Adapter-Seal-Values-Schema-SealMetadata.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealMetadata\u003A\u003Adistinct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\Values\\Schema\\SealMetadata\u003A\u003Adistinct\u0028\u0029",
             "name": "distinct",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealMetadata.html#method_distinct"
+            "url": "classes/Flow-ETL-Adapter-Seal-Values-Schema-SealMetadata.html#method_distinct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealMetadata\u003A\u003Afacet\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\Values\\Schema\\SealMetadata\u003A\u003Afacet\u0028\u0029",
             "name": "facet",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealMetadata.html#method_facet"
+            "url": "classes/Flow-ETL-Adapter-Seal-Values-Schema-SealMetadata.html#method_facet"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealMetadata\u003A\u003Afilterable\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\Values\\Schema\\SealMetadata\u003A\u003Afilterable\u0028\u0029",
             "name": "filterable",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealMetadata.html#method_filterable"
+            "url": "classes/Flow-ETL-Adapter-Seal-Values-Schema-SealMetadata.html#method_filterable"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealMetadata\u003A\u003Aidentifier\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\Values\\Schema\\SealMetadata\u003A\u003Aidentifier\u0028\u0029",
             "name": "identifier",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealMetadata.html#method_identifier"
+            "url": "classes/Flow-ETL-Adapter-Seal-Values-Schema-SealMetadata.html#method_identifier"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealMetadata\u003A\u003Asearchable\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\Values\\Schema\\SealMetadata\u003A\u003Asearchable\u0028\u0029",
             "name": "searchable",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealMetadata.html#method_searchable"
+            "url": "classes/Flow-ETL-Adapter-Seal-Values-Schema-SealMetadata.html#method_searchable"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealMetadata\u003A\u003Asortable\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\Values\\Schema\\SealMetadata\u003A\u003Asortable\u0028\u0029",
             "name": "sortable",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealMetadata.html#method_sortable"
+            "url": "classes/Flow-ETL-Adapter-Seal-Values-Schema-SealMetadata.html#method_sortable"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealMetadata\u003A\u003ADISTINCT",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\Values\\Schema\\SealMetadata\u003A\u003ADISTINCT",
             "name": "DISTINCT",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealMetadata.html#enumcase_DISTINCT"
+            "url": "classes/Flow-ETL-Adapter-Seal-Values-Schema-SealMetadata.html#enumcase_DISTINCT"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealMetadata\u003A\u003AFACET",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\Values\\Schema\\SealMetadata\u003A\u003AFACET",
             "name": "FACET",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealMetadata.html#enumcase_FACET"
+            "url": "classes/Flow-ETL-Adapter-Seal-Values-Schema-SealMetadata.html#enumcase_FACET"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealMetadata\u003A\u003AFILTERABLE",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\Values\\Schema\\SealMetadata\u003A\u003AFILTERABLE",
             "name": "FILTERABLE",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealMetadata.html#enumcase_FILTERABLE"
+            "url": "classes/Flow-ETL-Adapter-Seal-Values-Schema-SealMetadata.html#enumcase_FILTERABLE"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealMetadata\u003A\u003AIDENTIFIER",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\Values\\Schema\\SealMetadata\u003A\u003AIDENTIFIER",
             "name": "IDENTIFIER",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealMetadata.html#enumcase_IDENTIFIER"
+            "url": "classes/Flow-ETL-Adapter-Seal-Values-Schema-SealMetadata.html#enumcase_IDENTIFIER"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealMetadata\u003A\u003ASEARCHABLE",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\Values\\Schema\\SealMetadata\u003A\u003ASEARCHABLE",
             "name": "SEARCHABLE",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealMetadata.html#enumcase_SEARCHABLE"
+            "url": "classes/Flow-ETL-Adapter-Seal-Values-Schema-SealMetadata.html#enumcase_SEARCHABLE"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\SealMetadata\u003A\u003ASORTABLE",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\Values\\Schema\\SealMetadata\u003A\u003ASORTABLE",
             "name": "SORTABLE",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Seal-SealMetadata.html#enumcase_SORTABLE"
+            "url": "classes/Flow-ETL-Adapter-Seal-Values-Schema-SealMetadata.html#enumcase_SORTABLE"
         },                {
             "fqsen": "\\",
             "name": "\\",
@@ -195,5 +205,25 @@ Search.appendIndex(
             "name": "Flow",
             "summary": "",
             "url": "namespaces/flow.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\IO\\Loader",
+            "name": "Loader",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-seal-io-loader.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\IO",
+            "name": "IO",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-seal-io.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\Values\\Schema",
+            "name": "Schema",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-seal-values-schema.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Seal\\Values",
+            "name": "Values",
+            "summary": "",
+            "url": "namespaces/flow-etl-adapter-seal-values.html"
         }            ]
 );

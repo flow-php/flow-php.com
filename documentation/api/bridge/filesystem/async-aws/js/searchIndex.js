@@ -71,10 +71,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3Filesystem.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\AsyncAWSS3Filesystem\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3Filesystem.html#method_fromArray"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\AsyncAWSS3Filesystem\u003A\u003AappendTo\u0028\u0029",
             "name": "appendTo",
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3Filesystem.html#method_appendTo"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\AsyncAWSS3Filesystem\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3Filesystem.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\AsyncAWSS3Filesystem\u003A\u003AgetSystemTmpDir\u0028\u0029",
             "name": "getSystemTmpDir",
@@ -206,6 +216,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-BlockList.html#method_toArray"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\ConfiguredS3Client",
+            "name": "ConfiguredS3Client",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-ConfiguredS3Client.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\ConfiguredS3Client\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-ConfiguredS3Client.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\ConfiguredS3Client\u003A\u003Aclient\u0028\u0029",
+            "name": "client",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-ConfiguredS3Client.html#method_client"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\ConfiguredS3Client\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-ConfiguredS3Client.html#method_normalize"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\ContentTypeDetector",
             "name": "ContentTypeDetector",
             "summary": "",
@@ -225,6 +255,26 @@ Search.appendIndex(
             "name": "aws_s3_filesystem",
             "summary": "",
             "url": "namespaces/flow-filesystem-bridge-asyncaws-dsl.html#function_aws_s3_filesystem"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\LiveS3Client",
+            "name": "LiveS3Client",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-LiveS3Client.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\LiveS3Client\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-LiveS3Client.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\LiveS3Client\u003A\u003Aclient\u0028\u0029",
+            "name": "client",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-LiveS3Client.html#method_client"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\LiveS3Client\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-LiveS3Client.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\Options",
             "name": "Options",
@@ -250,6 +300,16 @@ Search.appendIndex(
             "name": "partSize",
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-Options.html#method_partSize"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\Options\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-Options.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\Options\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-Options.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\Options\u003A\u003AtmpDir\u0028\u0029",
             "name": "tmpDir",
@@ -280,6 +340,21 @@ Search.appendIndex(
             "name": "BUCKET",
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-PathOption.html#constant_BUCKET"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\S3ClientSource",
+            "name": "S3ClientSource",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-S3ClientSource.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\S3ClientSource\u003A\u003Aclient\u0028\u0029",
+            "name": "client",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-S3ClientSource.html#method_client"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\S3ClientSource\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-S3ClientSource.html#method_normalize"
         },                {
             "fqsen": "\\",
             "name": "\\",

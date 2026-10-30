@@ -125,11 +125,12 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-traceablefilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php">TraceableFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
-        
+            <p class="phpdocumentor-summary">Rebuilt as its inner filesystem: the configuration is the inner&#039;s, whatever its shape.</p>
+
 
 
 
@@ -171,6 +172,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_fromArray">fromArray()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_getSystemTmpDir">getSystemTmpDir()</a>
     <span>
                                 &nbsp;: <a href="classes/Flow-Filesystem-Path.html"><abbr title="\Flow\Filesystem\Path">Path</abbr></a>    </span>
@@ -192,6 +199,12 @@
     <a class="" href="classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_mv">mv()</a>
     <span>
                                 &nbsp;: bool    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_normalize">normalize()</a>
+    <span>
+                                &nbsp;: null|array&lt;string, mixed&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -254,7 +267,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-traceablefilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php">TraceableFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -305,7 +318,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-traceablefilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php">TraceableFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -343,6 +356,56 @@
         class="phpdocumentor-element
             -method
             -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fromArray">
+        fromArray()
+        <a href="classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_fromArray" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-traceablefilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php">TraceableFilesystem.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">39</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$configuration</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$configuration</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>untrusted: decoded from another process, validated here</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_getSystemTmpDir">
@@ -353,7 +416,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-traceablefilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php">TraceableFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -391,7 +454,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-traceablefilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php">TraceableFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -446,7 +509,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-traceablefilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php">TraceableFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -484,7 +547,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-traceablefilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php">TraceableFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -531,6 +594,48 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_normalize">
+        normalize()
+        <a href="classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_normalize" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-traceablefilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php">TraceableFilesystem.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">55</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|array&lt;string, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">null|array&lt;string, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>null when this instance holds live state (a client, memory) and cannot be rebuilt</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_readFrom">
         readFrom()
         <a href="classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_readFrom" class="headerlink"><i class="fas fa-link"></i></a>
@@ -539,7 +644,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-traceablefilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php">TraceableFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
@@ -587,7 +692,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-traceablefilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php">TraceableFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
@@ -635,7 +740,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-traceablefilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php">TraceableFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">105</span>
 
     </aside>
 
@@ -683,7 +788,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-traceablefilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php">TraceableFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">112</span>
 
     </aside>
 
@@ -732,7 +837,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php"><a href="files/src-lib-filesystem-src-flow-filesystem-telemetry-traceablefilesystem.html"><abbr title="src/lib/filesystem/src/Flow/Filesystem/Telemetry/TraceableFilesystem.php">TraceableFilesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
     </aside>
 
@@ -791,10 +896,12 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_appendTo">appendTo()</a></li>
+                                            <li class=""><a href="classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_fromArray">fromArray()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_getSystemTmpDir">getSystemTmpDir()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_list">list()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_mount">mount()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_mv">mv()</a></li>
+                                            <li class=""><a href="classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_normalize">normalize()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_readFrom">readFrom()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_rm">rm()</a></li>
                                             <li class=""><a href="classes/Flow-Filesystem-Telemetry-TraceableFilesystem.html#method_status">status()</a></li>
