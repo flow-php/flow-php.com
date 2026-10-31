@@ -131,7 +131,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/AdoptedBatches.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-adoptedbatches.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/AdoptedBatches.php">AdoptedBatches.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">12</span>
+    <span class="phpdocumentor-element-found-in__line">13</span>
 
     </aside>
 
@@ -168,7 +168,7 @@
     <span>
                                 &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;null|<a href="classes/Flow-ETL-IO-Extractor-Signal.html"><abbr title="\Flow\ETL\IO\Extractor\Signal">Signal</abbr></a>, void&gt;    </span>
 </dt>
-<dd>Every batch of $batches in the backend&#039;s storage, a stop forwarded to $batches.</dd>
+<dd>Every batch of $batches in the backend&#039;s storage, a corrupted record as it is, a stop forwarded to $batches.</dd>
 
     </dl>
 
@@ -198,7 +198,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/AdoptedBatches.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-adoptedbatches.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/AdoptedBatches.php">AdoptedBatches.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
@@ -242,15 +242,15 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/AdoptedBatches.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-adoptedbatches.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/AdoptedBatches.php">AdoptedBatches.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Every batch of $batches in the backend&#039;s storage, a stop forwarded to $batches.</p>
+        <p class="phpdocumentor-summary">Every batch of $batches in the backend&#039;s storage, a corrupted record as it is, a stop forwarded to $batches.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">of</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&lt;null|<a href="classes/Flow-ETL-IO-Extractor-Signal.html"><abbr title="\Flow\ETL\IO\Extractor\Signal">Signal</abbr></a>, void&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batches</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;null|<a href="classes/Flow-ETL-IO-Extractor-Signal.html"><abbr title="\Flow\ETL\IO\Extractor\Signal">Signal</abbr></a>, void&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">of</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <abbr title="\Flow\ETL\Runtime\Executor\T">T</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batches</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;null|<a href="classes/Flow-ETL-IO-Extractor-Signal.html"><abbr title="\Flow\ETL\IO\Extractor\Signal">Signal</abbr></a>, void&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -260,7 +260,7 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$batches</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Generator">Generator</abbr>&lt;null|<a href="classes/Flow-ETL-IO-Extractor-Signal.html"><abbr title="\Flow\ETL\IO\Extractor\Signal">Signal</abbr></a>, void&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <abbr title="\Flow\ETL\Runtime\Executor\T">T</abbr>&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>what an extractor yields</p>
@@ -270,6 +270,19 @@
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="method_of_tags">
+        Tags
+        <a href="classes/Flow-ETL-Runtime-Executor-AdoptedBatches.html#method_of_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">template</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
 
         
     

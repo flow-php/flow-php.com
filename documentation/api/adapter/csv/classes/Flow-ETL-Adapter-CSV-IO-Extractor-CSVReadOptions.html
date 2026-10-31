@@ -175,6 +175,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#property_missingColumnsAsNull">$missingColumnsAsNull</a>
+    <span>
+                        &nbsp;: bool            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#property_removeBOM">$removeBOM</a>
     <span>
                         &nbsp;: bool            </span>
@@ -215,7 +221,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#method_normalize">normalize()</a>
     <span>
-                                &nbsp;: array{with_header: bool, empty_to_null: bool, remove_bom: bool, separator: null|string, enclosure: null|string, escape: null|string, characters_read_in_line: null|int}    </span>
+                                &nbsp;: array{with_header: bool, empty_to_null: bool, remove_bom: bool, separator: null|string, enclosure: null|string, escape: null|string, characters_read_in_line: null|int, missing_columns_as_null: bool}    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -250,6 +256,12 @@
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#method_withHeader">withHeader()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#method_withMissingColumnsAsNull">withMissingColumnsAsNull()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
@@ -434,6 +446,43 @@
             -public
                                                                     "
 >
+    <h4 class="phpdocumentor-element__name" id="property_missingColumnsAsNull">
+        $missingColumnsAsNull
+        <a href="classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#property_missingColumnsAsNull" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVReadOptions.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-csvreadoptions.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVReadOptions.php">CSVReadOptions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">28</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$missingColumnsAsNull</span>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
     <h4 class="phpdocumentor-element__name" id="property_removeBOM">
         $removeBOM
         <a href="classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#property_removeBOM" class="headerlink"><i class="fas fa-link"></i></a>
@@ -567,7 +616,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$withHeader</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$emptyToNull</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$removeBOM</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$separator</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$enclosure</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$escape</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$charactersReadInLine</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$withHeader</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$emptyToNull</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$removeBOM</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$separator</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$enclosure</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$escape</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$charactersReadInLine</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$missingColumnsAsNull</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -628,6 +677,13 @@
 </section>
 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$missingColumnsAsNull</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
             </dl>
 
     
@@ -650,7 +706,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVReadOptions.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-csvreadoptions.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVReadOptions.php">CSVReadOptions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -700,14 +756,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVReadOptions.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-csvreadoptions.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVReadOptions.php">CSVReadOptions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{with_header: bool, empty_to_null: bool, remove_bom: bool, separator: null|string, enclosure: null|string, escape: null|string, characters_read_in_line: null|int}</span></code>
+                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{with_header: bool, empty_to_null: bool, remove_bom: bool, separator: null|string, enclosure: null|string, escape: null|string, characters_read_in_line: null|int, missing_columns_as_null: bool}</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -720,7 +776,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array{with_header: bool, empty_to_null: bool, remove_bom: bool, separator: null|string, enclosure: null|string, escape: null|string, characters_read_in_line: null|int}</span>
+        <span class="phpdocumentor-signature__response_type">array{with_header: bool, empty_to_null: bool, remove_bom: bool, separator: null|string, enclosure: null|string, escape: null|string, characters_read_in_line: null|int, missing_columns_as_null: bool}</span>
             </section>
 
 </article>
@@ -738,7 +794,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVReadOptions.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-csvreadoptions.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVReadOptions.php">CSVReadOptions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -786,7 +842,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVReadOptions.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-csvreadoptions.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVReadOptions.php">CSVReadOptions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -838,7 +894,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVReadOptions.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-csvreadoptions.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVReadOptions.php">CSVReadOptions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">92</span>
 
     </aside>
 
@@ -886,7 +942,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVReadOptions.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-csvreadoptions.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVReadOptions.php">CSVReadOptions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
@@ -934,7 +990,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVReadOptions.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-csvreadoptions.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVReadOptions.php">CSVReadOptions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">120</span>
 
     </aside>
 
@@ -982,7 +1038,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVReadOptions.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-csvreadoptions.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVReadOptions.php">CSVReadOptions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">134</span>
 
     </aside>
 
@@ -1022,6 +1078,54 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_withMissingColumnsAsNull">
+        withMissingColumnsAsNull()
+        <a href="classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#method_withMissingColumnsAsNull" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVReadOptions.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-csvreadoptions.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVReadOptions.php">CSVReadOptions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">148</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">withMissingColumnsAsNull</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$missingColumnsAsNull</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$missingColumnsAsNull</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_withRemoveBOM">
         withRemoveBOM()
         <a href="classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#method_withRemoveBOM" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1030,7 +1134,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVReadOptions.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-csvreadoptions.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVReadOptions.php">CSVReadOptions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">140</span>
+    <span class="phpdocumentor-element-found-in__line">162</span>
 
     </aside>
 
@@ -1078,7 +1182,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVReadOptions.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-csvreadoptions.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVReadOptions.php">CSVReadOptions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">153</span>
+    <span class="phpdocumentor-element-found-in__line">176</span>
 
     </aside>
 
@@ -1138,6 +1242,7 @@
                                                     <li class=""><a href="classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#property_emptyToNull">$emptyToNull</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#property_enclosure">$enclosure</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#property_escape">$escape</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#property_missingColumnsAsNull">$missingColumnsAsNull</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#property_removeBOM">$removeBOM</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#property_separator">$separator</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#property_withHeader">$withHeader</a></li>
@@ -1156,6 +1261,7 @@
                                             <li class=""><a href="classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#method_withEnclosure">withEnclosure()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#method_withEscape">withEscape()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#method_withHeader">withHeader()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#method_withMissingColumnsAsNull">withMissingColumnsAsNull()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#method_withRemoveBOM">withRemoveBOM()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#method_withSeparator">withSeparator()</a></li>
                                     </ul>

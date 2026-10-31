@@ -130,7 +130,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/Grid/RecordDecoder.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-grid-recorddecoder.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/Grid/RecordDecoder.php">RecordDecoder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
@@ -166,10 +166,10 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-IO-Extractor-Grid-RecordDecoder.html#method_decode">decode()</a>
     <span>
-                                &nbsp;: array&lt;int, array&lt;string, mixed&gt;&gt;    </span>
+                                &nbsp;: null|array&lt;string, mixed&gt;|string    </span>
 </dt>
-<dd>Records before the header is resolved that hold no cell are skipped. A cell a record lacks is null; a present
-&#039;&#039; cell is null under emptyToNull.</dd>
+<dd>An extra empty cell (&#039;&#039; or null) loses nothing, so only a non-empty one makes a record corrupted. A missing cell
+makes it corrupted unless missingColumnsAsNull; a present &#039;&#039; cell is null under emptyToNull.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-IO-Extractor-Grid-RecordDecoder.html#method_headers">headers()</a>
@@ -205,14 +205,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/Grid/RecordDecoder.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-grid-recorddecoder.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/Grid/RecordDecoder.php">RecordDecoder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$withHeader</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$emptyToNull</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dropExtraColumns</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$headers</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$withHeader</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$emptyToNull</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$missingColumnsAsNull</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$headers</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -235,9 +235,9 @@
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$dropExtraColumns</span>
+                <span class="phpdocumentor-argument-list__argument__name">$missingColumnsAsNull</span>
                 : <span class="phpdocumentor-argument-list__argument__type">bool</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">true</span>            </dt>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -291,12 +291,12 @@ file's first record; withHeader must be false</p>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Records before the header is resolved that hold no cell are skipped. A cell a record lacks is null; a present
-&#039;&#039; cell is null under emptyToNull.</p>
+        <p class="phpdocumentor-summary">An extra empty cell (&#039;&#039; or null) loses nothing, so only a non-empty one makes a record corrupted. A missing cell
+makes it corrupted unless missingColumnsAsNull; a present &#039;&#039; cell is null under emptyToNull.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">decode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, array&lt;string|int, mixed&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batch</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, array&lt;string, mixed&gt;&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">decode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cells</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|array&lt;string, mixed&gt;|string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -305,8 +305,8 @@ file's first record; withHeader must be false</p>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$batch</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, array&lt;string|int, mixed&gt;&gt;</span>
+                <span class="phpdocumentor-argument-list__argument__name">$cells</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -314,28 +314,17 @@ file's first record; withHeader must be false</p>
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="method_decode_tags">
-        Tags
-        <a href="classes/Flow-ETL-IO-Extractor-Grid-RecordDecoder.html#method_decode_tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                    <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">throws</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-ETL-Foundation-Exception-InvalidArgumentException.html"><abbr title="\Flow\ETL\Foundation\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></span>
-                                                                                        <section class="phpdocumentor-description"><p>a record with more cells than headers, unless extra columns are dropped</p>
-</section>
-
-                                    </dd>
-                        </dl>
 
         
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;int, array&lt;string, mixed&gt;&gt;</span>
+        <span class="phpdocumentor-signature__response_type">null|array&lt;string, mixed&gt;|string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>null for a record that is no row (the header, an empty record), why
+the record is corrupted, or the row's values</p>
+</section>
+
             </section>
 
 </article>
@@ -353,7 +342,7 @@ file's first record; withHeader must be false</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/Grid/RecordDecoder.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-grid-recorddecoder.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/Grid/RecordDecoder.php">RecordDecoder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">98</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 

@@ -207,7 +207,7 @@ when the read ends.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/File/FileBatches.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-file-filebatches.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/File/FileBatches.php">FileBatches.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -227,7 +227,8 @@ rows. An OffsetSkippingFileBatches is given the offset and returns the rows it s
 format may exceed - FileReadLoop trims what goes past it - and null when the read carries conjuncts, whose rows
 FileReadLoop counts. FileReadLoop applies the conjuncts to every row returned; a format given them when built may
 skip what they prove cannot match.</p>
-<p>A file's own resources are released by the generator (finally); those that span files go at close().</p>
+<p>A file's own resources are released by the generator (finally); those that span files go at close(). A corrupted
+record is handed up as its CorruptedRecordException, in record order, never thrown.</p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -300,7 +301,7 @@ skip what they prove cannot match.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/File/FileBatches.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-file-filebatches.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/File/FileBatches.php">FileBatches.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 

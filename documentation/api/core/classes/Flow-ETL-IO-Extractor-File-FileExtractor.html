@@ -254,7 +254,7 @@ instead of its own description, and values are cast to fit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor.php">Extractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -276,7 +276,8 @@ foreach + send().</p>
 $criteria-&gt;conjuncts; only a FileExtractor ever receives any. The limit and the path filter are hints: the plan
 still enforces the limit, and the predicate of every path filter is also one of the conjuncts or stays in a
 Filter node, so a source that reads or lists more is still correct. Batches built on another backend than
-$backend are adopted by the runtime.</p>
+$backend are adopted by the runtime. A record that cannot become a row is yielded as its
+CorruptedRecordException, in source order; the runtime routes or refuses it.</p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -321,7 +322,7 @@ $backend are adopted by the runtime.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor.php">Extractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -489,7 +490,7 @@ it ends; a plan that does not run (explain(), schema()) keeps what it listed for
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor.php">Extractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -593,7 +594,7 @@ what it sniffs, as CSVExtractor and ArrayExtractor do.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor.php">Extractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -641,7 +642,7 @@ ANALYZE), never run the query.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor.php">Extractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 

@@ -163,6 +163,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelReadOptions.html#property_missingColumnsAsNull">$missingColumnsAsNull</a>
+    <span>
+                        &nbsp;: bool            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelReadOptions.html#property_sheetName">$sheetName</a>
     <span>
                         &nbsp;: string|null            </span>
@@ -197,7 +203,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelReadOptions.html#method_normalize">normalize()</a>
     <span>
-                                &nbsp;: array{with_header: bool, convert_empty_to_null: bool, sheet_name: null|string, format: null|string}    </span>
+                                &nbsp;: array{with_header: bool, convert_empty_to_null: bool, sheet_name: null|string, format: null|string, missing_columns_as_null: bool}    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -214,6 +220,12 @@
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelReadOptions.html#method_withHeader">withHeader()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelReadOptions.html#method_withMissingColumnsAsNull">withMissingColumnsAsNull()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
@@ -302,6 +314,43 @@
             <span class="phpdocumentor-signature__type"><a href="classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelReader.html"><abbr title="\Flow\ETL\Adapter\Excel\IO\Extractor\ExcelReader">ExcelReader</abbr></a>|null</span>
     <span class="phpdocumentor-signature__name">$format</span>
      = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_missingColumnsAsNull">
+        $missingColumnsAsNull
+        <a href="classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelReadOptions.html#property_missingColumnsAsNull" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Extractor/ExcelReadOptions.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-io-extractor-excelreadoptions.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Extractor/ExcelReadOptions.php">ExcelReadOptions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">20</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$missingColumnsAsNull</span>
+     = <span class="phpdocumentor-signature__default-value">true</span></code>
 
     
     
@@ -414,7 +463,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$withHeader</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$convertEmptyToNull</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sheetName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelReader.html"><abbr title="\Flow\ETL\Adapter\Excel\IO\Extractor\ExcelReader">ExcelReader</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$withHeader</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$convertEmptyToNull</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sheetName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelReader.html"><abbr title="\Flow\ETL\Adapter\Excel\IO\Extractor\ExcelReader">ExcelReader</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$missingColumnsAsNull</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -450,6 +499,13 @@
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$missingColumnsAsNull</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
             </dl>
 
     
@@ -472,7 +528,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Extractor/ExcelReadOptions.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-io-extractor-excelreadoptions.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Extractor/ExcelReadOptions.php">ExcelReadOptions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -522,14 +578,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Extractor/ExcelReadOptions.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-io-extractor-excelreadoptions.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Extractor/ExcelReadOptions.php">ExcelReadOptions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{with_header: bool, convert_empty_to_null: bool, sheet_name: null|string, format: null|string}</span></code>
+                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{with_header: bool, convert_empty_to_null: bool, sheet_name: null|string, format: null|string, missing_columns_as_null: bool}</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -542,7 +598,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array{with_header: bool, convert_empty_to_null: bool, sheet_name: null|string, format: null|string}</span>
+        <span class="phpdocumentor-signature__response_type">array{with_header: bool, convert_empty_to_null: bool, sheet_name: null|string, format: null|string, missing_columns_as_null: bool}</span>
             </section>
 
 </article>
@@ -560,7 +616,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Extractor/ExcelReadOptions.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-io-extractor-excelreadoptions.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Extractor/ExcelReadOptions.php">ExcelReadOptions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -608,7 +664,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Extractor/ExcelReadOptions.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-io-extractor-excelreadoptions.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Extractor/ExcelReadOptions.php">ExcelReadOptions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -656,7 +712,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Extractor/ExcelReadOptions.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-io-extractor-excelreadoptions.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Extractor/ExcelReadOptions.php">ExcelReadOptions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
@@ -696,6 +752,54 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_withMissingColumnsAsNull">
+        withMissingColumnsAsNull()
+        <a href="classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelReadOptions.html#method_withMissingColumnsAsNull" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Extractor/ExcelReadOptions.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-io-extractor-excelreadoptions.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Extractor/ExcelReadOptions.php">ExcelReadOptions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">90</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">withMissingColumnsAsNull</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$missingColumnsAsNull</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$missingColumnsAsNull</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_withSheetName">
         withSheetName()
         <a href="classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelReadOptions.html#method_withSheetName" class="headerlink"><i class="fas fa-link"></i></a>
@@ -704,7 +808,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Extractor/ExcelReadOptions.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-io-extractor-excelreadoptions.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Extractor/ExcelReadOptions.php">ExcelReadOptions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">101</span>
 
     </aside>
 
@@ -762,6 +866,7 @@
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelReadOptions.html#property_convertEmptyToNull">$convertEmptyToNull</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelReadOptions.html#property_format">$format</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelReadOptions.html#property_missingColumnsAsNull">$missingColumnsAsNull</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelReadOptions.html#property_sheetName">$sheetName</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelReadOptions.html#property_withHeader">$withHeader</a></li>
                                             </ul>
@@ -776,6 +881,7 @@
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelReadOptions.html#method_withConvertEmptyToNull">withConvertEmptyToNull()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelReadOptions.html#method_withFormat">withFormat()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelReadOptions.html#method_withHeader">withHeader()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelReadOptions.html#method_withMissingColumnsAsNull">withMissingColumnsAsNull()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelReadOptions.html#method_withSheetName">withSheetName()</a></li>
                                     </ul>
             </li>

@@ -126,7 +126,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Inference/WorkbookSheetSample.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-io-inference-workbooksheetsample.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Inference/WorkbookSheetSample.php">WorkbookSheetSample.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
@@ -183,6 +183,7 @@
     <span>
                                 &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string|int, mixed&gt;&gt;    </span>
 </dt>
+<dd>The rows of the records that are not corrupted.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-Excel-IO-Inference-WorkbookSheetSample.html#method_wholeSheet">wholeSheet()</a>
@@ -218,14 +219,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Inference/WorkbookSheetSample.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-io-inference-workbooksheetsample.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Inference/WorkbookSheetSample.php">WorkbookSheetSample.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string|int, mixed&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sheetRows</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-Excel-IO-Extractor-WorkbookSheet.html"><abbr title="\Flow\ETL\Adapter\Excel\IO\Extractor\WorkbookSheet">WorkbookSheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string|int, mixed&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sheetRows</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -234,11 +235,20 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$sheet</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Adapter-Excel-IO-Extractor-WorkbookSheet.html"><abbr title="\Flow\ETL\Adapter\Excel\IO\Extractor\WorkbookSheet">WorkbookSheet</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$sheetRows</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string|int, mixed&gt;&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>the sheet's raw rows, decoded by $sheet</p>
+</section>
+
             </dd>
             </dl>
 
@@ -262,11 +272,12 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Inference/WorkbookSheetSample.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-io-inference-workbooksheetsample.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Inference/WorkbookSheetSample.php">WorkbookSheetSample.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">The rows of the records that are not corrupted.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getIterator</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, array&lt;string|int, mixed&gt;&gt;</span></code>
@@ -300,7 +311,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Inference/WorkbookSheetSample.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-io-inference-workbooksheetsample.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Inference/WorkbookSheetSample.php">WorkbookSheetSample.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 

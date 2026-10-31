@@ -129,7 +129,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/SourceCount.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-sourcecount.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/SourceCount.php">SourceCount.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
     </aside>
 
@@ -173,7 +173,7 @@
     <span>
                                 &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;null|<a href="classes/Flow-ETL-IO-Extractor-Signal.html"><abbr title="\Flow\ETL\IO\Extractor\Signal">Signal</abbr></a>, void&gt;    </span>
 </dt>
-<dd>Counts $batches into this read, forwards a STOP, closed() once exhausted.</dd>
+<dd>Counts the rows of $batches into this read, a corrupted record none, forwards a STOP, closed() once exhausted.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Runtime-Executor-SourceCount.html#method_counted">counted()</a>
@@ -228,7 +228,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/SourceCount.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-sourcecount.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/SourceCount.php">SourceCount.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -273,7 +273,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/SourceCount.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-sourcecount.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/SourceCount.php">SourceCount.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -307,15 +307,15 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/SourceCount.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-sourcecount.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/SourceCount.php">SourceCount.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Counts $batches into this read, forwards a STOP, closed() once exhausted.</p>
+        <p class="phpdocumentor-summary">Counts the rows of $batches into this read, a corrupted record none, forwards a STOP, closed() once exhausted.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">count</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batches</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;null|<a href="classes/Flow-ETL-IO-Extractor-Signal.html"><abbr title="\Flow\ETL\IO\Extractor\Signal">Signal</abbr></a>, void&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">count</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <abbr title="\Flow\ETL\Runtime\Executor\T">T</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batches</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;null|<a href="classes/Flow-ETL-IO-Extractor-Signal.html"><abbr title="\Flow\ETL\IO\Extractor\Signal">Signal</abbr></a>, void&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -325,7 +325,7 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$batches</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <abbr title="\Flow\ETL\Runtime\Executor\T">T</abbr>&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -333,6 +333,19 @@
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="method_count_tags">
+        Tags
+        <a href="classes/Flow-ETL-Runtime-Executor-SourceCount.html#method_count_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">template</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
 
         
     
@@ -356,7 +369,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/SourceCount.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-sourcecount.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/SourceCount.php">SourceCount.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -400,7 +413,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/SourceCount.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-sourcecount.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/SourceCount.php">SourceCount.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -439,7 +452,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/SourceCount.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-sourcecount.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/SourceCount.php">SourceCount.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
@@ -483,7 +496,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/SourceCount.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-sourcecount.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/SourceCount.php">SourceCount.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 

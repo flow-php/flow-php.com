@@ -183,6 +183,14 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Foundation-Exception-InferredSchemaException.html#method_outsideTheSample">outsideTheSample()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>A file&#039;s record that does not fit a schema inferred from a sample - the sample can span files, so no position
+in this file places the record inside it.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Foundation-Exception-InvalidArgumentException.html#method_unsupportedPath">unsupportedPath()</a>
     <span>
                                 &nbsp;: self    </span>
@@ -487,6 +495,84 @@ becomes the way out, within the sample (or with no inference behind the schema) 
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_outsideTheSample">
+        outsideTheSample()
+        <a href="classes/Flow-ETL-Foundation-Exception-InferredSchemaException.html#method_outsideTheSample" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Foundation/Exception/InferredSchemaException.php"><a href="files/src-core-etl-src-flow-etl-foundation-exception-inferredschemaexception.html"><abbr title="src/core/etl/src/Flow/ETL/Foundation/Exception/InferredSchemaException.php">InferredSchemaException.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">69</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A file&#039;s record that does not fit a schema inferred from a sample - the sample can span files, so no position
+in this file places the record inside it.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">outsideTheSample</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$line</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sampleSize</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Foundation-Exception-SchemaMismatchException.html"><abbr title="\Flow\ETL\Foundation\Exception\SchemaMismatchException">SchemaMismatchException</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mismatch</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$uri</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$offset</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$line</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$sampleSize</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$mismatch</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Foundation-Exception-SchemaMismatchException.html"><abbr title="\Flow\ETL\Foundation\Exception\SchemaMismatchException">SchemaMismatchException</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_unsupportedPath">
         unsupportedPath()
         <a href="classes/Flow-ETL-Foundation-Exception-InvalidArgumentException.html#method_unsupportedPath" class="headerlink"><i class="fas fa-link"></i></a>
@@ -559,7 +645,7 @@ becomes the way out, within the sample (or with no inference behind the schema) 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Foundation/Exception/InferredSchemaException.php"><a href="files/src-core-etl-src-flow-etl-foundation-exception-inferredschemaexception.html"><abbr title="src/core/etl/src/Flow/ETL/Foundation/Exception/InferredSchemaException.php">InferredSchemaException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
@@ -637,6 +723,7 @@ becomes the way out, within the sample (or with no inference behind the schema) 
                                             <li class=""><a href="classes/Flow-ETL-Foundation-Exception-InferredSchemaException.html#method_columnsDiverge">columnsDiverge()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Foundation-Exception-InferredSchemaException.html#method_filesDiverge">filesDiverge()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Foundation-Exception-InferredSchemaException.html#method_nothingToInferFrom">nothingToInferFrom()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Foundation-Exception-InferredSchemaException.html#method_outsideTheSample">outsideTheSample()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Foundation-Exception-InvalidArgumentException.html#method_unsupportedPath">unsupportedPath()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Foundation-Exception-InferredSchemaException.html#method_whenPastTheSample">whenPastTheSample()</a></li>
                                     </ul>

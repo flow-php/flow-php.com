@@ -118,7 +118,7 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <a href="classes/Flow-ETL-IO-Extractor-BatchableExtractor.html"><abbr title="\Flow\ETL\IO\Extractor\BatchableExtractor">BatchableExtractor</abbr></a>,                             <a href="classes/Flow-ETL-IO-Extractor.html"><abbr title="\Flow\ETL\IO\Extractor">Extractor</abbr></a>,                             <a href="classes/Flow-ETL-IO-Extractor-InfersSchema.html"><abbr title="\Flow\ETL\IO\Extractor\InfersSchema">InfersSchema</abbr></a>,                             <a href="classes/Flow-ETL-IO-Extractor-Refreshable.html"><abbr title="\Flow\ETL\IO\Extractor\Refreshable">Refreshable</abbr></a>                    </span>
+                            <a href="classes/Flow-ETL-IO-Extractor-BatchableExtractor.html"><abbr title="\Flow\ETL\IO\Extractor\BatchableExtractor">BatchableExtractor</abbr></a>,                             <a href="classes/Flow-ETL-IO-Extractor.html"><abbr title="\Flow\ETL\IO\Extractor">Extractor</abbr></a>,                             <a href="classes/Flow-ETL-IO-Extractor-InfersSchema.html"><abbr title="\Flow\ETL\IO\Extractor\InfersSchema">InfersSchema</abbr></a>,                             <a href="classes/Flow-ETL-IO-Extractor-Refreshable.html"><abbr title="\Flow\ETL\IO\Extractor\Refreshable">Refreshable</abbr></a>,                             <a href="classes/Flow-ETL-IO-CorruptedRecordsRouter.html"><abbr title="\Flow\ETL\IO\CorruptedRecordsRouter">CorruptedRecordsRouter</abbr></a>                    </span>
     
     </h2>
 
@@ -132,7 +132,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-arrayextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php">ArrayExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -150,7 +150,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Extractor-BatchableExtractor.html"><abbr title="\Flow\ETL\IO\Extractor\BatchableExtractor">BatchableExtractor</abbr></a></dt><dd>A source that decides how many rows it puts in one Rows: withBatchSize() bounds what the source builds.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Extractor.html"><abbr title="\Flow\ETL\IO\Extractor">Extractor</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Extractor-InfersSchema.html"><abbr title="\Flow\ETL\IO\Extractor\InfersSchema">InfersSchema</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Extractor-Refreshable.html"><abbr title="\Flow\ETL\IO\Extractor\Refreshable">Refreshable</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Extractor-BatchableExtractor.html"><abbr title="\Flow\ETL\IO\Extractor\BatchableExtractor">BatchableExtractor</abbr></a></dt><dd>A source that decides how many rows it puts in one Rows: withBatchSize() bounds what the source builds.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Extractor.html"><abbr title="\Flow\ETL\IO\Extractor">Extractor</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Extractor-InfersSchema.html"><abbr title="\Flow\ETL\IO\Extractor\InfersSchema">InfersSchema</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Extractor-Refreshable.html"><abbr title="\Flow\ETL\IO\Extractor\Refreshable">Refreshable</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-CorruptedRecordsRouter.html"><abbr title="\Flow\ETL\IO\CorruptedRecordsRouter">CorruptedRecordsRouter</abbr></a></dt>    </dl>
 
 
 
@@ -175,6 +175,12 @@
     <a class="" href="classes/Flow-ETL-IO-Extractor-ArrayExtractor.html#method_batchSize">batchSize()</a>
     <span>
                                 &nbsp;: int<1, max>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-IO-Extractor-ArrayExtractor.html#method_corruptedRecordsLoader">corruptedRecordsLoader()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-IO-Loader.html"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr></a>|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -236,6 +242,13 @@ partition filter the plan pushed is the plan&#039;s to account for.</dd>
 shares its size.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-IO-Extractor-ArrayExtractor.html#method_withCorruptedRecords">withCorruptedRecords()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
+<dd>Corrupted records routed to $loader; null refuses them, the default.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-IO-Extractor-ArrayExtractor.html#method_withSchema">withSchema()</a>
     <span>
                                 &nbsp;: static    </span>
@@ -271,7 +284,7 @@ instead of its own description, and values are cast to fit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-arrayextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php">ArrayExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -335,7 +348,7 @@ else is read exactly once, spilled, and replayed</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-arrayextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php">ArrayExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
@@ -365,6 +378,44 @@ else is read exactly once, spilled, and replayed</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_corruptedRecordsLoader">
+        corruptedRecordsLoader()
+        <a href="classes/Flow-ETL-IO-Extractor-ArrayExtractor.html#method_corruptedRecordsLoader" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-arrayextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php">ArrayExtractor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">96</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">corruptedRecordsLoader</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-IO-Loader.html"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr></a>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-IO-Loader.html"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr></a>|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_extract">
         extract()
         <a href="classes/Flow-ETL-IO-Extractor-ArrayExtractor.html#method_extract" class="headerlink"><i class="fas fa-link"></i></a>
@@ -373,7 +424,7 @@ else is read exactly once, spilled, and replayed</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-arrayextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php">ArrayExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -431,7 +482,7 @@ batches. Consumers must not assume a minimum size, a constant size, or a non-emp
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-arrayextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php">ArrayExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">138</span>
 
     </aside>
 
@@ -495,7 +546,7 @@ batches. Consumers must not assume a minimum size, a constant size, or a non-emp
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-arrayextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php">ArrayExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 
@@ -536,7 +587,7 @@ reads.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-arrayextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php">ArrayExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">215</span>
+    <span class="phpdocumentor-element-found-in__line">221</span>
 
     </aside>
 
@@ -572,7 +623,7 @@ cannot change, and a spilled one-shot dataset cannot be read again.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-arrayextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php">ArrayExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">148</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 
@@ -616,7 +667,7 @@ what it sniffs, as CSVExtractor and ArrayExtractor do.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-arrayextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php">ArrayExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">201</span>
+    <span class="phpdocumentor-element-found-in__line">207</span>
 
     </aside>
 
@@ -664,7 +715,7 @@ ANALYZE), never run the query.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-arrayextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php">ArrayExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">223</span>
+    <span class="phpdocumentor-element-found-in__line">229</span>
 
     </aside>
 
@@ -706,6 +757,55 @@ shares its size.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_withCorruptedRecords">
+        withCorruptedRecords()
+        <a href="classes/Flow-ETL-IO-Extractor-ArrayExtractor.html#method_withCorruptedRecords" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-arrayextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php">ArrayExtractor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">236</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Corrupted records routed to $loader; null refuses them, the default.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">withCorruptedRecords</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-IO-Loader.html"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$loader</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$loader</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-IO-Loader.html"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr></a>|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_withSchema">
         withSchema()
         <a href="classes/Flow-ETL-IO-Extractor-ArrayExtractor.html#method_withSchema" class="headerlink"><i class="fas fa-link"></i></a>
@@ -714,7 +814,7 @@ shares its size.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-arrayextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/ArrayExtractor.php">ArrayExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">230</span>
+    <span class="phpdocumentor-element-found-in__line">243</span>
 
     </aside>
 
@@ -774,6 +874,7 @@ instead of its own description, and values are cast to fit.</p>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-IO-Extractor-ArrayExtractor.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Extractor-ArrayExtractor.html#method_batchSize">batchSize()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-IO-Extractor-ArrayExtractor.html#method_corruptedRecordsLoader">corruptedRecordsLoader()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Extractor-ArrayExtractor.html#method_extract">extract()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Extractor-ArrayExtractor.html#method_inferSchema">inferSchema()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Extractor-ArrayExtractor.html#method_isRepeatable">isRepeatable()</a></li>
@@ -781,6 +882,7 @@ instead of its own description, and values are cast to fit.</p>
                                             <li class=""><a href="classes/Flow-ETL-IO-Extractor-ArrayExtractor.html#method_schema">schema()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Extractor-ArrayExtractor.html#method_statistics">statistics()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Extractor-ArrayExtractor.html#method_withBatchSize">withBatchSize()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-IO-Extractor-ArrayExtractor.html#method_withCorruptedRecords">withCorruptedRecords()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Extractor-ArrayExtractor.html#method_withSchema">withSchema()</a></li>
                                     </ul>
             </li>

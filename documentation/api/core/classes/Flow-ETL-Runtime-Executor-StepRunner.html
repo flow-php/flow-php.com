@@ -131,7 +131,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/StepRunner.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-steprunner.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/StepRunner.php">StepRunner.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -176,7 +176,9 @@ wrapper left to distrust.</dd>
     <span>
                                 &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;null|<a href="classes/Flow-ETL-IO-Extractor-Signal.html"><abbr title="\Flow\ETL\IO\Extractor\Signal">Signal</abbr></a>, void&gt;    </span>
 </dt>
-<dd>$input through one run of loaders and transformers: drops empty batches, ends its loaders when the run ends.</dd>
+<dd>$input through one run of loaders and transformers: drops empty batches, ends its loaders when the run ends. A
+corrupted record goes to the source&#039;s reject loader, loaded and ended like the run&#039;s own loaders; without one it
+fails the run, whatever the error handler.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Runtime-Executor-StepRunner.html#method_steps">steps()</a>
@@ -215,7 +217,7 @@ a branch runs as the step that feeds it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/StepRunner.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-steprunner.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/StepRunner.php">StepRunner.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -266,7 +268,7 @@ a branch runs as the step that feeds it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/StepRunner.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-steprunner.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/StepRunner.php">StepRunner.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">266</span>
+    <span class="phpdocumentor-element-found-in__line">372</span>
 
     </aside>
 
@@ -334,15 +336,17 @@ wrapper left to distrust.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/StepRunner.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-steprunner.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/StepRunner.php">StepRunner.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">98</span>
+    <span class="phpdocumentor-element-found-in__line">114</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">$input through one run of loaders and transformers: drops empty batches, ends its loaders when the run ends.</p>
+        <p class="phpdocumentor-summary">$input through one run of loaders and transformers: drops empty batches, ends its loaders when the run ends. A
+corrupted record goes to the source&#039;s reject loader, loaded and ended like the run&#039;s own loaders; without one it
+fails the run, whatever the error handler.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">run</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, <a href="classes/Flow-ETL-IO-Loader.html"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr></a>|<a href="classes/Flow-ETL-Runtime-Executor-NestedLoader.html"><abbr title="\Flow\ETL\Runtime\Executor\NestedLoader">NestedLoader</abbr></a>|<a href="classes/Flow-ETL-Operators-Transformer.html"><abbr title="\Flow\ETL\Operators\Transformer">Transformer</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$steps</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Runtime-FlowContext.html"><abbr title="\Flow\ETL\Runtime\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-ETL-IO-Extractor.html"><abbr title="\Flow\ETL\IO\Extractor">Extractor</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;null|<a href="classes/Flow-ETL-IO-Extractor-Signal.html"><abbr title="\Flow\ETL\IO\Extractor\Signal">Signal</abbr></a>, void&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">run</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, <a href="classes/Flow-ETL-IO-Loader.html"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr></a>|<a href="classes/Flow-ETL-Runtime-Executor-NestedLoader.html"><abbr title="\Flow\ETL\Runtime\Executor\NestedLoader">NestedLoader</abbr></a>|<a href="classes/Flow-ETL-Operators-Transformer.html"><abbr title="\Flow\ETL\Operators\Transformer">Transformer</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$steps</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Foundation-Exception-CorruptedRecordException.html"><abbr title="\Flow\ETL\Foundation\Exception\CorruptedRecordException">CorruptedRecordException</abbr></a>|<a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Runtime-FlowContext.html"><abbr title="\Flow\ETL\Runtime\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-ETL-IO-Extractor.html"><abbr title="\Flow\ETL\IO\Extractor">Extractor</abbr></a>|<a href="classes/Flow-ETL-IO-Extractor-Reader.html"><abbr title="\Flow\ETL\IO\Extractor\Reader">Reader</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;null|<a href="classes/Flow-ETL-IO-Extractor-Signal.html"><abbr title="\Flow\ETL\IO\Extractor\Signal">Signal</abbr></a>, void&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -361,7 +365,7 @@ wrapper left to distrust.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$input</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Foundation-Exception-CorruptedRecordException.html"><abbr title="\Flow\ETL\Foundation\Exception\CorruptedRecordException">CorruptedRecordException</abbr></a>|<a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -375,10 +379,11 @@ wrapper left to distrust.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$source</span>
-                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-ETL-IO-Extractor.html"><abbr title="\Flow\ETL\IO\Extractor">Extractor</abbr></a></span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-ETL-IO-Extractor.html"><abbr title="\Flow\ETL\IO\Extractor">Extractor</abbr></a>|<a href="classes/Flow-ETL-IO-Extractor-Reader.html"><abbr title="\Flow\ETL\IO\Extractor\Reader">Reader</abbr></a></span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>the extractor $input comes from directly, so its failures reach the error handler</p>
+                    <section class="phpdocumentor-description"><p>the source $input comes from directly, so its failures reach the error
+handler and its corrupted records its reject loader</p>
 </section>
 
             </dd>
@@ -408,7 +413,7 @@ wrapper left to distrust.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/StepRunner.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-steprunner.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/StepRunner.php">StepRunner.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -418,7 +423,7 @@ a branch runs as the step that feeds it.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">steps</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Physical-PipelineSteps.html"><abbr title="\Flow\ETL\Planning\Physical\PipelineSteps">PipelineSteps</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$steps</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Runtime-FlowContext.html"><abbr title="\Flow\ETL\Runtime\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-ETL-IO-Extractor.html"><abbr title="\Flow\ETL\IO\Extractor">Extractor</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-ETL-Runtime-Executor-SourceCounts.html"><abbr title="\Flow\ETL\Runtime\Executor\SourceCounts">SourceCounts</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sources</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;null|<a href="classes/Flow-ETL-IO-Extractor-Signal.html"><abbr title="\Flow\ETL\IO\Extractor\Signal">Signal</abbr></a>, void&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">steps</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Physical-PipelineSteps.html"><abbr title="\Flow\ETL\Planning\Physical\PipelineSteps">PipelineSteps</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$steps</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Foundation-Exception-CorruptedRecordException.html"><abbr title="\Flow\ETL\Foundation\Exception\CorruptedRecordException">CorruptedRecordException</abbr></a>|<a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Runtime-FlowContext.html"><abbr title="\Flow\ETL\Runtime\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-ETL-IO-Extractor.html"><abbr title="\Flow\ETL\IO\Extractor">Extractor</abbr></a>|<a href="classes/Flow-ETL-IO-Extractor-Reader.html"><abbr title="\Flow\ETL\IO\Extractor\Reader">Reader</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-ETL-Runtime-Executor-SourceCounts.html"><abbr title="\Flow\ETL\Runtime\Executor\SourceCounts">SourceCounts</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sources</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;null|<a href="classes/Flow-ETL-IO-Extractor-Signal.html"><abbr title="\Flow\ETL\IO\Extractor\Signal">Signal</abbr></a>, void&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -435,7 +440,7 @@ a branch runs as the step that feeds it.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$input</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Foundation-Exception-CorruptedRecordException.html"><abbr title="\Flow\ETL\Foundation\Exception\CorruptedRecordException">CorruptedRecordException</abbr></a>|<a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -449,10 +454,11 @@ a branch runs as the step that feeds it.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$source</span>
-                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-ETL-IO-Extractor.html"><abbr title="\Flow\ETL\IO\Extractor">Extractor</abbr></a></span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-ETL-IO-Extractor.html"><abbr title="\Flow\ETL\IO\Extractor">Extractor</abbr></a>|<a href="classes/Flow-ETL-IO-Extractor-Reader.html"><abbr title="\Flow\ETL\IO\Extractor\Reader">Reader</abbr></a></span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>the extractor $input comes from directly, so its failures reach the error handler</p>
+                    <section class="phpdocumentor-description"><p>the source $input comes from directly, so its failures reach the error
+handler and its corrupted records its reject loader</p>
 </section>
 
             </dd>

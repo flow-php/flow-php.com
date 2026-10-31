@@ -166,13 +166,13 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#property_dropExtraColumns">$dropExtraColumns</a>
+    <a class="" href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#property_emptyToNull">$emptyToNull</a>
     <span>
                         &nbsp;: bool            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#property_emptyToNull">$emptyToNull</a>
+    <a class="" href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#property_missingColumnsAsNull">$missingColumnsAsNull</a>
     <span>
                         &nbsp;: bool            </span>
 </dt>
@@ -219,12 +219,6 @@
 where the string ladder has anything to read; the others hand over typed JSON scalars.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#method_withDropExtraColumns">withDropExtraColumns()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#method_withEmptyToNull">withEmptyToNull()</a>
     <span>
                                 &nbsp;: self    </span>
@@ -232,6 +226,12 @@ where the string ladder has anything to read; the others hand over typed JSON sc
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#method_withHeader">withHeader()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#method_withMissingColumnsAsNull">withMissingColumnsAsNull()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
@@ -262,43 +262,6 @@ where the string ladder has anything to read; the others hand over typed JSON sc
             -public
                                                                     "
 >
-    <h4 class="phpdocumentor-element__name" id="property_dropExtraColumns">
-        $dropExtraColumns
-        <a href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#property_dropExtraColumns" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                            </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/IO/Extractor/GoogleSheetReadOptions.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-io-extractor-googlesheetreadoptions.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/IO/Extractor/GoogleSheetReadOptions.php">GoogleSheetReadOptions.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">23</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">bool</span>
-    <span class="phpdocumentor-signature__name">$dropExtraColumns</span>
-     = <span class="phpdocumentor-signature__default-value">true</span></code>
-
-    
-    
-    
-
-        
-        
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                                    "
->
     <h4 class="phpdocumentor-element__name" id="property_emptyToNull">
         $emptyToNull
         <a href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#property_emptyToNull" class="headerlink"><i class="fas fa-link"></i></a>
@@ -320,6 +283,43 @@ where the string ladder has anything to read; the others hand over typed JSON sc
             <span class="phpdocumentor-signature__type">bool</span>
     <span class="phpdocumentor-signature__name">$emptyToNull</span>
      = <span class="phpdocumentor-signature__default-value">true</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_missingColumnsAsNull">
+        $missingColumnsAsNull
+        <a href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#property_missingColumnsAsNull" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/IO/Extractor/GoogleSheetReadOptions.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-io-extractor-googlesheetreadoptions.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/IO/Extractor/GoogleSheetReadOptions.php">GoogleSheetReadOptions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">23</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$missingColumnsAsNull</span>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
 
     
     
@@ -432,7 +432,7 @@ where the string ladder has anything to read; the others hand over typed JSON sc
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$withHeader</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dropExtraColumns</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$emptyToNull</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Adapter\GoogleSheet\IO\Extractor\GoogleSheetOptions">GoogleSheetOptions</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$withHeader</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$missingColumnsAsNull</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$emptyToNull</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Adapter\GoogleSheet\IO\Extractor\GoogleSheetOptions">GoogleSheetOptions</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -448,9 +448,9 @@ where the string ladder has anything to read; the others hand over typed JSON sc
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$dropExtraColumns</span>
+                <span class="phpdocumentor-argument-list__argument__name">$missingColumnsAsNull</span>
                 : <span class="phpdocumentor-argument-list__argument__type">bool</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">true</span>            </dt>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -571,54 +571,6 @@ where the string ladder has anything to read; the others hand over typed JSON sc
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_withDropExtraColumns">
-        withDropExtraColumns()
-        <a href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#method_withDropExtraColumns" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/IO/Extractor/GoogleSheetReadOptions.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-io-extractor-googlesheetreadoptions.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/IO/Extractor/GoogleSheetReadOptions.php">GoogleSheetReadOptions.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">47</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">withDropExtraColumns</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dropExtraColumns</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$dropExtraColumns</span>
-                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_withEmptyToNull">
         withEmptyToNull()
         <a href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#method_withEmptyToNull" class="headerlink"><i class="fas fa-link"></i></a>
@@ -627,7 +579,7 @@ where the string ladder has anything to read; the others hand over typed JSON sc
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/IO/Extractor/GoogleSheetReadOptions.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-io-extractor-googlesheetreadoptions.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/IO/Extractor/GoogleSheetReadOptions.php">GoogleSheetReadOptions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -675,7 +627,7 @@ where the string ladder has anything to read; the others hand over typed JSON sc
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/IO/Extractor/GoogleSheetReadOptions.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-io-extractor-googlesheetreadoptions.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/IO/Extractor/GoogleSheetReadOptions.php">GoogleSheetReadOptions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -692,6 +644,54 @@ where the string ladder has anything to read; the others hand over typed JSON sc
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$withHeader</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_withMissingColumnsAsNull">
+        withMissingColumnsAsNull()
+        <a href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#method_withMissingColumnsAsNull" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/IO/Extractor/GoogleSheetReadOptions.php"><a href="files/src-adapter-etl-adapter-google-sheet-src-flow-etl-adapter-googlesheet-io-extractor-googlesheetreadoptions.html"><abbr title="src/adapter/etl-adapter-google-sheet/src/Flow/ETL/Adapter/GoogleSheet/IO/Extractor/GoogleSheetReadOptions.php">GoogleSheetReadOptions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">57</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">withMissingColumnsAsNull</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$missingColumnsAsNull</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$missingColumnsAsNull</span>
                 : <span class="phpdocumentor-argument-list__argument__type">bool</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -779,8 +779,8 @@ where the string ladder has anything to read; the others hand over typed JSON sc
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li class=""><a href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#property_dropExtraColumns">$dropExtraColumns</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#property_emptyToNull">$emptyToNull</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#property_missingColumnsAsNull">$missingColumnsAsNull</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#property_options">$options</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#property_withHeader">$withHeader</a></li>
                                             </ul>
@@ -792,9 +792,9 @@ where the string ladder has anything to read; the others hand over typed JSON sc
                                             <li class=""><a href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#method_decoder">decoder()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#method_typer">typer()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#method_withDropExtraColumns">withDropExtraColumns()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#method_withEmptyToNull">withEmptyToNull()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#method_withHeader">withHeader()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#method_withMissingColumnsAsNull">withMissingColumnsAsNull()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#method_withOptions">withOptions()</a></li>
                                     </ul>
             </li>

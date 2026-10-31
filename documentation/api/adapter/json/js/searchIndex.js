@@ -81,6 +81,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\IO\\Extractor\\JsonExtractor\u003A\u003AwithCorruptedRecords\u0028\u0029",
+            "name": "withCorruptedRecords",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method_withCorruptedRecords"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\IO\\Extractor\\JsonExtractor\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
@@ -95,6 +100,11 @@ Search.appendIndex(
             "name": "isRepeatable",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method_isRepeatable"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\IO\\Extractor\\JsonExtractor\u003A\u003AcorruptedRecordsLoader\u0028\u0029",
+            "name": "corruptedRecordsLoader",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method_corruptedRecordsLoader"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\IO\\Extractor\\JsonExtractor\u003A\u003Aextract\u0028\u0029",
             "name": "extract",
@@ -283,23 +293,43 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\IO\\Extractor\\JsonOpenSource\u003A\u003Abatches\u0028\u0029",
             "name": "batches",
-            "summary": "Batches\u0020of\u0020exactly\u0020\u0024batchSize\u0020rows\u0020\u0028the\u0020last\u0020may\u0020be\u0020shorter\u0029,\u0020keyed\u0020and\u0020ordered\u0020by\u0020\u0024schema\u003B\u0020row\u0020indexes\u0020in\nrefusals\u0020are\u0020relative\u0020to\u0020the\u0020source.\u0020This\u0020instance\u0020is\u0020consumed\u0020afterwards.",
+            "summary": "Batches\u0020of\u0020exactly\u0020\u0024batchSize\u0020rows\u0020\u0028the\u0020last\u0020may\u0020be\u0020shorter\u0029,\u0020keyed\u0020and\u0020ordered\u0020by\u0020\u0024schema,\u0020and\u0020every\u0020corrupted\nrecord\u0020handed\u0020up\u0020in\u0020record\u0020order.\u0020This\u0020instance\u0020is\u0020consumed\u0020afterwards.",
             "url": "classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonOpenSource.html#method_batches"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\IO\\Extractor\\JsonReadBytes",
-            "name": "JsonReadBytes",
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\IO\\Extractor\\JsonReadProgress",
+            "name": "JsonReadProgress",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonReadBytes.html"
+            "url": "classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonReadProgress.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\IO\\Extractor\\JsonReadBytes\u003A\u003Aadd\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\IO\\Extractor\\JsonReadProgress\u003A\u003Aadd\u0028\u0029",
             "name": "add",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonReadBytes.html#method_add"
+            "url": "classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonReadProgress.html#method_add"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\IO\\Extractor\\JsonReadBytes\u003A\u003Atotal\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\IO\\Extractor\\JsonReadProgress\u003A\u003AlastLine\u0028\u0029",
+            "name": "lastLine",
+            "summary": "The\u00201\u002Dbased\u0020line\u0020of\u0020the\u0020record\u0020read\u0020last\u003B\u0020null\u0020unless\u0020the\u0020read\u0020started\u0020at\u0020the\u0020file\u0027s\u0020first\u0020byte.",
+            "url": "classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonReadProgress.html#method_lastLine"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\IO\\Extractor\\JsonReadProgress\u003A\u003AlastOffset\u0028\u0029",
+            "name": "lastOffset",
+            "summary": "The\u0020byte\u0020offset\u0020of\u0020the\u0020line\u0020read\u0020last,\u0020or\u0020the\u00201\u002Dbased\u0020number\u0020of\u0020the\u0020document\u0020element\u0020read\u0020last.",
+            "url": "classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonReadProgress.html#method_lastOffset"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\IO\\Extractor\\JsonReadProgress\u003A\u003AlastRecord\u0028\u0029",
+            "name": "lastRecord",
+            "summary": "The\u0020text\u0020of\u0020the\u0020line\u0020read\u0020last\u003B\u0020null\u0020for\u0020a\u0020document\u0020element.",
+            "url": "classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonReadProgress.html#method_lastRecord"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\IO\\Extractor\\JsonReadProgress\u003A\u003ArecordAt\u0028\u0029",
+            "name": "recordAt",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonReadProgress.html#method_recordAt"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\IO\\Extractor\\JsonReadProgress\u003A\u003Atotal\u0028\u0029",
             "name": "total",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonReadBytes.html#method_total"
+            "url": "classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonReadProgress.html#method_total"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\IO\\Extractor\\PhpJsonOpenSource",
             "name": "PhpJsonOpenSource",
@@ -313,7 +343,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\IO\\Extractor\\PhpJsonOpenSource\u003A\u003Abatches\u0028\u0029",
             "name": "batches",
-            "summary": "Batches\u0020of\u0020exactly\u0020\u0024batchSize\u0020rows\u0020\u0028the\u0020last\u0020may\u0020be\u0020shorter\u0029,\u0020keyed\u0020and\u0020ordered\u0020by\u0020\u0024schema\u003B\u0020row\u0020indexes\u0020in\nrefusals\u0020are\u0020relative\u0020to\u0020the\u0020source.\u0020This\u0020instance\u0020is\u0020consumed\u0020afterwards.",
+            "summary": "Batches\u0020of\u0020exactly\u0020\u0024batchSize\u0020rows\u0020\u0028the\u0020last\u0020may\u0020be\u0020shorter\u0029,\u0020keyed\u0020and\u0020ordered\u0020by\u0020\u0024schema,\u0020and\u0020every\u0020corrupted\nrecord\u0020handed\u0020up\u0020in\u0020record\u0020order.\u0020This\u0020instance\u0020is\u0020consumed\u0020afterwards.",
             "url": "classes/Flow-ETL-Adapter-JSON-IO-Extractor-PhpJsonOpenSource.html#method_batches"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\IO\\Extractor\\PhpJsonOpenSource\u003A\u003Aclose\u0028\u0029",

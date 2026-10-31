@@ -71,6 +71,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVDecoder.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\IO\\Extractor\\CSVDecoder\u003A\u003Acells\u0028\u0029",
+            "name": "cells",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVDecoder.html#method_cells"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\IO\\Extractor\\CSVDecoder\u003A\u003Adecode\u0028\u0029",
             "name": "decode",
             "summary": "",
@@ -161,6 +166,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVExtractor.html#method_isRepeatable"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\IO\\Extractor\\CSVExtractor\u003A\u003AcorruptedRecordsLoader\u0028\u0029",
+            "name": "corruptedRecordsLoader",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVExtractor.html#method_corruptedRecordsLoader"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\IO\\Extractor\\CSVExtractor\u003A\u003Aextract\u0028\u0029",
             "name": "extract",
             "summary": "",
@@ -231,6 +241,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVExtractor.html#method_withCharactersReadInLine"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\IO\\Extractor\\CSVExtractor\u003A\u003AwithCorruptedRecords\u0028\u0029",
+            "name": "withCorruptedRecords",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVExtractor.html#method_withCorruptedRecords"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\IO\\Extractor\\CSVExtractor\u003A\u003AwithEmptyToNull\u0028\u0029",
             "name": "withEmptyToNull",
             "summary": "",
@@ -255,6 +270,11 @@ Search.appendIndex(
             "name": "withMetadataColumns",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVExtractor.html#method_withMetadataColumns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\IO\\Extractor\\CSVExtractor\u003A\u003AwithMissingColumnsAsNull\u0028\u0029",
+            "name": "withMissingColumnsAsNull",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVExtractor.html#method_withMissingColumnsAsNull"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\IO\\Extractor\\CSVExtractor\u003A\u003AwithSchema\u0028\u0029",
             "name": "withSchema",
@@ -343,7 +363,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\IO\\Extractor\\CSVOpenSource\u003A\u003Abatches\u0028\u0029",
             "name": "batches",
-            "summary": "Batches\u0020of\u0020exactly\u0020\u0024batchSize\u0020rows\u0020\u0028the\u0020last\u0020may\u0020be\u0020shorter\u0029,\u0020keyed\u0020and\u0020ordered\u0020by\u0020\u0024schema\u003B\u0020row\u0020indexes\u0020in\nrefusals\u0020are\u0020relative\u0020to\u0020the\u0020source.\u0020This\u0020instance\u0020is\u0020consumed\u0020afterwards.",
+            "summary": "Batches\u0020of\u0020exactly\u0020\u0024batchSize\u0020rows\u0020\u0028the\u0020last\u0020may\u0020be\u0020shorter\u0029,\u0020keyed\u0020and\u0020ordered\u0020by\u0020\u0024schema,\u0020and\u0020every\u0020corrupted\nrecord\u0020handed\u0020up\u0020in\u0020record\u0020order.\u0020This\u0020instance\u0020is\u0020consumed\u0020afterwards.",
             "url": "classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVOpenSource.html#method_batches"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\IO\\Extractor\\CSVOpenSource\u003A\u003Aheaders\u0028\u0029",
@@ -353,7 +373,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\IO\\Extractor\\CSVOpenSource\u003A\u003Arecords\u0028\u0029",
             "name": "records",
-            "summary": "This\u0020instance\u0020is\u0020consumed\u0020afterwards.",
+            "summary": "The\u0020rows\u0020of\u0020the\u0020records\u0020that\u0020are\u0020not\u0020corrupted.\u0020This\u0020instance\u0020is\u0020consumed\u0020afterwards.",
             "url": "classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVOpenSource.html#method_records"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\IO\\Extractor\\CSVOpenSource\u003A\u003Asniff\u0028\u0029",
@@ -411,6 +431,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#property_withHeader"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\IO\\Extractor\\CSVReadOptions\u003A\u003AwithMissingColumnsAsNull\u0028\u0029",
+            "name": "withMissingColumnsAsNull",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#method_withMissingColumnsAsNull"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\IO\\Extractor\\CSVReadOptions\u003A\u003AwithRemoveBOM\u0028\u0029",
             "name": "withRemoveBOM",
             "summary": "",
@@ -450,6 +475,11 @@ Search.appendIndex(
             "name": "charactersReadInLine",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#property_charactersReadInLine"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\IO\\Extractor\\CSVReadOptions\u003A\u003A\u0024missingColumnsAsNull",
+            "name": "missingColumnsAsNull",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVReadOptions.html#property_missingColumnsAsNull"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\IO\\Extractor\\CSVRecordBoundary",
             "name": "CSVRecordBoundary",
@@ -623,7 +653,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\IO\\Extractor\\PhpCSVOpenSource\u003A\u003Abatches\u0028\u0029",
             "name": "batches",
-            "summary": "Batches\u0020of\u0020exactly\u0020\u0024batchSize\u0020rows\u0020\u0028the\u0020last\u0020may\u0020be\u0020shorter\u0029,\u0020keyed\u0020and\u0020ordered\u0020by\u0020\u0024schema\u003B\u0020row\u0020indexes\u0020in\nrefusals\u0020are\u0020relative\u0020to\u0020the\u0020source.\u0020This\u0020instance\u0020is\u0020consumed\u0020afterwards.",
+            "summary": "Batches\u0020of\u0020exactly\u0020\u0024batchSize\u0020rows\u0020\u0028the\u0020last\u0020may\u0020be\u0020shorter\u0029,\u0020keyed\u0020and\u0020ordered\u0020by\u0020\u0024schema,\u0020and\u0020every\u0020corrupted\nrecord\u0020handed\u0020up\u0020in\u0020record\u0020order.\u0020This\u0020instance\u0020is\u0020consumed\u0020afterwards.",
             "url": "classes/Flow-ETL-Adapter-CSV-IO-Extractor-PhpCSVOpenSource.html#method_batches"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\IO\\Extractor\\PhpCSVOpenSource\u003A\u003Aclose\u0028\u0029",

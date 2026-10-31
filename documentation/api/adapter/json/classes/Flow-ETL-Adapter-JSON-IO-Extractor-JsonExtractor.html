@@ -112,7 +112,7 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <abbr title="\Flow\ETL\IO\Extractor\BatchableExtractor">BatchableExtractor</abbr>,                             <abbr title="\Flow\ETL\IO\Extractor">Extractor</abbr>,                             <abbr title="\Flow\ETL\IO\Extractor\File\FileExtractor">FileExtractor</abbr>,                             <abbr title="\Flow\ETL\IO\Extractor\InfersSchema">InfersSchema</abbr>,                             <abbr title="\Flow\ETL\IO\Extractor\File\MetadataColumnsExtractor">MetadataColumnsExtractor</abbr>,                             <abbr title="\Flow\ETL\IO\Extractor\SplittableExtractor">SplittableExtractor</abbr>                    </span>
+                            <abbr title="\Flow\ETL\IO\Extractor\BatchableExtractor">BatchableExtractor</abbr>,                             <abbr title="\Flow\ETL\IO\Extractor">Extractor</abbr>,                             <abbr title="\Flow\ETL\IO\Extractor\File\FileExtractor">FileExtractor</abbr>,                             <abbr title="\Flow\ETL\IO\Extractor\InfersSchema">InfersSchema</abbr>,                             <abbr title="\Flow\ETL\IO\Extractor\File\MetadataColumnsExtractor">MetadataColumnsExtractor</abbr>,                             <abbr title="\Flow\ETL\IO\CorruptedRecordsRouter">CorruptedRecordsRouter</abbr>,                             <abbr title="\Flow\ETL\IO\Extractor\SplittableExtractor">SplittableExtractor</abbr>                    </span>
     
     </h2>
 
@@ -126,7 +126,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-io-extractor-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -144,7 +144,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\IO\Extractor\BatchableExtractor">BatchableExtractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\IO\Extractor">Extractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\IO\Extractor\File\FileExtractor">FileExtractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\IO\Extractor\InfersSchema">InfersSchema</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\IO\Extractor\File\MetadataColumnsExtractor">MetadataColumnsExtractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\IO\Extractor\SplittableExtractor">SplittableExtractor</abbr></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\IO\Extractor\BatchableExtractor">BatchableExtractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\IO\Extractor">Extractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\IO\Extractor\File\FileExtractor">FileExtractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\IO\Extractor\InfersSchema">InfersSchema</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\IO\Extractor\File\MetadataColumnsExtractor">MetadataColumnsExtractor</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\IO\CorruptedRecordsRouter">CorruptedRecordsRouter</abbr></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Flow\ETL\IO\Extractor\SplittableExtractor">SplittableExtractor</abbr></dt>    </dl>
 
 
 
@@ -169,6 +169,12 @@
     <a class="" href="classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method_batchSize">batchSize()</a>
     <span>
                                 &nbsp;: int<1, max>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method_corruptedRecordsLoader">corruptedRecordsLoader()</a>
+    <span>
+                                &nbsp;: <abbr title="\Flow\ETL\IO\Loader">Loader</abbr>|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -255,6 +261,12 @@ element of every file; JSON lines estimate them from the sampled bytes per row.<
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method_withCorruptedRecords">withCorruptedRecords()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method_withMetadataColumns">withMetadataColumns()</a>
     <span>
                                 &nbsp;: static    </span>
@@ -300,7 +312,7 @@ element of every file; JSON lines estimate them from the sampled bytes per row.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-io-extractor-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
@@ -358,7 +370,7 @@ element of every file; JSON lines estimate them from the sampled bytes per row.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-io-extractor-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">100</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
@@ -388,6 +400,44 @@ element of every file; JSON lines estimate them from the sampled bytes per row.<
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_corruptedRecordsLoader">
+        corruptedRecordsLoader()
+        <a href="classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method_corruptedRecordsLoader" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-io-extractor-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">123</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">corruptedRecordsLoader</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr>|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_extract">
         extract()
         <a href="classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method_extract" class="headerlink"><i class="fas fa-link"></i></a>
@@ -396,7 +446,7 @@ element of every file; JSON lines estimate them from the sampled bytes per row.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-io-extractor-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -451,7 +501,7 @@ element of every file; JSON lines estimate them from the sampled bytes per row.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-io-extractor-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">129</span>
+    <span class="phpdocumentor-element-found-in__line">149</span>
 
     </aside>
 
@@ -499,7 +549,7 @@ element of every file; JSON lines estimate them from the sampled bytes per row.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-io-extractor-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">118</span>
 
     </aside>
 
@@ -537,7 +587,7 @@ element of every file; JSON lines estimate them from the sampled bytes per row.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-io-extractor-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">178</span>
+    <span class="phpdocumentor-element-found-in__line">198</span>
 
     </aside>
 
@@ -575,7 +625,7 @@ element of every file; JSON lines estimate them from the sampled bytes per row.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-io-extractor-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">183</span>
+    <span class="phpdocumentor-element-found-in__line">203</span>
 
     </aside>
 
@@ -623,7 +673,7 @@ element of every file; JSON lines estimate them from the sampled bytes per row.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-io-extractor-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">190</span>
+    <span class="phpdocumentor-element-found-in__line">210</span>
 
     </aside>
 
@@ -671,7 +721,7 @@ element of every file; JSON lines estimate them from the sampled bytes per row.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-io-extractor-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">136</span>
 
     </aside>
 
@@ -709,7 +759,7 @@ element of every file; JSON lines estimate them from the sampled bytes per row.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-io-extractor-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">208</span>
+    <span class="phpdocumentor-element-found-in__line">228</span>
 
     </aside>
 
@@ -743,7 +793,7 @@ element of every file; JSON lines estimate them from the sampled bytes per row.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-io-extractor-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">139</span>
+    <span class="phpdocumentor-element-found-in__line">159</span>
 
     </aside>
 
@@ -781,7 +831,7 @@ element of every file; JSON lines estimate them from the sampled bytes per row.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-io-extractor-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">216</span>
+    <span class="phpdocumentor-element-found-in__line">236</span>
 
     </aside>
 
@@ -819,7 +869,7 @@ element of every file; JSON lines estimate them from the sampled bytes per row.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-io-extractor-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">201</span>
+    <span class="phpdocumentor-element-found-in__line">221</span>
 
     </aside>
 
@@ -876,7 +926,7 @@ tree with no offset a second reader could start at, so it is one split per admit
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-io-extractor-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">226</span>
+    <span class="phpdocumentor-element-found-in__line">246</span>
 
     </aside>
 
@@ -917,7 +967,7 @@ element of every file; JSON lines estimate them from the sampled bytes per row.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-io-extractor-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">245</span>
+    <span class="phpdocumentor-element-found-in__line">265</span>
 
     </aside>
 
@@ -957,6 +1007,54 @@ element of every file; JSON lines estimate them from the sampled bytes per row.<
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_withCorruptedRecords">
+        withCorruptedRecords()
+        <a href="classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method_withCorruptedRecords" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-io-extractor-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">70</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">withCorruptedRecords</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$loader</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$loader</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr>|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_withMetadataColumns">
         withMetadataColumns()
         <a href="classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method_withMetadataColumns" class="headerlink"><i class="fas fa-link"></i></a>
@@ -965,7 +1063,7 @@ element of every file; JSON lines estimate them from the sampled bytes per row.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-io-extractor-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">252</span>
+    <span class="phpdocumentor-element-found-in__line">272</span>
 
     </aside>
 
@@ -1013,7 +1111,7 @@ element of every file; JSON lines estimate them from the sampled bytes per row.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-io-extractor-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">263</span>
+    <span class="phpdocumentor-element-found-in__line">283</span>
 
     </aside>
 
@@ -1072,7 +1170,7 @@ element of every file; JSON lines estimate them from the sampled bytes per row.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php"><a href="files/src-adapter-etl-adapter-json-src-flow-etl-adapter-json-io-extractor-jsonextractor.html"><abbr title="src/adapter/etl-adapter-json/src/Flow/ETL/Adapter/JSON/IO/Extractor/JsonExtractor.php">JsonExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">274</span>
+    <span class="phpdocumentor-element-found-in__line">294</span>
 
     </aside>
 
@@ -1130,6 +1228,7 @@ element of every file; JSON lines estimate them from the sampled bytes per row.<
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method_batchSize">batchSize()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method_corruptedRecordsLoader">corruptedRecordsLoader()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method_extract">extract()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method_inferSchema">inferSchema()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method_isRepeatable">isRepeatable()</a></li>
@@ -1143,6 +1242,7 @@ element of every file; JSON lines estimate them from the sampled bytes per row.<
                                             <li class=""><a href="classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method_splits">splits()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method_statistics">statistics()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method_withBatchSize">withBatchSize()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method_withCorruptedRecords">withCorruptedRecords()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method_withMetadataColumns">withMetadataColumns()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method_withPointer">withPointer()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method_withSchema">withSchema()</a></li>

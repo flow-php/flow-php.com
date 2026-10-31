@@ -106,6 +106,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelExtractor.html#method_isRepeatable"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\IO\\Extractor\\ExcelExtractor\u003A\u003AcorruptedRecordsLoader\u0028\u0029",
+            "name": "corruptedRecordsLoader",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelExtractor.html#method_corruptedRecordsLoader"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\IO\\Extractor\\ExcelExtractor\u003A\u003Aextract\u0028\u0029",
             "name": "extract",
             "summary": "",
@@ -170,6 +175,16 @@ Search.appendIndex(
             "name": "withConvertEmptyToNull",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelExtractor.html#method_withConvertEmptyToNull"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\IO\\Extractor\\ExcelExtractor\u003A\u003AwithCorruptedRecords\u0028\u0029",
+            "name": "withCorruptedRecords",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelExtractor.html#method_withCorruptedRecords"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\IO\\Extractor\\ExcelExtractor\u003A\u003AwithMissingColumnsAsNull\u0028\u0029",
+            "name": "withMissingColumnsAsNull",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelExtractor.html#method_withMissingColumnsAsNull"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\IO\\Extractor\\ExcelExtractor\u003A\u003AwithHeader\u0028\u0029",
             "name": "withHeader",
@@ -296,6 +311,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelReadOptions.html#property_withHeader"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\IO\\Extractor\\ExcelReadOptions\u003A\u003AwithMissingColumnsAsNull\u0028\u0029",
+            "name": "withMissingColumnsAsNull",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelReadOptions.html#method_withMissingColumnsAsNull"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\IO\\Extractor\\ExcelReadOptions\u003A\u003AwithSheetName\u0028\u0029",
             "name": "withSheetName",
             "summary": "",
@@ -315,6 +335,11 @@ Search.appendIndex(
             "name": "format",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelReadOptions.html#property_format"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\IO\\Extractor\\ExcelReadOptions\u003A\u003A\u0024missingColumnsAsNull",
+            "name": "missingColumnsAsNull",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-IO-Extractor-ExcelReadOptions.html#property_missingColumnsAsNull"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\IO\\Extractor\\Sheet\\OpenSheet",
             "name": "OpenSheet",
@@ -353,7 +378,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\IO\\Extractor\\Sheet\\SheetCells\u003A\u003Arows\u0028\u0029",
             "name": "rows",
-            "summary": "",
+            "summary": "Keyed\u0020by\u0020the\u0020row\u0027s\u00201\u002Dbased\u0020number\u0020in\u0020the\u0020sheet.",
             "url": "classes/Flow-ETL-Adapter-Excel-IO-Extractor-Sheet-SheetCells.html#method_rows"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\IO\\Extractor\\Sheet\\SheetsManager",
@@ -388,7 +413,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\IO\\Extractor\\Sheet\\XlsxSheetRows\u003A\u003Avalues\u0028\u0029",
             "name": "values",
-            "summary": "Each\u0020non\u002Dempty\u0020row\u0027s\u0020cell\u0020values\u0020by\u0020column\u0020index,\u0020as\u0020OpenSpout\u0027s\u0020RowIterator\u0020yields\u0020them\u0020with\u0020the\u0020default\noptions\u0020Flow\u0020opens\u0020every\u0020workbook\u0020with\u003A\u0020a\u0020row\u0020is\u0020padded\u0020to\u0020its\u0020spans,\u0020else\u0020to\u0020the\u0020sheet\u0027s\u0020dimension,\u0020and\u0020a\nsheet\u0020that\u0020declares\u0020no\u0020dimension\u0020gets\u0020the\u0020gaps\u0020below\u0020its\u0020cell\u0020count\u0020filled.",
+            "summary": "Each\u0020non\u002Dempty\u0020row\u0027s\u0020cell\u0020values\u0020by\u0020column\u0020index,\u0020as\u0020OpenSpout\u0027s\u0020RowIterator\u0020yields\u0020them\u0020with\u0020the\u0020default\noptions\u0020Flow\u0020opens\u0020every\u0020workbook\u0020with\u003A\u0020a\u0020row\u0020is\u0020padded\u0020to\u0020its\u0020spans,\u0020else\u0020to\u0020the\u0020sheet\u0027s\u0020dimension,\u0020and\u0020a\nsheet\u0020that\u0020declares\u0020no\u0020dimension\u0020gets\u0020the\u0020gaps\u0020below\u0020its\u0020cell\u0020count\u0020filled.\u0020Keyed\u0020by\u0020the\u0020row\u0027s\u00201\u002Dbased\u0020number.",
             "url": "classes/Flow-ETL-Adapter-Excel-IO-Extractor-Sheet-XlsxSheetRows.html#method_values"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\IO\\Extractor\\WorkbookReader",
@@ -445,6 +470,11 @@ Search.appendIndex(
             "name": "columns",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Excel-IO-Extractor-WorkbookSheet.html#method_columns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\IO\\Extractor\\WorkbookSheet\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Excel-IO-Extractor-WorkbookSheet.html#method_decode"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\IO\\Extractor\\WorkbookSheet\u003A\u003Asample\u0028\u0029",
             "name": "sample",
@@ -543,7 +573,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\IO\\Inference\\WorkbookSheetSample\u003A\u003AgetIterator\u0028\u0029",
             "name": "getIterator",
-            "summary": "",
+            "summary": "The\u0020rows\u0020of\u0020the\u0020records\u0020that\u0020are\u0020not\u0020corrupted.",
             "url": "classes/Flow-ETL-Adapter-Excel-IO-Inference-WorkbookSheetSample.html#method_getIterator"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\IO\\Inference\\WorkbookSheetSample\u003A\u003AwholeSheet\u0028\u0029",

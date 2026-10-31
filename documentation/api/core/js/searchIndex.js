@@ -2236,6 +2236,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Foundation-Exception-ColumnMismatchException.html#method_valueDoesNotMatch"
         },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Exception\\ColumnMismatchException\u003A\u003Areason\u0028\u0029",
+            "name": "reason",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-Exception-ColumnMismatchException.html#method_reason"
+        },                {
             "fqsen": "\\Flow\\ETL\\Foundation\\Exception\\ColumnMismatchException\u003A\u003A\u0024column",
             "name": "column",
             "summary": "",
@@ -2255,6 +2260,66 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-ETL-Foundation-Exception-ConstraintViolationException.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Exception\\CorruptedRecordException",
+            "name": "CorruptedRecordException",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-Exception-CorruptedRecordException.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Exception\\CorruptedRecordException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-Exception-CorruptedRecordException.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Exception\\CorruptedRecordException\u003A\u003AfromRecord\u0028\u0029",
+            "name": "fromRecord",
+            "summary": "The\u0020inverse\u0020of\u0020toRecord\u0028\u0029.",
+            "url": "classes/Flow-ETL-Foundation-Exception-CorruptedRecordException.html#method_fromRecord"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Exception\\CorruptedRecordException\u003A\u003AtoRecord\u0028\u0029",
+            "name": "toRecord",
+            "summary": "The\u0020row\u0020a\u0020routed\u0020corrupted\u0020record\u0020becomes.",
+            "url": "classes/Flow-ETL-Foundation-Exception-CorruptedRecordException.html#method_toRecord"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Exception\\CorruptedRecordException\u003A\u003AfromCells\u0028\u0029",
+            "name": "fromCells",
+            "summary": "A\u0020grid\u0020record\u003A\u0020its\u0020cells\u0020in\u0020their\u0020string\u0020form,\u0020and\u0020its\u0020text\u0020the\u0020source\u0027s\u0020own\u0020when\u0020it\u0020holds\u0020one,\u0020else\u0020the\u0020cells\nas\u0020a\u0020JSON\u0020list.",
+            "url": "classes/Flow-ETL-Foundation-Exception-CorruptedRecordException.html#method_fromCells"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Exception\\CorruptedRecordException\u003A\u003AfromValues\u0028\u0029",
+            "name": "fromValues",
+            "summary": "A\u0020keyed\u0020record\u003A\u0020its\u0020text\u0020the\u0020source\u0027s\u0020own\u0020when\u0020it\u0020holds\u0020one,\u0020else\u0020the\u0020record\u0020as\u0020a\u0020JSON\u0020object.",
+            "url": "classes/Flow-ETL-Foundation-Exception-CorruptedRecordException.html#method_fromValues"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Exception\\CorruptedRecordException\u003A\u003A\u0024uri",
+            "name": "uri",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-Exception-CorruptedRecordException.html#property_uri"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Exception\\CorruptedRecordException\u003A\u003A\u0024offset",
+            "name": "offset",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-Exception-CorruptedRecordException.html#property_offset"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Exception\\CorruptedRecordException\u003A\u003A\u0024lineNumber",
+            "name": "lineNumber",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-Exception-CorruptedRecordException.html#property_lineNumber"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Exception\\CorruptedRecordException\u003A\u003A\u0024reason",
+            "name": "reason",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-Exception-CorruptedRecordException.html#property_reason"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Exception\\CorruptedRecordException\u003A\u003A\u0024record",
+            "name": "record",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-Exception-CorruptedRecordException.html#property_record"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Exception\\CorruptedRecordException\u003A\u003A\u0024fields",
+            "name": "fields",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-Exception-CorruptedRecordException.html#property_fields"
         },                {
             "fqsen": "\\Flow\\ETL\\Foundation\\Exception\\DataDependentSchemaException",
             "name": "DataDependentSchemaException",
@@ -2315,6 +2380,11 @@ Search.appendIndex(
             "name": "nothingToInferFrom",
             "summary": "",
             "url": "classes/Flow-ETL-Foundation-Exception-InferredSchemaException.html#method_nothingToInferFrom"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Exception\\InferredSchemaException\u003A\u003AoutsideTheSample\u0028\u0029",
+            "name": "outsideTheSample",
+            "summary": "A\u0020file\u0027s\u0020record\u0020that\u0020does\u0020not\u0020fit\u0020a\u0020schema\u0020inferred\u0020from\u0020a\u0020sample\u0020\u002D\u0020the\u0020sample\u0020can\u0020span\u0020files,\u0020so\u0020no\u0020position\nin\u0020this\u0020file\u0020places\u0020the\u0020record\u0020inside\u0020it.",
+            "url": "classes/Flow-ETL-Foundation-Exception-InferredSchemaException.html#method_outsideTheSample"
         },                {
             "fqsen": "\\Flow\\ETL\\Foundation\\Exception\\InferredSchemaException\u003A\u003AwhenPastTheSample\u0028\u0029",
             "name": "whenPastTheSample",
@@ -2575,6 +2645,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-ETL-Foundation-Exception-SchemaValidationException.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Exception\\SchemaValidationException\u003A\u003AdeclaredColumnsMissing\u0028\u0029",
+            "name": "declaredColumnsMissing",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-Exception-SchemaValidationException.html#method_declaredColumnsMissing"
         },                {
             "fqsen": "\\Flow\\ETL\\Foundation\\Exception\\TypeAssertionException",
             "name": "TypeAssertionException",
@@ -11281,6 +11356,21 @@ Search.appendIndex(
             "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Functions-XPath.html#method_eval"
         },                {
+            "fqsen": "\\Flow\\ETL\\IO\\CorruptedRecordsRouter",
+            "name": "CorruptedRecordsRouter",
+            "summary": "",
+            "url": "classes/Flow-ETL-IO-CorruptedRecordsRouter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\IO\\CorruptedRecordsRouter\u003A\u003AcorruptedRecordsLoader\u0028\u0029",
+            "name": "corruptedRecordsLoader",
+            "summary": "",
+            "url": "classes/Flow-ETL-IO-CorruptedRecordsRouter.html#method_corruptedRecordsLoader"
+        },                {
+            "fqsen": "\\Flow\\ETL\\IO\\CorruptedRecordsRouter\u003A\u003AwithCorruptedRecords\u0028\u0029",
+            "name": "withCorruptedRecords",
+            "summary": "Corrupted\u0020records\u0020routed\u0020to\u0020\u0024loader\u003B\u0020null\u0020refuses\u0020them,\u0020the\u0020default.",
+            "url": "classes/Flow-ETL-IO-CorruptedRecordsRouter.html#method_withCorruptedRecords"
+        },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\ArrayExtractor",
             "name": "ArrayExtractor",
             "summary": "",
@@ -11300,6 +11390,11 @@ Search.appendIndex(
             "name": "isRepeatable",
             "summary": "True\u0020when\u0020extract\u0028\u0029\u0020can\u0020run\u0020more\u0020than\u0020once\u0020and\u0020yield\u0020the\u0020same\u0020rows\u0020each\u0020time,\u0020so\u0020a\u0020build\u002Dtime\u0020pass\u0020may\u0020read\nthe\u0020source\u0020before\u0020the\u0020run\u0020without\u0020consuming\u0020it.\u0020A\u0020one\u002Dshot\u0020stream\u0020returns\u0020false\u003B\u0020a\u0020wrapper\u0020answers\u0020for\u0020what\u0020it\nreads.",
             "url": "classes/Flow-ETL-IO-Extractor-ArrayExtractor.html#method_isRepeatable"
+        },                {
+            "fqsen": "\\Flow\\ETL\\IO\\Extractor\\ArrayExtractor\u003A\u003AcorruptedRecordsLoader\u0028\u0029",
+            "name": "corruptedRecordsLoader",
+            "summary": "",
+            "url": "classes/Flow-ETL-IO-Extractor-ArrayExtractor.html#method_corruptedRecordsLoader"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\ArrayExtractor\u003A\u003Aextract\u0028\u0029",
             "name": "extract",
@@ -11330,6 +11425,11 @@ Search.appendIndex(
             "name": "withBatchSize",
             "summary": "Mutates\u0020and\u0020returns\u0020the\u0020same\u0020instance,\u0020so\u0020one\u0020extractor\u0020shared\u0020across\u0020from_all\u0028\u0029\u0020children\nshares\u0020its\u0020size.",
             "url": "classes/Flow-ETL-IO-Extractor-ArrayExtractor.html#method_withBatchSize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\IO\\Extractor\\ArrayExtractor\u003A\u003AwithCorruptedRecords\u0028\u0029",
+            "name": "withCorruptedRecords",
+            "summary": "Corrupted\u0020records\u0020routed\u0020to\u0020\u0024loader\u003B\u0020null\u0020refuses\u0020them,\u0020the\u0020default.",
+            "url": "classes/Flow-ETL-IO-Extractor-ArrayExtractor.html#method_withCorruptedRecords"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\ArrayExtractor\u003A\u003AwithSchema\u0028\u0029",
             "name": "withSchema",
@@ -11936,15 +12036,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-IO-Extractor-File-FileSplitReader.html#method_fromDescription"
         },                {
+            "fqsen": "\\Flow\\ETL\\IO\\Extractor\\File\\FileSplitReader\u003A\u003AcorruptedRecordsLoader\u0028\u0029",
+            "name": "corruptedRecordsLoader",
+            "summary": "",
+            "url": "classes/Flow-ETL-IO-Extractor-File-FileSplitReader.html#method_corruptedRecordsLoader"
+        },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\File\\FileSplitReader\u003A\u003Adescribe\u0028\u0029",
             "name": "describe",
-            "summary": "",
+            "summary": "Null\u0020when\u0020the\u0020reject\u0020loader\u0020does\u0020not\u0020describe\u003A\u0020such\u0020a\u0020read\u0020runs\u0020only\u0020in\u0020this\u0020process.",
             "url": "classes/Flow-ETL-IO-Extractor-File-FileSplitReader.html#method_describe"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\File\\FileSplitReader\u003A\u003Aextract\u0028\u0029",
             "name": "extract",
-            "summary": "The\u0020read\u0020of\u0020a\u0020source\u0020with\u0020every\u0020state\u0020resolved\u0020\u0028schema,\u0020options,\u0020inference\u0029\u003A\u0020the\u0020whole\u0020plan\u0020scan\u0020in\u002Dprocess,\none\u0020split\u0020of\u0020it\u0020in\u0020a\u0020worker.",
+            "summary": "The\u0020read\u0020of\u0020a\u0020source\u0020with\u0020every\u0020state\u0020resolved\u0020\u0028schema,\u0020options,\u0020inference\u0029\u003A\u0020the\u0020whole\u0020plan\u0020scan\u0020in\u002Dprocess,\none\u0020split\u0020of\u0020it\u0020in\u0020a\u0020worker.\u0020A\u0020record\u0020that\u0020cannot\u0020become\u0020a\u0020row\u0020is\u0020yielded\u0020as\u0020its\u0020CorruptedRecordException.",
             "url": "classes/Flow-ETL-IO-Extractor-File-FileSplitReader.html#method_extract"
+        },                {
+            "fqsen": "\\Flow\\ETL\\IO\\Extractor\\File\\FileSplitReader\u003A\u003AwithCorruptedRecords\u0028\u0029",
+            "name": "withCorruptedRecords",
+            "summary": "Corrupted\u0020records\u0020routed\u0020to\u0020\u0024loader\u003B\u0020null\u0020refuses\u0020them,\u0020the\u0020default.",
+            "url": "classes/Flow-ETL-IO-Extractor-File-FileSplitReader.html#method_withCorruptedRecords"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\File\\FooterStatistics",
             "name": "FooterStatistics",
@@ -12393,7 +12503,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\Grid\\RecordDecoder\u003A\u003Adecode\u0028\u0029",
             "name": "decode",
-            "summary": "Records\u0020before\u0020the\u0020header\u0020is\u0020resolved\u0020that\u0020hold\u0020no\u0020cell\u0020are\u0020skipped.\u0020A\u0020cell\u0020a\u0020record\u0020lacks\u0020is\u0020null\u003B\u0020a\u0020present\n\u0027\u0027\u0020cell\u0020is\u0020null\u0020under\u0020emptyToNull.",
+            "summary": "An\u0020extra\u0020empty\u0020cell\u0020\u0028\u0027\u0027\u0020or\u0020null\u0029\u0020loses\u0020nothing,\u0020so\u0020only\u0020a\u0020non\u002Dempty\u0020one\u0020makes\u0020a\u0020record\u0020corrupted.\u0020A\u0020missing\u0020cell\nmakes\u0020it\u0020corrupted\u0020unless\u0020missingColumnsAsNull\u003B\u0020a\u0020present\u0020\u0027\u0027\u0020cell\u0020is\u0020null\u0020under\u0020emptyToNull.",
             "url": "classes/Flow-ETL-IO-Extractor-Grid-RecordDecoder.html#method_decode"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\Grid\\RecordDecoder\u003A\u003Aheaders\u0028\u0029",
@@ -12558,7 +12668,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\Reader\u003A\u003Aextract\u0028\u0029",
             "name": "extract",
-            "summary": "The\u0020read\u0020of\u0020a\u0020source\u0020with\u0020every\u0020state\u0020resolved\u0020\u0028schema,\u0020options,\u0020inference\u0029\u003A\u0020the\u0020whole\u0020plan\u0020scan\u0020in\u002Dprocess,\none\u0020split\u0020of\u0020it\u0020in\u0020a\u0020worker.",
+            "summary": "The\u0020read\u0020of\u0020a\u0020source\u0020with\u0020every\u0020state\u0020resolved\u0020\u0028schema,\u0020options,\u0020inference\u0029\u003A\u0020the\u0020whole\u0020plan\u0020scan\u0020in\u002Dprocess,\none\u0020split\u0020of\u0020it\u0020in\u0020a\u0020worker.\u0020A\u0020record\u0020that\u0020cannot\u0020become\u0020a\u0020row\u0020is\u0020yielded\u0020as\u0020its\u0020CorruptedRecordException.",
             "url": "classes/Flow-ETL-IO-Extractor-Reader.html#method_extract"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\Refreshable",
@@ -12626,6 +12736,11 @@ Search.appendIndex(
             "summary": "True\u0020when\u0020extract\u0028\u0029\u0020can\u0020run\u0020more\u0020than\u0020once\u0020and\u0020yield\u0020the\u0020same\u0020rows\u0020each\u0020time,\u0020so\u0020a\u0020build\u002Dtime\u0020pass\u0020may\u0020read\nthe\u0020source\u0020before\u0020the\u0020run\u0020without\u0020consuming\u0020it.\u0020A\u0020one\u002Dshot\u0020stream\u0020returns\u0020false\u003B\u0020a\u0020wrapper\u0020answers\u0020for\u0020what\u0020it\nreads.",
             "url": "classes/Flow-ETL-IO-Extractor-SequenceExtractor.html#method_isRepeatable"
         },                {
+            "fqsen": "\\Flow\\ETL\\IO\\Extractor\\SequenceExtractor\u003A\u003AcorruptedRecordsLoader\u0028\u0029",
+            "name": "corruptedRecordsLoader",
+            "summary": "",
+            "url": "classes/Flow-ETL-IO-Extractor-SequenceExtractor.html#method_corruptedRecordsLoader"
+        },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\SequenceExtractor\u003A\u003Aextract\u0028\u0029",
             "name": "extract",
             "summary": "Yields\u0020rows\u0020in\u0020batches.\u0020When\u0020the\u0020source\u0020is\u0020a\u0020BatchableExtractor\u0020a\u0020batch\u0020holds\u0020between\u00200\u0020and\u0020that\nextractor\u0027s\u0020own\u0020batchSize\u0028\u0029\u0020rows\u003B\u0020the\u0020size\u0020is\u0020chosen\u0020by\u0020the\u0020extractor\u0020and\u0020MAY\u0020vary\u0020between\nbatches.\u0020Consumers\u0020must\u0020not\u0020assume\u0020a\u0020minimum\u0020size,\u0020a\u0020constant\u0020size,\u0020or\u0020a\u0020non\u002Dempty\u0020batch.",
@@ -12650,6 +12765,11 @@ Search.appendIndex(
             "name": "withBatchSize",
             "summary": "Mutates\u0020and\u0020returns\u0020the\u0020same\u0020instance,\u0020so\u0020one\u0020extractor\u0020shared\u0020across\u0020from_all\u0028\u0029\u0020children\nshares\u0020its\u0020size.",
             "url": "classes/Flow-ETL-IO-Extractor-SequenceExtractor.html#method_withBatchSize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\IO\\Extractor\\SequenceExtractor\u003A\u003AwithCorruptedRecords\u0028\u0029",
+            "name": "withCorruptedRecords",
+            "summary": "Corrupted\u0020records\u0020routed\u0020to\u0020\u0024loader\u003B\u0020null\u0020refuses\u0020them,\u0020the\u0020default.",
+            "url": "classes/Flow-ETL-IO-Extractor-SequenceExtractor.html#method_withCorruptedRecords"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\SequenceExtractor\u003A\u003AwithSchema\u0028\u0029",
             "name": "withSchema",
@@ -20688,7 +20808,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\AdoptedBatches\u003A\u003Aof\u0028\u0029",
             "name": "of",
-            "summary": "Every\u0020batch\u0020of\u0020\u0024batches\u0020in\u0020the\u0020backend\u0027s\u0020storage,\u0020a\u0020stop\u0020forwarded\u0020to\u0020\u0024batches.",
+            "summary": "Every\u0020batch\u0020of\u0020\u0024batches\u0020in\u0020the\u0020backend\u0027s\u0020storage,\u0020a\u0020corrupted\u0020record\u0020as\u0020it\u0020is,\u0020a\u0020stop\u0020forwarded\u0020to\u0020\u0024batches.",
             "url": "classes/Flow-ETL-Runtime-Executor-AdoptedBatches.html#method_of"
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\BranchFiber",
@@ -20848,7 +20968,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\SourceCount\u003A\u003Acount\u0028\u0029",
             "name": "count",
-            "summary": "Counts\u0020\u0024batches\u0020into\u0020this\u0020read,\u0020forwards\u0020a\u0020STOP,\u0020closed\u0028\u0029\u0020once\u0020exhausted.",
+            "summary": "Counts\u0020the\u0020rows\u0020of\u0020\u0024batches\u0020into\u0020this\u0020read,\u0020a\u0020corrupted\u0020record\u0020none,\u0020forwards\u0020a\u0020STOP,\u0020closed\u0028\u0029\u0020once\u0020exhausted.",
             "url": "classes/Flow-ETL-Runtime-Executor-SourceCount.html#method_count"
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\SourceCount\u003A\u003Acounted\u0028\u0029",
@@ -20953,7 +21073,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\StepRunner\u003A\u003Arun\u0028\u0029",
             "name": "run",
-            "summary": "\u0024input\u0020through\u0020one\u0020run\u0020of\u0020loaders\u0020and\u0020transformers\u003A\u0020drops\u0020empty\u0020batches,\u0020ends\u0020its\u0020loaders\u0020when\u0020the\u0020run\u0020ends.",
+            "summary": "\u0024input\u0020through\u0020one\u0020run\u0020of\u0020loaders\u0020and\u0020transformers\u003A\u0020drops\u0020empty\u0020batches,\u0020ends\u0020its\u0020loaders\u0020when\u0020the\u0020run\u0020ends.\u0020A\ncorrupted\u0020record\u0020goes\u0020to\u0020the\u0020source\u0027s\u0020reject\u0020loader,\u0020loaded\u0020and\u0020ended\u0020like\u0020the\u0020run\u0027s\u0020own\u0020loaders\u003B\u0020without\u0020one\u0020it\nfails\u0020the\u0020run,\u0020whatever\u0020the\u0020error\u0020handler.",
             "url": "classes/Flow-ETL-Runtime-Executor-StepRunner.html#method_run"
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\StepRunner\u003A\u003AendLoaders\u0028\u0029",
@@ -24901,9 +25021,19 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Values-Rows-RecordBatch.html#method_add"
         },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Rows\\RecordBatch\u003A\u003Arefuse\u0028\u0029",
+            "name": "refuse",
+            "summary": "A\u0020record\u0020its\u0020reader\u0020refused\u0020before\u0020it\u0020became\u0020values\u003A\u0020it\u0020takes\u0020its\u0020place\u0020in\u0020the\u0020batch,\u0020so\u0020the\u0020batch\u0020hands\u0020its\nrefused\u0020records\u0020out\u0020in\u0020source\u0020order.",
+            "url": "classes/Flow-ETL-Values-Rows-RecordBatch.html#method_refuse"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Rows\\RecordBatch\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "\u0024records\u0020added\u0020in\u0020order,\u0020numbered\u0020from\u00201,\u0020then\u0020flushed.",
+            "url": "classes/Flow-ETL-Values-Rows-RecordBatch.html#method_of"
+        },                {
             "fqsen": "\\Flow\\ETL\\Values\\Rows\\RecordBatch\u003A\u003Aflush\u0028\u0029",
             "name": "flush",
-            "summary": "",
+            "summary": "Under\u0020a\u0020declared\u0020schema\u0020a\u0020record\u0020with\u0020a\u0020value\u0020that\u0020does\u0020not\u0020cast\u0020is\u0020a\u0020corrupted\u0020record,\u0020handed\u0020up\u0020and\u0020left\u0020out\nof\u0020the\u0020rows\u003B\u0020under\u0020an\u0020inferred\u0020schema\u0020it\u0020is\u0020a\u0020schema\u0020error.",
             "url": "classes/Flow-ETL-Values-Rows-RecordBatch.html#method_flush"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Rows\\RowsBuilder",
@@ -27056,6 +27186,11 @@ Search.appendIndex(
             "summary": "Inserts\u0020definitions\u0020at\u0020the\u0020beginning\u0020of\u0020the\u0020schema.",
             "url": "classes/Flow-ETL-Values-Schema.html#method_prepend"
         },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Schema\u003A\u003AmissingFrom\u0028\u0029",
+            "name": "missingFrom",
+            "summary": "The\u0020names\u0020of\u0020this\u0020schema\u0027s\u0020columns\u0020\u0024header\u0020does\u0020not\u0020hold.",
+            "url": "classes/Flow-ETL-Values-Schema.html#method_missingFrom"
+        },                {
             "fqsen": "\\Flow\\ETL\\Values\\Schema\u003A\u003Anames\u0028\u0029",
             "name": "names",
             "summary": "",
@@ -27316,6 +27451,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-functions-window.html"
         },                {
+            "fqsen": "\\Flow\\ETL\\IO",
+            "name": "IO",
+            "summary": "",
+            "url": "namespaces/flow-etl-io.html"
+        },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor",
             "name": "Extractor",
             "summary": "",
@@ -27340,11 +27480,6 @@ Search.appendIndex(
             "name": "SequenceGenerator",
             "summary": "",
             "url": "namespaces/flow-etl-io-extractor-sequencegenerator.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\IO",
-            "name": "IO",
-            "summary": "",
-            "url": "namespaces/flow-etl-io.html"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Filesystem",
             "name": "Filesystem",

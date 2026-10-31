@@ -56,6 +56,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html#method_isRepeatable"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetExtractor\u003A\u003AcorruptedRecordsLoader\u0028\u0029",
+            "name": "corruptedRecordsLoader",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html#method_corruptedRecordsLoader"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetExtractor\u003A\u003Aextract\u0028\u0029",
             "name": "extract",
             "summary": "",
@@ -81,10 +86,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html#method_withBatchSize"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetExtractor\u003A\u003AwithDropExtraColumns\u0028\u0029",
-            "name": "withDropExtraColumns",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetExtractor\u003A\u003AwithCorruptedRecords\u0028\u0029",
+            "name": "withCorruptedRecords",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html#method_withDropExtraColumns"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html#method_withCorruptedRecords"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetExtractor\u003A\u003AwithMissingColumnsAsNull\u0028\u0029",
+            "name": "withMissingColumnsAsNull",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html#method_withMissingColumnsAsNull"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetExtractor\u003A\u003AwithEmptyToNull\u0028\u0029",
             "name": "withEmptyToNull",
@@ -126,10 +136,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReader.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReader\u003A\u003Abatches\u0028\u0029",
-            "name": "batches",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReader\u003A\u003Arows\u0028\u0029",
+            "name": "rows",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReader.html#method_batches"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReader.html#method_rows"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReader\u003A\u003ArowCount\u0028\u0029",
             "name": "rowCount",
@@ -161,11 +171,6 @@ Search.appendIndex(
             "summary": "FORMATTED_VALUE\u0020is\u0020the\u0020only\u0020render\u0020option\u0020under\u0020which\u0020every\u0020cell\u0020arrives\u0020as\u0020a\u0020string,\u0020so\u0020it\u0020is\u0020the\u0020only\u0020one\nwhere\u0020the\u0020string\u0020ladder\u0020has\u0020anything\u0020to\u0020read\u003B\u0020the\u0020others\u0020hand\u0020over\u0020typed\u0020JSON\u0020scalars.",
             "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#method_typer"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReadOptions\u003A\u003AwithDropExtraColumns\u0028\u0029",
-            "name": "withDropExtraColumns",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#method_withDropExtraColumns"
-        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReadOptions\u003A\u003AwithEmptyToNull\u0028\u0029",
             "name": "withEmptyToNull",
             "summary": "",
@@ -176,15 +181,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#property_withHeader"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReadOptions\u003A\u003AwithMissingColumnsAsNull\u0028\u0029",
+            "name": "withMissingColumnsAsNull",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#method_withMissingColumnsAsNull"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReadOptions\u003A\u003AwithOptions\u0028\u0029",
             "name": "withOptions",
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#method_withOptions"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReadOptions\u003A\u003A\u0024dropExtraColumns",
-            "name": "dropExtraColumns",
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReadOptions\u003A\u003A\u0024missingColumnsAsNull",
+            "name": "missingColumnsAsNull",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#property_dropExtraColumns"
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetReadOptions.html#property_missingColumnsAsNull"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetReadOptions\u003A\u003A\u0024emptyToNull",
             "name": "emptyToNull",
@@ -251,6 +261,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Inference-GoogleSheetSample.html#property_rows"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Inference\\GoogleSheetSample\u003A\u003A\u0024cells",
+            "name": "cells",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Inference-GoogleSheetSample.html#property_cells"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Inference\\GoogleSheetSample\u003A\u003A\u0024wholeSheet",
             "name": "wholeSheet",
             "summary": "",
@@ -271,10 +286,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Inference-GoogleSheetSniffer.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Inference\\GoogleSheetSniffer\u003A\u003Abatches\u0028\u0029",
-            "name": "batches",
-            "summary": "The\u0020rows\u0020the\u0020sample\u0020already\u0020holds,\u0020batched,\u0020when\u0020its\u0020range\u0020covered\u0020the\u0020whole\u0020grid\u0020\u002D\u0020so\u0020a\u0020read\u0020does\u0020not\u0020fetch\nthe\u0020same\u0020rows\u0020a\u0020second\u0020time.\u0020Null\u0020when\u0020it\u0020did\u0020not,\u0020and\u0020the\u0020caller\u0020must\u0020read\u0020the\u0020sheet\u0020itself.",
-            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Inference-GoogleSheetSniffer.html#method_batches"
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Inference\\GoogleSheetSniffer\u003A\u003Arows\u0028\u0029",
+            "name": "rows",
+            "summary": "The\u0020raw\u0020rows\u0020the\u0020sample\u0020already\u0020holds,\u0020keyed\u0020by\u0020their\u0020number\u0020in\u0020the\u0020sheet,\u0020when\u0020its\u0020range\u0020covered\u0020the\u0020whole\ngrid\u0020\u002D\u0020so\u0020a\u0020read\u0020does\u0020not\u0020fetch\u0020the\u0020same\u0020rows\u0020a\u0020second\u0020time.\u0020Null\u0020when\u0020it\u0020did\u0020not,\u0020and\u0020the\u0020caller\u0020must\u0020read\u0020the\nsheet\u0020itself.",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Inference-GoogleSheetSniffer.html#method_rows"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Inference\\GoogleSheetSniffer\u003A\u003Abytes\u0028\u0029",
             "name": "bytes",
