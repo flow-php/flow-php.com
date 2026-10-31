@@ -433,7 +433,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\API\\DataFrame\u003A\u003Aexplain\u0028\u0029",
             "name": "explain",
-            "summary": "The\u0020plan\u0020\u0024trigger\u0020would\u0020run\u0020over\u0020this\u0020frame,\u0020frozen\u003A\u0020later\u0020verbs\u0020on\u0020this\u0020frame\u0020do\u0020not\u0020reach\u0020it.\u0020The\u0020default\nadds\u0020no\u0020consumer\u0020of\u0020its\u0020own\u0020\u002D\u0020it\u0020draws\u0020the\u0020frame\u0020as\u0020built,\u0020its\u0020chain\u0020and\u0020its\u0020writes.\u0020toString\u0028\u0029\u0020prints\u0020it\u0020as\u0020a\ntree.\u0020Answers\u0020from\u0020the\u0020plan\u0020without\u0020reading\u0020a\u0020row.",
+            "summary": "The\u0020plan\u0020\u0024trigger\u0020would\u0020run\u0020over\u0020this\u0020frame.\u0020The\u0020default\u0020adds\u0020no\u0020consumer\u0020of\u0020its\u0020own\u0020\u002D\u0020it\u0020draws\u0020the\u0020frame\u0020as\nbuilt,\u0020its\u0020chain\u0020and\u0020its\u0020writes.\u0020toString\u0028\u0029\u0020prints\u0020it\u0020as\u0020a\u0020tree.\u0020Answers\u0020from\u0020the\u0020plan\u0020without\u0020reading\u0020a\u0020row.",
             "url": "classes/Flow-ETL-API-DataFrame.html#method_explain"
         },                {
             "fqsen": "\\Flow\\ETL\\API\\DataFrame\u003A\u003AprintSchema\u0028\u0029",
@@ -2476,15 +2476,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Foundation-Exception-InvalidLogicException.html#method_consumerRewritten"
         },                {
-            "fqsen": "\\Flow\\ETL\\Foundation\\Exception\\InvalidLogicException\u003A\u003AtransformationReturnedAnotherFrame\u0028\u0029",
-            "name": "transformationReturnedAnotherFrame",
+            "fqsen": "\\Flow\\ETL\\Foundation\\Exception\\InvalidLogicException\u003A\u003AbranchFrameNotBuiltFromPrefix\u0028\u0029",
+            "name": "branchFrameNotBuiltFromPrefix",
             "summary": "",
-            "url": "classes/Flow-ETL-Foundation-Exception-InvalidLogicException.html#method_transformationReturnedAnotherFrame"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Foundation\\Exception\\InvalidLogicException\u003A\u003AerrorHandlerInsideBranch\u0028\u0029",
-            "name": "errorHandlerInsideBranch",
-            "summary": "",
-            "url": "classes/Flow-ETL-Foundation-Exception-InvalidLogicException.html#method_errorHandlerInsideBranch"
+            "url": "classes/Flow-ETL-Foundation-Exception-InvalidLogicException.html#method_branchFrameNotBuiltFromPrefix"
         },                {
             "fqsen": "\\Flow\\ETL\\Foundation\\Exception\\JoinException",
             "name": "JoinException",

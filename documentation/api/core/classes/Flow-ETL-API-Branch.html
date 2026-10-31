@@ -146,7 +146,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-API-Branch.html#method_write">write()</a>
     <span>
-                                &nbsp;: void    </span>
+                                &nbsp;: <a href="classes/Flow-ETL-API-DataFrame.html"><abbr title="\Flow\ETL\API\DataFrame">DataFrame</abbr></a>    </span>
 </dt>
 
     </dl>
@@ -178,14 +178,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/API/Branch.php"><a href="files/src-core-etl-src-flow-etl-api-branch.html"><abbr title="src/core/etl/src/Flow/ETL/API/Branch.php">Branch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">write</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-API-DataFrame.html"><abbr title="\Flow\ETL\API\DataFrame">DataFrame</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prefix</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">write</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-API-DataFrame.html"><abbr title="\Flow\ETL\API\DataFrame">DataFrame</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prefix</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-API-DataFrame.html"><abbr title="\Flow\ETL\API\DataFrame">DataFrame</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -198,8 +198,7 @@
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-API-DataFrame.html"><abbr title="\Flow\ETL\API\DataFrame">DataFrame</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>a frame over the caller's chain, handed to this call only - its writes become the
-caller's writes, its other verbs never reach the caller</p>
+                    <section class="phpdocumentor-description"><p>a frame over the caller's chain - the writes of the returned frame become the caller's</p>
 </section>
 
             </dd>
@@ -209,7 +208,11 @@ caller's writes, its other verbs never reach the caller</p>
 
         
     
-    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-API-DataFrame.html"><abbr title="\Flow\ETL\API\DataFrame">DataFrame</abbr></a></span>
+            </section>
+
 </article>
             </section>
 
