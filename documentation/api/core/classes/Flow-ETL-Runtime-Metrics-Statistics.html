@@ -169,9 +169,15 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/Flow-ETL-Runtime-Metrics-Statistics.html#property_memory">$memory</a>
+    <a class="" href="classes/Flow-ETL-Runtime-Metrics-Statistics.html#property_heap">$heap</a>
     <span>
                         &nbsp;: <a href="classes/Flow-ETL-Values-Memory-Consumption.html"><abbr title="\Flow\ETL\Values\Memory\Consumption">Consumption</abbr></a>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-ETL-Runtime-Metrics-Statistics.html#property_processes">$processes</a>
+    <span>
+                        &nbsp;: <a href="classes/Flow-ETL-Runtime-Metrics-Processes.html"><abbr title="\Flow\ETL\Runtime\Metrics\Processes">Processes</abbr></a>            </span>
 </dt>
 
     </dl>
@@ -186,6 +192,12 @@
     <a class="" href="classes/Flow-ETL-Runtime-Metrics-Statistics.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Runtime-Metrics-Statistics.html#method_normalize">normalize()</a>
+    <span>
+                                &nbsp;: array&lt;string, mixed&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -288,9 +300,9 @@
             -public
                                                                     "
 >
-    <h4 class="phpdocumentor-element__name" id="property_memory">
-        $memory
-        <a href="classes/Flow-ETL-Runtime-Metrics-Statistics.html#property_memory" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_heap">
+        $heap
+        <a href="classes/Flow-ETL-Runtime-Metrics-Statistics.html#property_heap" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                             </span>
@@ -307,7 +319,44 @@
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type"><a href="classes/Flow-ETL-Values-Memory-Consumption.html"><abbr title="\Flow\ETL\Values\Memory\Consumption">Consumption</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$memory</span>
+    <span class="phpdocumentor-signature__name">$heap</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_processes">
+        $processes
+        <a href="classes/Flow-ETL-Runtime-Metrics-Statistics.html#property_processes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Metrics/Statistics.php"><a href="files/src-core-etl-src-flow-etl-runtime-metrics-statistics.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Metrics/Statistics.php">Statistics.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">18</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Flow-ETL-Runtime-Metrics-Processes.html"><abbr title="\Flow\ETL\Runtime\Metrics\Processes">Processes</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$processes</span>
     </code>
 
     
@@ -347,7 +396,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$totalRows</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Runtime-Metrics-Statistics-ExecutionTime.html"><abbr title="\Flow\ETL\Runtime\Metrics\Statistics\ExecutionTime">ExecutionTime</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$executionTime</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Memory-Consumption.html"><abbr title="\Flow\ETL\Values\Memory\Consumption">Consumption</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$memory</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Runtime-Metrics-Statistics-Columns.html"><abbr title="\Flow\ETL\Runtime\Metrics\Statistics\Columns">Columns</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$totalRows</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Runtime-Metrics-Statistics-ExecutionTime.html"><abbr title="\Flow\ETL\Runtime\Metrics\Statistics\ExecutionTime">ExecutionTime</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$executionTime</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Memory-Consumption.html"><abbr title="\Flow\ETL\Values\Memory\Consumption">Consumption</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$heap</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Runtime-Metrics-Statistics-Columns.html"><abbr title="\Flow\ETL\Runtime\Metrics\Statistics\Columns">Columns</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Runtime-Metrics-Processes.html"><abbr title="\Flow\ETL\Runtime\Metrics\Processes">Processes</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$processes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -370,7 +419,7 @@
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$memory</span>
+                <span class="phpdocumentor-argument-list__argument__name">$heap</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Memory-Consumption.html"><abbr title="\Flow\ETL\Values\Memory\Consumption">Consumption</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -379,6 +428,13 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$columns</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Runtime-Metrics-Statistics-Columns.html"><abbr title="\Flow\ETL\Runtime\Metrics\Statistics\Columns">Columns</abbr></a>|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$processes</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Runtime-Metrics-Processes.html"><abbr title="\Flow\ETL\Runtime\Metrics\Processes">Processes</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -397,6 +453,44 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_normalize">
+        normalize()
+        <a href="classes/Flow-ETL-Runtime-Metrics-Statistics.html#method_normalize" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Metrics/Statistics.php"><a href="files/src-core-etl-src-flow-etl-runtime-metrics-statistics.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Metrics/Statistics.php">Statistics.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">24</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_totalRows">
         totalRows()
         <a href="classes/Flow-ETL-Runtime-Metrics-Statistics.html#method_totalRows" class="headerlink"><i class="fas fa-link"></i></a>
@@ -405,7 +499,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Metrics/Statistics.php"><a href="files/src-core-etl-src-flow-etl-runtime-metrics-statistics.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Metrics/Statistics.php">Statistics.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -453,7 +547,8 @@
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/Flow-ETL-Runtime-Metrics-Statistics.html#property_columns">$columns</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Runtime-Metrics-Statistics.html#property_executionTime">$executionTime</a></li>
-                                                    <li class=""><a href="classes/Flow-ETL-Runtime-Metrics-Statistics.html#property_memory">$memory</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Runtime-Metrics-Statistics.html#property_heap">$heap</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Runtime-Metrics-Statistics.html#property_processes">$processes</a></li>
                                             </ul>
                 </li>
             
@@ -461,6 +556,7 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Runtime-Metrics-Statistics.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Runtime-Metrics-Statistics.html#method_normalize">normalize()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Runtime-Metrics-Statistics.html#method_totalRows">totalRows()</a></li>
                                     </ul>
             </li>

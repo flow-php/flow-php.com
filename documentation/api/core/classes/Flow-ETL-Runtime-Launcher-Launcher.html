@@ -154,7 +154,7 @@
 </dt>
 <dd>Decides before the first batch whether launching the head of $plan&#039;s chain pays; null when it does not and the
 executor reads $source. Otherwise the launch: its rows are identical to the launched steps run over the source&#039;s
-own scan of $criteria, with the source&#039;s rows counted into $sources.</dd>
+own scan of $criteria, with the source&#039;s rows and the workers&#039; peaks counted into $counts.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-IO-Inference-Sniffs.html#method_sniff">sniff()</a>
@@ -198,11 +198,11 @@ own scan of $criteria, with the source&#039;s rows counted into $sources.</dd>
 
         <p class="phpdocumentor-summary">Decides before the first batch whether launching the head of $plan&#039;s chain pays; null when it does not and the
 executor reads $source. Otherwise the launch: its rows are identical to the launched steps run over the source&#039;s
-own scan of $criteria, with the source&#039;s rows counted into $sources.</p>
+own scan of $criteria, with the source&#039;s rows and the workers&#039; peaks counted into $counts.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">read</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Physical-PhysicalPlan.html"><abbr title="\Flow\ETL\Planning\Physical\PhysicalPlan">PhysicalPlan</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plan</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-IO-Extractor-SplittableExtractor.html"><abbr title="\Flow\ETL\IO\Extractor\SplittableExtractor">SplittableExtractor</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-IO-Extractor-Criteria.html"><abbr title="\Flow\ETL\IO\Extractor\Criteria">Criteria</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$criteria</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Runtime-FlowContext.html"><abbr title="\Flow\ETL\Runtime\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Runtime-Executor-SourceCounts.html"><abbr title="\Flow\ETL\Runtime\Executor\SourceCounts">SourceCounts</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sources</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Runtime-Launcher-Launch.html"><abbr title="\Flow\ETL\Runtime\Launcher\Launch">Launch</abbr></a>|null</span></code>
+                    <span class="phpdocumentor-signature__name">read</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Physical-PhysicalPlan.html"><abbr title="\Flow\ETL\Planning\Physical\PhysicalPlan">PhysicalPlan</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plan</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-IO-Extractor-SplittableExtractor.html"><abbr title="\Flow\ETL\IO\Extractor\SplittableExtractor">SplittableExtractor</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-IO-Extractor-Criteria.html"><abbr title="\Flow\ETL\IO\Extractor\Criteria">Criteria</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$criteria</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Runtime-FlowContext.html"><abbr title="\Flow\ETL\Runtime\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Runtime-Executor-RunCounts.html"><abbr title="\Flow\ETL\Runtime\Executor\RunCounts">RunCounts</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$counts</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Runtime-Launcher-Launch.html"><abbr title="\Flow\ETL\Runtime\Launcher\Launch">Launch</abbr></a>|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -239,8 +239,8 @@ own scan of $criteria, with the source&#039;s rows counted into $sources.</p>
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$sources</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Runtime-Executor-SourceCounts.html"><abbr title="\Flow\ETL\Runtime\Executor\SourceCounts">SourceCounts</abbr></a>|null</span>
+                <span class="phpdocumentor-argument-list__argument__name">$counts</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Runtime-Executor-RunCounts.html"><abbr title="\Flow\ETL\Runtime\Executor\RunCounts">RunCounts</abbr></a>|null</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 

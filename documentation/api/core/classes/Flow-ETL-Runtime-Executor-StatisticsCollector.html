@@ -129,7 +129,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/StatisticsCollector.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-statisticscollector.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/StatisticsCollector.php">StatisticsCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -181,6 +181,14 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Runtime-Executor-StatisticsCollector.html#method_counts">counts()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-Runtime-Executor-RunCounts.html"><abbr title="\Flow\ETL\Runtime\Executor\RunCounts">RunCounts</abbr></a>|null    </span>
+</dt>
+<dd>Handed to the executor under analyze, so the pipelines that read a source count its rows and a launcher its
+workers&#039; peaks.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Runtime-Executor-StatisticsCollector.html#method_readsColumns">readsColumns()</a>
     <span>
                                 &nbsp;: bool    </span>
@@ -193,13 +201,6 @@ this process.</dd>
     <span>
                                 &nbsp;: <abbr title="(\Flow\ETL\Runtime\Executor\T is \Flow\ETL\Runtime\Analyze|true ? \Flow\ETL\Runtime\Metrics\Report : null)">Report : null)</abbr>    </span>
 </dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Runtime-Executor-StatisticsCollector.html#method_sources">sources()</a>
-    <span>
-                                &nbsp;: <a href="classes/Flow-ETL-Runtime-Executor-SourceCounts.html"><abbr title="\Flow\ETL\Runtime\Executor\SourceCounts">SourceCounts</abbr></a>|null    </span>
-</dt>
-<dd>Handed to the planner, so the pipelines that read a source count its rows.</dd>
 
     </dl>
 
@@ -229,7 +230,7 @@ this process.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/StatisticsCollector.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-statisticscollector.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/StatisticsCollector.php">StatisticsCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -280,7 +281,7 @@ this process.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/StatisticsCollector.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-statisticscollector.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/StatisticsCollector.php">StatisticsCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -316,6 +317,46 @@ this process.</dd>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_counts">
+        counts()
+        <a href="classes/Flow-ETL-Runtime-Executor-StatisticsCollector.html#method_counts" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/StatisticsCollector.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-statisticscollector.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/StatisticsCollector.php">StatisticsCollector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">110</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Handed to the executor under analyze, so the pipelines that read a source count its rows and a launcher its
+workers&#039; peaks.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">counts</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Runtime-Executor-RunCounts.html"><abbr title="\Flow\ETL\Runtime\Executor\RunCounts">RunCounts</abbr></a>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Runtime-Executor-RunCounts.html"><abbr title="\Flow\ETL\Runtime\Executor\RunCounts">RunCounts</abbr></a>|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_readsColumns">
         readsColumns()
         <a href="classes/Flow-ETL-Runtime-Executor-StatisticsCollector.html#method_readsColumns" class="headerlink"><i class="fas fa-link"></i></a>
@@ -324,7 +365,7 @@ this process.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/StatisticsCollector.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-statisticscollector.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/StatisticsCollector.php">StatisticsCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">101</span>
 
     </aside>
 
@@ -364,7 +405,7 @@ this process.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/StatisticsCollector.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-statisticscollector.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/StatisticsCollector.php">StatisticsCollector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">118</span>
 
     </aside>
 
@@ -385,45 +426,6 @@ this process.</p>
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="(\Flow\ETL\Runtime\Executor\T is \Flow\ETL\Runtime\Analyze|true ? \Flow\ETL\Runtime\Metrics\Report : null)">Report : null)</abbr></span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_sources">
-        sources()
-        <a href="classes/Flow-ETL-Runtime-Executor-StatisticsCollector.html#method_sources" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/StatisticsCollector.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-statisticscollector.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/StatisticsCollector.php">StatisticsCollector.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">104</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Handed to the planner, so the pipelines that read a source count its rows.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">sources</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Runtime-Executor-SourceCounts.html"><abbr title="\Flow\ETL\Runtime\Executor\SourceCounts">SourceCounts</abbr></a>|null</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Runtime-Executor-SourceCounts.html"><abbr title="\Flow\ETL\Runtime\Executor\SourceCounts">SourceCounts</abbr></a>|null</span>
             </section>
 
 </article>
@@ -451,9 +453,9 @@ this process.</p>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Runtime-Executor-StatisticsCollector.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Runtime-Executor-StatisticsCollector.html#method_capture">capture()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Runtime-Executor-StatisticsCollector.html#method_counts">counts()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Runtime-Executor-StatisticsCollector.html#method_readsColumns">readsColumns()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Runtime-Executor-StatisticsCollector.html#method_report">report()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Runtime-Executor-StatisticsCollector.html#method_sources">sources()</a></li>
                                     </ul>
             </li>
                     </ul>

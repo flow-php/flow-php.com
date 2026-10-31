@@ -20956,6 +20956,51 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Runtime-Executor-OfferedFailure.html#method_forget"
         },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\RunCounts",
+            "name": "RunCounts",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-RunCounts.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\RunCounts\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-RunCounts.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\RunCounts\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Passes\u0020\u0024batches\u0020through\u0020unchanged.\u0020A\u0020stop\u0020is\u0020forwarded\u0020and\u0020ends\u0020the\u0020count\u003A\u0020the\u0020consumer\u0020that\u0020sent\u0020it\u0020reads\u0020no\nfurther\u0020batch,\u0020so\u0020that\u0020read\u0020never\u0020closes.",
+            "url": "classes/Flow-ETL-Runtime-Executor-RunCounts.html#method_count"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\RunCounts\u003A\u003Aopen\u0028\u0029",
+            "name": "open",
+            "summary": "The\u0020opened\u0020read\u0020of\u0020\u0024extractor,\u0020created\u0020on\u0020first\u0020use\u003A\u0020whoever\u0020drives\u0020the\u0020source\u0020counts\u0020into\u0020it\u0020and\u0020closes\u0020it.",
+            "url": "classes/Flow-ETL-Runtime-Executor-RunCounts.html#method_open"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\RunCounts\u003A\u003Aabsorb\u0028\u0029",
+            "name": "absorb",
+            "summary": "Takes\u0020over\u0020every\u0020read\u0020\u0024other\u0020counted,\u0020as\u0020if\u0020this\u0020one\u0020had\u0020counted\u0020it\u003B\u0020a\u0020source\u0020new\u0020to\u0020this\u0020one\u0020keeps\u0020what\u0020it\ndeclared\u0020when\u0020\u0024other\u0020opened\u0020it.",
+            "url": "classes/Flow-ETL-Runtime-Executor-RunCounts.html#method_absorb"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\RunCounts\u003A\u003AabsorbWorkers\u0028\u0029",
+            "name": "absorbWorkers",
+            "summary": "Takes\u0020over\u0020the\u0020worker\u0020peaks\u0020\u0024other\u0020saw\u0020and\u0020none\u0020of\u0020its\u0020reads\u003A\u0020an\u0020abandoned\u0020attempt\u0027s\u0020workers\u0020used\u0020that\u0020memory,\nwhile\u0020its\u0020source\u0020is\u0020read\u0020again.",
+            "url": "classes/Flow-ETL-Runtime-Executor-RunCounts.html#method_absorbWorkers"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\RunCounts\u003A\u003Aworker\u0028\u0029",
+            "name": "worker",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-RunCounts.html#method_worker"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\RunCounts\u003A\u003Aprocesses\u0028\u0029",
+            "name": "processes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-RunCounts.html#method_processes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\RunCounts\u003A\u003Astatistics\u0028\u0029",
+            "name": "statistics",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-RunCounts.html#method_statistics"
+        },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\SourceCount",
             "name": "SourceCount",
             "summary": "",
@@ -20996,36 +21041,6 @@ Search.appendIndex(
             "summary": "Every\u0020read\u0020ran\u0020to\u0020its\u0020end\u0020and\u0020none\u0020had\u0020a\u0020limit,\u0020a\u0020partition\u0020filter\u0020or\u0020a\u0020predicate\u0020pushed\u0020into\u0020it.",
             "url": "classes/Flow-ETL-Runtime-Executor-SourceCount.html#method_isComplete"
         },                {
-            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\SourceCounts",
-            "name": "SourceCounts",
-            "summary": "",
-            "url": "classes/Flow-ETL-Runtime-Executor-SourceCounts.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\SourceCounts\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Runtime-Executor-SourceCounts.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\SourceCounts\u003A\u003Acount\u0028\u0029",
-            "name": "count",
-            "summary": "Passes\u0020\u0024batches\u0020through\u0020unchanged.\u0020A\u0020stop\u0020is\u0020forwarded\u0020and\u0020ends\u0020the\u0020count\u003A\u0020the\u0020consumer\u0020that\u0020sent\u0020it\u0020reads\u0020no\nfurther\u0020batch,\u0020so\u0020that\u0020read\u0020never\u0020closes.",
-            "url": "classes/Flow-ETL-Runtime-Executor-SourceCounts.html#method_count"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\SourceCounts\u003A\u003Aopen\u0028\u0029",
-            "name": "open",
-            "summary": "The\u0020opened\u0020read\u0020of\u0020\u0024extractor,\u0020created\u0020on\u0020first\u0020use\u003A\u0020whoever\u0020drives\u0020the\u0020source\u0020counts\u0020into\u0020it\u0020and\u0020closes\u0020it.",
-            "url": "classes/Flow-ETL-Runtime-Executor-SourceCounts.html#method_open"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\SourceCounts\u003A\u003Aabsorb\u0028\u0029",
-            "name": "absorb",
-            "summary": "Takes\u0020over\u0020every\u0020read\u0020\u0024other\u0020counted,\u0020as\u0020if\u0020this\u0020one\u0020had\u0020counted\u0020it\u003B\u0020a\u0020source\u0020new\u0020to\u0020this\u0020one\u0020keeps\u0020what\u0020it\ndeclared\u0020when\u0020\u0024other\u0020opened\u0020it.",
-            "url": "classes/Flow-ETL-Runtime-Executor-SourceCounts.html#method_absorb"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\SourceCounts\u003A\u003Astatistics\u0028\u0029",
-            "name": "statistics",
-            "summary": "",
-            "url": "classes/Flow-ETL-Runtime-Executor-SourceCounts.html#method_statistics"
-        },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\StatisticsCollector",
             "name": "StatisticsCollector",
             "summary": "",
@@ -21046,10 +21061,10 @@ Search.appendIndex(
             "summary": "The\u0020run\u0020reads\u0020the\u0020output\u0027s\u0020columns\u003A\u0020a\u0020schema\u0020or\u0020column\u0020statistics\u0020are\u0020collected,\u0020so\u0020every\u0020row\u0020has\u0020to\u0020reach\nthis\u0020process.",
             "url": "classes/Flow-ETL-Runtime-Executor-StatisticsCollector.html#method_readsColumns"
         },                {
-            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\StatisticsCollector\u003A\u003Asources\u0028\u0029",
-            "name": "sources",
-            "summary": "Handed\u0020to\u0020the\u0020planner,\u0020so\u0020the\u0020pipelines\u0020that\u0020read\u0020a\u0020source\u0020count\u0020its\u0020rows.",
-            "url": "classes/Flow-ETL-Runtime-Executor-StatisticsCollector.html#method_sources"
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\StatisticsCollector\u003A\u003Acounts\u0028\u0029",
+            "name": "counts",
+            "summary": "Handed\u0020to\u0020the\u0020executor\u0020under\u0020analyze,\u0020so\u0020the\u0020pipelines\u0020that\u0020read\u0020a\u0020source\u0020count\u0020its\u0020rows\u0020and\u0020a\u0020launcher\u0020its\nworkers\u0027\u0020peaks.",
+            "url": "classes/Flow-ETL-Runtime-Executor-StatisticsCollector.html#method_counts"
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\StatisticsCollector\u003A\u003Areport\u0028\u0029",
             "name": "report",
@@ -21228,7 +21243,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Launcher\\Launcher\u003A\u003Aread\u0028\u0029",
             "name": "read",
-            "summary": "Decides\u0020before\u0020the\u0020first\u0020batch\u0020whether\u0020launching\u0020the\u0020head\u0020of\u0020\u0024plan\u0027s\u0020chain\u0020pays\u003B\u0020null\u0020when\u0020it\u0020does\u0020not\u0020and\u0020the\nexecutor\u0020reads\u0020\u0024source.\u0020Otherwise\u0020the\u0020launch\u003A\u0020its\u0020rows\u0020are\u0020identical\u0020to\u0020the\u0020launched\u0020steps\u0020run\u0020over\u0020the\u0020source\u0027s\nown\u0020scan\u0020of\u0020\u0024criteria,\u0020with\u0020the\u0020source\u0027s\u0020rows\u0020counted\u0020into\u0020\u0024sources.",
+            "summary": "Decides\u0020before\u0020the\u0020first\u0020batch\u0020whether\u0020launching\u0020the\u0020head\u0020of\u0020\u0024plan\u0027s\u0020chain\u0020pays\u003B\u0020null\u0020when\u0020it\u0020does\u0020not\u0020and\u0020the\nexecutor\u0020reads\u0020\u0024source.\u0020Otherwise\u0020the\u0020launch\u003A\u0020its\u0020rows\u0020are\u0020identical\u0020to\u0020the\u0020launched\u0020steps\u0020run\u0020over\u0020the\u0020source\u0027s\nown\u0020scan\u0020of\u0020\u0024criteria,\u0020with\u0020the\u0020source\u0027s\u0020rows\u0020and\u0020the\u0020workers\u0027\u0020peaks\u0020counted\u0020into\u0020\u0024counts.",
             "url": "classes/Flow-ETL-Runtime-Launcher-Launcher.html#method_read"
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\MemoryLimit",
@@ -21256,6 +21271,41 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Runtime-MemoryLimit.html#constant_WITHOUT_MEMORY_LIMIT_GB"
         },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Processes",
+            "name": "Processes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-Processes.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Processes\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-Processes.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Processes\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-Processes.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Processes\u003A\u003ApeakSum\u0028\u0029",
+            "name": "peakSum",
+            "summary": "Parent\u0020plus\u0020every\u0020worker.\u0020An\u0020upper\u0020bound\u0020for\u0020sizing,\u0020not\u0020the\u0020memory\u0020the\u0020run\u0020used\u003A\u0020the\u0020peaks\u0020happen\u0020at\u0020different\ntimes\u0020and\u0020each\u0020process\u0020counts\u0020its\u0020shared\u0020libraries.",
+            "url": "classes/Flow-ETL-Runtime-Metrics-Processes.html#method_peakSum"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Processes\u003A\u003AworkerPeak\u0028\u0029",
+            "name": "workerPeak",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-Processes.html#method_workerPeak"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Processes\u003A\u003A\u0024parent",
+            "name": "parent",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-Processes.html#property_parent"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Processes\u003A\u003A\u0024workers",
+            "name": "workers",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-Processes.html#property_workers"
+        },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Report",
             "name": "Report",
             "summary": "",
@@ -21265,6 +21315,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-ETL-Runtime-Metrics-Report.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Report\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "The\u0020JSON\u0020form\u0020for\u0020CI\u003A\u0020the\u0020same\u0020values\u0020as\u0020the\u0020typed\u0020getters,\u0020memory\u0020in\u0020bytes.",
+            "url": "classes/Flow-ETL-Runtime-Metrics-Report.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Report\u003A\u003Asources\u0028\u0029",
             "name": "sources",
@@ -21290,6 +21345,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-ETL-Runtime-Metrics-SourceStatistics.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\SourceStatistics\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "rows_error\u003A\u0020rowsError\u0028\u0029\u0020when\u0020it\u0020is\u0020a\u0020finite\u0020number\u003B\u0020null\u0020without\u0020an\u0020estimate,\u0020for\u0020an\u0020incomplete\u0020read,\u0020or\u0020when\nthe\u0020estimate\u0020was\u0020positive\u0020against\u00200\u0020rows\u0020measured\u0020\u0028infinitely\u0020off\u0029.",
+            "url": "classes/Flow-ETL-Runtime-Metrics-SourceStatistics.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\SourceStatistics\u003A\u003ArowsError\u0028\u0029",
             "name": "rowsError",
@@ -21371,6 +21431,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Runtime-Metrics-Statistics-Column.html#method_name"
         },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Statistics\\Column\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "A\u0020date\u0020bound\u0020is\u0020RFC\u00203339\u0020text\u003B\u0020an\u0020infinite\u0020float\u0020bound,\u0020which\u0020JSON\u0020cannot\u0020hold,\u0020is\u0020\u0022INF\u0022\u0020or\u0020\u0022\u002DINF\u0022.",
+            "url": "classes/Flow-ETL-Runtime-Metrics-Statistics-Column.html#method_normalize"
+        },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Statistics\\Column\u003A\u003AnullCount\u0028\u0029",
             "name": "nullCount",
             "summary": "",
@@ -21406,6 +21471,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Runtime-Metrics-Statistics-Columns.html#method_get"
         },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Statistics\\Columns\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-Statistics-Columns.html#method_normalize"
+        },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Statistics\\ExecutionTime",
             "name": "ExecutionTime",
             "summary": "",
@@ -21425,6 +21495,11 @@ Search.appendIndex(
             "name": "inSeconds",
             "summary": "",
             "url": "classes/Flow-ETL-Runtime-Metrics-Statistics-ExecutionTime.html#method_inSeconds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Statistics\\ExecutionTime\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-Statistics-ExecutionTime.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Statistics\\ExecutionTime\u003A\u003A\u0024startedAt",
             "name": "startedAt",
@@ -21451,6 +21526,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Runtime-Metrics-Statistics.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Statistics\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-Statistics.html#method_normalize"
+        },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Statistics\u003A\u003AtotalRows\u0028\u0029",
             "name": "totalRows",
             "summary": "",
@@ -21461,15 +21541,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Runtime-Metrics-Statistics.html#property_executionTime"
         },                {
-            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Statistics\u003A\u003A\u0024memory",
-            "name": "memory",
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Statistics\u003A\u003A\u0024heap",
+            "name": "heap",
             "summary": "",
-            "url": "classes/Flow-ETL-Runtime-Metrics-Statistics.html#property_memory"
+            "url": "classes/Flow-ETL-Runtime-Metrics-Statistics.html#property_heap"
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Statistics\u003A\u003A\u0024columns",
             "name": "columns",
             "summary": "",
             "url": "classes/Flow-ETL-Runtime-Metrics-Statistics.html#property_columns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Statistics\u003A\u003A\u0024processes",
+            "name": "processes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-Statistics.html#property_processes"
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Telemetry\\SpanScope",
             "name": "SpanScope",
@@ -21610,6 +21695,16 @@ Search.appendIndex(
             "name": "logger",
             "summary": "",
             "url": "classes/Flow-ETL-Runtime-Telemetry-TelemetryContext.html#method_logger"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Telemetry\\TelemetryContext\u003A\u003Amemory\u0028\u0029",
+            "name": "memory",
+            "summary": "The\u0020heap\u0020of\u0020the\u0020data\u0020frame\u0020started\u0020last,\u0020sampled\u0020once\u0020per\u0020batch\u003B\u0020it\u0020stays\u0020readable\u0020after\u0020the\u0020data\u0020frame\u0020ends.",
+            "url": "classes/Flow-ETL-Runtime-Telemetry-TelemetryContext.html#method_memory"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Telemetry\\TelemetryContext\u003A\u003AtotalRows\u0028\u0029",
+            "name": "totalRows",
+            "summary": "The\u0020rows\u0020that\u0020reached\u0020the\u0020end\u0020of\u0020the\u0020data\u0020frame\u0020started\u0020last\u003B\u0020it\u0020stays\u0020readable\u0020after\u0020the\u0020data\u0020frame\u0020ends.",
+            "url": "classes/Flow-ETL-Runtime-Telemetry-TelemetryContext.html#method_totalRows"
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Telemetry\\TelemetryContext\u003A\u003AstepCompleted\u0028\u0029",
             "name": "stepCompleted",
@@ -22730,6 +22825,11 @@ Search.appendIndex(
             "name": "merge",
             "summary": "",
             "url": "classes/Flow-ETL-Values-Cardinality.html#method_merge"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Cardinality\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "relative_error\u0020is\u0020null\u0020when\u0020it\u0020is\u0020not\u0020a\u0020finite\u0020number.",
+            "url": "classes/Flow-ETL-Values-Cardinality.html#method_normalize"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Cardinality\u003A\u003ADEFAULT_RELATIVE_ERROR",
             "name": "DEFAULT_RELATIVE_ERROR",
@@ -24851,6 +24951,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Values-Memory-Consumption.html#method_minDiff"
         },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Memory\\Consumption\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Memory-Consumption.html#method_normalize"
+        },                {
             "fqsen": "\\Flow\\ETL\\Values\\Memory\\MemoryBudget",
             "name": "MemoryBudget",
             "summary": "",
@@ -24905,6 +25010,11 @@ Search.appendIndex(
             "name": "fromString",
             "summary": "",
             "url": "classes/Flow-ETL-Values-Memory-Unit.html#method_fromString"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Memory\\Unit\u003A\u003AprocessPeak\u0028\u0029",
+            "name": "processPeak",
+            "summary": "The\u0020peak\u0020resident\u0020set\u0020size\u0020of\u0020this\u0020process\u0020so\u0020far,\u0020as\u0020the\u0020OS\u0020counts\u0020it\u003A\u0020Rust\u0020allocations\u0020and\u0020shared\u0020libraries\nincluded.\u0020getrusage\u0028\u0029\u0020reports\u0020it\u0020in\u0020bytes\u0020on\u0020macOS\u0020and\u0020in\u0020KiB\u0020elsewhere.",
+            "url": "classes/Flow-ETL-Values-Memory-Unit.html#method_processPeak"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Memory\\Unit\u003A\u003Aabsolute\u0028\u0029",
             "name": "absolute",
