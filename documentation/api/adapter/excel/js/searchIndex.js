@@ -403,7 +403,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\IO\\Extractor\\Sheet\\XlsxSheetRows",
             "name": "XlsxSheetRows",
-            "summary": "One\u0020XLSX\u0020sheet\u0027s\u0020rows,\u0020every\u0020cell\u0020formatted\u0020by\u0020OpenSpout\u0027s\u0020own\u0020CellValueFormatter\u0020\u002D\u0020only\u0020the\u0020walk\u0020over\u0020the\u0020sheet\nXML\u0020is\u0020Flow\u0027s.\u0020OpenSpout\u0027s\u0020RowIterator\u0020sends\u0020each\u0020XML\u0020node\u0020through\u0020a\u0020reflection\u0020callback\u0020and\u0020toggles\u0020libxml\u0027s\nerror\u0020mode\u0020around\u0020every\u0020read,\u0020which\u0020costs\u0020more\u0020than\u0020formatting\u0020the\u0020cells.",
+            "summary": "Own\u0020XML\u0020walk\u0020replaces\u0020OpenSpout\u0027s\u0020RowIterator\u0020\u0028reflection\u0020callback\u0020\u002B\u0020libxml\u0020toggling\u0020per\u0020node\u0029.",
             "url": "classes/Flow-ETL-Adapter-Excel-IO-Extractor-Sheet-XlsxSheetRows.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\IO\\Extractor\\Sheet\\XlsxSheetRows\u003A\u003A__construct\u0028\u0029",

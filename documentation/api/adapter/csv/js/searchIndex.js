@@ -483,7 +483,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\IO\\Extractor\\CSVRecordBoundary",
             "name": "CSVRecordBoundary",
-            "summary": "A\u0020record\u0020is\u0020complete\u0020when\u0020the\u0020buffer\u0020ends\u0020outside\u0020an\u0020enclosure.\u0020An\u0020enclosure\u0020only\u0020OPENS\u0020at\u0020a\u0020field\u0020start\u0020\u002D\u0020buffer\nstart\u0020or\u0020just\u0020after\u0020the\u0020separator,\u0020blanks\u0020allowed\u0020\u002D\u0020which\u0020is\u0020what\u0020fgetcsv\u0020does\u0020and\u0020what\u0020counting\u0020enclosures\u0020cannot\nexpress.\u0020Possessive\u0020quantifiers\u0020throughout\u003A\u0020the\u0020pattern\u0020must\u0020stay\u0020linear\u0020on\u0020a\u0020multi\u002Dmegabyte\u0020buffer.",
+            "summary": "Enclosure\u0020opens\u0020only\u0020at\u0020a\u0020field\u0020start\u0020\u0028as\u0020fgetcsv\u0029\u003B\u0020possessive\u0020quantifiers\u0020keep\u0020it\u0020linear\u0020on\u0020large\u0020buffers.",
             "url": "classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVRecordBoundary.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\IO\\Extractor\\CSVRecordBoundary\u003A\u003A__construct\u0028\u0029",
@@ -498,7 +498,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\IO\\Extractor\\CSVRecordResync",
             "name": "CSVRecordResync",
-            "summary": "A\u0020cut\u0020may\u0020land\u0020inside\u0020a\u0020quoted\u0020value,\u0020so\u0020a\u0020newline\u0020is\u0020only\u0020a\u0020candidate.\u0020A\u0020candidate\u0020is\u0020accepted\u0020when\n\u0024confirmations\u0020consecutive\u0020records\u0020each\u0020tokenise\u0020to\u0020\u0024expectedFields\u0020fields\u0020\u002D\u0020Polars\u0027\u0020next_line_position\u0020test.\u0020Its\nnaive\u0020sibling,\u0020which\u0020trusts\u0020the\u0020first\u0020newline,\u0020is\u0020documented\u0020there\u0020as\u0020\u0022Does\u0020not\u0020check\u0020for\u0020new\u0020line\u0020characters\nembedded\u0020in\u0020String\u0020fields\u0022\u0020and\u0020is\u0020deliberately\u0020not\u0020used.",
+            "summary": "A\u0020newline\u0020after\u0020a\u0020cut\u0020is\u0020accepted\u0020once\u0020\u0024confirmations\u0020consecutive\u0020records\u0020tokenise\u0020to\u0020\u0024expectedFields\u0020fields.",
             "url": "classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVRecordResync.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\CSV\\IO\\Extractor\\CSVRecordResync\u003A\u003A__construct\u0028\u0029",

@@ -131,7 +131,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInference.php"><a href="files/src-core-etl-src-flow-etl-io-inference-schemainference.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInference.php">SchemaInference.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
@@ -159,13 +159,13 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-ETL-IO-Inference-SchemaInference.html#property_filesToSniff">$filesToSniff</a>
     <span>
-                        &nbsp;: int            </span>
+                        &nbsp;: int|null            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-ETL-IO-Inference-SchemaInference.html#property_sampleSize">$sampleSize</a>
     <span>
-                        &nbsp;: int            </span>
+                        &nbsp;: int|null            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
@@ -207,6 +207,18 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-IO-Inference-SchemaInference.html#method_everyRow">everyRow()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-IO-Inference-SchemaInference.html#method_everySource">everySource()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-IO-Inference-SchemaInference.html#method_fromArray">fromArray()</a>
     <span>
                                 &nbsp;: self    </span>
@@ -215,7 +227,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-IO-Inference-SchemaInference.html#method_normalize">normalize()</a>
     <span>
-                                &nbsp;: array{sample_size: int, files_to_sniff: int, types: null|list<array<string,mixed>>, union_by_name: bool}    </span>
+                                &nbsp;: array{sample_size: null|int, files_to_sniff: null|int, types: null|list<array<string,mixed>>, union_by_name: bool}    </span>
 </dt>
 
     </dl>
@@ -256,7 +268,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">int</span>
+            <span class="phpdocumentor-signature__type">int|null</span>
     <span class="phpdocumentor-signature__name">$filesToSniff</span>
      = <span class="phpdocumentor-signature__default-value">10</span></code>
 
@@ -293,7 +305,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type">int</span>
+            <span class="phpdocumentor-signature__type">int|null</span>
     <span class="phpdocumentor-signature__name">$sampleSize</span>
      = <span class="phpdocumentor-signature__default-value">20480</span></code>
 
@@ -445,7 +457,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">int<1, max>|-1&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sampleSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">20480</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int<1, max>|-1&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesToSniff</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">10</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-ETL-IO-Inference-InferredTypes.html"><abbr title="\Flow\ETL\IO\Inference\InferredTypes">InferredTypes</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$types</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$unionByName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-ETL-IO-Inference-Sniffs.html"><abbr title="\Flow\ETL\IO\Inference\Sniffs">Sniffs</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sniffs</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">null|int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sampleSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">20480</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesToSniff</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">10</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-ETL-IO-Inference-InferredTypes.html"><abbr title="\Flow\ETL\IO\Inference\InferredTypes">InferredTypes</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$types</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$unionByName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-ETL-IO-Inference-Sniffs.html"><abbr title="\Flow\ETL\IO\Inference\Sniffs">Sniffs</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sniffs</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -455,23 +467,24 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$sampleSize</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int<1, max>|-1</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|int<1, max></span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">20480</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><ul>
-<li>rows observed across every sampled source before the schema is frozen; -1 observes all</li>
+<li>rows observed across every sampled source before the schema is frozen;
+null observes every row, see everyRow()</li>
 </ul>
 </section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$filesToSniff</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int<1, max>|-1</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|int<1, max></span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">10</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><ul>
 <li>sources that yielded a row, counted while the row budget is not spent;
--1 sniffs all.</li>
+null sniffs every source, see everySource()</li>
 </ul>
 </section>
 
@@ -505,7 +518,7 @@ unseen column as a divergence; true unions the sets and runs no divergence check
                  = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><ul>
-<li>runs the whole-unit sniffs of sampleSize(-1); null sniffs in this process; a live
+<li>runs the whole-unit sniffs of everyRow(); null sniffs in this process; a live
 collaborator, never normalized</li>
 </ul>
 </section>
@@ -525,7 +538,7 @@ collaborator, never normalized</li>
             </dt>
                             <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Flow-ETL-Foundation-Exception-InvalidArgumentException.html"><abbr title="\Flow\ETL\Foundation\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></span>
-                                                                                        <section class="phpdocumentor-description"><p>when $sampleSize or $filesToSniff is below 1 and not -1</p>
+                                                                                        <section class="phpdocumentor-description"><p>when $sampleSize or $filesToSniff is below 1</p>
 </section>
 
                                     </dd>
@@ -549,7 +562,7 @@ collaborator, never normalized</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInference.php"><a href="files/src-core-etl-src-flow-etl-io-inference-schemainference.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInference.php">SchemaInference.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -577,6 +590,82 @@ collaborator, never normalized</li>
         class="phpdocumentor-element
             -method
             -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_everyRow">
+        everyRow()
+        <a href="classes/Flow-ETL-IO-Inference-SchemaInference.html#method_everyRow" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInference.php"><a href="files/src-core-etl-src-flow-etl-io-inference-schemainference.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInference.php">SchemaInference.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">66</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">everyRow</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_everySource">
+        everySource()
+        <a href="classes/Flow-ETL-IO-Inference-SchemaInference.html#method_everySource" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInference.php"><a href="files/src-core-etl-src-flow-etl-io-inference-schemainference.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInference.php">SchemaInference.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">71</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">everySource</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                     -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_fromArray">
@@ -587,7 +676,7 @@ collaborator, never normalized</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInference.php"><a href="files/src-core-etl-src-flow-etl-io-inference-schemainference.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInference.php">SchemaInference.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -637,14 +726,14 @@ collaborator, never normalized</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInference.php"><a href="files/src-core-etl-src-flow-etl-io-inference-schemainference.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInference.php">SchemaInference.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{sample_size: int, files_to_sniff: int, types: null|list<array<string,mixed>>, union_by_name: bool}</span></code>
+                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{sample_size: null|int, files_to_sniff: null|int, types: null|list<array<string,mixed>>, union_by_name: bool}</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -657,7 +746,7 @@ collaborator, never normalized</li>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array{sample_size: int, files_to_sniff: int, types: null|list<array<string,mixed>>, union_by_name: bool}</span>
+        <span class="phpdocumentor-signature__response_type">array{sample_size: null|int, files_to_sniff: null|int, types: null|list<array<string,mixed>>, union_by_name: bool}</span>
             </section>
 
 </article>
@@ -696,6 +785,8 @@ collaborator, never normalized</li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-IO-Inference-SchemaInference.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Inference-SchemaInference.html#method_candidates">candidates()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-IO-Inference-SchemaInference.html#method_everyRow">everyRow()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-IO-Inference-SchemaInference.html#method_everySource">everySource()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Inference-SchemaInference.html#method_fromArray">fromArray()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Inference-SchemaInference.html#method_normalize">normalize()</a></li>
                                     </ul>

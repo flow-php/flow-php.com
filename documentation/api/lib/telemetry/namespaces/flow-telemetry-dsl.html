@@ -2874,9 +2874,9 @@ back to the root sampler for spans without a parent.</p>
 
 </article>
                     <article class="phpdocumentor-element -function - ">
-    <h4 class="phpdocumentor-element__name" id="function_attribute_matching_sampler">
-        attribute_matching_sampler()
-        <a href="namespaces/flow-telemetry-dsl.html#function_attribute_matching_sampler" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="function_attribute_filtering_sampler">
+        attribute_filtering_sampler()
+        <a href="namespaces/flow-telemetry-dsl.html#function_attribute_filtering_sampler" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
@@ -2886,14 +2886,14 @@ back to the root sampler for spans without a parent.</p>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Create an AttributeMatchingSampler. Drops spans whose start-time attributes match
+        <p class="phpdocumentor-summary">Create an AttributeFilteringSampler. Drops spans whose start-time attributes match
 the filter (or keeps ONLY matching spans when the filter&#039;s exclude is false), and
 defers all other spans to the delegate sampler.</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">attribute_matching_sampler</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Filter-AttributeFilter.html"><abbr title="\Flow\Telemetry\Filter\AttributeFilter">AttributeFilter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filter</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Tracer-Sampler-Sampler.html"><abbr title="\Flow\Telemetry\Tracer\Sampler\Sampler">Sampler</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$delegate</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-Tracer-Sampler-AlwaysOnSampler.html"><abbr title="\Flow\Telemetry\Tracer\Sampler\AlwaysOnSampler">AlwaysOnSampler</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Tracer-Sampler-AttributeMatchingSampler.html"><abbr title="\Flow\Telemetry\Tracer\Sampler\AttributeMatchingSampler">AttributeMatchingSampler</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">attribute_filtering_sampler</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Filter-AttributeFilter.html"><abbr title="\Flow\Telemetry\Filter\AttributeFilter">AttributeFilter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filter</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Telemetry-Tracer-Sampler-Sampler.html"><abbr title="\Flow\Telemetry\Tracer\Sampler\Sampler">Sampler</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$delegate</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Telemetry-Tracer-Sampler-AlwaysOnSampler.html"><abbr title="\Flow\Telemetry\Tracer\Sampler\AlwaysOnSampler">AlwaysOnSampler</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Tracer-Sampler-AttributeFilteringSampler.html"><abbr title="\Flow\Telemetry\Tracer\Sampler\AttributeFilteringSampler">AttributeFilteringSampler</abbr></a></span></code>
 
         <section class="phpdocumentor-description"><p>Only attributes available at span start are visible; attributes added later are not.</p>
 </section>
@@ -2924,7 +2924,7 @@ defers all other spans to the delegate sampler.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Tracer-Sampler-AttributeMatchingSampler.html"><abbr title="\Flow\Telemetry\Tracer\Sampler\AttributeMatchingSampler">AttributeMatchingSampler</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Tracer-Sampler-AttributeFilteringSampler.html"><abbr title="\Flow\Telemetry\Tracer\Sampler\AttributeFilteringSampler">AttributeFilteringSampler</abbr></a></span>
             </section>
 
 </article>
@@ -3397,9 +3397,9 @@ defers all other spans to the delegate sampler.</p>
 
 </article>
                     <article class="phpdocumentor-element -function - ">
-    <h4 class="phpdocumentor-element__name" id="function_manual_detector">
-        manual_detector()
-        <a href="namespaces/flow-telemetry-dsl.html#function_manual_detector" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="function_static_detector">
+        static_detector()
+        <a href="namespaces/flow-telemetry-dsl.html#function_static_detector" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
@@ -3409,12 +3409,12 @@ defers all other spans to the delegate sampler.</p>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Create a ManualDetector.</p>
+        <p class="phpdocumentor-summary">Create a StaticDetector.</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">manual_detector</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;string|int, mixed&gt;|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Resource-Detector-ManualDetector.html"><abbr title="\Flow\Telemetry\Resource\Detector\ManualDetector">ManualDetector</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">static_detector</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;string|int, mixed&gt;|bool|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|float|int|string|<abbr title="\Throwable">Throwable</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Resource-Detector-StaticDetector.html"><abbr title="\Flow\Telemetry\Resource\Detector\StaticDetector">StaticDetector</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -3434,7 +3434,7 @@ defers all other spans to the delegate sampler.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Resource-Detector-ManualDetector.html"><abbr title="\Flow\Telemetry\Resource\Detector\ManualDetector">ManualDetector</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Telemetry-Resource-Detector-StaticDetector.html"><abbr title="\Flow\Telemetry\Resource\Detector\StaticDetector">StaticDetector</abbr></a></span>
             </section>
 
 </article>
@@ -3920,8 +3920,8 @@ path or php:// stream wrapper.</p>
                                                     <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_attribute_filter">attribute_filter()</a></li>
                                                     <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_attribute_filtering_log_middleware">attribute_filtering_log_middleware()</a></li>
                                                     <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_attribute_filtering_metric_processor">attribute_filtering_metric_processor()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_attribute_filtering_sampler">attribute_filtering_sampler()</a></li>
                                                     <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_attribute_filtering_span_processor">attribute_filtering_span_processor()</a></li>
-                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_attribute_matching_sampler">attribute_matching_sampler()</a></li>
                                                     <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_attribute_rule">attribute_rule()</a></li>
                                                     <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_baggage">baggage()</a></li>
                                                     <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_batching_log_processor">batching_log_processor()</a></li>
@@ -3948,7 +3948,6 @@ path or php:// stream wrapper.</p>
                                                     <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_instrumentation_scope">instrumentation_scope()</a></li>
                                                     <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_log_record_limits">log_record_limits()</a></li>
                                                     <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_logger_provider">logger_provider()</a></li>
-                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_manual_detector">manual_detector()</a></li>
                                                     <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_memory_context_storage">memory_context_storage()</a></li>
                                                     <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_memory_exporter">memory_exporter()</a></li>
                                                     <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_memory_log_processor">memory_log_processor()</a></li>
@@ -3974,6 +3973,7 @@ path or php:// stream wrapper.</p>
                                                     <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_span_id">span_id()</a></li>
                                                     <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_span_limits">span_limits()</a></li>
                                                     <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_span_link">span_link()</a></li>
+                                                    <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_static_detector">static_detector()</a></li>
                                                     <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_stream_error_handler">stream_error_handler()</a></li>
                                                     <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_superglobal_carrier">superglobal_carrier()</a></li>
                                                     <li class=""><a href="namespaces/flow-telemetry-dsl.html#function_syslog_error_handler">syslog_error_handler()</a></li>

@@ -166,14 +166,14 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Planning-Explain-PhysicalOutline.html#method_joined">joined()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-ETL-Planning-Explain-Entry.html"><abbr title="\Flow\ETL\Planning\Explain\Entry">Entry</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Flow-ETL-Planning-Explain-RenderedNode.html"><abbr title="\Flow\ETL\Planning\Explain\RenderedNode">RenderedNode</abbr></a>    </span>
 </dt>
 <dd>A joined frame is planned apart, so its pipelines are numbered apart too - the name says which side they are.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Planning-Explain-PhysicalOutline.html#method_of">of()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-ETL-Planning-Explain-Entry.html"><abbr title="\Flow\ETL\Planning\Explain\Entry">Entry</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Flow-ETL-Planning-Explain-RenderedNode.html"><abbr title="\Flow\ETL\Planning\Explain\RenderedNode">RenderedNode</abbr></a>    </span>
 </dt>
 <dd>The plan the executor runs: one entry per pipeline, each reading the one under it. A pipeline ends at the
 processor that needs every row before it emits, so the split is where rows stop flowing through.</dd>
@@ -181,7 +181,7 @@ processor that needs every row before it emits, so the split is where rows stop 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Planning-Explain-PhysicalOutline.html#method_pipeline">pipeline()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-ETL-Planning-Explain-Entry.html"><abbr title="\Flow\ETL\Planning\Explain\Entry">Entry</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Flow-ETL-Planning-Explain-RenderedNode.html"><abbr title="\Flow\ETL\Planning\Explain\RenderedNode">RenderedNode</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -276,7 +276,7 @@ processor that needs every row before it emits, so the split is where rows stop 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Explain/PhysicalOutline.php"><a href="files/src-core-etl-src-flow-etl-planning-explain-physicaloutline.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Explain/PhysicalOutline.php">PhysicalOutline.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -284,7 +284,7 @@ processor that needs every row before it emits, so the split is where rows stop 
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">joined</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Physical-PhysicalPlan.html"><abbr title="\Flow\ETL\Planning\Physical\PhysicalPlan">PhysicalPlan</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$right</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Planning-Explain-Entry.html"><abbr title="\Flow\ETL\Planning\Explain\Entry">Entry</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">joined</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Physical-PhysicalPlan.html"><abbr title="\Flow\ETL\Planning\Physical\PhysicalPlan">PhysicalPlan</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$right</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Planning-Explain-RenderedNode.html"><abbr title="\Flow\ETL\Planning\Explain\RenderedNode">RenderedNode</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -307,7 +307,7 @@ processor that needs every row before it emits, so the split is where rows stop 
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Planning-Explain-Entry.html"><abbr title="\Flow\ETL\Planning\Explain\Entry">Entry</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Planning-Explain-RenderedNode.html"><abbr title="\Flow\ETL\Planning\Explain\RenderedNode">RenderedNode</abbr></a></span>
             </section>
 
 </article>
@@ -334,7 +334,7 @@ processor that needs every row before it emits, so the split is where rows stop 
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">of</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Physical-PhysicalPlan.html"><abbr title="\Flow\ETL\Planning\Physical\PhysicalPlan">PhysicalPlan</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plan</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Planning-Explain-Entry.html"><abbr title="\Flow\ETL\Planning\Explain\Entry">Entry</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">of</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Physical-PhysicalPlan.html"><abbr title="\Flow\ETL\Planning\Physical\PhysicalPlan">PhysicalPlan</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plan</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Planning-Explain-RenderedNode.html"><abbr title="\Flow\ETL\Planning\Explain\RenderedNode">RenderedNode</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -357,7 +357,7 @@ processor that needs every row before it emits, so the split is where rows stop 
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Planning-Explain-Entry.html"><abbr title="\Flow\ETL\Planning\Explain\Entry">Entry</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Planning-Explain-RenderedNode.html"><abbr title="\Flow\ETL\Planning\Explain\RenderedNode">RenderedNode</abbr></a></span>
             </section>
 
 </article>
@@ -375,14 +375,14 @@ processor that needs every row before it emits, so the split is where rows stop 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Explain/PhysicalOutline.php"><a href="files/src-core-etl-src-flow-etl-planning-explain-physicaloutline.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Explain/PhysicalOutline.php">PhysicalOutline.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">pipeline</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Physical-Pipeline.html"><abbr title="\Flow\ETL\Planning\Physical\Pipeline">Pipeline</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pipeline</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Planning-Explain-Entry.html"><abbr title="\Flow\ETL\Planning\Explain\Entry">Entry</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">pipeline</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Physical-Pipeline.html"><abbr title="\Flow\ETL\Planning\Physical\Pipeline">Pipeline</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pipeline</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Planning-Explain-RenderedNode.html"><abbr title="\Flow\ETL\Planning\Explain\RenderedNode">RenderedNode</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -405,7 +405,7 @@ processor that needs every row before it emits, so the split is where rows stop 
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Planning-Explain-Entry.html"><abbr title="\Flow\ETL\Planning\Explain\Entry">Entry</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Planning-Explain-RenderedNode.html"><abbr title="\Flow\ETL\Planning\Explain\RenderedNode">RenderedNode</abbr></a></span>
             </section>
 
 </article>
@@ -423,7 +423,7 @@ processor that needs every row before it emits, so the split is where rows stop 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Explain/PhysicalOutline.php"><a href="files/src-core-etl-src-flow-etl-planning-explain-physicaloutline.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Explain/PhysicalOutline.php">PhysicalOutline.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
@@ -471,7 +471,7 @@ processor that needs every row before it emits, so the split is where rows stop 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Explain/PhysicalOutline.php"><a href="files/src-core-etl-src-flow-etl-planning-explain-physicaloutline.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Explain/PhysicalOutline.php">PhysicalOutline.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 

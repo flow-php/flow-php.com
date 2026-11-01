@@ -1,10 +1,20 @@
 Search.appendIndex(
     [
                 {
-            "fqsen": "\\Flow\\Bridge\\Monolog\\Telemetry\\DSL\\value_normalizer\u0028\u0029",
-            "name": "value_normalizer",
-            "summary": "Create\u0020a\u0020ValueNormalizer\u0020for\u0020converting\u0020arbitrary\u0020PHP\u0020values\u0020to\u0020Telemetry\u0020attribute\u0020types.",
-            "url": "namespaces/flow-bridge-monolog-telemetry-dsl.html#function_value_normalizer"
+            "fqsen": "\\Flow\\Bridge\\Monolog\\Telemetry\\AttributeValueNormalizer",
+            "name": "AttributeValueNormalizer",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Monolog-Telemetry-AttributeValueNormalizer.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Monolog\\Telemetry\\AttributeValueNormalizer\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Monolog-Telemetry-AttributeValueNormalizer.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Monolog\\Telemetry\\DSL\\attribute_value_normalizer\u0028\u0029",
+            "name": "attribute_value_normalizer",
+            "summary": "Create\u0020a\u0020AttributeValueNormalizer\u0020for\u0020converting\u0020arbitrary\u0020PHP\u0020values\u0020to\u0020Telemetry\u0020attribute\u0020types.",
+            "url": "namespaces/flow-bridge-monolog-telemetry-dsl.html#function_attribute_value_normalizer"
         },                {
             "fqsen": "\\Flow\\Bridge\\Monolog\\Telemetry\\DSL\\severity_mapper\u0028\u0029",
             "name": "severity_mapper",
@@ -48,7 +58,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Monolog\\Telemetry\\SeverityMapper",
             "name": "SeverityMapper",
-            "summary": "Maps\u0020Monolog\u0020log\u0020levels\u0020to\u0020Flow\u0020Telemetry\u0020severity\u0020levels.",
+            "summary": "",
             "url": "classes/Flow-Bridge-Monolog-Telemetry-SeverityMapper.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Monolog\\Telemetry\\SeverityMapper\u003A\u003A__construct\u0028\u0029",
@@ -68,7 +78,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Monolog\\Telemetry\\TelemetryHandler",
             "name": "TelemetryHandler",
-            "summary": "Monolog\u0020handler\u0020that\u0020forwards\u0020log\u0020records\u0020to\u0020Flow\u0020Telemetry.",
+            "summary": "Context\u0020and\u0020extra\u0020become\u0020\u0060context.\u002A\u0060\/\u0060extra.\u002A\u0060\u0020attributes\u003B\u0020a\u0020Throwable\u0020goes\u0020through\u0020setException\u0028\u0029.",
             "url": "classes/Flow-Bridge-Monolog-Telemetry-TelemetryHandler.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Monolog\\Telemetry\\TelemetryHandler\u003A\u003A__construct\u0028\u0029",
@@ -76,30 +86,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Monolog-Telemetry-TelemetryHandler.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Monolog\\Telemetry\\ValueNormalizer",
-            "name": "ValueNormalizer",
-            "summary": "Normalize\u0020arbitrary\u0020PHP\u0020values\u0020to\u0020types\u0020acceptable\u0020by\u0020Telemetry\u0020attributes.",
-            "url": "classes/Flow-Bridge-Monolog-Telemetry-ValueNormalizer.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Monolog\\Telemetry\\ValueNormalizer\u003A\u003Anormalize\u0028\u0029",
-            "name": "normalize",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Monolog-Telemetry-ValueNormalizer.html#method_normalize"
-        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
             "url": "namespaces/default.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Monolog\\Telemetry\\DSL",
-            "name": "DSL",
-            "summary": "",
-            "url": "namespaces/flow-bridge-monolog-telemetry-dsl.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Monolog\\Telemetry\\Exception",
-            "name": "Exception",
-            "summary": "",
-            "url": "namespaces/flow-bridge-monolog-telemetry-exception.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Monolog\\Telemetry",
             "name": "Telemetry",
@@ -120,5 +110,15 @@ Search.appendIndex(
             "name": "Flow",
             "summary": "",
             "url": "namespaces/flow.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Monolog\\Telemetry\\DSL",
+            "name": "DSL",
+            "summary": "",
+            "url": "namespaces/flow-bridge-monolog-telemetry-dsl.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Monolog\\Telemetry\\Exception",
+            "name": "Exception",
+            "summary": "",
+            "url": "namespaces/flow-bridge-monolog-telemetry-exception.html"
         }            ]
 );

@@ -122,32 +122,12 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/TracerProvider.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-tracerprovider.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/TracerProvider.php">TracerProvider.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Entry point for the tracing API.</p>
+        
 
-
-    <section class="phpdocumentor-description"><p>Creates and manages tracers for different instrumentation scopes.
-The behavior (void, memory, OTLP, etc.) is determined by the injected processor.</p>
-<p>Example usage:</p>
-<pre class="prettyprint"><code class="language-php">// For testing with memory storage
-$processor = new MemorySpanProcessor(new MemoryExporter());
-$provider = new TracerProvider($processor, new SystemClock());
-
-// For OTLP export
-$processor = batching_span_processor(otlp_exporter($transport));
-$provider = new TracerProvider($processor, new SystemClock());
-
-// For void/disabled tracing
-$provider = new TracerProvider(new VoidProcessor(), new SystemClock());
-
-$tracer = $provider-&gt;tracer('my-service', '1.0.0');
-$span = $tracer-&gt;span('operation');
-$tracer-&gt;complete($span);
-</code></pre>
-</section>
 
 
 
@@ -209,7 +189,7 @@ $tracer-&gt;complete($span);
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/TracerProvider.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-tracerprovider.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/TracerProvider.php">TracerProvider.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
@@ -288,7 +268,7 @@ $tracer-&gt;complete($span);
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/TracerProvider.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-tracerprovider.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/TracerProvider.php">TracerProvider.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 

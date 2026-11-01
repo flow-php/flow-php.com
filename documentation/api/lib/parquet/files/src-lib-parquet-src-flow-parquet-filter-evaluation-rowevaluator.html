@@ -116,9 +116,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Filter-Evaluation-RowEvaluator.html"><abbr title="\Flow\Parquet\Filter\Evaluation\RowEvaluator">RowEvaluator</abbr></a></dt><dd>The rows a filter is TRUE for, on undecoded physical values: floats compare as IEEE 754 (NaN is false, -0.0 equals
-+0.0), every other type in its physical order. Not is pushed down to the leaves as a polarity, so a NULL is TRUE in
-neither.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Parquet-Filter-Evaluation-RowEvaluator.html"><abbr title="\Flow\Parquet\Filter\Evaluation\RowEvaluator">RowEvaluator</abbr></a></dt><dd>Not is pushed to leaves as polarity, so NULL is TRUE in neither; NaN is false.</dd>    </dl>
 
 
 

@@ -109,21 +109,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Filter/Matcher.php"><a href="files/src-lib-telemetry-src-flow-telemetry-filter-matcher.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Filter/Matcher.php">Matcher.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">A predicate over a signal&#039;s attributes.</p>
+            <p class="phpdocumentor-summary">Also implement CompilableMatcher to let AttributeFilter inline it.</p>
 
 
-    <section class="phpdocumentor-description"><p>Leaf matchers (<a href="classes/Flow-Telemetry-Filter-AttributeRule.html"><abbr title="\Flow\Telemetry\Filter\AttributeRule">AttributeRule</abbr></a>) test a single attribute; composite
-matchers (<a href="classes/Flow-Telemetry-Filter-All.html"><abbr title="\Flow\Telemetry\Filter\All">All</abbr></a>, <a href="classes/Flow-Telemetry-Filter-Any.html"><abbr title="\Flow\Telemetry\Filter\Any">Any</abbr></a>, <a href="classes/Flow-Telemetry-Filter-Not.html"><abbr title="\Flow\Telemetry\Filter\Not">Not</abbr></a>) combine other matchers. An
-<a href="classes/Flow-Telemetry-Filter-AttributeFilter.html"><abbr title="\Flow\Telemetry\Filter\AttributeFilter">AttributeFilter</abbr></a> drops or keeps signals based on a single root matcher.</p>
-<p>Implement this interface to add a custom matcher. Matchers that can also be
-represented as inlined PHP additionally implement <a href="classes/Flow-Telemetry-Filter-CompilableMatcher.html"><abbr title="\Flow\Telemetry\Filter\CompilableMatcher">CompilableMatcher</abbr></a> so
-the filter can compile them; matchers that only implement <abbr title="\Flow\Telemetry\Filter\self">self</abbr> are
-always evaluated through <abbr title="\Flow\Telemetry\Filter\self::matches()">self::matches()</abbr>.</p>
-</section>
 
 
 
@@ -179,7 +171,7 @@ always evaluated through <abbr title="\Flow\Telemetry\Filter\self::matches()">se
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Filter/Matcher.php"><a href="files/src-lib-telemetry-src-flow-telemetry-filter-matcher.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Filter/Matcher.php">Matcher.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 

@@ -124,10 +124,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Kernels-Bucketing-KeyEncoder.html"><abbr title="\Flow\ETL\Kernels\Bucketing\KeyEncoder">KeyEncoder</abbr></a></dt><dd>Two rows get one key exactly when their values are equal under ComparableValues::equality(): -0.0 is 0, NaN is NaN,
-and every value is type-tagged, so the string &quot;1&quot; never equals &quot;1.0&quot; or the int 1. A column cast to a type first
-(a join key) is tagged in that type. A column the batch does not carry is a null where $declared declares it
-nullable; anywhere else the batch must carry it.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Kernels-Bucketing-KeyEncoder.html"><abbr title="\Flow\ETL\Kernels\Bucketing\KeyEncoder">KeyEncoder</abbr></a></dt><dd>Equal keys exactly when ComparableValues::equality() holds; every value is type-tagged.</dd>    </dl>
 
 
 

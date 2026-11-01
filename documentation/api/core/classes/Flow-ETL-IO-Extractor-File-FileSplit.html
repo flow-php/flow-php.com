@@ -154,10 +154,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Foundation-Describe-Describable.html"><abbr title="\Flow\ETL\Foundation\Describe\Describable">Describable</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Extractor-Split.html"><abbr title="\Flow\ETL\IO\Extractor\Split">Split</abbr></a></dt><dd>One piece of a source a worker reads on its own: plain data, small enough to cross a process boundary, complete
-enough that the worker needs nothing else to know which rows are its. Source order is the position in the list
-SplittableExtractor::splits() returned. A file source cuts byte windows (FileSplit); a database source would cut key
-ranges; each kind is read through the scan of its kind.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Foundation-Describe-Describable.html"><abbr title="\Flow\ETL\Foundation\Describe\Describable">Describable</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Extractor-Split.html"><abbr title="\Flow\ETL\IO\Extractor\Split">Split</abbr></a></dt><dd>Plain data that crosses a process boundary; source order is its position in splits().</dd>    </dl>
 
 
 
@@ -239,9 +236,7 @@ ranges; each kind is read through the scan of its kind.</dd>    </dl>
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-IO-Extractor-File-RowRange.html"><abbr title="\Flow\ETL\IO\Extractor\File\RowRange">RowRange</abbr></a>    </span>
 </dt>
-<dd>The rows of the units this split owns: Spark&#039;s rule (parquet-java filterFileMetaDataByMidpoint), a unit belongs
-to the window holding its midpoint. Units are in file order, so the owned ones are contiguous; a split without
-a length owns them all.</dd>
+<dd>A unit belongs to the split holding its midpoint; a split without a length owns them all.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-IO-Extractor-File-FileSplit.html#method_window">window()</a>
@@ -513,7 +508,7 @@ or 0.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/File/FileSplit.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-file-filesplit.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/File/FileSplit.php">FileSplit.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">129</span>
 
     </aside>
 
@@ -552,7 +547,7 @@ or 0.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/File/FileSplit.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-file-filesplit.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/File/FileSplit.php">FileSplit.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">136</span>
+    <span class="phpdocumentor-element-found-in__line">134</span>
 
     </aside>
 
@@ -649,7 +644,7 @@ or 0.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/File/FileSplit.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-file-filesplit.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/File/FileSplit.php">FileSplit.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">163</span>
+    <span class="phpdocumentor-element-found-in__line">161</span>
 
     </aside>
 
@@ -687,13 +682,11 @@ or 0.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/File/FileSplit.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-file-filesplit.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/File/FileSplit.php">FileSplit.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">107</span>
+    <span class="phpdocumentor-element-found-in__line">105</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The rows of the units this split owns: Spark&#039;s rule (parquet-java filterFileMetaDataByMidpoint), a unit belongs
-to the window holding its midpoint. Units are in file order, so the owned ones are contiguous; a split without
-a length owns them all.</p>
+        <p class="phpdocumentor-summary">A unit belongs to the split holding its midpoint; a split without a length owns them all.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -738,7 +731,7 @@ a length owns them all.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/File/FileSplit.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-file-filesplit.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/File/FileSplit.php">FileSplit.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">156</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 

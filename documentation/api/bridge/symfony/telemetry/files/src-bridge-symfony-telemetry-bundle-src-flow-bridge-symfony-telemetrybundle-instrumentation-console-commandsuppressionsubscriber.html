@@ -116,11 +116,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Console-CommandSuppressionSubscriber.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\Console\CommandSuppressionSubscriber">CommandSuppressionSubscriber</abbr></a></dt><dd>Suppresses tracing for the entire execution of the configured commands (long-running worker commands),
-so their between-work activity (transport polls, idle-tick co-listeners, …) does not surface. A
-suppression flag is attached to the telemetry context when a matching command starts and detached when it
-terminates; the SuppressingSampler then drops any span created while it is set. Instrumentation that must
-still be traced lifts the suppression around its own work (e.g. the messenger middleware per message).</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Console-CommandSuppressionSubscriber.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\Console\CommandSuppressionSubscriber">CommandSuppressionSubscriber</abbr></a></dt><dd>Priorities wrap ConsoleSpanSubscriber (±10000); scopes stack per COMMAND/TERMINATE for nested commands.</dd>    </dl>
 
 
 

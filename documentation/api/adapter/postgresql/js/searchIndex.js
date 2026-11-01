@@ -238,7 +238,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\IO\\Extractor\\PostgreSqlCursorExtractor",
             "name": "PostgreSqlCursorExtractor",
-            "summary": "PostgreSQL\u0020extractor\u0020using\u0020server\u002Dside\u0020cursors\u0020for\u0020memory\u002Defficient\u0020extraction.",
+            "summary": "Needs\u0020a\u0020transaction\u0020for\u0020DECLARE\u0020CURSOR\u003B\u0020starts\u0020one\u0020when\u0020none\u0020is\u0020open.",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-IO-Extractor-PostgreSqlCursorExtractor.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\IO\\Extractor\\PostgreSqlCursorExtractor\u003A\u003A__construct\u0028\u0029",
@@ -513,7 +513,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\IO\\Loader\\LoaderOptions\\InsertOptions",
             "name": "InsertOptions",
-            "summary": "Configuration\u0020options\u0020for\u0020INSERT\u0020operations\u0020in\u0020PostgreSQL\u0020loader.",
+            "summary": "",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-IO-Loader-LoaderOptions-InsertOptions.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\IO\\Loader\\LoaderOptions\\InsertOptions\u003A\u003A__construct\u0028\u0029",
@@ -618,7 +618,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\IO\\Loader\\PostgreSqlLoader",
             "name": "PostgreSqlLoader",
-            "summary": "PostgreSQL\u0020loader\u0020for\u0020ETL\u0020pipelines.",
+            "summary": "Only\u0020INSERT\u0020is\u0020chunked\u003A\u0020UPDATE\/DELETE\u0020issue\u0020one\u0020statement\u0020per\u0020row\u0020and\u0020never\u0020reach\u0020the\u0020bind\u0020cap.",
             "url": "classes/Flow-ETL-Adapter-PostgreSql-IO-Loader-PostgreSqlLoader.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\PostgreSql\\IO\\Loader\\PostgreSqlLoader\u003A\u003A__construct\u0028\u0029",

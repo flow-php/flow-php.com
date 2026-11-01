@@ -126,21 +126,12 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Processor/PipelineLogProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-processor-pipelinelogprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Processor/PipelineLogProcessor.php">PipelineLogProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Runs a log entry through an ordered chain of {@see LogMiddleware} and forwards
-the survivors to a single {@see LogSink}.</p>
+        
 
-
-    <section class="phpdocumentor-description"><p>Each middleware may enrich the entry (returning a new one) or drop it (returning
-null); a drop short-circuits the chain so later middleware and the sink never see
-it. The pipeline owns no buffer of its own - <abbr title="\Flow\Telemetry\Logger\Processor\self::flush()">self::flush()</abbr> and
-<abbr title="\Flow\Telemetry\Logger\Processor\self::shutdown()">self::shutdown()</abbr> delegate to the sink, since middleware are stateless.</p>
-<p>This models the OpenTelemetry LogRecordProcessor pipeline: processors registered
-in order, each able to modify the record, with mutations visible to the next.</p>
-</section>
 
 
 
@@ -153,7 +144,7 @@ in order, each able to modify the record, with mutations visible to the next.</p
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Logger-LogProcessor.html"><abbr title="\Flow\Telemetry\Logger\LogProcessor">LogProcessor</abbr></a></dt><dd>Interface for processing log records.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Logger-LogProcessor.html"><abbr title="\Flow\Telemetry\Logger\LogProcessor">LogProcessor</abbr></a></dt>    </dl>
 
 
 
@@ -223,7 +214,7 @@ in order, each able to modify the record, with mutations visible to the next.</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Processor/PipelineLogProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-processor-pipelinelogprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Processor/PipelineLogProcessor.php">PipelineLogProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -276,7 +267,7 @@ in order, each able to modify the record, with mutations visible to the next.</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Processor/PipelineLogProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-processor-pipelinelogprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Processor/PipelineLogProcessor.php">PipelineLogProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -321,7 +312,7 @@ in order, each able to modify the record, with mutations visible to the next.</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Processor/PipelineLogProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-processor-pipelinelogprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Processor/PipelineLogProcessor.php">PipelineLogProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -372,7 +363,7 @@ on filtering rules.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Processor/PipelineLogProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-processor-pipelinelogprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Processor/PipelineLogProcessor.php">PipelineLogProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 

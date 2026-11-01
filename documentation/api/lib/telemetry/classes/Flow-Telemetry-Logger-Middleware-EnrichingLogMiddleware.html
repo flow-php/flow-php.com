@@ -126,19 +126,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Middleware/EnrichingLogMiddleware.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-middleware-enrichinglogmiddleware.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Middleware/EnrichingLogMiddleware.php">EnrichingLogMiddleware.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Merges a fixed set of attributes into every log entry that passes through.</p>
+            <p class="phpdocumentor-summary">Attributes already on the record win over the enriched defaults.</p>
 
 
-    <section class="phpdocumentor-description"><p>The configured attributes act as defaults: an attribute already present on the
-record (set at the call site) wins over the enricher of the same key. Because
-<a href="classes/Flow-Telemetry-Logger-LogEntry.html"><abbr title="\Flow\Telemetry\Logger\LogEntry">LogEntry</abbr></a> and <a href="classes/Flow-Telemetry-Logger-LogRecord.html"><abbr title="\Flow\Telemetry\Logger\LogRecord">LogRecord</abbr></a> are immutable, enrichment returns a new
-entry carrying a new record - this is the spec-endorsed &quot;modify the log record&quot;
-step of a LogRecordProcessor, modelled immutably.</p>
-</section>
 
 
 
@@ -151,7 +145,7 @@ step of a LogRecordProcessor, modelled immutably.</p>
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Logger-LogMiddleware.html"><abbr title="\Flow\Telemetry\Logger\LogMiddleware">LogMiddleware</abbr></a></dt><dd>A chainable log-processing step inside a {@see Processor\PipelineLogProcessor}.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Logger-LogMiddleware.html"><abbr title="\Flow\Telemetry\Logger\LogMiddleware">LogMiddleware</abbr></a></dt><dd>Stateless; return a new entry to enrich, null to drop.</dd>    </dl>
 
 
 
@@ -207,7 +201,7 @@ step of a LogRecordProcessor, modelled immutably.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Middleware/EnrichingLogMiddleware.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-middleware-enrichinglogmiddleware.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Middleware/EnrichingLogMiddleware.php">EnrichingLogMiddleware.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
@@ -251,7 +245,7 @@ step of a LogRecordProcessor, modelled immutably.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Middleware/EnrichingLogMiddleware.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-middleware-enrichinglogmiddleware.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Middleware/EnrichingLogMiddleware.php">EnrichingLogMiddleware.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 

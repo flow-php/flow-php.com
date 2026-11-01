@@ -88,7 +88,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\http_on_complete\u0028\u0029",
             "name": "http_on_complete",
-            "summary": "Create\u0020a\u0020StreamClosure\u0020from\u0020a\u0020callable.",
+            "summary": "Create\u0020a\u0020StreamCompletionListener\u0020from\u0020a\u0020callable.",
             "url": "namespaces/flow-bridge-symfony-httpfoundation.html#function_http_on_complete"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\Output\\CSVOutput",
@@ -251,15 +251,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-HttpFoundation-Response-FlowStreamedResponse.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\StreamClosure",
-            "name": "StreamClosure",
-            "summary": "Interface\u0020for\u0020closures\u0020that\u0020are\u0020called\u0020after\u0020streaming\u0020completes.",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-StreamClosure.html"
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\StreamCompletionListener",
+            "name": "StreamCompletionListener",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-StreamCompletionListener.html"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\StreamClosure\u003A\u003AonComplete\u0028\u0029",
+            "fqsen": "\\Flow\\Bridge\\Symfony\\HttpFoundation\\StreamCompletionListener\u003A\u003AonComplete\u0028\u0029",
             "name": "onComplete",
             "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-StreamClosure.html#method_onComplete"
+            "url": "classes/Flow-Bridge-Symfony-HttpFoundation-StreamCompletionListener.html#method_onComplete"
         },                {
             "fqsen": "\\",
             "name": "\\",

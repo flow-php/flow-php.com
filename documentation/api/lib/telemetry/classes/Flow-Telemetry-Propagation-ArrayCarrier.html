@@ -123,26 +123,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/ArrayCarrier.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-arraycarrier.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/ArrayCarrier.php">ArrayCarrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Carrier backed by an associative array.</p>
+            <p class="phpdocumentor-summary">Key lookups are case-insensitive (HTTP headers).</p>
 
 
-    <section class="phpdocumentor-description"><p>Provides case-insensitive key lookup for HTTP header compatibility.
-Keys are stored in their original case but lookups ignore case.</p>
-<p>Example usage:</p>
-<pre class="prettyprint"><code class="language-php">// Extract from incoming request headers
-$carrier = new ArrayCarrier($request-&gt;getHeaders());
-$spanContext = $propagator-&gt;extract($carrier);
-
-// Inject into outgoing request
-$carrier = new ArrayCarrier();
-$propagator-&gt;inject($spanContext, $carrier);
-$headers = $carrier-&gt;unwrap();
-</code></pre>
-</section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -168,7 +155,7 @@ $headers = $carrier-&gt;unwrap();
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Propagation-Carrier.html"><abbr title="\Flow\Telemetry\Propagation\Carrier">Carrier</abbr></a></dt><dd>Carrier for propagating context across process boundaries.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Propagation-Carrier.html"><abbr title="\Flow\Telemetry\Propagation\Carrier">Carrier</abbr></a></dt>    </dl>
 
 
 
@@ -238,7 +225,7 @@ $headers = $carrier-&gt;unwrap();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/ArrayCarrier.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-arraycarrier.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/ArrayCarrier.php">ArrayCarrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -284,7 +271,7 @@ $headers = $carrier-&gt;unwrap();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/ArrayCarrier.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-arraycarrier.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/ArrayCarrier.php">ArrayCarrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -341,7 +328,7 @@ $headers = $carrier-&gt;unwrap();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/ArrayCarrier.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-arraycarrier.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/ArrayCarrier.php">ArrayCarrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -405,7 +392,7 @@ $headers = $carrier-&gt;unwrap();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/ArrayCarrier.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-arraycarrier.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/ArrayCarrier.php">ArrayCarrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 

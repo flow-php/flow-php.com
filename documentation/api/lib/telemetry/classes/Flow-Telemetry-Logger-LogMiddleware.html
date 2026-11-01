@@ -109,22 +109,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/LogMiddleware.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-logmiddleware.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/LogMiddleware.php">LogMiddleware.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">10</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">A chainable log-processing step inside a {@see Processor\PipelineLogProcessor}.</p>
+            <p class="phpdocumentor-summary">Stateless; return a new entry to enrich, null to drop.</p>
 
 
-    <section class="phpdocumentor-description"><p>Unlike a <a href="classes/Flow-Telemetry-Logger-LogProcessor.html"><abbr title="\Flow\Telemetry\Logger\LogProcessor">LogProcessor</abbr></a> (which terminates a pipeline by exporting), a
-middleware transforms or filters a single <a href="classes/Flow-Telemetry-Logger-LogEntry.html"><abbr title="\Flow\Telemetry\Logger\LogEntry">LogEntry</abbr></a> and hands the result
-to the next step. It is stateless and has no lifecycle of its own - flush and
-shutdown belong to the pipeline's <a href="classes/Flow-Telemetry-Logger-LogSink.html"><abbr title="\Flow\Telemetry\Logger\LogSink">LogSink</abbr></a>.</p>
-<p>This mirrors the OpenTelemetry LogRecordProcessor model, where OnEmit receives a
-read/write record that a processor &quot;may freely modify&quot; and where filtering is an
-explicit responsibility. Because <a href="classes/Flow-Telemetry-Logger-LogEntry.html"><abbr title="\Flow\Telemetry\Logger\LogEntry">LogEntry</abbr></a> is immutable, enrichment returns
-a new entry rather than mutating in place.</p>
-</section>
 
 
 
@@ -181,7 +172,7 @@ a new entry rather than mutating in place.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/LogMiddleware.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-logmiddleware.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/LogMiddleware.php">LogMiddleware.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 

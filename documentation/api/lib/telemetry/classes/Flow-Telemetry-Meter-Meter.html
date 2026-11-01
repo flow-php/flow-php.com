@@ -120,26 +120,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-meter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php">Meter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Meter for creating metric instruments.</p>
+            <p class="phpdocumentor-summary">Instruments are cached by name: same name, same instance.</p>
 
 
-    <section class="phpdocumentor-description"><p>A Meter creates instruments for a specific instrumentation scope.
-Instruments are cached and returned by name - calling createCounter()
-twice with the same name returns the same Counter instance.</p>
-<p>Example usage:</p>
-<pre class="prettyprint"><code class="language-php">$meter = $meterProvider-&gt;meter('my-service', '1.0.0');
-
-$counter = $meter-&gt;createCounter('requests.total', 'requests', 'Total requests');
-$counter-&gt;add(1, ['http.method' =&gt; 'GET']);
-
-$histogram = $meter-&gt;createHistogram('request.duration', 'ms', 'Request duration');
-$histogram-&gt;record(42.5, ['http.status' =&gt; 200]);
-</code></pre>
-</section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -299,7 +286,7 @@ $histogram-&gt;record(42.5, ['http.status' =&gt; 200]);
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-meter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php">Meter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -413,7 +400,7 @@ $histogram-&gt;record(42.5, ['http.status' =&gt; 200]);
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-meter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php">Meter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -452,7 +439,7 @@ $histogram-&gt;record(42.5, ['http.status' =&gt; 200]);
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-meter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php">Meter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
@@ -504,7 +491,7 @@ is tied to a specific task (e.g., DataFrame processing).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-meter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php">Meter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">125</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
@@ -576,7 +563,7 @@ Use for counting occurrences: requests, errors, items processed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-meter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php">Meter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">158</span>
+    <span class="phpdocumentor-element-found-in__line">143</span>
 
     </aside>
 
@@ -648,7 +635,7 @@ Use for: temperature, memory usage, CPU utilization.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-meter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php">Meter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">191</span>
+    <span class="phpdocumentor-element-found-in__line">176</span>
 
     </aside>
 
@@ -729,7 +716,7 @@ Use for: request latency, response sizes, batch sizes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-meter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php">Meter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">232</span>
+    <span class="phpdocumentor-element-found-in__line">217</span>
 
     </aside>
 
@@ -820,7 +807,7 @@ Use for: rows processed per second, bytes transferred per second.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-meter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php">Meter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">272</span>
+    <span class="phpdocumentor-element-found-in__line">257</span>
 
     </aside>
 
@@ -892,7 +879,7 @@ Use for: active connections, queue size, items in cache.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-meter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php">Meter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">298</span>
+    <span class="phpdocumentor-element-found-in__line">283</span>
 
     </aside>
 
@@ -931,7 +918,7 @@ Use for: active connections, queue size, items in cache.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-meter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php">Meter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">320</span>
+    <span class="phpdocumentor-element-found-in__line">305</span>
 
     </aside>
 
@@ -970,7 +957,7 @@ Use for: active connections, queue size, items in cache.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-meter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php">Meter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">328</span>
+    <span class="phpdocumentor-element-found-in__line">313</span>
 
     </aside>
 
@@ -1009,7 +996,7 @@ Use for: active connections, queue size, items in cache.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-meter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php">Meter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">336</span>
+    <span class="phpdocumentor-element-found-in__line">321</span>
 
     </aside>
 
@@ -1048,7 +1035,7 @@ Use for: active connections, queue size, items in cache.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-meter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php">Meter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">344</span>
+    <span class="phpdocumentor-element-found-in__line">329</span>
 
     </aside>
 
@@ -1087,7 +1074,7 @@ Use for: active connections, queue size, items in cache.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-meter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/Meter.php">Meter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">354</span>
+    <span class="phpdocumentor-element-found-in__line">339</span>
 
     </aside>
 

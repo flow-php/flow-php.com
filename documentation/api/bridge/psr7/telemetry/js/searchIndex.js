@@ -23,7 +23,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Psr7\\Telemetry\\RequestCarrier",
             "name": "RequestCarrier",
-            "summary": "Read\u002Donly\u0020carrier\u0020backed\u0020by\u0020PSR\u002D7\u0020ServerRequestInterface.",
+            "summary": "Read\u002Donly\u003A\u0020set\u0028\u0029\u0020throws.",
             "url": "classes/Flow-Bridge-Psr7-Telemetry-RequestCarrier.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Psr7\\Telemetry\\RequestCarrier\u003A\u003A__construct\u0028\u0029",
@@ -48,7 +48,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Psr7\\Telemetry\\ResponseCarrier",
             "name": "ResponseCarrier",
-            "summary": "Read\u002Dwrite\u0020carrier\u0020backed\u0020by\u0020PSR\u002D7\u0020ResponseInterface.",
+            "summary": "PSR\u002D7\u0020is\u0020immutable\u003A\u0020call\u0020unwrap\u0028\u0029\u0020after\u0020set\u0028\u0029\u0020to\u0020get\u0020the\u0020modified\u0020response.",
             "url": "classes/Flow-Bridge-Psr7-Telemetry-ResponseCarrier.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Psr7\\Telemetry\\ResponseCarrier\u003A\u003A__construct\u0028\u0029",

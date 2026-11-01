@@ -126,18 +126,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/AttributeFilteringSpanProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-processor-attributefilteringspanprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/AttributeFilteringSpanProcessor.php">AttributeFilteringSpanProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Filters spans by their attributes.</p>
+            <p class="phpdocumentor-summary">Decides at onEnd(): attributes are complete only once the span ends.</p>
 
 
-    <section class="phpdocumentor-description"><p>Wraps another SpanProcessor and forwards only the spans that survive the
-configured <a href="classes/Flow-Telemetry-Filter-AttributeFilter.html"><abbr title="\Flow\Telemetry\Filter\AttributeFilter">AttributeFilter</abbr></a>. The decision is made at <abbr title="\Flow\Telemetry\Tracer\Processor\self::onEnd()">self::onEnd()</abbr>
-because span attributes are only fully populated once the span has ended;
-<abbr title="\Flow\Telemetry\Tracer\Processor\self::onStart()">self::onStart()</abbr> is always delegated unchanged.</p>
-</section>
 
 
 
@@ -150,7 +145,7 @@ because span attributes are only fully populated once the span has ended;
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Tracer-SpanProcessor.html"><abbr title="\Flow\Telemetry\Tracer\SpanProcessor">SpanProcessor</abbr></a></dt><dd>Interface for processing spans when they start and end.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Tracer-SpanProcessor.html"><abbr title="\Flow\Telemetry\Tracer\SpanProcessor">SpanProcessor</abbr></a></dt>    </dl>
 
 
 
@@ -227,7 +222,7 @@ because span attributes are only fully populated once the span has ended;
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/AttributeFilteringSpanProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-processor-attributefilteringspanprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/AttributeFilteringSpanProcessor.php">AttributeFilteringSpanProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -278,7 +273,7 @@ because span attributes are only fully populated once the span has ended;
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/AttributeFilteringSpanProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-processor-attributefilteringspanprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/AttributeFilteringSpanProcessor.php">AttributeFilteringSpanProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -320,7 +315,7 @@ if all spans were successfully exported.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/AttributeFilteringSpanProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-processor-attributefilteringspanprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/AttributeFilteringSpanProcessor.php">AttributeFilteringSpanProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -368,7 +363,7 @@ is fully populated at this point (end time, status, all attributes).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/AttributeFilteringSpanProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-processor-attributefilteringspanprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/AttributeFilteringSpanProcessor.php">AttributeFilteringSpanProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -416,7 +411,7 @@ should avoid blocking operations in this method.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/AttributeFilteringSpanProcessor.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-processor-attributefilteringspanprocessor.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Processor/AttributeFilteringSpanProcessor.php">AttributeFilteringSpanProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 

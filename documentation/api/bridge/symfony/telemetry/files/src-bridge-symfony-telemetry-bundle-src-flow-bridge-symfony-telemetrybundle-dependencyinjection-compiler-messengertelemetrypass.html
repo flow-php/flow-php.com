@@ -116,9 +116,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-MessengerTelemetryPass.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\DependencyInjection\Compiler\MessengerTelemetryPass">MessengerTelemetryPass</abbr></a></dt><dd>Injects the messenger TracingMiddleware into every message bus as the outermost middleware, so consumed
-and produced messages are traced without the application having to register it manually. Runs before
-Symfony&#039;s MessengerPass, which turns each &quot;&lt;busId&gt;.middleware&quot; parameter into the bus&#039;s middleware stack.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-MessengerTelemetryPass.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\DependencyInjection\Compiler\MessengerTelemetryPass">MessengerTelemetryPass</abbr></a></dt><dd>Must run before MessengerPass, which turns `&lt;busId&gt;.middleware` into the stack.</dd>    </dl>
 
 
 

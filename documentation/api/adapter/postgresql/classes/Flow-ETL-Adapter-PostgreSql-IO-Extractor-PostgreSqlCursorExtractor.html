@@ -126,18 +126,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/IO/Extractor/PostgreSqlCursorExtractor.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-io-extractor-postgresqlcursorextractor.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/IO/Extractor/PostgreSqlCursorExtractor.php">PostgreSqlCursorExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">PostgreSQL extractor using server-side cursors for memory-efficient extraction.</p>
+            <p class="phpdocumentor-summary">Needs a transaction for DECLARE CURSOR; starts one when none is open.</p>
 
 
-    <section class="phpdocumentor-description"><p>Uses DECLARE CURSOR + FETCH to stream data from PostgreSQL without loading
-the entire result set into memory. This is the only way to achieve true
-low memory extraction with PHP's ext-pgsql.</p>
-<p>Note: Requires a transaction context (auto-started if not in one).</p>
-</section>
 
 
 
@@ -253,7 +248,7 @@ low memory extraction with PHP's ext-pgsql.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/IO/Extractor/PostgreSqlCursorExtractor.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-io-extractor-postgresqlcursorextractor.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/IO/Extractor/PostgreSqlCursorExtractor.php">PostgreSqlCursorExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -311,7 +306,7 @@ low memory extraction with PHP's ext-pgsql.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/IO/Extractor/PostgreSqlCursorExtractor.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-io-extractor-postgresqlcursorextractor.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/IO/Extractor/PostgreSqlCursorExtractor.php">PostgreSqlCursorExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -349,7 +344,7 @@ low memory extraction with PHP's ext-pgsql.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/IO/Extractor/PostgreSqlCursorExtractor.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-io-extractor-postgresqlcursorextractor.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/IO/Extractor/PostgreSqlCursorExtractor.php">PostgreSqlCursorExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -404,7 +399,7 @@ low memory extraction with PHP's ext-pgsql.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/IO/Extractor/PostgreSqlCursorExtractor.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-io-extractor-postgresqlcursorextractor.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/IO/Extractor/PostgreSqlCursorExtractor.php">PostgreSqlCursorExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">175</span>
+    <span class="phpdocumentor-element-found-in__line">169</span>
 
     </aside>
 
@@ -442,7 +437,7 @@ low memory extraction with PHP's ext-pgsql.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/IO/Extractor/PostgreSqlCursorExtractor.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-io-extractor-postgresqlcursorextractor.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/IO/Extractor/PostgreSqlCursorExtractor.php">PostgreSqlCursorExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">180</span>
+    <span class="phpdocumentor-element-found-in__line">174</span>
 
     </aside>
 
@@ -480,7 +475,7 @@ low memory extraction with PHP's ext-pgsql.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/IO/Extractor/PostgreSqlCursorExtractor.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-io-extractor-postgresqlcursorextractor.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/IO/Extractor/PostgreSqlCursorExtractor.php">PostgreSqlCursorExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">204</span>
+    <span class="phpdocumentor-element-found-in__line">198</span>
 
     </aside>
 
@@ -518,7 +513,7 @@ low memory extraction with PHP's ext-pgsql.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/IO/Extractor/PostgreSqlCursorExtractor.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-io-extractor-postgresqlcursorextractor.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/IO/Extractor/PostgreSqlCursorExtractor.php">PostgreSqlCursorExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">214</span>
+    <span class="phpdocumentor-element-found-in__line">208</span>
 
     </aside>
 
@@ -566,7 +561,7 @@ low memory extraction with PHP's ext-pgsql.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/IO/Extractor/PostgreSqlCursorExtractor.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-io-extractor-postgresqlcursorextractor.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/IO/Extractor/PostgreSqlCursorExtractor.php">PostgreSqlCursorExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">221</span>
+    <span class="phpdocumentor-element-found-in__line">215</span>
 
     </aside>
 
@@ -614,7 +609,7 @@ low memory extraction with PHP's ext-pgsql.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/IO/Extractor/PostgreSqlCursorExtractor.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-io-extractor-postgresqlcursorextractor.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/IO/Extractor/PostgreSqlCursorExtractor.php">PostgreSqlCursorExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">228</span>
+    <span class="phpdocumentor-element-found-in__line">222</span>
 
     </aside>
 
@@ -662,7 +657,7 @@ low memory extraction with PHP's ext-pgsql.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/IO/Extractor/PostgreSqlCursorExtractor.php"><a href="files/src-adapter-etl-adapter-postgresql-src-flow-etl-adapter-postgresql-io-extractor-postgresqlcursorextractor.html"><abbr title="src/adapter/etl-adapter-postgresql/src/Flow/ETL/Adapter/PostgreSql/IO/Extractor/PostgreSqlCursorExtractor.php">PostgreSqlCursorExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">240</span>
+    <span class="phpdocumentor-element-found-in__line">234</span>
 
     </aside>
 

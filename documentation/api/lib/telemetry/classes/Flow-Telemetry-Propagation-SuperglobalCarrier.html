@@ -125,30 +125,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/SuperglobalCarrier.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-superglobalcarrier.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/SuperglobalCarrier.php">SuperglobalCarrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Read-only carrier backed by PHP superglobals.</p>
+            <p class="phpdocumentor-summary">Read-only: set() throws.</p>
 
 
-    <section class="phpdocumentor-description"><p>Reads context from $_SERVER (HTTP headers), $_GET, $_POST, and $_COOKIE.
-This carrier is read-only and will throw if set() is called.</p>
-<p>HTTP headers in $<em>SERVER are normalized from HTTP</em>* format:</p>
-<ul>
-<li>HTTP_TRACEPARENT becomes 'traceparent'</li>
-<li>HTTP_X_CUSTOM_HEADER becomes 'x-custom-header'</li>
-</ul>
-<p>Example usage:</p>
-<pre class="prettyprint"><code class="language-php">$propagator = new CompositePropagator([
-    new W3CTraceContext(),
-    new W3CBaggage(),
-]);
-
-$carrier = new SuperglobalCarrier();
-$ctx = $propagator-&gt;extract($carrier);
-</code></pre>
-</section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -174,7 +157,7 @@ $ctx = $propagator-&gt;extract($carrier);
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Propagation-Carrier.html"><abbr title="\Flow\Telemetry\Propagation\Carrier">Carrier</abbr></a></dt><dd>Carrier for propagating context across process boundaries.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Propagation-Carrier.html"><abbr title="\Flow\Telemetry\Propagation\Carrier">Carrier</abbr></a></dt>    </dl>
 
 
 
@@ -244,7 +227,7 @@ $ctx = $propagator-&gt;extract($carrier);
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/SuperglobalCarrier.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-superglobalcarrier.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/SuperglobalCarrier.php">SuperglobalCarrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -278,7 +261,7 @@ $ctx = $propagator-&gt;extract($carrier);
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/SuperglobalCarrier.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-superglobalcarrier.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/SuperglobalCarrier.php">SuperglobalCarrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -335,7 +318,7 @@ $ctx = $propagator-&gt;extract($carrier);
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/SuperglobalCarrier.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-superglobalcarrier.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/SuperglobalCarrier.php">SuperglobalCarrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -399,7 +382,7 @@ $ctx = $propagator-&gt;extract($carrier);
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/SuperglobalCarrier.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-superglobalcarrier.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/SuperglobalCarrier.php">SuperglobalCarrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 

@@ -116,9 +116,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonArrayElements.html"><abbr title="\Flow\ETL\Adapter\JSON\IO\Extractor\JsonArrayElements">JsonArrayElements</abbr></a></dt><dd>JSON Machine tokenizes a document in PHP, one character class at a time. The elements of a top-level array are
-found here instead by one PCRE match per element - which runs in C - and decoded by json_decode(), about eight
-times faster on the orders fixture. Anything this does not recognise goes to JSON Machine.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonArrayElements.html"><abbr title="\Flow\ETL\Adapter\JSON\IO\Extractor\JsonArrayElements">JsonArrayElements</abbr></a></dt><dd>One PCRE match per top-level element (~8x JSON Machine); anything unrecognised falls back to JSON Machine.</dd>    </dl>
 
 
 

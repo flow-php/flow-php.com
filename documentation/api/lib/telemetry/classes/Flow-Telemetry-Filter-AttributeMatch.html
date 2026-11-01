@@ -120,22 +120,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php"><a href="files/src-lib-telemetry-src-flow-telemetry-filter-attributematch.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php">AttributeMatch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Stateless matching primitives shared by the interpreted ({@see AttributeRule::matches()})
-and the compiled ({@see AttributeRule::compile()}) matching paths.</p>
+            <p class="phpdocumentor-summary">Single comparison source for interpreted and compiled paths; MISSING never matches.</p>
 
 
-    <section class="phpdocumentor-description"><p>Keeping every comparison in one place guarantees the generated PHP and the
-interpreted fallback can never diverge in behaviour.</p>
-<p>The value side of every primitive is an OpenTelemetry AnyValue resolved from
-an attribute path - intrinsically untyped, so it is the one place <code class="prettyprint">mixed</code> is
-unavoidable. A missing path resolves to <abbr title="\Flow\Telemetry\Filter\self::MISSING">self::MISSING</abbr>; every comparison
-treats that sentinel as &quot;no match&quot; so a signal lacking the attribute is never
-matched. The expected side is always a concrete scalar or DateTime.</p>
-</section>
 
 
 
@@ -158,7 +149,7 @@ matched. The expected side is always a concrete scalar or DateTime.</p>
     <span>
         &nbsp;: mixed&nbsp;= &quot;\x00__flow_telemetry_missing__\x00&quot;                            </span>
 </dt>
-<dd>Sentinel returned by {@see self::resolve()} when a path segment is absent.</dd>
+<dd>Sentinel for an absent path segment; null values are never stored on Attributes.</dd>
 
     </dl>
 
@@ -265,11 +256,11 @@ matched. The expected side is always a concrete scalar or DateTime.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php"><a href="files/src-lib-telemetry-src-flow-telemetry-filter-attributematch.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php">AttributeMatch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Sentinel returned by {@see self::resolve()} when a path segment is absent.</p>
+        <p class="phpdocumentor-summary">Sentinel for an absent path segment; null values are never stored on Attributes.</p>
 
     
     <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -280,9 +271,7 @@ matched. The expected side is always a concrete scalar or DateTime.</p>
 </code>
 
 
-        <section class="phpdocumentor-description"><p>Distinct from any real attribute value (null values are never stored on <a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a>).</p>
-</section>
-
+    
     
     
 
@@ -312,7 +301,7 @@ matched. The expected side is always a concrete scalar or DateTime.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php"><a href="files/src-lib-telemetry-src-flow-telemetry-filter-attributematch.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php">AttributeMatch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">170</span>
+    <span class="phpdocumentor-element-found-in__line">159</span>
 
     </aside>
 
@@ -374,7 +363,7 @@ matched. The expected side is always a concrete scalar or DateTime.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php"><a href="files/src-lib-telemetry-src-flow-telemetry-filter-attributematch.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php">AttributeMatch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">156</span>
+    <span class="phpdocumentor-element-found-in__line">145</span>
 
     </aside>
 
@@ -436,7 +425,7 @@ matched. The expected side is always a concrete scalar or DateTime.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php"><a href="files/src-lib-telemetry-src-flow-telemetry-filter-attributematch.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php">AttributeMatch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">93</span>
 
     </aside>
 
@@ -491,7 +480,7 @@ matched. The expected side is always a concrete scalar or DateTime.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php"><a href="files/src-lib-telemetry-src-flow-telemetry-filter-attributematch.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php">AttributeMatch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
@@ -546,7 +535,7 @@ matched. The expected side is always a concrete scalar or DateTime.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php"><a href="files/src-lib-telemetry-src-flow-telemetry-filter-attributematch.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php">AttributeMatch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">121</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
@@ -601,7 +590,7 @@ matched. The expected side is always a concrete scalar or DateTime.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php"><a href="files/src-lib-telemetry-src-flow-telemetry-filter-attributematch.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php">AttributeMatch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
     </aside>
 
@@ -656,7 +645,7 @@ matched. The expected side is always a concrete scalar or DateTime.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php"><a href="files/src-lib-telemetry-src-flow-telemetry-filter-attributematch.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php">AttributeMatch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">135</span>
+    <span class="phpdocumentor-element-found-in__line">124</span>
 
     </aside>
 
@@ -711,7 +700,7 @@ matched. The expected side is always a concrete scalar or DateTime.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php"><a href="files/src-lib-telemetry-src-flow-telemetry-filter-attributematch.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php">AttributeMatch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">109</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
@@ -766,7 +755,7 @@ matched. The expected side is always a concrete scalar or DateTime.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php"><a href="files/src-lib-telemetry-src-flow-telemetry-filter-attributematch.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php">AttributeMatch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">184</span>
+    <span class="phpdocumentor-element-found-in__line">173</span>
 
     </aside>
 
@@ -821,7 +810,7 @@ matched. The expected side is always a concrete scalar or DateTime.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php"><a href="files/src-lib-telemetry-src-flow-telemetry-filter-attributematch.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php">AttributeMatch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -881,7 +870,7 @@ matched. The expected side is always a concrete scalar or DateTime.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php"><a href="files/src-lib-telemetry-src-flow-telemetry-filter-attributematch.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php">AttributeMatch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">142</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -943,7 +932,7 @@ matched. The expected side is always a concrete scalar or DateTime.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php"><a href="files/src-lib-telemetry-src-flow-telemetry-filter-attributematch.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeMatch.php">AttributeMatch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">79</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 

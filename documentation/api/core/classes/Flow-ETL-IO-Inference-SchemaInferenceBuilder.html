@@ -174,6 +174,19 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-IO-Inference-SchemaInferenceBuilder.html#method_everyRow">everyRow()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-IO-Inference-SchemaInferenceBuilder.html#method_everySource">everySource()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Leading row-less sources are all opened. Ignored by a source that lists no files.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-IO-Inference-SchemaInferenceBuilder.html#method_filesToSniff">filesToSniff()</a>
     <span>
                                 &nbsp;: self    </span>
@@ -190,7 +203,7 @@
     <span>
                                 &nbsp;: self    </span>
 </dt>
-<dd>Runs the whole-unit sniffs of sampleSize(-1), for example through a process launcher to sniff in parallel.</dd>
+<dd>Runs the whole-unit sniffs of everyRow(), for example through a process launcher to sniff in parallel.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-IO-Inference-SchemaInferenceBuilder.html#method_types">types()</a>
@@ -334,6 +347,83 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_everyRow">
+        everyRow()
+        <a href="classes/Flow-ETL-IO-Inference-SchemaInferenceBuilder.html#method_everyRow" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInferenceBuilder.php"><a href="files/src-core-etl-src-flow-etl-io-inference-schemainferencebuilder.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInferenceBuilder.php">SchemaInferenceBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">56</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">everyRow</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_everySource">
+        everySource()
+        <a href="classes/Flow-ETL-IO-Inference-SchemaInferenceBuilder.html#method_everySource" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInferenceBuilder.php"><a href="files/src-core-etl-src-flow-etl-io-inference-schemainferencebuilder.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInferenceBuilder.php">SchemaInferenceBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">66</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Leading row-less sources are all opened. Ignored by a source that lists no files.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">everySource</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_filesToSniff">
         filesToSniff()
         <a href="classes/Flow-ETL-IO-Inference-SchemaInferenceBuilder.html#method_filesToSniff" class="headerlink"><i class="fas fa-link"></i></a>
@@ -342,14 +432,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInferenceBuilder.php"><a href="files/src-core-etl-src-flow-etl-io-inference-schemainferencebuilder.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInferenceBuilder.php">SchemaInferenceBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">filesToSniff</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int<1, max>|-1&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesToSniff</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">filesToSniff</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesToSniff</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -359,12 +449,12 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$filesToSniff</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int<1, max>|-1</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int<1, max></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><ul>
-<li>sources that yielded a row; -1 sniffs every source. Leading row-less
-sources are all opened. Ignored by a source that lists no files</li>
+<li>sources that yielded a row. Leading row-less sources are all opened.
+Ignored by a source that lists no files</li>
 </ul>
 </section>
 
@@ -395,14 +485,14 @@ sources are all opened. Ignored by a source that lists no files</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInferenceBuilder.php"><a href="files/src-core-etl-src-flow-etl-io-inference-schemainferencebuilder.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInferenceBuilder.php">SchemaInferenceBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">sampleSize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int<1, max>|-1&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sampleSize</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">sampleSize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sampleSize</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -412,14 +502,10 @@ sources are all opened. Ignored by a source that lists no files</li>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$sampleSize</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int<1, max>|-1</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int<1, max></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><ul>
-<li>-1 observes every row</li>
-</ul>
-</section>
-
+                
             </dd>
             </dl>
 
@@ -447,11 +533,11 @@ sources are all opened. Ignored by a source that lists no files</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInferenceBuilder.php"><a href="files/src-core-etl-src-flow-etl-io-inference-schemainferencebuilder.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInferenceBuilder.php">SchemaInferenceBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">111</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Runs the whole-unit sniffs of sampleSize(-1), for example through a process launcher to sniff in parallel.</p>
+        <p class="phpdocumentor-summary">Runs the whole-unit sniffs of everyRow(), for example through a process launcher to sniff in parallel.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -496,7 +582,7 @@ sources are all opened. Ignored by a source that lists no files</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInferenceBuilder.php"><a href="files/src-core-etl-src-flow-etl-io-inference-schemainferencebuilder.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInferenceBuilder.php">SchemaInferenceBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">122</span>
 
     </aside>
 
@@ -549,7 +635,7 @@ never runs, so a narrower set is also a cheaper one</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInferenceBuilder.php"><a href="files/src-core-etl-src-flow-etl-io-inference-schemainferencebuilder.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Inference/SchemaInferenceBuilder.php">SchemaInferenceBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">108</span>
+    <span class="phpdocumentor-element-found-in__line">129</span>
 
     </aside>
 
@@ -608,6 +694,8 @@ never runs, so a narrower set is also a cheaper one</li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Inference-SchemaInferenceBuilder.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Inference-SchemaInferenceBuilder.html#method_allStrings">allStrings()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Inference-SchemaInferenceBuilder.html#method_build">build()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-IO-Inference-SchemaInferenceBuilder.html#method_everyRow">everyRow()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-IO-Inference-SchemaInferenceBuilder.html#method_everySource">everySource()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Inference-SchemaInferenceBuilder.html#method_filesToSniff">filesToSniff()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Inference-SchemaInferenceBuilder.html#method_sampleSize">sampleSize()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Inference-SchemaInferenceBuilder.html#method_sniffWith">sniffWith()</a></li>

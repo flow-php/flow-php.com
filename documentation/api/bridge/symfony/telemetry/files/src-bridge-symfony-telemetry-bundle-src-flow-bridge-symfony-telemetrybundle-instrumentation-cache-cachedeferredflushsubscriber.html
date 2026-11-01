@@ -116,9 +116,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Cache-CacheDeferredFlushSubscriber.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\Cache\CacheDeferredFlushSubscriber">CacheDeferredFlushSubscriber</abbr></a></dt><dd>Symfony cache pools defer writes and flush them from the pool&#039;s own commit path at object destruction,
-outside any request/message span. On a Doctrine DBAL pool each of those writes therefore surfaces as an
-orphan doctrine.dbal.* span (statement.prepare/execute, transaction.begin/commit), one trace per query.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Cache-CacheDeferredFlushSubscriber.html"><abbr title="\Flow\Bridge\Symfony\TelemetryBundle\Instrumentation\Cache\CacheDeferredFlushSubscriber">CacheDeferredFlushSubscriber</abbr></a></dt><dd>Pools flush at destruction outside any span; draining here groups DBAL writes under one cache.flush span.</dd>    </dl>
 
 
 

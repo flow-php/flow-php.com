@@ -124,9 +124,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Operators-Processor-GroupByAggregationProcessor.html"><abbr title="\Flow\ETL\Operators\Processor\GroupByAggregationProcessor">GroupByAggregationProcessor</abbr></a></dt><dd>Aggregates in one pass while the process stays under the memory limit. Past it, the rest of the stream is partitioned
-into buckets and each bucket aggregated on its own; the groups aggregated before the limit are merged into the bucket
-their key hashes to.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Operators-Processor-GroupByAggregationProcessor.html"><abbr title="\Flow\ETL\Operators\Processor\GroupByAggregationProcessor">GroupByAggregationProcessor</abbr></a></dt><dd>Past the memory limit, the rest is bucketed by key hash and aggregated per bucket.</dd>    </dl>
 
 
 

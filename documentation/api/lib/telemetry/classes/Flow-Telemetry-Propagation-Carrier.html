@@ -109,28 +109,12 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/Carrier.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-carrier.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/Carrier.php">Carrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">10</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Carrier for propagating context across process boundaries.</p>
+        
 
-
-    <section class="phpdocumentor-description"><p>A carrier is the transport mechanism for context propagation headers.
-Implementations handle specific transport types (HTTP headers, gRPC
-metadata, message queue headers, etc.).</p>
-<p>Example usage:</p>
-<pre class="prettyprint"><code class="language-php">// Inject context into a carrier
-$carrier = new ResponseCarrier($response);
-$propagator-&gt;inject($context, $carrier);
-$modifiedResponse = $carrier-&gt;unwrap();
-
-// With fluent chaining
-$response = (new ResponseCarrier($response))
-    -&gt;set('X-Custom', 'value')
-    -&gt;unwrap();
-</code></pre>
-</section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -214,7 +198,7 @@ $response = (new ResponseCarrier($response))
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/Carrier.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-carrier.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/Carrier.php">Carrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -271,7 +255,7 @@ $response = (new ResponseCarrier($response))
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/Carrier.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-carrier.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/Carrier.php">Carrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -335,7 +319,7 @@ $response = (new ResponseCarrier($response))
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/Carrier.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-carrier.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/Carrier.php">Carrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 

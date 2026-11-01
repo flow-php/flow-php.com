@@ -293,7 +293,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\PHPUnitTelemetryAttributes",
             "name": "PHPUnitTelemetryAttributes",
-            "summary": "Flow\u002Dspecific\u0020PHPUnit\u0020attribute\u0020keys.",
+            "summary": "Custom\u0020keys\u0020only,\u0020under\u0020\u0060flow.phpunit.\u0060\u003B\u0020official\u0020\u0060test.\u002A\u0060\u0020keys\u0020live\u0020in\u0020SemConvAttributes.",
             "url": "classes/Flow-Bridge-PHPUnit-Telemetry-PHPUnitTelemetryAttributes.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\PHPUnitTelemetryAttributes\u003A\u003AATTR_SUITE_IS_ROOT",
@@ -573,7 +573,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\SuiteOutcomeStack",
             "name": "SuiteOutcomeStack",
-            "summary": "Aggregates\u0020finished\u002Dtest\u0020statuses\u0020per\u0020open\u0020test\u0020suite\u0020so\u0020the\u0020suite\u0020span\u0020can\u0020carry\u0020the\u0020official\n\u0060test.suite.run.status\u0060\u0020attribute.\u0020Suites\u0020nest,\u0020so\u0020every\u0020finished\u0020test\u0020counts\u0020towards\u0020all\ncurrently\u0020open\u0020suites.",
+            "summary": "Suites\u0020nest\u003A\u0020every\u0020finished\u0020test\u0020counts\u0020toward\u0020all\u0020open\u0020suites.",
             "url": "classes/Flow-Bridge-PHPUnit-Telemetry-SuiteOutcomeStack.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\PHPUnit\\Telemetry\\SuiteOutcomeStack\u003A\u003Apop\u0028\u0029",

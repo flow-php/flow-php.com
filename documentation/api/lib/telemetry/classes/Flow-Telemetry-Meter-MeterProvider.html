@@ -122,32 +122,12 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/MeterProvider.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-meterprovider.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/MeterProvider.php">MeterProvider.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Entry point for the metrics API.</p>
+        
 
-
-    <section class="phpdocumentor-description"><p>Creates and manages meters for different instrumentation scopes.
-The behavior (void, memory, OTLP, etc.) is determined by the injected processor.</p>
-<p>Example usage:</p>
-<pre class="prettyprint"><code class="language-php">// For testing with memory storage
-$processor = new MemoryMetricProcessor(new MemoryExporter());
-$provider = new MeterProvider($processor, new SystemClock());
-
-// For OTLP export
-$processor = batching_metric_processor(otlp_exporter($transport));
-$provider = new MeterProvider($processor, new SystemClock());
-
-// For void/disabled metrics
-$provider = new MeterProvider(new VoidProcessor(), new SystemClock());
-
-$meter = $provider-&gt;meter('my-service', '1.0.0');
-$counter = $meter-&gt;createCounter('requests.total');
-$counter-&gt;add(1);
-</code></pre>
-</section>
 
 
 
@@ -209,7 +189,7 @@ $counter-&gt;add(1);
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/MeterProvider.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-meterprovider.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/MeterProvider.php">MeterProvider.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -288,7 +268,7 @@ $counter-&gt;add(1);
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/MeterProvider.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-meterprovider.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/MeterProvider.php">MeterProvider.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 

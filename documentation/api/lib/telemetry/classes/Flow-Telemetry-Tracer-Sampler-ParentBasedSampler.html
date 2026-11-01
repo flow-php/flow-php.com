@@ -126,28 +126,12 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Sampler/ParentBasedSampler.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-sampler-parentbasedsampler.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Sampler/ParentBasedSampler.php">ParentBasedSampler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Sampler that respects the parent span&#039;s sampling decision.</p>
+        
 
-
-    <section class="phpdocumentor-description"><p>This sampler ensures sampling consistency across a trace:</p>
-<ul>
-<li>If the parent was sampled, this span is sampled</li>
-<li>If the parent was not sampled, this span is not sampled</li>
-<li>For root spans (no parent), delegates to the configured root sampler</li>
-</ul>
-<p>This is the recommended sampler for most production deployments as it
-ensures complete traces while maintaining sampling decisions made upstream.</p>
-<p>Example usage:</p>
-<pre class="prettyprint"><code class="language-php">$sampler = new ParentBasedSampler(
-    new TraceIdRatioBasedSampler(0.01), // 1% for root spans
-);
-$result = $sampler-&gt;shouldSample($context, $span);
-</code></pre>
-</section>
 
 
 
@@ -160,7 +144,7 @@ $result = $sampler-&gt;shouldSample($context, $span);
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Tracer-Sampler-Sampler.html"><abbr title="\Flow\Telemetry\Tracer\Sampler\Sampler">Sampler</abbr></a></dt><dd>Interface for sampling decisions.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Tracer-Sampler-Sampler.html"><abbr title="\Flow\Telemetry\Tracer\Sampler\Sampler">Sampler</abbr></a></dt>    </dl>
 
 
 
@@ -223,7 +207,7 @@ $result = $sampler-&gt;shouldSample($context, $span);
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Sampler/ParentBasedSampler.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-sampler-parentbasedsampler.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Sampler/ParentBasedSampler.php">ParentBasedSampler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -305,7 +289,7 @@ $result = $sampler-&gt;shouldSample($context, $span);
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Sampler/ParentBasedSampler.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-sampler-parentbasedsampler.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Sampler/ParentBasedSampler.php">ParentBasedSampler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -351,7 +335,7 @@ $result = $sampler-&gt;shouldSample($context, $span);
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Sampler/ParentBasedSampler.php"><a href="files/src-lib-telemetry-src-flow-telemetry-tracer-sampler-parentbasedsampler.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Tracer/Sampler/ParentBasedSampler.php">ParentBasedSampler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 

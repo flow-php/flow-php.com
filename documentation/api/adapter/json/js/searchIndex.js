@@ -63,7 +63,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\IO\\Extractor\\JsonArrayElements",
             "name": "JsonArrayElements",
-            "summary": "JSON\u0020Machine\u0020tokenizes\u0020a\u0020document\u0020in\u0020PHP,\u0020one\u0020character\u0020class\u0020at\u0020a\u0020time.\u0020The\u0020elements\u0020of\u0020a\u0020top\u002Dlevel\u0020array\u0020are\nfound\u0020here\u0020instead\u0020by\u0020one\u0020PCRE\u0020match\u0020per\u0020element\u0020\u002D\u0020which\u0020runs\u0020in\u0020C\u0020\u002D\u0020and\u0020decoded\u0020by\u0020json_decode\u0028\u0029,\u0020about\u0020eight\ntimes\u0020faster\u0020on\u0020the\u0020orders\u0020fixture.\u0020Anything\u0020this\u0020does\u0020not\u0020recognise\u0020goes\u0020to\u0020JSON\u0020Machine.",
+            "summary": "One\u0020PCRE\u0020match\u0020per\u0020top\u002Dlevel\u0020element\u0020\u0028\u007E8x\u0020JSON\u0020Machine\u0029\u003B\u0020anything\u0020unrecognised\u0020falls\u0020back\u0020to\u0020JSON\u0020Machine.",
             "url": "classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonArrayElements.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\IO\\Extractor\\JsonArrayElements\u003A\u003A__construct\u0028\u0029",

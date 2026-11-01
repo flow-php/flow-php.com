@@ -126,33 +126,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/ChainDetector.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource-detector-chaindetector.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/ChainDetector.php">ChainDetector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">13</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Combines multiple resource detectors into a chain.</p>
+            <p class="phpdocumentor-summary">Later detectors override earlier keys.</p>
 
 
-    <section class="phpdocumentor-description"><p>Detectors are executed in order and their results are merged.
-Later detectors take precedence over earlier ones when there are
-conflicting attribute keys (allowing for override patterns).</p>
-<p>This is useful for combining automatic detection with manual overrides:</p>
-<pre class="prettyprint"><code class="language-php">$detector = new ChainDetector(
-    new OsDetector(),           // Base OS detection
-    new HostDetector(),         // Host information
-    new ProcessDetector(),      // Process information
-    new ComposerDetector(),     // Service from composer
-    new EnvironmentDetector(),  // Environment overrides (highest precedence)
-);
-</code></pre>
-<p>The recommended order is:</p>
-<ol>
-<li>Infrastructure detectors (OS, Host)</li>
-<li>Runtime detectors (Process)</li>
-<li>Application detectors (Composer)</li>
-<li>Environment overrides (EnvironmentDetector - should be last)</li>
-</ol>
-</section>
 
 
 
@@ -165,7 +145,7 @@ conflicting attribute keys (allowing for override patterns).</p>
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Resource-ResourceDetector.html"><abbr title="\Flow\Telemetry\Resource\ResourceDetector">ResourceDetector</abbr></a></dt><dd>Interface for detecting resource attributes from the environment.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Resource-ResourceDetector.html"><abbr title="\Flow\Telemetry\Resource\ResourceDetector">ResourceDetector</abbr></a></dt><dd>Return an empty Resource when nothing is detected.</dd>    </dl>
 
 
 
@@ -221,7 +201,7 @@ conflicting attribute keys (allowing for override patterns).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/ChainDetector.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource-detector-chaindetector.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/ChainDetector.php">ChainDetector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
@@ -265,7 +245,7 @@ conflicting attribute keys (allowing for override patterns).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/ChainDetector.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource-detector-chaindetector.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/ChainDetector.php">ChainDetector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 

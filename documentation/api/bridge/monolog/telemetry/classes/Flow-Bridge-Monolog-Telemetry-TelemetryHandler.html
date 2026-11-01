@@ -124,29 +124,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/monolog/telemetry/src/Flow/Bridge/Monolog/Telemetry/TelemetryHandler.php"><a href="files/src-bridge-monolog-telemetry-src-flow-bridge-monolog-telemetry-telemetryhandler.html"><abbr title="src/bridge/monolog/telemetry/src/Flow/Bridge/Monolog/Telemetry/TelemetryHandler.php">TelemetryHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Monolog handler that forwards log records to Flow Telemetry.</p>
+            <p class="phpdocumentor-summary">Context and extra become `context.*`/`extra.*` attributes; a Throwable goes through setException().</p>
 
 
-    <section class="phpdocumentor-description"><p>This handler allows using Monolog as the logging interface while leveraging
-Telemetry's export capabilities (console, OTLP, etc.).</p>
-<p>Monolog context and extra data are converted to Telemetry attributes with
-appropriate prefixes (context.<em>, extra.</em>). Throwables in context are handled
-specially via Telemetry's setException() method.</p>
-<p>Example usage:</p>
-<pre class="prettyprint"><code class="language-php">use Monolog\Logger as MonologLogger;
-use function Flow\Bridge\Monolog\Telemetry\DSL\telemetry_handler;
-
-$telemetryLogger = $telemetry-&gt;logger('my-app');
-$monolog = new MonologLogger('channel');
-$monolog-&gt;pushHandler(telemetry_handler($telemetryLogger));
-
-$monolog-&gt;info('User logged in', ['user_id' =&gt; 123]);
-</code></pre>
-</section>
 
 
 
@@ -201,7 +185,7 @@ $monolog-&gt;info('User logged in', ['user_id' =&gt; 123]);
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/monolog/telemetry/src/Flow/Bridge/Monolog/Telemetry/TelemetryHandler.php"><a href="files/src-bridge-monolog-telemetry-src-flow-bridge-monolog-telemetry-telemetryhandler.html"><abbr title="src/bridge/monolog/telemetry/src/Flow/Bridge/Monolog/Telemetry/TelemetryHandler.php">TelemetryHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 

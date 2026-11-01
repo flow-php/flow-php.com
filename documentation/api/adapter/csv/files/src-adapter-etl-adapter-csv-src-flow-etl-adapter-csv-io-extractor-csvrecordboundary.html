@@ -116,9 +116,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVRecordBoundary.html"><abbr title="\Flow\ETL\Adapter\CSV\IO\Extractor\CSVRecordBoundary">CSVRecordBoundary</abbr></a></dt><dd>A record is complete when the buffer ends outside an enclosure. An enclosure only OPENS at a field start - buffer
-start or just after the separator, blanks allowed - which is what fgetcsv does and what counting enclosures cannot
-express. Possessive quantifiers throughout: the pattern must stay linear on a multi-megabyte buffer.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Adapter-CSV-IO-Extractor-CSVRecordBoundary.html"><abbr title="\Flow\ETL\Adapter\CSV\IO\Extractor\CSVRecordBoundary">CSVRecordBoundary</abbr></a></dt><dd>Enclosure opens only at a field start (as fgetcsv); possessive quantifiers keep it linear on large buffers.</dd>    </dl>
 
 
 

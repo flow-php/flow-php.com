@@ -126,32 +126,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/EnvironmentDetector.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource-detector-environmentdetector.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/EnvironmentDetector.php">EnvironmentDetector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Detects resource attributes from environment variables.</p>
+            <p class="phpdocumentor-summary">OTEL_SERVICE_NAME wins over service.name in OTEL_RESOURCE_ATTRIBUTES.</p>
 
 
-    <section class="phpdocumentor-description"><p>Reads the following OpenTelemetry standard environment variables:</p>
-<ul>
-<li>OTEL_SERVICE_NAME: Sets service.name attribute</li>
-<li>OTEL_RESOURCE_ATTRIBUTES: Sets additional attributes in key=value,key2=value2 format</li>
-</ul>
-<p>Attributes from OTEL_RESOURCE_ATTRIBUTES follow the format specified by OpenTelemetry:</p>
-<pre class="prettyprint"><code class="prettyprint">OTEL_RESOURCE_ATTRIBUTES=key1=value1,key2=value2
-</code></pre>
-<p>Per the OpenTelemetry Resource SDK specification, the <code class="prettyprint">,</code> and <code class="prettyprint">=</code> characters in keys and
-values MUST be percent-encoded (other characters MAY be percent-encoded); both keys and
-values are percent-decoded:</p>
-<pre class="prettyprint"><code class="prettyprint">OTEL_RESOURCE_ATTRIBUTES=key=value%2Cwith%2Ccommas
-</code></pre>
-<p>OTEL_SERVICE_NAME takes precedence over service.name in OTEL_RESOURCE_ATTRIBUTES.</p>
-<p>Example:</p>
-<pre class="prettyprint"><code class="language-bash">export OTEL_SERVICE_NAME=my-service
-export OTEL_RESOURCE_ATTRIBUTES=service.version=1.0.0,deployment.environment.name=production
-</code></pre>
-</section>
 
 
 
@@ -164,7 +145,7 @@ export OTEL_RESOURCE_ATTRIBUTES=service.version=1.0.0,deployment.environment.nam
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Resource-ResourceDetector.html"><abbr title="\Flow\Telemetry\Resource\ResourceDetector">ResourceDetector</abbr></a></dt><dd>Interface for detecting resource attributes from the environment.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Resource-ResourceDetector.html"><abbr title="\Flow\Telemetry\Resource\ResourceDetector">ResourceDetector</abbr></a></dt><dd>Return an empty Resource when nothing is detected.</dd>    </dl>
 
 
 
@@ -214,7 +195,7 @@ export OTEL_RESOURCE_ATTRIBUTES=service.version=1.0.0,deployment.environment.nam
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/EnvironmentDetector.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource-detector-environmentdetector.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/EnvironmentDetector.php">EnvironmentDetector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 

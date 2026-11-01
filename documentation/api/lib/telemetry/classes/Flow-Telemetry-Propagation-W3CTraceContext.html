@@ -125,34 +125,12 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/W3CTraceContext.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-w3ctracecontext.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/W3CTraceContext.php">W3CTraceContext.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">W3C Trace Context propagator for distributed tracing.</p>
+        
 
-
-    <section class="phpdocumentor-description"><p>Implements the W3C Trace Context specification for propagating
-trace context across service boundaries using HTTP headers.</p>
-<p>Headers used:</p>
-<ul>
-<li>traceparent: {version}-{trace-id}-{parent-id}-{trace-flags}</li>
-<li>tracestate: Vendor-specific key-value pairs</li>
-</ul>
-<p>Example usage:</p>
-<pre class="prettyprint"><code class="language-php">$propagator = new W3CTraceContext();
-
-// Extract from incoming request
-$carrier = new ArrayCarrier($headers);
-$ctx = $propagator-&gt;extract($carrier);
-$spanContext = $ctx-&gt;spanContext;
-
-// Inject into outgoing request
-$carrier = new ArrayCarrier();
-$propagator-&gt;inject(new PropagationContext($spanContext), $carrier);
-$headers = $carrier-&gt;unwrap();
-</code></pre>
-</section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -179,7 +157,7 @@ $headers = $carrier-&gt;unwrap();
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Propagation-Propagator.html"><abbr title="\Flow\Telemetry\Propagation\Propagator">Propagator</abbr></a></dt><dd>Interface for propagating context across process boundaries.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Propagation-Propagator.html"><abbr title="\Flow\Telemetry\Propagation\Propagator">Propagator</abbr></a></dt>    </dl>
 
 
 
@@ -255,7 +233,7 @@ $headers = $carrier-&gt;unwrap();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/W3CTraceContext.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-w3ctracecontext.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/W3CTraceContext.php">W3CTraceContext.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -285,7 +263,7 @@ $headers = $carrier-&gt;unwrap();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/W3CTraceContext.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-w3ctracecontext.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/W3CTraceContext.php">W3CTraceContext.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -329,7 +307,7 @@ $headers = $carrier-&gt;unwrap();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/W3CTraceContext.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-w3ctracecontext.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/W3CTraceContext.php">W3CTraceContext.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -382,7 +360,7 @@ $headers = $carrier-&gt;unwrap();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/W3CTraceContext.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-w3ctracecontext.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/W3CTraceContext.php">W3CTraceContext.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 
     </aside>
 
@@ -421,7 +399,7 @@ $headers = $carrier-&gt;unwrap();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/W3CTraceContext.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-w3ctracecontext.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/W3CTraceContext.php">W3CTraceContext.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 

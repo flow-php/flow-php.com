@@ -131,14 +131,11 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Storage/SpillingRowsStorage.php"><a href="files/src-core-etl-src-flow-etl-storage-spillingrowsstorage.html"><abbr title="src/core/etl/src/Flow/ETL/Storage/SpillingRowsStorage.php">SpillingRowsStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Keeps rows in memory while the process stays under the memory limit. The first time it passes the limit every
-key moves its full batches to $disk; from then on a key writes to $disk each time it holds a full batch, so every
-frame on $disk holds exactly $batchSize rows and memory stays bounded by one batch per key. The rest of a key stays
-buffered and is read after its frames.</p>
+            <p class="phpdocumentor-summary">Past the memory limit, every frame on $disk holds exactly $batchSize rows.</p>
 
 
 
@@ -276,7 +273,7 @@ assume any particular batch size.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Storage/SpillingRowsStorage.php"><a href="files/src-core-etl-src-flow-etl-storage-spillingrowsstorage.html"><abbr title="src/core/etl/src/Flow/ETL/Storage/SpillingRowsStorage.php">SpillingRowsStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -313,7 +310,7 @@ assume any particular batch size.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Storage/SpillingRowsStorage.php"><a href="files/src-core-etl-src-flow-etl-storage-spillingrowsstorage.html"><abbr title="src/core/etl/src/Flow/ETL/Storage/SpillingRowsStorage.php">SpillingRowsStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -355,7 +352,7 @@ assume any particular batch size.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Storage/SpillingRowsStorage.php"><a href="files/src-core-etl-src-flow-etl-storage-spillingrowsstorage.html"><abbr title="src/core/etl/src/Flow/ETL/Storage/SpillingRowsStorage.php">SpillingRowsStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -420,7 +417,7 @@ assume any particular batch size.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Storage/SpillingRowsStorage.php"><a href="files/src-core-etl-src-flow-etl-storage-spillingrowsstorage.html"><abbr title="src/core/etl/src/Flow/ETL/Storage/SpillingRowsStorage.php">SpillingRowsStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -472,7 +469,7 @@ assume any particular batch size.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Storage/SpillingRowsStorage.php"><a href="files/src-core-etl-src-flow-etl-storage-spillingrowsstorage.html"><abbr title="src/core/etl/src/Flow/ETL/Storage/SpillingRowsStorage.php">SpillingRowsStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -517,7 +514,7 @@ assume any particular batch size.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Storage/SpillingRowsStorage.php"><a href="files/src-core-etl-src-flow-etl-storage-spillingrowsstorage.html"><abbr title="src/core/etl/src/Flow/ETL/Storage/SpillingRowsStorage.php">SpillingRowsStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
@@ -567,7 +564,7 @@ assume any particular batch size.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Storage/SpillingRowsStorage.php"><a href="files/src-core-etl-src-flow-etl-storage-spillingrowsstorage.html"><abbr title="src/core/etl/src/Flow/ETL/Storage/SpillingRowsStorage.php">SpillingRowsStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">107</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -615,7 +612,7 @@ assume any particular batch size.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Storage/SpillingRowsStorage.php"><a href="files/src-core-etl-src-flow-etl-storage-spillingrowsstorage.html"><abbr title="src/core/etl/src/Flow/ETL/Storage/SpillingRowsStorage.php">SpillingRowsStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 
     </aside>
 
@@ -659,7 +656,7 @@ assume any particular batch size.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Storage/SpillingRowsStorage.php"><a href="files/src-core-etl-src-flow-etl-storage-spillingrowsstorage.html"><abbr title="src/core/etl/src/Flow/ETL/Storage/SpillingRowsStorage.php">SpillingRowsStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">122</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
     </aside>
 
@@ -707,7 +704,7 @@ assume any particular batch size.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Storage/SpillingRowsStorage.php"><a href="files/src-core-etl-src-flow-etl-storage-spillingrowsstorage.html"><abbr title="src/core/etl/src/Flow/ETL/Storage/SpillingRowsStorage.php">SpillingRowsStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">129</span>
+    <span class="phpdocumentor-element-found-in__line">126</span>
 
     </aside>
 
@@ -756,7 +753,7 @@ assume any particular batch size.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Storage/SpillingRowsStorage.php"><a href="files/src-core-etl-src-flow-etl-storage-spillingrowsstorage.html"><abbr title="src/core/etl/src/Flow/ETL/Storage/SpillingRowsStorage.php">SpillingRowsStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">140</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 
     </aside>
 

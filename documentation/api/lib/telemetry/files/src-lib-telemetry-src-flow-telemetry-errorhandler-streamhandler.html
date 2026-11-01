@@ -116,9 +116,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Telemetry-ErrorHandler-StreamHandler.html"><abbr title="\Flow\Telemetry\ErrorHandler\StreamHandler">StreamHandler</abbr></a></dt><dd>Appends formatted Throwables (one per line) to a file path or php:// stream
-wrapper. The stream is opened lazily on the first handle() call and reused
-across subsequent calls; __destruct() closes it.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Telemetry-ErrorHandler-StreamHandler.html"><abbr title="\Flow\Telemetry\ErrorHandler\StreamHandler">StreamHandler</abbr></a></dt><dd>Lines are LOCK_EX&#039;d best-effort; TTYs and pipes cannot lock.</dd>    </dl>
 
 
 

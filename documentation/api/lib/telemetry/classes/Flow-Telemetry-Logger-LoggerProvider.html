@@ -122,31 +122,12 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/LoggerProvider.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-loggerprovider.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/LoggerProvider.php">LoggerProvider.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Entry point for the logging API.</p>
+        
 
-
-    <section class="phpdocumentor-description"><p>Creates and manages loggers for different instrumentation scopes.
-The behavior (void, memory, OTLP, etc.) is determined by the injected processor.</p>
-<p>Example usage:</p>
-<pre class="prettyprint"><code class="language-php">// For testing with memory storage
-$processor = new MemoryLogProcessor(new MemoryExporter());
-$provider = new LoggerProvider($processor, new SystemClock());
-
-// For OTLP export
-$processor = batching_log_processor(otlp_exporter($transport));
-$provider = new LoggerProvider($processor, new SystemClock());
-
-// For void/disabled logging
-$provider = new LoggerProvider(new VoidProcessor(), new SystemClock());
-
-$logger = $provider-&gt;logger('my-service', '1.0.0');
-$logger-&gt;info('Application started');
-</code></pre>
-</section>
 
 
 
@@ -208,7 +189,7 @@ $logger-&gt;info('Application started');
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/LoggerProvider.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-loggerprovider.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/LoggerProvider.php">LoggerProvider.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
@@ -280,7 +261,7 @@ $logger-&gt;info('Application started');
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/LoggerProvider.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-loggerprovider.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/LoggerProvider.php">LoggerProvider.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 

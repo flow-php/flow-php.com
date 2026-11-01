@@ -111,7 +111,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Psr3-Telemetry-Exception-InvalidArgumentException.html"><abbr title="\Flow\Bridge\Psr3\Telemetry\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Psr3-Telemetry-LogRecordConverter.html"><abbr title="\Flow\Bridge\Psr3\Telemetry\LogRecordConverter">LogRecordConverter</abbr></a></dt><dd>Convert a PSR-3 log call (level + message + context) into a Telemetry LogRecord.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Psr3-Telemetry-SeverityMapper.html"><abbr title="\Flow\Bridge\Psr3\Telemetry\SeverityMapper">SeverityMapper</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Psr3-Telemetry-TelemetryLogger.html"><abbr title="\Flow\Bridge\Psr3\Telemetry\TelemetryLogger">TelemetryLogger</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Psr3-Telemetry-ValueNormalizer.html"><abbr title="\Flow\Bridge\Psr3\Telemetry\ValueNormalizer">ValueNormalizer</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Psr3-Telemetry-AttributeValueNormalizer.html"><abbr title="\Flow\Bridge\Psr3\Telemetry\AttributeValueNormalizer">AttributeValueNormalizer</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Psr3-Telemetry-Exception-InvalidArgumentException.html"><abbr title="\Flow\Bridge\Psr3\Telemetry\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Psr3-Telemetry-LogRecordConverter.html"><abbr title="\Flow\Bridge\Psr3\Telemetry\LogRecordConverter">LogRecordConverter</abbr></a></dt><dd>Convert a PSR-3 log call (level + message + context) into a Telemetry LogRecord.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Psr3-Telemetry-SeverityMapper.html"><abbr title="\Flow\Bridge\Psr3\Telemetry\SeverityMapper">SeverityMapper</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Psr3-Telemetry-TelemetryLogger.html"><abbr title="\Flow\Bridge\Psr3\Telemetry\TelemetryLogger">TelemetryLogger</abbr></a></dt>    </dl>
 
 
 
@@ -268,7 +268,7 @@ $mapper = psr3_severity_mapper([
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">psr3_log_record_converter</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Bridge-Psr3-Telemetry-SeverityMapper.html"><abbr title="\Flow\Bridge\Psr3\Telemetry\SeverityMapper">SeverityMapper</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$severityMapper</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Bridge-Psr3-Telemetry-ValueNormalizer.html"><abbr title="\Flow\Bridge\Psr3\Telemetry\ValueNormalizer">ValueNormalizer</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$valueNormalizer</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Bridge-Psr3-Telemetry-LogRecordConverter.html"><abbr title="\Flow\Bridge\Psr3\Telemetry\LogRecordConverter">LogRecordConverter</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">psr3_log_record_converter</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Bridge-Psr3-Telemetry-SeverityMapper.html"><abbr title="\Flow\Bridge\Psr3\Telemetry\SeverityMapper">SeverityMapper</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$severityMapper</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Bridge-Psr3-Telemetry-AttributeValueNormalizer.html"><abbr title="\Flow\Bridge\Psr3\Telemetry\AttributeValueNormalizer">AttributeValueNormalizer</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$valueNormalizer</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Bridge-Psr3-Telemetry-LogRecordConverter.html"><abbr title="\Flow\Bridge\Psr3\Telemetry\LogRecordConverter">LogRecordConverter</abbr></a></span></code>
 
         <section class="phpdocumentor-description"><p>The converter:</p>
 <ul>
@@ -291,7 +291,7 @@ $mapper = psr3_severity_mapper([
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$valueNormalizer</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Bridge-Psr3-Telemetry-ValueNormalizer.html"><abbr title="\Flow\Bridge\Psr3\Telemetry\ValueNormalizer">ValueNormalizer</abbr></a>|null</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Bridge-Psr3-Telemetry-AttributeValueNormalizer.html"><abbr title="\Flow\Bridge\Psr3\Telemetry\AttributeValueNormalizer">AttributeValueNormalizer</abbr></a>|null</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -307,9 +307,9 @@ $mapper = psr3_severity_mapper([
 
 </article>
                     <article class="phpdocumentor-element -function - ">
-    <h4 class="phpdocumentor-element__name" id="function_psr3_value_normalizer">
-        psr3_value_normalizer()
-        <a href="namespaces/flow-bridge-psr3-telemetry-dsl.html#function_psr3_value_normalizer" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="function_psr3_attribute_value_normalizer">
+        psr3_attribute_value_normalizer()
+        <a href="namespaces/flow-bridge-psr3-telemetry-dsl.html#function_psr3_attribute_value_normalizer" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
@@ -319,12 +319,12 @@ $mapper = psr3_severity_mapper([
 
     </aside>
 
-        <p class="phpdocumentor-summary">Create a ValueNormalizer for converting arbitrary PHP values into Telemetry attribute types.</p>
+        <p class="phpdocumentor-summary">Create a AttributeValueNormalizer for converting arbitrary PHP values into Telemetry attribute types.</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">psr3_value_normalizer</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Bridge-Psr3-Telemetry-ValueNormalizer.html"><abbr title="\Flow\Bridge\Psr3\Telemetry\ValueNormalizer">ValueNormalizer</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">psr3_attribute_value_normalizer</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Bridge-Psr3-Telemetry-AttributeValueNormalizer.html"><abbr title="\Flow\Bridge\Psr3\Telemetry\AttributeValueNormalizer">AttributeValueNormalizer</abbr></a></span></code>
 
     
     
@@ -332,7 +332,7 @@ $mapper = psr3_severity_mapper([
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Bridge-Psr3-Telemetry-ValueNormalizer.html"><abbr title="\Flow\Bridge\Psr3\Telemetry\ValueNormalizer">ValueNormalizer</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Bridge-Psr3-Telemetry-AttributeValueNormalizer.html"><abbr title="\Flow\Bridge\Psr3\Telemetry\AttributeValueNormalizer">AttributeValueNormalizer</abbr></a></span>
             </section>
 
 </article>
@@ -359,10 +359,10 @@ $mapper = psr3_severity_mapper([
                             <li class="phpdocumentor-on-this-page-section__title">Functions</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="namespaces/flow-bridge-psr3-telemetry-dsl.html#function_psr3_attribute_value_normalizer">psr3_attribute_value_normalizer()</a></li>
                                                     <li class=""><a href="namespaces/flow-bridge-psr3-telemetry-dsl.html#function_psr3_log_record_converter">psr3_log_record_converter()</a></li>
                                                     <li class=""><a href="namespaces/flow-bridge-psr3-telemetry-dsl.html#function_psr3_severity_mapper">psr3_severity_mapper()</a></li>
                                                     <li class=""><a href="namespaces/flow-bridge-psr3-telemetry-dsl.html#function_psr3_telemetry_logger">psr3_telemetry_logger()</a></li>
-                                                    <li class=""><a href="namespaces/flow-bridge-psr3-telemetry-dsl.html#function_psr3_value_normalizer">psr3_value_normalizer()</a></li>
                                             </ul>
                 </li>
                     </ul>

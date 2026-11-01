@@ -134,13 +134,11 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php"><a href="files/src-core-etl-src-flow-etl-operators-processor-topnprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php">TopNProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Keeps the first $limit rows by $columns while it reads, so it never holds more than twice $limit rows plus one
-batch. Sorts the same way MemorySortProcessor does: it emits the rows a sort followed by a limit would, though rows
-with equal keys may come in another order than an external sort leaves them.</p>
+            <p class="phpdocumentor-summary">Holds at most 2×$limit rows plus one batch; ties may order unlike ExternalSort.</p>
 
 
 
@@ -155,7 +153,7 @@ with equal keys may come in another order than an external sort leaves them.</p>
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Operators-Processor-Distributable.html"><abbr title="\Flow\ETL\Operators\Processor\Distributable">Distributable</abbr></a></dt><dd>Processor handles cross-batch operations that need to see multiple/all batches.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-Operators-Processor-Distributable.html"><abbr title="\Flow\ETL\Operators\Processor\Distributable">Distributable</abbr></a></dt><dd>Unlike a Transformer, receives the whole upstream generator, not one batch.</dd>    </dl>
 
 
 
@@ -283,7 +281,7 @@ with equal keys may come in another order than an external sort leaves them.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php"><a href="files/src-core-etl-src-flow-etl-operators-processor-topnprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php">TopNProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -320,7 +318,7 @@ with equal keys may come in another order than an external sort leaves them.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php"><a href="files/src-core-etl-src-flow-etl-operators-processor-topnprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php">TopNProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -357,7 +355,7 @@ with equal keys may come in another order than an external sort leaves them.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php"><a href="files/src-core-etl-src-flow-etl-operators-processor-topnprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php">TopNProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -394,7 +392,7 @@ with equal keys may come in another order than an external sort leaves them.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php"><a href="files/src-core-etl-src-flow-etl-operators-processor-topnprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php">TopNProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -436,7 +434,7 @@ with equal keys may come in another order than an external sort leaves them.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php"><a href="files/src-core-etl-src-flow-etl-operators-processor-topnprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php">TopNProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -525,7 +523,7 @@ an external one spills past its memory limit</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php"><a href="files/src-core-etl-src-flow-etl-operators-processor-topnprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php">TopNProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">110</span>
+    <span class="phpdocumentor-element-found-in__line">108</span>
 
     </aside>
 
@@ -573,7 +571,7 @@ an external one spills past its memory limit</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php"><a href="files/src-core-etl-src-flow-etl-operators-processor-topnprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php">TopNProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">115</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
@@ -612,7 +610,7 @@ an external one spills past its memory limit</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php"><a href="files/src-core-etl-src-flow-etl-operators-processor-topnprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php">TopNProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 
     </aside>
 
@@ -655,7 +653,7 @@ an external one spills past its memory limit</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php"><a href="files/src-core-etl-src-flow-etl-operators-processor-topnprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php">TopNProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
@@ -694,7 +692,7 @@ an external one spills past its memory limit</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php"><a href="files/src-core-etl-src-flow-etl-operators-processor-topnprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php">TopNProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -763,7 +761,7 @@ an external one spills past its memory limit</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php"><a href="files/src-core-etl-src-flow-etl-operators-processor-topnprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php">TopNProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">118</span>
 
     </aside>
 
@@ -819,7 +817,7 @@ an external one spills past its memory limit</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php"><a href="files/src-core-etl-src-flow-etl-operators-processor-topnprocessor.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Processor/TopNProcessor.php">TopNProcessor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">163</span>
+    <span class="phpdocumentor-element-found-in__line">161</span>
 
     </aside>
 

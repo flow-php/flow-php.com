@@ -109,29 +109,12 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/Propagator.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-propagator.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/Propagator.php">Propagator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">7</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Interface for propagating context across process boundaries.</p>
+        
 
-
-    <section class="phpdocumentor-description"><p>Propagator defines how context information (like trace identifiers and
-baggage) is injected into and extracted from carriers such as HTTP headers,
-gRPC metadata, or message queue headers.</p>
-<p>Example usage:</p>
-<pre class="prettyprint"><code class="language-php">$propagator = new W3CTraceContext();
-
-// Extract context from incoming request headers
-$carrier = new ArrayCarrier($incomingHeaders);
-$ctx = $propagator-&gt;extract($carrier);
-
-// Inject context into outgoing request headers
-$carrier = new ArrayCarrier();
-$propagator-&gt;inject($ctx, $carrier);
-$headers = $carrier-&gt;unwrap();
-</code></pre>
-</section>
 
 
 
@@ -202,7 +185,7 @@ $headers = $carrier-&gt;unwrap();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/Propagator.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-propagator.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/Propagator.php">Propagator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
@@ -257,7 +240,7 @@ $headers = $carrier-&gt;unwrap();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/Propagator.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-propagator.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/Propagator.php">Propagator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -302,7 +285,7 @@ $headers = $carrier-&gt;unwrap();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/Propagator.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-propagator.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/Propagator.php">Propagator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 

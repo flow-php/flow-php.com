@@ -134,13 +134,11 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Explain/FlowLayout.php"><a href="files/src-core-etl-src-flow-etl-planning-explain-flowlayout.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Explain/FlowLayout.php">FlowLayout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">The plan in the direction rows move: each source first, every node followed by the nodes that read it. Numbers
-are the tree&#039;s, so one node carries one number in every format. Outputs only groups the plan&#039;s consumers, so it
-is left out - its children already end the flow.</p>
+            <p class="phpdocumentor-summary">Sources first, each node followed by its readers; Outputs is left out.</p>
 
 
 
@@ -191,7 +189,7 @@ is left out - its children already end the flow.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Planning-Explain-FlowLayout.html#method_reversed">reversed()</a>
     <span>
-                                &nbsp;: <a href="classes/Flow-ETL-Planning-Explain-Entry.html"><abbr title="\Flow\ETL\Planning\Explain\Entry">Entry</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Flow-ETL-Planning-Explain-RenderedNode.html"><abbr title="\Flow\ETL\Planning\Explain\RenderedNode">RenderedNode</abbr></a>    </span>
 </dt>
 
     </dl>
@@ -222,7 +220,7 @@ is left out - its children already end the flow.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Explain/FlowLayout.php"><a href="files/src-core-etl-src-flow-etl-planning-explain-flowlayout.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Explain/FlowLayout.php">FlowLayout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -266,14 +264,14 @@ is left out - its children already end the flow.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Explain/FlowLayout.php"><a href="files/src-core-etl-src-flow-etl-planning-explain-flowlayout.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Explain/FlowLayout.php">FlowLayout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">collect</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Explain-Entry.html"><abbr title="\Flow\ETL\Planning\Explain\Entry">Entry</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entry</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;object, array&lt;int, <a href="classes/Flow-ETL-Planning-Explain-Entry.html"><abbr title="\Flow\ETL\Planning\Explain\Entry">Entry</abbr></a>&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$readers</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, <a href="classes/Flow-ETL-Planning-Explain-Entry.html"><abbr title="\Flow\ETL\Planning\Explain\Entry">Entry</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$sources</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">collect</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Explain-RenderedNode.html"><abbr title="\Flow\ETL\Planning\Explain\RenderedNode">RenderedNode</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entry</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;object, array&lt;int, <a href="classes/Flow-ETL-Planning-Explain-RenderedNode.html"><abbr title="\Flow\ETL\Planning\Explain\RenderedNode">RenderedNode</abbr></a>&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$readers</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, <a href="classes/Flow-ETL-Planning-Explain-RenderedNode.html"><abbr title="\Flow\ETL\Planning\Explain\RenderedNode">RenderedNode</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$sources</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -283,14 +281,14 @@ is left out - its children already end the flow.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$entry</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Planning-Explain-Entry.html"><abbr title="\Flow\ETL\Planning\Explain\Entry">Entry</abbr></a></span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Planning-Explain-RenderedNode.html"><abbr title="\Flow\ETL\Planning\Explain\RenderedNode">RenderedNode</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$readers</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;object, array&lt;int, <a href="classes/Flow-ETL-Planning-Explain-Entry.html"><abbr title="\Flow\ETL\Planning\Explain\Entry">Entry</abbr></a>&gt;&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;object, array&lt;int, <a href="classes/Flow-ETL-Planning-Explain-RenderedNode.html"><abbr title="\Flow\ETL\Planning\Explain\RenderedNode">RenderedNode</abbr></a>&gt;&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>every node's readers, in the order the tree visits them</p>
@@ -299,7 +297,7 @@ is left out - its children already end the flow.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$sources</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, <a href="classes/Flow-ETL-Planning-Explain-Entry.html"><abbr title="\Flow\ETL\Planning\Explain\Entry">Entry</abbr></a>&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, <a href="classes/Flow-ETL-Planning-Explain-RenderedNode.html"><abbr title="\Flow\ETL\Planning\Explain\RenderedNode">RenderedNode</abbr></a>&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>the entries without inputs, in the order the tree visits them</p>
@@ -328,14 +326,14 @@ is left out - its children already end the flow.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Explain/FlowLayout.php"><a href="files/src-core-etl-src-flow-etl-planning-explain-flowlayout.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Explain/FlowLayout.php">FlowLayout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">render</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Explain-Entry.html"><abbr title="\Flow\ETL\Planning\Explain\Entry">Entry</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$root</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">render</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Explain-RenderedNode.html"><abbr title="\Flow\ETL\Planning\Explain\RenderedNode">RenderedNode</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$root</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -345,7 +343,7 @@ is left out - its children already end the flow.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$root</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Planning-Explain-Entry.html"><abbr title="\Flow\ETL\Planning\Explain\Entry">Entry</abbr></a></span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Planning-Explain-RenderedNode.html"><abbr title="\Flow\ETL\Planning\Explain\RenderedNode">RenderedNode</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -376,14 +374,14 @@ is left out - its children already end the flow.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Explain/FlowLayout.php"><a href="files/src-core-etl-src-flow-etl-planning-explain-flowlayout.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Explain/FlowLayout.php">FlowLayout.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">reversed</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Explain-Entry.html"><abbr title="\Flow\ETL\Planning\Explain\Entry">Entry</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entry</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;object, array&lt;int, <a href="classes/Flow-ETL-Planning-Explain-Entry.html"><abbr title="\Flow\ETL\Planning\Explain\Entry">Entry</abbr></a>&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$readers</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;object, true&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$placed</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Planning-Explain-Entry.html"><abbr title="\Flow\ETL\Planning\Explain\Entry">Entry</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">reversed</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Explain-RenderedNode.html"><abbr title="\Flow\ETL\Planning\Explain\RenderedNode">RenderedNode</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entry</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;object, array&lt;int, <a href="classes/Flow-ETL-Planning-Explain-RenderedNode.html"><abbr title="\Flow\ETL\Planning\Explain\RenderedNode">RenderedNode</abbr></a>&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$readers</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;object, true&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$placed</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Planning-Explain-RenderedNode.html"><abbr title="\Flow\ETL\Planning\Explain\RenderedNode">RenderedNode</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -393,14 +391,14 @@ is left out - its children already end the flow.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$entry</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Planning-Explain-Entry.html"><abbr title="\Flow\ETL\Planning\Explain\Entry">Entry</abbr></a></span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Planning-Explain-RenderedNode.html"><abbr title="\Flow\ETL\Planning\Explain\RenderedNode">RenderedNode</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$readers</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;object, array&lt;int, <a href="classes/Flow-ETL-Planning-Explain-Entry.html"><abbr title="\Flow\ETL\Planning\Explain\Entry">Entry</abbr></a>&gt;&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;object, array&lt;int, <a href="classes/Flow-ETL-Planning-Explain-RenderedNode.html"><abbr title="\Flow\ETL\Planning\Explain\RenderedNode">RenderedNode</abbr></a>&gt;&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -422,7 +420,7 @@ is left out - its children already end the flow.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Planning-Explain-Entry.html"><abbr title="\Flow\ETL\Planning\Explain\Entry">Entry</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Planning-Explain-RenderedNode.html"><abbr title="\Flow\ETL\Planning\Explain\RenderedNode">RenderedNode</abbr></a></span>
             </section>
 
 </article>

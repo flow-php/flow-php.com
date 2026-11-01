@@ -758,7 +758,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Filesystem\\Operations\\Move",
             "name": "Move",
-            "summary": "Intra\u002Dfilesystem\u0020moves\u0020delegate\u0020to\u0020\u0060Filesystem\u003A\u003Amv\u0060\u0020for\u0020server\u002Dside\u0020optimizations\n\u0028local\u0020rename,\u0020S3\u0020CopyObject\u0020\u002B\u0020DeleteObject\u0029.\u0020Cross\u002Dfilesystem\u0020moves\u0020stream\u002Dcopy\nthen\u0020remove\u0020the\u0020source\u0020and\u0020are\u0020NOT\u0020atomic\u003A\u0020if\u0020the\u0020source\u0020removal\u0020fails\u0020after\u0020a\nsuccessful\u0020write,\u0020the\u0020destination\u0020is\u0020present\u0020and\u0020the\u0020source\u0020remains\u003B\u0020re\u002Drunning\n\u0060execute\u0060\u0020on\u0020the\u0020same\u0020pair\u0020is\u0020idempotent.",
+            "summary": "Cross\u002Dfilesystem\u0020moves\u0020are\u0020not\u0020atomic\u0020\u0028copy\u0020then\u0020remove\u0029\u003B\u0020re\u002Drunning\u0020is\u0020idempotent.",
             "url": "classes/Flow-Filesystem-Operations-Move.html"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Operations\\Move\u003A\u003A__construct\u0028\u0029",
@@ -953,7 +953,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Filesystem\\Path\\Filter\\PlaceholderPartitions",
             "name": "PlaceholderPartitions",
-            "summary": "Attaches\u0020partitions\u0020extracted\u0020from\u0020partition\u0020placeholders\u0020in\u0020the\u0020pattern\u0020path\u0020to\u0020the\u0020file\u0020status\nbefore\u0020delegating\u0020to\u0020the\u0020decorated\u0020filter.\u0020This\u0020way\u0020filters\u0020like\u0020partition\u0020pruning\u0020can\u0020see\npartitions\u0020that\u0020are\u0020part\u0020of\u0020the\u0020file\u0020name\u0020instead\u0020of\u0020name\u003Dvalue\u0020directories.",
+            "summary": "Lets\u0020partition\u0020pruning\u0020see\u0020partitions\u0020from\u0020file\u002Dname\u0020placeholders,\u0020not\u0020only\u0020name\u003Dvalue\u0020directories.",
             "url": "classes/Flow-Filesystem-Path-Filter-PlaceholderPartitions.html"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Path\\Filter\\PlaceholderPartitions\u003A\u003A__construct\u0028\u0029",
@@ -1833,7 +1833,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Filesystem\\Stream\\BlockLifecycle",
             "name": "BlockLifecycle",
-            "summary": "A\u0020callback\u0020interface\u0020representing\u0020block\u0020of\u0020data\u0020lifecycle.",
+            "summary": "",
             "url": "classes/Flow-Filesystem-Stream-BlockLifecycle.html"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Stream\\BlockLifecycle\u003A\u003Afilled\u0028\u0029",
@@ -1843,7 +1843,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Filesystem\\Stream\\Blocks",
             "name": "Blocks",
-            "summary": "Blocks\u0020is\u0020a\u0020collection\u0020of\u0020blocks\u0020that\u0020are\u0020filled\u0020with\u0020data.",
+            "summary": "BlockLifecycle\u003A\u003Afilled\u0028\u0029\u0020fires\u0020per\u0020full\u0020block\u0020so\u0020remote\u0020filesystems\u0020upload\u0020it.",
             "url": "classes/Flow-Filesystem-Stream-Blocks.html"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Stream\\Blocks\u003A\u003A__construct\u0028\u0029",
@@ -2088,7 +2088,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Filesystem\\Stream\\RangeSourceStream",
             "name": "RangeSourceStream",
-            "summary": "Bytes\u0020\u005B\u0024start,\u0020\u0024end\u0029\u0020of\u0020another\u0020stream,\u0020seen\u0020as\u0020a\u0020whole\u0020stream\u003A\u0020offsets\u0020are\u0020relative\u0020to\u0020\u0024start,\u0020size\u0028\u0029\u0020is\u0020the\nwindow\u0027s\u0020length.\u0020Reads\u0020go\u0020through\u0020the\u0020inner\u0020stream\u0027s\u0020read\u0028\u0029,\u0020so\u0020a\u0020remote\u0020stream\u0020fetches\u0020only\u0020the\u0020window.",
+            "summary": "Reads\u0020go\u0020through\u0020the\u0020inner\u0020read\u0028\u0029,\u0020so\u0020a\u0020remote\u0020stream\u0020fetches\u0020only\u0020the\u0020window.",
             "url": "classes/Flow-Filesystem-Stream-RangeSourceStream.html"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Stream\\RangeSourceStream\u003A\u003A__construct\u0028\u0029",
@@ -2563,7 +2563,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Filesystem\\Telemetry\\FilesystemTelemetryAttributes",
             "name": "FilesystemTelemetryAttributes",
-            "summary": "Flow\u002Dspecific\u0020filesystem\u0020attribute\u0020keys.",
+            "summary": "Custom\u0020keys\u0020only,\u0020under\u0020\u0060flow.filesystem.\u0060\u0020\u0028no\u0020official\u0020convention\u0020exists\u0029.",
             "url": "classes/Flow-Filesystem-Telemetry-FilesystemTelemetryAttributes.html"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Telemetry\\FilesystemTelemetryAttributes\u003A\u003AATTR_BYTES_TOTAL_READ",

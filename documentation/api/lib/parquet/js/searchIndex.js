@@ -878,7 +878,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\DefinitionConverter",
             "name": "DefinitionConverter",
-            "summary": "Converts\u0020definition\u0020levels\u0020to\u0020actual\u0020values.",
+            "summary": "Generates\u0020a\u0020template\u0020per\u0020definition\u0020level\u0020for\u0020performance.",
             "url": "classes/Flow-Parquet-Dremel-ColumnData-DefinitionConverter.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\Dremel\\ColumnData\\DefinitionConverter\u003A\u003AtoValue\u0028\u0029",
@@ -1403,7 +1403,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\Engine\\ArrowExtension\u003A\u003AABI",
             "name": "ABI",
-            "summary": "The\u0020contract\u0020version\u0020this\u0020package\u0020expects\u0020from\u0020arrow\u002Dext,\u0020equal\u0020to\u0020the\u0020extension\u0027s\u0020FLOW_ARROW_ABI.\u0020Both\u0020sides\nchange\u0020together\u0020whenever\u0020a\u0020registered\u0020class\u0020or\u0020interface,\u0020or\u0020the\u0020schema,\u0020options\u0020or\u0020values\u0020crossing\u0020them,\u0020change.",
+            "summary": "Equals\u0020the\u0020extension\u0027s\u0020FLOW_ARROW_ABI\u003B\u0020both\u0020change\u0020together.",
             "url": "classes/Flow-Parquet-Engine-ArrowExtension.html#constant_ABI"
         },                {
             "fqsen": "\\Flow\\Parquet\\Engine\\ArrowExtension\u003A\u003A\u0024loaded",
@@ -1928,7 +1928,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PhysicalIntervals",
             "name": "PhysicalIntervals",
-            "summary": "The\u0020physical\u0020values\u0020whose\u0020decoded\u0020value\u0020satisfies\u0020a\u0020leaf,\u0020as\u0020a\u0020union\u0020of\u0020intervals.\u0020Floats\u0020compare\u0020as\u0020IEEE\u0020754\u0020does\noutside\u0020NaN\u003A\u0020\u002D0.0\u0020equals\u0020\u002B0.0.",
+            "summary": "Floats\u0020compare\u0020as\u0020IEEE\u0020754\u0020outside\u0020NaN\u003A\u0020\u002D0.0\u0020equals\u0020\u002B0.0.",
             "url": "classes/Flow-Parquet-Filter-Binding-PhysicalIntervals.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PhysicalIntervals\u003A\u003A__construct\u0028\u0029",
@@ -2013,7 +2013,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\DecimalPreImage",
             "name": "DecimalPreImage",
-            "summary": "A\u0020DECIMAL\u0020decodes\u0020to\u0020a\u0020float,\u0020exactly\u0020invertible\u0020up\u0020to\u0020precision\u002015\u0020only.\u0020A\u0020byte\u0020decimal\u0027s\u0020edges\u0020are\u00208\u0020big\u002Dendian\nbytes\u003A\u0020the\u0020Decimal\u0020order\u0020sign\u002Dextends\u0020any\u0020width.",
+            "summary": "Float\u0020decode\u0020is\u0020exactly\u0020invertible\u0020only\u0020up\u0020to\u0020precision\u002015\u003B\u0020byte\u0020edges\u0020are\u00208\u0020sign\u002Dextended\u0020big\u002Dendian\u0020bytes.",
             "url": "classes/Flow-Parquet-Filter-Binding-PreImage-DecimalPreImage.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\DecimalPreImage\u003A\u003AforColumn\u0028\u0029",
@@ -2098,7 +2098,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\UnsignedInt64PreImage",
             "name": "UnsignedInt64PreImage",
-            "summary": "UINT_64\u0020decodes\u0020to\u0020a\u0020digit\u0020string\u003B\u0020its\u0020physical\u0020value\u0020is\u0020the\u0020INT64\u0020bit\u0020pattern,\u0020ordered\u0020unsigned.\u0020A\u0020float\u0020compares\nnumerically,\u0020a\u0020fraction\u0020lying\u0020between\u0020two\u0020integers.",
+            "summary": "Physical\u0020value\u0020is\u0020the\u0020INT64\u0020bit\u0020pattern\u0020ordered\u0020unsigned\u003B\u0020decoded\u0020value\u0020is\u0020a\u0020digit\u0020string.",
             "url": "classes/Flow-Parquet-Filter-Binding-PreImage-UnsignedInt64PreImage.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\Filter\\Binding\\PreImage\\UnsignedInt64PreImage\u003A\u003A__construct\u0028\u0029",
@@ -2313,7 +2313,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\BloomEvaluator",
             "name": "BloomEvaluator",
-            "summary": "A\u0020bloom\u0020filter\u0020proves\u0020only\u0020absence\u003A\u0020a\u0020positive\u0020Equal\u0020or\u0020In\u0020leaf\u0020whose\u0020literals\u0020are\u0020all\u0020absent\u0020is\u0020Never,\u0020every\u0020other\nleaf\u0020is\u0020Maybe.\u0020A\u0020row\u0020group\u0027s\u0020filter\u0020is\u0020read\u0020only\u0020for\u0020such\u0020a\u0020leaf.",
+            "summary": "A\u0020bloom\u0020filter\u0020proves\u0020only\u0020absence\u003A\u0020only\u0020positive\u0020Equal\/In\u0020leaves\u0020can\u0020be\u0020Never.",
             "url": "classes/Flow-Parquet-Filter-Evaluation-BloomEvaluator.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\BloomEvaluator\u003A\u003Aevaluate\u0028\u0029",
@@ -2413,7 +2413,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\RowEvaluator",
             "name": "RowEvaluator",
-            "summary": "The\u0020rows\u0020a\u0020filter\u0020is\u0020TRUE\u0020for,\u0020on\u0020undecoded\u0020physical\u0020values\u003A\u0020floats\u0020compare\u0020as\u0020IEEE\u0020754\u0020\u0028NaN\u0020is\u0020false,\u0020\u002D0.0\u0020equals\n\u002B0.0\u0029,\u0020every\u0020other\u0020type\u0020in\u0020its\u0020physical\u0020order.\u0020Not\u0020is\u0020pushed\u0020down\u0020to\u0020the\u0020leaves\u0020as\u0020a\u0020polarity,\u0020so\u0020a\u0020NULL\u0020is\u0020TRUE\u0020in\nneither.",
+            "summary": "Not\u0020is\u0020pushed\u0020to\u0020leaves\u0020as\u0020polarity,\u0020so\u0020NULL\u0020is\u0020TRUE\u0020in\u0020neither\u003B\u0020NaN\u0020is\u0020false.",
             "url": "classes/Flow-Parquet-Filter-Evaluation-RowEvaluator.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\RowEvaluator\u003A\u003Aevaluate\u0028\u0029",
@@ -2518,7 +2518,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\ZoneMap",
             "name": "ZoneMap",
-            "summary": "\u0024min\u0020and\u0020\u0024max\u0020are\u0020decoded\u0020physical\u0020values\u0020the\u0020column\u0020order\u0020trusts,\u0020null\u0020when\u0020there\u0020is\u0020none.\u0020\u0024allNaN\u003A\u0020every\u0020value\nthat\u0020is\u0020not\u0020null\u0020is\u0020NaN.",
+            "summary": "\u0024allNaN\u003A\u0020every\u0020non\u002Dnull\u0020value\u0020is\u0020NaN\u003B\u0020\u0024min\u0020and\u0020\u0024max\u0020are\u0020null\u0020when\u0020the\u0020column\u0020order\u0020trusts\u0020none.",
             "url": "classes/Flow-Parquet-Filter-Evaluation-ZoneMap.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\Filter\\Evaluation\\ZoneMap\u003A\u003A__construct\u0028\u0029",
@@ -3623,7 +3623,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Index\\StreamIndexes",
             "name": "StreamIndexes",
-            "summary": "Reads\u0020an\u0020index\u0020only\u0020when\u0020it\u0020is\u0020asked\u0020for,\u0020once.\u0020The\u0020footer\u0020is\u0020asked\u0020for\u0020each\u0020column\u0027s\u0020chunks\u0020on\u0020its\u0020own\u003A\u0020the\u0020arrow\nengine\u0027s\u0020RowGroupChunks\u0020hold\u0020only\u0020the\u0020columns\u0020they\u0020were\u0020built\u0020for.",
+            "summary": "Footer\u0020is\u0020asked\u0020per\u0020column\u003A\u0020arrow\u0020RowGroupChunks\u0020hold\u0020only\u0020the\u0020columns\u0020they\u0020were\u0020built\u0020for.",
             "url": "classes/Flow-Parquet-ParquetFile-Index-StreamIndexes.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Index\\StreamIndexes\u003A\u003A__construct\u0028\u0029",
@@ -6178,7 +6178,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\Reader\\Pruning\\BloomFilterPruner",
             "name": "BloomFilterPruner",
-            "summary": "Drops\u0020the\u0020row\u0020groups\u0020whose\u0020bloom\u0020filters\u0020prove\u0020no\u0020row\u0020matches.\u0020It\u0020proves\u0020no\u0020match,\u0020so\u0020matched\u0020is\u0020unchanged\u003B\u0020a\u0020group\nthat\u0020selects\u0020no\u0020row,\u0020or\u0020whose\u0020selected\u0020rows\u0020are\u0020all\u0020matched\u0020already,\u0020reads\u0020no\u0020filter.",
+            "summary": "Groups\u0020with\u0020no\u0020selected\u0020or\u0020no\u0020unmatched\u0020rows\u0020read\u0020no\u0020filter.",
             "url": "classes/Flow-Parquet-Reader-Pruning-BloomFilterPruner.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\Reader\\Pruning\\BloomFilterPruner\u003A\u003A__construct\u0028\u0029",
@@ -6193,7 +6193,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\Reader\\Pruning\\PageIndexPruner",
             "name": "PageIndexPruner",
-            "summary": "A\u0020row\u0020group\u0020is\u0020cut\u0020at\u0020the\u0020page\u0020boundaries\u0020of\u0020every\u0020filtered\u0020column\u003B\u0020each\u0020part\u0020is\u0020evaluated\u0020with,\u0020per\u0020column,\u0020the\npage\u0020holding\u0020it.\u0020A\u0020group\u0020where\u0020a\u0020filtered\u0020column\u0020has\u0020no\u0020usable\u0020page\u0020index\u0020is\u0020kept\u0020whole\u003B\u0020a\u0020group\u0020whose\u0020selected\u0020rows\nare\u0020all\u0020matched\u0020already\u0020reads\u0020no\u0020index.",
+            "summary": "A\u0020column\u0020without\u0020a\u0020usable\u0020page\u0020index\u0020keeps\u0020the\u0020group\u0020whole.",
             "url": "classes/Flow-Parquet-Reader-Pruning-PageIndexPruner.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\Reader\\Pruning\\PageIndexPruner\u003A\u003A__construct\u0028\u0029",
@@ -6878,7 +6878,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\Thrift\\MemoryBuffer",
             "name": "MemoryBuffer",
-            "summary": "A\u0020memory\u0020buffer\u0020is\u0020a\u0020transport\u0020that\u0020simply\u0020reads\u0020from\u0020and\u0020writes\u0020to\u0020an\nin\u002Dmemory\u0020string\u0020buffer.\u0020Anytime\u0020you\u0020call\u0020write\u0020on\u0020it,\u0020the\u0020data\u0020is\u0020simply\nplaced\u0020into\u0020a\u0020buffer,\u0020and\u0020anytime\u0020you\u0020call\u0020read,\u0020data\u0020is\u0020read\u0020from\u0020that\nbuffer.",
+            "summary": "",
             "url": "classes/Flow-Parquet-Thrift-MemoryBuffer.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\Thrift\\MemoryBuffer\u003A\u003A__construct\u0028\u0029",
@@ -11073,7 +11073,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsTruncation",
             "name": "StatisticsTruncation",
-            "summary": "arrow\u002Drs\u002060\u0020column\/writer\/mod.rs\u0020truncate_min_value\u0020\/\u0020truncate_max_value.\u0020A\u0020truncated\u0020bound\u0020is\u0020not\u0020exact\u003B\u0020a\u0020bound\nthat\u0020cannot\u0020be\u0020truncated\u0020\u0028or\u0020whose\u0020increment\u0020fails\u0029\u0020is\u0020returned\u0020as\u0020given.",
+            "summary": "Port\u0020of\u0020arrow\u002Drs\u002060\u0020truncate_min_value\/truncate_max_value.",
             "url": "classes/Flow-Parquet-Writer-StatisticsTruncation.html"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\StatisticsTruncation\u003A\u003A__construct\u0028\u0029",

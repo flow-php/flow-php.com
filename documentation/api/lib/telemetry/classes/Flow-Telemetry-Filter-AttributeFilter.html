@@ -122,26 +122,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeFilter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-filter-attributefilter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeFilter.php">AttributeFilter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Decides whether a telemetry signal should be dropped based on its attributes.</p>
+            <p class="phpdocumentor-summary">Matcher runs per source, OR-combined, then the exclude polarity is applied once.</p>
 
 
-    <section class="phpdocumentor-description"><p>Evaluates a single root <a href="classes/Flow-Telemetry-Filter-Matcher.html"><abbr title="\Flow\Telemetry\Filter\Matcher">Matcher</abbr></a> (compose them with <a href="classes/Flow-Telemetry-Filter-All.html"><abbr title="\Flow\Telemetry\Filter\All">All</abbr></a>, <a href="classes/Flow-Telemetry-Filter-Any.html"><abbr title="\Flow\Telemetry\Filter\Any">Any</abbr></a>
-and <a href="classes/Flow-Telemetry-Filter-Not.html"><abbr title="\Flow\Telemetry\Filter\Not">Not</abbr></a>) against one or more <a href="classes/Flow-Telemetry-Filter-AttributeSource.html"><abbr title="\Flow\Telemetry\Filter\AttributeSource">AttributeSource</abbr></a>s. The matcher is run
-independently against each configured source and the results are OR-combined: a
-signal &quot;matches&quot; when the matcher matches in ANY of the sources. The polarity
-($exclude) is then applied once to that combined result - when the matcher
-matches, the signal is dropped (exclude, the default) or kept (when exclude is
-false, i.e. keep ONLY matching signals).</p>
-<p>The whole decision is baked into a single cached closure on construction: the raw
-matcher is compiled once (see <a href="classes/Flow-Telemetry-Filter-CompiledMatcher.html"><abbr title="\Flow\Telemetry\Filter\CompiledMatcher">CompiledMatcher</abbr></a>) and wrapped with the
-per-source OR and the polarity. Processors fetch it via <abbr title="\Flow\Telemetry\Filter\self::dropFunction()">self::dropFunction()</abbr>
-and invoke it directly with one <a href="classes/Flow-Telemetry-Attributes.html"><abbr title="\Flow\Telemetry\Attributes">Attributes</abbr></a> per source, avoiding a
-method-call layer on the hot path.</p>
-</section>
 
 
 
@@ -220,7 +207,7 @@ method-call layer on the hot path.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeFilter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-filter-attributefilter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeFilter.php">AttributeFilter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -304,7 +291,7 @@ defaults to 0700 - owner only, since the directory holds <code class="prettyprin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeFilter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-filter-attributefilter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeFilter.php">AttributeFilter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">103</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -347,7 +334,7 @@ method-call layer on the hot path.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeFilter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-filter-attributefilter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeFilter.php">AttributeFilter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
@@ -398,7 +385,7 @@ method-call layer on the hot path.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeFilter.php"><a href="files/src-lib-telemetry-src-flow-telemetry-filter-attributefilter.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Filter/AttributeFilter.php">AttributeFilter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 

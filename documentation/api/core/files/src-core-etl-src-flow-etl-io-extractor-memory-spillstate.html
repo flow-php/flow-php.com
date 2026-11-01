@@ -127,9 +127,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-ETL-IO-Extractor-Memory-SpillState.html"><abbr title="\Flow\ETL\IO\Extractor\Memory\SpillState">SpillState</abbr></a></dt><dd>The lifecycle of one SpilledRows. Split into states rather than carried as booleans because the
-reachable-but-unnamed fourth state - &quot;spilled K of N rows, then the source threw&quot; - is where a bool
-pair silently re-streams a half-consumed source and loses rows.</dd></dl>
+            <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-ETL-IO-Extractor-Memory-SpillState.html"><abbr title="\Flow\ETL\IO\Extractor\Memory\SpillState">SpillState</abbr></a></dt><dd>Not a bool pair: &quot;spilled K of N, then the source threw&quot; must never re-stream the source.</dd></dl>
 
 
 

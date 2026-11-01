@@ -126,30 +126,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/GitDetector.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource-detector-gitdetector.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/GitDetector.php">GitDetector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Detects Git (VCS) information by shelling out to the `git` binary.</p>
+            <p class="phpdocumentor-summary">Empty Resource without a git binary or work tree.</p>
 
 
-    <section class="phpdocumentor-description"><p>Detects the following attributes (OpenTelemetry vcs.* semantic conventions):</p>
-<ul>
-<li>vcs.ref.head.revision: The current commit SHA</li>
-<li>vcs.ref.head.name: The current branch or tag name (omitted when HEAD is detached on an untagged commit)</li>
-<li>vcs.ref.head.type: The reference type (&quot;branch&quot; or &quot;tag&quot;)</li>
-<li>vcs.repository.url.full: The remote &quot;origin&quot; URL (with any embedded credentials stripped)</li>
-</ul>
-<p>Requires the <code class="prettyprint">git</code> binary to be available and the working directory (or the
-provided one) to be inside a Git work tree. When neither is the case, an empty
-Resource is returned.</p>
-<p>Example output:</p>
-<pre class="prettyprint"><code class="prettyprint">vcs.ref.head.revision: 9d59409acf479dfa0df1c3dad539b4825a8d2bcf
-vcs.ref.head.name: main
-vcs.ref.head.type: branch
-vcs.repository.url.full: https://github.com/flow-php/flow.git
-</code></pre>
-</section>
 
 
 
@@ -162,7 +145,7 @@ vcs.repository.url.full: https://github.com/flow-php/flow.git
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Resource-ResourceDetector.html"><abbr title="\Flow\Telemetry\Resource\ResourceDetector">ResourceDetector</abbr></a></dt><dd>Interface for detecting resource attributes from the environment.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Resource-ResourceDetector.html"><abbr title="\Flow\Telemetry\Resource\ResourceDetector">ResourceDetector</abbr></a></dt><dd>Return an empty Resource when nothing is detected.</dd>    </dl>
 
 
 
@@ -218,7 +201,7 @@ vcs.repository.url.full: https://github.com/flow-php/flow.git
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/GitDetector.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource-detector-gitdetector.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/GitDetector.php">GitDetector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -269,7 +252,7 @@ vcs.repository.url.full: https://github.com/flow-php/flow.git
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/GitDetector.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource-detector-gitdetector.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/GitDetector.php">GitDetector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 

@@ -128,20 +128,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/ConsoleFlushSubscriber.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-console-consoleflushsubscriber.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/ConsoleFlushSubscriber.php">ConsoleFlushSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Drains buffered telemetry when a console command terminates.</p>
+            <p class="phpdocumentor-summary">Flushes, never shuts down: the command may be nested or inside a worker; shutdown runs at process end.</p>
 
 
-    <section class="phpdocumentor-description"><p>Terminate is only a flush point - it never shuts telemetry down, because
-the terminating command is not necessarily the last work of the process:
-it may be a command nested inside another command via Application::run(),
-or a message handler's sub-command inside a long-running messenger worker.
-Transport shutdown happens once, at real process end, through the shutdown
-function registered by Telemetry::registerShutdownFunction().</p>
-</section>
 
 
 
@@ -215,7 +208,7 @@ function registered by Telemetry::registerShutdownFunction().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/ConsoleFlushSubscriber.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-console-consoleflushsubscriber.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/ConsoleFlushSubscriber.php">ConsoleFlushSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -266,7 +259,7 @@ function registered by Telemetry::registerShutdownFunction().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/ConsoleFlushSubscriber.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-console-consoleflushsubscriber.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/ConsoleFlushSubscriber.php">ConsoleFlushSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -304,7 +297,7 @@ function registered by Telemetry::registerShutdownFunction().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/ConsoleFlushSubscriber.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-console-consoleflushsubscriber.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/ConsoleFlushSubscriber.php">ConsoleFlushSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 

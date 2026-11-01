@@ -122,20 +122,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/MetricLimits.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-metriclimits.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/MetricLimits.php">MetricLimits.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Configuration for metric cardinality limits.</p>
+            <p class="phpdocumentor-summary">Metrics are exempt from attribute count/length limits (OTel); only cardinality is limited.</p>
 
 
-    <section class="phpdocumentor-description"><p>Per OpenTelemetry Metrics SDK specification, metrics need cardinality limits
-to prevent memory exhaustion from unbounded unique attribute combinations.</p>
-<p>When the cardinality limit is exceeded, new attribute combinations are
-redirected to an overflow aggregator identified by the OVERFLOW_ATTRIBUTE.</p>
-<p>Note: Unlike spans and logs, metrics are EXEMPT from attribute count and
-value length limits per the OTel specification. Only cardinality is limited.</p>
-</section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -172,7 +165,7 @@ value length limits per the OTel specification. Only cardinality is limited.</p>
     <span>
         &nbsp;: string&nbsp;= &#039;otel.metric.overflow&#039;                            </span>
 </dt>
-<dd>Attribute key used to identify overflow aggregations.</dd>
+<dd>Set to true on the synthetic data point that absorbs measurements past the cardinality limit.</dd>
 
     </dl>
 
@@ -238,11 +231,11 @@ value length limits per the OTel specification. Only cardinality is limited.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/MetricLimits.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-metriclimits.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/MetricLimits.php">MetricLimits.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Attribute key used to identify overflow aggregations.</p>
+        <p class="phpdocumentor-summary">Set to true on the synthetic data point that absorbs measurements past the cardinality limit.</p>
 
     
     <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -253,10 +246,7 @@ value length limits per the OTel specification. Only cardinality is limited.</p>
 </code>
 
 
-        <section class="phpdocumentor-description"><p>When cardinality limit is exceeded, measurements are aggregated
-into a synthetic data point with this attribute set to true.</p>
-</section>
-
+    
     
     
 
@@ -288,7 +278,7 @@ into a synthetic data point with this attribute set to true.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/MetricLimits.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-metriclimits.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/MetricLimits.php">MetricLimits.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -330,7 +320,7 @@ into a synthetic data point with this attribute set to true.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/MetricLimits.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-metriclimits.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/MetricLimits.php">MetricLimits.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -376,7 +366,7 @@ into a synthetic data point with this attribute set to true.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/MetricLimits.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-metriclimits.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/MetricLimits.php">MetricLimits.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -415,7 +405,7 @@ into a synthetic data point with this attribute set to true.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Meter/MetricLimits.php"><a href="files/src-lib-telemetry-src-flow-telemetry-meter-metriclimits.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Meter/MetricLimits.php">MetricLimits.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 

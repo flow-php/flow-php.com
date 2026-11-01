@@ -126,35 +126,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/CachingDetector.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource-detector-cachingdetector.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/CachingDetector.php">CachingDetector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Decorator that caches resource detection results to a file.</p>
+            <p class="phpdocumentor-summary">The file cache never expires: wrap only runtime-stable detection.</p>
 
 
-    <section class="phpdocumentor-description"><p>Wraps another detector and caches its results. On subsequent calls,
-if the cache file exists, it returns the cached resource instead of
-running detection again. This is useful for expensive detection
-operations that don't change during runtime.</p>
-<p>The cache is serialized using PHP's serialize/unserialize functions.</p>
-<p>Example usage:</p>
-<pre class="prettyprint"><code class="language-php">// Cache default detectors to system temp directory
-$detector = new CachingDetector(
-    new ChainDetector(
-        new OsDetector(),
-        new HostDetector(),
-        new ProcessDetector(),
-    ),
-);
-
-// Cache to custom path
-$detector = new CachingDetector(
-    new ChainDetector(...$detectors),
-    '/var/cache/app/telemetry_resource.cache',
-);
-</code></pre>
-</section>
 
 
 
@@ -167,7 +145,7 @@ $detector = new CachingDetector(
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Resource-ResourceDetector.html"><abbr title="\Flow\Telemetry\Resource\ResourceDetector">ResourceDetector</abbr></a></dt><dd>Interface for detecting resource attributes from the environment.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Resource-ResourceDetector.html"><abbr title="\Flow\Telemetry\Resource\ResourceDetector">ResourceDetector</abbr></a></dt><dd>Return an empty Resource when nothing is detected.</dd>    </dl>
 
 
 
@@ -223,7 +201,7 @@ $detector = new CachingDetector(
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/CachingDetector.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource-detector-cachingdetector.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/CachingDetector.php">CachingDetector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -274,7 +252,7 @@ $detector = new CachingDetector(
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/CachingDetector.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource-detector-cachingdetector.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource/Detector/CachingDetector.php">CachingDetector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 

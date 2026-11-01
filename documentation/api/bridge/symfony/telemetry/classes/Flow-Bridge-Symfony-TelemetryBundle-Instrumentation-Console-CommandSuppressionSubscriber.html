@@ -126,24 +126,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/CommandSuppressionSubscriber.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-console-commandsuppressionsubscriber.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/CommandSuppressionSubscriber.php">CommandSuppressionSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Suppresses tracing for the entire execution of the configured commands (long-running worker commands),
-so their between-work activity (transport polls, idle-tick co-listeners, …) does not surface. A
-suppression flag is attached to the telemetry context when a matching command starts and detached when it
-terminates; the SuppressingSampler then drops any span created while it is set. Instrumentation that must
-still be traced lifts the suppression around its own work (e.g. the messenger middleware per message).</p>
+            <p class="phpdocumentor-summary">Priorities wrap ConsoleSpanSubscriber (±10000); scopes stack per COMMAND/TERMINATE for nested commands.</p>
 
 
-    <section class="phpdocumentor-description"><p>The flag is attached above ConsoleSpanSubscriber's COMMAND priority (10000) so the command's own console
-span is created non-recording, and detached below its TERMINATE priority (-10000) so that span completes
-first.</p>
-<p>Scopes are stacked per COMMAND/TERMINATE pair (Symfony dispatches them balanced, also for commands nested
-via Application::run()), so a nested command's TERMINATE detaches its own entry instead of tearing down
-the suppression of the enclosing command.</p>
-</section>
 
 
 
@@ -223,7 +212,7 @@ the suppression of the enclosing command.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/CommandSuppressionSubscriber.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-console-commandsuppressionsubscriber.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/CommandSuppressionSubscriber.php">CommandSuppressionSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -274,7 +263,7 @@ the suppression of the enclosing command.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/CommandSuppressionSubscriber.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-console-commandsuppressionsubscriber.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/CommandSuppressionSubscriber.php">CommandSuppressionSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -312,7 +301,7 @@ the suppression of the enclosing command.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/CommandSuppressionSubscriber.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-console-commandsuppressionsubscriber.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/CommandSuppressionSubscriber.php">CommandSuppressionSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -356,7 +345,7 @@ the suppression of the enclosing command.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/CommandSuppressionSubscriber.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-instrumentation-console-commandsuppressionsubscriber.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Instrumentation/Console/CommandSuppressionSubscriber.php">CommandSuppressionSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 

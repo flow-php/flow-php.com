@@ -123,18 +123,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/ErrorHandler/StreamHandler.php"><a href="files/src-lib-telemetry-src-flow-telemetry-errorhandler-streamhandler.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/ErrorHandler/StreamHandler.php">StreamHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Appends formatted Throwables (one per line) to a file path or php:// stream
-wrapper. The stream is opened lazily on the first handle() call and reused
-across subsequent calls; __destruct() closes it.</p>
+            <p class="phpdocumentor-summary">Lines are LOCK_EX&#039;d best-effort; TTYs and pipes cannot lock.</p>
 
 
-    <section class="phpdocumentor-description"><p>Concurrent writers acquire LOCK_EX around fwrite so lines never interleave;
-flock() on TTYs and pipes returns false silently — best-effort.</p>
-</section>
 
 
 
@@ -147,7 +142,7 @@ flock() on TTYs and pipes returns false silently — best-effort.</p>
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-ErrorHandler-ErrorHandler.html"><abbr title="\Flow\Telemetry\ErrorHandler\ErrorHandler">ErrorHandler</abbr></a></dt><dd>Receives Throwables raised inside the SDK at runtime.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-ErrorHandler-ErrorHandler.html"><abbr title="\Flow\Telemetry\ErrorHandler\ErrorHandler">ErrorHandler</abbr></a></dt><dd>Implementations must never throw: the SDK never throws to user code (OTel).</dd>    </dl>
 
 
 
@@ -208,7 +203,7 @@ flock() on TTYs and pipes returns false silently — best-effort.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/ErrorHandler/StreamHandler.php"><a href="files/src-lib-telemetry-src-flow-telemetry-errorhandler-streamhandler.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/ErrorHandler/StreamHandler.php">StreamHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -273,7 +268,7 @@ flock() on TTYs and pipes returns false silently — best-effort.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/ErrorHandler/StreamHandler.php"><a href="files/src-lib-telemetry-src-flow-telemetry-errorhandler-streamhandler.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/ErrorHandler/StreamHandler.php">StreamHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -307,7 +302,7 @@ flock() on TTYs and pipes returns false silently — best-effort.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/ErrorHandler/StreamHandler.php"><a href="files/src-lib-telemetry-src-flow-telemetry-errorhandler-streamhandler.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/ErrorHandler/StreamHandler.php">StreamHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 

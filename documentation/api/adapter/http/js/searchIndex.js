@@ -128,7 +128,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\HttpDecoder",
             "name": "HttpDecoder",
-            "summary": "A\u0020row\u0020carries\u0020the\u0020body\u0020as\u0020raw\u0020text,\u0020so\u0020response_body\u0020holds\u0020one\u0020type\u0020whatever\u0020the\u0020content\u0020type\u0020is.",
+            "summary": "Rows\u0020carry\u0020the\u0020raw\u0020body\u0020so\u0020response_body\u0020has\u0020one\u0020type\u003B\u0020pagination\u0020uses\u0020structuredBody\u0028\u0029.",
             "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-HttpDecoder.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\HttpDecoder\u003A\u003Adecode\u0028\u0029",
@@ -228,7 +228,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\LinkHeaderParser",
             "name": "LinkHeaderParser",
-            "summary": "Minimal\u0020RFC\u00208288\u0020\u0060Link\u0060\u0020header\u0020parser.\u0020Malformed\u0020input\u0020yields\u0020no\u0020match\u0020\u0028never\u0020throws\u0029.",
+            "summary": "RFC\u00208288\u003B\u0020malformed\u0020input\u0020yields\u0020no\u0020match,\u0020never\u0020throws.",
             "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-LinkHeaderParser.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\LinkHeaderParser\u003A\u003Anext\u0028\u0029",
@@ -278,7 +278,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Paginator",
             "name": "Paginator",
-            "summary": "Orchestrates\u0020a\u0020\u007B\u0040see\u0020PaginationStrategy\u007D\u003A\u0020stop\u0020conditions,\u0020\u0060\u003E\u003D400\u0060\u0020handling,\u0020identical\u002Drequest\u0020loop\u0020guard\u0020and\npage\u002Dstate\u0020advancement.\u0020Implement\u0020\u007B\u0040see\u0020PaginationStrategy\u007D\u0020to\u0020add\u0020a\u0020new\u0020pagination\u0020style\u003B\u0020drop\u0020to\n\u007B\u0040see\u0020\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\NextRequestFactory\u007D\u0020for\u0020fully\u0020bespoke\u0020request\u0020derivation.",
+            "summary": "",
             "url": "classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Paginator.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Http\\IO\\Extractor\\Pagination\\Paginator\u003A\u003A__construct\u0028\u0029",

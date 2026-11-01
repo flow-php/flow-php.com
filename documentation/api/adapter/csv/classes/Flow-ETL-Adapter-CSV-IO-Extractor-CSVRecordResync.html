@@ -125,19 +125,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVRecordResync.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-csvrecordresync.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVRecordResync.php">CSVRecordResync.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">A cut may land inside a quoted value, so a newline is only a candidate. A candidate is accepted when
-$confirmations consecutive records each tokenise to $expectedFields fields - Polars&#039; next_line_position test. Its
-naive sibling, which trusts the first newline, is documented there as &quot;Does not check for new line characters
-embedded in String fields&quot; and is deliberately not used.</p>
+            <p class="phpdocumentor-summary">A newline after a cut is accepted once $confirmations consecutive records tokenise to $expectedFields fields.</p>
 
 
-    <section class="phpdocumentor-description"><p>A CSV whose QUOTED CONTENT contains $confirmations consecutive lines that tokenise to the expected field count can
-still defeat this. DuckDB and Polars accept the same risk.</p>
-</section>
 
 
 
@@ -210,7 +204,7 @@ confirms when at least one record was read and every one of them matched.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVRecordResync.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-csvrecordresync.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVRecordResync.php">CSVRecordResync.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -268,7 +262,7 @@ confirms when at least one record was read and every one of them matched.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVRecordResync.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-csvrecordresync.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVRecordResync.php">CSVRecordResync.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -325,7 +319,7 @@ one by definition. Monotonic in $from, so neighbouring windows cut at after(offs
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVRecordResync.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-csvrecordresync.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/CSVRecordResync.php">CSVRecordResync.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">124</span>
+    <span class="phpdocumentor-element-found-in__line">118</span>
 
     </aside>
 

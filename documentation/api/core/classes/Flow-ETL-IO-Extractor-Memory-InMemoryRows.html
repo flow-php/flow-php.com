@@ -497,7 +497,7 @@ samples merged in order are the unit&#039;s sample.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">sniff</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$unit</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowBudget</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-IO-Inference-Sample.html"><abbr title="\Flow\ETL\IO\Inference\Sample">Sample</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">sniff</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$unit</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowBudget</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-IO-Inference-Sample.html"><abbr title="\Flow\ETL\IO\Inference\Sample">Sample</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -514,10 +514,10 @@ samples merged in order are the unit&#039;s sample.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$rowBudget</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>rows to observe from this unit, 0 for none, -1 for all of them</p>
+                    <section class="phpdocumentor-description"><p>rows to observe from this unit, 0 for none, null for every row</p>
 </section>
 
             </dd>

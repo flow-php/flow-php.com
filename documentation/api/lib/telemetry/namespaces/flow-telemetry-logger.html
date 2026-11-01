@@ -111,9 +111,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Logger-LogMiddleware.html"><abbr title="\Flow\Telemetry\Logger\LogMiddleware">LogMiddleware</abbr></a></dt><dd>A chainable log-processing step inside a {@see Processor\PipelineLogProcessor}.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Logger-LogProcessor.html"><abbr title="\Flow\Telemetry\Logger\LogProcessor">LogProcessor</abbr></a></dt><dd>Interface for processing log records.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Logger-LogSink.html"><abbr title="\Flow\Telemetry\Logger\LogSink">LogSink</abbr></a></dt><dd>A terminal {@see LogProcessor} - the leaf/final step of a
-{@see Processor\PipelineLogProcessor}, which exports (or otherwise consumes)
-the entries that survive the middleware chain.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Logger-LogMiddleware.html"><abbr title="\Flow\Telemetry\Logger\LogMiddleware">LogMiddleware</abbr></a></dt><dd>Stateless; return a new entry to enrich, null to drop.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Logger-LogProcessor.html"><abbr title="\Flow\Telemetry\Logger\LogProcessor">LogProcessor</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Logger-LogSink.html"><abbr title="\Flow\Telemetry\Logger\LogSink">LogSink</abbr></a></dt><dd>Marker so middleware or a pipeline cannot be wired into a pipeline&#039;s sink slot.</dd>    </dl>
 
     <h4 id="toc-classes">
         Classes
@@ -121,7 +119,7 @@ the entries that survive the middleware chain.</dd>    </dl>
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Telemetry-Logger-LogEntry.html"><abbr title="\Flow\Telemetry\Logger\LogEntry">LogEntry</abbr></a></dt><dd>Complete log entry ready for processing.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Telemetry-Logger-Logger.html"><abbr title="\Flow\Telemetry\Logger\Logger">Logger</abbr></a></dt><dd>Logger implementation for emitting log records.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Telemetry-Logger-LoggerProvider.html"><abbr title="\Flow\Telemetry\Logger\LoggerProvider">LoggerProvider</abbr></a></dt><dd>Entry point for the logging API.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Telemetry-Logger-LogRecord.html"><abbr title="\Flow\Telemetry\Logger\LogRecord">LogRecord</abbr></a></dt><dd>Value object representing a log record.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Telemetry-Logger-LogRecordLimits.html"><abbr title="\Flow\Telemetry\Logger\LogRecordLimits">LogRecordLimits</abbr></a></dt><dd>Configuration limits for log record data.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Telemetry-Logger-LogEntry.html"><abbr title="\Flow\Telemetry\Logger\LogEntry">LogEntry</abbr></a></dt><dd>LogRecord plus scope, span context and timestamp resolved at emit.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Telemetry-Logger-Logger.html"><abbr title="\Flow\Telemetry\Logger\Logger">Logger</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Telemetry-Logger-LoggerProvider.html"><abbr title="\Flow\Telemetry\Logger\LoggerProvider">LoggerProvider</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Telemetry-Logger-LogRecord.html"><abbr title="\Flow\Telemetry\Logger\LogRecord">LogRecord</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Telemetry-Logger-LogRecordLimits.html"><abbr title="\Flow\Telemetry\Logger\LogRecordLimits">LogRecordLimits</abbr></a></dt>    </dl>
 
     <h4 id="namespaces">
         Namespaces
@@ -140,7 +138,7 @@ the entries that survive the middleware chain.</dd>    </dl>
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-Telemetry-Logger-Severity.html"><abbr title="\Flow\Telemetry\Logger\Severity">Severity</abbr></a></dt><dd>Log severity levels aligned with OpenTelemetry ranges.</dd></dl>
+            <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-Telemetry-Logger-Severity.html"><abbr title="\Flow\Telemetry\Logger\Severity">Severity</abbr></a></dt></dl>
 
 
 

@@ -127,18 +127,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/ProfilerStoreWorkerResetSubscriber.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-profiler-profilerstoreworkerresetsubscriber.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/ProfilerStoreWorkerResetSubscriber.php">ProfilerStoreWorkerResetSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">The profiler store accumulates every signal teed into it and is normally emptied by the data collector
-between HTTP requests. A messenger worker is a single long-lived process with no request cycle, so the
-collector never resets the store and it grows until the process runs out of memory. Resetting it after
-each worker cycle bounds it to a single message, mirroring how Symfony resets data collectors per message.</p>
+            <p class="phpdocumentor-summary">Workers have no request cycle, so the store is reset per message or it grows unbounded.</p>
 
 
-    <section class="phpdocumentor-description"><p>The event only fires when symfony/messenger is installed; otherwise this subscriber is inert.</p>
-</section>
 
 
 
@@ -212,7 +207,7 @@ each worker cycle bounds it to a single message, mirroring how Symfony resets da
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/ProfilerStoreWorkerResetSubscriber.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-profiler-profilerstoreworkerresetsubscriber.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/ProfilerStoreWorkerResetSubscriber.php">ProfilerStoreWorkerResetSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -256,7 +251,7 @@ each worker cycle bounds it to a single message, mirroring how Symfony resets da
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/ProfilerStoreWorkerResetSubscriber.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-profiler-profilerstoreworkerresetsubscriber.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/ProfilerStoreWorkerResetSubscriber.php">ProfilerStoreWorkerResetSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
@@ -294,7 +289,7 @@ each worker cycle bounds it to a single message, mirroring how Symfony resets da
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/ProfilerStoreWorkerResetSubscriber.php"><a href="files/src-bridge-symfony-telemetry-bundle-src-flow-bridge-symfony-telemetrybundle-profiler-profilerstoreworkerresetsubscriber.html"><abbr title="src/bridge/symfony/telemetry-bundle/src/Flow/Bridge/Symfony/TelemetryBundle/Profiler/ProfilerStoreWorkerResetSubscriber.php">ProfilerStoreWorkerResetSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 

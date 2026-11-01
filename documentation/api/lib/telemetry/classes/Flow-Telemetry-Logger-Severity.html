@@ -116,26 +116,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Severity.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-severity.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Severity.php">Severity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">7</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Log severity levels aligned with OpenTelemetry ranges.</p>
-
         
-            <section class="phpdocumentor-description"><p>Severity indicates the importance and urgency of a log record.
-These levels align with OpenTelemetry's severity number ranges,
-enabling proper translation to OTEL protocol.</p>
-<p>Example usage:</p>
-<pre class="prettyprint"><code class="language-php">$logger-&gt;emit(Severity::INFO, 'Processing started');
-
-// Check severity level
-if ($severity-&gt;isAtLeast(Severity::WARN)) {
-    // Handle warning or higher
-}
-</code></pre>
-</section>
-
+        
+        
         
 
 
@@ -158,42 +145,42 @@ if ($severity-&gt;isAtLeast(Severity::WARN)) {
     <span>
                 &nbsp;= 5                    </span>
 </dt>
-<dd>Debugging information.</dd>
+<dd>Diagnostic information for development; OTEL severity 5-8.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -case -">
     <a class="" href="classes/Flow-Telemetry-Logger-Severity.html#enumcase_ERROR">ERROR</a>
     <span>
                 &nbsp;= 17                    </span>
 </dt>
-<dd>Error messages.</dd>
+<dd>An error the application survives; OTEL severity 17-20.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -case -">
     <a class="" href="classes/Flow-Telemetry-Logger-Severity.html#enumcase_FATAL">FATAL</a>
     <span>
                 &nbsp;= 21                    </span>
 </dt>
-<dd>Fatal/critical messages.</dd>
+<dd>An error that will likely stop the application; OTEL severity 21-24.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -case -">
     <a class="" href="classes/Flow-Telemetry-Logger-Severity.html#enumcase_INFO">INFO</a>
     <span>
                 &nbsp;= 9                    </span>
 </dt>
-<dd>Informational messages.</dd>
+<dd>Normal operational information; OTEL severity 9-12.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -case -">
     <a class="" href="classes/Flow-Telemetry-Logger-Severity.html#enumcase_TRACE">TRACE</a>
     <span>
                 &nbsp;= 1                    </span>
 </dt>
-<dd>Finest-grained debugging information.</dd>
+<dd>Finest-grained diagnostics; OTEL severity 1-4.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -case -">
     <a class="" href="classes/Flow-Telemetry-Logger-Severity.html#enumcase_WARN">WARN</a>
     <span>
                 &nbsp;= 13                    </span>
 </dt>
-<dd>Warning messages.</dd>
+<dd>A potentially harmful situation that does not stop the application; OTEL severity 13-16.</dd>
 
     </dl>
 
@@ -242,18 +229,14 @@ if ($severity-&gt;isAtLeast(Severity::WARN)) {
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Severity.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-severity.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Severity.php">Severity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Debugging information.</p>
+        <p class="phpdocumentor-summary">Diagnostic information for development; OTEL severity 5-8.</p>
 
     
-        <section class="phpdocumentor-description"><p>Use for diagnostic information useful during development
-and debugging sessions.
-OTEL severity range: 5-8</p>
-</section>
-
+    
     
     
 
@@ -273,18 +256,14 @@ OTEL severity range: 5-8</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Severity.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-severity.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Severity.php">Severity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Error messages.</p>
+        <p class="phpdocumentor-summary">An error the application survives; OTEL severity 17-20.</p>
 
     
-        <section class="phpdocumentor-description"><p>Use when an error occurred but the application can continue
-running.
-OTEL severity range: 17-20</p>
-</section>
-
+    
     
     
 
@@ -304,18 +283,14 @@ OTEL severity range: 17-20</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Severity.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-severity.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Severity.php">Severity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Fatal/critical messages.</p>
+        <p class="phpdocumentor-summary">An error that will likely stop the application; OTEL severity 21-24.</p>
 
     
-        <section class="phpdocumentor-description"><p>Use for severe errors that will likely cause the application
-to terminate or become unusable.
-OTEL severity range: 21-24</p>
-</section>
-
+    
     
     
 
@@ -335,18 +310,14 @@ OTEL severity range: 21-24</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Severity.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-severity.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Severity.php">Severity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Informational messages.</p>
+        <p class="phpdocumentor-summary">Normal operational information; OTEL severity 9-12.</p>
 
     
-        <section class="phpdocumentor-description"><p>Use for general operational information about the application's
-normal behavior.
-OTEL severity range: 9-12</p>
-</section>
-
+    
     
     
 
@@ -366,18 +337,14 @@ OTEL severity range: 9-12</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Severity.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-severity.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Severity.php">Severity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Finest-grained debugging information.</p>
+        <p class="phpdocumentor-summary">Finest-grained diagnostics; OTEL severity 1-4.</p>
 
     
-        <section class="phpdocumentor-description"><p>Use for very detailed diagnostic information, typically only
-enabled during development or troubleshooting.
-OTEL severity range: 1-4</p>
-</section>
-
+    
     
     
 
@@ -397,18 +364,14 @@ OTEL severity range: 1-4</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Severity.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-severity.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Severity.php">Severity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Warning messages.</p>
+        <p class="phpdocumentor-summary">A potentially harmful situation that does not stop the application; OTEL severity 13-16.</p>
 
     
-        <section class="phpdocumentor-description"><p>Use for potentially harmful situations that don't prevent
-the application from functioning.
-OTEL severity range: 13-16</p>
-</section>
-
+    
     
     
 
@@ -436,7 +399,7 @@ OTEL severity range: 13-16</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Severity.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-severity.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Severity.php">Severity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -493,7 +456,7 @@ OTEL severity range: 13-16</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Logger/Severity.php"><a href="files/src-lib-telemetry-src-flow-telemetry-logger-severity.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Logger/Severity.php">Severity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">98</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 

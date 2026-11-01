@@ -109,29 +109,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource/ResourceDetector.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource-resourcedetector.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource/ResourceDetector.php">ResourceDetector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Interface for detecting resource attributes from the environment.</p>
+            <p class="phpdocumentor-summary">Return an empty Resource when nothing is detected.</p>
 
 
-    <section class="phpdocumentor-description"><p>Resource detectors automatically discover information about the entity
-producing telemetry (such as OS, host, process, service information).
-Multiple detectors can be chained together using ChainDetector.</p>
-<p>Implementations should return a Resource with detected attributes,
-or an empty Resource if detection fails or produces no data.</p>
-<p>Example usage:</p>
-<pre class="prettyprint"><code class="language-php">$detector = new ChainDetector(
-    new OsDetector(),
-    new HostDetector(),
-    new ProcessDetector(),
-    new EnvironmentDetector(),
-);
-
-$resource = $detector-&gt;detect();
-</code></pre>
-</section>
 
 
 
@@ -188,7 +172,7 @@ $resource = $detector-&gt;detect();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Resource/ResourceDetector.php"><a href="files/src-lib-telemetry-src-flow-telemetry-resource-resourcedetector.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Resource/ResourceDetector.php">ResourceDetector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 

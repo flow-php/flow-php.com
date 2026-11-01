@@ -124,32 +124,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/psr7/telemetry/src/Flow/Bridge/Psr7/Telemetry/ResponseCarrier.php"><a href="files/src-bridge-psr7-telemetry-src-flow-bridge-psr7-telemetry-responsecarrier.html"><abbr title="src/bridge/psr7/telemetry/src/Flow/Bridge/Psr7/Telemetry/ResponseCarrier.php">ResponseCarrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Read-write carrier backed by PSR-7 ResponseInterface.</p>
+            <p class="phpdocumentor-summary">PSR-7 is immutable: call unwrap() after set() to get the modified response.</p>
 
 
-    <section class="phpdocumentor-description"><p>Reads and writes context to HTTP response headers.
-Due to PSR-7's immutability, use unwrap() to retrieve
-the modified response after calling set().</p>
-<p>Example usage:</p>
-<pre class="prettyprint"><code class="language-php">$propagator = new CompositePropagator([
-    new W3CTraceContext(),
-    new W3CBaggage(),
-]);
-
-$carrier = new ResponseCarrier($response);
-$propagator-&gt;inject($spanContext, $carrier);
-$response = $carrier-&gt;unwrap(); // Get modified response
-
-// Or with fluent chaining
-$response = (new ResponseCarrier($response))
-    -&gt;set('X-Custom', 'value')
-    -&gt;unwrap();
-</code></pre>
-</section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -242,7 +223,7 @@ $response = (new ResponseCarrier($response))
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/psr7/telemetry/src/Flow/Bridge/Psr7/Telemetry/ResponseCarrier.php"><a href="files/src-bridge-psr7-telemetry-src-flow-bridge-psr7-telemetry-responsecarrier.html"><abbr title="src/bridge/psr7/telemetry/src/Flow/Bridge/Psr7/Telemetry/ResponseCarrier.php">ResponseCarrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
@@ -286,7 +267,7 @@ $response = (new ResponseCarrier($response))
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/psr7/telemetry/src/Flow/Bridge/Psr7/Telemetry/ResponseCarrier.php"><a href="files/src-bridge-psr7-telemetry-src-flow-bridge-psr7-telemetry-responsecarrier.html"><abbr title="src/bridge/psr7/telemetry/src/Flow/Bridge/Psr7/Telemetry/ResponseCarrier.php">ResponseCarrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -334,7 +315,7 @@ $response = (new ResponseCarrier($response))
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/psr7/telemetry/src/Flow/Bridge/Psr7/Telemetry/ResponseCarrier.php"><a href="files/src-bridge-psr7-telemetry-src-flow-bridge-psr7-telemetry-responsecarrier.html"><abbr title="src/bridge/psr7/telemetry/src/Flow/Bridge/Psr7/Telemetry/ResponseCarrier.php">ResponseCarrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -389,7 +370,7 @@ $response = (new ResponseCarrier($response))
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/psr7/telemetry/src/Flow/Bridge/Psr7/Telemetry/ResponseCarrier.php"><a href="files/src-bridge-psr7-telemetry-src-flow-bridge-psr7-telemetry-responsecarrier.html"><abbr title="src/bridge/psr7/telemetry/src/Flow/Bridge/Psr7/Telemetry/ResponseCarrier.php">ResponseCarrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 

@@ -28,7 +28,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\OpenAPI\\Specification\\OpenAPIConverter",
             "name": "OpenAPIConverter",
-            "summary": "Bidirectional\u0020converter\u0020between\u0020Flow\u0020PHP\u0020schemas\u0020and\u0020OpenAPI\u00203.0\u0020specifications.",
+            "summary": "",
             "url": "classes/Flow-Bridge-OpenAPI-Specification-OpenAPIConverter.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\OpenAPI\\Specification\\OpenAPIConverter\u003A\u003AfromOpenAPI\u0028\u0029",

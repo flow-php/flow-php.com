@@ -633,7 +633,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\API\\Transformation\\MaskColumns",
             "name": "MaskColumns",
-            "summary": "Mask\u0020columns\u0020in\u0020DataFrame\u0020by\u0020replacing\u0020their\u0020values\u0020with\u0020a\u0020mask.",
+            "summary": "A\u0020missing\u0020column\u0020is\u0020added\u0020holding\u0020the\u0020mask.",
             "url": "classes/Flow-ETL-API-Transformation-MaskColumns.html"
         },                {
             "fqsen": "\\Flow\\ETL\\API\\Transformation\\MaskColumns\u003A\u003A__construct\u0028\u0029",
@@ -673,7 +673,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\API\\Transformations",
             "name": "Transformations",
-            "summary": "Collection\u0020of\u0020transformations.",
+            "summary": "",
             "url": "classes/Flow-ETL-API-Transformations.html"
         },                {
             "fqsen": "\\Flow\\ETL\\API\\Transformations\u003A\u003A__construct\u0028\u0029",
@@ -1898,7 +1898,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Foundation\\Calculator\\RunningSum",
             "name": "RunningSum",
-            "summary": "IEEE\u0020addition\u0020with\u0020Neumaier\u0020compensation\u003A\u0020the\u0020rounding\u0020error\u0020of\u0020every\u0020float\u0020addition\u0020is\u0020carried\u0020and\u0020added\u0020back\u0020once,\nso\u0020a\u0020long\u0020run\u0020of\u0020floats\u0020does\u0020not\u0020drift.\u0020An\u0020exact\u0020addition\u0020is\u0020decimal\u0020\u0028Calculator\u0029\u0020over\u0020the\u0020compensated\u0020total.",
+            "summary": "Neumaier\u002Dcompensated\u0020float\u0020sum\u003B\u0020exact\u0020\u0028decimal\u0029\u0020addition\u0020goes\u0020through\u0020Calculator.",
             "url": "classes/Flow-ETL-Foundation-Calculator-RunningSum.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Foundation\\Calculator\\RunningSum\u003A\u003A__construct\u0028\u0029",
@@ -2688,7 +2688,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Foundation\\FlowPhpExtension\u003A\u003AABI",
             "name": "ABI",
-            "summary": "The\u0020contract\u0020version\u0020this\u0020package\u0020expects\u0020from\u0020flow_php,\u0020equal\u0020to\u0020the\u0020extension\u0027s\u0020FLOW_PHP_ABI.\u0020Both\u0020sides\u0020change\ntogether\u0020whenever\u0020a\u0020class\u0020or\u0020interface\u0020the\u0020extension\u0020registers\u0020changes.",
+            "summary": "Equals\u0020the\u0020extension\u0027s\u0020FLOW_PHP_ABI\u003B\u0020both\u0020change\u0020together.",
             "url": "classes/Flow-ETL-Foundation-FlowPhpExtension.html#constant_ABI"
         },                {
             "fqsen": "\\Flow\\ETL\\Foundation\\FlowPhpExtension\u003A\u003A\u0024loaded",
@@ -2768,7 +2768,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Foundation\\Telemetry\\TelemetryAttributes",
             "name": "TelemetryAttributes",
-            "summary": "Flow\u002Dspecific\u0020ETL\u0020attribute\u0020keys.",
+            "summary": "Custom\u0020keys\u0020live\u0020under\u0020\u0060flow.etl.\u0060\u003B\u0020official\u0020keys\u0020come\u0020from\u0020SemConvAttributes.",
             "url": "classes/Flow-ETL-Foundation-Telemetry-TelemetryAttributes.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Foundation\\Telemetry\\TelemetryAttributes\u003A\u003AATTR_DATAFRAME_ID",
@@ -5693,7 +5693,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Functions\\FrameAccumulating",
             "name": "FrameAccumulating",
-            "summary": "Opts\u0020a\u0020WindowFunction\u0020into\u0020incremental\u0020frame\u0020evaluation.\u0020Carrying\u0020it\u0020asserts\u0020the\u0020result\u0020depends\u0020only\non\u0020the\u0020frame\u0020contents\u0020\u002D\u0020never\u0020on\u0020the\u0020current\u0020row\u0020or\u0020its\u0020index\u0020\u002D\u0020which\u0020is\u0020what\u0020lets\u0020FrameAccumulation\nreuse\u0020a\u0020value\u0020across\u0020rows\u0020that\u0020share\u0020frame\u0020bounds.",
+            "summary": "Asserts\u0020the\u0020result\u0020depends\u0020only\u0020on\u0020frame\u0020contents,\u0020never\u0020on\u0020the\u0020current\u0020row\u0020or\u0020index.",
             "url": "classes/Flow-ETL-Functions-FrameAccumulating.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Functions\\FrameAccumulating\u003A\u003Aaccumulator\u0028\u0029",
@@ -6685,6 +6685,21 @@ Search.appendIndex(
             "name": "value",
             "summary": "",
             "url": "classes/Flow-ETL-Functions-Last.html#method_value"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\LastBatchColumn",
+            "name": "LastBatchColumn",
+            "summary": "Held\u0020weakly,\u0020so\u0020an\u0020aggregate\u0020never\u0020keeps\u0020the\u0020last\u0020batch\u0020it\u0020saw\u0020alive.",
+            "url": "classes/Flow-ETL-Functions-LastBatchColumn.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\LastBatchColumn\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-LastBatchColumn.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\LastBatchColumn\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-LastBatchColumn.html#method_of"
         },                {
             "fqsen": "\\Flow\\ETL\\Functions\\Least",
             "name": "Least",
@@ -10518,7 +10533,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Functions\\ToDateTime\\PatternCoverage",
             "name": "PatternCoverage",
-            "summary": "Which\u0020fields\u0020a\u0020DateTimeImmutable\u003A\u003AcreateFromFormat\u0028\u0029\u0020pattern\u0020parses.\u0020Without\u0020\u0060\u0021\u0060\u0020or\u0020\u0060\u007C\u0060\u0020every\u0020field\u0020the\u0020pattern\nleaves\u0020out\u0020comes\u0020from\u0020the\u0020clock\u003A\u0020no\u0020time\u0020field\u0020means\u0020the\u0020current\u0020time\u0020of\u0020day,\u0020a\u0020missing\u0020date\u0020part\u0020means\u0020today\u0027s.",
+            "summary": "Without\u0020\u0060\u0021\u0060\u0020or\u0020\u0060\u007C\u0060,\u0020a\u0020field\u0020the\u0020pattern\u0020leaves\u0020out\u0020comes\u0020from\u0020the\u0020clock.",
             "url": "classes/Flow-ETL-Functions-ToDateTime-PatternCoverage.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Functions\\ToDateTime\\PatternCoverage\u003A\u003A__construct\u0028\u0029",
@@ -11618,7 +11633,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\FeedExtractor",
             "name": "FeedExtractor",
-            "summary": "Feeds\u0020a\u0020pipeline\u0020from\u0020outside,\u0020one\u0020batch\u0020per\u0020feed\u0028\u0029\u0020call.\u0020When\u0020starved\u0020it\u0020suspends\u0020the\u0020enclosing\nFiber\u0020instead\u0020of\u0020ending\u0020the\u0020stream\u003B\u0020finish\u0028\u0029\u0020ends\u0020it.\u0020The\u0020trailing\u0020empty\u0020Rows\u0020after\u0020each\u0020batch\u0020keeps\nthe\u0020source\u0020one\u0020yield\u0020ahead\u0020of\u0020PipelineSteps\u003A\u003Aexecute\u0028\u0029\u0027s\u0020current\u0028\u0029\/next\u0028\u0029\u0020protocol,\u0020so\u0020a\u0020fed\u0020batch\u0020is\u0020processed\u0020in\u0020the\nsame\u0020resume\u0020that\u0020fed\u0020it\u0020and\u0020a\u0020late\u0020Signal\u003A\u003ASTOP\u0020still\u0020lands\u0020on\u0020a\u0020live\u0020yield.",
+            "summary": "Must\u0020be\u0020driven\u0020inside\u0020a\u0020Fiber\u003A\u0020extract\u0028\u0029\u0020suspends\u0020when\u0020starved,\u0020finish\u0028\u0029\u0020ends\u0020the\u0020stream.",
             "url": "classes/Flow-ETL-IO-Extractor-FeedExtractor.html"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\FeedExtractor\u003A\u003A__construct\u0028\u0029",
@@ -11858,7 +11873,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\File\\FileExtractor",
             "name": "FileExtractor",
-            "summary": "A\u0020source\u0020that\u0020lists\u0020files\u0020under\u0020a\u0020path.\u0020Its\u0020schema\u0020is\u0020a\u0020property\u0020of\u0020the\u0020source\u0020\u002D\u0020derived\u0020from\u0020the\u0020full\nlisting\u0020\u002D\u0020and\u0020a\u0020pruned\u0020read\u0020does\u0020not\u0020change\u0020it.",
+            "summary": "The\u0020schema\u0020comes\u0020from\u0020the\u0020full\u0020listing\u003B\u0020a\u0020pruned\u0020read\u0020does\u0020not\u0020change\u0020it.",
             "url": "classes/Flow-ETL-IO-Extractor-File-FileExtractor.html"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\File\\FileExtractor\u003A\u003Asource\u0028\u0029",
@@ -11973,7 +11988,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\File\\FileSplit\u003A\u003Aowns\u0028\u0029",
             "name": "owns",
-            "summary": "The\u0020rows\u0020of\u0020the\u0020units\u0020this\u0020split\u0020owns\u003A\u0020Spark\u0027s\u0020rule\u0020\u0028parquet\u002Djava\u0020filterFileMetaDataByMidpoint\u0029,\u0020a\u0020unit\u0020belongs\nto\u0020the\u0020window\u0020holding\u0020its\u0020midpoint.\u0020Units\u0020are\u0020in\u0020file\u0020order,\u0020so\u0020the\u0020owned\u0020ones\u0020are\u0020contiguous\u003B\u0020a\u0020split\u0020without\na\u0020length\u0020owns\u0020them\u0020all.",
+            "summary": "A\u0020unit\u0020belongs\u0020to\u0020the\u0020split\u0020holding\u0020its\u0020midpoint\u003B\u0020a\u0020split\u0020without\u0020a\u0020length\u0020owns\u0020them\u0020all.",
             "url": "classes/Flow-ETL-IO-Extractor-File-FileSplit.html#method_owns"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\File\\FileSplit\u003A\u003Abytes\u0028\u0029",
@@ -12063,7 +12078,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\File\\FooterStatistics\u003A\u003Aof\u0028\u0029",
             "name": "of",
-            "summary": "Exact\u0020when\u0020every\u0020listed\u0020file\u0027s\u0020footer\u0020was\u0020read\u003B\u0020otherwise\u0020the\u0020read\u0020footers\u0020are\u0020scaled\u0020to\u0020the\u0020listing\n\u0028DuckDB\u0027s\u0020rule,\u0020parquet_extension.cpp\u003A866\u002D877\u0029.",
+            "summary": "Exact\u0020when\u0020every\u0020listed\u0020file\u0027s\u0020footer\u0020was\u0020read\u003B\u0020otherwise\u0020the\u0020read\u0020footers\u0020are\u0020scaled\u0020to\u0020the\u0020listing.",
             "url": "classes/Flow-ETL-IO-Extractor-File-FooterStatistics.html#method_of"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\File\\FooterStatistics\u003A\u003A\u0024files",
@@ -12563,7 +12578,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\Memory\\SpilledRows",
             "name": "SpilledRows",
-            "summary": "A\u0020source\u0020that\u0020can\u0020be\u0020read\u0020only\u0020once,\u0020made\u0020replayable\u003A\u0020every\u0020row\u0020is\u0020written\u0020to\u0020a\u0020temporary\nschema\u002Dless\u0020spill\u0020file\u0020as\u0020it\u0020streams\u0020past,\u0020and\u0020the\u0020replay\u0020reads\u0020the\u0020file\u0020back.\u0020The\u0020source\u0020is\nadvanced\u0020exactly\u0020once,\u0020ever\u003B\u0020the\u0020spill\u0020it\u0020produced\u0020can\u0020be\u0020replayed\u0020as\u0020often\u0020as\u0020the\u0020caller\u0020likes,\nand\u0020lives\u0020until\u0020this\u0020object\u0020is\u0020collected.",
+            "summary": "Makes\u0020a\u0020read\u002Donce\u0020source\u0020replayable\u003B\u0020the\u0020source\u0020is\u0020advanced\u0020exactly\u0020once.",
             "url": "classes/Flow-ETL-IO-Extractor-Memory-SpilledRows.html"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\Memory\\SpilledRows\u003A\u003A__construct\u0028\u0029",
@@ -12623,7 +12638,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\Memory\\SpillState",
             "name": "SpillState",
-            "summary": "The\u0020lifecycle\u0020of\u0020one\u0020SpilledRows.\u0020Split\u0020into\u0020states\u0020rather\u0020than\u0020carried\u0020as\u0020booleans\u0020because\u0020the\nreachable\u002Dbut\u002Dunnamed\u0020fourth\u0020state\u0020\u002D\u0020\u0022spilled\u0020K\u0020of\u0020N\u0020rows,\u0020then\u0020the\u0020source\u0020threw\u0022\u0020\u002D\u0020is\u0020where\u0020a\u0020bool\npair\u0020silently\u0020re\u002Dstreams\u0020a\u0020half\u002Dconsumed\u0020source\u0020and\u0020loses\u0020rows.",
+            "summary": "Not\u0020a\u0020bool\u0020pair\u003A\u0020\u0022spilled\u0020K\u0020of\u0020N,\u0020then\u0020the\u0020source\u0020threw\u0022\u0020must\u0020never\u0020re\u002Dstream\u0020the\u0020source.",
             "url": "classes/Flow-ETL-IO-Extractor-Memory-SpillState.html"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\Memory\\SpillState\u003A\u003AAbandoned",
@@ -12838,7 +12853,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\Split",
             "name": "Split",
-            "summary": "One\u0020piece\u0020of\u0020a\u0020source\u0020a\u0020worker\u0020reads\u0020on\u0020its\u0020own\u003A\u0020plain\u0020data,\u0020small\u0020enough\u0020to\u0020cross\u0020a\u0020process\u0020boundary,\u0020complete\nenough\u0020that\u0020the\u0020worker\u0020needs\u0020nothing\u0020else\u0020to\u0020know\u0020which\u0020rows\u0020are\u0020its.\u0020Source\u0020order\u0020is\u0020the\u0020position\u0020in\u0020the\u0020list\nSplittableExtractor\u003A\u003Asplits\u0028\u0029\u0020returned.\u0020A\u0020file\u0020source\u0020cuts\u0020byte\u0020windows\u0020\u0028FileSplit\u0029\u003B\u0020a\u0020database\u0020source\u0020would\u0020cut\u0020key\nranges\u003B\u0020each\u0020kind\u0020is\u0020read\u0020through\u0020the\u0020scan\u0020of\u0020its\u0020kind.",
+            "summary": "Plain\u0020data\u0020that\u0020crosses\u0020a\u0020process\u0020boundary\u003B\u0020source\u0020order\u0020is\u0020its\u0020position\u0020in\u0020splits\u0028\u0029.",
             "url": "classes/Flow-ETL-IO-Extractor-Split.html"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\Split\u003A\u003Abytes\u0028\u0029",
@@ -12973,7 +12988,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Filesystem\\VisibleFiles",
             "name": "VisibleFiles",
-            "summary": "Spark\u0027s\u0020hidden\u002Dpath\u0020rule\u0020\u0028HadoopFSUtils.shouldFilterOutPathName\u0029,\u0020applied\u0020only\u0020below\u0020the\u0020root\u0020the\u0020user\u0020named.",
+            "summary": "Skips\u0020files\u0020under\u0020a\u0020\u0060.\u0060\u0020or\u0020\u0060_\u0060\u0020path\u0020segment\u0020below\u0020the\u0020named\u0020root,\u0020except\u0020partition\u0020and\u0020\u0060_metadata\u0060\u0020segments.",
             "url": "classes/Flow-ETL-IO-Filesystem-VisibleFiles.html"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Filesystem\\VisibleFiles\u003A\u003A__construct\u0028\u0029",
@@ -13278,7 +13293,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Formatter\\AsciiTableFormatter\u003A\u003Aformat\u0028\u0029",
             "name": "format",
-            "summary": "Every\u0020cell\u0020is\u0020measured\u0020once,\u0020so\u0020the\u0020column\u0020widths\u0020cost\u0020one\u0020pass\u0020over\u0020the\u0020batch\u0020\u0028DuckDB\u0027s\u0020ComputeRenderWidths\u0029.",
+            "summary": "Every\u0020cell\u0020is\u0020measured\u0020once,\u0020so\u0020the\u0020column\u0020widths\u0020cost\u0020one\u0020pass\u0020over\u0020the\u0020batch.",
             "url": "classes/Flow-ETL-IO-Formatter-AsciiTableFormatter.html#method_format"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Formatter\\Row\\ASCIISchemaFormatter",
@@ -13546,6 +13561,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-IO-Inference-SchemaInference.html#method_fromArray"
         },                {
+            "fqsen": "\\Flow\\ETL\\IO\\Inference\\SchemaInference\u003A\u003AeveryRow\u0028\u0029",
+            "name": "everyRow",
+            "summary": "",
+            "url": "classes/Flow-ETL-IO-Inference-SchemaInference.html#method_everyRow"
+        },                {
+            "fqsen": "\\Flow\\ETL\\IO\\Inference\\SchemaInference\u003A\u003AeverySource\u0028\u0029",
+            "name": "everySource",
+            "summary": "",
+            "url": "classes/Flow-ETL-IO-Inference-SchemaInference.html#method_everySource"
+        },                {
             "fqsen": "\\Flow\\ETL\\IO\\Inference\\SchemaInference\u003A\u003Acandidates\u0028\u0029",
             "name": "candidates",
             "summary": "",
@@ -13601,6 +13626,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-IO-Inference-SchemaInferenceBuilder.html#method_build"
         },                {
+            "fqsen": "\\Flow\\ETL\\IO\\Inference\\SchemaInferenceBuilder\u003A\u003AeveryRow\u0028\u0029",
+            "name": "everyRow",
+            "summary": "",
+            "url": "classes/Flow-ETL-IO-Inference-SchemaInferenceBuilder.html#method_everyRow"
+        },                {
+            "fqsen": "\\Flow\\ETL\\IO\\Inference\\SchemaInferenceBuilder\u003A\u003AeverySource\u0028\u0029",
+            "name": "everySource",
+            "summary": "Leading\u0020row\u002Dless\u0020sources\u0020are\u0020all\u0020opened.\u0020Ignored\u0020by\u0020a\u0020source\u0020that\u0020lists\u0020no\u0020files.",
+            "url": "classes/Flow-ETL-IO-Inference-SchemaInferenceBuilder.html#method_everySource"
+        },                {
             "fqsen": "\\Flow\\ETL\\IO\\Inference\\SchemaInferenceBuilder\u003A\u003AfilesToSniff\u0028\u0029",
             "name": "filesToSniff",
             "summary": "",
@@ -13613,7 +13648,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Inference\\SchemaInferenceBuilder\u003A\u003AsniffWith\u0028\u0029",
             "name": "sniffWith",
-            "summary": "Runs\u0020the\u0020whole\u002Dunit\u0020sniffs\u0020of\u0020sampleSize\u0028\u002D1\u0029,\u0020for\u0020example\u0020through\u0020a\u0020process\u0020launcher\u0020to\u0020sniff\u0020in\u0020parallel.",
+            "summary": "Runs\u0020the\u0020whole\u002Dunit\u0020sniffs\u0020of\u0020everyRow\u0028\u0029,\u0020for\u0020example\u0020through\u0020a\u0020process\u0020launcher\u0020to\u0020sniff\u0020in\u0020parallel.",
             "url": "classes/Flow-ETL-IO-Inference-SchemaInferenceBuilder.html#method_sniffWith"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Inference\\SchemaInferenceBuilder\u003A\u003Atypes\u0028\u0029",
@@ -13638,7 +13673,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Inference\\SchemaInferrer\u003A\u003Ainfer\u0028\u0029",
             "name": "infer",
-            "summary": "sampleSize\u0028\u002D1\u0029\u0020sniffs\u0020every\u0020unit\u0020whole,\u0020through\u0020the\u0020inference\u0027s\u0020Sniffs\u0020when\u0020it\u0020takes\u0020them,\u0020and\u0020merges\u0020the\u0020samples\nin\u0020unit\u0020order\u003B\u0020a\u0020bounded\u0020sample\u0020drains\u0020one\u0020row\u0020budget\u0020across\u0020the\u0020units\u0020in\u0020listing\u0020order,\u0020counting\u0020a\u0020unit\u0020toward\nfilesToSniff\u0020only\u0020when\u0020it\u0020yielded\u0020a\u0020row.",
+            "summary": "everyRow\u0028\u0029\u0020sniffs\u0020every\u0020unit\u0020whole,\u0020through\u0020the\u0020inference\u0027s\u0020Sniffs\u0020when\u0020it\u0020takes\u0020them,\u0020and\u0020merges\u0020the\u0020samples\nin\u0020unit\u0020order\u003B\u0020a\u0020bounded\u0020sample\u0020drains\u0020one\u0020row\u0020budget\u0020across\u0020the\u0020units\u0020in\u0020listing\u0020order,\u0020counting\u0020a\u0020unit\u0020toward\nfilesToSniff\u0020only\u0020when\u0020it\u0020yielded\u0020a\u0020row.",
             "url": "classes/Flow-ETL-IO-Inference-SchemaInferrer.html#method_infer"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Inference\\SniffedColumns",
@@ -13723,7 +13758,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Inference\\Sniffs\u003A\u003Asniff\u0028\u0029",
             "name": "sniff",
-            "summary": "Whole\u002Dunit\u0020sniffs\u0020for\u0020sampleSize\u0028\u002D1\u0029\u003A\u0020units\u00200..\u0024units\u002D1,\u0020every\u0020unit\u0020sniffed\u0020with\u0020budget\u0020\u002D1,\u0020Samples\u0020in\u0020unit\u0020order.",
+            "summary": "Whole\u002Dunit\u0020sniffs\u0020for\u0020everyRow\u0028\u0029\u003A\u0020units\u00200..\u0024units\u002D1,\u0020every\u0020unit\u0020sniffed\u0020with\u0020budget\u0020\u002D1,\u0020Samples\u0020in\u0020unit\u0020order.",
             "url": "classes/Flow-ETL-IO-Inference-Sniffs.html#method_sniff"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Inference\\TypeFloor",
@@ -13923,7 +13958,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Loader\\File\\Part",
             "name": "Part",
-            "summary": "One\u0020task\u0020of\u0020a\u0020file\u0020write\u003A\u0020the\u0020\u007Bpart\u007D\u0020it\u0020fills,\u0020zero\u002Dpadded,\u0020and\u0020the\u0020run\u0020it\u0020belongs\u0020to,\u0020appended\u0020to\u0020the\u0020name\u0020under\nAppend.\u0020One\u0020naming\u0020rule\u0020for\u0020the\u0020serial\u0020writer\u0020\u0028part\u00200\u0029\u0020and\u0020the\u0020parallel\u0020commit.",
+            "summary": "One\u0020naming\u0020rule\u0020for\u0020the\u0020serial\u0020writer\u0020\u0028part\u00200\u0029\u0020and\u0020the\u0020parallel\u0020commit.",
             "url": "classes/Flow-ETL-IO-Loader-File-Part.html"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Loader\\File\\Part\u003A\u003A__construct\u0028\u0029",
@@ -14021,10 +14056,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-IO-Loader-File-PartitionRouter.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\IO\\Loader\\File\\PartitionRouter\u003A\u003AdroppedNames\u0028\u0029",
-            "name": "droppedNames",
+            "fqsen": "\\Flow\\ETL\\IO\\Loader\\File\\PartitionRouter\u003A\u003ApathOnlyColumns\u0028\u0029",
+            "name": "pathOnlyColumns",
             "summary": "",
-            "url": "classes/Flow-ETL-IO-Loader-File-PartitionRouter.html#method_droppedNames"
+            "url": "classes/Flow-ETL-IO-Loader-File-PartitionRouter.html#method_pathOnlyColumns"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Loader\\File\\PartitionRouter\u003A\u003Apartitioned\u0028\u0029",
             "name": "partitioned",
@@ -14298,7 +14333,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\Bucketing\\BucketRun",
             "name": "BucketRun",
-            "summary": "Carries\u0020the\u0020pairing\u0020so\u0020KWayMerge\u0020can\u0020hold\u0020spill\u0020runs\u0020and\u0020merged\u0020runs\u0020in\u0020one\u0020ordered\u0020list\u0020while\u0020each\u0020resolves\nthrough\u0020its\u0020own\u0020storage.\u0020A\u0020mismatched\u0020pair\u0020is\u0020constructible\u003B\u0020the\u0020invariant\u0020is\u0020upheld\u0020at\u0020the\u0020mint\u0020sites\u0020in\nExternalSort,\u0020the\u0020only\u0020class\u0020where\u0020both\u0020storages\u0020are\u0020in\u0020scope.",
+            "summary": "A\u0020mismatched\u0020pair\u0020is\u0020constructible\u003B\u0020ExternalSort\u0027s\u0020mint\u0020sites\u0020keep\u0020it\u0020consistent.",
             "url": "classes/Flow-ETL-Kernels-Bucketing-BucketRun.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\Bucketing\\BucketRun\u003A\u003A__construct\u0028\u0029",
@@ -14393,7 +14428,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\Bucketing\\KeyEncoder",
             "name": "KeyEncoder",
-            "summary": "Two\u0020rows\u0020get\u0020one\u0020key\u0020exactly\u0020when\u0020their\u0020values\u0020are\u0020equal\u0020under\u0020ComparableValues\u003A\u003Aequality\u0028\u0029\u003A\u0020\u002D0.0\u0020is\u00200,\u0020NaN\u0020is\u0020NaN,\nand\u0020every\u0020value\u0020is\u0020type\u002Dtagged,\u0020so\u0020the\u0020string\u0020\u00221\u0022\u0020never\u0020equals\u0020\u00221.0\u0022\u0020or\u0020the\u0020int\u00201.\u0020A\u0020column\u0020cast\u0020to\u0020a\u0020type\u0020first\n\u0028a\u0020join\u0020key\u0029\u0020is\u0020tagged\u0020in\u0020that\u0020type.\u0020A\u0020column\u0020the\u0020batch\u0020does\u0020not\u0020carry\u0020is\u0020a\u0020null\u0020where\u0020\u0024declared\u0020declares\u0020it\nnullable\u003B\u0020anywhere\u0020else\u0020the\u0020batch\u0020must\u0020carry\u0020it.",
+            "summary": "Equal\u0020keys\u0020exactly\u0020when\u0020ComparableValues\u003A\u003Aequality\u0028\u0029\u0020holds\u003B\u0020every\u0020value\u0020is\u0020type\u002Dtagged.",
             "url": "classes/Flow-ETL-Kernels-Bucketing-KeyEncoder.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\Bucketing\\KeyEncoder\u003A\u003A__construct\u0028\u0029",
@@ -14443,7 +14478,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\Comparison\\ValueEquality",
             "name": "ValueEquality",
-            "summary": "SQL\u0020equality\u003A\u0020two\u0020columns\u0020of\u0020different\u0020types\u0020compare\u0020in\u0020one\u0020type,\u0020as\u0020DuckDB\u0020binds\u0020them.\u0020Numbers\u0020widen\u0020to\u0020float,\u0020a\ndate\u0020to\u0020a\u0020datetime,\u0020and\u0020a\u0020string\u0020casts\u0020to\u0020the\u0020other\u0020side\u0027s\u0020type\u003B\u0020a\u0020string\u0020that\u0020does\u0020not\u0020cast\u0020throws.",
+            "summary": "Columns\u0020of\u0020different\u0020types\u0020compare\u0020in\u0020one\u0020type\u003A\u0020numbers\u0020widen\u0020to\u0020float,\u0020dates\u0020to\u0020datetime,\u0020strings\u0020cast\u0020or\u0020throw.",
             "url": "classes/Flow-ETL-Kernels-Comparison-ValueEquality.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\Comparison\\ValueEquality\u003A\u003Acast\u0028\u0029",
@@ -14473,7 +14508,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\Comparison\\ValueEquality\u003A\u003Anumber\u0028\u0029",
             "name": "number",
-            "summary": "A\u0020numeric\u0020string\u0020as\u0020DuckDB\u0020casts\u0020it\u003A\u0020an\u0020integer\u0020target\u0020rounds\u0020half\u0020away\u0020from\u0020zero.",
+            "summary": "An\u0020integer\u0020target\u0020rounds\u0020a\u0020numeric\u0020string\u0020half\u0020away\u0020from\u0020zero.",
             "url": "classes/Flow-ETL-Kernels-Comparison-ValueEquality.html#method_number"
         },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\Comparison\\ValueOrder",
@@ -14555,6 +14590,36 @@ Search.appendIndex(
             "name": "hash",
             "summary": "",
             "url": "classes/Flow-ETL-Kernels-Hash-PlainText.html#method_hash"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Kernels\\HashJoin\\BuildSide",
+            "name": "BuildSide",
+            "summary": "",
+            "url": "classes/Flow-ETL-Kernels-HashJoin-BuildSide.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Kernels\\HashJoin\\BuildSide\u003A\u003AbuildLeft\u0028\u0029",
+            "name": "buildLeft",
+            "summary": "",
+            "url": "classes/Flow-ETL-Kernels-HashJoin-BuildSide.html#method_buildLeft"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Kernels\\HashJoin\\BuildSide\u003A\u003AbuildRight\u0028\u0029",
+            "name": "buildRight",
+            "summary": "",
+            "url": "classes/Flow-ETL-Kernels-HashJoin-BuildSide.html#method_buildRight"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Kernels\\HashJoin\\BuildSide\u003A\u003Abuilt\u0028\u0029",
+            "name": "built",
+            "summary": "",
+            "url": "classes/Flow-ETL-Kernels-HashJoin-BuildSide.html#method_built"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Kernels\\HashJoin\\BuildSide\u003A\u003Amerge\u0028\u0029",
+            "name": "merge",
+            "summary": "",
+            "url": "classes/Flow-ETL-Kernels-HashJoin-BuildSide.html#method_merge"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Kernels\\HashJoin\\BuildSide\u003A\u003AtracksUnmatched\u0028\u0029",
+            "name": "tracksUnmatched",
+            "summary": "The\u0020built\u0020side\u0020keeps\u0020its\u0020rows\u0020no\u0020probe\u0020matched\u003A\u0020the\u0020join\u0020outputs\u0020them\u0020after\u0020the\u0020last\u0020probe\u0020batch.",
+            "url": "classes/Flow-ETL-Kernels-HashJoin-BuildSide.html#method_tracksUnmatched"
         },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\HashJoin\\HashTable",
             "name": "HashTable",
@@ -14691,36 +14756,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Kernels-HashJoin-PairPredicate.html#method_meet"
         },                {
-            "fqsen": "\\Flow\\ETL\\Kernels\\HashJoin\\Role",
-            "name": "Role",
-            "summary": "Which\u0020side\u0020a\u0020hash\u0020join\u0020builds\u0020its\u0020table\u0020from\u003A\u0020the\u0020other\u0020side\u0020is\u0020probed\u0020batch\u0020by\u0020batch.\u0020The\u0020output\u0020keeps\u0020left\u0020then\nright\u0020whatever\u0020was\u0020built.",
-            "url": "classes/Flow-ETL-Kernels-HashJoin-Role.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Kernels\\HashJoin\\Role\u003A\u003AbuildLeft\u0028\u0029",
-            "name": "buildLeft",
-            "summary": "",
-            "url": "classes/Flow-ETL-Kernels-HashJoin-Role.html#method_buildLeft"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Kernels\\HashJoin\\Role\u003A\u003AbuildRight\u0028\u0029",
-            "name": "buildRight",
-            "summary": "",
-            "url": "classes/Flow-ETL-Kernels-HashJoin-Role.html#method_buildRight"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Kernels\\HashJoin\\Role\u003A\u003Abuilt\u0028\u0029",
-            "name": "built",
-            "summary": "",
-            "url": "classes/Flow-ETL-Kernels-HashJoin-Role.html#method_built"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Kernels\\HashJoin\\Role\u003A\u003Amerge\u0028\u0029",
-            "name": "merge",
-            "summary": "",
-            "url": "classes/Flow-ETL-Kernels-HashJoin-Role.html#method_merge"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Kernels\\HashJoin\\Role\u003A\u003AtracksUnmatched\u0028\u0029",
-            "name": "tracksUnmatched",
-            "summary": "The\u0020built\u0020side\u0020keeps\u0020its\u0020rows\u0020no\u0020probe\u0020matched\u003A\u0020the\u0020join\u0020outputs\u0020them\u0020after\u0020the\u0020last\u0020probe\u0020batch.",
-            "url": "classes/Flow-ETL-Kernels-HashJoin-Role.html#method_tracksUnmatched"
-        },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\HashJoin\\RowMerger",
             "name": "RowMerger",
             "summary": "",
@@ -14763,7 +14798,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\Sort\\ExternalSort",
             "name": "ExternalSort",
-            "summary": "Sorts\u0020in\u0020memory\u0020while\u0020the\u0020process\u0020stays\u0020under\u0020the\u0020memory\u0020limit\u003B\u0020past\u0020it,\u0020sorted\u0020runs\u0020are\u0020spilled\u0020and\nblock\u002Dmerged.\u0020With\u0020a\u0020limit,\u0020only\u0020the\u0020first\u0020\u0024limit\u0020rows\u0020are\u0020produced\u0020\u002D\u0020every\u0020run\u0020and\u0020every\u0020merge\u0020stops\u0020there.",
+            "summary": "With\u0020a\u0020limit,\u0020every\u0020run\u0020and\u0020merge\u0020stops\u0020at\u0020\u0024limit\u0020rows.",
             "url": "classes/Flow-ETL-Kernels-Sort-ExternalSort.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\Sort\\ExternalSort\u003A\u003A__construct\u0028\u0029",
@@ -14928,7 +14963,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\Sort\\RowOrder",
             "name": "RowOrder",
-            "summary": "The\u0020one\u0020row\u0020order\u0020of\u0020sortBy,\u0020the\u0020external\u0020merge,\u0020window\u0020peers\u0020and\u0020every\u0020check\u0020of\u0020sortedness\u003A\u0020nulls\u0020are\u0020the\u0020smallest\nvalue\u0020\u0028first\u0020ascending,\u0020last\u0020descending\u0029\u0020unless\u0020a\u0020column\u0020places\u0020them\u0020at\u0020the\u0020other\u0020end,\u0020NaN\u0020the\u0020largest\u0020and\u0020equal\u0020to\nitself,\u0020\u002D0.0\u0020equals\u00200.0,\u0020strings,\u0020uuids,\u0020json,\u0020enums,\u0020xml\u0020and\u0020html\u0020compare\u0020by\u0020their\u0020physical\u0020bytes,\u0020numbers,\ndatetimes,\u0020dates\u0020and\u0020times\u0020by\u0020value,\u0020false\u0020before\u0020true.\u0020Descending\u0020is\u0020the\u0020exact\u0020reverse\u0020of\u0020ascending\u003B\u0020rows\u0020equal\u0020on\nevery\u0020key\u0020keep\u0020their\u0020input\u0020order.",
+            "summary": "Nulls\u0020smallest\u0020unless\u0020placed,\u0020NaN\u0020largest,\u0020\u002D0.0\u0020\u003D\u00200.0,\u0020strings\u0020by\u0020bytes\u003B\u0020ties\u0020keep\u0020input\u0020order.",
             "url": "classes/Flow-ETL-Kernels-Sort-RowOrder.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\Sort\\RowOrder\u003A\u003A__construct\u0028\u0029",
@@ -15763,7 +15798,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Processor\\BatchingByProcessor",
             "name": "BatchingByProcessor",
-            "summary": "Groups\u0020rows\u0020into\u0020batches\u0020by\u0020column\u0020value.",
+            "summary": "Assumes\u0020input\u0020is\u0020pre\u002Dsorted\u0020by\u0020the\u0020batching\u0020column.",
             "url": "classes/Flow-ETL-Operators-Processor-BatchingByProcessor.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Processor\\BatchingByProcessor\u003A\u003A__construct\u0028\u0029",
@@ -15893,7 +15928,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Processor\\CachingProcessor",
             "name": "CachingProcessor",
-            "summary": "Caches\u0020pipeline\u0020output\u0020for\u0020reuse.",
+            "summary": "An\u0020existing\u0020cache\u0020id\u0020passes\u0020data\u0020through\u0020unchanged.",
             "url": "classes/Flow-ETL-Operators-Processor-CachingProcessor.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Processor\\CachingProcessor\u003A\u003A__construct\u0028\u0029",
@@ -15943,7 +15978,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Processor\\CollectingProcessor",
             "name": "CollectingProcessor",
-            "summary": "Collects\u0020all\u0020rows\u0020from\u0020the\u0020upstream\u0020generator\u0020into\u0020a\u0020single\u0020batch.",
+            "summary": "",
             "url": "classes/Flow-ETL-Operators-Processor-CollectingProcessor.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Processor\\CollectingProcessor\u003A\u003A__construct\u0028\u0029",
@@ -16113,7 +16148,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Processor\\Distributable",
             "name": "Distributable",
-            "summary": "Processor\u0020handles\u0020cross\u002Dbatch\u0020operations\u0020that\u0020need\u0020to\u0020see\u0020multiple\/all\u0020batches.",
+            "summary": "Unlike\u0020a\u0020Transformer,\u0020receives\u0020the\u0020whole\u0020upstream\u0020generator,\u0020not\u0020one\u0020batch.",
             "url": "classes/Flow-ETL-Operators-Processor-Distributable.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Processor\\Distributable\u003A\u003Adistribution\u0028\u0029",
@@ -16213,7 +16248,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Processor\\GroupByAggregationProcessor",
             "name": "GroupByAggregationProcessor",
-            "summary": "Aggregates\u0020in\u0020one\u0020pass\u0020while\u0020the\u0020process\u0020stays\u0020under\u0020the\u0020memory\u0020limit.\u0020Past\u0020it,\u0020the\u0020rest\u0020of\u0020the\u0020stream\u0020is\u0020partitioned\ninto\u0020buckets\u0020and\u0020each\u0020bucket\u0020aggregated\u0020on\u0020its\u0020own\u003B\u0020the\u0020groups\u0020aggregated\u0020before\u0020the\u0020limit\u0020are\u0020merged\u0020into\u0020the\u0020bucket\ntheir\u0020key\u0020hashes\u0020to.",
+            "summary": "Past\u0020the\u0020memory\u0020limit,\u0020the\u0020rest\u0020is\u0020bucketed\u0020by\u0020key\u0020hash\u0020and\u0020aggregated\u0020per\u0020bucket.",
             "url": "classes/Flow-ETL-Operators-Processor-GroupByAggregationProcessor.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Processor\\GroupByAggregationProcessor\u003A\u003A__construct\u0028\u0029",
@@ -16273,7 +16308,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Processor\\MemorySortProcessor",
             "name": "MemorySortProcessor",
-            "summary": "Buffers\u0020all\u0020rows\u0020and\u0020sorts\u0020them\u0020in\u0020memory.\u0020Registered\u0020by\u0020the\u0020planner\u0020when\u0020the\u0020sort\u0020algorithm\u0020is\nmemory_sort\u0028\u0029.",
+            "summary": "",
             "url": "classes/Flow-ETL-Operators-Processor-MemorySortProcessor.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Processor\\MemorySortProcessor\u003A\u003A__construct\u0028\u0029",
@@ -16473,7 +16508,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Processor\\RepartitionProcessor",
             "name": "RepartitionProcessor",
-            "summary": "One\u0020batch\u0020per\u0020key.\u0020While\u0020the\u0020process\u0020stays\u0020under\u0020the\u0020memory\u0020limit\u0020the\u0020input\u0020is\u0020held\u0020and\u0020grouped\u0020in\u0020one\u0020pass\u003B\u0020past\nit,\u0020the\u0020input\u0020is\u0020partitioned\u0020into\u0020buckets\u0020and\u0020each\u0020bucket\u0020grouped\u0020on\u0020its\u0020own.",
+            "summary": "One\u0020batch\u0020per\u0020key\u003B\u0020past\u0020the\u0020memory\u0020limit,\u0020input\u0020is\u0020bucketed\u0020and\u0020grouped\u0020per\u0020bucket.",
             "url": "classes/Flow-ETL-Operators-Processor-RepartitionProcessor.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Processor\\RepartitionProcessor\u003A\u003A__construct\u0028\u0029",
@@ -16578,7 +16613,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Processor\\TopNProcessor",
             "name": "TopNProcessor",
-            "summary": "Keeps\u0020the\u0020first\u0020\u0024limit\u0020rows\u0020by\u0020\u0024columns\u0020while\u0020it\u0020reads,\u0020so\u0020it\u0020never\u0020holds\u0020more\u0020than\u0020twice\u0020\u0024limit\u0020rows\u0020plus\u0020one\nbatch.\u0020Sorts\u0020the\u0020same\u0020way\u0020MemorySortProcessor\u0020does\u003A\u0020it\u0020emits\u0020the\u0020rows\u0020a\u0020sort\u0020followed\u0020by\u0020a\u0020limit\u0020would,\u0020though\u0020rows\nwith\u0020equal\u0020keys\u0020may\u0020come\u0020in\u0020another\u0020order\u0020than\u0020an\u0020external\u0020sort\u0020leaves\u0020them.",
+            "summary": "Holds\u0020at\u0020most\u00202\u00D7\u0024limit\u0020rows\u0020plus\u0020one\u0020batch\u003B\u0020ties\u0020may\u0020order\u0020unlike\u0020ExternalSort.",
             "url": "classes/Flow-ETL-Operators-Processor-TopNProcessor.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Processor\\TopNProcessor\u003A\u003A__construct\u0028\u0029",
@@ -16728,7 +16763,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Processor",
             "name": "Processor",
-            "summary": "Processor\u0020handles\u0020cross\u002Dbatch\u0020operations\u0020that\u0020need\u0020to\u0020see\u0020multiple\/all\u0020batches.",
+            "summary": "Unlike\u0020a\u0020Transformer,\u0020receives\u0020the\u0020whole\u0020upstream\u0020generator,\u0020not\u0020one\u0020batch.",
             "url": "classes/Flow-ETL-Operators-Processor.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Processor\u003A\u003Abind\u0028\u0029",
@@ -17363,7 +17398,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Transformer\\Stateful",
             "name": "Stateful",
-            "summary": "A\u0020step\u0020that\u0020keeps\u0020state\u0020between\u0020batches.\u0020Every\u0020run\u0020of\u0020a\u0020frame\u0020starts\u0020from\u0020its\u0020own\u0020fresh\u0020instance,\u0020so\u0020the\u0020state\u0020never\ncarries\u0020over\u0020from\u0020an\u0020earlier\u0020run.\u0020A\u0020parallel\u0020read\u0020never\u0020ships\u0020it\u0020to\u0020a\u0020worker\u003A\u0020one\u0020instance\u0020sees\u0020every\u0020batch.",
+            "summary": "Every\u0020run\u0020starts\u0020from\u0020a\u0020fresh\u0020instance\u003B\u0020a\u0020parallel\u0020read\u0020never\u0020ships\u0020it\u0020to\u0020a\u0020worker.",
             "url": "classes/Flow-ETL-Operators-Transformer-Stateful.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Transformer\\Stateful\u003A\u003Afresh\u0028\u0029",
@@ -17541,61 +17576,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Planning-Explain-Condition.html#method_pair"
         },                {
-            "fqsen": "\\Flow\\ETL\\Planning\\Explain\\Entry",
-            "name": "Entry",
-            "summary": "What\u0020a\u0020layout\u0020prints\u003A\u0020a\u0020numbered\u0020name\u0020with\u0020its\u0020details\u0020already\u0020rendered.\u0020Every\u0020later\u0020visit\u0020of\u0020the\u0020same\u0020source\u0020is\u0020a\nshared\u0020reference\u0020with\u0020no\u0020children.",
-            "url": "classes/Flow-ETL-Planning-Explain-Entry.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Planning\\Explain\\Entry\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Planning-Explain-Entry.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Planning\\Explain\\Entry\u003A\u003Atitle\u0028\u0029",
-            "name": "title",
-            "summary": "The\u0020name\u0020with\u0020the\u0020number\u0020in\u0020front\u003B\u0020an\u0020entry\u0020without\u0020a\u0020number\u0020\u002D\u0020Outputs,\u0020which\u0020only\u0020groups\u0020the\u0020consumers\u0020\u002D\u0020has\nnone.",
-            "url": "classes/Flow-ETL-Planning-Explain-Entry.html#method_title"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Planning\\Explain\\Entry\u003A\u003Awith\u0028\u0029",
-            "name": "with",
-            "summary": "The\u0020same\u0020entry\u0020read\u0020from\u0020somewhere\u0020else\u0020in\u0020the\u0020plan\u003A\u0020shared\u0020drops\u0020what\u0020the\u0020first\u0020visit\u0020already\u0020printed.",
-            "url": "classes/Flow-ETL-Planning-Explain-Entry.html#method_with"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Planning\\Explain\\Entry\u003A\u003A\u0024source",
-            "name": "source",
-            "summary": "",
-            "url": "classes/Flow-ETL-Planning-Explain-Entry.html#property_source"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Planning\\Explain\\Entry\u003A\u003A\u0024name",
-            "name": "name",
-            "summary": "",
-            "url": "classes/Flow-ETL-Planning-Explain-Entry.html#property_name"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Planning\\Explain\\Entry\u003A\u003A\u0024lines",
-            "name": "lines",
-            "summary": "",
-            "url": "classes/Flow-ETL-Planning-Explain-Entry.html#property_lines"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Planning\\Explain\\Entry\u003A\u003A\u0024number",
-            "name": "number",
-            "summary": "",
-            "url": "classes/Flow-ETL-Planning-Explain-Entry.html#property_number"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Planning\\Explain\\Entry\u003A\u003A\u0024shared",
-            "name": "shared",
-            "summary": "",
-            "url": "classes/Flow-ETL-Planning-Explain-Entry.html#property_shared"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Planning\\Explain\\Entry\u003A\u003A\u0024children",
-            "name": "children",
-            "summary": "",
-            "url": "classes/Flow-ETL-Planning-Explain-Entry.html#property_children"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Planning\\Explain\\Entry\u003A\u003A\u0024suffix",
-            "name": "suffix",
-            "summary": "",
-            "url": "classes/Flow-ETL-Planning-Explain-Entry.html#property_suffix"
-        },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Explain\\Expression",
             "name": "Expression",
             "summary": "",
@@ -17653,7 +17633,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Explain\\FlowLayout",
             "name": "FlowLayout",
-            "summary": "The\u0020plan\u0020in\u0020the\u0020direction\u0020rows\u0020move\u003A\u0020each\u0020source\u0020first,\u0020every\u0020node\u0020followed\u0020by\u0020the\u0020nodes\u0020that\u0020read\u0020it.\u0020Numbers\nare\u0020the\u0020tree\u0027s,\u0020so\u0020one\u0020node\u0020carries\u0020one\u0020number\u0020in\u0020every\u0020format.\u0020Outputs\u0020only\u0020groups\u0020the\u0020plan\u0027s\u0020consumers,\u0020so\u0020it\nis\u0020left\u0020out\u0020\u002D\u0020its\u0020children\u0020already\u0020end\u0020the\u0020flow.",
+            "summary": "Sources\u0020first,\u0020each\u0020node\u0020followed\u0020by\u0020its\u0020readers\u003B\u0020Outputs\u0020is\u0020left\u0020out.",
             "url": "classes/Flow-ETL-Planning-Explain-FlowLayout.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Explain\\FlowLayout\u003A\u003A__construct\u0028\u0029",
@@ -17830,6 +17810,61 @@ Search.appendIndex(
             "name": "schema",
             "summary": "",
             "url": "classes/Flow-ETL-Planning-Explain-PhysicalOutline.html#method_schema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Planning\\Explain\\RenderedNode",
+            "name": "RenderedNode",
+            "summary": "",
+            "url": "classes/Flow-ETL-Planning-Explain-RenderedNode.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Planning\\Explain\\RenderedNode\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Planning-Explain-RenderedNode.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Planning\\Explain\\RenderedNode\u003A\u003Atitle\u0028\u0029",
+            "name": "title",
+            "summary": "The\u0020name\u0020with\u0020the\u0020number\u0020in\u0020front\u003B\u0020an\u0020entry\u0020without\u0020a\u0020number\u0020\u002D\u0020Outputs,\u0020which\u0020only\u0020groups\u0020the\u0020consumers\u0020\u002D\u0020has\nnone.",
+            "url": "classes/Flow-ETL-Planning-Explain-RenderedNode.html#method_title"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Planning\\Explain\\RenderedNode\u003A\u003Awith\u0028\u0029",
+            "name": "with",
+            "summary": "The\u0020same\u0020entry\u0020read\u0020from\u0020somewhere\u0020else\u0020in\u0020the\u0020plan\u003A\u0020shared\u0020drops\u0020what\u0020the\u0020first\u0020visit\u0020already\u0020printed.",
+            "url": "classes/Flow-ETL-Planning-Explain-RenderedNode.html#method_with"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Planning\\Explain\\RenderedNode\u003A\u003A\u0024source",
+            "name": "source",
+            "summary": "",
+            "url": "classes/Flow-ETL-Planning-Explain-RenderedNode.html#property_source"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Planning\\Explain\\RenderedNode\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Flow-ETL-Planning-Explain-RenderedNode.html#property_name"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Planning\\Explain\\RenderedNode\u003A\u003A\u0024lines",
+            "name": "lines",
+            "summary": "",
+            "url": "classes/Flow-ETL-Planning-Explain-RenderedNode.html#property_lines"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Planning\\Explain\\RenderedNode\u003A\u003A\u0024number",
+            "name": "number",
+            "summary": "",
+            "url": "classes/Flow-ETL-Planning-Explain-RenderedNode.html#property_number"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Planning\\Explain\\RenderedNode\u003A\u003A\u0024shared",
+            "name": "shared",
+            "summary": "",
+            "url": "classes/Flow-ETL-Planning-Explain-RenderedNode.html#property_shared"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Planning\\Explain\\RenderedNode\u003A\u003A\u0024children",
+            "name": "children",
+            "summary": "",
+            "url": "classes/Flow-ETL-Planning-Explain-RenderedNode.html#property_children"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Planning\\Explain\\RenderedNode\u003A\u003A\u0024suffix",
+            "name": "suffix",
+            "summary": "",
+            "url": "classes/Flow-ETL-Planning-Explain-RenderedNode.html#property_suffix"
         },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Explain\\StatisticsLine",
             "name": "StatisticsLine",
@@ -19128,7 +19163,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Logical\\Node\\Result",
             "name": "Result",
-            "summary": "A\u0020plan\u0027s\u0020stream\u0020\u002D\u0020what\u0020fetch\u0028\u0029,\u0020get\u0028\u0029\u0020and\u0020run\u0028\u0029\u0020pull,\u0020or\u0020what\u0020the\u0020node\u0020reading\u0020the\u0020plan\u0020takes\u003A\u0020the\u0020root\u0020of\u0020a\u0020plan,\nor\u0020the\u0020first\u0020child\u0020of\u0020its\u0020Outputs\u0020root.\u0020It\u0020passes\u0020its\u0020rows\u0020through\u0020and\u0020adds\u0020no\u0020steps.",
+            "summary": "The\u0020plan\u0020root\u0020\u0028or\u0020first\u0020child\u0020of\u0020Outputs\u0029\u0020that\u0020fetch\/get\/run\u0020pull\u003B\u0020adds\u0020no\u0020steps.",
             "url": "classes/Flow-ETL-Planning-Logical-Node-Result.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Logical\\Node\\Result\u003A\u003A__construct\u0028\u0029",
@@ -19258,7 +19293,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Logical\\Node\\TopN",
             "name": "TopN",
-            "summary": "The\u0020first\u0020\u0024limit\u0020rows\u0020of\u0020the\u0020input\u0020sorted\u0020by\u0020\u0024columns\u0020\u002D\u0020a\u0020Sort\u0020under\u0020a\u0020Limit,\u0020holding\u0020only\u0020\u0024limit\u0020rows.\u0020Which\u0020rows\nsurvive\u0020depends\u0020on\u0020the\u0020whole\u0020input,\u0020so\u0020it\u0020is\u0020opaque\u0020and\u0020blocking.",
+            "summary": "Opaque\u0020and\u0020blocking\u003A\u0020which\u0020rows\u0020survive\u0020depends\u0020on\u0020the\u0020whole\u0020input.",
             "url": "classes/Flow-ETL-Planning-Logical-Node-TopN.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Logical\\Node\\TopN\u003A\u003A__construct\u0028\u0029",
@@ -19348,7 +19383,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Logical\\Node\\Transform",
             "name": "Transform",
-            "summary": "A\u0020user\u0020transformer\u003A\u0020nothing\u0020about\u0020its\u0020effect\u0020on\u0020the\u0020rows\u0020is\u0020known,\u0020but\u0020a\u0020Transformer\u0020sees\u0020one\u0020batch\u0020at\u0020a\u0020time\u0020so\u0020it\u0020cannot\u0020block.",
+            "summary": "Effect\u0020unknown\u0020but\u0020never\u0020blocking\u003B\u0020a\u0020Stateful\u0020one\u0020runs\u0020as\u0020its\u0020fresh\u0028\u0029\u0020instance.",
             "url": "classes/Flow-ETL-Planning-Logical-Node-Transform.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Logical\\Node\\Transform\u003A\u003A__construct\u0028\u0029",
@@ -19643,7 +19678,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Logical\\Plan",
             "name": "Plan",
-            "summary": "A\u0020frame\u0027s\u0020plan,\u0020frozen\u003A\u0020the\u0020logical\u0020plan\u0020and\u0020the\u0020planner\u0020it\u0020is\u0020planned\u0020with.\u0020Later\u0020verbs\u0020on\u0020the\u0020frame\u0020do\u0020not\u0020reach\nit.",
+            "summary": "Frozen\u003A\u0020later\u0020verbs\u0020on\u0020the\u0020frame\u0020do\u0020not\u0020reach\u0020it.",
             "url": "classes/Flow-ETL-Planning-Logical-Plan.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Logical\\Plan\u003A\u003Aof\u0028\u0029",
@@ -19818,7 +19853,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Logical\\Stage\u003A\u003Aphysical",
             "name": "physical",
-            "summary": "The\u0020plan\u0020the\u0020executor\u0020runs,\u0020with\u0020every\u0020algorithm\u0020and\u0020its\u0020storage\u0020already\u0020chosen.\u0020Reaching\u0020it\u0020plans\u0020the\u0020frame,\nso\u0020a\u0020source\u0020that\u0020infers\u0020its\u0020schema\u0020by\u0020reading\u0020is\u0020read\u0020here,\u0020which\u0020the\u0020logical\u0020stages\u0020never\u0020do.",
+            "summary": "Reaching\u0020it\u0020plans\u0020the\u0020frame,\u0020so\u0020a\u0020source\u0020that\u0020infers\u0020its\u0020schema\u0020is\u0020read\u0020here.",
             "url": "classes/Flow-ETL-Planning-Logical-Stage.html#enumcase_physical"
         },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Logical\\TransformUp",
@@ -19968,7 +20003,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Optimizer\\Rule\\CombineSortAndLimit",
             "name": "CombineSortAndLimit",
-            "summary": "Limit\u0028Sort\u0028x\u0029,\u0020n\u0029\u0020\u002D\u003E\u0020TopN\u0028x,\u0020n\u0029\u003A\u0020the\u0020sort\u0020keeps\u0020n\u0020rows\u0020instead\u0020of\u0020the\u0020whole\u0020input.\u0020A\u0020shared\u0020Sort\u0020stays\u0020for\u0020its\nother\u0020consumers.",
+            "summary": "A\u0020shared\u0020Sort\u0020stays\u0020for\u0020its\u0020other\u0020consumers.",
             "url": "classes/Flow-ETL-Planning-Optimizer-Rule-CombineSortAndLimit.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Optimizer\\Rule\\CombineSortAndLimit\u003A\u003Aapply\u0028\u0029",
@@ -19993,7 +20028,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Optimizer\\Rule\\PushFilterIntoSource",
             "name": "PushFilterIntoSource",
-            "summary": "Moves\u0020the\u0020deterministic\u0020parts\u0020of\u0020an\u0020AND\u0020the\u0020file\u0020source\u0020uses\u0020into\u0020it,\u0020which\u0020returns\u0020only\u0020the\u0020rows\u0020matching\u0020them\u003A\u0020a\npartition\u002Donly\u0020part,\u0020which\u0020is\u0020also\u0020pushed\u0020as\u0020a\u0020path\u0020filter\u0020so\u0020a\u0020file\u0020it\u0020rejects\u0020is\u0020never\u0020listed,\u0020and\u0020a\u0020part\u0020the\nsource\u0020prunes\u0020with.\u0020A\u0020pushed\u0020part\u0020leaves\u0020its\u0020Filter\u0020node,\u0020and\u0020a\u0020node\u0020left\u0020with\u0020no\u0020part\u0020is\u0020removed.\u0020An\u0020OR\u0020is\u0020pushed\nonly\u0020as\u0020a\u0020whole.\u0020Nodes\u0020are\u0020pushed\u0020leaf\u0020first\u003B\u0020a\u0020part\u0020kept\u0020in\u0020a\u0020node\u0020stops\u0020the\u0020push\u0020of\u0020every\u0020part\u0020after\u0020it\u0020and\u0020of\nevery\u0020node\u0020above\u0020it,\u0020though\u0020a\u0020partition\u002Donly\u0020part\u0020after\u0020it,\u0020in\u0020its\u0020node\u0020or\u0020above,\u0020still\u0020prunes\u0020the\u0020listing.",
+            "summary": "A\u0020part\u0020kept\u0020in\u0020a\u0020node\u0020stops\u0020every\u0020later\u0020push\u003B\u0020partition\u002Donly\u0020parts\u0020still\u0020prune\u0020the\u0020listing.",
             "url": "classes/Flow-ETL-Planning-Optimizer-Rule-PushFilterIntoSource.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Optimizer\\Rule\\PushFilterIntoSource\u003A\u003Aapply\u0028\u0029",
@@ -20028,7 +20063,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Optimizer\\Rule\\PushOffsetIntoSource",
             "name": "PushOffsetIntoSource",
-            "summary": "Moves\u0020the\u0020Offset\u0020nodes\u0020a\u0020file\u0020source\u0020can\u0020skip\u0020into\u0020it\u0020and\u0020removes\u0020them\u003A\u0020those\u0020with\u0020nothing\u0020but\u0020other\u0020Offsets\u0020and\nrow\u0020preserving,\u0020transparent\u0020nodes\u0020between\u0020them\u0020and\u0020the\u0020source,\u0020so\u0020the\u0020source\u0020counts\u0020the\u0020same\u0020rows\u0020the\u0020node\u0020would.",
+            "summary": "Runs\u0020after\u0020PushFilterIntoSource,\u0020only\u0020for\u0020single\u002Dconsumer\u0020plans.",
             "url": "classes/Flow-ETL-Planning-Optimizer-Rule-PushOffsetIntoSource.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Optimizer\\Rule\\PushOffsetIntoSource\u003A\u003Aapply\u0028\u0029",
@@ -20038,7 +20073,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Optimizer\\Rule\\PushProjectionIntoExpand",
             "name": "PushProjectionIntoExpand",
-            "summary": "Columns\u0020no\u0020consumer\u0020reads\u0020are\u0020not\u0020copied\u0020into\u0020the\u0020rows\u0020an\u0020expand\u0020emits\u0020\u0028Spark\u003A\u0020ColumnPruning\u0020setting\nGenerate.unrequiredChildIndex\u0029.",
+            "summary": "Columns\u0020no\u0020consumer\u0020reads\u0020are\u0020not\u0020copied\u0020into\u0020the\u0020rows\u0020an\u0020expand\u0020emits.",
             "url": "classes/Flow-ETL-Planning-Optimizer-Rule-PushProjectionIntoExpand.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Optimizer\\Rule\\PushProjectionIntoExpand\u003A\u003Aapply\u0028\u0029",
@@ -20358,7 +20393,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Physical\\WritePlanner",
             "name": "WritePlanner",
-            "summary": "Attaches\u0020a\u0020plan\u0027s\u0020write\u0020roots\u0020to\u0020the\u0020spine\u003A\u0020the\u0020step\u0020each\u0020spine\u0020node\u0020gains\u0020for\u0020them.\u0020attach\u0028\u0029\u0020is\u0020the\u0020entry\u003B\nthe\u0020other\u0020methods\u0020are\u0020the\u0020walk\u0020it\u0020runs.\u0020A\u0020write\u0020with\u0020steps\u0020of\u0020its\u0020own\u0020becomes\u0020a\u0020branch\u003A\u0020the\u0020pipelines\u0020the\u0020runtime\nfeeds\u0020batch\u0020by\u0020batch.",
+            "summary": "A\u0020write\u0020with\u0020steps\u0020of\u0020its\u0020own\u0020becomes\u0020a\u0020branch\u0020the\u0020runtime\u0020feeds\u0020batch\u0020by\u0020batch.",
             "url": "classes/Flow-ETL-Planning-Physical-WritePlanner.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Physical\\WritePlanner\u003A\u003A__construct\u0028\u0029",
@@ -20463,7 +20498,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Config",
             "name": "Config",
-            "summary": "Immutable\u0020configuration\u0020that\u0020can\u0020be\u0020used\u0020to\u0020initialize\u0020many\u0020contexts.",
+            "summary": "",
             "url": "classes/Flow-ETL-Runtime-Config.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Config\u003A\u003A__construct\u0028\u0029",
@@ -21138,7 +21173,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\WriteLoaderFactory",
             "name": "WriteLoaderFactory",
-            "summary": "Builds\u0020the\u0020runtime\u0020step\u0020of\u0020each\u0020branch\u0020and\u0020transaction\u0020of\u0020one\u0020run,\u0020once\u003A\u0020a\u0020fiber\u0020restarted\u0020over\u0020the\u0020same\u0020pipeline\nruns\u0020the\u0020steps\u0020a\u0020BranchLoader\u0020forwards\u0020its\u0020discard\u0028\u0029\u0020to.\u0020Never\u0020shared\u0020between\u0020runs.",
+            "summary": "One\u0020instance\u0020per\u0020run,\u0020never\u0020shared\u003B\u0020builds\u0020each\u0020branch\u0020step\u0020once.",
             "url": "classes/Flow-ETL-Runtime-Executor-WriteLoaderFactory.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\WriteLoaderFactory\u003A\u003A__construct\u0028\u0029",
@@ -21243,7 +21278,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\MemoryLimit",
             "name": "MemoryLimit",
-            "summary": "The\u0020process\u0020memory\u0020a\u0020spilling\u0020algorithm\u0020\u0028sort,\u0020TopN,\u0020join\u0020build\u0029\u0020lets\u0020the\u0020whole\u0020process\u0020reach\u0020before\u0020it\u0020spills\u0020\u002D\u0020the\nlimit\u0020is\u0020compared\u0020with\u0020the\u0020process\u0027s\u0020usage,\u0020never\u0020with\u0020the\u0020algorithm\u0027s\u0020own\u0020buffer,\u0020so\u0020a\u0020sort\u0020and\u0020a\u0020join\u0020in\u0020one\npipeline\u0020together\u0020stay\u0020under\u0020it.\u0020FLOW_MAX_MEMORY\u0020when\u0020set,\u0020otherwise\u002070\u0025\u0020of\u0020PHP\u0027s\u0020memory_limit,\u0020and\u00201\u0020GiB\u0020when\u0020PHP\u0027s\nmemory_limit\u0020is\u0020\u002D1\u0020\u002D\u0020an\u0020unlimited\u0020algorithm\u0020would\u0020grow\u0020until\u0020the\u0020OS\u0020kills\u0020PHP.",
+            "summary": "Compared\u0020with\u0020process\u0020usage\u003B\u0020FLOW_MAX_MEMORY,\u0020else\u002070\u0025\u0020of\u0020memory_limit,\u0020else\u00201\u0020GiB.",
             "url": "classes/Flow-ETL-Runtime-MemoryLimit.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\MemoryLimit\u003A\u003Adefault\u0028\u0029",
@@ -21628,7 +21663,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Telemetry\\TelemetryConfig",
             "name": "TelemetryConfig",
-            "summary": "Immutable\u0020telemetry\u0020configuration\u0020for\u0020DataFrame\u0020operations.",
+            "summary": "",
             "url": "classes/Flow-ETL-Runtime-Telemetry-TelemetryConfig.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Telemetry\\TelemetryConfig\u003A\u003A__construct\u0028\u0029",
@@ -22698,7 +22733,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Storage\\SpillingRowsStorage",
             "name": "SpillingRowsStorage",
-            "summary": "Keeps\u0020rows\u0020in\u0020memory\u0020while\u0020the\u0020process\u0020stays\u0020under\u0020the\u0020memory\u0020limit.\u0020The\u0020first\u0020time\u0020it\u0020passes\u0020the\u0020limit\u0020every\nkey\u0020moves\u0020its\u0020full\u0020batches\u0020to\u0020\u0024disk\u003B\u0020from\u0020then\u0020on\u0020a\u0020key\u0020writes\u0020to\u0020\u0024disk\u0020each\u0020time\u0020it\u0020holds\u0020a\u0020full\u0020batch,\u0020so\u0020every\nframe\u0020on\u0020\u0024disk\u0020holds\u0020exactly\u0020\u0024batchSize\u0020rows\u0020and\u0020memory\u0020stays\u0020bounded\u0020by\u0020one\u0020batch\u0020per\u0020key.\u0020The\u0020rest\u0020of\u0020a\u0020key\u0020stays\nbuffered\u0020and\u0020is\u0020read\u0020after\u0020its\u0020frames.",
+            "summary": "Past\u0020the\u0020memory\u0020limit,\u0020every\u0020frame\u0020on\u0020\u0024disk\u0020holds\u0020exactly\u0020\u0024batchSize\u0020rows.",
             "url": "classes/Flow-ETL-Storage-SpillingRowsStorage.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Storage\\SpillingRowsStorage\u003A\u003A__construct\u0028\u0029",
@@ -23138,7 +23173,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Frame\\Codec",
             "name": "Codec",
-            "summary": "Compression\u0020codec\u0020contract,\u0020applied\u0020per\u0020buffer\u0020of\u0020a\u0020BATCH\u0020frame\u0020\u0028behind\u0020an\u0020i64\u0020uncompressed\u002Dlength\u0020prefix,\u0020\u002D1\u0020\u003D\nstored\u0020raw\u0029.\u0020Only\u0020the\u0020no\u002Dop\u0020codec\u0020\u0028id\u00200x00\u0029\u0020is\u0020supported\u003B\u0020the\u0020codec\u0020id\u0020is\u0020stamped\u0020into\u0020the\u0020header\u0020flags\u0020byte.",
+            "summary": "Only\u0020the\u0020no\u002Dop\u0020codec\u0020\u00280x00\u0029\u0020is\u0020supported\u003B\u0020its\u0020id\u0020is\u0020stamped\u0020into\u0020the\u0020header\u0020flags\u0020byte.",
             "url": "classes/Flow-ETL-Values-Column-Frame-Codec.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Frame\\Codec\u003A\u003Adecode\u0028\u0029",
@@ -24188,7 +24223,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Physical\\ElementPosition",
             "name": "ElementPosition",
-            "summary": "Element\u0020physicals\u0020are\u0020\u0022\\x01\u003Cchild\u0020index\u0020path\u003E\\0\u003Cmarkup\u0020length\u003E\\0\u003Celement\u0020markup\u003E\u003Cowner\u0020document\u0020markup\u003E\u0022,\u0020the\u0020path\ncounting\u0020element\u0020children\u0020from\u0020the\u0020document\u0020element.\u0020Earlier\u0020builds\u0020wrote\u0020\u0022\\0\u003Cpath\u003E\\0\u003Cowner\u0020document\u0020markup\u003E\u0022,\u0020and\nbefore\u0020that\u0020bare\u0020element\u0020markup.",
+            "summary": "Format\u003A\u0020\u0022\\x01\u003Cpath\u003E\\0\u003Cmarkup\u0020length\u003E\\0\u003Celement\u003E\u003Cowner\u0020document\u003E\u0022\u003B\u0020older\u0020builds\u0020wrote\u0020legacy\u0020forms.",
             "url": "classes/Flow-ETL-Values-Column-Physical-ElementPosition.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Physical\\ElementPosition\u003A\u003Apath\u0028\u0029",
@@ -24608,7 +24643,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Physical\\XmlCharacterReferences",
             "name": "XmlCharacterReferences",
-            "summary": "libxml2\u0020before\u00202.13\u0020serializes\u0020non\u002DASCII\u0020attribute\u0020characters\u0020as\u0020character\u0020references\u0020\u0028\u0060\u0026\u0023x17C\u003B\u0060\u0029,\u0020later\u0020versions\nwrite\u0020them\u0020as\u0020UTF\u002D8.\u0020Decoding\u0020the\u0020references\u0020of\u0020non\u002DASCII\u0020characters\u0020outside\u0020CDATA\u0020sections\u0020and\u0020comments\u0020gives\u0020the\nsame\u0020markup\u0020on\u0020every\u0020libxml2\u003B\u0020references\u0020below\u0020U\u002B0080\u0020stay,\u0020they\u0020may\u0020escape\u0020markup.",
+            "summary": "libxml2\u0020\u003C\u00202.13\u0020writes\u0020non\u002DASCII\u0020as\u0020char\u0020refs\u003B\u0020decoding\u0020them\u0020gives\u0020one\u0020markup\u0020on\u0020every\u0020version.",
             "url": "classes/Flow-ETL-Values-Column-Physical-XmlCharacterReferences.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Physical\\XmlCharacterReferences\u003A\u003Adecoded\u0028\u0029",
@@ -25120,6 +25155,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-ETL-Values-Rows-RecordBatch.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Rows\\RecordBatch\u003A\u003Ainferred\u0028\u0029",
+            "name": "inferred",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Rows-RecordBatch.html#method_inferred"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Rows\\RecordBatch\u003A\u003Aadd\u0028\u0029",
             "name": "add",
@@ -26163,7 +26203,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Schema\\Definition\\NullDefinition",
             "name": "NullDefinition",
-            "summary": "The\u0020bottom\u0020of\u0020the\u0020type\u0020lattice\u003A\u0020the\u0020column\u0027s\u0020type\u0020is\u0020not\u0020known.\u0020Absorbed\u0020by\u0020merge\u0028\u0029\u0020in\u0020both\ndirections\u0020\u002D\u0020null\u0020\u2294\u0020T\u0020\u003D\u0020\u003FT,\u0020T\u0020\u2294\u0020null\u0020\u003D\u0020\u003FT,\u0020null\u0020\u2294\u0020null\u0020\u003D\u0020null.\u0020Reaches\u0020a\u0020materialized\u0020Schema\nonly\u0020when\u0020a\u0020column\u0020is\u0020null\u0020in\u0020every\u0020observed\u0020row\u0020and\u0020no\u0020type\u0020was\u0020declared\u003B\u0020that\u0020is\u0020Parquet\u0027s\nUNKNOWN\u0020and\u0020Iceberg\u0027s\u0020unknown.\u0020A\u0020column\u0020that\u0020holds\u0020strings\u0020and\u0020sometimes\u0020null\u0020is\nStringDefinition\u0028nullable\u003A\u0020true\u0029,\u0020never\u0020this.",
+            "summary": "Unknown\u0020type,\u0020absorbed\u0020by\u0020merge\u0028\u0029\u003B\u0020only\u0020for\u0020a\u0020column\u0020null\u0020in\u0020every\u0020row\u0020with\u0020no\u0020declared\u0020type.",
             "url": "classes/Flow-ETL-Values-Schema-Definition-NullDefinition.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Schema\\Definition\\NullDefinition\u003A\u003A__construct\u0028\u0029",
@@ -26948,7 +26988,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Schema\\SameSchemas",
             "name": "SameSchemas",
-            "summary": "Pairs\u0020of\u0020schemas\u0020already\u0020proved\u0020the\u0020same.\u0020A\u0020schema\u0020never\u0020changes\u0020after\u0020construction,\u0020so\u0020a\u0020proof\u0020holds\u0020for\u0020as\u0020long\nas\u0020both\u0020live\u0020\u002D\u0020batches\u0020of\u0020one\u0020stream\u0020compare\u0020their\u0020equal\u002Dbut\u002Ddistinct\u0020schemas\u0020once,\u0020not\u0020once\u0020per\u0020batch.",
+            "summary": "Schemas\u0020never\u0020change,\u0020so\u0020a\u0020proof\u0020holds\u0020for\u0020as\u0020long\u0020as\u0020both\u0020live.",
             "url": "classes/Flow-ETL-Values-Schema-SameSchemas.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Schema\\SameSchemas\u003A\u003Aproved\u0028\u0029",
@@ -27058,7 +27098,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Schema\\Validator\\EvolvingValidator",
             "name": "EvolvingValidator",
-            "summary": "Compatibility\u0020for\u0020combining\u0020or\u0020evolving\u0020datasets\u0020\u002D\u0020the\u0020same\u0020invariant\u0020a\u0020merge,\nan\u0020append\u0020and\u0020a\u0020per\u002Dbatch\u0020validation\u0020all\u0020need\u003A\u0020combining\u0020\u0060expected\u0060\u0020and\u0020\u0060given\u0060\nmust\u0020never\u0020leave\u0020a\u0020row\u0020holding\u0020null\u0020in\u0020a\u0020column\u0020that\u0020is\u0020non\u002Dnullable\u0020somewhere.",
+            "summary": "Combining\u0020expected\u0020and\u0020given\u0020must\u0020never\u0020put\u0020null\u0020into\u0020a\u0020column\u0020non\u002Dnullable\u0020on\u0020either\u0020side.",
             "url": "classes/Flow-ETL-Values-Schema-Validator-EvolvingValidator.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Schema\\Validator\\EvolvingValidator\u003A\u003AfromDescription\u0028\u0029",

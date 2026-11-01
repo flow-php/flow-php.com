@@ -124,8 +124,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Runtime-Executor-WriteLoaderFactory.html"><abbr title="\Flow\ETL\Runtime\Executor\WriteLoaderFactory">WriteLoaderFactory</abbr></a></dt><dd>Builds the runtime step of each branch and transaction of one run, once: a fiber restarted over the same pipeline
-runs the steps a BranchLoader forwards its discard() to. Never shared between runs.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-ETL-Runtime-Executor-WriteLoaderFactory.html"><abbr title="\Flow\ETL\Runtime\Executor\WriteLoaderFactory">WriteLoaderFactory</abbr></a></dt><dd>One instance per run, never shared; builds each branch step once.</dd>    </dl>
 
 
 

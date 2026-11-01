@@ -258,7 +258,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\IO\\Extractor\\DbalQueryExtractor",
             "name": "DbalQueryExtractor",
-            "summary": "batchSize\u0028\u0029\u0020is\u0020a\u0020yield\u0020cap,\u0020not\u0020a\u0020fetch\u0020size\u003A\u0020fetchAllAssociative\u0028\u0029\u0020materialises\u0020the\u0020whole\u0020result\u0020set\u0020per\nparameter\u0020set,\u0020so\u0020lowering\u0020it\u0020cannot\u0020lower\u0020peak\u0020memory.\u0020The\u0020paginating\u0020extractors\u0020default\u0020to\u00201000\u0020because\ntheir\u0020number\u0020IS\u0020a\u0020round\u0020trip.",
+            "summary": "batchSize\u0028\u0029\u0020caps\u0020yields,\u0020not\u0020fetches\u003A\u0020the\u0020whole\u0020result\u0020set\u0020materialises\u0020per\u0020parameter\u0020set.",
             "url": "classes/Flow-ETL-Adapter-Doctrine-IO-Extractor-DbalQueryExtractor.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\IO\\Extractor\\DbalQueryExtractor\u003A\u003A__construct\u0028\u0029",
@@ -858,7 +858,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\IO\\Extractor\\SqliteTypes",
             "name": "SqliteTypes",
-            "summary": "SQLite\u0020has\u0020no\u0020per\u002Dcolumn\u0020type\u003A\u0020SQLite3Result\u003A\u003AcolumnType\u0028\u0029\u0020describes\u0020the\u0020value,\u0020not\u0020the\u0020column,\nand\u0020sqlite3_column_decltype\u0028\u0029\u0020is\u0020not\u0020bound\u0020in\u0020PHP.\u0020An\u0020all\u002Dstring\u0020schema\u0020is\u0020a\u0020true\u0020statement\u0020about\nit\u0020rather\u0020than\u0020a\u0020floor,\u0020and\u0020the\u0020read\u0020casts\u0020values\u0020to\u0020match.",
+            "summary": "SQLite\u0020has\u0020no\u0020per\u002Dcolumn\u0020type\u0020in\u0020PHP,\u0020so\u0020an\u0020all\u002Dstring\u0020schema\u0020is\u0020true,\u0020not\u0020a\u0020floor.",
             "url": "classes/Flow-ETL-Adapter-Doctrine-IO-Extractor-SqliteTypes.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\IO\\Extractor\\SqliteTypes\u003A\u003AtoFlowType\u0028\u0029",

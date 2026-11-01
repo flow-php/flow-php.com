@@ -1,6 +1,16 @@
 Search.appendIndex(
     [
                 {
+            "fqsen": "\\Flow\\Bridge\\Psr3\\Telemetry\\AttributeValueNormalizer",
+            "name": "AttributeValueNormalizer",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Psr3-Telemetry-AttributeValueNormalizer.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Psr3\\Telemetry\\AttributeValueNormalizer\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Psr3-Telemetry-AttributeValueNormalizer.html#method_normalize"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Psr3\\Telemetry\\DSL\\psr3_telemetry_logger\u0028\u0029",
             "name": "psr3_telemetry_logger",
             "summary": "Create\u0020a\u0020TelemetryLogger\u0020that\u0020exposes\u0020a\u0020PSR\u002D3\u0020LoggerInterface\u0020backed\u0020by\u0020a\u0020Flow\u0020Telemetry\u0020Logger.",
@@ -16,10 +26,10 @@ Search.appendIndex(
             "summary": "Create\u0020a\u0020LogRecordConverter\u0020that\u0020turns\u0020PSR\u002D3\u0020calls\u0020into\u0020Telemetry\u0020LogRecords.",
             "url": "namespaces/flow-bridge-psr3-telemetry-dsl.html#function_psr3_log_record_converter"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Psr3\\Telemetry\\DSL\\psr3_value_normalizer\u0028\u0029",
-            "name": "psr3_value_normalizer",
-            "summary": "Create\u0020a\u0020ValueNormalizer\u0020for\u0020converting\u0020arbitrary\u0020PHP\u0020values\u0020into\u0020Telemetry\u0020attribute\u0020types.",
-            "url": "namespaces/flow-bridge-psr3-telemetry-dsl.html#function_psr3_value_normalizer"
+            "fqsen": "\\Flow\\Bridge\\Psr3\\Telemetry\\DSL\\psr3_attribute_value_normalizer\u0028\u0029",
+            "name": "psr3_attribute_value_normalizer",
+            "summary": "Create\u0020a\u0020AttributeValueNormalizer\u0020for\u0020converting\u0020arbitrary\u0020PHP\u0020values\u0020into\u0020Telemetry\u0020attribute\u0020types.",
+            "url": "namespaces/flow-bridge-psr3-telemetry-dsl.html#function_psr3_attribute_value_normalizer"
         },                {
             "fqsen": "\\Flow\\Bridge\\Psr3\\Telemetry\\Exception\\InvalidArgumentException",
             "name": "InvalidArgumentException",
@@ -76,30 +86,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Psr3-Telemetry-TelemetryLogger.html#method_log"
         },                {
-            "fqsen": "\\Flow\\Bridge\\Psr3\\Telemetry\\ValueNormalizer",
-            "name": "ValueNormalizer",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Psr3-Telemetry-ValueNormalizer.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Psr3\\Telemetry\\ValueNormalizer\u003A\u003Anormalize\u0028\u0029",
-            "name": "normalize",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Psr3-Telemetry-ValueNormalizer.html#method_normalize"
-        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
             "url": "namespaces/default.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Psr3\\Telemetry\\DSL",
-            "name": "DSL",
-            "summary": "",
-            "url": "namespaces/flow-bridge-psr3-telemetry-dsl.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Psr3\\Telemetry\\Exception",
-            "name": "Exception",
-            "summary": "",
-            "url": "namespaces/flow-bridge-psr3-telemetry-exception.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Psr3\\Telemetry",
             "name": "Telemetry",
@@ -120,5 +110,15 @@ Search.appendIndex(
             "name": "Flow",
             "summary": "",
             "url": "namespaces/flow.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Psr3\\Telemetry\\DSL",
+            "name": "DSL",
+            "summary": "",
+            "url": "namespaces/flow-bridge-psr3-telemetry-dsl.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Psr3\\Telemetry\\Exception",
+            "name": "Exception",
+            "summary": "",
+            "url": "namespaces/flow-bridge-psr3-telemetry-exception.html"
         }            ]
 );

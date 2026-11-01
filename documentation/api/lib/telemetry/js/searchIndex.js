@@ -3,7 +3,7 @@ Search.appendIndex(
                 {
             "fqsen": "\\Flow\\Telemetry\\AttributeLimitsEnforcer",
             "name": "AttributeLimitsEnforcer",
-            "summary": "Stateless\u0020service\u0020that\u0020enforces\u0020attribute\u0020limits\u0020per\u0020OpenTelemetry\u0020specification.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-AttributeLimitsEnforcer.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\AttributeLimitsEnforcer\u003A\u003Aenforce\u0028\u0029",
@@ -13,7 +13,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Attributes",
             "name": "Attributes",
-            "summary": "Immutable\u0020container\u0020for\u0020telemetry\u0020attributes.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Attributes.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Attributes\u003A\u003A__construct\u0028\u0029",
@@ -83,7 +83,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\CacheAttributes",
             "name": "CacheAttributes",
-            "summary": "Cache\u0020instrumentation\u0020attribute\u0020keys\u0020and\u0020span\u0020names\u0020shared\u0020by\u0020Flow\u0020cache\u0020instrumentations.",
+            "summary": "No\u0020official\u0020cache\u0020semconv\u0020yet\u003B\u0020keys\u0020follow\u0020the\u0020open\u0020proposal.",
             "url": "classes/Flow-Telemetry-CacheAttributes.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\CacheAttributes\u003A\u003ACACHE_KEY",
@@ -158,7 +158,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\Baggage",
             "name": "Baggage",
-            "summary": "Key\u002Dvalue\u0020store\u0020for\u0020data\u0020propagation\u0020across\u0020process\u0020boundaries.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Context-Baggage.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\Baggage\u003A\u003A__construct\u0028\u0029",
@@ -213,7 +213,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\Context",
             "name": "Context",
-            "summary": "Telemetry\u0020context\u0020carrier\u0020holding\u0020the\u0020active\u0020span\u0020and\u0020baggage.",
+            "summary": "Trace\u0020id\u0020is\u0020derived\u0020from\u0020the\u0020active\u0020span,\u0020never\u0020stored.",
             "url": "classes/Flow-Telemetry-Context-Context.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\Context\u003A\u003A__construct\u0028\u0029",
@@ -373,7 +373,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\SpanId",
             "name": "SpanId",
-            "summary": "An\u00208\u002Dbyte\u0020\u002864\u002Dbit\u0029\u0020span\u0020identifier\u0020compatible\u0020with\u0020OpenTelemetry\u0020W3C\u0020Trace\u0020Context.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Context-SpanId.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\SpanId\u003A\u003AfromArray\u0028\u0029",
@@ -438,7 +438,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\TraceFlags",
             "name": "TraceFlags",
-            "summary": "W3C\u0020Trace\u0020Context\u0020trace\u0020flags\u0020\u0028single\u0020byte\u0029.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Context-TraceFlags.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\TraceFlags\u003A\u003Adefault\u0028\u0029",
@@ -523,7 +523,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\TraceId",
             "name": "TraceId",
-            "summary": "A\u002016\u002Dbyte\u0020\u0028128\u002Dbit\u0029\u0020trace\u0020identifier\u0020compatible\u0020with\u0020OpenTelemetry\u0020W3C\u0020Trace\u0020Context.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Context-TraceId.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\TraceId\u003A\u003AfromArray\u0028\u0029",
@@ -588,7 +588,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\TraceState",
             "name": "TraceState",
-            "summary": "W3C\u0020Trace\u0020Context\u0020tracestate\u0020header\u0020value.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Context-TraceState.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Context\\TraceState\u003A\u003Aempty\u0028\u0029",
@@ -931,10 +931,10 @@ Search.appendIndex(
             "summary": "Create\u0020a\u0020ParentBasedSampler.\u0020Honors\u0020the\u0020parent\u0020span\u0027s\u0020sampling\u0020decision,\u0020falling\nback\u0020to\u0020the\u0020root\u0020sampler\u0020for\u0020spans\u0020without\u0020a\u0020parent.",
             "url": "namespaces/flow-telemetry-dsl.html#function_parent_based_sampler"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\DSL\\attribute_matching_sampler\u0028\u0029",
-            "name": "attribute_matching_sampler",
-            "summary": "Create\u0020an\u0020AttributeMatchingSampler.\u0020Drops\u0020spans\u0020whose\u0020start\u002Dtime\u0020attributes\u0020match\nthe\u0020filter\u0020\u0028or\u0020keeps\u0020ONLY\u0020matching\u0020spans\u0020when\u0020the\u0020filter\u0027s\u0020exclude\u0020is\u0020false\u0029,\u0020and\ndefers\u0020all\u0020other\u0020spans\u0020to\u0020the\u0020delegate\u0020sampler.",
-            "url": "namespaces/flow-telemetry-dsl.html#function_attribute_matching_sampler"
+            "fqsen": "\\Flow\\Telemetry\\DSL\\attribute_filtering_sampler\u0028\u0029",
+            "name": "attribute_filtering_sampler",
+            "summary": "Create\u0020an\u0020AttributeFilteringSampler.\u0020Drops\u0020spans\u0020whose\u0020start\u002Dtime\u0020attributes\u0020match\nthe\u0020filter\u0020\u0028or\u0020keeps\u0020ONLY\u0020matching\u0020spans\u0020when\u0020the\u0020filter\u0027s\u0020exclude\u0020is\u0020false\u0029,\u0020and\ndefers\u0020all\u0020other\u0020spans\u0020to\u0020the\u0020delegate\u0020sampler.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_attribute_filtering_sampler"
         },                {
             "fqsen": "\\Flow\\Telemetry\\DSL\\propagation_context\u0028\u0029",
             "name": "propagation_context",
@@ -1001,10 +1001,10 @@ Search.appendIndex(
             "summary": "Create\u0020a\u0020GitDetector.",
             "url": "namespaces/flow-telemetry-dsl.html#function_git_detector"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\DSL\\manual_detector\u0028\u0029",
-            "name": "manual_detector",
-            "summary": "Create\u0020a\u0020ManualDetector.",
-            "url": "namespaces/flow-telemetry-dsl.html#function_manual_detector"
+            "fqsen": "\\Flow\\Telemetry\\DSL\\static_detector\u0028\u0029",
+            "name": "static_detector",
+            "summary": "Create\u0020a\u0020StaticDetector.",
+            "url": "namespaces/flow-telemetry-dsl.html#function_static_detector"
         },                {
             "fqsen": "\\Flow\\Telemetry\\DSL\\caching_detector\u0028\u0029",
             "name": "caching_detector",
@@ -1053,7 +1053,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\EnforcedAttributes",
             "name": "EnforcedAttributes",
-            "summary": "Result\u0020of\u0020enforcing\u0020limits\u0020on\u0020Attributes.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-EnforcedAttributes.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\EnforcedAttributes\u003A\u003A__construct\u0028\u0029",
@@ -1073,7 +1073,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\CompositeErrorHandler",
             "name": "CompositeErrorHandler",
-            "summary": "Fans\u0020an\u0020error\u0020out\u0020to\u0020multiple\u0020handlers.\u0020Each\u0020child\u0020invocation\u0020is\u0020wrapped\u0020so\u0020a\nmisbehaving\u0020handler\u0020cannot\u0020prevent\u0020siblings\u0020from\u0020running.",
+            "summary": "A\u0020throwing\u0020child\u0020never\u0020stops\u0020its\u0020siblings.",
             "url": "classes/Flow-Telemetry-ErrorHandler-CompositeErrorHandler.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\CompositeErrorHandler\u003A\u003A__construct\u0028\u0029",
@@ -1093,7 +1093,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\ErrorHandler",
             "name": "ErrorHandler",
-            "summary": "Receives\u0020Throwables\u0020raised\u0020inside\u0020the\u0020SDK\u0020at\u0020runtime.",
+            "summary": "Implementations\u0020must\u0020never\u0020throw\u003A\u0020the\u0020SDK\u0020never\u0020throws\u0020to\u0020user\u0020code\u0020\u0028OTel\u0029.",
             "url": "classes/Flow-Telemetry-ErrorHandler-ErrorHandler.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\ErrorHandler\u003A\u003Ahandle\u0028\u0029",
@@ -1103,7 +1103,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\ErrorLogHandler",
             "name": "ErrorLogHandler",
-            "summary": "Default\u0020ErrorHandler.\u0020Writes\u0020formatted\u0020Throwables\u0020via\u0020PHP\u0027s\u0020error_log\u0028\u0029\u0020\u2014\nstderr\u0020in\u0020CLI\u0020by\u0020default,\u0020or\u0020the\u0020error_log\u0020ini\u0020setting\u0020otherwise.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-ErrorHandler-ErrorLogHandler.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\ErrorLogHandler\u003A\u003A__construct\u0028\u0029",
@@ -1153,7 +1153,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\StreamHandler",
             "name": "StreamHandler",
-            "summary": "Appends\u0020formatted\u0020Throwables\u0020\u0028one\u0020per\u0020line\u0029\u0020to\u0020a\u0020file\u0020path\u0020or\u0020php\u003A\/\/\u0020stream\nwrapper.\u0020The\u0020stream\u0020is\u0020opened\u0020lazily\u0020on\u0020the\u0020first\u0020handle\u0028\u0029\u0020call\u0020and\u0020reused\nacross\u0020subsequent\u0020calls\u003B\u0020__destruct\u0028\u0029\u0020closes\u0020it.",
+            "summary": "Lines\u0020are\u0020LOCK_EX\u0027d\u0020best\u002Deffort\u003B\u0020TTYs\u0020and\u0020pipes\u0020cannot\u0020lock.",
             "url": "classes/Flow-Telemetry-ErrorHandler-StreamHandler.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\StreamHandler\u003A\u003A__construct\u0028\u0029",
@@ -1328,7 +1328,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\UdpSyslogHandler",
             "name": "UdpSyslogHandler",
-            "summary": "Writes\u0020RFC\u00205424\u002Dstyle\u0020syslog\u0020frames\u0020over\u0020UDP\u0020to\u0020a\u0020remote\u0020collector.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-ErrorHandler-UdpSyslogHandler.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\ErrorHandler\\UdpSyslogHandler\u003A\u003A__construct\u0028\u0029",
@@ -1358,7 +1358,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Exporter\\Exporter",
             "name": "Exporter",
-            "summary": "Interface\u0020for\u0020exporting\u0020telemetry\u0020signals\u0020to\u0020external\u0020systems.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Exporter-Exporter.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Exporter\\Exporter\u003A\u003Aexport\u0028\u0029",
@@ -1413,7 +1413,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeFilter",
             "name": "AttributeFilter",
-            "summary": "Decides\u0020whether\u0020a\u0020telemetry\u0020signal\u0020should\u0020be\u0020dropped\u0020based\u0020on\u0020its\u0020attributes.",
+            "summary": "Matcher\u0020runs\u0020per\u0020source,\u0020OR\u002Dcombined,\u0020then\u0020the\u0020exclude\u0020polarity\u0020is\u0020applied\u0020once.",
             "url": "classes/Flow-Telemetry-Filter-AttributeFilter.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeFilter\u003A\u003A__construct\u0028\u0029",
@@ -1438,7 +1438,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeMatch",
             "name": "AttributeMatch",
-            "summary": "Stateless\u0020matching\u0020primitives\u0020shared\u0020by\u0020the\u0020interpreted\u0020\u0028\u007B\u0040see\u0020AttributeRule\u003A\u003Amatches\u0028\u0029\u007D\u0029\nand\u0020the\u0020compiled\u0020\u0028\u007B\u0040see\u0020AttributeRule\u003A\u003Acompile\u0028\u0029\u007D\u0029\u0020matching\u0020paths.",
+            "summary": "Single\u0020comparison\u0020source\u0020for\u0020interpreted\u0020and\u0020compiled\u0020paths\u003B\u0020MISSING\u0020never\u0020matches.",
             "url": "classes/Flow-Telemetry-Filter-AttributeMatch.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeMatch\u003A\u003Aresolve\u0028\u0029",
@@ -1503,12 +1503,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeMatch\u003A\u003AMISSING",
             "name": "MISSING",
-            "summary": "Sentinel\u0020returned\u0020by\u0020\u007B\u0040see\u0020self\u003A\u003Aresolve\u0028\u0029\u007D\u0020when\u0020a\u0020path\u0020segment\u0020is\u0020absent.",
+            "summary": "Sentinel\u0020for\u0020an\u0020absent\u0020path\u0020segment\u003B\u0020null\u0020values\u0020are\u0020never\u0020stored\u0020on\u0020Attributes.",
             "url": "classes/Flow-Telemetry-Filter-AttributeMatch.html#constant_MISSING"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeRule",
             "name": "AttributeRule",
-            "summary": "A\u0020single\u0020attribute\u002Dmatching\u0020rule\u003A\u0020a\u0020path\u0020into\u0020an\u0020attribute\u0020set,\u0020a\u0020comparison\n\u007B\u0040see\u0020MatchMode\u007D,\u0020and\u0020an\u0020expected\u0020value.\u0020The\u0020leaf\u0020\u007B\u0040see\u0020Matcher\u007D.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Filter-AttributeRule.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeRule\u003A\u003A__construct\u0028\u0029",
@@ -1528,7 +1528,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeSource",
             "name": "AttributeSource",
-            "summary": "Which\u0020attribute\u0020set\u0020on\u0020a\u0020signal\u0020an\u0020\u007B\u0040see\u0020AttributeFilter\u007D\u0020inspects.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Filter-AttributeSource.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Filter\\AttributeSource\u003A\u003Aselect\u0028\u0029",
@@ -1598,7 +1598,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Filter\\Matcher",
             "name": "Matcher",
-            "summary": "A\u0020predicate\u0020over\u0020a\u0020signal\u0027s\u0020attributes.",
+            "summary": "Also\u0020implement\u0020CompilableMatcher\u0020to\u0020let\u0020AttributeFilter\u0020inline\u0020it.",
             "url": "classes/Flow-Telemetry-Filter-Matcher.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Filter\\Matcher\u003A\u003Amatches\u0028\u0029",
@@ -1608,7 +1608,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Filter\\MatchMode",
             "name": "MatchMode",
-            "summary": "Comparison\u0020applied\u0020by\u0020an\u0020\u007B\u0040see\u0020AttributeRule\u007D\u0020between\u0020the\u0020value\u0020found\u0020at\u0020its\npath\u0020and\u0020the\u0020rule\u0027s\u0020expected\u0020value.",
+            "summary": "Pattern\u0020modes\u0020compare\u0020the\u0020string\u0020form\u003B\u0020the\u0020rest\u0020apply\u0020the\u0020PHP\u0020operator\u0020with\u0020no\u0020coercion.",
             "url": "classes/Flow-Telemetry-Filter-MatchMode.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Filter\\MatchMode\u003A\u003AEQUAL",
@@ -1683,12 +1683,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Filter\\NotCompilable",
             "name": "NotCompilable",
-            "summary": "Thrown\u0020by\u0020\u007B\u0040see\u0020CompilableMatcher\u003A\u003Acompile\u0028\u0029\u007D\u0020when\u0020a\u0020matcher\u0020cannot\u0020be\u0020inlined\nas\u0020PHP.\u0020It\u0020is\u0020an\u0020internal\u0020control\u002Dflow\u0020signal\u003A\u0020\u007B\u0040see\u0020CompiledMatcher\u007D\u0020catches\nit\u0020and\u0020falls\u0020back\u0020to\u0020interpreted\u0020matching.",
+            "summary": "Control\u0020flow\u003A\u0020CompiledMatcher\u0020catches\u0020it\u0020and\u0020falls\u0020back\u0020to\u0020interpreted\u0020matching.",
             "url": "classes/Flow-Telemetry-Filter-NotCompilable.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\InstrumentationScope",
             "name": "InstrumentationScope",
-            "summary": "Represents\u0020the\u0020instrumentation\u0020scope\u0020\u0028library\u0029\u0020producing\u0020telemetry.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-InstrumentationScope.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\InstrumentationScope\u003A\u003A__construct\u0028\u0029",
@@ -1738,7 +1738,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\LogEntry",
             "name": "LogEntry",
-            "summary": "Complete\u0020log\u0020entry\u0020ready\u0020for\u0020processing.",
+            "summary": "LogRecord\u0020plus\u0020scope,\u0020span\u0020context\u0020and\u0020timestamp\u0020resolved\u0020at\u0020emit.",
             "url": "classes/Flow-Telemetry-Logger-LogEntry.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\LogEntry\u003A\u003A__construct\u0028\u0029",
@@ -1788,7 +1788,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Logger",
             "name": "Logger",
-            "summary": "Logger\u0020implementation\u0020for\u0020emitting\u0020log\u0020records.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Logger-Logger.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Logger\u003A\u003A__construct\u0028\u0029",
@@ -1853,7 +1853,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\LoggerProvider",
             "name": "LoggerProvider",
-            "summary": "Entry\u0020point\u0020for\u0020the\u0020logging\u0020API.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Logger-LoggerProvider.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\LoggerProvider\u003A\u003A__construct\u0028\u0029",
@@ -1868,7 +1868,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\LogMiddleware",
             "name": "LogMiddleware",
-            "summary": "A\u0020chainable\u0020log\u002Dprocessing\u0020step\u0020inside\u0020a\u0020\u007B\u0040see\u0020Processor\\PipelineLogProcessor\u007D.",
+            "summary": "Stateless\u003B\u0020return\u0020a\u0020new\u0020entry\u0020to\u0020enrich,\u0020null\u0020to\u0020drop.",
             "url": "classes/Flow-Telemetry-Logger-LogMiddleware.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\LogMiddleware\u003A\u003Aprocess\u0028\u0029",
@@ -1878,7 +1878,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\LogProcessor",
             "name": "LogProcessor",
-            "summary": "Interface\u0020for\u0020processing\u0020log\u0020records.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Logger-LogProcessor.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\LogProcessor\u003A\u003Aflush\u0028\u0029",
@@ -1898,7 +1898,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\LogRecord",
             "name": "LogRecord",
-            "summary": "Value\u0020object\u0020representing\u0020a\u0020log\u0020record.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Logger-LogRecord.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\LogRecord\u003A\u003A__construct\u0028\u0029",
@@ -1978,7 +1978,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\LogRecordLimits",
             "name": "LogRecordLimits",
-            "summary": "Configuration\u0020limits\u0020for\u0020log\u0020record\u0020data.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Logger-LogRecordLimits.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\LogRecordLimits\u003A\u003A__construct\u0028\u0029",
@@ -2008,12 +2008,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\LogSink",
             "name": "LogSink",
-            "summary": "A\u0020terminal\u0020\u007B\u0040see\u0020LogProcessor\u007D\u0020\u002D\u0020the\u0020leaf\/final\u0020step\u0020of\u0020a\n\u007B\u0040see\u0020Processor\\PipelineLogProcessor\u007D,\u0020which\u0020exports\u0020\u0028or\u0020otherwise\u0020consumes\u0029\nthe\u0020entries\u0020that\u0020survive\u0020the\u0020middleware\u0020chain.",
+            "summary": "Marker\u0020so\u0020middleware\u0020or\u0020a\u0020pipeline\u0020cannot\u0020be\u0020wired\u0020into\u0020a\u0020pipeline\u0027s\u0020sink\u0020slot.",
             "url": "classes/Flow-Telemetry-Logger-LogSink.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Middleware\\AttributeFilteringLogMiddleware",
             "name": "AttributeFilteringLogMiddleware",
-            "summary": "Drops\u0020log\u0020entries\u0020whose\u0020attributes\u0020match\u0020a\u0020configured\u0020\u007B\u0040see\u0020AttributeFilter\u007D.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Logger-Middleware-AttributeFilteringLogMiddleware.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Middleware\\AttributeFilteringLogMiddleware\u003A\u003A__construct\u0028\u0029",
@@ -2038,7 +2038,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Middleware\\EnrichingLogMiddleware",
             "name": "EnrichingLogMiddleware",
-            "summary": "Merges\u0020a\u0020fixed\u0020set\u0020of\u0020attributes\u0020into\u0020every\u0020log\u0020entry\u0020that\u0020passes\u0020through.",
+            "summary": "Attributes\u0020already\u0020on\u0020the\u0020record\u0020win\u0020over\u0020the\u0020enriched\u0020defaults.",
             "url": "classes/Flow-Telemetry-Logger-Middleware-EnrichingLogMiddleware.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Middleware\\EnrichingLogMiddleware\u003A\u003A__construct\u0028\u0029",
@@ -2053,7 +2053,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Middleware\\SeverityFilteringLogMiddleware",
             "name": "SeverityFilteringLogMiddleware",
-            "summary": "Drops\u0020log\u0020entries\u0020below\u0020a\u0020minimum\u0020severity\u0020level.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Logger-Middleware-SeverityFilteringLogMiddleware.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Middleware\\SeverityFilteringLogMiddleware\u003A\u003A__construct\u0028\u0029",
@@ -2068,7 +2068,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\BatchingLogProcessor",
             "name": "BatchingLogProcessor",
-            "summary": "Batches\u0020log\u0020records\u0020for\u0020efficient\u0020export.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Logger-Processor-BatchingLogProcessor.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\BatchingLogProcessor\u003A\u003A__construct\u0028\u0029",
@@ -2093,7 +2093,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\CompositeLogProcessor",
             "name": "CompositeLogProcessor",
-            "summary": "Forwards\u0020log\u0020records\u0020to\u0020multiple\u0020processors.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Logger-Processor-CompositeLogProcessor.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\CompositeLogProcessor\u003A\u003A__construct\u0028\u0029",
@@ -2123,7 +2123,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\PassThroughLogProcessor",
             "name": "PassThroughLogProcessor",
-            "summary": "Exports\u0020each\u0020log\u0020record\u0020immediately\u0020when\u0020processed.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Logger-Processor-PassThroughLogProcessor.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\PassThroughLogProcessor\u003A\u003A__construct\u0028\u0029",
@@ -2148,7 +2148,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\PipelineLogProcessor",
             "name": "PipelineLogProcessor",
-            "summary": "Runs\u0020a\u0020log\u0020entry\u0020through\u0020an\u0020ordered\u0020chain\u0020of\u0020\u007B\u0040see\u0020LogMiddleware\u007D\u0020and\u0020forwards\nthe\u0020survivors\u0020to\u0020a\u0020single\u0020\u007B\u0040see\u0020LogSink\u007D.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Logger-Processor-PipelineLogProcessor.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Processor\\PipelineLogProcessor\u003A\u003A__construct\u0028\u0029",
@@ -2173,7 +2173,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Severity",
             "name": "Severity",
-            "summary": "Log\u0020severity\u0020levels\u0020aligned\u0020with\u0020OpenTelemetry\u0020ranges.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Logger-Severity.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Severity\u003A\u003AisAtLeast\u0028\u0029",
@@ -2188,37 +2188,37 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Severity\u003A\u003ADEBUG",
             "name": "DEBUG",
-            "summary": "Debugging\u0020information.",
+            "summary": "Diagnostic\u0020information\u0020for\u0020development\u003B\u0020OTEL\u0020severity\u00205\u002D8.",
             "url": "classes/Flow-Telemetry-Logger-Severity.html#enumcase_DEBUG"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Severity\u003A\u003AERROR",
             "name": "ERROR",
-            "summary": "Error\u0020messages.",
+            "summary": "An\u0020error\u0020the\u0020application\u0020survives\u003B\u0020OTEL\u0020severity\u002017\u002D20.",
             "url": "classes/Flow-Telemetry-Logger-Severity.html#enumcase_ERROR"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Severity\u003A\u003AFATAL",
             "name": "FATAL",
-            "summary": "Fatal\/critical\u0020messages.",
+            "summary": "An\u0020error\u0020that\u0020will\u0020likely\u0020stop\u0020the\u0020application\u003B\u0020OTEL\u0020severity\u002021\u002D24.",
             "url": "classes/Flow-Telemetry-Logger-Severity.html#enumcase_FATAL"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Severity\u003A\u003AINFO",
             "name": "INFO",
-            "summary": "Informational\u0020messages.",
+            "summary": "Normal\u0020operational\u0020information\u003B\u0020OTEL\u0020severity\u00209\u002D12.",
             "url": "classes/Flow-Telemetry-Logger-Severity.html#enumcase_INFO"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Severity\u003A\u003ATRACE",
             "name": "TRACE",
-            "summary": "Finest\u002Dgrained\u0020debugging\u0020information.",
+            "summary": "Finest\u002Dgrained\u0020diagnostics\u003B\u0020OTEL\u0020severity\u00201\u002D4.",
             "url": "classes/Flow-Telemetry-Logger-Severity.html#enumcase_TRACE"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Logger\\Severity\u003A\u003AWARN",
             "name": "WARN",
-            "summary": "Warning\u0020messages.",
+            "summary": "A\u0020potentially\u0020harmful\u0020situation\u0020that\u0020does\u0020not\u0020stop\u0020the\u0020application\u003B\u0020OTEL\u0020severity\u002013\u002D16.",
             "url": "classes/Flow-Telemetry-Logger-Severity.html#enumcase_WARN"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\AggregationTemporality",
             "name": "AggregationTemporality",
-            "summary": "Aggregation\u0020temporality\u0020defines\u0020how\u0020a\u0020metric\u0020aggregation\u0020is\u0020reported\u0020over\u0020time.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Meter-AggregationTemporality.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\AggregationTemporality\u003A\u003ACUMULATIVE",
@@ -2233,7 +2233,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Exemplar\\AlignedHistogramBucketExemplarReservoir",
             "name": "AlignedHistogramBucketExemplarReservoir",
-            "summary": "Histogram\u002Daligned\u0020reservoir\u0020keeping\u0020one\u0020exemplar\u0020per\u0020bucket.",
+            "summary": "Latest\u0020measurement\u0020per\u0020bucket\u0020wins.",
             "url": "classes/Flow-Telemetry-Meter-Exemplar-AlignedHistogramBucketExemplarReservoir.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Exemplar\\AlignedHistogramBucketExemplarReservoir\u003A\u003A__construct\u0028\u0029",
@@ -2258,7 +2258,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Exemplar\\AlwaysOffExemplarFilter",
             "name": "AlwaysOffExemplarFilter",
-            "summary": "Never\u0020records\u0020exemplars.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Meter-Exemplar-AlwaysOffExemplarFilter.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Exemplar\\AlwaysOffExemplarFilter\u003A\u003A__toString\u0028\u0029",
@@ -2273,7 +2273,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Exemplar\\AlwaysOnExemplarFilter",
             "name": "AlwaysOnExemplarFilter",
-            "summary": "Records\u0020an\u0020exemplar\u0020when\u0020span\u0020context\u0020is\u0020available.",
+            "summary": "Needs\u0020a\u0020span\u0020context\u003B\u0020the\u0020sampled\u0020flag\u0020is\u0020ignored.",
             "url": "classes/Flow-Telemetry-Meter-Exemplar-AlwaysOnExemplarFilter.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Exemplar\\AlwaysOnExemplarFilter\u003A\u003A__toString\u0028\u0029",
@@ -2288,7 +2288,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Exemplar\\ExemplarFilter",
             "name": "ExemplarFilter",
-            "summary": "Determines\u0020whether\u0020an\u0020exemplar\u0020should\u0020be\u0020recorded\u0020for\u0020a\u0020metric\u0020measurement.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Meter-Exemplar-ExemplarFilter.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Exemplar\\ExemplarFilter\u003A\u003AshouldSample\u0028\u0029",
@@ -2298,7 +2298,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Exemplar\\ExemplarReservoir",
             "name": "ExemplarReservoir",
-            "summary": "Stores\u0020a\u0020bounded\u0020collection\u0020of\u0020exemplars\u0020for\u0020metric\u0020aggregation.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Meter-Exemplar-ExemplarReservoir.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Exemplar\\ExemplarReservoir\u003A\u003Acollect\u0028\u0029",
@@ -2318,7 +2318,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Exemplar\\SimpleFixedSizeExemplarReservoir",
             "name": "SimpleFixedSizeExemplarReservoir",
-            "summary": "Fixed\u002Dsize\u0020reservoir\u0020using\u0020Algorithm\u0020R\u0020for\u0020uniform\u0020sampling.",
+            "summary": "Algorithm\u0020R\u0020\u0028uniform\u0020reservoir\u0020sampling\u0029.",
             "url": "classes/Flow-Telemetry-Meter-Exemplar-SimpleFixedSizeExemplarReservoir.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Exemplar\\SimpleFixedSizeExemplarReservoir\u003A\u003A__construct\u0028\u0029",
@@ -2343,7 +2343,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Exemplar\\TraceBasedExemplarFilter",
             "name": "TraceBasedExemplarFilter",
-            "summary": "Records\u0020an\u0020exemplar\u0020only\u0020when\u0020the\u0020span\u0020is\u0020sampled.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Meter-Exemplar-TraceBasedExemplarFilter.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Exemplar\\TraceBasedExemplarFilter\u003A\u003A__toString\u0028\u0029",
@@ -2358,7 +2358,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Exemplar",
             "name": "Exemplar",
-            "summary": "Represents\u0020a\u0020sample\u0020measurement\u0020with\u0020trace\u0020context.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Meter-Exemplar.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Exemplar\u003A\u003A__construct\u0028\u0029",
@@ -2403,7 +2403,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Instrument\\Counter",
             "name": "Counter",
-            "summary": "Counter\u0020instrument\u0020for\u0020recording\u0020non\u002Dnegative\u0020increments.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Meter-Instrument-Counter.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Instrument\\Counter\u003A\u003A__construct\u0028\u0029",
@@ -2438,7 +2438,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Instrument\\Gauge",
             "name": "Gauge",
-            "summary": "Gauge\u0020instrument\u0020for\u0020recording\u0020non\u002Dadditive\u0020values.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Meter-Instrument-Gauge.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Instrument\\Gauge\u003A\u003A__construct\u0028\u0029",
@@ -2473,7 +2473,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Instrument\\Histogram",
             "name": "Histogram",
-            "summary": "Histogram\u0020instrument\u0020for\u0020recording\u0020value\u0020distributions.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Meter-Instrument-Histogram.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Instrument\\Histogram\u003A\u003A__construct\u0028\u0029",
@@ -2518,7 +2518,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Instrument\\Instrument",
             "name": "Instrument",
-            "summary": "Base\u0020interface\u0020for\u0020metric\u0020instruments.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Meter-Instrument-Instrument.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Instrument\\Instrument\u003A\u003Acollect\u0028\u0029",
@@ -2543,7 +2543,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Instrument\\Throughput",
             "name": "Throughput",
-            "summary": "Throughput\u0020instrument\u0020for\u0020tracking\u0020rate\u0020of\u0020items\u0020processed\u0020over\u0020time.",
+            "summary": "The\u0020rate\u0020timer\u0020starts\u0020at\u0020the\u0020first\u0020add\u0028\u0029\u0020per\u0020attribute\u0020set.",
             "url": "classes/Flow-Telemetry-Meter-Instrument-Throughput.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Instrument\\Throughput\u003A\u003A__construct\u0028\u0029",
@@ -2578,7 +2578,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Instrument\\UpDownCounter",
             "name": "UpDownCounter",
-            "summary": "UpDownCounter\u0020instrument\u0020for\u0020recording\u0020increments\u0020and\u0020decrements.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Meter-Instrument-UpDownCounter.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Instrument\\UpDownCounter\u003A\u003A__construct\u0028\u0029",
@@ -2613,7 +2613,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Meter",
             "name": "Meter",
-            "summary": "Meter\u0020for\u0020creating\u0020metric\u0020instruments.",
+            "summary": "Instruments\u0020are\u0020cached\u0020by\u0020name\u003A\u0020same\u0020name,\u0020same\u0020instance.",
             "url": "classes/Flow-Telemetry-Meter-Meter.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Meter\u003A\u003A__construct\u0028\u0029",
@@ -2688,7 +2688,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\MeterProvider",
             "name": "MeterProvider",
-            "summary": "Entry\u0020point\u0020for\u0020the\u0020metrics\u0020API.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Meter-MeterProvider.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\MeterProvider\u003A\u003A__construct\u0028\u0029",
@@ -2703,7 +2703,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Metric",
             "name": "Metric",
-            "summary": "Represents\u0020a\u0020single\u0020metric\u0020measurement.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Meter-Metric.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Metric\u003A\u003A__construct\u0028\u0029",
@@ -2783,7 +2783,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\MetricLimits",
             "name": "MetricLimits",
-            "summary": "Configuration\u0020for\u0020metric\u0020cardinality\u0020limits.",
+            "summary": "Metrics\u0020are\u0020exempt\u0020from\u0020attribute\u0020count\/length\u0020limits\u0020\u0028OTel\u0029\u003B\u0020only\u0020cardinality\u0020is\u0020limited.",
             "url": "classes/Flow-Telemetry-Meter-MetricLimits.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\MetricLimits\u003A\u003A__construct\u0028\u0029",
@@ -2803,7 +2803,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\MetricLimits\u003A\u003AOVERFLOW_ATTRIBUTE",
             "name": "OVERFLOW_ATTRIBUTE",
-            "summary": "Attribute\u0020key\u0020used\u0020to\u0020identify\u0020overflow\u0020aggregations.",
+            "summary": "Set\u0020to\u0020true\u0020on\u0020the\u0020synthetic\u0020data\u0020point\u0020that\u0020absorbs\u0020measurements\u0020past\u0020the\u0020cardinality\u0020limit.",
             "url": "classes/Flow-Telemetry-Meter-MetricLimits.html#constant_OVERFLOW_ATTRIBUTE"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\MetricLimits\u003A\u003A\u0024cardinalityLimit",
@@ -2813,7 +2813,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\MetricProcessor",
             "name": "MetricProcessor",
-            "summary": "Interface\u0020for\u0020processing\u0020metric\u0020measurements.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Meter-MetricProcessor.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\MetricProcessor\u003A\u003Aflush\u0028\u0029",
@@ -2833,7 +2833,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\MetricType",
             "name": "MetricType",
-            "summary": "Defines\u0020the\u0020type\u0020of\u0020metric\u0020instrument.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Meter-MetricType.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\MetricType\u003A\u003ACOUNTER",
@@ -2858,7 +2858,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Processor\\AttributeFilteringMetricProcessor",
             "name": "AttributeFilteringMetricProcessor",
-            "summary": "Filters\u0020metrics\u0020by\u0020their\u0020attributes.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Meter-Processor-AttributeFilteringMetricProcessor.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Processor\\AttributeFilteringMetricProcessor\u003A\u003A__construct\u0028\u0029",
@@ -2883,7 +2883,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Processor\\BatchingMetricProcessor",
             "name": "BatchingMetricProcessor",
-            "summary": "Batches\u0020metrics\u0020for\u0020efficient\u0020export.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Meter-Processor-BatchingMetricProcessor.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Processor\\BatchingMetricProcessor\u003A\u003A__construct\u0028\u0029",
@@ -2908,7 +2908,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Processor\\CompositeMetricProcessor",
             "name": "CompositeMetricProcessor",
-            "summary": "Forwards\u0020metrics\u0020to\u0020multiple\u0020processors.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Meter-Processor-CompositeMetricProcessor.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Processor\\CompositeMetricProcessor\u003A\u003A__construct\u0028\u0029",
@@ -2938,7 +2938,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Processor\\PassThroughMetricProcessor",
             "name": "PassThroughMetricProcessor",
-            "summary": "Exports\u0020each\u0020metric\u0020immediately\u0020when\u0020processed.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Meter-Processor-PassThroughMetricProcessor.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Meter\\Processor\\PassThroughMetricProcessor\u003A\u003A__construct\u0028\u0029",
@@ -3018,7 +3018,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Propagation\\ArrayCarrier",
             "name": "ArrayCarrier",
-            "summary": "Carrier\u0020backed\u0020by\u0020an\u0020associative\u0020array.",
+            "summary": "Key\u0020lookups\u0020are\u0020case\u002Dinsensitive\u0020\u0028HTTP\u0020headers\u0029.",
             "url": "classes/Flow-Telemetry-Propagation-ArrayCarrier.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Propagation\\ArrayCarrier\u003A\u003A__construct\u0028\u0029",
@@ -3043,7 +3043,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Propagation\\Carrier",
             "name": "Carrier",
-            "summary": "Carrier\u0020for\u0020propagating\u0020context\u0020across\u0020process\u0020boundaries.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Propagation-Carrier.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Propagation\\Carrier\u003A\u003Aget\u0028\u0029",
@@ -3063,7 +3063,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Propagation\\CompositePropagator",
             "name": "CompositePropagator",
-            "summary": "Combines\u0020multiple\u0020Propagators\u0020into\u0020a\u0020single\u0020propagator.",
+            "summary": "Extracted\u0020contexts\u0020are\u0020merged.",
             "url": "classes/Flow-Telemetry-Propagation-CompositePropagator.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Propagation\\CompositePropagator\u003A\u003A__construct\u0028\u0029",
@@ -3088,7 +3088,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Propagation\\PropagationContext",
             "name": "PropagationContext",
-            "summary": "Value\u0020object\u0020containing\u0020propagated\u0020context\u0020information.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Propagation-PropagationContext.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Propagation\\PropagationContext\u003A\u003A__construct\u0028\u0029",
@@ -3123,7 +3123,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Propagation\\Propagator",
             "name": "Propagator",
-            "summary": "Interface\u0020for\u0020propagating\u0020context\u0020across\u0020process\u0020boundaries.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Propagation-Propagator.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Propagation\\Propagator\u003A\u003Aextract\u0028\u0029",
@@ -3143,7 +3143,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Propagation\\SuperglobalCarrier",
             "name": "SuperglobalCarrier",
-            "summary": "Read\u002Donly\u0020carrier\u0020backed\u0020by\u0020PHP\u0020superglobals.",
+            "summary": "Read\u002Donly\u003A\u0020set\u0028\u0029\u0020throws.",
             "url": "classes/Flow-Telemetry-Propagation-SuperglobalCarrier.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Propagation\\SuperglobalCarrier\u003A\u003A__construct\u0028\u0029",
@@ -3168,7 +3168,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Propagation\\W3CBaggage",
             "name": "W3CBaggage",
-            "summary": "W3C\u0020Baggage\u0020propagator\u0020for\u0020propagating\u0020application\u002Dspecific\u0020data.",
+            "summary": "Entry\u0020properties\u0020are\u0020parsed\u0020but\u0020dropped.",
             "url": "classes/Flow-Telemetry-Propagation-W3CBaggage.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Propagation\\W3CBaggage\u003A\u003Aextract\u0028\u0029",
@@ -3193,7 +3193,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Propagation\\W3CTraceContext",
             "name": "W3CTraceContext",
-            "summary": "W3C\u0020Trace\u0020Context\u0020propagator\u0020for\u0020distributed\u0020tracing.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Propagation-W3CTraceContext.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Propagation\\W3CTraceContext\u003A\u003Aextract\u0028\u0029",
@@ -3243,7 +3243,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Conditional\\ConditionalExporter",
             "name": "ConditionalExporter",
-            "summary": "Gates\u0020a\u0020wrapped\u0020exporter\u0020behind\u0020a\u0020runtime\u0020flag.\u0020When\u0020disabled,\u0020batches\u0020are\ndropped\u0020without\u0020reaching\u0020the\u0020wrapped\u0020exporter,\u0020while\u0020callers\u0020still\u0020observe\u0020a\nsuccessful\u0020export.\u0020Enables\u0020toggling\u0020export\u0020on\u0020or\u0020off\u0020via\u0020configuration\n\u0028including\u0020environment\u0020variables\u0029\u0020without\u0020rewiring\u0020the\u0020container.",
+            "summary": "When\u0020disabled,\u0020batches\u0020are\u0020dropped\u0020but\u0020export\u0020still\u0020reports\u0020success.",
             "url": "classes/Flow-Telemetry-Provider-Conditional-ConditionalExporter.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Conditional\\ConditionalExporter\u003A\u003A__construct\u0028\u0029",
@@ -3263,7 +3263,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleExporter",
             "name": "ConsoleExporter",
-            "summary": "Unified\u0020console\u0020exporter\u0020for\u0020logs,\u0020metrics,\u0020and\u0020spans.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Provider-Console-ConsoleExporter.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Console\\ConsoleExporter\u003A\u003A__construct\u0028\u0029",
@@ -3588,7 +3588,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryExporter",
             "name": "MemoryExporter",
-            "summary": "Exporter\u0020that\u0020stores\u0020telemetry\u0020batches\u0020in\u0020memory\u0020for\u0020direct\u0020access.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Provider-Memory-MemoryExporter.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Provider\\Memory\\MemoryExporter\u003A\u003A__construct\u0028\u0029",
@@ -3868,7 +3868,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ContainerAttribute",
             "name": "ContainerAttribute",
-            "summary": "Container\u0020attribute\u0020keys\u0020following\u0020OpenTelemetry\u0020semantic\u0020conventions.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Resource-Attribute-ContainerAttribute.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ContainerAttribute\u003A\u003ACOMMAND",
@@ -3918,7 +3918,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\DeploymentAttribute",
             "name": "DeploymentAttribute",
-            "summary": "Deployment\u0020attribute\u0020keys\u0020following\u0020OpenTelemetry\u0020semantic\u0020conventions.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Resource-Attribute-DeploymentAttribute.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\DeploymentAttribute\u003A\u003AENVIRONMENT_NAME",
@@ -3928,7 +3928,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\HostAttribute",
             "name": "HostAttribute",
-            "summary": "Host\u0020attribute\u0020keys\u0020following\u0020OpenTelemetry\u0020semantic\u0020conventions.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Resource-Attribute-HostAttribute.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\HostAttribute\u003A\u003AARCH",
@@ -3963,7 +3963,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\OsAttribute",
             "name": "OsAttribute",
-            "summary": "Operating\u0020system\u0020attribute\u0020keys\u0020following\u0020OpenTelemetry\u0020semantic\u0020conventions.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Resource-Attribute-OsAttribute.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\OsAttribute\u003A\u003ABUILD_ID",
@@ -3993,7 +3993,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ProcessAttribute",
             "name": "ProcessAttribute",
-            "summary": "Process\u0020attribute\u0020keys\u0020following\u0020OpenTelemetry\u0020semantic\u0020conventions.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Resource-Attribute-ProcessAttribute.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ProcessAttribute\u003A\u003ACOMMAND",
@@ -4053,7 +4053,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ServiceAttribute",
             "name": "ServiceAttribute",
-            "summary": "Service\u0020attribute\u0020keys\u0020following\u0020OpenTelemetry\u0020semantic\u0020conventions.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Resource-Attribute-ServiceAttribute.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ServiceAttribute\u003A\u003AINSTANCE_ID",
@@ -4078,7 +4078,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\VcsAttribute",
             "name": "VcsAttribute",
-            "summary": "VCS\u0020\u0028Version\u0020Control\u0020System\u0029\u0020attribute\u0020keys\u0020following\u0020OpenTelemetry\u0020semantic\u0020conventions.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Resource-Attribute-VcsAttribute.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\VcsAttribute\u003A\u003AREF_HEAD_NAME",
@@ -4103,7 +4103,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\CachingDetector",
             "name": "CachingDetector",
-            "summary": "Decorator\u0020that\u0020caches\u0020resource\u0020detection\u0020results\u0020to\u0020a\u0020file.",
+            "summary": "The\u0020file\u0020cache\u0020never\u0020expires\u003A\u0020wrap\u0020only\u0020runtime\u002Dstable\u0020detection.",
             "url": "classes/Flow-Telemetry-Resource-Detector-CachingDetector.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\CachingDetector\u003A\u003A__construct\u0028\u0029",
@@ -4118,7 +4118,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\ChainDetector",
             "name": "ChainDetector",
-            "summary": "Combines\u0020multiple\u0020resource\u0020detectors\u0020into\u0020a\u0020chain.",
+            "summary": "Later\u0020detectors\u0020override\u0020earlier\u0020keys.",
             "url": "classes/Flow-Telemetry-Resource-Detector-ChainDetector.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\ChainDetector\u003A\u003A__construct\u0028\u0029",
@@ -4133,7 +4133,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\ComposerDetector",
             "name": "ComposerDetector",
-            "summary": "Detects\u0020service\u0020information\u0020from\u0020Composer\u0027s\u0020InstalledVersions.",
+            "summary": "service.name\u0020is\u0020the\u0020root\u0020package\u0020name\u0020without\u0020the\u0020vendor\u0020prefix.",
             "url": "classes/Flow-Telemetry-Resource-Detector-ComposerDetector.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\ComposerDetector\u003A\u003Adetect\u0028\u0029",
@@ -4143,7 +4143,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\EnvironmentDetector",
             "name": "EnvironmentDetector",
-            "summary": "Detects\u0020resource\u0020attributes\u0020from\u0020environment\u0020variables.",
+            "summary": "OTEL_SERVICE_NAME\u0020wins\u0020over\u0020service.name\u0020in\u0020OTEL_RESOURCE_ATTRIBUTES.",
             "url": "classes/Flow-Telemetry-Resource-Detector-EnvironmentDetector.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\EnvironmentDetector\u003A\u003Adetect\u0028\u0029",
@@ -4153,7 +4153,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\GitDetector",
             "name": "GitDetector",
-            "summary": "Detects\u0020Git\u0020\u0028VCS\u0029\u0020information\u0020by\u0020shelling\u0020out\u0020to\u0020the\u0020\u0060git\u0060\u0020binary.",
+            "summary": "Empty\u0020Resource\u0020without\u0020a\u0020git\u0020binary\u0020or\u0020work\u0020tree.",
             "url": "classes/Flow-Telemetry-Resource-Detector-GitDetector.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\GitDetector\u003A\u003A__construct\u0028\u0029",
@@ -4168,7 +4168,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\HostDetector",
             "name": "HostDetector",
-            "summary": "Detects\u0020host\u0020information.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Resource-Detector-HostDetector.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\HostDetector\u003A\u003Adetect\u0028\u0029",
@@ -4176,24 +4176,9 @@ Search.appendIndex(
             "summary": "Detect\u0020resource\u0020attributes\u0020from\u0020the\u0020environment.",
             "url": "classes/Flow-Telemetry-Resource-Detector-HostDetector.html#method_detect"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\ManualDetector",
-            "name": "ManualDetector",
-            "summary": "Detector\u0020that\u0020returns\u0020manually\u0020specified\u0020resource\u0020attributes.",
-            "url": "classes/Flow-Telemetry-Resource-Detector-ManualDetector.html"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\ManualDetector\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-Telemetry-Resource-Detector-ManualDetector.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\ManualDetector\u003A\u003Adetect\u0028\u0029",
-            "name": "detect",
-            "summary": "Detect\u0020resource\u0020attributes\u0020from\u0020the\u0020environment.",
-            "url": "classes/Flow-Telemetry-Resource-Detector-ManualDetector.html#method_detect"
-        },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\OsDetector",
             "name": "OsDetector",
-            "summary": "Detects\u0020operating\u0020system\u0020information.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Resource-Detector-OsDetector.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\OsDetector\u003A\u003Adetect\u0028\u0029",
@@ -4203,7 +4188,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\ProcessDetector",
             "name": "ProcessDetector",
-            "summary": "Detects\u0020process\u0020information.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Resource-Detector-ProcessDetector.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\ProcessDetector\u003A\u003Adetect\u0028\u0029",
@@ -4213,7 +4198,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\RemoteUrlSanitizer",
             "name": "RemoteUrlSanitizer",
-            "summary": "Reduces\u0020a\u0020remote\u0020URL\u0020to\u0020its\u0020scheme,\u0020host,\u0020optional\u0020port\u0020and\u0020path\u0020so\u0020that\u0020no\nsecrets\u0020are\u0020ever\u0020reported\u0020as\u0020a\u0020resource\u0020attribute.\u0020Embedded\u0020credentials\n\u0028user\u003Apassword\u0040\u0029\u0020are\u0020removed,\u0020and\u0020any\u0020query\u0020string\u0020or\u0020fragment\u0020is\u0020dropped\u0020as\neither\u0020can\u0020carry\u0020an\u0020access\u0020token.",
+            "summary": "SCP\u002Dlike\u0020and\u0020unparsable\u0020URLs\u0020are\u0020returned\u0020untouched.",
             "url": "classes/Flow-Telemetry-Resource-Detector-RemoteUrlSanitizer.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\RemoteUrlSanitizer\u003A\u003Asanitize\u0028\u0029",
@@ -4221,9 +4206,24 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-Resource-Detector-RemoteUrlSanitizer.html#method_sanitize"
         },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\StaticDetector",
+            "name": "StaticDetector",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Resource-Detector-StaticDetector.html"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\StaticDetector\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Telemetry-Resource-Detector-StaticDetector.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Detector\\StaticDetector\u003A\u003Adetect\u0028\u0029",
+            "name": "detect",
+            "summary": "Detect\u0020resource\u0020attributes\u0020from\u0020the\u0020environment.",
+            "url": "classes/Flow-Telemetry-Resource-Detector-StaticDetector.html#method_detect"
+        },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\ResourceDetector",
             "name": "ResourceDetector",
-            "summary": "Interface\u0020for\u0020detecting\u0020resource\u0020attributes\u0020from\u0020the\u0020environment.",
+            "summary": "Return\u0020an\u0020empty\u0020Resource\u0020when\u0020nothing\u0020is\u0020detected.",
             "url": "classes/Flow-Telemetry-Resource-ResourceDetector.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\ResourceDetector\u003A\u003Adetect\u0028\u0029",
@@ -4233,7 +4233,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource",
             "name": "Resource",
-            "summary": "Entity\u0020metadata\u0020attached\u0020to\u0020all\u0020telemetry\u0020signals.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Resource.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\u003A\u003A__construct\u0028\u0029",
@@ -4343,7 +4343,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\SemConvAttributes",
             "name": "SemConvAttributes",
-            "summary": "Official\u0020OpenTelemetry\u0020semantic\u0020convention\u0020attribute\u0020keys\u0020emitted\u0020by\u0020Flow\u0020instrumentations.",
+            "summary": "Flow\u002Dspecific\u0020keys\u0020live\u0020in\u0020per\u002Dpackage\u0020classes\u0020with\u0020the\u0020\u0060flow.\u0060\u0020prefix.",
             "url": "classes/Flow-Telemetry-SemConvAttributes.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\SemConvAttributes\u003A\u003ACODE_FUNCTION_NAME",
@@ -4518,7 +4518,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\SemConvMetrics",
             "name": "SemConvMetrics",
-            "summary": "Official\u0020OpenTelemetry\u0020semantic\u0020convention\u0020metric\u0020names\u0020emitted\u0020by\u0020Flow\u0020instrumentations.",
+            "summary": "Flow\u002Dspecific\u0020metrics\u0020use\u0020the\u0020\u0060flow.\u0060\u0020prefix\u0020in\u0020their\u0020own\u0020package.",
             "url": "classes/Flow-Telemetry-SemConvMetrics.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\SemConvMetrics\u003A\u003ADB_CLIENT_OPERATION_DURATION",
@@ -4546,24 +4546,24 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Telemetry-SemConvMetrics.html#constant_MESSAGING_PROCESS_DURATION"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Shutdown\\ShutdownHandler",
-            "name": "ShutdownHandler",
-            "summary": "Registers\u0020Telemetry\u0020instances\u0020for\u0020shutdown\u0020at\u0020process\u0020end.",
-            "url": "classes/Flow-Telemetry-Shutdown-ShutdownHandler.html"
+            "fqsen": "\\Flow\\Telemetry\\Shutdown\\ShutdownRegistry",
+            "name": "ShutdownRegistry",
+            "summary": "Weak\u0020refs\u003A\u0020never\u0020keeps\u0020Telemetry\u0020alive\u003B\u0020re\u002Dqueues\u0020to\u0020drain\u0020after\u0020other\u0020shutdown\u0020functions.",
+            "url": "classes/Flow-Telemetry-Shutdown-ShutdownRegistry.html"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Shutdown\\ShutdownHandler\u003A\u003Aregister\u0028\u0029",
+            "fqsen": "\\Flow\\Telemetry\\Shutdown\\ShutdownRegistry\u003A\u003Aregister\u0028\u0029",
             "name": "register",
             "summary": "",
-            "url": "classes/Flow-Telemetry-Shutdown-ShutdownHandler.html#method_register"
+            "url": "classes/Flow-Telemetry-Shutdown-ShutdownRegistry.html#method_register"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Shutdown\\ShutdownHandler\u003A\u003Ainvoke\u0028\u0029",
+            "fqsen": "\\Flow\\Telemetry\\Shutdown\\ShutdownRegistry\u003A\u003Ainvoke\u0028\u0029",
             "name": "invoke",
             "summary": "Shut\u0020down\u0020all\u0020still\u002Dreferenced\u0020Telemetry\u0020instances,\u0020most\u0020recent\u0020first.",
-            "url": "classes/Flow-Telemetry-Shutdown-ShutdownHandler.html#method_invoke"
+            "url": "classes/Flow-Telemetry-Shutdown-ShutdownRegistry.html#method_invoke"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Signal\\Signals",
             "name": "Signals",
-            "summary": "A\u0020typed\u0020collection\u0020of\u0020telemetry\u0020items\u0020for\u0020one\u0020signal\u0020type.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Signal-Signals.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Signal\\Signals\u003A\u003Alogs\u0028\u0029",
@@ -4633,7 +4633,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Telemetry",
             "name": "Telemetry",
-            "summary": "Main\u0020entry\u0020point\u0020to\u0020all\u0020telemetry\u0020operations.",
+            "summary": "Tracer\/Meter\/Logger\u0020are\u0020cached\u0020per\u0020name\u0020and\u0020version.",
             "url": "classes/Flow-Telemetry-Telemetry.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Telemetry\u003A\u003A__construct\u0028\u0029",
@@ -4673,7 +4673,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\GenericEvent",
             "name": "GenericEvent",
-            "summary": "Default\u0020implementation\u0020of\u0020SpanEvent.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-GenericEvent.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\GenericEvent\u003A\u003A__construct\u0028\u0029",
@@ -4723,7 +4723,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\AttributeFilteringSpanProcessor",
             "name": "AttributeFilteringSpanProcessor",
-            "summary": "Filters\u0020spans\u0020by\u0020their\u0020attributes.",
+            "summary": "Decides\u0020at\u0020onEnd\u0028\u0029\u003A\u0020attributes\u0020are\u0020complete\u0020only\u0020once\u0020the\u0020span\u0020ends.",
             "url": "classes/Flow-Telemetry-Tracer-Processor-AttributeFilteringSpanProcessor.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\AttributeFilteringSpanProcessor\u003A\u003A__construct\u0028\u0029",
@@ -4753,7 +4753,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\BatchingSpanProcessor",
             "name": "BatchingSpanProcessor",
-            "summary": "Batches\u0020spans\u0020for\u0020efficient\u0020export.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-Processor-BatchingSpanProcessor.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\BatchingSpanProcessor\u003A\u003A__construct\u0028\u0029",
@@ -4783,7 +4783,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\CompositeSpanProcessor",
             "name": "CompositeSpanProcessor",
-            "summary": "Forwards\u0020spans\u0020to\u0020multiple\u0020processors.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-Processor-CompositeSpanProcessor.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\CompositeSpanProcessor\u003A\u003A__construct\u0028\u0029",
@@ -4818,7 +4818,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\PassThroughSpanProcessor",
             "name": "PassThroughSpanProcessor",
-            "summary": "Exports\u0020each\u0020span\u0020immediately\u0020when\u0020it\u0020ends.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-Processor-PassThroughSpanProcessor.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Processor\\PassThroughSpanProcessor\u003A\u003A__construct\u0028\u0029",
@@ -4848,7 +4848,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\AlwaysOffSampler",
             "name": "AlwaysOffSampler",
-            "summary": "Sampler\u0020that\u0020never\u0020records\u0020or\u0020exports\u0020any\u0020spans.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-Sampler-AlwaysOffSampler.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\AlwaysOffSampler\u003A\u003A__toString\u0028\u0029",
@@ -4863,7 +4863,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\AlwaysOnSampler",
             "name": "AlwaysOnSampler",
-            "summary": "Sampler\u0020that\u0020always\u0020records\u0020and\u0020exports\u0020all\u0020spans.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-Sampler-AlwaysOnSampler.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\AlwaysOnSampler\u003A\u003A__toString\u0028\u0029",
@@ -4876,29 +4876,29 @@ Search.appendIndex(
             "summary": "Determine\u0020if\u0020a\u0020span\u0020should\u0020be\u0020sampled.",
             "url": "classes/Flow-Telemetry-Tracer-Sampler-AlwaysOnSampler.html#method_shouldSample"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\AttributeMatchingSampler",
-            "name": "AttributeMatchingSampler",
-            "summary": "Drops\u0020spans\u0020whose\u0020start\u002Dtime\u0020attributes\u0020match\u0020an\u0020\u007B\u0040see\u0020AttributeFilter\u007D,\u0020and\ndefers\u0020every\u0020other\u0020span\u0020to\u0020a\u0020delegate\u0020sampler.",
-            "url": "classes/Flow-Telemetry-Tracer-Sampler-AttributeMatchingSampler.html"
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\AttributeFilteringSampler",
+            "name": "AttributeFilteringSampler",
+            "summary": "Sees\u0020start\u002Dtime\u0020attributes\u0020only\u003B\u0020end\u002Dstate\u0020filtering\u0020is\u0020AttributeFilteringSpanProcessor\u0027s\u0020job.",
+            "url": "classes/Flow-Telemetry-Tracer-Sampler-AttributeFilteringSampler.html"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\AttributeMatchingSampler\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\AttributeFilteringSampler\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-Telemetry-Tracer-Sampler-AttributeMatchingSampler.html#method___construct"
+            "url": "classes/Flow-Telemetry-Tracer-Sampler-AttributeFilteringSampler.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\AttributeMatchingSampler\u003A\u003A__toString\u0028\u0029",
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\AttributeFilteringSampler\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
             "summary": "Get\u0020a\u0020string\u0020representation\u0020of\u0020this\u0020sampler\u0020for\u0020debugging.",
-            "url": "classes/Flow-Telemetry-Tracer-Sampler-AttributeMatchingSampler.html#method___toString"
+            "url": "classes/Flow-Telemetry-Tracer-Sampler-AttributeFilteringSampler.html#method___toString"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\AttributeMatchingSampler\u003A\u003AshouldSample\u0028\u0029",
+            "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\AttributeFilteringSampler\u003A\u003AshouldSample\u0028\u0029",
             "name": "shouldSample",
             "summary": "Determine\u0020if\u0020a\u0020span\u0020should\u0020be\u0020sampled.",
-            "url": "classes/Flow-Telemetry-Tracer-Sampler-AttributeMatchingSampler.html#method_shouldSample"
+            "url": "classes/Flow-Telemetry-Tracer-Sampler-AttributeFilteringSampler.html#method_shouldSample"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\ParentBasedSampler",
             "name": "ParentBasedSampler",
-            "summary": "Sampler\u0020that\u0020respects\u0020the\u0020parent\u0020span\u0027s\u0020sampling\u0020decision.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-Sampler-ParentBasedSampler.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\ParentBasedSampler\u003A\u003A__construct\u0028\u0029",
@@ -4918,7 +4918,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\Sampler",
             "name": "Sampler",
-            "summary": "Interface\u0020for\u0020sampling\u0020decisions.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-Sampler-Sampler.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\Sampler\u003A\u003A__toString\u0028\u0029",
@@ -4933,7 +4933,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\SamplingDecision",
             "name": "SamplingDecision",
-            "summary": "Sampling\u0020decision\u0020made\u0020by\u0020a\u0020Sampler.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-Sampler-SamplingDecision.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\SamplingDecision\u003A\u003AisRecording\u0028\u0029",
@@ -4963,7 +4963,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\SamplingResult",
             "name": "SamplingResult",
-            "summary": "Result\u0020of\u0020a\u0020sampling\u0020decision.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-Sampler-SamplingResult.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\SamplingResult\u003A\u003A__construct\u0028\u0029",
@@ -5003,7 +5003,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\SuppressingSampler",
             "name": "SuppressingSampler",
-            "summary": "Enforces\u0020OpenTelemetry\u0020tracing\u0020suppression\u0020as\u0020a\u0020Sampler\u003A\u0020when\u0020the\u0020parent\u0020context\u0020carries\u0020the\nsuppression\u0020bit,\u0020the\u0020span\u0020is\u0020dropped\u0020\u0028non\u002Drecording,\u0020never\u0020exported\u0029\u003B\u0020otherwise\u0020the\u0020decision\u0020is\ndeferred\u0020to\u0020the\u0020wrapped\u0020sampler.",
+            "summary": "The\u0020single\u0020tracing\u002Dsuppression\u0020enforcement\u0020point,\u0020wrapping\u0020any\u0020sampler.",
             "url": "classes/Flow-Telemetry-Tracer-Sampler-SuppressingSampler.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\SuppressingSampler\u003A\u003A__construct\u0028\u0029",
@@ -5023,7 +5023,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\TraceIdRatioBasedSampler",
             "name": "TraceIdRatioBasedSampler",
-            "summary": "Sampler\u0020that\u0020samples\u0020a\u0020configurable\u0020percentage\u0020of\u0020traces.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-Sampler-TraceIdRatioBasedSampler.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Sampler\\TraceIdRatioBasedSampler\u003A\u003A__construct\u0028\u0029",
@@ -5043,7 +5043,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Span",
             "name": "Span",
-            "summary": "Represents\u0020a\u0020single\u0020operation\u0020within\u0020a\u0020trace.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-Span.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Span\u003A\u003A__construct\u0028\u0029",
@@ -5198,7 +5198,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanContext",
             "name": "SpanContext",
-            "summary": "Immutable\u0020identification\u0020of\u0020a\u0020span\u0020within\u0020a\u0020trace.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-SpanContext.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanContext\u003A\u003A__construct\u0028\u0029",
@@ -5283,7 +5283,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanEvent",
             "name": "SpanEvent",
-            "summary": "Interface\u0020for\u0020events\u0020recorded\u0020within\u0020a\u0020span.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-SpanEvent.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanEvent\u003A\u003AfromArray\u0028\u0029",
@@ -5323,7 +5323,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanKind",
             "name": "SpanKind",
-            "summary": "Describes\u0020the\u0020relationship\u0020between\u0020a\u0020span\u0020and\u0020its\u0020parent\/children.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-SpanKind.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanKind\u003A\u003ACLIENT",
@@ -5353,7 +5353,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanLimits",
             "name": "SpanLimits",
-            "summary": "Configuration\u0020limits\u0020for\u0020span\u0020data.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-SpanLimits.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanLimits\u003A\u003A__construct\u0028\u0029",
@@ -5403,7 +5403,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanLink",
             "name": "SpanLink",
-            "summary": "A\u0020link\u0020from\u0020one\u0020span\u0020to\u0020another.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-SpanLink.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanLink\u003A\u003A__construct\u0028\u0029",
@@ -5443,7 +5443,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanProcessor",
             "name": "SpanProcessor",
-            "summary": "Interface\u0020for\u0020processing\u0020spans\u0020when\u0020they\u0020start\u0020and\u0020end.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-SpanProcessor.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanProcessor\u003A\u003Aflush\u0028\u0029",
@@ -5468,7 +5468,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanStatus",
             "name": "SpanStatus",
-            "summary": "Represents\u0020the\u0020status\u0020of\u0020a\u0020span.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-SpanStatus.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\SpanStatus\u003A\u003A__construct\u0028\u0029",
@@ -5548,7 +5548,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Tracer",
             "name": "Tracer",
-            "summary": "Creates\u0020and\u0020manages\u0020spans\u0020within\u0020a\u0020trace.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-Tracer.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\Tracer\u003A\u003A__construct\u0028\u0029",
@@ -5618,7 +5618,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\TracerProvider",
             "name": "TracerProvider",
-            "summary": "Entry\u0020point\u0020for\u0020the\u0020tracing\u0020API.",
+            "summary": "",
             "url": "classes/Flow-Telemetry-Tracer-TracerProvider.html"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Tracer\\TracerProvider\u003A\u003A__construct\u0028\u0029",

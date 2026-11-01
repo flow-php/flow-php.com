@@ -125,33 +125,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/W3CBaggage.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-w3cbaggage.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/W3CBaggage.php">W3CBaggage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">W3C Baggage propagator for propagating application-specific data.</p>
+            <p class="phpdocumentor-summary">Entry properties are parsed but dropped.</p>
 
 
-    <section class="phpdocumentor-description"><p>Implements the W3C Baggage specification for propagating key-value
-pairs across service boundaries using HTTP headers.</p>
-<p>Header format:
-baggage: key1=value1,key2=value2;property1;property2=propValue</p>
-<p>Note: Properties (metadata for baggage entries) are parsed but not preserved
-in the current implementation as they are rarely used.</p>
-<p>Example usage:</p>
-<pre class="prettyprint"><code class="language-php">$propagator = new W3CBaggage();
-
-// Extract from incoming request
-$carrier = new ArrayCarrier($headers);
-$ctx = $propagator-&gt;extract($carrier);
-$baggage = $ctx-&gt;baggage;
-
-// Inject into outgoing request
-$carrier = new ArrayCarrier();
-$propagator-&gt;inject(new PropagationContext(baggage: $baggage), $carrier);
-$headers = $carrier-&gt;unwrap();
-</code></pre>
-</section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -178,7 +158,7 @@ $headers = $carrier-&gt;unwrap();
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Propagation-Propagator.html"><abbr title="\Flow\Telemetry\Propagation\Propagator">Propagator</abbr></a></dt><dd>Interface for propagating context across process boundaries.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-Telemetry-Propagation-Propagator.html"><abbr title="\Flow\Telemetry\Propagation\Propagator">Propagator</abbr></a></dt>    </dl>
 
 
 
@@ -248,7 +228,7 @@ $headers = $carrier-&gt;unwrap();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/W3CBaggage.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-w3cbaggage.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/W3CBaggage.php">W3CBaggage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -292,7 +272,7 @@ $headers = $carrier-&gt;unwrap();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/W3CBaggage.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-w3cbaggage.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/W3CBaggage.php">W3CBaggage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
@@ -345,7 +325,7 @@ $headers = $carrier-&gt;unwrap();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/W3CBaggage.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-w3cbaggage.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/W3CBaggage.php">W3CBaggage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">98</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -384,7 +364,7 @@ $headers = $carrier-&gt;unwrap();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/telemetry/src/Flow/Telemetry/Propagation/W3CBaggage.php"><a href="files/src-lib-telemetry-src-flow-telemetry-propagation-w3cbaggage.html"><abbr title="src/lib/telemetry/src/Flow/Telemetry/Propagation/W3CBaggage.php">W3CBaggage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">106</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 

@@ -126,7 +126,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/PhpCSVOpenSource.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-phpcsvopensource.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/PhpCSVOpenSource.php">PhpCSVOpenSource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -249,7 +249,7 @@ record handed up in record order. This instance is consumed afterwards.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/PhpCSVOpenSource.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-phpcsvopensource.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/PhpCSVOpenSource.php">PhpCSVOpenSource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -307,7 +307,7 @@ record handed up in record order. This instance is consumed afterwards.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/PhpCSVOpenSource.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-phpcsvopensource.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/PhpCSVOpenSource.php">PhpCSVOpenSource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -316,7 +316,7 @@ record handed up in record order. This instance is consumed afterwards.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">batches</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Values\Schema">Schema</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Values\Column\Backend">Backend</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$backend</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sampleSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Foundation\Exception\CorruptedRecordException">CorruptedRecordException</abbr>|<abbr title="\Flow\ETL\Values\Rows">Rows</abbr>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">batches</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Values\Schema">Schema</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Values\Column\Backend">Backend</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$backend</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\IO\Inference\SchemaInference">SchemaInference</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$inference</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Foundation\Exception\CorruptedRecordException">CorruptedRecordException</abbr>|<abbr title="\Flow\ETL\Values\Rows">Rows</abbr>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -346,11 +346,11 @@ record handed up in record order. This instance is consumed afterwards.</p>
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$sampleSize</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int|null</span>
+                <span class="phpdocumentor-argument-list__argument__name">$inference</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\IO\Inference\SchemaInference">SchemaInference</abbr>|null</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>the inference's sample size when $schema was inferred; null when it was declared</p>
+                    <section class="phpdocumentor-description"><p>the inference that made $schema; null when it was declared</p>
 </section>
 
             </dd>
@@ -380,7 +380,7 @@ record handed up in record order. This instance is consumed afterwards.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/PhpCSVOpenSource.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-phpcsvopensource.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/PhpCSVOpenSource.php">PhpCSVOpenSource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
@@ -414,7 +414,7 @@ record handed up in record order. This instance is consumed afterwards.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/PhpCSVOpenSource.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-phpcsvopensource.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/PhpCSVOpenSource.php">PhpCSVOpenSource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
@@ -453,7 +453,7 @@ record handed up in record order. This instance is consumed afterwards.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/PhpCSVOpenSource.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-phpcsvopensource.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/PhpCSVOpenSource.php">PhpCSVOpenSource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
     </aside>
 
@@ -492,7 +492,7 @@ record handed up in record order. This instance is consumed afterwards.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/PhpCSVOpenSource.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-phpcsvopensource.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/PhpCSVOpenSource.php">PhpCSVOpenSource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">139</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 
     </aside>
 
@@ -531,7 +531,7 @@ record handed up in record order. This instance is consumed afterwards.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/PhpCSVOpenSource.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-phpcsvopensource.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/PhpCSVOpenSource.php">PhpCSVOpenSource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">144</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 
     </aside>
 
@@ -570,7 +570,7 @@ record handed up in record order. This instance is consumed afterwards.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/PhpCSVOpenSource.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-phpcsvopensource.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/PhpCSVOpenSource.php">PhpCSVOpenSource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">123</span>
+    <span class="phpdocumentor-element-found-in__line">130</span>
 
     </aside>
 
@@ -611,7 +611,7 @@ record handed up in record order. This instance is consumed afterwards.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/PhpCSVOpenSource.php"><a href="files/src-adapter-etl-adapter-csv-src-flow-etl-adapter-csv-io-extractor-phpcsvopensource.html"><abbr title="src/adapter/etl-adapter-csv/src/Flow/ETL/Adapter/CSV/IO/Extractor/PhpCSVOpenSource.php">PhpCSVOpenSource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">149</span>
+    <span class="phpdocumentor-element-found-in__line">156</span>
 
     </aside>
 
@@ -619,7 +619,7 @@ record handed up in record order. This instance is consumed afterwards.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">sniff</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$names</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowBudget</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Types\Type\TypeNarrower">TypeNarrower</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$typer</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\IO\Inference\ColumnTypes">ColumnTypes</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">sniff</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$names</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowBudget</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Types\Type\TypeNarrower">TypeNarrower</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$typer</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\ETL\IO\Inference\ColumnTypes">ColumnTypes</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -636,10 +636,14 @@ record handed up in record order. This instance is consumed afterwards.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$rowBudget</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><ul>
+<li>null for every row</li>
+</ul>
+</section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$typer</span>

@@ -110,7 +110,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Monolog-Telemetry-Exception-Exception.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\Exception\Exception">Exception</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Monolog-Telemetry-Exception-InvalidArgumentException.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Monolog-Telemetry-LogRecordConverter.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\LogRecordConverter">LogRecordConverter</abbr></a></dt><dd>Convert Monolog LogRecord to Telemetry LogRecord with proper attribute mapping.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Monolog-Telemetry-SeverityMapper.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\SeverityMapper">SeverityMapper</abbr></a></dt><dd>Maps Monolog log levels to Flow Telemetry severity levels.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Monolog-Telemetry-TelemetryHandler.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\TelemetryHandler">TelemetryHandler</abbr></a></dt><dd>Monolog handler that forwards log records to Flow Telemetry.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Monolog-Telemetry-ValueNormalizer.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\ValueNormalizer">ValueNormalizer</abbr></a></dt><dd>Normalize arbitrary PHP values to types acceptable by Telemetry attributes.</dd>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Monolog-Telemetry-AttributeValueNormalizer.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\AttributeValueNormalizer">AttributeValueNormalizer</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Monolog-Telemetry-Exception-Exception.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\Exception\Exception">Exception</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Monolog-Telemetry-Exception-InvalidArgumentException.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Monolog-Telemetry-LogRecordConverter.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\LogRecordConverter">LogRecordConverter</abbr></a></dt><dd>Convert Monolog LogRecord to Telemetry LogRecord with proper attribute mapping.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Monolog-Telemetry-SeverityMapper.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\SeverityMapper">SeverityMapper</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Flow-Bridge-Monolog-Telemetry-TelemetryHandler.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\TelemetryHandler">TelemetryHandler</abbr></a></dt><dd>Context and extra become `context.*`/`extra.*` attributes; a Throwable goes through setException().</dd>    </dl>
 
 
 
@@ -129,9 +129,9 @@
 
         </h3>
                     <article class="phpdocumentor-element -function - ">
-    <h4 class="phpdocumentor-element__name" id="function_value_normalizer">
-        value_normalizer()
-        <a href="namespaces/flow-bridge-monolog-telemetry-dsl.html#function_value_normalizer" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="function_attribute_value_normalizer">
+        attribute_value_normalizer()
+        <a href="namespaces/flow-bridge-monolog-telemetry-dsl.html#function_attribute_value_normalizer" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
@@ -141,12 +141,12 @@
 
     </aside>
 
-        <p class="phpdocumentor-summary">Create a ValueNormalizer for converting arbitrary PHP values to Telemetry attribute types.</p>
+        <p class="phpdocumentor-summary">Create a AttributeValueNormalizer for converting arbitrary PHP values to Telemetry attribute types.</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">value_normalizer</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Bridge-Monolog-Telemetry-ValueNormalizer.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\ValueNormalizer">ValueNormalizer</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">attribute_value_normalizer</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Bridge-Monolog-Telemetry-AttributeValueNormalizer.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\AttributeValueNormalizer">AttributeValueNormalizer</abbr></a></span></code>
 
         <section class="phpdocumentor-description"><p>The normalizer handles:</p>
 <ul>
@@ -160,7 +160,7 @@
 <li>other types → get_debug_type() result</li>
 </ul>
 <p>Example usage:</p>
-<pre class="prettyprint"><code class="language-php">$normalizer = value_normalizer();
+<pre class="prettyprint"><code class="language-php">$normalizer = attribute_value_normalizer();
 $normalized = $normalizer-&gt;normalize($value);
 </code></pre>
 </section>
@@ -170,7 +170,7 @@ $normalized = $normalizer-&gt;normalize($value);
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Bridge-Monolog-Telemetry-ValueNormalizer.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\ValueNormalizer">ValueNormalizer</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Bridge-Monolog-Telemetry-AttributeValueNormalizer.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\AttributeValueNormalizer">AttributeValueNormalizer</abbr></a></span>
             </section>
 
 </article>
@@ -252,7 +252,7 @@ $mapper = severity_mapper([
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">log_record_converter</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-Bridge-Monolog-Telemetry-SeverityMapper.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\SeverityMapper">SeverityMapper</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$severityMapper</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-Bridge-Monolog-Telemetry-ValueNormalizer.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\ValueNormalizer">ValueNormalizer</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$valueNormalizer</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Bridge-Monolog-Telemetry-LogRecordConverter.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\LogRecordConverter">LogRecordConverter</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">log_record_converter</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-Bridge-Monolog-Telemetry-SeverityMapper.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\SeverityMapper">SeverityMapper</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$severityMapper</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|<a href="classes/Flow-Bridge-Monolog-Telemetry-AttributeValueNormalizer.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\AttributeValueNormalizer">AttributeValueNormalizer</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$valueNormalizer</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-Bridge-Monolog-Telemetry-LogRecordConverter.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\LogRecordConverter">LogRecordConverter</abbr></a></span></code>
 
         <section class="phpdocumentor-description"><p>The converter handles:</p>
 <ul>
@@ -277,7 +277,7 @@ $mapper = severity_mapper([
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$valueNormalizer</span>
-                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-Bridge-Monolog-Telemetry-ValueNormalizer.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\ValueNormalizer">ValueNormalizer</abbr></a></span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|<a href="classes/Flow-Bridge-Monolog-Telemetry-AttributeValueNormalizer.html"><abbr title="\Flow\Bridge\Monolog\Telemetry\AttributeValueNormalizer">AttributeValueNormalizer</abbr></a></span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Custom value normalizer (defaults to standard normalizer)</p>
@@ -314,7 +314,7 @@ $telemetryRecord = $converter-&gt;convert($monologRecord);
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/monolog/telemetry/src/Flow/Bridge/Monolog/Telemetry/DSL/functions.php"><a href="files/src-bridge-monolog-telemetry-src-flow-bridge-monolog-telemetry-dsl-functions.html"><abbr title="src/bridge/monolog/telemetry/src/Flow/Bridge/Monolog/Telemetry/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">148</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 
     </aside>
 
@@ -426,10 +426,10 @@ $monolog-&gt;pushHandler(telemetry_handler($logger, $converter));
                             <li class="phpdocumentor-on-this-page-section__title">Functions</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="namespaces/flow-bridge-monolog-telemetry-dsl.html#function_attribute_value_normalizer">attribute_value_normalizer()</a></li>
                                                     <li class=""><a href="namespaces/flow-bridge-monolog-telemetry-dsl.html#function_log_record_converter">log_record_converter()</a></li>
                                                     <li class=""><a href="namespaces/flow-bridge-monolog-telemetry-dsl.html#function_severity_mapper">severity_mapper()</a></li>
                                                     <li class=""><a href="namespaces/flow-bridge-monolog-telemetry-dsl.html#function_telemetry_handler">telemetry_handler()</a></li>
-                                                    <li class=""><a href="namespaces/flow-bridge-monolog-telemetry-dsl.html#function_value_normalizer">value_normalizer()</a></li>
                                             </ul>
                 </li>
                     </ul>

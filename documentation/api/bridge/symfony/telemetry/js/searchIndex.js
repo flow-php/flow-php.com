@@ -3,7 +3,7 @@ Search.appendIndex(
                 {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Attribute\\WithTelemetryChannel",
             "name": "WithTelemetryChannel",
-            "summary": "Routes\u0020a\u0020service\u0027s\u0020logger\u0020to\u0020a\u0020named\u0020Flow\u0020telemetry\u0020channel.",
+            "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Attribute-WithTelemetryChannel.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Attribute\\WithTelemetryChannel\u003A\u003A__construct\u0028\u0029",
@@ -48,7 +48,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\ChannelLoggerPass",
             "name": "ChannelLoggerPass",
-            "summary": "Routes\u0020services\u0020to\u0020a\u0020named\u0020telemetry\u0020logger\u0020based\u0020on\u0020their\u0020logging\u0020channel.",
+            "summary": "Own\u0020tag\u0020without\u0020a\u0020channel\u0020throws\u003B\u0020framework\u0020\u0060monolog.logger\u0060\u0020tag\u0020without\u0020one\u0020is\u0020skipped\u0020\u0028we\u0020do\u0020not\u0020own\u0020it\u0029.",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-ChannelLoggerPass.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\ChannelLoggerPass\u003A\u003Aprocess\u0028\u0029",
@@ -138,7 +138,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\MessengerTelemetryPass",
             "name": "MessengerTelemetryPass",
-            "summary": "Injects\u0020the\u0020messenger\u0020TracingMiddleware\u0020into\u0020every\u0020message\u0020bus\u0020as\u0020the\u0020outermost\u0020middleware,\u0020so\u0020consumed\nand\u0020produced\u0020messages\u0020are\u0020traced\u0020without\u0020the\u0020application\u0020having\u0020to\u0020register\u0020it\u0020manually.\u0020Runs\u0020before\nSymfony\u0027s\u0020MessengerPass,\u0020which\u0020turns\u0020each\u0020\u0022\u003CbusId\u003E.middleware\u0022\u0020parameter\u0020into\u0020the\u0020bus\u0027s\u0020middleware\u0020stack.",
+            "summary": "Must\u0020run\u0020before\u0020MessengerPass,\u0020which\u0020turns\u0020\u0060\u003CbusId\u003E.middleware\u0060\u0020into\u0020the\u0020stack.",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-MessengerTelemetryPass.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\MessengerTelemetryPass\u003A\u003Aprocess\u0028\u0029",
@@ -193,7 +193,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\TraceContextUrlGeneratorPass",
             "name": "TraceContextUrlGeneratorPass",
-            "summary": "The\u0020trace\u002Dcontext\u0020URL\u0020generator\u0020wraps\u0020the\u0020\u0060router\u0060\u0020service,\u0020which\u0020only\u0020exists\u0020when\u0020a\u0020router\u0020is\nregistered\u0020\u0028e.g.\u0020FrameworkBundle\u0029.\u0020Drop\u0020it\u0020on\u0020router\u002Dless\u0020kernels\u0020so\u0020its\u0020hard\u0020dependency\u0020does\u0020not\nbreak\u0020container\u0020compilation.",
+            "summary": "Removes\u0020the\u0020generator\u0020on\u0020router\u002Dless\u0020kernels\u0020so\u0020compilation\u0020does\u0020not\u0020break.",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-DependencyInjection-Compiler-TraceContextUrlGeneratorPass.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\DependencyInjection\\Compiler\\TraceContextUrlGeneratorPass\u003A\u003Aprocess\u0028\u0029",
@@ -243,7 +243,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Cache\\CacheDeferredFlushSubscriber",
             "name": "CacheDeferredFlushSubscriber",
-            "summary": "Symfony\u0020cache\u0020pools\u0020defer\u0020writes\u0020and\u0020flush\u0020them\u0020from\u0020the\u0020pool\u0027s\u0020own\u0020commit\u0020path\u0020at\u0020object\u0020destruction,\noutside\u0020any\u0020request\/message\u0020span.\u0020On\u0020a\u0020Doctrine\u0020DBAL\u0020pool\u0020each\u0020of\u0020those\u0020writes\u0020therefore\u0020surfaces\u0020as\u0020an\norphan\u0020doctrine.dbal.\u002A\u0020span\u0020\u0028statement.prepare\/execute,\u0020transaction.begin\/commit\u0029,\u0020one\u0020trace\u0020per\u0020query.",
+            "summary": "Pools\u0020flush\u0020at\u0020destruction\u0020outside\u0020any\u0020span\u003B\u0020draining\u0020here\u0020groups\u0020DBAL\u0020writes\u0020under\u0020one\u0020cache.flush\u0020span.",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Cache-CacheDeferredFlushSubscriber.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Cache\\CacheDeferredFlushSubscriber\u003A\u003A__construct\u0028\u0029",
@@ -438,7 +438,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Console\\CommandSuppressionSubscriber",
             "name": "CommandSuppressionSubscriber",
-            "summary": "Suppresses\u0020tracing\u0020for\u0020the\u0020entire\u0020execution\u0020of\u0020the\u0020configured\u0020commands\u0020\u0028long\u002Drunning\u0020worker\u0020commands\u0029,\nso\u0020their\u0020between\u002Dwork\u0020activity\u0020\u0028transport\u0020polls,\u0020idle\u002Dtick\u0020co\u002Dlisteners,\u0020\u2026\u0029\u0020does\u0020not\u0020surface.\u0020A\nsuppression\u0020flag\u0020is\u0020attached\u0020to\u0020the\u0020telemetry\u0020context\u0020when\u0020a\u0020matching\u0020command\u0020starts\u0020and\u0020detached\u0020when\u0020it\nterminates\u003B\u0020the\u0020SuppressingSampler\u0020then\u0020drops\u0020any\u0020span\u0020created\u0020while\u0020it\u0020is\u0020set.\u0020Instrumentation\u0020that\u0020must\nstill\u0020be\u0020traced\u0020lifts\u0020the\u0020suppression\u0020around\u0020its\u0020own\u0020work\u0020\u0028e.g.\u0020the\u0020messenger\u0020middleware\u0020per\u0020message\u0029.",
+            "summary": "Priorities\u0020wrap\u0020ConsoleSpanSubscriber\u0020\u0028\u00B110000\u0029\u003B\u0020scopes\u0020stack\u0020per\u0020COMMAND\/TERMINATE\u0020for\u0020nested\u0020commands.",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Console-CommandSuppressionSubscriber.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Console\\CommandSuppressionSubscriber\u003A\u003A__construct\u0028\u0029",
@@ -463,7 +463,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Console\\ConsoleAttributes",
             "name": "ConsoleAttributes",
-            "summary": "Flow\u002Dspecific\u0020console\u0020attribute\u0020keys.",
+            "summary": "Custom\u0020keys\u0020only,\u0020under\u0020\u0060flow.symfony.\u0060\u003B\u0020official\u0020keys\u0020live\u0020in\u0020SemConvAttributes.",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Console-ConsoleAttributes.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Console\\ConsoleAttributes\u003A\u003AATTR_COMMAND_CLASS",
@@ -483,7 +483,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Console\\ConsoleFlushSubscriber",
             "name": "ConsoleFlushSubscriber",
-            "summary": "Drains\u0020buffered\u0020telemetry\u0020when\u0020a\u0020console\u0020command\u0020terminates.",
+            "summary": "Flushes,\u0020never\u0020shuts\u0020down\u003A\u0020the\u0020command\u0020may\u0020be\u0020nested\u0020or\u0020inside\u0020a\u0020worker\u003B\u0020shutdown\u0020runs\u0020at\u0020process\u0020end.",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Console-ConsoleFlushSubscriber.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Console\\ConsoleFlushSubscriber\u003A\u003A__construct\u0028\u0029",
@@ -563,7 +563,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\DbAttributes",
             "name": "DbAttributes",
-            "summary": "Flow\u002Dspecific\u0020Doctrine\u0020DBAL\u0020attribute\u0020keys.",
+            "summary": "Custom\u0020keys\u0020only,\u0020under\u0020\u0060flow.db.\u0060\u003B\u0020also\u0020emitted\u0020by\u0020flow\u002Dphp\/postgresql\u0020instrumentation.",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Doctrine-DBAL-DbAttributes.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Doctrine\\DBAL\\DbAttributes\u003A\u003ADB_CONNECTION_NAME",
@@ -783,7 +783,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpClient\\HttpClientAttributes",
             "name": "HttpClientAttributes",
-            "summary": "Flow\u002Dspecific\u0020HTTP\u0020client\u0020attribute\u0020keys.",
+            "summary": "Custom\u0020keys\u0020only,\u0020under\u0020\u0060flow.http.\u0060\u003B\u0020official\u0020keys\u0020live\u0020in\u0020SemConvAttributes.",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpClient-HttpClientAttributes.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpClient\\HttpClientAttributes\u003A\u003AATTR_CLIENT_NAME",
@@ -963,7 +963,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\HttpKernelAttributes",
             "name": "HttpKernelAttributes",
-            "summary": "Flow\u002Dspecific\u0020HttpKernel\u0020attribute\u0020keys.",
+            "summary": "Custom\u0020keys\u0020only,\u0020under\u0020\u0060flow.symfony.\u0060\u003B\u0020official\u0020keys\u0020live\u0020in\u0020SemConvAttributes.",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-HttpKernelAttributes.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\HttpKernelAttributes\u003A\u003AATTR_CONTROLLER",
@@ -1108,7 +1108,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\RouteNaming\u003A\u003APath",
             "name": "Path",
-            "summary": "The\u0020route\u0020path\u0020template,\u0020e.g.\u0020\/orders\/\u007Bid\u007D\u0020\u2014\u0020the\u0020OpenTelemetry\u0020HTTP\u0020semantic\u002Dconventions\u0020value\nfor\u0020http.route.\u0020Requires\u0020the\u0020router\u0020to\u0020resolve\u0020the\u0020template\u0020from\u0020the\u0020route\u0020name.",
+            "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-HttpKernel-RouteNaming.html#enumcase_Path"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\HttpKernel\\RouteNaming\u003A\u003AName",
@@ -1243,7 +1243,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\TelemetryStamp",
             "name": "TelemetryStamp",
-            "summary": "Messenger\u0020stamp\u0020holding\u0020propagated\u0020telemetry\u0020context.",
+            "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-TelemetryStamp.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\TelemetryStamp\u003A\u003A__construct\u0028\u0029",
@@ -1273,7 +1273,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\TelemetryStampCarrier",
             "name": "TelemetryStampCarrier",
-            "summary": "Carrier\u0020implementation\u0020that\u0020wraps\u0020a\u0020TelemetryStamp.",
+            "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Messenger-TelemetryStampCarrier.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Messenger\\TelemetryStampCarrier\u003A\u003A__construct\u0028\u0029",
@@ -1338,7 +1338,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Security\\UserAttributeResolver",
             "name": "UserAttributeResolver",
-            "summary": "Resolves\u0020span\u0020attributes\u0020from\u0020an\u0020authenticated\u0020token.\u0020A\u0020null\u0020attribute\u0020name\u0020disables\u0020that\u0020field.",
+            "summary": "A\u0020null\u0020attribute\u0020name\u0020disables\u0020that\u0020field.",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Instrumentation-Security-UserAttributeResolver.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Instrumentation\\Security\\UserAttributeResolver\u003A\u003A__construct\u0028\u0029",
@@ -1453,7 +1453,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Logger\\ConsoleVerbosityLevels",
             "name": "ConsoleVerbosityLevels",
-            "summary": "Maps\u0020a\u0020console\u0020OutputInterface\u0020verbosity\u0020to\u0020the\u0020minimum\u0020log\u0020\u007B\u0040see\u0020Severity\u007D\u0020displayed.",
+            "summary": "Flow\u0020has\u0020no\u0020NOTICE,\u0020so\u0020each\u0020\u002Dv\u0020reveals\u0020one\u0020more\u0020severity\u003B\u0020TRACE\u0020only\u0020via\u0020verbosity_levels.",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Logger-ConsoleVerbosityLevels.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Logger\\ConsoleVerbosityLevels\u003A\u003A__construct\u0028\u0029",
@@ -1568,7 +1568,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler\\ProfilerStoreWorkerResetSubscriber",
             "name": "ProfilerStoreWorkerResetSubscriber",
-            "summary": "The\u0020profiler\u0020store\u0020accumulates\u0020every\u0020signal\u0020teed\u0020into\u0020it\u0020and\u0020is\u0020normally\u0020emptied\u0020by\u0020the\u0020data\u0020collector\nbetween\u0020HTTP\u0020requests.\u0020A\u0020messenger\u0020worker\u0020is\u0020a\u0020single\u0020long\u002Dlived\u0020process\u0020with\u0020no\u0020request\u0020cycle,\u0020so\u0020the\ncollector\u0020never\u0020resets\u0020the\u0020store\u0020and\u0020it\u0020grows\u0020until\u0020the\u0020process\u0020runs\u0020out\u0020of\u0020memory.\u0020Resetting\u0020it\u0020after\neach\u0020worker\u0020cycle\u0020bounds\u0020it\u0020to\u0020a\u0020single\u0020message,\u0020mirroring\u0020how\u0020Symfony\u0020resets\u0020data\u0020collectors\u0020per\u0020message.",
+            "summary": "Workers\u0020have\u0020no\u0020request\u0020cycle,\u0020so\u0020the\u0020store\u0020is\u0020reset\u0020per\u0020message\u0020or\u0020it\u0020grows\u0020unbounded.",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Profiler-ProfilerStoreWorkerResetSubscriber.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Profiler\\ProfilerStoreWorkerResetSubscriber\u003A\u003A__construct\u0028\u0029",
@@ -1613,7 +1613,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Resource\\Detector\\SymfonyDeploymentDetector",
             "name": "SymfonyDeploymentDetector",
-            "summary": "Detects\u0020deployment\u0020environment\u0020from\u0020Symfony\u0020kernel\u0020environment.",
+            "summary": "",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Resource-Detector-SymfonyDeploymentDetector.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Resource\\Detector\\SymfonyDeploymentDetector\u003A\u003A__construct\u0028\u0029",
@@ -1628,7 +1628,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Routing\\TraceContextUrlGenerator",
             "name": "TraceContextUrlGenerator",
-            "summary": "Wraps\u0020the\u0020router\u0020so\u0020generated\u0020URLs\u0020carry\u0020the\u0020current\u0020trace\u0020context.\u0020This\u0020is\u0020an\u0020opt\u002Din\u0020service\n\u0028inject\u0020it\u0020explicitly\u0029\u003B\u0020it\u0020does\u0020not\u0020replace\u0020the\u0020default\u0020router,\u0020so\u0020ordinary\u0020path\u0028\u0029\/url\u0028\u0029\u0020calls\u0020are\nunaffected.",
+            "summary": "Opt\u002Din\u003A\u0020does\u0020not\u0020replace\u0020the\u0020default\u0020router.",
             "url": "classes/Flow-Bridge-Symfony-TelemetryBundle-Routing-TraceContextUrlGenerator.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\TelemetryBundle\\Routing\\TraceContextUrlGenerator\u003A\u003A__construct\u0028\u0029",

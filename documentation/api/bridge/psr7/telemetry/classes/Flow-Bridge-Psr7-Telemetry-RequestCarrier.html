@@ -126,26 +126,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/psr7/telemetry/src/Flow/Bridge/Psr7/Telemetry/RequestCarrier.php"><a href="files/src-bridge-psr7-telemetry-src-flow-bridge-psr7-telemetry-requestcarrier.html"><abbr title="src/bridge/psr7/telemetry/src/Flow/Bridge/Psr7/Telemetry/RequestCarrier.php">RequestCarrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Read-only carrier backed by PSR-7 ServerRequestInterface.</p>
+            <p class="phpdocumentor-summary">Read-only: set() throws.</p>
 
 
-    <section class="phpdocumentor-description"><p>Reads context from HTTP request headers. This carrier is read-only
-and will throw if set() is called.</p>
-<p>Example usage:</p>
-<pre class="prettyprint"><code class="language-php">$propagator = new CompositePropagator([
-    new W3CTraceContext(),
-    new W3CBaggage(),
-]);
-
-$carrier = new RequestCarrier($request);
-$ctx = $propagator-&gt;extract($carrier);
-$request = $carrier-&gt;unwrap();
-</code></pre>
-</section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -238,7 +225,7 @@ $request = $carrier-&gt;unwrap();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/psr7/telemetry/src/Flow/Bridge/Psr7/Telemetry/RequestCarrier.php"><a href="files/src-bridge-psr7-telemetry-src-flow-bridge-psr7-telemetry-requestcarrier.html"><abbr title="src/bridge/psr7/telemetry/src/Flow/Bridge/Psr7/Telemetry/RequestCarrier.php">RequestCarrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -282,7 +269,7 @@ $request = $carrier-&gt;unwrap();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/psr7/telemetry/src/Flow/Bridge/Psr7/Telemetry/RequestCarrier.php"><a href="files/src-bridge-psr7-telemetry-src-flow-bridge-psr7-telemetry-requestcarrier.html"><abbr title="src/bridge/psr7/telemetry/src/Flow/Bridge/Psr7/Telemetry/RequestCarrier.php">RequestCarrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
@@ -330,7 +317,7 @@ $request = $carrier-&gt;unwrap();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/psr7/telemetry/src/Flow/Bridge/Psr7/Telemetry/RequestCarrier.php"><a href="files/src-bridge-psr7-telemetry-src-flow-bridge-psr7-telemetry-requestcarrier.html"><abbr title="src/bridge/psr7/telemetry/src/Flow/Bridge/Psr7/Telemetry/RequestCarrier.php">RequestCarrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -385,7 +372,7 @@ $request = $carrier-&gt;unwrap();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/psr7/telemetry/src/Flow/Bridge/Psr7/Telemetry/RequestCarrier.php"><a href="files/src-bridge-psr7-telemetry-src-flow-bridge-psr7-telemetry-requestcarrier.html"><abbr title="src/bridge/psr7/telemetry/src/Flow/Bridge/Psr7/Telemetry/RequestCarrier.php">RequestCarrier.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
