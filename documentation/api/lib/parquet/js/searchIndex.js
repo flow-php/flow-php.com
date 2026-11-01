@@ -2976,6 +2976,11 @@ Search.appendIndex(
             "summary": "ColumnChunksBuilder\u0020is\u0020going\u0020to\u0020use\u0020this\u0020value\u0020to\u0020determine\u0020how\u0020often\u0020it\u0020should\u0020check\u0020if\u0020ColumnChunk\u0020Page\u0020size\u0020is\u0020not\u0020exceeded.",
             "url": "classes/Flow-Parquet-Option.html#enumcase_PAGE_SIZE_CHECK_INTERVAL"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Option\u003A\u003AROW_GROUP_MAXIMUM_ROWS_COUNT",
+            "name": "ROW_GROUP_MAXIMUM_ROWS_COUNT",
+            "summary": "The\u0020rows\u0020a\u0020row\u0020group\u0020holds\u0020at\u0020most,\u0020beside\u0020ROW_GROUP_SIZE_BYTES\u0020\u0028arrow\u002Drs\u0020max_row_group_row_count\u0029\u003A\u0020a\u0020row\u0020group\nis\u0020closed\u0020when\u0020either\u0020limit\u0020is\u0020reached.\u0020Readers\u0020decode\u0020a\u0020row\u0020group\u0020at\u0020a\u0020time,\u0020so\u0020this\u0020bounds\u0020their\u0020memory\u0020too.",
+            "url": "classes/Flow-Parquet-Option.html#enumcase_ROW_GROUP_MAXIMUM_ROWS_COUNT"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Option\u003A\u003AROW_GROUP_SIZE_BYTES",
             "name": "ROW_GROUP_SIZE_BYTES",
             "summary": "RowGroupBuilder\u0020is\u0020going\u0020to\u0020use\u0020this\u0020value\u0020to\u0020determine\u0020for\u0020how\u0020long\u0020it\u0020should\u0020keep\u0020adding\u0020rows\u0020to\u0020the\u0020buffer\nbefore\u0020flushing\u0020it\u0020on\u0020disk.",
@@ -5865,6 +5870,11 @@ Search.appendIndex(
             "name": "__destruct",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile.html#method___destruct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\u003A\u003AcreatedBy\u0028\u0029",
+            "name": "createdBy",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile.html#method_createdBy"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\u003A\u003Aclose\u0028\u0029",
             "name": "close",
@@ -10940,6 +10950,11 @@ Search.appendIndex(
             "name": "isFull",
             "summary": "",
             "url": "classes/Flow-Parquet-Writer-RowGroupBuilder.html#method_isFull"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Writer\\RowGroupBuilder\u003A\u003ArowsLeft\u0028\u0029",
+            "name": "rowsLeft",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Writer-RowGroupBuilder.html#method_rowsLeft"
         },                {
             "fqsen": "\\Flow\\Parquet\\Writer\\RowGroupBuilder\u003A\u003ArowsCount\u0028\u0029",
             "name": "rowsCount",
