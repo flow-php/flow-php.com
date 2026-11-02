@@ -135,7 +135,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php"><a href="files/src-core-etl-src-flow-etl-planning-logical-node-read.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php">Read.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -205,6 +205,12 @@ different column below this node, so it cannot be pushed past it. Answered from 
 never from a class list.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Planning-Logical-Node-Read.html#method_requiredInputColumns">requiredInputColumns()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-Operators-Processor-RequiredColumns.html"><abbr title="\Flow\ETL\Operators\Processor\RequiredColumns">RequiredColumns</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Planning-Logical-Node-Read.html#method_rowCount">rowCount()</a>
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Planning-Logical-RowCount.html"><abbr title="\Flow\ETL\Planning\Logical\RowCount">RowCount</abbr></a>    </span>
@@ -232,6 +238,12 @@ outside the stream.</dd>
 </dt>
 <dd>The same node over new children. Returns $this when the children are the ones it already holds, so
 an untouched subtree keeps its identity and its planned steps (PlannedNodes remembers them by identity).</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Planning-Logical-Node-Read.html#method_withColumns">withColumns()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Planning-Logical-Node-Read.html#method_withFilter">withFilter()</a>
@@ -286,7 +298,7 @@ an untouched subtree keeps its identity and its planned steps (PlannedNodes reme
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php"><a href="files/src-core-etl-src-flow-etl-planning-logical-node-read.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php">Read.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -344,7 +356,7 @@ runs; a non-file extractor receives only its limit</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php"><a href="files/src-core-etl-src-flow-etl-planning-logical-node-read.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php">Read.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 
@@ -385,7 +397,7 @@ Result or Outputs root, read without taking its rows as input and never rewritte
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php"><a href="files/src-core-etl-src-flow-etl-planning-logical-node-read.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php">Read.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -423,7 +435,7 @@ Result or Outputs root, read without taking its rows as input and never rewritte
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php"><a href="files/src-core-etl-src-flow-etl-planning-logical-node-read.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php">Read.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -461,7 +473,7 @@ Result or Outputs root, read without taking its rows as input and never rewritte
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php"><a href="files/src-core-etl-src-flow-etl-planning-logical-node-read.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php">Read.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">110</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
     </aside>
 
@@ -494,6 +506,54 @@ never from a class list.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_requiredInputColumns">
+        requiredInputColumns()
+        <a href="classes/Flow-ETL-Planning-Logical-Node-Read.html#method_requiredInputColumns" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php"><a href="files/src-core-etl-src-flow-etl-planning-logical-node-read.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php">Read.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">133</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">requiredInputColumns</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Operators-Processor-RequiredColumns.html"><abbr title="\Flow\ETL\Operators\Processor\RequiredColumns">RequiredColumns</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$output</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Operators-Processor-RequiredColumns.html"><abbr title="\Flow\ETL\Operators\Processor\RequiredColumns">RequiredColumns</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$output</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Operators-Processor-RequiredColumns.html"><abbr title="\Flow\ETL\Operators\Processor\RequiredColumns">RequiredColumns</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Operators-Processor-RequiredColumns.html"><abbr title="\Flow\ETL\Operators\Processor\RequiredColumns">RequiredColumns</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_rowCount">
         rowCount()
         <a href="classes/Flow-ETL-Planning-Logical-Node-Read.html#method_rowCount" class="headerlink"><i class="fas fa-link"></i></a>
@@ -502,7 +562,7 @@ never from a class list.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php"><a href="files/src-core-etl-src-flow-etl-planning-logical-node-read.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php">Read.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">100</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 
     </aside>
 
@@ -541,7 +601,7 @@ never from a class list.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php"><a href="files/src-core-etl-src-flow-etl-planning-logical-node-read.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php">Read.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">95</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -593,7 +653,7 @@ never from a class list.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php"><a href="files/src-core-etl-src-flow-etl-planning-logical-node-read.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php">Read.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">114</span>
 
     </aside>
 
@@ -633,7 +693,7 @@ outside the stream.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php"><a href="files/src-core-etl-src-flow-etl-planning-logical-node-read.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php">Read.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
@@ -677,6 +737,70 @@ an untouched subtree keeps its identity and its planned steps (PlannedNodes reme
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_withColumns">
+        withColumns()
+        <a href="classes/Flow-ETL-Planning-Logical-Node-Read.html#method_withColumns" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php"><a href="files/src-core-etl-src-flow-etl-planning-logical-node-read.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php">Read.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">75</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">withColumns</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$columns</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$columns</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_withColumns_tags">
+        Tags
+        <a href="classes/Flow-ETL-Planning-Logical-Node-Read.html#method_withColumns_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-ETL-Foundation-Exception-InvalidArgumentException.html"><abbr title="\Flow\ETL\Foundation\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></span>
+                                                                                        <section class="phpdocumentor-description"><p>when the extractor is no FileExtractor, which has nowhere to apply it</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_withFilter">
         withFilter()
         <a href="classes/Flow-ETL-Planning-Logical-Node-Read.html#method_withFilter" class="headerlink"><i class="fas fa-link"></i></a>
@@ -685,7 +809,7 @@ an untouched subtree keeps its identity and its planned steps (PlannedNodes reme
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php"><a href="files/src-core-etl-src-flow-etl-planning-logical-node-read.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php">Read.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -749,7 +873,7 @@ an untouched subtree keeps its identity and its planned steps (PlannedNodes reme
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php"><a href="files/src-core-etl-src-flow-etl-planning-logical-node-read.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php">Read.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -814,7 +938,7 @@ an untouched subtree keeps its identity and its planned steps (PlannedNodes reme
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php"><a href="files/src-core-etl-src-flow-etl-planning-logical-node-read.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php">Read.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -879,7 +1003,7 @@ when $offset is below 0</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php"><a href="files/src-core-etl-src-flow-etl-planning-logical-node-read.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Logical/Node/Read.php">Read.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">83</span>
 
     </aside>
 
@@ -956,10 +1080,12 @@ when $offset is below 0</p>
                                             <li class=""><a href="classes/Flow-ETL-Planning-Logical-Node-Read.html#method_criteria">criteria()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Planning-Logical-Node-Read.html#method_extractor">extractor()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Planning-Logical-Node-Read.html#method_redefines">redefines()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Planning-Logical-Node-Read.html#method_requiredInputColumns">requiredInputColumns()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Planning-Logical-Node-Read.html#method_rowCount">rowCount()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Planning-Logical-Node-Read.html#method_schema">schema()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Planning-Logical-Node-Read.html#method_transparency">transparency()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Planning-Logical-Node-Read.html#method_withChildren">withChildren()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Planning-Logical-Node-Read.html#method_withColumns">withColumns()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Planning-Logical-Node-Read.html#method_withFilter">withFilter()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Planning-Logical-Node-Read.html#method_withLimit">withLimit()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Planning-Logical-Node-Read.html#method_withOffset">withOffset()</a></li>

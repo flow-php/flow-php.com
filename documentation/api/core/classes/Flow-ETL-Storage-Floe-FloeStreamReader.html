@@ -129,7 +129,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Storage/Floe/FloeStreamReader.php"><a href="files/src-core-etl-src-flow-etl-storage-floe-floestreamreader.html"><abbr title="src/core/etl/src/Flow/ETL/Storage/Floe/FloeStreamReader.php">FloeStreamReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -146,19 +146,6 @@
 
 
 
-<h4 id="toc-constants">
-    Constants
-    <a href="classes/Flow-ETL-Storage-Floe-FloeStreamReader.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
-
-</h4>
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a class="" href="classes/Flow-ETL-Storage-Floe-FloeStreamReader.html#constant_COMPACT_THRESHOLD">COMPACT_THRESHOLD</a>
-    <span>
-        &nbsp;: int&nbsp;= 1048576                            </span>
-</dt>
-
-    </dl>
 
 
 
@@ -172,12 +159,6 @@
     <a class="" href="classes/Flow-ETL-Storage-Floe-FloeStreamReader.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-Storage-Floe-FloeStreamReader.html#method_chunkFiller">chunkFiller()</a>
-    <span>
-                                &nbsp;: callable(int): bool    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -203,10 +184,9 @@
     <span>
                                 &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;int, <a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;    </span>
 </dt>
-<dd>Hot path: frames are walked in-buffer. offset skips whole leading sections
-using the footer, then the remaining rows inside the start section; limit
-stops the read after that many rows. Batches are frame-sized: batchSize is
-an upper bound, a batch never spans two BATCH frames.</dd>
+<dd>offset skips whole leading sections using the footer, then the remaining rows inside the start section; limit
+stops the read after that many rows. Batches are frame-sized: batchSize is an upper bound, a batch never spans
+two BATCH frames.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Storage-Floe-FloeStreamReader.html#method_schema">schema()</a>
@@ -225,43 +205,6 @@ an upper bound, a batch never spans two BATCH frames.</dd>
 
 
         
-    <section class="phpdocumentor-constants">
-        <h3 class="phpdocumentor-elements__header" id="constants">
-            Constants
-            <a href="classes/Flow-ETL-Storage-Floe-FloeStreamReader.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
-
-        </h3>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_COMPACT_THRESHOLD">
-        COMPACT_THRESHOLD
-        <a href="classes/Flow-ETL-Storage-Floe-FloeStreamReader.html#constant_COMPACT_THRESHOLD" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Storage/Floe/FloeStreamReader.php"><a href="files/src-core-etl-src-flow-etl-storage-floe-floestreamreader.html"><abbr title="src/core/etl/src/Flow/ETL/Storage/Floe/FloeStreamReader.php">FloeStreamReader.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">27</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">int</span>
-    <span class="phpdocumentor-signature__name">COMPACT_THRESHOLD</span>
-    = <span class="phpdocumentor-signature__default-value">1048576</span>
-</code>
-
-
-    
-    
-    
-
-        
-    </article>
-            </section>
 
         
 
@@ -285,7 +228,7 @@ an upper bound, a batch never spans two BATCH frames.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Storage/Floe/FloeStreamReader.php"><a href="files/src-core-etl-src-flow-etl-storage-floe-floestreamreader.html"><abbr title="src/core/etl/src/Flow/ETL/Storage/Floe/FloeStreamReader.php">FloeStreamReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -354,68 +297,6 @@ an upper bound, a batch never spans two BATCH frames.</dd>
         class="phpdocumentor-element
             -method
             -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_chunkFiller">
-        chunkFiller()
-        <a href="classes/Flow-ETL-Storage-Floe-FloeStreamReader.html#method_chunkFiller" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Storage/Floe/FloeStreamReader.php"><a href="files/src-core-etl-src-flow-etl-storage-floe-floestreamreader.html"><abbr title="src/core/etl/src/Flow/ETL/Storage/Floe/FloeStreamReader.php">FloeStreamReader.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">50</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">chunkFiller</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$buffer</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$position</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$chunks</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">callable(int): bool</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$buffer</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$position</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$chunks</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Generator">Generator</abbr>&lt;int, string&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">callable(int): bool</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_close">
@@ -426,7 +307,7 @@ an upper bound, a batch never spans two BATCH frames.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Storage/Floe/FloeStreamReader.php"><a href="files/src-core-etl-src-flow-etl-storage-floe-floestreamreader.html"><abbr title="src/core/etl/src/Flow/ETL/Storage/Floe/FloeStreamReader.php">FloeStreamReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -460,7 +341,7 @@ an upper bound, a batch never spans two BATCH frames.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Storage/Floe/FloeStreamReader.php"><a href="files/src-core-etl-src-flow-etl-storage-floe-floestreamreader.html"><abbr title="src/core/etl/src/Flow/ETL/Storage/Floe/FloeStreamReader.php">FloeStreamReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -512,7 +393,7 @@ an upper bound, a batch never spans two BATCH frames.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Storage/Floe/FloeStreamReader.php"><a href="files/src-core-etl-src-flow-etl-storage-floe-floestreamreader.html"><abbr title="src/core/etl/src/Flow/ETL/Storage/Floe/FloeStreamReader.php">FloeStreamReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -564,14 +445,13 @@ an upper bound, a batch never spans two BATCH frames.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Storage/Floe/FloeStreamReader.php"><a href="files/src-core-etl-src-flow-etl-storage-floe-floestreamreader.html"><abbr title="src/core/etl/src/Flow/ETL/Storage/Floe/FloeStreamReader.php">FloeStreamReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Hot path: frames are walked in-buffer. offset skips whole leading sections
-using the footer, then the remaining rows inside the start section; limit
-stops the read after that many rows. Batches are frame-sized: batchSize is
-an upper bound, a batch never spans two BATCH frames.</p>
+        <p class="phpdocumentor-summary">offset skips whole leading sections using the footer, then the remaining rows inside the start section; limit
+stops the read after that many rows. Batches are frame-sized: batchSize is an upper bound, a batch never spans
+two BATCH frames.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -648,7 +528,7 @@ an upper bound, a batch never spans two BATCH frames.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Storage/Floe/FloeStreamReader.php"><a href="files/src-core-etl-src-flow-etl-storage-floe-floestreamreader.html"><abbr title="src/core/etl/src/Flow/ETL/Storage/Floe/FloeStreamReader.php">FloeStreamReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">242</span>
+    <span class="phpdocumentor-element-found-in__line">216</span>
 
     </aside>
 
@@ -700,7 +580,7 @@ an upper bound, a batch never spans two BATCH frames.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Storage/Floe/FloeStreamReader.php"><a href="files/src-core-etl-src-flow-etl-storage-floe-floestreamreader.html"><abbr title="src/core/etl/src/Flow/ETL/Storage/Floe/FloeStreamReader.php">FloeStreamReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">234</span>
+    <span class="phpdocumentor-element-found-in__line">208</span>
 
     </aside>
 
@@ -752,23 +632,15 @@ an upper bound, a batch never spans two BATCH frames.</p>
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                        <li><a href="classes/Flow-ETL-Storage-Floe-FloeStreamReader.html#toc-constants">Constants</a></li>
                                                                                 <li><a href="classes/Flow-ETL-Storage-Floe-FloeStreamReader.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
-                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
-                <li>
-                    <ul class="phpdocumentor-list -clean">
-                                                    <li class=""><a href="classes/Flow-ETL-Storage-Floe-FloeStreamReader.html#constant_COMPACT_THRESHOLD">COMPACT_THRESHOLD</a></li>
-                                            </ul>
-                </li>
             
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Storage-Floe-FloeStreamReader.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-Storage-Floe-FloeStreamReader.html#method_chunkFiller">chunkFiller()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Storage-Floe-FloeStreamReader.html#method_close">close()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Storage-Floe-FloeStreamReader.html#method_footer">footer()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Storage-Floe-FloeStreamReader.html#method_metadata">metadata()</a></li>

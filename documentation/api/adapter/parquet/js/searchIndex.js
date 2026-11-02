@@ -203,12 +203,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Extractor\\ParquetFileBatches\u003A\u003Abatches\u0028\u0029",
             "name": "batches",
-            "summary": "Skips\u0020the\u0020whole\u0020file\u0020when\u0020the\u0020window\u0027s\u0020offset\u0020covers\u0020it\u003B\u0020otherwise\u0020reads\u0020from\u0020the\u0020offset.\u0020A\u0020file\u0020of\u0020a\u0020narrower\nschema\u0020is\u0020matched\u0020to\u0020\u0024body.\u0020What\u0020the\u0020conjuncts\u0020a\u0020file\u0020answers\u0020exactly\u0020prove\u0020cannot\u0020match\u0020is\u0020skipped\u003B\u0020FileReadLoop\ndrops\u0020the\u0020rest\u0020that\u0020does\u0020not\u0020match\u0020them.\u0020A\u0020split\u0020owns\u0020the\u0020row\u0020groups\u0020whose\u0020midpoint\u0020its\u0020byte\u0020window\u0020holds,\u0020and\u0020a\nwindow\u0020without\u0020a\u0020length\u0020owns\u0020every\u0020row\u0020group.",
+            "summary": "",
             "url": "classes/Flow-ETL-Adapter-Parquet-IO-Extractor-ParquetFileBatches.html#method_batches"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Extractor\\ParquetFileBatches\u003A\u003Aclose\u0028\u0029",
             "name": "close",
-            "summary": "Closes\u0020the\u0020kept\u0020first\u0020file\u0020when\u0020the\u0020read\u0020never\u0020reached\u0020it.",
+            "summary": "",
             "url": "classes/Flow-ETL-Adapter-Parquet-IO-Extractor-ParquetFileBatches.html#method_close"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Extractor\\ParquetOpenSource",
@@ -313,7 +313,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Extractor\\Pushdown\\FilterTranslator",
             "name": "FilterTranslator",
-            "summary": "A\u0020conjunct\u0020is\u0020pushed\u0020only\u0020when\u0020the\u0020parquet\u0020filter\u0020keeps\u0020every\u0020row\u0020the\u0020Flow\u0020predicate\u0020keeps\u003B\u0020anything\u0020it\u0020cannot\nprove\u0020that\u0020for\u0020is\u0020left\u0020to\u0020FileReadLoop.",
+            "summary": "",
             "url": "classes/Flow-ETL-Adapter-Parquet-IO-Extractor-Pushdown-FilterTranslator.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Extractor\\Pushdown\\FilterTranslator\u003A\u003Atranslate\u0028\u0029",
@@ -333,7 +333,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Extractor\\Pushdown\\TranslatedConjunct\u003A\u003AreadsAs\u0028\u0029",
             "name": "readsAs",
-            "summary": "True\u0020when\u0020the\u0020file\u0020stores\u0020every\u0020column\u0020the\u0020predicate\u0020reads\u0020as\u0020\u0024body\u0020types\u0020it,\u0020or\u0020not\u0020at\u0020all.\u0020A\u0020column\u0020the\u0020file\nstores\u0020as\u0020another\u0020type\u0020is\u0020cast\u0020to\u0020the\u0020body\u0027s,\u0020so\u0020its\u0020statistics\u0020are\u0020of\u0020the\u0020other\u0020type.",
+            "summary": "",
             "url": "classes/Flow-ETL-Adapter-Parquet-IO-Extractor-Pushdown-TranslatedConjunct.html#method_readsAs"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Extractor\\Pushdown\\TranslatedConjunct\u003A\u003A\u0024filter",
@@ -346,45 +346,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Parquet-IO-Extractor-Pushdown-TranslatedConjunct.html#property_columns"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Loader\\ElementsValueConverter",
-            "name": "ElementsValueConverter",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Extractor\\Pushdown\\TranslatedConjunct\u003A\u003A\u0024exact",
+            "name": "exact",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Parquet-IO-Loader-ElementsValueConverter.html"
+            "url": "classes/Flow-ETL-Adapter-Parquet-IO-Extractor-Pushdown-TranslatedConjunct.html#property_exact"
         },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Loader\\ElementsValueConverter\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
+            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Extractor\\Pushdown\\TranslatedConjunct\u003A\u003A\u0024nanSensitiveColumns",
+            "name": "nanSensitiveColumns",
             "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Parquet-IO-Loader-ElementsValueConverter.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Loader\\ElementsValueConverter\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Parquet-IO-Loader-ElementsValueConverter.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Loader\\JsonValueConverter",
-            "name": "JsonValueConverter",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Parquet-IO-Loader-JsonValueConverter.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Loader\\JsonValueConverter\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Parquet-IO-Loader-JsonValueConverter.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Loader\\ParquetEncoder",
-            "name": "ParquetEncoder",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Parquet-IO-Loader-ParquetEncoder.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Loader\\ParquetEncoder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Parquet-IO-Loader-ParquetEncoder.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Loader\\ParquetEncoder\u003A\u003Acolumns\u0028\u0029",
-            "name": "columns",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Parquet-IO-Loader-ParquetEncoder.html#method_columns"
+            "url": "classes/Flow-ETL-Adapter-Parquet-IO-Extractor-Pushdown-TranslatedConjunct.html#property_nanSensitiveColumns"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Loader\\ParquetFileWriter",
             "name": "ParquetFileWriter",
@@ -525,51 +495,6 @@ Search.appendIndex(
             "name": "storedType",
             "summary": "The\u0020type\u0020as\u0020a\u0020Parquet\u0020file\u0020stores\u0020it\u003A\u0020a\u0020datetime\u0027s\u0020zone\u0020is\u0020not\u0020stored.",
             "url": "classes/Flow-ETL-Adapter-Parquet-IO-Loader-ParquetSchemaConformance.html#method_storedType"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Loader\\StructValueConverter",
-            "name": "StructValueConverter",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Parquet-IO-Loader-StructValueConverter.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Loader\\StructValueConverter\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Parquet-IO-Loader-StructValueConverter.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Loader\\StructValueConverter\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Parquet-IO-Loader-StructValueConverter.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Loader\\UuidValueConverter",
-            "name": "UuidValueConverter",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Parquet-IO-Loader-UuidValueConverter.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Loader\\UuidValueConverter\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Parquet-IO-Loader-UuidValueConverter.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Loader\\ValueConverter",
-            "name": "ValueConverter",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Parquet-IO-Loader-ValueConverter.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Loader\\ValueConverter\u003A\u003Aencode\u0028\u0029",
-            "name": "encode",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Parquet-IO-Loader-ValueConverter.html#method_encode"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Loader\\ValueConverters",
-            "name": "ValueConverters",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Parquet-IO-Loader-ValueConverters.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Loader\\ValueConverters\u003A\u003Afor\u0028\u0029",
-            "name": "for",
-            "summary": "",
-            "url": "classes/Flow-ETL-Adapter-Parquet-IO-Loader-ValueConverters.html#method_for"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\Values\\Schema\\SchemaConverter",
             "name": "SchemaConverter",

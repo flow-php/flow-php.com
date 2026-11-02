@@ -135,12 +135,11 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Optimizer/Rule/PushFilterIntoSource.php"><a href="files/src-core-etl-src-flow-etl-planning-optimizer-rule-pushfilterintosource.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Optimizer/Rule/PushFilterIntoSource.php">PushFilterIntoSource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">A part kept in a node stops every later push; partition-only parts still prune the listing.</p>
-
+        
 
 
 
@@ -181,15 +180,12 @@
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Functions-ScalarFunction.html"><abbr title="\Flow\ETL\Functions\ScalarFunction">ScalarFunction</abbr></a>|null    </span>
 </dt>
-<dd>$predicate as $leaf sees it, or null when it may not be evaluated there instead of above $filter.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Planning-Optimizer-Rule-PushFilterIntoSource.html#method_reachedByEveryConsumer">reachedByEveryConsumer()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd>Every consumer must read through $filter. Otherwise pushing its predicate into the source narrows what
-another consumer reads - the filter analogue of PushLimitIntoSource&#039;s every-consumer agreement.</dd>
 
     </dl>
 
@@ -219,7 +215,7 @@ another consumer reads - the filter analogue of PushLimitIntoSource&#039;s every
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Optimizer/Rule/PushFilterIntoSource.php"><a href="files/src-core-etl-src-flow-etl-planning-optimizer-rule-pushfilterintosource.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Optimizer/Rule/PushFilterIntoSource.php">PushFilterIntoSource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -278,12 +274,11 @@ consumer shares exactly once, so the Result and the writes keep sharing it.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Optimizer/Rule/PushFilterIntoSource.php"><a href="files/src-core-etl-src-flow-etl-planning-optimizer-rule-pushfilterintosource.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Optimizer/Rule/PushFilterIntoSource.php">PushFilterIntoSource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">142</span>
+    <span class="phpdocumentor-element-found-in__line">124</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">$predicate as $leaf sees it, or null when it may not be evaluated there instead of above $filter.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">predicateAtLeaf</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Logical-Node-Filter.html"><abbr title="\Flow\ETL\Planning\Logical\Node\Filter">Filter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Logical-Node-Read.html"><abbr title="\Flow\ETL\Planning\Logical\Node\Read">Read</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$leaf</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Functions-ScalarFunction.html"><abbr title="\Flow\ETL\Functions\ScalarFunction">ScalarFunction</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$predicate</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Functions-ScalarFunction.html"><abbr title="\Flow\ETL\Functions\ScalarFunction">ScalarFunction</abbr></a>|null</span></code>
@@ -291,13 +286,7 @@ consumer shares exactly once, so the Result and the writes keep sharing it.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>Another Filter is TRANSPARENT here: it only removes rows, so the order two filters drop rows in does not change
-which rows survive both. Limit/Offset/Until/Distinct/Discard are not: they make WHICH rows arrive depend on
-what the source read.</p>
-<p>A node that redefines a column the predicate reads blocks it, unless the column is a plain alias of a
-column below (Rename, a WithColumn of a bare reference): the predicate is rewritten to read that column.</p>
-</section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -347,13 +336,11 @@ column below (Rename, a WithColumn of a bare reference): the predicate is rewrit
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Optimizer/Rule/PushFilterIntoSource.php"><a href="files/src-core-etl-src-flow-etl-planning-optimizer-rule-pushfilterintosource.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Optimizer/Rule/PushFilterIntoSource.php">PushFilterIntoSource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Every consumer must read through $filter. Otherwise pushing its predicate into the source narrows what
-another consumer reads - the filter analogue of PushLimitIntoSource&#039;s every-consumer agreement.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">reachedByEveryConsumer</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Logical-Node-Filter.html"><abbr title="\Flow\ETL\Planning\Logical\Node\Filter">Filter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Logical-Node.html"><abbr title="\Flow\ETL\Planning\Logical\Node">Node</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$consumerInputs</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>

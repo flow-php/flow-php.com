@@ -126,7 +126,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/IO/Extractor/PhpParquetOpenSource.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-io-extractor-phpparquetopensource.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/IO/Extractor/PhpParquetOpenSource.php">PhpParquetOpenSource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -168,7 +168,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Adapter-Parquet-IO-Extractor-PhpParquetOpenSource.html#method_batches">batches()</a>
     <span>
-                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Values\Rows">Rows</abbr>&gt;    </span>
+                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Values\Rows">Rows</abbr>|<abbr title="\Flow\ETL\IO\Extractor\File\SkippedRows">SkippedRows</abbr>&gt;    </span>
 </dt>
 <dd>Batches of at most $batchSize rows under $schema, every column adopted by $backend.</dd>
 
@@ -206,7 +206,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/IO/Extractor/PhpParquetOpenSource.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-io-extractor-phpparquetopensource.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/IO/Extractor/PhpParquetOpenSource.php">PhpParquetOpenSource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -250,7 +250,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/IO/Extractor/PhpParquetOpenSource.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-io-extractor-phpparquetopensource.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/IO/Extractor/PhpParquetOpenSource.php">PhpParquetOpenSource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -258,7 +258,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">batches</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Values\Schema">Schema</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Parquet\Reader\ReadPlan">ReadPlan</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plan</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Values\Column\Backend">Backend</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$backend</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Values\Rows">Rows</abbr>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">batches</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Values\Schema">Schema</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Parquet\Reader\ReadPlan">ReadPlan</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plan</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\Values\Column\Backend">Backend</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$backend</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Values\Rows">Rows</abbr>|<abbr title="\Flow\ETL\IO\Extractor\File\SkippedRows">SkippedRows</abbr>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -304,7 +304,7 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Values\Rows">Rows</abbr>&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <abbr title="\Flow\ETL\Values\Rows">Rows</abbr>|<abbr title="\Flow\ETL\IO\Extractor\File\SkippedRows">SkippedRows</abbr>&gt;</span>
             </section>
 
 </article>
@@ -322,7 +322,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/IO/Extractor/PhpParquetOpenSource.php"><a href="files/src-adapter-etl-adapter-parquet-src-flow-etl-adapter-parquet-io-extractor-phpparquetopensource.html"><abbr title="src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/IO/Extractor/PhpParquetOpenSource.php">PhpParquetOpenSource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">140</span>
 
     </aside>
 

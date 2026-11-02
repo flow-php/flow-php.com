@@ -186,16 +186,12 @@
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Values-Cardinality.html"><abbr title="\Flow\ETL\Values\Cardinality">Cardinality</abbr></a>    </span>
 </dt>
-<dd>Unknown when any listed file reports no size. NativeLocalFilesystem::statFor() is `filesize($p) ?: null`, so it
-reports a zero-byte file as null.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-IO-Extractor-File-SourceFiles.html#method_byteWindows">byteWindows()</a>
     <span>
                                 &nbsp;: array&lt;int, <a href="classes/Flow-ETL-IO-Extractor-File-FileSplit.html"><abbr title="\Flow\ETL\IO\Extractor\File\FileSplit">FileSplit</abbr></a>&gt;    </span>
 </dt>
-<dd>FileSplit::windows() over every admitted file, in listing order. An empty listing is one split over the path
-itself, which reads nothing.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-IO-Extractor-File-SourceFiles.html#method_count">count()</a>
@@ -208,24 +204,18 @@ itself, which reads nothing.</dd>
     <span>
                                 &nbsp;: array&lt;int, <a href="classes/Flow-ETL-IO-Extractor-File-SourceFile.html"><abbr title="\Flow\ETL\IO\Extractor\File\SourceFile">SourceFile</abbr></a>&gt;    </span>
 </dt>
-<dd>The files a scan reads: a sized split names its file without listing; an unsized split lists its own path (a
-split over the source itself, an empty listing cut into one split, still admits nothing); no split reads what
-the path filter admits.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-IO-Extractor-File-SourceFiles.html#method_partitionNames">partitionNames()</a>
     <span>
                                 &nbsp;: array&lt;string, bool&gt;    </span>
 </dt>
-<dd>Partition name =&gt; nullable. A partition name some listed path lacks, or holds no value for, is nullable.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-IO-Extractor-File-SourceFiles.html#method_perFile">perFile()</a>
     <span>
                                 &nbsp;: array&lt;int, <a href="classes/Flow-ETL-IO-Extractor-File-FileSplit.html"><abbr title="\Flow\ETL\IO\Extractor\File\FileSplit">FileSplit</abbr></a>&gt;    </span>
 </dt>
-<dd>One split per admitted file, in listing order, each covering the whole file. An empty listing gets one split
-over the path itself, which reads nothing.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-IO-Extractor-File-SourceFiles.html#method_refresh">refresh()</a>
@@ -238,8 +228,6 @@ over the path itself, which reads nothing.</dd>
     <span>
                                 &nbsp;: array&lt;int, <abbr title="\Flow\Filesystem\FileStatus">FileStatus</abbr>&gt;    </span>
 </dt>
-<dd>The split&#039;s path, listed, when $criteria has a split; otherwise the source&#039;s files, listed once until refresh(),
-that $criteria&#039;s path filter admits.</dd>
 
     </dl>
 
@@ -401,13 +389,11 @@ that $criteria&#039;s path filter admits.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/File/SourceFiles.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-file-sourcefiles.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/File/SourceFiles.php">SourceFiles.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">148</span>
+    <span class="phpdocumentor-element-found-in__line">136</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Unknown when any listed file reports no size. NativeLocalFilesystem::statFor() is `filesize($p) ?: null`, so it
-reports a zero-byte file as null.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">bytes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Values-Cardinality.html"><abbr title="\Flow\ETL\Values\Cardinality">Cardinality</abbr></a></span></code>
@@ -441,13 +427,11 @@ reports a zero-byte file as null.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/File/SourceFiles.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-file-sourcefiles.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/File/SourceFiles.php">SourceFiles.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">188</span>
+    <span class="phpdocumentor-element-found-in__line">170</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">FileSplit::windows() over every admitted file, in listing order. An empty listing is one split over the path
-itself, which reads nothing.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">byteWindows</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$targetSplitBytes</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path\Filter">Filter</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pathFilter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Path\Filter\OnlyFiles">OnlyFiles</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-IO-Extractor-File-FileSplit.html"><abbr title="\Flow\ETL\IO\Extractor\File\FileSplit">FileSplit</abbr></a>&gt;</span></code>
@@ -498,7 +482,7 @@ itself, which reads nothing.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/File/SourceFiles.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-file-sourcefiles.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/File/SourceFiles.php">SourceFiles.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">139</span>
+    <span class="phpdocumentor-element-found-in__line">130</span>
 
     </aside>
 
@@ -536,14 +520,11 @@ itself, which reads nothing.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/File/SourceFiles.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-file-sourcefiles.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/File/SourceFiles.php">SourceFiles.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The files a scan reads: a sized split names its file without listing; an unsized split lists its own path (a
-split over the source itself, an empty listing cut into one split, still admits nothing); no split reads what
-the path filter admits.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">of</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-IO-Extractor-Criteria.html"><abbr title="\Flow\ETL\IO\Extractor\Criteria">Criteria</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$criteria</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-IO-Extractor-File-SourceFile.html"><abbr title="\Flow\ETL\IO\Extractor\File\SourceFile">SourceFile</abbr></a>&gt;</span></code>
@@ -587,12 +568,11 @@ the path filter admits.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/File/SourceFiles.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-file-sourcefiles.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/File/SourceFiles.php">SourceFiles.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Partition name =&gt; nullable. A partition name some listed path lacks, or holds no value for, is nullable.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">partitionNames</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, bool&gt;</span></code>
@@ -626,13 +606,11 @@ the path filter admits.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/File/SourceFiles.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-file-sourcefiles.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/File/SourceFiles.php">SourceFiles.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">169</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">One split per admitted file, in listing order, each covering the whole file. An empty listing gets one split
-over the path itself, which reads nothing.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">perFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path\Filter">Filter</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pathFilter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <abbr title="\Flow\Filesystem\Path\Filter\OnlyFiles">OnlyFiles</abbr>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-IO-Extractor-File-FileSplit.html"><abbr title="\Flow\ETL\IO\Extractor\File\FileSplit">FileSplit</abbr></a>&gt;</span></code>
@@ -676,7 +654,7 @@ over the path itself, which reads nothing.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/File/SourceFiles.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-file-sourcefiles.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/File/SourceFiles.php">SourceFiles.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">199</span>
+    <span class="phpdocumentor-element-found-in__line">181</span>
 
     </aside>
 
@@ -710,13 +688,11 @@ over the path itself, which reads nothing.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/File/SourceFiles.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-file-sourcefiles.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/File/SourceFiles.php">SourceFiles.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The split&#039;s path, listed, when $criteria has a split; otherwise the source&#039;s files, listed once until refresh(),
-that $criteria&#039;s path filter admits.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">statuses</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-IO-Extractor-Criteria.html"><abbr title="\Flow\ETL\IO\Extractor\Criteria">Criteria</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$criteria</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-IO-Extractor-Criteria.html"><abbr title="\Flow\ETL\IO\Extractor\Criteria">Criteria</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <abbr title="\Flow\Filesystem\FileStatus">FileStatus</abbr>&gt;</span></code>

@@ -1211,6 +1211,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Dremel-Validator-ColumnDataValidator.html"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Dremel\\Validator\\ColumnDataValidator\u003A\u003Astored\u0028\u0029",
+            "name": "stored",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Dremel-Validator-ColumnDataValidator.html#method_stored"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Dremel\\Validator\\ColumnDataValidator\u003A\u003Avalidate\u0028\u0029",
             "name": "validate",
             "summary": "",
@@ -1481,6 +1486,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_readColumns"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetFileReader\u003A\u003AreadStoredColumns\u0028\u0029",
+            "name": "readStoredColumns",
+            "summary": "readColumns\u0028\u0029\u0020with\u0020every\u0020DATE,\u0020TIMESTAMP,\u0020TIME\u0020and\u0020UUID\u0020value,\u0020at\u0020any\u0020depth,\u0020as\u0020it\u0020is\u0020stored\u003A\u0020days\u0020since\u00201970\u002D01\u002D01,\nmicroseconds\u0020since\u0020the\u0020epoch,\u0020microseconds\u0020since\u0020midnight,\u002016\u0020bytes\u003B\u0020other\u0020values\u0020as\u0020readColumns\u0028\u0029\u0020reads\u0020them.",
+            "url": "classes/Flow-Parquet-Engine-PhpParquetFileReader.html#method_readStoredColumns"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetFileWriter",
             "name": "PhpParquetFileWriter",
             "summary": "",
@@ -1505,6 +1515,11 @@ Search.appendIndex(
             "name": "writeColumns",
             "summary": "",
             "url": "classes/Flow-Parquet-Engine-PhpParquetFileWriter.html#method_writeColumns"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetFileWriter\u003A\u003AwriteStoredColumns\u0028\u0029",
+            "name": "writeStoredColumns",
+            "summary": "writeColumns\u0028\u0029\u0020with\u0020every\u0020DATE,\u0020TIMESTAMP,\u0020TIME\u0020and\u0020UUID\u0020value,\u0020at\u0020any\u0020depth,\u0020as\u0020readStoredColumns\u0028\u0029\u0020reads\u0020it.",
+            "url": "classes/Flow-Parquet-Engine-PhpParquetFileWriter.html#method_writeStoredColumns"
         },                {
             "fqsen": "\\Flow\\Parquet\\Engine\\PhpParquetFileWriter\u003A\u003AwriteRow\u0028\u0029",
             "name": "writeRow",
@@ -3311,6 +3326,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-Int96DateTimeConverter.html"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\Int96DateTimeConverter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-Int96DateTimeConverter.html#method___construct"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\Int96DateTimeConverter\u003A\u003AforColumn\u0028\u0029",
             "name": "forColumn",
             "summary": "",
@@ -3345,6 +3365,41 @@ Search.appendIndex(
             "name": "toParquetType",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-JsonConverter.html#method_toParquetType"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\StoredTemporalConverter",
+            "name": "StoredTemporalConverter",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-StoredTemporalConverter.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\StoredTemporalConverter\u003A\u003Adays\u0028\u0029",
+            "name": "days",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-StoredTemporalConverter.html#method_days"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\StoredTemporalConverter\u003A\u003AforColumn\u0028\u0029",
+            "name": "forColumn",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-StoredTemporalConverter.html#method_forColumn"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\StoredTemporalConverter\u003A\u003Aint96\u0028\u0029",
+            "name": "int96",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-StoredTemporalConverter.html#method_int96"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\StoredTemporalConverter\u003A\u003Amicros\u0028\u0029",
+            "name": "micros",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-StoredTemporalConverter.html#method_micros"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\StoredTemporalConverter\u003A\u003AfromParquetType\u0028\u0029",
+            "name": "fromParquetType",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-StoredTemporalConverter.html#method_fromParquetType"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\StoredTemporalConverter\u003A\u003AtoParquetType\u0028\u0029",
+            "name": "toParquetType",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-Converter-StoredTemporalConverter.html#method_toParquetType"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\Converter\\TimeConverter",
             "name": "TimeConverter",
@@ -3475,6 +3530,11 @@ Search.appendIndex(
             "name": "initialize",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFile-Data-DataConverter.html#method_initialize"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\DataConverter\u003A\u003Astored\u0028\u0029",
+            "name": "stored",
+            "summary": "",
+            "url": "classes/Flow-Parquet-ParquetFile-Data-DataConverter.html#method_stored"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFile\\Data\\DataConverter\u003A\u003AfromParquetType\u0028\u0029",
             "name": "fromParquetType",
@@ -5946,6 +6006,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFileReader.html#method_readColumns"
         },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFileReader\u003A\u003AreadStoredColumns\u0028\u0029",
+            "name": "readStoredColumns",
+            "summary": "readColumns\u0028\u0029\u0020with\u0020every\u0020DATE,\u0020TIMESTAMP,\u0020TIME\u0020and\u0020UUID\u0020value,\u0020at\u0020any\u0020depth,\u0020as\u0020it\u0020is\u0020stored\u003A\u0020days\u0020since\u00201970\u002D01\u002D01,\nmicroseconds\u0020since\u0020the\u0020epoch,\u0020microseconds\u0020since\u0020midnight,\u002016\u0020bytes\u003B\u0020other\u0020values\u0020as\u0020readColumns\u0028\u0029\u0020reads\u0020them.",
+            "url": "classes/Flow-Parquet-ParquetFileReader.html#method_readStoredColumns"
+        },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFileWriter",
             "name": "ParquetFileWriter",
             "summary": "",
@@ -5965,6 +6030,11 @@ Search.appendIndex(
             "name": "writeColumns",
             "summary": "",
             "url": "classes/Flow-Parquet-ParquetFileWriter.html#method_writeColumns"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\ParquetFileWriter\u003A\u003AwriteStoredColumns\u0028\u0029",
+            "name": "writeStoredColumns",
+            "summary": "writeColumns\u0028\u0029\u0020with\u0020every\u0020DATE,\u0020TIMESTAMP,\u0020TIME\u0020and\u0020UUID\u0020value,\u0020at\u0020any\u0020depth,\u0020as\u0020readStoredColumns\u0028\u0029\u0020reads\u0020it.",
+            "url": "classes/Flow-Parquet-ParquetFileWriter.html#method_writeStoredColumns"
         },                {
             "fqsen": "\\Flow\\Parquet\\ParquetFileWriter\u003A\u003AwriteRow\u0028\u0029",
             "name": "writeRow",
@@ -6306,6 +6376,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Parquet-Reader-ReadPlan.html#property_limit"
         },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\ReadPlan\u003A\u003A\u0024offset",
+            "name": "offset",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-ReadPlan.html#property_offset"
+        },                {
             "fqsen": "\\Flow\\Parquet\\Reader\\RowSelection",
             "name": "RowSelection",
             "summary": "File\u002Dabsolute\u0020rows\u003A\u0020the\u0020selectors\u0020cover\u0020every\u0020row\u0020of\u0020the\u0020file,\u0020in\u0020order,\u0020adjacent\u0020selectors\u0020merged.",
@@ -6430,6 +6505,21 @@ Search.appendIndex(
             "name": "read",
             "summary": "The\u0020leaf\u0027s\u0020whole\u0020pages\u0020holding\u0020a\u0020selected\u0020row,\u0020keyed\u0020by\u0020the\u0020row\u0020of\u0020the\u0020group\u0020each\u0020starts\u0020at,\u0020each\u0020with\u0020the\u0020rows\nof\u0020it\u0020\u0024selection\u0020selects.\u0020A\u0020page\u0020in\u0020\u0024decoded\u0020is\u0020served\u0020from\u0020it\u003B\u0020the\u0020others\u0020are\u0020read,\u0020through\u0020the\u0020offset\u0020index\nwhen\u0020the\u0020selection\u0020skips\u0020rows\u0020or\u0020decoded\u0020pages\u0020spare\u0020reads.\u0020Returns\u0020the\u0020pages\u0027\u0020dictionary.",
             "url": "classes/Flow-Parquet-Reader-SelectedPages.html#method_read"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\SkippedMatches",
+            "name": "SkippedMatches",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-SkippedMatches.html"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\SkippedMatches\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-SkippedMatches.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Parquet\\Reader\\SkippedMatches\u003A\u003A\u0024count",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-Parquet-Reader-SkippedMatches.html#property_count"
         },                {
             "fqsen": "\\Flow\\Parquet\\Reader",
             "name": "Reader",

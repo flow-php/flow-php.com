@@ -108,7 +108,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ParquetFileReader.php"><a href="files/src-lib-parquet-src-flow-parquet-parquetfilereader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFileReader.php">ParquetFileReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -151,8 +151,16 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Parquet-ParquetFileReader.html#method_readColumns">readColumns()</a>
     <span>
-                                &nbsp;: <abbr title="\Iterator">Iterator</abbr>&lt;int, array&lt;string, array&lt;int, mixed&gt;&gt;&gt;    </span>
+                                &nbsp;: <abbr title="\Iterator">Iterator</abbr>&lt;int, array&lt;string, array&lt;int, mixed&gt;&gt;|<a href="classes/Flow-Parquet-Reader-SkippedMatches.html"><abbr title="\Flow\Parquet\Reader\SkippedMatches">SkippedMatches</abbr></a>&gt;    </span>
 </dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Parquet-ParquetFileReader.html#method_readStoredColumns">readStoredColumns()</a>
+    <span>
+                                &nbsp;: <abbr title="\Iterator">Iterator</abbr>&lt;int, array&lt;string, array&lt;int, mixed&gt;&gt;|<a href="classes/Flow-Parquet-Reader-SkippedMatches.html"><abbr title="\Flow\Parquet\Reader\SkippedMatches">SkippedMatches</abbr></a>&gt;    </span>
+</dt>
+<dd>readColumns() with every DATE, TIMESTAMP, TIME and UUID value, at any depth, as it is stored: days since 1970-01-01,
+microseconds since the epoch, microseconds since midnight, 16 bytes; other values as readColumns() reads them.</dd>
 
     </dl>
 
@@ -183,7 +191,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ParquetFileReader.php"><a href="files/src-lib-parquet-src-flow-parquet-parquetfilereader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFileReader.php">ParquetFileReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -218,7 +226,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ParquetFileReader.php"><a href="files/src-lib-parquet-src-flow-parquet-parquetfilereader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFileReader.php">ParquetFileReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
@@ -257,14 +265,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ParquetFileReader.php"><a href="files/src-lib-parquet-src-flow-parquet-parquetfilereader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFileReader.php">ParquetFileReader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">readColumns</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Reader-ReadPlan.html"><abbr title="\Flow\Parquet\Reader\ReadPlan">ReadPlan</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plan</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Iterator">Iterator</abbr>&lt;int, array&lt;string, array&lt;int, mixed&gt;&gt;&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">readColumns</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Reader-ReadPlan.html"><abbr title="\Flow\Parquet\Reader\ReadPlan">ReadPlan</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plan</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Iterator">Iterator</abbr>&lt;int, array&lt;string, array&lt;int, mixed&gt;&gt;|<a href="classes/Flow-Parquet-Reader-SkippedMatches.html"><abbr title="\Flow\Parquet\Reader\SkippedMatches">SkippedMatches</abbr></a>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -305,10 +313,83 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Iterator">Iterator</abbr>&lt;int, array&lt;string, array&lt;int, mixed&gt;&gt;&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Iterator">Iterator</abbr>&lt;int, array&lt;string, array&lt;int, mixed&gt;&gt;|<a href="classes/Flow-Parquet-Reader-SkippedMatches.html"><abbr title="\Flow\Parquet\Reader\SkippedMatches">SkippedMatches</abbr></a>&gt;</span>
                     &mdash;
-                <section class="phpdocumentor-description"><p>chunks keyed by column, every list the same length (&gt;0): the rows
-$plan selects that match $plan-&gt;rowFilter, at most $plan-&gt;limit</p>
+                <section class="phpdocumentor-description"><p>chunks keyed by column, every list the same length
+(&gt;0): the rows $plan selects that match $plan-&gt;rowFilter, past $plan-&gt;offset, at most $plan-&gt;limit; a plan
+with an offset yields one SkippedMatches before the first chunk, or alone</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_readStoredColumns">
+        readStoredColumns()
+        <a href="classes/Flow-Parquet-ParquetFileReader.html#method_readStoredColumns" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/parquet/src/Flow/Parquet/ParquetFileReader.php"><a href="files/src-lib-parquet-src-flow-parquet-parquetfilereader.html"><abbr title="src/lib/parquet/src/Flow/Parquet/ParquetFileReader.php">ParquetFileReader.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">49</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">readColumns() with every DATE, TIMESTAMP, TIME and UUID value, at any depth, as it is stored: days since 1970-01-01,
+microseconds since the epoch, microseconds since midnight, 16 bytes; other values as readColumns() reads them.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">readStoredColumns</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Parquet-Reader-ReadPlan.html"><abbr title="\Flow\Parquet\Reader\ReadPlan">ReadPlan</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plan</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Iterator">Iterator</abbr>&lt;int, array&lt;string, array&lt;int, mixed&gt;&gt;|<a href="classes/Flow-Parquet-Reader-SkippedMatches.html"><abbr title="\Flow\Parquet\Reader\SkippedMatches">SkippedMatches</abbr></a>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$columns</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, string&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>resolved names, never empty</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$batchSize</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>upper bound of rows per chunk, refused below 1</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$plan</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Parquet-Reader-ReadPlan.html"><abbr title="\Flow\Parquet\Reader\ReadPlan">ReadPlan</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Iterator">Iterator</abbr>&lt;int, array&lt;string, array&lt;int, mixed&gt;&gt;|<a href="classes/Flow-Parquet-Reader-SkippedMatches.html"><abbr title="\Flow\Parquet\Reader\SkippedMatches">SkippedMatches</abbr></a>&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>as readColumns()</p>
 </section>
 
             </section>
@@ -338,6 +419,7 @@ $plan selects that match $plan-&gt;rowFilter, at most $plan-&gt;limit</p>
                                                     <li class=""><a href="classes/Flow-Parquet-ParquetFileReader.html#method_close">close()</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-ParquetFileReader.html#method_footer">footer()</a></li>
                                                     <li class=""><a href="classes/Flow-Parquet-ParquetFileReader.html#method_readColumns">readColumns()</a></li>
+                                                    <li class=""><a href="classes/Flow-Parquet-ParquetFileReader.html#method_readStoredColumns">readStoredColumns()</a></li>
                                             </ul>
                 </li>
             

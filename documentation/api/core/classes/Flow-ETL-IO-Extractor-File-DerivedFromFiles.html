@@ -161,22 +161,18 @@
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Values-Schema.html"><abbr title="\Flow\ETL\Values\Schema">Schema</abbr></a>    </span>
 </dt>
-<dd>Schema::merge() returns its argument on an empty receiver, so first-file-only is this same fold
-with a break. The first file stays open: whoever yielded it keeps it for the read that follows, or closes it.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-IO-Extractor-File-DerivedFromFiles.html#method_footers">footers()</a>
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-IO-Extractor-File-FooterStatistics.html"><abbr title="\Flow\ETL\IO\Extractor\File\FooterStatistics">FooterStatistics</abbr></a>    </span>
 </dt>
-<dd>The footers the fold reads, derived once: statistics() never opens a footer schema() already did.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-IO-Extractor-File-DerivedFromFiles.html#method_from">from()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>The file the folded or learned schema was read from; &#039;&#039; until a fold or learn() ran, or when none was named.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-IO-Extractor-File-DerivedFromFiles.html#method_learn">learn()</a>
@@ -218,13 +214,11 @@ with a break. The first file stays open: whoever yielded it keeps it for the rea
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/File/DerivedFromFiles.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-file-derivedfromfiles.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/File/DerivedFromFiles.php">DerivedFromFiles.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Schema::merge() returns its argument on an empty receiver, so first-file-only is this same fold
-with a break. The first file stays open: whoever yielded it keeps it for the read that follows, or closes it.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">fold</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&lt;int, <a href="classes/Flow-ETL-IO-Extractor-File-SelfDescribingFile.html"><abbr title="\Flow\ETL\IO\Extractor\File\SelfDescribingFile">SelfDescribingFile</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$files</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$unionByName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Values-Schema.html"><abbr title="\Flow\ETL\Values\Schema">Schema</abbr></a></span></code>
@@ -277,12 +271,11 @@ with a break. The first file stays open: whoever yielded it keeps it for the rea
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/File/DerivedFromFiles.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-file-derivedfromfiles.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/File/DerivedFromFiles.php">DerivedFromFiles.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The footers the fold reads, derived once: statistics() never opens a footer schema() already did.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">footers</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&lt;int, <a href="classes/Flow-ETL-IO-Extractor-File-SelfDescribingFile.html"><abbr title="\Flow\ETL\IO\Extractor\File\SelfDescribingFile">SelfDescribingFile</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$files</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$unionByName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-IO-Extractor-File-FooterStatistics.html"><abbr title="\Flow\ETL\IO\Extractor\File\FooterStatistics">FooterStatistics</abbr></a></span></code>
@@ -335,12 +328,11 @@ with a break. The first file stays open: whoever yielded it keeps it for the rea
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/File/DerivedFromFiles.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-file-derivedfromfiles.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/File/DerivedFromFiles.php">DerivedFromFiles.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The file the folded or learned schema was read from; &#039;&#039; until a fold or learn() ran, or when none was named.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">from</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
@@ -374,7 +366,7 @@ with a break. The first file stays open: whoever yielded it keeps it for the rea
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/File/DerivedFromFiles.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-file-derivedfromfiles.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/File/DerivedFromFiles.php">DerivedFromFiles.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
@@ -429,7 +421,7 @@ with a break. The first file stays open: whoever yielded it keeps it for the rea
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/File/DerivedFromFiles.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-file-derivedfromfiles.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/File/DerivedFromFiles.php">DerivedFromFiles.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 

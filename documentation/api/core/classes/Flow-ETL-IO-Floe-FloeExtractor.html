@@ -150,7 +150,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Extractor-BatchableExtractor.html"><abbr title="\Flow\ETL\IO\Extractor\BatchableExtractor">BatchableExtractor</abbr></a></dt><dd>A source that decides how many rows it puts in one Rows: withBatchSize() bounds what the source builds.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Extractor.html"><abbr title="\Flow\ETL\IO\Extractor">Extractor</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Extractor-File-FileExtractor.html"><abbr title="\Flow\ETL\IO\Extractor\File\FileExtractor">FileExtractor</abbr></a></dt><dd>The schema comes from the full listing; a pruned read does not change it.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Extractor-File-MetadataColumnsExtractor.html"><abbr title="\Flow\ETL\IO\Extractor\File\MetadataColumnsExtractor">MetadataColumnsExtractor</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Extractor-SplittableExtractor.html"><abbr title="\Flow\ETL\IO\Extractor\SplittableExtractor">SplittableExtractor</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Extractor-BatchableExtractor.html"><abbr title="\Flow\ETL\IO\Extractor\BatchableExtractor">BatchableExtractor</abbr></a></dt><dd>A source that decides how many rows it puts in one Rows: withBatchSize() bounds what the source builds.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Extractor.html"><abbr title="\Flow\ETL\IO\Extractor">Extractor</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Extractor-File-FileExtractor.html"><abbr title="\Flow\ETL\IO\Extractor\File\FileExtractor">FileExtractor</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Extractor-File-MetadataColumnsExtractor.html"><abbr title="\Flow\ETL\IO\Extractor\File\MetadataColumnsExtractor">MetadataColumnsExtractor</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Extractor-SplittableExtractor.html"><abbr title="\Flow\ETL\IO\Extractor\SplittableExtractor">SplittableExtractor</abbr></a></dt>    </dl>
 
 
 
@@ -200,9 +200,6 @@ reads.</dd>
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Values-Schema.html"><abbr title="\Flow\ETL\Values\Schema">Schema</abbr></a>    </span>
 </dt>
-<dd>The partition block of this source&#039;s schema and nothing else - typed exactly as the read emits it,
-empty when the source declares no partition columns. The planner asks it to decide whether a predicate
-can be evaluated from the path alone.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-IO-Floe-FloeExtractor.html#method_partitionTypes">partitionTypes()</a>
@@ -215,8 +212,6 @@ can be evaluated from the path alone.</dd>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd>True when this source skips data with $conjunct before it decodes rows. The planner pushes a conjunct over
-the source&#039;s columns only when this is true; a conjunct over partition columns only is pushed into every source.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-IO-Floe-FloeExtractor.html#method_reader">reader()</a>
@@ -528,10 +523,7 @@ reads.</p>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The partition block of this source&#039;s schema and nothing else - typed exactly as the read emits it,
-empty when the source declares no partition columns. The planner asks it to decide whether a predicate
-can be evaluated from the path alone.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">partitionSchema</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Values-Schema.html"><abbr title="\Flow\ETL\Values\Schema">Schema</abbr></a></span></code>
@@ -617,9 +609,7 @@ can be evaluated from the path alone.</p>
 
     </aside>
 
-        <p class="phpdocumentor-summary">True when this source skips data with $conjunct before it decodes rows. The planner pushes a conjunct over
-the source&#039;s columns only when this is true; a conjunct over partition columns only is pushed into every source.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">prunes</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Functions-ScalarFunction.html"><abbr title="\Flow\ETL\Functions\ScalarFunction">ScalarFunction</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$conjunct</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>

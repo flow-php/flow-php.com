@@ -122,12 +122,11 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/File/FileExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-file-fileextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/File/FileExtractor.php">FileExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">13</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">The schema comes from the full listing; a pruned read does not change it.</p>
-
+        
 
 
 
@@ -172,17 +171,12 @@ reads.</dd>
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Values-Schema.html"><abbr title="\Flow\ETL\Values\Schema">Schema</abbr></a>    </span>
 </dt>
-<dd>The partition block of this source&#039;s schema and nothing else - typed exactly as the read emits it,
-empty when the source declares no partition columns. The planner asks it to decide whether a predicate
-can be evaluated from the path alone.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-IO-Extractor-File-FileExtractor.html#method_prunes">prunes()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd>True when this source skips data with $conjunct before it decodes rows. The planner pushes a conjunct over
-the source&#039;s columns only when this is true; a conjunct over partition columns only is pushed into every source.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-IO-Extractor-Refreshable.html#method_refresh">refresh()</a>
@@ -362,14 +356,11 @@ reads.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/File/FileExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-file-fileextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/File/FileExtractor.php">FileExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The partition block of this source&#039;s schema and nothing else - typed exactly as the read emits it,
-empty when the source declares no partition columns. The planner asks it to decide whether a predicate
-can be evaluated from the path alone.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">partitionSchema</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Values-Schema.html"><abbr title="\Flow\ETL\Values\Schema">Schema</abbr></a></span></code>
@@ -403,13 +394,11 @@ can be evaluated from the path alone.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/File/FileExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-file-fileextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/File/FileExtractor.php">FileExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">True when this source skips data with $conjunct before it decodes rows. The planner pushes a conjunct over
-the source&#039;s columns only when this is true; a conjunct over partition columns only is pushed into every source.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">prunes</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Functions-ScalarFunction.html"><abbr title="\Flow\ETL\Functions\ScalarFunction">ScalarFunction</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$conjunct</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
@@ -555,7 +544,7 @@ what it sniffs, as CSVExtractor and ArrayExtractor do.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/File/FileExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-file-fileextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/File/FileExtractor.php">FileExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
