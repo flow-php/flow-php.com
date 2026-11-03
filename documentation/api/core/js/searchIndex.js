@@ -536,6 +536,221 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-API-GroupedDataFrame.html#method_pivot"
         },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\CountRows",
+            "name": "CountRows",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-CountRows.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\CountRows\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-CountRows.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\Display",
+            "name": "Display",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-Display.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\Display\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-Display.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\Display\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-Display.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\Explain",
+            "name": "Explain",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-Explain.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\Explain\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-Explain.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\Explain\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-Explain.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\Fetch",
+            "name": "Fetch",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-Fetch.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\Fetch\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-Fetch.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\Fetch\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-Fetch.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\ForEachRows",
+            "name": "ForEachRows",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-ForEachRows.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\ForEachRows\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-ForEachRows.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\ForEachRows\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-ForEachRows.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\Get",
+            "name": "Get",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-Get.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\Get\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-Get.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\GetAsArray",
+            "name": "GetAsArray",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-GetAsArray.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\GetAsArray\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-GetAsArray.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\GetEachAsArray",
+            "name": "GetEachAsArray",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-GetEachAsArray.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\GetEachAsArray\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-GetEachAsArray.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\GetSchema",
+            "name": "GetSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-GetSchema.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\GetSchema\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-GetSchema.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\GroupBy",
+            "name": "GroupBy",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-GroupBy.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\GroupBy\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-GroupBy.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\GroupBy\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-GroupBy.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\Pivot",
+            "name": "Pivot",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-Pivot.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\Pivot\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-Pivot.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\Pivot\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-Pivot.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\PrintRows",
+            "name": "PrintRows",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-PrintRows.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\PrintRows\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-PrintRows.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\PrintRows\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-PrintRows.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\PrintSchema",
+            "name": "PrintSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-PrintSchema.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\PrintSchema\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-PrintSchema.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\PrintSchema\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-PrintSchema.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\Process",
+            "name": "Process",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-Process.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\Process\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-Process.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\Process\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-Process.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\Read",
+            "name": "Read",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-Read.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\Read\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-Read.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\Read\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-Read.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\Run",
+            "name": "Run",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-Run.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\Run\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-Run.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe\\Run\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Pipe-Run.html#method___invoke"
+        },                {
             "fqsen": "\\Flow\\ETL\\API\\Transactional",
             "name": "Transactional",
             "summary": "",
@@ -566,10 +781,40 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-API-Transformation-AddRowIndex.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\API\\Transformation\\AddRowIndex\u003A\u003Atransform\u0028\u0029",
-            "name": "transform",
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\AddRowIndex\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
             "summary": "",
-            "url": "classes/Flow-ETL-API-Transformation-AddRowIndex.html#method_transform"
+            "url": "classes/Flow-ETL-API-Transformation-AddRowIndex.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Aggregate",
+            "name": "Aggregate",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Aggregate.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Aggregate\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Aggregate.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Aggregate\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Aggregate.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\AggregateBy",
+            "name": "AggregateBy",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-AggregateBy.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\AggregateBy\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-AggregateBy.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\AggregateBy\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-AggregateBy.html#method___invoke"
         },                {
             "fqsen": "\\Flow\\ETL\\API\\Transformation\\BatchBy",
             "name": "BatchBy",
@@ -581,10 +826,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-API-Transformation-BatchBy.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\API\\Transformation\\BatchBy\u003A\u003Atransform\u0028\u0029",
-            "name": "transform",
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\BatchBy\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
             "summary": "",
-            "url": "classes/Flow-ETL-API-Transformation-BatchBy.html#method_transform"
+            "url": "classes/Flow-ETL-API-Transformation-BatchBy.html#method___invoke"
         },                {
             "fqsen": "\\Flow\\ETL\\API\\Transformation\\BatchSize",
             "name": "BatchSize",
@@ -596,10 +841,90 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-API-Transformation-BatchSize.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\API\\Transformation\\BatchSize\u003A\u003Atransform\u0028\u0029",
-            "name": "transform",
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\BatchSize\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
             "summary": "",
-            "url": "classes/Flow-ETL-API-Transformation-BatchSize.html#method_transform"
+            "url": "classes/Flow-ETL-API-Transformation-BatchSize.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Cache",
+            "name": "Cache",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Cache.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Cache\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Cache.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Cache\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Cache.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\CollectRefs",
+            "name": "CollectRefs",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-CollectRefs.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\CollectRefs\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-CollectRefs.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\CollectRefs\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-CollectRefs.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\CollectRows",
+            "name": "CollectRows",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-CollectRows.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\CollectRows\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-CollectRows.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Constrain",
+            "name": "Constrain",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Constrain.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Constrain\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Constrain.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Constrain\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Constrain.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\CrossJoin",
+            "name": "CrossJoin",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-CrossJoin.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\CrossJoin\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-CrossJoin.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\CrossJoin\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-CrossJoin.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Discard",
+            "name": "Discard",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Discard.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Discard\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Discard.html#method___invoke"
         },                {
             "fqsen": "\\Flow\\ETL\\API\\Transformation\\Drop",
             "name": "Drop",
@@ -611,10 +936,100 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-API-Transformation-Drop.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Drop\u003A\u003Atransform\u0028\u0029",
-            "name": "transform",
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Drop\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
             "summary": "",
-            "url": "classes/Flow-ETL-API-Transformation-Drop.html#method_transform"
+            "url": "classes/Flow-ETL-API-Transformation-Drop.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\DropDuplicates",
+            "name": "DropDuplicates",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-DropDuplicates.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\DropDuplicates\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-DropDuplicates.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\DropDuplicates\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-DropDuplicates.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\DuplicateRow",
+            "name": "DuplicateRow",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-DuplicateRow.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\DuplicateRow\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-DuplicateRow.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\DuplicateRow\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-DuplicateRow.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Filter",
+            "name": "Filter",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Filter.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Filter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Filter.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Filter\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Filter.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Filters",
+            "name": "Filters",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Filters.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Filters\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Filters.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Filters\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Filters.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Join",
+            "name": "Join",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Join.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Join\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Join.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Join\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Join.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\JoinEach",
+            "name": "JoinEach",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-JoinEach.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\JoinEach\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-JoinEach.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\JoinEach\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-JoinEach.html#method___invoke"
         },                {
             "fqsen": "\\Flow\\ETL\\API\\Transformation\\Limit",
             "name": "Limit",
@@ -626,10 +1041,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-API-Transformation-Limit.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Limit\u003A\u003Atransform\u0028\u0029",
-            "name": "transform",
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Limit\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
             "summary": "",
-            "url": "classes/Flow-ETL-API-Transformation-Limit.html#method_transform"
+            "url": "classes/Flow-ETL-API-Transformation-Limit.html#method___invoke"
         },                {
             "fqsen": "\\Flow\\ETL\\API\\Transformation\\MaskColumns",
             "name": "MaskColumns",
@@ -641,10 +1056,100 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-API-Transformation-MaskColumns.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\API\\Transformation\\MaskColumns\u003A\u003Atransform\u0028\u0029",
-            "name": "transform",
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\MaskColumns\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
             "summary": "",
-            "url": "classes/Flow-ETL-API-Transformation-MaskColumns.html#method_transform"
+            "url": "classes/Flow-ETL-API-Transformation-MaskColumns.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\MatchSchema",
+            "name": "MatchSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-MatchSchema.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\MatchSchema\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-MatchSchema.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\MatchSchema\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-MatchSchema.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Offset",
+            "name": "Offset",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Offset.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Offset\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Offset.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Offset\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Offset.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\OnError",
+            "name": "OnError",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-OnError.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\OnError\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-OnError.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\OnError\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-OnError.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Rename",
+            "name": "Rename",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Rename.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Rename\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Rename.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Rename\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Rename.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\RenameEach",
+            "name": "RenameEach",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-RenameEach.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\RenameEach\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-RenameEach.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\RenameEach\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-RenameEach.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Repartition",
+            "name": "Repartition",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Repartition.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Repartition\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Repartition.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Repartition\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Repartition.html#method___invoke"
         },                {
             "fqsen": "\\Flow\\ETL\\API\\Transformation\\Select",
             "name": "Select",
@@ -656,20 +1161,120 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-API-Transformation-Select.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Select\u003A\u003Atransform\u0028\u0029",
-            "name": "transform",
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Select\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
             "summary": "",
-            "url": "classes/Flow-ETL-API-Transformation-Select.html#method_transform"
+            "url": "classes/Flow-ETL-API-Transformation-Select.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\SortBy",
+            "name": "SortBy",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-SortBy.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\SortBy\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-SortBy.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\SortBy\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-SortBy.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Until",
+            "name": "Until",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Until.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Until\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Until.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Until\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Until.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\With",
+            "name": "With",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-With.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\With\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-With.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\With\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-With.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\WithColumn",
+            "name": "WithColumn",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-WithColumn.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\WithColumn\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-WithColumn.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\WithColumn\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-WithColumn.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\WithColumn\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-WithColumn.html#property_name"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\WithColumn\u003A\u003A\u0024function",
+            "name": "function",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-WithColumn.html#property_function"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\WithColumns",
+            "name": "WithColumns",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-WithColumns.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\WithColumns\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-WithColumns.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\WithColumns\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-WithColumns.html#method___invoke"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Write",
+            "name": "Write",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Write.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Write\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Write.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\\Write\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Flow-ETL-API-Transformation-Write.html#method___invoke"
         },                {
             "fqsen": "\\Flow\\ETL\\API\\Transformation",
             "name": "Transformation",
             "summary": "",
             "url": "classes/Flow-ETL-API-Transformation.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\API\\Transformation\u003A\u003Atransform\u0028\u0029",
-            "name": "transform",
+            "fqsen": "\\Flow\\ETL\\API\\Transformation\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
             "summary": "",
-            "url": "classes/Flow-ETL-API-Transformation.html#method_transform"
+            "url": "classes/Flow-ETL-API-Transformation.html#method___invoke"
         },                {
             "fqsen": "\\Flow\\ETL\\API\\Transformations",
             "name": "Transformations",
@@ -681,10 +1286,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-API-Transformations.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\API\\Transformations\u003A\u003Atransform\u0028\u0029",
-            "name": "transform",
+            "fqsen": "\\Flow\\ETL\\API\\Transformations\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
             "summary": "",
-            "url": "classes/Flow-ETL-API-Transformations.html#method_transform"
+            "url": "classes/Flow-ETL-API-Transformations.html#method___invoke"
         },                {
             "fqsen": "\\Flow\\ETL\\API\\Transformations\u003A\u003A\u0024transformations",
             "name": "transformations",
@@ -900,6 +1505,211 @@ Search.appendIndex(
             "name": "mask_columns",
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_mask_columns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\read\u0028\u0029",
+            "name": "read",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_read"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\process\u0028\u0029",
+            "name": "process",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_process"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\aggregate\u0028\u0029",
+            "name": "aggregate",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_aggregate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\aggregate_by\u0028\u0029",
+            "name": "aggregate_by",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_aggregate_by"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\cache\u0028\u0029",
+            "name": "cache",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_cache"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\collect_rows\u0028\u0029",
+            "name": "collect_rows",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_collect_rows"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\collect_refs\u0028\u0029",
+            "name": "collect_refs",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_collect_refs"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\constrain\u0028\u0029",
+            "name": "constrain",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_constrain"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\cross_join\u0028\u0029",
+            "name": "cross_join",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_cross_join"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\drop_duplicates\u0028\u0029",
+            "name": "drop_duplicates",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_drop_duplicates"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\duplicate_row\u0028\u0029",
+            "name": "duplicate_row",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_duplicate_row"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\filter\u0028\u0029",
+            "name": "filter",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_filter"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\filters\u0028\u0029",
+            "name": "filters",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_filters"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\join\u0028\u0029",
+            "name": "join",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_join"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\join_each\u0028\u0029",
+            "name": "join_each",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_join_each"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\match_schema\u0028\u0029",
+            "name": "match_schema",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_match_schema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\offset\u0028\u0029",
+            "name": "offset",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_offset"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\on_error\u0028\u0029",
+            "name": "on_error",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_on_error"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\rename\u0028\u0029",
+            "name": "rename",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_rename"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\rename_each\u0028\u0029",
+            "name": "rename_each",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_rename_each"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\repartition\u0028\u0029",
+            "name": "repartition",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_repartition"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\sort_by\u0028\u0029",
+            "name": "sort_by",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_sort_by"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\until\u0028\u0029",
+            "name": "until",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_until"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\void\u0028\u0029",
+            "name": "void",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_void"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\with\u0028\u0029",
+            "name": "with",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_with"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\with_columns\u0028\u0029",
+            "name": "with_columns",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_with_columns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\write\u0028\u0029",
+            "name": "write",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_write"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\group_by\u0028\u0029",
+            "name": "group_by",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_group_by"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\pivot\u0028\u0029",
+            "name": "pivot",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_pivot"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\count_rows\u0028\u0029",
+            "name": "count_rows",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_count_rows"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\display\u0028\u0029",
+            "name": "display",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_display"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\explain\u0028\u0029",
+            "name": "explain",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_explain"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\fetch\u0028\u0029",
+            "name": "fetch",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_fetch"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\for_each\u0028\u0029",
+            "name": "for_each",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_for_each"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\get\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_get"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\get_as_array\u0028\u0029",
+            "name": "get_as_array",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_get_as_array"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\get_each_as_array\u0028\u0029",
+            "name": "get_each_as_array",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_get_each_as_array"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\get_schema\u0028\u0029",
+            "name": "get_schema",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_get_schema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\print_rows\u0028\u0029",
+            "name": "print_rows",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_print_rows"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\print_schema\u0028\u0029",
+            "name": "print_schema",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_print_schema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\run\u0028\u0029",
+            "name": "run",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_run"
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\optional\u0028\u0029",
             "name": "optional",
@@ -1576,10 +2386,10 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_save_mode_append"
         },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\print_rows\u0028\u0029",
-            "name": "print_rows",
+            "fqsen": "\\Flow\\ETL\\DSL\\format_rows\u0028\u0029",
+            "name": "format_rows",
             "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_print_rows"
+            "url": "namespaces/flow-etl-dsl.html#function_format_rows"
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\identical\u0028\u0029",
             "name": "identical",
@@ -11496,26 +12306,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Functions-WindowFunction.html#method_window"
         },                {
-            "fqsen": "\\Flow\\ETL\\Functions\\WithColumn",
-            "name": "WithColumn",
-            "summary": "",
-            "url": "classes/Flow-ETL-Functions-WithColumn.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Functions\\WithColumn\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Functions-WithColumn.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Functions\\WithColumn\u003A\u003A\u0024name",
-            "name": "name",
-            "summary": "",
-            "url": "classes/Flow-ETL-Functions-WithColumn.html#property_name"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Functions\\WithColumn\u003A\u003A\u0024function",
-            "name": "function",
-            "summary": "",
-            "url": "classes/Flow-ETL-Functions-WithColumn.html#property_function"
-        },                {
             "fqsen": "\\Flow\\ETL\\Functions\\Wordwrap",
             "name": "Wordwrap",
             "summary": "",
@@ -17345,6 +18135,11 @@ Search.appendIndex(
             "name": "transform",
             "summary": "",
             "url": "classes/Flow-ETL-Operators-Transformer-ScalarFunctionTransformer.html#method_transform"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Operators\\Transformer\\ScalarFunctionTransformer\u003A\u003AcolumnName\u0028\u0029",
+            "name": "columnName",
+            "summary": "",
+            "url": "classes/Flow-ETL-Operators-Transformer-ScalarFunctionTransformer.html#method_columnName"
         },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Transformer\\ScalarFunctionTransformer\u003A\u003A\u0024function",
             "name": "function",
@@ -28185,6 +28980,11 @@ Search.appendIndex(
             "name": "Sort",
             "summary": "",
             "url": "namespaces/flow-etl-api-config-sort.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Pipe",
+            "name": "Pipe",
+            "summary": "",
+            "url": "namespaces/flow-etl-api-pipe.html"
         },                {
             "fqsen": "\\Flow\\ETL\\API\\Transformation",
             "name": "Transformation",
