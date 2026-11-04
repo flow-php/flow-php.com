@@ -1,0 +1,241 @@
+import { Controller } from "@hotwired/stimulus"
+import { EditorView, basicSetup } from "codemirror"
+import { EditorState, StateField, StateEffect, Compartment, Prec } from "@codemirror/state"
+import { Decoration } from "@codemirror/view"
+import { keymap } from "@codemirror/view"
+import { php } from "@codemirror/lang-php"
+import { autocompletion, snippetKeymap, acceptCompletion } from "@codemirror/autocomplete"
+import { indentWithTab } from "@codemirror/commands"
+import { flowThemeExtension, flowLightThemeExtension } from "../codemirror/themes/theme-flow.js"
+import { flowCompletion } from "../codemirror/flow_completion.js"
+import { flowTooltips } from "../codemirror/flow_tooltips.js"
+import Violation from "../models/Violation.js"
+
+export default class extends Controller {
+    #editor
+    #debug = false
+    #textarea
+    #errorEffect
+    #editorReady = false
+    #themeCompartment = new Compartment()
+    #onThemeChanged = null
+
+    #log(...args) {
+        if (this.#debug) {
+            console.log('[CodeEditor]', ...args)
+        }
+    }
+
+    #initializeEditor() {
+        this.#textarea = this.element
+        const initialValue = this.#textarea.value
+
+        const editorDiv = document.createElement('div')
+        editorDiv.style.width = '100%'
+        editorDiv.style.height = this.#textarea.style.height || '600px'
+
+        this.#textarea.style.display = 'none'
+        this.#textarea.parentNode.insertBefore(editorDiv, this.#textarea)
+
+        this.#errorEffect = StateEffect.define()
+        const errorEffect = this.#errorEffect
+
+        const errorField = StateField.define({
+            create() {
+                return Decoration.none
+            },
+            update(errors, tr) {
+                errors = errors.map(tr.changes)
+                for (const effect of tr.effects) {
+                    if (effect.is(errorEffect)) {
+                        errors = effect.value
+                    }
+                }
+                return errors
+            },
+            provide: f => EditorView.decorations.from(f)
+        })
+
+        const state = EditorState.create({
+            doc: initialValue,
+            extensions: [
+                basicSetup,
+                php(),
+                this.#themeCompartment.of(this.#currentThemeExtension()),
+                errorField,
+                Prec.highest(keymap.of([{ key: "Tab", run: acceptCompletion }])),
+                keymap.of(snippetKeymap),
+                keymap.of([indentWithTab]),
+                autocompletion({
+                    override: [flowCompletion],
+                    activateOnTyping: true,
+                    maxRenderedOptions: 20
+                }),
+                flowTooltips,
+                EditorView.updateListener.of((update) => {
+                    if (update.docChanged) {
+                        this.#textarea.value = update.state.doc.toString()
+                        this.dispatch('code-changed', { bubbles: true })
+                    }
+                })
+            ]
+        })
+
+        this.#editor = new EditorView({
+            state,
+            parent: editorDiv
+        })
+
+        this.#editorReady = true
+        this.#log('Code editor initialized')
+    }
+
+    connect() {
+        this.#debug = this.application.debug
+        this.#log('Connecting Code editor controller')
+        this.#initializeEditor()
+
+        this.#onThemeChanged = this.#handleThemeChange.bind(this)
+        document.addEventListener('theme:changed', this.#onThemeChanged)
+    }
+
+    #currentThemeExtension() {
+        return document.documentElement.getAttribute('data-theme') === 'dark'
+            ? flowThemeExtension
+            : flowLightThemeExtension
+    }
+
+    #handleThemeChange() {
+        if (!this.#editor) return
+        this.#editor.dispatch({
+            effects: this.#themeCompartment.reconfigure(this.#currentThemeExtension())
+        })
+    }
+
+    isReady() {
+        return this.#editorReady && this.#editor !== null
+    }
+
+    isLoaded() {
+        return this.#editorReady && this.#editor !== null
+    }
+
+    async onLoad() {
+        if (this.isLoaded()) return Promise.resolve()
+
+        return new Promise(resolve => {
+            const check = setInterval(() => {
+                if (this.isLoaded()) {
+                    clearInterval(check)
+                    resolve()
+                }
+            }, 50)
+        })
+    }
+
+    disconnect() {
+        if (this.#onThemeChanged) {
+            document.removeEventListener('theme:changed', this.#onThemeChanged)
+        }
+        if (this.#editor) {
+            this.#editor.destroy()
+            this.#editor = null
+        }
+    }
+
+    getCode() {
+        return this.#editor ? this.#editor.state.doc.toString() : ''
+    }
+
+    setCode(code) {
+        this.#log('setCode called with code length:', code?.length)
+
+        if (this.#editor) {
+            this.#log('Setting code immediately')
+            this.#editor.dispatch({
+                changes: {
+                    from: 0,
+                    to: this.#editor.state.doc.length,
+                    insert: code
+                }
+            })
+        }
+    }
+
+    setValue(code) {
+        this.setCode(code)
+    }
+
+    highlightError(errorInfo) {
+        this.#log('highlightError called with:', errorInfo)
+
+        if (!this.#editor || !errorInfo) {
+            this.#log('No editor or errorInfo:', { hasEditor: !!this.#editor, errorInfo })
+            return
+        }
+
+        this.clearErrors()
+
+        const { line, type, message } = errorInfo
+        if (!line) {
+            this.#log('No line number in errorInfo')
+            return
+        }
+
+        this.#log('Highlighting line:', line, 'with message:', message)
+
+        const violation = Violation.create({
+            message: `${type}: ${message}`,
+            line: line,
+            column: 0,
+            startLine: line,
+            endLine: line,
+            startColumn: 0,
+            endColumn: Number.MAX_SAFE_INTEGER
+        })
+
+        const decorations = []
+        const doc = this.#editor.state.doc
+
+        try {
+            const from = violation.getStartPosition(doc)
+            const to = violation.getEndPosition(doc)
+
+            if (from < to && from >= 0 && to <= doc.length) {
+                decorations.push(
+                    Decoration.mark({
+                        class: 'cm-error',
+                        attributes: { title: violation.message }
+                    }).range(from, to)
+                )
+            }
+        } catch (error) {
+            console.warn('Failed to highlight error:', violation, error)
+        }
+
+        if (decorations.length > 0) {
+            this.#editor.dispatch({
+                effects: this.#errorEffect.of(Decoration.set(decorations))
+            })
+
+            const editorLine = line - 1
+            const lineObj = doc.line(editorLine + 1)
+            this.#editor.dispatch({
+                selection: { anchor: lineObj.from },
+                scrollIntoView: true
+            })
+        }
+    }
+
+    clearErrors() {
+        if (!this.#editor) {
+            return
+        }
+
+        this.#log('Clearing errors')
+
+        this.#editor.dispatch({
+            effects: this.#errorEffect.of(Decoration.none)
+        })
+    }
+}

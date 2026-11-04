@@ -24118,7 +24118,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Column\u003A\u003Aat\u0028\u0029",
             "name": "at",
-            "summary": "PHYSICAL\u0020cell\u003A\u0020int\u007Cfloat\u007Cbool\u007Cstring\u007Carray\u007Cnull\u0020\u002D\u0020never\u0020a\u0020DateTimeImmutable,\u0020Uuid,\u0020Json\u0020\u2026",
+            "summary": "PHYSICAL\u0020cell\u003A\u0020int\u007Cfloat\u007Cbool\u007Cstring\u007Carray\u007Cnull\u0020\u002D\u0020never\u0020a\u0020DateTimeImmutable,\u0020Uuid,\u0020Json\u0020.",
             "url": "classes/Flow-ETL-Values-Column-Column.html#method_at"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Column\u003A\u003Aphysicals\u0028\u0029",
@@ -24673,7 +24673,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Php\\ConstantColumn\u003A\u003Aat\u0028\u0029",
             "name": "at",
-            "summary": "PHYSICAL\u0020cell\u003A\u0020int\u007Cfloat\u007Cbool\u007Cstring\u007Carray\u007Cnull\u0020\u002D\u0020never\u0020a\u0020DateTimeImmutable,\u0020Uuid,\u0020Json\u0020\u2026",
+            "summary": "PHYSICAL\u0020cell\u003A\u0020int\u007Cfloat\u007Cbool\u007Cstring\u007Carray\u007Cnull\u0020\u002D\u0020never\u0020a\u0020DateTimeImmutable,\u0020Uuid,\u0020Json\u0020.",
             "url": "classes/Flow-ETL-Values-Column-Php-ConstantColumn.html#method_at"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Php\\ConstantColumn\u003A\u003Aconcat\u0028\u0029",
@@ -24768,7 +24768,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Php\\ListColumn\u003A\u003Aat\u0028\u0029",
             "name": "at",
-            "summary": "PHYSICAL\u0020cell\u003A\u0020int\u007Cfloat\u007Cbool\u007Cstring\u007Carray\u007Cnull\u0020\u002D\u0020never\u0020a\u0020DateTimeImmutable,\u0020Uuid,\u0020Json\u0020\u2026",
+            "summary": "PHYSICAL\u0020cell\u003A\u0020int\u007Cfloat\u007Cbool\u007Cstring\u007Carray\u007Cnull\u0020\u002D\u0020never\u0020a\u0020DateTimeImmutable,\u0020Uuid,\u0020Json\u0020.",
             "url": "classes/Flow-ETL-Values-Column-Php-ListColumn.html#method_at"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Php\\ListColumn\u003A\u003Aconcat\u0028\u0029",
@@ -24888,7 +24888,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Php\\MapColumn\u003A\u003Aat\u0028\u0029",
             "name": "at",
-            "summary": "PHYSICAL\u0020cell\u003A\u0020int\u007Cfloat\u007Cbool\u007Cstring\u007Carray\u007Cnull\u0020\u002D\u0020never\u0020a\u0020DateTimeImmutable,\u0020Uuid,\u0020Json\u0020\u2026",
+            "summary": "PHYSICAL\u0020cell\u003A\u0020int\u007Cfloat\u007Cbool\u007Cstring\u007Carray\u007Cnull\u0020\u002D\u0020never\u0020a\u0020DateTimeImmutable,\u0020Uuid,\u0020Json\u0020.",
             "url": "classes/Flow-ETL-Values-Column-Php-MapColumn.html#method_at"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Php\\MapColumn\u003A\u003Aconcat\u0028\u0029",
@@ -25113,7 +25113,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Php\\ScalarColumn\u003A\u003Aat\u0028\u0029",
             "name": "at",
-            "summary": "PHYSICAL\u0020cell\u003A\u0020int\u007Cfloat\u007Cbool\u007Cstring\u007Carray\u007Cnull\u0020\u002D\u0020never\u0020a\u0020DateTimeImmutable,\u0020Uuid,\u0020Json\u0020\u2026",
+            "summary": "PHYSICAL\u0020cell\u003A\u0020int\u007Cfloat\u007Cbool\u007Cstring\u007Carray\u007Cnull\u0020\u002D\u0020never\u0020a\u0020DateTimeImmutable,\u0020Uuid,\u0020Json\u0020.",
             "url": "classes/Flow-ETL-Values-Column-Php-ScalarColumn.html#method_at"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Php\\ScalarColumn\u003A\u003Aconcat\u0028\u0029",
@@ -25223,7 +25223,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Php\\StructColumn\u003A\u003Aat\u0028\u0029",
             "name": "at",
-            "summary": "PHYSICAL\u0020cell\u003A\u0020int\u007Cfloat\u007Cbool\u007Cstring\u007Carray\u007Cnull\u0020\u002D\u0020never\u0020a\u0020DateTimeImmutable,\u0020Uuid,\u0020Json\u0020\u2026",
+            "summary": "PHYSICAL\u0020cell\u003A\u0020int\u007Cfloat\u007Cbool\u007Cstring\u007Carray\u007Cnull\u0020\u002D\u0020never\u0020a\u0020DateTimeImmutable,\u0020Uuid,\u0020Json\u0020.",
             "url": "classes/Flow-ETL-Values-Column-Php-StructColumn.html#method_at"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Php\\StructColumn\u003A\u003Aconcat\u0028\u0029",
@@ -26083,7 +26083,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\ValueColumn\u003A\u003Aat\u0028\u0029",
             "name": "at",
-            "summary": "PHYSICAL\u0020cell\u003A\u0020int\u007Cfloat\u007Cbool\u007Cstring\u007Carray\u007Cnull\u0020\u002D\u0020never\u0020a\u0020DateTimeImmutable,\u0020Uuid,\u0020Json\u0020\u2026",
+            "summary": "PHYSICAL\u0020cell\u003A\u0020int\u007Cfloat\u007Cbool\u007Cstring\u007Carray\u007Cnull\u0020\u002D\u0020never\u0020a\u0020DateTimeImmutable,\u0020Uuid,\u0020Json\u0020.",
             "url": "classes/Flow-ETL-Values-Column-ValueColumn.html#method_at"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\ValueColumn\u003A\u003Aconcat\u0028\u0029",
