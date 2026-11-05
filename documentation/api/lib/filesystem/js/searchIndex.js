@@ -66,6 +66,11 @@ Search.appendIndex(
             "summary": "Wrap\u0020a\u0020filesystem\u0020with\u0020telemetry\u0020tracing\u0020support.",
             "url": "namespaces/flow-filesystem-dsl.html#function_traceable_filesystem"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\DSL\\intercepted_filesystem\u0028\u0029",
+            "name": "intercepted_filesystem",
+            "summary": "Wrap\u0020a\u0020filesystem\u0020so\u0020that\u0020a\u0020test\u0020hook\u0020runs\u0020before\u0020every\u0020I\/O\u0020operation,\u0020for\u0020example\u0020to\u0020make\u0020one\u0020throw.",
+            "url": "namespaces/flow-filesystem-dsl.html#function_intercepted_filesystem"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\DSL\\filesystem_telemetry_config\u0028\u0029",
             "name": "filesystem_telemetry_config",
             "summary": "Create\u0020a\u0020telemetry\u0020configuration\u0020for\u0020the\u0020filesystem.",
@@ -2806,6 +2811,131 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Telemetry-TraceableSourceStream.html#method_size"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing\\FilesystemOperation",
+            "name": "FilesystemOperation",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Testing-FilesystemOperation.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing\\FilesystemOperation\u003A\u003AAppendTo",
+            "name": "AppendTo",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Testing-FilesystemOperation.html#enumcase_AppendTo"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing\\FilesystemOperation\u003A\u003ACreate",
+            "name": "Create",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Testing-FilesystemOperation.html#enumcase_Create"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing\\FilesystemOperation\u003A\u003AList",
+            "name": "List",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Testing-FilesystemOperation.html#enumcase_List"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing\\FilesystemOperation\u003A\u003AMv",
+            "name": "Mv",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Testing-FilesystemOperation.html#enumcase_Mv"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing\\FilesystemOperation\u003A\u003AReadFrom",
+            "name": "ReadFrom",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Testing-FilesystemOperation.html#enumcase_ReadFrom"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing\\FilesystemOperation\u003A\u003ARm",
+            "name": "Rm",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Testing-FilesystemOperation.html#enumcase_Rm"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing\\FilesystemOperation\u003A\u003AStatus",
+            "name": "Status",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Testing-FilesystemOperation.html#enumcase_Status"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing\\FilesystemOperation\u003A\u003AWriteTo",
+            "name": "WriteTo",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Testing-FilesystemOperation.html#enumcase_WriteTo"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing\\InterceptedFilesystem",
+            "name": "InterceptedFilesystem",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Testing-InterceptedFilesystem.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing\\InterceptedFilesystem\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Testing-InterceptedFilesystem.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing\\InterceptedFilesystem\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Testing-InterceptedFilesystem.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing\\InterceptedFilesystem\u003A\u003AappendTo\u0028\u0029",
+            "name": "appendTo",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Testing-InterceptedFilesystem.html#method_appendTo"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing\\InterceptedFilesystem\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "Bytes\u0020become\u0020visible\u0020whole\u0020at\u0020close\u0028\u0029.",
+            "url": "classes/Flow-Filesystem-Testing-InterceptedFilesystem.html#method_create"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing\\InterceptedFilesystem\u003A\u003AgetSystemTmpDir\u0028\u0029",
+            "name": "getSystemTmpDir",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Testing-InterceptedFilesystem.html#method_getSystemTmpDir"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing\\InterceptedFilesystem\u003A\u003Alist\u0028\u0029",
+            "name": "list",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Testing-InterceptedFilesystem.html#method_list"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing\\InterceptedFilesystem\u003A\u003Amount\u0028\u0029",
+            "name": "mount",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Testing-InterceptedFilesystem.html#method_mount"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing\\InterceptedFilesystem\u003A\u003Amv\u0028\u0029",
+            "name": "mv",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Testing-InterceptedFilesystem.html#method_mv"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing\\InterceptedFilesystem\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Testing-InterceptedFilesystem.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing\\InterceptedFilesystem\u003A\u003AonCall\u0028\u0029",
+            "name": "onCall",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Testing-InterceptedFilesystem.html#method_onCall"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing\\InterceptedFilesystem\u003A\u003AreadFrom\u0028\u0029",
+            "name": "readFrom",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Testing-InterceptedFilesystem.html#method_readFrom"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing\\InterceptedFilesystem\u003A\u003Arm\u0028\u0029",
+            "name": "rm",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Testing-InterceptedFilesystem.html#method_rm"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing\\InterceptedFilesystem\u003A\u003Astatus\u0028\u0029",
+            "name": "status",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Testing-InterceptedFilesystem.html#method_status"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing\\InterceptedFilesystem\u003A\u003Asupports\u0028\u0029",
+            "name": "supports",
+            "summary": "True\u0020when\u0020this\u0020filesystem\u0020serves\u0020the\u0020given\u0020path\u0027s\u0020protocol.",
+            "url": "classes/Flow-Filesystem-Testing-InterceptedFilesystem.html#method_supports"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing\\InterceptedFilesystem\u003A\u003AwriteTo\u0028\u0029",
+            "name": "writeTo",
+            "summary": "Open\u0020destination\u0020stream\u0020for\u0020writing,\u0020if\u0020file\u0020already\u0020exists\u0020it\u0020will\u0020be\u0020overwritten.",
+            "url": "classes/Flow-Filesystem-Testing-InterceptedFilesystem.html#method_writeTo"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
@@ -2885,5 +3015,10 @@ Search.appendIndex(
             "name": "Telemetry",
             "summary": "",
             "url": "namespaces/flow-filesystem-telemetry.html"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Testing",
+            "name": "Testing",
+            "summary": "",
+            "url": "namespaces/flow-filesystem-testing.html"
         }            ]
 );

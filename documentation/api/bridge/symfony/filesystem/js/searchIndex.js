@@ -166,6 +166,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-FilesystemBundle-DependencyInjection-Compiler-BuildFstabsPass.html#constant_FS_SERVICE_PREFIX"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\FilesystemBundle\\DependencyInjection\\Compiler\\BuildFstabsPass\u003A\u003AMOUNT_SERVICE_PREFIX",
+            "name": "MOUNT_SERVICE_PREFIX",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-FilesystemBundle-DependencyInjection-Compiler-BuildFstabsPass.html#constant_MOUNT_SERVICE_PREFIX"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\FilesystemBundle\\DependencyInjection\\Compiler\\BuildFstabsPass\u003A\u003ATELEMETRY_CONFIG_SERVICE_PREFIX",
             "name": "TELEMETRY_CONFIG_SERVICE_PREFIX",
             "summary": "",
@@ -341,6 +346,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-FilesystemBundle-Filesystem-FilesystemFactoryRegistry.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\FilesystemBundle\\Filesystem\\FilesystemFactoryRegistry\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-FilesystemBundle-Filesystem-FilesystemFactoryRegistry.html#method_create"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\FilesystemBundle\\Filesystem\\FilesystemFactoryRegistry\u003A\u003Aget\u0028\u0029",
             "name": "get",
             "summary": "",
@@ -355,16 +365,6 @@ Search.appendIndex(
             "name": "types",
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-FilesystemBundle-Filesystem-FilesystemFactoryRegistry.html#method_types"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\FilesystemBundle\\Filesystem\\FstabBuilder",
-            "name": "FstabBuilder",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-FilesystemBundle-Filesystem-FstabBuilder.html"
-        },                {
-            "fqsen": "\\Flow\\Bridge\\Symfony\\FilesystemBundle\\Filesystem\\FstabBuilder\u003A\u003Abuild\u0028\u0029",
-            "name": "build",
-            "summary": "",
-            "url": "classes/Flow-Bridge-Symfony-FilesystemBundle-Filesystem-FstabBuilder.html#method_build"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\FilesystemBundle\\FlowFilesystemBundle",
             "name": "FlowFilesystemBundle",
