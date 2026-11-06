@@ -1,9 +1,9 @@
 {
-    "@symfony\/stimulus-bundle\/controllers.js": "\/assets\/@symfony\/stimulus-bundle\/controllers-a24d3bdf0e89291149f0945f675a00e4.js",
+    "@symfony\/stimulus-bundle\/controllers.js": "\/assets\/@symfony\/stimulus-bundle\/controllers-3b1f51ab5c0476215cd5310af8a9e23a.js",
     "@symfony\/stimulus-bundle\/loader.js": "\/assets\/@symfony\/stimulus-bundle\/loader-20ecc10cbbb74d097d458e14577bcd99.js",
     "app.js": "\/assets\/app-396eb1b280b9b32f53a44b8e87aa6133.js",
     "bootstrap.js": "\/assets\/bootstrap-13edb607a8c6b40c285e5deacc875a08.js",
-    "codemirror\/completions\/flow-api.js": "\/assets\/codemirror\/completions\/flow-api-3fcfcf97f8a2566fe93c60b8edcf32ab.js",
+    "codemirror\/completions\/flow-api.js": "\/assets\/codemirror\/completions\/flow-api-2e8376fcf75350e645437c7d620fb2e0.js",
     "codemirror\/flow_completion.js": "\/assets\/codemirror\/flow_completion-62914c94640059e6ad8a638d1a29eb3b.js",
     "codemirror\/flow_tooltips.js": "\/assets\/codemirror\/flow_tooltips-24f431535c6d176014eff19e9346fcf8.js",
     "codemirror\/php_analysis.js": "\/assets\/codemirror\/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js",
@@ -207,6 +207,6 @@
     "wasm\/mago\/mago_wasm_bg.wasm": "\/assets\/wasm\/mago\/mago_wasm_bg-ee314eafed51022d6428a8373f065d48.wasm",
     "wasm\/php.js": "\/assets\/wasm\/php-9253012273f3c75447b16fd7f4098f1a.js",
     "wasm\/php.wasm": "\/assets\/wasm\/php-9dcd4b1f2ef3e539cee62e05478be21f.wasm",
-    "wasm\/tools\/flow.phar": "\/assets\/wasm\/tools\/flow-81d815cb2a11752548c13e3fb7c8be1a.phar",
+    "wasm\/tools\/flow.phar": "\/assets\/wasm\/tools\/flow-3764d3ace48b0877febd7d8379e4346f.phar",
     "wasm\/vendor\/autoload.php.wasm": "\/assets\/wasm\/vendor\/autoload.php-901f7714ee4a437fea3a9d6638722933.wasm"
 }
