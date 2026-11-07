@@ -1,5 +1,5 @@
 {
-    "@symfony\/stimulus-bundle\/controllers.js": "\/assets\/@symfony\/stimulus-bundle\/controllers-21d47d400a180a5c39cbe4d6b8167c34.js",
+    "@symfony\/stimulus-bundle\/controllers.js": "\/assets\/@symfony\/stimulus-bundle\/controllers-8bc560650c871ab37ff2dd1d01f3c137.js",
     "@symfony\/stimulus-bundle\/loader.js": "\/assets\/@symfony\/stimulus-bundle\/loader-20ecc10cbbb74d097d458e14577bcd99.js",
     "app.js": "\/assets\/app-396eb1b280b9b32f53a44b8e87aa6133.js",
     "bootstrap.js": "\/assets\/bootstrap-13edb607a8c6b40c285e5deacc875a08.js",
@@ -207,6 +207,6 @@
     "wasm\/mago\/mago_wasm_bg.wasm": "\/assets\/wasm\/mago\/mago_wasm_bg-ee314eafed51022d6428a8373f065d48.wasm",
     "wasm\/php.js": "\/assets\/wasm\/php-9253012273f3c75447b16fd7f4098f1a.js",
     "wasm\/php.wasm": "\/assets\/wasm\/php-9dcd4b1f2ef3e539cee62e05478be21f.wasm",
-    "wasm\/tools\/flow.phar": "\/assets\/wasm\/tools\/flow-b284fd966010e4085d1e18ec20e01de7.phar",
+    "wasm\/tools\/flow.phar": "\/assets\/wasm\/tools\/flow-96a152c8f7bb3aaeae1e2edd2bcf8d66.phar",
     "wasm\/vendor\/autoload.php.wasm": "\/assets\/wasm\/vendor\/autoload.php-901f7714ee4a437fea3a9d6638722933.wasm"
 }
