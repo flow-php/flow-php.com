@@ -131,7 +131,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Physical/Planner.php"><a href="files/src-core-etl-src-flow-etl-planning-physical-planner.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Physical/Planner.php">Planner.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -200,6 +200,13 @@ schema of its input. A prefix several consumers share is planned once; a joined 
 <dd>The optimizer rewrites the plan first, so the one walk that translates and binds sees the final tree. A frame
 this one joined is part of the plan: nothing is planned with another frame&#039;s planner.</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Planning-Physical-Planner.html#method_spineNodes">spineNodes()</a>
+    <span>
+                                &nbsp;: <abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;<a href="classes/Flow-ETL-Planning-Logical-Node.html"><abbr title="\Flow\ETL\Planning\Logical\Node">Node</abbr></a>, <a href="classes/Flow-ETL-Planning-Logical-Node.html"><abbr title="\Flow\ETL\Planning\Logical\Node">Node</abbr></a>&gt;    </span>
+</dt>
+<dd>The spine&#039;s nodes, root first.</dd>
+
     </dl>
 
 
@@ -228,7 +235,7 @@ this one joined is part of the plan: nothing is planned with another frame&#039;
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Physical/Planner.php"><a href="files/src-core-etl-src-flow-etl-planning-physical-planner.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Physical/Planner.php">Planner.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -286,7 +293,7 @@ this one joined is part of the plan: nothing is planned with another frame&#039;
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Physical/Planner.php"><a href="files/src-core-etl-src-flow-etl-planning-physical-planner.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Physical/Planner.php">Planner.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">206</span>
+    <span class="phpdocumentor-element-found-in__line">286</span>
 
     </aside>
 
@@ -295,7 +302,7 @@ each reading the one before it; the first reads $input, or is fed batch by batch
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">cut</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Logical-Node-Read.html"><abbr title="\Flow\ETL\Planning\Logical\Node\Read">Read</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, <a href="classes/Flow-ETL-Planning-Physical-JoinStep.html"><abbr title="\Flow\ETL\Planning\Physical\JoinStep">JoinStep</abbr></a>|<a href="classes/Flow-ETL-IO-Loader.html"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr></a>|<a href="classes/Flow-ETL-Operators-Processor.html"><abbr title="\Flow\ETL\Operators\Processor">Processor</abbr></a>|<a href="classes/Flow-ETL-Planning-Physical-BranchPipeline.html"><abbr title="\Flow\ETL\Planning\Physical\BranchPipeline">BranchPipeline</abbr></a>|<a href="classes/Flow-ETL-Planning-Physical-TransactionGroup.html"><abbr title="\Flow\ETL\Planning\Physical\TransactionGroup">TransactionGroup</abbr></a>|<a href="classes/Flow-ETL-Operators-Transformer.html"><abbr title="\Flow\ETL\Operators\Transformer">Transformer</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$steps</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$firstId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Planning-Physical-Pipeline.html"><abbr title="\Flow\ETL\Planning\Physical\Pipeline">Pipeline</abbr></a>&gt;</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">cut</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Logical-Node-Read.html"><abbr title="\Flow\ETL\Planning\Logical\Node\Read">Read</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, <a href="classes/Flow-ETL-Planning-Physical-JoinStep.html"><abbr title="\Flow\ETL\Planning\Physical\JoinStep">JoinStep</abbr></a>|<a href="classes/Flow-ETL-IO-Loader.html"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr></a>|<a href="classes/Flow-ETL-Operators-Processor.html"><abbr title="\Flow\ETL\Operators\Processor">Processor</abbr></a>|<a href="classes/Flow-ETL-Planning-Physical-BranchPipeline.html"><abbr title="\Flow\ETL\Planning\Physical\BranchPipeline">BranchPipeline</abbr></a>|<a href="classes/Flow-ETL-Planning-Physical-TransactionGroup.html"><abbr title="\Flow\ETL\Planning\Physical\TransactionGroup">TransactionGroup</abbr></a>|<a href="classes/Flow-ETL-Operators-Transformer.html"><abbr title="\Flow\ETL\Operators\Transformer">Transformer</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$steps</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$firstId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html"><abbr title="\Flow\ETL\Planning\Physical\PlannedNodes">PlannedNodes</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$planned</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Planning-Physical-Pipeline.html"><abbr title="\Flow\ETL\Planning\Physical\Pipeline">Pipeline</abbr></a>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -320,6 +327,13 @@ each reading the one before it; the first reads $input, or is fed batch by batch
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$firstId</span>
                 : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$planned</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html"><abbr title="\Flow\ETL\Planning\Physical\PlannedNodes">PlannedNodes</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -354,7 +368,7 @@ each reading the one before it; the first reads $input, or is fed batch by batch
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Physical/Planner.php"><a href="files/src-core-etl-src-flow-etl-planning-physical-planner.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Physical/Planner.php">Planner.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">111</span>
 
     </aside>
 
@@ -411,7 +425,7 @@ schema of its input. A prefix several consumers share is planned once; a joined 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Physical/Planner.php"><a href="files/src-core-etl-src-flow-etl-planning-physical-planner.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Physical/Planner.php">Planner.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -459,7 +473,7 @@ schema of its input. A prefix several consumers share is planned once; a joined 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Physical/Planner.php"><a href="files/src-core-etl-src-flow-etl-planning-physical-planner.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Physical/Planner.php">Planner.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">155</span>
+    <span class="phpdocumentor-element-found-in__line">220</span>
 
     </aside>
 
@@ -535,7 +549,7 @@ schema of its input. A prefix several consumers share is planned once; a joined 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Physical/Planner.php"><a href="files/src-core-etl-src-flow-etl-planning-physical-planner.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Physical/Planner.php">Planner.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -544,7 +558,63 @@ this one joined is part of the plan: nothing is planned with another frame&#039;
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">plan</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Logical-LogicalPlan.html"><abbr title="\Flow\ETL\Planning\Logical\LogicalPlan">LogicalPlan</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$logical</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Planning-Physical-PhysicalPlan.html"><abbr title="\Flow\ETL\Planning\Physical\PhysicalPlan">PhysicalPlan</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">plan</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Logical-LogicalPlan.html"><abbr title="\Flow\ETL\Planning\Logical\LogicalPlan">LogicalPlan</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$logical</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Foundation-ProgressStages.html"><abbr title="\Flow\ETL\Foundation\ProgressStages">ProgressStages</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stages</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Foundation-VoidProgress.html"><abbr title="\Flow\ETL\Foundation\VoidProgress">VoidProgress</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Planning-Physical-PhysicalPlan.html"><abbr title="\Flow\ETL\Planning\Physical\PhysicalPlan">PhysicalPlan</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$logical</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Planning-Logical-LogicalPlan.html"><abbr title="\Flow\ETL\Planning\Logical\LogicalPlan">LogicalPlan</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$stages</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Foundation-ProgressStages.html"><abbr title="\Flow\ETL\Foundation\ProgressStages">ProgressStages</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-ETL-Foundation-VoidProgress.html"><abbr title="\Flow\ETL\Foundation\VoidProgress">VoidProgress</abbr></a>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Planning-Physical-PhysicalPlan.html"><abbr title="\Flow\ETL\Planning\Physical\PhysicalPlan">PhysicalPlan</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_spineNodes">
+        spineNodes()
+        <a href="classes/Flow-ETL-Planning-Physical-Planner.html#method_spineNodes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Physical/Planner.php"><a href="files/src-core-etl-src-flow-etl-planning-physical-planner.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Physical/Planner.php">Planner.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">258</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The spine&#039;s nodes, root first.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">spineNodes</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Logical-LogicalPlan.html"><abbr title="\Flow\ETL\Planning\Logical\LogicalPlan">LogicalPlan</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$logical</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;<a href="classes/Flow-ETL-Planning-Logical-Node.html"><abbr title="\Flow\ETL\Planning\Logical\Node">Node</abbr></a>, <a href="classes/Flow-ETL-Planning-Logical-Node.html"><abbr title="\Flow\ETL\Planning\Logical\Node">Node</abbr></a>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -567,7 +637,7 @@ this one joined is part of the plan: nothing is planned with another frame&#039;
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Planning-Physical-PhysicalPlan.html"><abbr title="\Flow\ETL\Planning\Physical\PhysicalPlan">PhysicalPlan</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;<a href="classes/Flow-ETL-Planning-Logical-Node.html"><abbr title="\Flow\ETL\Planning\Logical\Node">Node</abbr></a>, <a href="classes/Flow-ETL-Planning-Logical-Node.html"><abbr title="\Flow\ETL\Planning\Logical\Node">Node</abbr></a>&gt;</span>
             </section>
 
 </article>
@@ -599,6 +669,7 @@ this one joined is part of the plan: nothing is planned with another frame&#039;
                                             <li class=""><a href="classes/Flow-ETL-Planning-Physical-Planner.html#method_optimize">optimize()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Planning-Physical-Planner.html#method_pipelines">pipelines()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Planning-Physical-Planner.html#method_plan">plan()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Planning-Physical-Planner.html#method_spineNodes">spineNodes()</a></li>
                                     </ul>
             </li>
                     </ul>

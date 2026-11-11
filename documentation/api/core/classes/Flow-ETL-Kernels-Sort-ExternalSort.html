@@ -131,7 +131,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php"><a href="files/src-core-etl-src-flow-etl-kernels-sort-externalsort.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php">ExternalSort.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -170,12 +170,6 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#property_memoryLimit">$memoryLimit</a>
-    <span>
-                        &nbsp;: <a href="classes/Flow-ETL-Values-Memory-Unit.html"><abbr title="\Flow\ETL\Values\Memory\Unit">Unit</abbr></a>            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#property_merge">$merge</a>
     <span>
                         &nbsp;: <a href="classes/Flow-ETL-Kernels-Bucketing-Buckets.html"><abbr title="\Flow\ETL\Kernels\Bucketing\Buckets">Buckets</abbr></a>            </span>
@@ -208,9 +202,27 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_counted">counted()</a>
+    <span>
+                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;int, <a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_fanIn">fanIn()</a>
+    <span>
+                                &nbsp;: int<2, max>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_firstRows">firstRows()</a>
     <span>
                                 &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_fitting">fitting()</a>
+    <span>
+                                &nbsp;: int    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -223,6 +235,12 @@
     <a class="" href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_reduce">reduce()</a>
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Kernels-Bucketing-BucketRun.html"><abbr title="\Flow\ETL\Kernels\Bucketing\BucketRun">BucketRun</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_runs">runs()</a>
+    <span>
+                                &nbsp;: array&lt;int, <a href="classes/Flow-ETL-Kernels-Bucketing-BucketRun.html"><abbr title="\Flow\ETL\Kernels\Bucketing\BucketRun">BucketRun</abbr></a>&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -273,7 +291,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php"><a href="files/src-core-etl-src-flow-etl-kernels-sort-externalsort.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php">ExternalSort.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -310,7 +328,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php"><a href="files/src-core-etl-src-flow-etl-kernels-sort-externalsort.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php">ExternalSort.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -320,43 +338,6 @@
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$columns</span>
-    </code>
-
-    
-    
-    
-
-        
-        
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                                    "
->
-    <h4 class="phpdocumentor-element__name" id="property_memoryLimit">
-        $memoryLimit
-        <a href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#property_memoryLimit" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                            </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php"><a href="files/src-core-etl-src-flow-etl-kernels-sort-externalsort.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php">ExternalSort.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">42</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__type"><a href="classes/Flow-ETL-Values-Memory-Unit.html"><abbr title="\Flow\ETL\Values\Memory\Unit">Unit</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$memoryLimit</span>
     </code>
 
     
@@ -384,7 +365,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php"><a href="files/src-core-etl-src-flow-etl-kernels-sort-externalsort.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php">ExternalSort.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -421,7 +402,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php"><a href="files/src-core-etl-src-flow-etl-kernels-sort-externalsort.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php">ExternalSort.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -458,7 +439,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php"><a href="files/src-core-etl-src-flow-etl-kernels-sort-externalsort.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php">ExternalSort.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -500,14 +481,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php"><a href="files/src-core-etl-src-flow-etl-kernels-sort-externalsort.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php">ExternalSort.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, <a href="classes/Flow-ETL-Values-Sort-SortColumn.html"><abbr title="\Flow\ETL\Values\Sort\SortColumn">SortColumn</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Kernels-Bucketing-Buckets.html"><abbr title="\Flow\ETL\Kernels\Bucketing\Buckets">Buckets</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$spill</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Kernels-Bucketing-Buckets.html"><abbr title="\Flow\ETL\Kernels\Bucketing\Buckets">Buckets</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$merge</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Foundation-RandomValueGenerator.html"><abbr title="\Flow\ETL\Foundation\RandomValueGenerator">RandomValueGenerator</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$random</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Memory-Unit.html"><abbr title="\Flow\ETL\Values\Memory\Unit">Unit</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$memoryLimit</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mergeFanIn</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">10</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-BatchSize.html"><abbr title="\Flow\ETL\Values\BatchSize">BatchSize</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Values-BatchSize.html"><abbr title="\Flow\ETL\Values\BatchSize">BatchSize</abbr></a>(1000)</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, <a href="classes/Flow-ETL-Values-Sort-SortColumn.html"><abbr title="\Flow\ETL\Values\Sort\SortColumn">SortColumn</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Kernels-Bucketing-Buckets.html"><abbr title="\Flow\ETL\Kernels\Bucketing\Buckets">Buckets</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$spill</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Kernels-Bucketing-Buckets.html"><abbr title="\Flow\ETL\Kernels\Bucketing\Buckets">Buckets</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$merge</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Foundation-RandomValueGenerator.html"><abbr title="\Flow\ETL\Foundation\RandomValueGenerator">RandomValueGenerator</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$random</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int<1, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mergeFanIn</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">10</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-BatchSize.html"><abbr title="\Flow\ETL\Values\BatchSize">BatchSize</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batchSize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Values-BatchSize.html"><abbr title="\Flow\ETL\Values\BatchSize">BatchSize</abbr></a>(1000)</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$progress</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Foundation-VoidProgress.html"><abbr title="\Flow\ETL\Foundation\VoidProgress">VoidProgress</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -544,13 +525,6 @@
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$memoryLimit</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Memory-Unit.html"><abbr title="\Flow\ETL\Values\Memory\Unit">Unit</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$mergeFanIn</span>
                 : <span class="phpdocumentor-argument-list__argument__type">int<1, max></span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">10</span>            </dt>
@@ -561,6 +535,13 @@
                 <span class="phpdocumentor-argument-list__argument__name">$batchSize</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-BatchSize.html"><abbr title="\Flow\ETL\Values\BatchSize">BatchSize</abbr></a></span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-ETL-Values-BatchSize.html"><abbr title="\Flow\ETL\Values\BatchSize">BatchSize</abbr></a>(1000)</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$progress</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-ETL-Foundation-VoidProgress.html"><abbr title="\Flow\ETL\Foundation\VoidProgress">VoidProgress</abbr></a>()</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -578,6 +559,109 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_counted">
+        counted()
+        <a href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_counted" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php"><a href="files/src-core-etl-src-flow-etl-kernels-sort-externalsort.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php">ExternalSort.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">177</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">counted</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batches</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$batches</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;int, <a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fanIn">
+        fanIn()
+        <a href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_fanIn" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php"><a href="files/src-core-etl-src-flow-etl-kernels-sort-externalsort.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php">ExternalSort.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">232</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">fanIn</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Kernels-Bucketing-BucketRun.html"><abbr title="\Flow\ETL\Kernels\Bucketing\BucketRun">BucketRun</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$run</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html"><abbr title="\Flow\ETL\Values\Memory\MemoryBudget">MemoryBudget</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$budget</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int<2, max></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$run</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Kernels-Bucketing-BucketRun.html"><abbr title="\Flow\ETL\Kernels\Bucketing\BucketRun">BucketRun</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$budget</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html"><abbr title="\Flow\ETL\Values\Memory\MemoryBudget">MemoryBudget</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int<2, max></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_firstRows">
         firstRows()
         <a href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_firstRows" class="headerlink"><i class="fas fa-link"></i></a>
@@ -586,7 +670,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php"><a href="files/src-core-etl-src-flow-etl-kernels-sort-externalsort.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php">ExternalSort.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">161</span>
+    <span class="phpdocumentor-element-found-in__line">209</span>
 
     </aside>
 
@@ -631,6 +715,72 @@
         class="phpdocumentor-element
             -method
             -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fitting">
+        fitting()
+        <a href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_fitting" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php"><a href="files/src-core-etl-src-flow-etl-kernels-sort-externalsort.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php">ExternalSort.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">318</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">fitting</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, <a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batches</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Column-Backend.html"><abbr title="\Flow\ETL\Values\Column\Backend">Backend</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$backend</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html"><abbr title="\Flow\ETL\Values\Memory\MemoryBudget">MemoryBudget</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$budget</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$batches</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, <a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$backend</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Column-Backend.html"><abbr title="\Flow\ETL\Values\Column\Backend">Backend</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$budget</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html"><abbr title="\Flow\ETL\Values\Memory\MemoryBudget">MemoryBudget</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>the leading batches whose sort stays under the process cap, or the floor once over it, at least one</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                     -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_of">
@@ -641,14 +791,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php"><a href="files/src-core-etl-src-flow-etl-kernels-sort-externalsort.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php">ExternalSort.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">of</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, <a href="classes/Flow-ETL-Values-Sort-SortColumn.html"><abbr title="\Flow\ETL\Values\Sort\SortColumn">SortColumn</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Kernels-Sort-ExternalSortConfig.html"><abbr title="\Flow\ETL\Kernels\Sort\ExternalSortConfig">ExternalSortConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Foundation-RandomValueGenerator.html"><abbr title="\Flow\ETL\Foundation\RandomValueGenerator">RandomValueGenerator</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$random</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">of</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, <a href="classes/Flow-ETL-Values-Sort-SortColumn.html"><abbr title="\Flow\ETL\Values\Sort\SortColumn">SortColumn</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Kernels-Sort-ExternalSortConfig.html"><abbr title="\Flow\ETL\Kernels\Sort\ExternalSortConfig">ExternalSortConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Foundation-RandomValueGenerator.html"><abbr title="\Flow\ETL\Foundation\RandomValueGenerator">RandomValueGenerator</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$random</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$progress</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Foundation-VoidProgress.html"><abbr title="\Flow\ETL\Foundation\VoidProgress">VoidProgress</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -674,6 +824,13 @@
                 <span class="phpdocumentor-argument-list__argument__name">$random</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Foundation-RandomValueGenerator.html"><abbr title="\Flow\ETL\Foundation\RandomValueGenerator">RandomValueGenerator</abbr></a></span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$progress</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-ETL-Foundation-VoidProgress.html"><abbr title="\Flow\ETL\Foundation\VoidProgress">VoidProgress</abbr></a>()</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -703,7 +860,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php"><a href="files/src-core-etl-src-flow-etl-kernels-sort-externalsort.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php">ExternalSort.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">187</span>
+    <span class="phpdocumentor-element-found-in__line">250</span>
 
     </aside>
 
@@ -768,6 +925,96 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_runs">
+        runs()
+        <a href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_runs" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php"><a href="files/src-core-etl-src-flow-etl-kernels-sort-externalsort.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php">ExternalSort.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">282</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">runs</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, <a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$batches</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Schema.html"><abbr title="\Flow\ETL\Values\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Column-Backend.html"><abbr title="\Flow\ETL\Values\Column\Backend">Backend</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$backend</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html"><abbr title="\Flow\ETL\Values\Memory\MemoryBudget">MemoryBudget</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$budget</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">null|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$runId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$index</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Kernels-Bucketing-BucketRun.html"><abbr title="\Flow\ETL\Kernels\Bucketing\BucketRun">BucketRun</abbr></a>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$batches</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, <a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$schema</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Schema.html"><abbr title="\Flow\ETL\Values\Schema">Schema</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$backend</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Column-Backend.html"><abbr title="\Flow\ETL\Values\Column\Backend">Backend</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$budget</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html"><abbr title="\Flow\ETL\Values\Memory\MemoryBudget">MemoryBudget</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$limit</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$runId</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$index</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Flow-ETL-Kernels-Bucketing-BucketRun.html"><abbr title="\Flow\ETL\Kernels\Bucketing\BucketRun">BucketRun</abbr></a>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_sort">
         sort()
         <a href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_sort" class="headerlink"><i class="fas fa-link"></i></a>
@@ -776,14 +1023,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php"><a href="files/src-core-etl-src-flow-etl-kernels-sort-externalsort.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php">ExternalSort.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">sort</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Column-Backend.html"><abbr title="\Flow\ETL\Values\Column\Backend">Backend</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$backend</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">sort</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Column-Backend.html"><abbr title="\Flow\ETL\Values\Column\Backend">Backend</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$backend</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html"><abbr title="\Flow\ETL\Values\Memory\MemoryBudget">MemoryBudget</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$budget</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -801,6 +1048,13 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$backend</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Column-Backend.html"><abbr title="\Flow\ETL\Values\Column\Backend">Backend</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$budget</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html"><abbr title="\Flow\ETL\Values\Memory\MemoryBudget">MemoryBudget</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -838,7 +1092,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php"><a href="files/src-core-etl-src-flow-etl-kernels-sort-externalsort.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php">ExternalSort.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">215</span>
+    <span class="phpdocumentor-element-found-in__line">339</span>
 
     </aside>
 
@@ -900,7 +1154,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php"><a href="files/src-core-etl-src-flow-etl-kernels-sort-externalsort.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/Sort/ExternalSort.php">ExternalSort.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">222</span>
+    <span class="phpdocumentor-element-found-in__line">346</span>
 
     </aside>
 
@@ -972,7 +1226,6 @@
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#property_batchSize">$batchSize</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#property_columns">$columns</a></li>
-                                                    <li class=""><a href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#property_memoryLimit">$memoryLimit</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#property_merge">$merge</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#property_mergeFanIn">$mergeFanIn</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#property_spill">$spill</a></li>
@@ -983,9 +1236,13 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_counted">counted()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_fanIn">fanIn()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_firstRows">firstRows()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_fitting">fitting()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_of">of()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_reduce">reduce()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_runs">runs()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_sort">sort()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_sorted">sorted()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_spill">spill()</a></li>

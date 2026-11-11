@@ -129,7 +129,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Foundation/Calculator/RunningSum.php"><a href="files/src-core-etl-src-flow-etl-foundation-calculator-runningsum.html"><abbr title="src/core/etl/src/Flow/ETL/Foundation/Calculator/RunningSum.php">RunningSum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -174,6 +174,13 @@
                                 &nbsp;: void    </span>
 </dt>
 <dd>add() over every value, the compensated loop inlined: one call per batch, not per value.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Foundation-Calculator-RunningSum.html#method_addNumeric">addNumeric()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+<dd>add() over the int, float and numeric-string values of $values[$from..$to], skipping every other value.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Foundation-Calculator-RunningSum.html#method_emptyPartial">emptyPartial()</a>
@@ -245,7 +252,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Foundation/Calculator/RunningSum.php"><a href="files/src-core-etl-src-flow-etl-foundation-calculator-runningsum.html"><abbr title="src/core/etl/src/Flow/ETL/Foundation/Calculator/RunningSum.php">RunningSum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -289,7 +296,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Foundation/Calculator/RunningSum.php"><a href="files/src-core-etl-src-flow-etl-foundation-calculator-runningsum.html"><abbr title="src/core/etl/src/Flow/ETL/Foundation/Calculator/RunningSum.php">RunningSum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -340,7 +347,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Foundation/Calculator/RunningSum.php"><a href="files/src-core-etl-src-flow-etl-foundation-calculator-runningsum.html"><abbr title="src/core/etl/src/Flow/ETL/Foundation/Calculator/RunningSum.php">RunningSum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">134</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 
     </aside>
 
@@ -382,6 +389,80 @@
         class="phpdocumentor-element
             -method
             -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_addNumeric">
+        addNumeric()
+        <a href="classes/Flow-ETL-Foundation-Calculator-RunningSum.html#method_addNumeric" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Foundation/Calculator/RunningSum.php"><a href="files/src-core-etl-src-flow-etl-foundation-calculator-runningsum.html"><abbr title="src/core/etl/src/Flow/ETL/Foundation/Calculator/RunningSum.php">RunningSum.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">149</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">add() over the int, float and numeric-string values of $values[$from..$to], skipping every other value.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">addNumeric</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$to</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exact</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$values</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$from</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$to</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$exact</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>the count of values added</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                     -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_emptyPartial">
@@ -392,7 +473,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Foundation/Calculator/RunningSum.php"><a href="files/src-core-etl-src-flow-etl-foundation-calculator-runningsum.html"><abbr title="src/core/etl/src/Flow/ETL/Foundation/Calculator/RunningSum.php">RunningSum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -434,7 +515,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Foundation/Calculator/RunningSum.php"><a href="files/src-core-etl-src-flow-etl-foundation-calculator-runningsum.html"><abbr title="src/core/etl/src/Flow/ETL/Foundation/Calculator/RunningSum.php">RunningSum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -507,7 +588,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Foundation/Calculator/RunningSum.php"><a href="files/src-core-etl-src-flow-etl-foundation-calculator-runningsum.html"><abbr title="src/core/etl/src/Flow/ETL/Foundation/Calculator/RunningSum.php">RunningSum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">173</span>
+    <span class="phpdocumentor-element-found-in__line">205</span>
 
     </aside>
 
@@ -558,7 +639,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Foundation/Calculator/RunningSum.php"><a href="files/src-core-etl-src-flow-etl-foundation-calculator-runningsum.html"><abbr title="src/core/etl/src/Flow/ETL/Foundation/Calculator/RunningSum.php">RunningSum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">92</span>
 
     </aside>
 
@@ -600,7 +681,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Foundation/Calculator/RunningSum.php"><a href="files/src-core-etl-src-flow-etl-foundation-calculator-runningsum.html"><abbr title="src/core/etl/src/Flow/ETL/Foundation/Calculator/RunningSum.php">RunningSum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -638,7 +719,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Foundation/Calculator/RunningSum.php"><a href="files/src-core-etl-src-flow-etl-foundation-calculator-runningsum.html"><abbr title="src/core/etl/src/Flow/ETL/Foundation/Calculator/RunningSum.php">RunningSum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">185</span>
+    <span class="phpdocumentor-element-found-in__line">217</span>
 
     </aside>
 
@@ -676,7 +757,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Foundation/Calculator/RunningSum.php"><a href="files/src-core-etl-src-flow-etl-foundation-calculator-runningsum.html"><abbr title="src/core/etl/src/Flow/ETL/Foundation/Calculator/RunningSum.php">RunningSum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -737,6 +818,7 @@
                                             <li class=""><a href="classes/Flow-ETL-Foundation-Calculator-RunningSum.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Foundation-Calculator-RunningSum.html#method_add">add()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Foundation-Calculator-RunningSum.html#method_addAll">addAll()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Foundation-Calculator-RunningSum.html#method_addNumeric">addNumeric()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Foundation-Calculator-RunningSum.html#method_emptyPartial">emptyPartial()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Foundation-Calculator-RunningSum.html#method_fromPartial">fromPartial()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Foundation-Calculator-RunningSum.html#method_merge">merge()</a></li>

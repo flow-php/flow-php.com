@@ -118,7 +118,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Inference/Sniffs.php"><a href="files/src-core-etl-src-flow-etl-io-inference-sniffs.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Inference/Sniffs.php">Sniffs.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">7</span>
+    <span class="phpdocumentor-element-found-in__line">9</span>
 
     </aside>
 
@@ -149,7 +149,7 @@
     <span>
                                 &nbsp;: null|array&lt;int, <a href="classes/Flow-ETL-IO-Inference-Sample.html"><abbr title="\Flow\ETL\IO\Inference\Sample">Sample</abbr></a>&gt;    </span>
 </dt>
-<dd>Whole-unit sniffs for everyRow(): units 0..$units-1, every unit sniffed with budget -1, Samples in unit order.</dd>
+<dd>Whole-unit sniffs for everyRow(): units 0..$units-1, each sniffed with a null budget, Samples in unit order.</dd>
 
     </dl>
 
@@ -180,15 +180,15 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Inference/Sniffs.php"><a href="files/src-core-etl-src-flow-etl-io-inference-sniffs.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Inference/Sniffs.php">Sniffs.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Whole-unit sniffs for everyRow(): units 0..$units-1, every unit sniffed with budget -1, Samples in unit order.</p>
+        <p class="phpdocumentor-summary">Whole-unit sniffs for everyRow(): units 0..$units-1, each sniffed with a null budget, Samples in unit order.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">sniff</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-IO-Inference-Sniffer.html"><abbr title="\Flow\ETL\IO\Inference\Sniffer">Sniffer</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sniffer</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int<0, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$units</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|array&lt;int, <a href="classes/Flow-ETL-IO-Inference-Sample.html"><abbr title="\Flow\ETL\IO\Inference\Sample">Sample</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">sniff</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-IO-Inference-Sniffer.html"><abbr title="\Flow\ETL\IO\Inference\Sniffer">Sniffer</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sniffer</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int<0, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$units</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$progress</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|array&lt;int, <a href="classes/Flow-ETL-IO-Inference-Sample.html"><abbr title="\Flow\ETL\IO\Inference\Sample">Sample</abbr></a>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -206,6 +206,13 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$units</span>
                 : <span class="phpdocumentor-argument-list__argument__type">int<0, max></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$progress</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 

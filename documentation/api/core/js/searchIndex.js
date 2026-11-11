@@ -48,7 +48,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\API\\Config\\Bucketing\\BucketingConfigBuilder\u003A\u003AmemoryLimit\u0028\u0029",
             "name": "memoryLimit",
-            "summary": "The\u0020process\u0020memory\u0020past\u0020which\u0020rows\u0020move\u0020to\u0020the\u0020storage\u003B\u0020defaults\u0020to\u0020MemoryLimit\u003A\u003Adefault\u0028\u0029.",
+            "summary": "The\u0020memory\u0020the\u0020operation\u0020may\u0020add\u0020before\u0020rows\u0020move\u0020to\u0020the\u0020storage\u003B\u0020defaults\u0020to\u0020MemoryLimit\u003A\u003Adefault\u0028\u0029.",
             "url": "classes/Flow-ETL-API-Config-Bucketing-BucketingConfigBuilder.html#method_memoryLimit"
         },                {
             "fqsen": "\\Flow\\ETL\\API\\Config\\Bucketing\\BucketingConfigBuilder\u003A\u003Astorage\u0028\u0029",
@@ -131,6 +131,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-API-Config-ConfigBuilder.html#method_launcher"
         },                {
+            "fqsen": "\\Flow\\ETL\\API\\Config\\ConfigBuilder\u003A\u003Aheartbeat\u0028\u0029",
+            "name": "heartbeat",
+            "summary": "Calls\u0020\u0024heartbeat\u0020every\u0020\u0024everySeconds\u0020while\u0020the\u0020run\u0020is\u0020busy\u003B\u0020each\u0020call\u0020appends\u0020one\u0020more\u0020heartbeat.",
+            "url": "classes/Flow-ETL-API-Config-ConfigBuilder.html#method_heartbeat"
+        },                {
+            "fqsen": "\\Flow\\ETL\\API\\Config\\ConfigBuilder\u003A\u003AheartbeatToParent\u0028\u0029",
+            "name": "heartbeatToParent",
+            "summary": "A\u0020failing\u0020report\u0020is\u0020logged,\u0020never\u0020thrown,\u0020because\u0020the\u0020parent\u0020ends\u0020a\u0020worker\u0020it\u0020stopped\u0020listening\u0020to.",
+            "url": "classes/Flow-ETL-API-Config-ConfigBuilder.html#method_heartbeatToParent"
+        },                {
             "fqsen": "\\Flow\\ETL\\API\\Config\\ConfigBuilder\u003A\u003Aid\u0028\u0029",
             "name": "id",
             "summary": "",
@@ -198,7 +208,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\API\\Config\\Join\\HashJoinBuilder\u003A\u003AbroadcastLimit\u0028\u0029",
             "name": "broadcastLimit",
-            "summary": "The\u0020right\u0020side\u0027s\u0020size\u0020under\u0020which\u0020a\u0020join\u0020read\u0020by\u0020workers\u0020broadcasts\u0020it\u0020to\u0020every\u0020task\u003B\u0020default\u002010\u0020MB.",
+            "summary": "The\u0020right\u0020side\u0027s\u0020size\u0020under\u0020which\u0020a\u0020join\u0020read\u0020by\u0020workers\u0020broadcasts\u0020it\u0020to\u0020every\u0020task\u003B\u0020default\u002010\u0020MiB.",
             "url": "classes/Flow-ETL-API-Config-Join-HashJoinBuilder.html#method_broadcastLimit"
         },                {
             "fqsen": "\\Flow\\ETL\\API\\Config\\Join\\HashJoinBuilder\u003A\u003Abuild\u0028\u0029",
@@ -213,7 +223,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\API\\Config\\Join\\HashJoinBuilder\u003A\u003AmemoryLimit\u0028\u0029",
             "name": "memoryLimit",
-            "summary": "The\u0020process\u0020memory\u0020past\u0020which\u0020the\u0020build\u0020side\u0020and\u0020the\u0020buckets\u0020move\u0020to\u0020the\u0020storage\u003B\u0020defaults\u0020to\nMemoryLimit\u003A\u003Adefault\u0028\u0029.",
+            "summary": "The\u0020memory\u0020the\u0020operation\u0020may\u0020add\u0020before\u0020the\u0020build\u0020side\u0020and\u0020the\u0020buckets\u0020move\u0020to\u0020the\u0020storage\u003B\u0020defaults\u0020to\u0020MemoryLimit\u003A\u003Adefault\u0028\u0029.",
             "url": "classes/Flow-ETL-API-Config-Join-HashJoinBuilder.html#method_memoryLimit"
         },                {
             "fqsen": "\\Flow\\ETL\\API\\Config\\Join\\HashJoinBuilder\u003A\u003Astorage\u0028\u0029",
@@ -253,7 +263,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\API\\Config\\Sort\\ExternalSortBuilder\u003A\u003AmemoryLimit\u0028\u0029",
             "name": "memoryLimit",
-            "summary": "The\u0020process\u0020memory\u0020past\u0020which\u0020the\u0020sort\u0020spills\u0020sorted\u0020runs\u003B\u0020defaults\u0020to\u0020MemoryLimit\u003A\u003Adefault\u0028\u0029.",
+            "summary": "The\u0020memory\u0020the\u0020operation\u0020may\u0020add\u0020before\u0020the\u0020sort\u0020spills\u0020sorted\u0020runs\u003B\u0020defaults\u0020to\u0020MemoryLimit\u003A\u003Adefault\u0028\u0029.",
             "url": "classes/Flow-ETL-API-Config-Sort-ExternalSortBuilder.html#method_memoryLimit"
         },                {
             "fqsen": "\\Flow\\ETL\\API\\Config\\Sort\\ExternalSortBuilder\u003A\u003Astorage\u0028\u0029",
@@ -2751,6 +2761,11 @@ Search.appendIndex(
             "summary": "add\u0028\u0029\u0020over\u0020every\u0020value,\u0020the\u0020compensated\u0020loop\u0020inlined\u003A\u0020one\u0020call\u0020per\u0020batch,\u0020not\u0020per\u0020value.",
             "url": "classes/Flow-ETL-Foundation-Calculator-RunningSum.html#method_addAll"
         },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Calculator\\RunningSum\u003A\u003AaddNumeric\u0028\u0029",
+            "name": "addNumeric",
+            "summary": "add\u0028\u0029\u0020over\u0020the\u0020int,\u0020float\u0020and\u0020numeric\u002Dstring\u0020values\u0020of\u0020\u0024values\u005B\u0024from..\u0024to\u005D,\u0020skipping\u0020every\u0020other\u0020value.",
+            "url": "classes/Flow-ETL-Foundation-Calculator-RunningSum.html#method_addNumeric"
+        },                {
             "fqsen": "\\Flow\\ETL\\Foundation\\Calculator\\RunningSum\u003A\u003Amerge\u0028\u0029",
             "name": "merge",
             "summary": "",
@@ -3001,6 +3016,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Foundation-Describe-Rebuild.html"
         },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Describe\\Rebuild\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-Describe-Rebuild.html#method___construct"
+        },                {
             "fqsen": "\\Flow\\ETL\\Foundation\\Describe\\Rebuild\u003A\u003Aall\u0028\u0029",
             "name": "all",
             "summary": "Every\u0020entry\u0020of\u0020\u0024normalized\u0020rebuilt\u0020with\u0020of\u0028\u0029,\u0020keys\u0020kept.",
@@ -3015,6 +3035,11 @@ Search.appendIndex(
             "name": "object",
             "summary": "",
             "url": "classes/Flow-ETL-Foundation-Describe-Rebuild.html#method_object"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Describe\\Rebuild\u003A\u003Aprogress\u0028\u0029",
+            "name": "progress",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-Describe-Rebuild.html#method_progress"
         },                {
             "fqsen": "\\Flow\\ETL\\Foundation\\Exception\\ColumnMismatchException",
             "name": "ColumnMismatchException",
@@ -3546,6 +3571,81 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Foundation-NativePHPRandomValueGenerator.html#method_string"
         },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Progress",
+            "name": "Progress",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-Progress.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Progress\u003A\u003Aadvanced\u0028\u0029",
+            "name": "advanced",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-Progress.html#method_advanced"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Progress\u003A\u003Abusy\u0028\u0029",
+            "name": "busy",
+            "summary": "Checks\u0020for\u0020a\u0020due\u0020beat\u0020and\u0020counts\u0020nothing.",
+            "url": "classes/Flow-ETL-Foundation-Progress.html#method_busy"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Progress\u003A\u003AcountsIn\u0028\u0029",
+            "name": "countsIn",
+            "summary": "Counts\u0020in\u0020\u0024unit\u0020from\u0020now\u0020on\u003B\u0020the\u0020count\u0020starts\u0020again\u0020at\u00200.\u0020A\u0020call\u0020with\u0020the\u0020current\u0020unit\u0020does\u0020nothing.",
+            "url": "classes/Flow-ETL-Foundation-Progress.html#method_countsIn"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Progress\u003A\u003Adone\u0028\u0029",
+            "name": "done",
+            "summary": "Ends\u0020this\u0020object\u0027s\u0020part\u0020of\u0020its\u0020stage\u003B\u0020a\u0020later\u0020call\u0020opens\u0020it\u0020again.",
+            "url": "classes/Flow-ETL-Foundation-Progress.html#method_done"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Progress\u003A\u003Aended\u0028\u0029",
+            "name": "ended",
+            "summary": "Folds\u0020the\u0020totals\u0020like\u0020reported\u0028\u0029,\u0020and\u0020never\u0020calls\u0020a\u0020heartbeat.",
+            "url": "classes/Flow-ETL-Foundation-Progress.html#method_ended"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Progress\u003A\u003Areported\u0028\u0029",
+            "name": "reported",
+            "summary": "The\u0020receiving\u0020stage\u0020stamps\u0020start\u0020and\u0020end\u0020with\u0020its\u0020own\u0020clock,\u0020because\u0020the\u0020reporter\u0027s\u0020clock\u0020is\u0020another\u0020process\u0027s.",
+            "url": "classes/Flow-ETL-Foundation-Progress.html#method_reported"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Progress\u003A\u003AreportsEverySeconds\u0028\u0029",
+            "name": "reportsEverySeconds",
+            "summary": "null\u003A\u0020nobody\u0020listens,\u0020so\u0020a\u0020reporter\u0020sends\u0020nothing.",
+            "url": "classes/Flow-ETL-Foundation-Progress.html#method_reportsEverySeconds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Progress\u003A\u003AROWS_PER_CALL",
+            "name": "ROWS_PER_CALL",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-Progress.html#constant_ROWS_PER_CALL"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\ProgressStages",
+            "name": "ProgressStages",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-ProgressStages.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\ProgressStages\u003A\u003Astage\u0028\u0029",
+            "name": "stage",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-ProgressStages.html#method_stage"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\ProgressUnit",
+            "name": "ProgressUnit",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-ProgressUnit.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\ProgressUnit\u003A\u003Arows",
+            "name": "rows",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-ProgressUnit.html#enumcase_rows"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\ProgressUnit\u003A\u003Agroups",
+            "name": "groups",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-ProgressUnit.html#enumcase_groups"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\ProgressUnit\u003A\u003Afiles",
+            "name": "files",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-ProgressUnit.html#enumcase_files"
+        },                {
             "fqsen": "\\Flow\\ETL\\Foundation\\RandomValueGenerator",
             "name": "RandomValueGenerator",
             "summary": "",
@@ -3570,6 +3670,116 @@ Search.appendIndex(
             "name": "closestTo",
             "summary": "",
             "url": "classes/Flow-ETL-Foundation-SimilarNames.html#method_closestTo"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\StageName",
+            "name": "StageName",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-StageName.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\StageName\u003A\u003Aread",
+            "name": "read",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-StageName.html#enumcase_read"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\StageName\u003A\u003Ainfer",
+            "name": "infer",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-StageName.html#enumcase_infer"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\StageName\u003A\u003Asort",
+            "name": "sort",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-StageName.html#enumcase_sort"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\StageName\u003A\u003Agroup_by",
+            "name": "group_by",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-StageName.html#enumcase_group_by"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\StageName\u003A\u003Apivot",
+            "name": "pivot",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-StageName.html#enumcase_pivot"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\StageName\u003A\u003Ajoin",
+            "name": "join",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-StageName.html#enumcase_join"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\StageName\u003A\u003Awindow",
+            "name": "window",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-StageName.html#enumcase_window"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\StageName\u003A\u003Arepartition",
+            "name": "repartition",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-StageName.html#enumcase_repartition"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\StageName\u003A\u003Awrite",
+            "name": "write",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-StageName.html#enumcase_write"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\StageName\u003A\u003Acommit",
+            "name": "commit",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-StageName.html#enumcase_commit"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\StageName\u003A\u003Aparallel",
+            "name": "parallel",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-StageName.html#enumcase_parallel"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\StageProgress",
+            "name": "StageProgress",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-StageProgress.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\StageProgress\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-StageProgress.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\StageProgress\u003A\u003A\u0024id",
+            "name": "id",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-StageProgress.html#property_id"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\StageProgress\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-StageProgress.html#property_name"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\StageProgress\u003A\u003A\u0024unit",
+            "name": "unit",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-StageProgress.html#property_unit"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\StageProgress\u003A\u003A\u0024subject",
+            "name": "subject",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-StageProgress.html#property_subject"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\StageProgress\u003A\u003A\u0024count",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-StageProgress.html#property_count"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\StageProgress\u003A\u003A\u0024total",
+            "name": "total",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-StageProgress.html#property_total"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\StageProgress\u003A\u003A\u0024startedAtSeconds",
+            "name": "startedAtSeconds",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-StageProgress.html#property_startedAtSeconds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\StageProgress\u003A\u003A\u0024endedAtSeconds",
+            "name": "endedAtSeconds",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-StageProgress.html#property_endedAtSeconds"
         },                {
             "fqsen": "\\Flow\\ETL\\Foundation\\Telemetry\\SpanAttributes",
             "name": "SpanAttributes",
@@ -3660,6 +3870,61 @@ Search.appendIndex(
             "name": "ATTR_TRANSFORMER_CLASS",
             "summary": "",
             "url": "classes/Flow-ETL-Foundation-Telemetry-TelemetryAttributes.html#constant_ATTR_TRANSFORMER_CLASS"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\VoidProgress",
+            "name": "VoidProgress",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-VoidProgress.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\VoidProgress\u003A\u003AfromDescription\u0028\u0029",
+            "name": "fromDescription",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-VoidProgress.html#method_fromDescription"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\VoidProgress\u003A\u003Aadvanced\u0028\u0029",
+            "name": "advanced",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-VoidProgress.html#method_advanced"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\VoidProgress\u003A\u003Abusy\u0028\u0029",
+            "name": "busy",
+            "summary": "Checks\u0020for\u0020a\u0020due\u0020beat\u0020and\u0020counts\u0020nothing.",
+            "url": "classes/Flow-ETL-Foundation-VoidProgress.html#method_busy"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\VoidProgress\u003A\u003AcountsIn\u0028\u0029",
+            "name": "countsIn",
+            "summary": "Counts\u0020in\u0020\u0024unit\u0020from\u0020now\u0020on\u003B\u0020the\u0020count\u0020starts\u0020again\u0020at\u00200.\u0020A\u0020call\u0020with\u0020the\u0020current\u0020unit\u0020does\u0020nothing.",
+            "url": "classes/Flow-ETL-Foundation-VoidProgress.html#method_countsIn"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\VoidProgress\u003A\u003Adescribe\u0028\u0029",
+            "name": "describe",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-VoidProgress.html#method_describe"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\VoidProgress\u003A\u003Adone\u0028\u0029",
+            "name": "done",
+            "summary": "Ends\u0020this\u0020object\u0027s\u0020part\u0020of\u0020its\u0020stage\u003B\u0020a\u0020later\u0020call\u0020opens\u0020it\u0020again.",
+            "url": "classes/Flow-ETL-Foundation-VoidProgress.html#method_done"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\VoidProgress\u003A\u003Aended\u0028\u0029",
+            "name": "ended",
+            "summary": "Folds\u0020the\u0020totals\u0020like\u0020reported\u0028\u0029,\u0020and\u0020never\u0020calls\u0020a\u0020heartbeat.",
+            "url": "classes/Flow-ETL-Foundation-VoidProgress.html#method_ended"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\VoidProgress\u003A\u003Areported\u0028\u0029",
+            "name": "reported",
+            "summary": "The\u0020receiving\u0020stage\u0020stamps\u0020start\u0020and\u0020end\u0020with\u0020its\u0020own\u0020clock,\u0020because\u0020the\u0020reporter\u0027s\u0020clock\u0020is\u0020another\u0020process\u0027s.",
+            "url": "classes/Flow-ETL-Foundation-VoidProgress.html#method_reported"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\VoidProgress\u003A\u003AreportsEverySeconds\u0028\u0029",
+            "name": "reportsEverySeconds",
+            "summary": "null\u003A\u0020nobody\u0020listens,\u0020so\u0020a\u0020reporter\u0020sends\u0020nothing.",
+            "url": "classes/Flow-ETL-Foundation-VoidProgress.html#method_reportsEverySeconds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\VoidProgress\u003A\u003Astage\u0028\u0029",
+            "name": "stage",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-VoidProgress.html#method_stage"
         },                {
             "fqsen": "\\Flow\\ETL\\Functions\\AggregatesByGroup",
             "name": "AggregatesByGroup",
@@ -4706,10 +4971,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Functions-Average.html#method_exact"
         },                {
-            "fqsen": "\\Flow\\ETL\\Functions\\Average\u003A\u003Aaccumulator\u0028\u0029",
-            "name": "accumulator",
-            "summary": "A\u0020fresh\u0020instance\u0020with\u0020no\u0020window,\u0020fed\u0020the\u0020frame\u0027s\u0020rows\u0020through\u0020aggregate\u0028\u0029.",
-            "url": "classes/Flow-ETL-Functions-Average.html#method_accumulator"
+            "fqsen": "\\Flow\\ETL\\Functions\\Average\u003A\u003AframeValues\u0028\u0029",
+            "name": "frameValues",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-Average.html#method_frameValues"
         },                {
             "fqsen": "\\Flow\\ETL\\Functions\\Average\u003A\u003Avalues\u0028\u0029",
             "name": "values",
@@ -5626,10 +5891,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Functions-Count.html#method_aggregate"
         },                {
-            "fqsen": "\\Flow\\ETL\\Functions\\Count\u003A\u003Aaccumulator\u0028\u0029",
-            "name": "accumulator",
-            "summary": "A\u0020fresh\u0020instance\u0020with\u0020no\u0020window,\u0020fed\u0020the\u0020frame\u0027s\u0020rows\u0020through\u0020aggregate\u0028\u0029.",
-            "url": "classes/Flow-ETL-Functions-Count.html#method_accumulator"
+            "fqsen": "\\Flow\\ETL\\Functions\\Count\u003A\u003AframeValues\u0028\u0029",
+            "name": "frameValues",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-Count.html#method_frameValues"
         },                {
             "fqsen": "\\Flow\\ETL\\Functions\\Count\u003A\u003Avalues\u0028\u0029",
             "name": "values",
@@ -6586,10 +6851,10 @@ Search.appendIndex(
             "summary": "Asserts\u0020the\u0020result\u0020depends\u0020only\u0020on\u0020frame\u0020contents,\u0020never\u0020on\u0020the\u0020current\u0020row\u0020or\u0020index.",
             "url": "classes/Flow-ETL-Functions-FrameAccumulating.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Functions\\FrameAccumulating\u003A\u003Aaccumulator\u0028\u0029",
-            "name": "accumulator",
-            "summary": "A\u0020fresh\u0020instance\u0020with\u0020no\u0020window,\u0020fed\u0020the\u0020frame\u0027s\u0020rows\u0020through\u0020aggregate\u0028\u0029.",
-            "url": "classes/Flow-ETL-Functions-FrameAccumulating.html#method_accumulator"
+            "fqsen": "\\Flow\\ETL\\Functions\\FrameAccumulating\u003A\u003AframeValues\u0028\u0029",
+            "name": "frameValues",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-FrameAccumulating.html#method_frameValues"
         },                {
             "fqsen": "\\Flow\\ETL\\Functions\\FunctionTree",
             "name": "FunctionTree",
@@ -8335,6 +8600,11 @@ Search.appendIndex(
             "name": "partialType",
             "summary": "",
             "url": "classes/Flow-ETL-Functions-NumericTotal.html#method_partialType"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\NumericTotal\u003A\u003Aframes\u0028\u0029",
+            "name": "frames",
+            "summary": "Per\u0020frame,\u0020the\u0020total\u0020aggregate\u0028\u0029\u0020builds\u0020from\u0020that\u0020frame\u0027s\u0020rows.",
+            "url": "classes/Flow-ETL-Functions-NumericTotal.html#method_frames"
         },                {
             "fqsen": "\\Flow\\ETL\\Functions\\NumericTotal\u003A\u003Aaggregate\u0028\u0029",
             "name": "aggregate",
@@ -11441,10 +11711,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Functions-Sum.html#method_exact"
         },                {
-            "fqsen": "\\Flow\\ETL\\Functions\\Sum\u003A\u003Aaccumulator\u0028\u0029",
-            "name": "accumulator",
-            "summary": "A\u0020fresh\u0020instance\u0020with\u0020no\u0020window,\u0020fed\u0020the\u0020frame\u0027s\u0020rows\u0020through\u0020aggregate\u0028\u0029.",
-            "url": "classes/Flow-ETL-Functions-Sum.html#method_accumulator"
+            "fqsen": "\\Flow\\ETL\\Functions\\Sum\u003A\u003AframeValues\u0028\u0029",
+            "name": "frameValues",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-Sum.html#method_frameValues"
         },                {
             "fqsen": "\\Flow\\ETL\\Functions\\Sum\u003A\u003Avalues\u0028\u0029",
             "name": "values",
@@ -12073,7 +12343,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Functions\\Window\\FrameAccumulation\u003A\u003Avalues\u0028\u0029",
             "name": "values",
-            "summary": "One\u0020value\u0020per\u0020row\u0020of\u0020the\u0020sorted\u0020\u0024partition,\u0020reusing\u0020the\u0020previous\u0020value\u0020whenever\u0020the\u0020frame\u0020bounds\u0020did\u0020not\u0020move.",
+            "summary": "One\u0020value\u0020per\u0020row\u0020of\u0020the\u0020sorted\u0020\u0024partition.",
             "url": "classes/Flow-ETL-Functions-Window-FrameAccumulation.html#method_values"
         },                {
             "fqsen": "\\Flow\\ETL\\Functions\\Window\\FrameBound",
@@ -12436,6 +12706,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-IO-Extractor-ArrayExtractor.html#method_inferSchema"
         },                {
+            "fqsen": "\\Flow\\ETL\\IO\\Extractor\\ArrayExtractor\u003A\u003AreportInferenceTo\u0028\u0029",
+            "name": "reportInferenceTo",
+            "summary": "",
+            "url": "classes/Flow-ETL-IO-Extractor-ArrayExtractor.html#method_reportInferenceTo"
+        },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\ArrayExtractor\u003A\u003Aschema\u0028\u0029",
             "name": "schema",
             "summary": "Answers\u0020before\u0020extract\u0028\u0029\u0020runs,\u0020so\u0020every\u0020batch\u0020it\u0020yields\u0020carries\u0020this\u0020shape.\u0020Takes\u0020no\nFlowContext\u003A\u0020a\u0020source\u0020that\u0020needs\u0020the\u0020pipeline\u0027s\u0020context\u0020to\u0020describe\u0020itself\u0020has\u0020not\u0020moved\nthe\u0020answer\u0020to\u0020bind\u0020time.",
@@ -12521,6 +12796,16 @@ Search.appendIndex(
             "summary": "Drops\u0020the\u0020listing\u0020and\u0020everything\u0020derived\u0020from\u0020it,\u0020so\u0020the\u0020next\u0020run\u0020lists\u0020the\u0020source\u0020again.\u0020A\u0020run\u0020calls\u0020it\u0020when\nit\u0020ends\u003B\u0020a\u0020plan\u0020that\u0020does\u0020not\u0020run\u0020\u0028explain\u0028\u0029,\u0020schema\u0028\u0029\u0029\u0020keeps\u0020what\u0020it\u0020listed\u0020for\u0020the\u0020run\u0020that\u0020follows.",
             "url": "classes/Flow-ETL-IO-Extractor-CacheExtractor.html#method_refresh"
         },                {
+            "fqsen": "\\Flow\\ETL\\IO\\Extractor\\CacheExtractor\u003A\u003AinferSchema\u0028\u0029",
+            "name": "inferSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-IO-Extractor-CacheExtractor.html#method_inferSchema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\IO\\Extractor\\CacheExtractor\u003A\u003AreportInferenceTo\u0028\u0029",
+            "name": "reportInferenceTo",
+            "summary": "",
+            "url": "classes/Flow-ETL-IO-Extractor-CacheExtractor.html#method_reportInferenceTo"
+        },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\CacheExtractor\u003A\u003Aschema\u0028\u0029",
             "name": "schema",
             "summary": "Answers\u0020before\u0020extract\u0028\u0029\u0020runs,\u0020so\u0020every\u0020batch\u0020it\u0020yields\u0020carries\u0020this\u0020shape.\u0020Takes\u0020no\nFlowContext\u003A\u0020a\u0020source\u0020that\u0020needs\u0020the\u0020pipeline\u0027s\u0020context\u0020to\u0020describe\u0020itself\u0020has\u0020not\u0020moved\nthe\u0020answer\u0020to\u0020bind\u0020time.",
@@ -12560,6 +12845,16 @@ Search.appendIndex(
             "name": "refresh",
             "summary": "Drops\u0020the\u0020listing\u0020and\u0020everything\u0020derived\u0020from\u0020it,\u0020so\u0020the\u0020next\u0020run\u0020lists\u0020the\u0020source\u0020again.\u0020A\u0020run\u0020calls\u0020it\u0020when\nit\u0020ends\u003B\u0020a\u0020plan\u0020that\u0020does\u0020not\u0020run\u0020\u0028explain\u0028\u0029,\u0020schema\u0028\u0029\u0029\u0020keeps\u0020what\u0020it\u0020listed\u0020for\u0020the\u0020run\u0020that\u0020follows.",
             "url": "classes/Flow-ETL-IO-Extractor-ChainExtractor.html#method_refresh"
+        },                {
+            "fqsen": "\\Flow\\ETL\\IO\\Extractor\\ChainExtractor\u003A\u003AinferSchema\u0028\u0029",
+            "name": "inferSchema",
+            "summary": "",
+            "url": "classes/Flow-ETL-IO-Extractor-ChainExtractor.html#method_inferSchema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\IO\\Extractor\\ChainExtractor\u003A\u003AreportInferenceTo\u0028\u0029",
+            "name": "reportInferenceTo",
+            "summary": "",
+            "url": "classes/Flow-ETL-IO-Extractor-ChainExtractor.html#method_reportInferenceTo"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\ChainExtractor\u003A\u003Aschema\u0028\u0029",
             "name": "schema",
@@ -13576,6 +13871,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-IO-Extractor-InfersSchema.html#method_inferSchema"
         },                {
+            "fqsen": "\\Flow\\ETL\\IO\\Extractor\\InfersSchema\u003A\u003AreportInferenceTo\u0028\u0029",
+            "name": "reportInferenceTo",
+            "summary": "",
+            "url": "classes/Flow-ETL-IO-Extractor-InfersSchema.html#method_reportInferenceTo"
+        },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\Memory\\InMemoryRows",
             "name": "InMemoryRows",
             "summary": "",
@@ -13603,7 +13903,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\Memory\\InMemoryRows\u003A\u003Asniff\u0028\u0029",
             "name": "sniff",
-            "summary": "",
+            "summary": "Reports\u0020the\u0020observed\u0020rows\u0020through\u0020\u0024progress\u0020in\u0020Progress\u003A\u003AROWS_PER_CALL\u0020chunks\u003B\u0020they\u0020are\u0020never\u0020rows\u0020read.",
             "url": "classes/Flow-ETL-IO-Extractor-Memory-InMemoryRows.html#method_sniff"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\Memory\\InMemoryRows\u003A\u003Aparts\u0028\u0029",
@@ -13805,6 +14105,11 @@ Search.appendIndex(
             "name": "inferSchema",
             "summary": "",
             "url": "classes/Flow-ETL-IO-Extractor-SequenceExtractor.html#method_inferSchema"
+        },                {
+            "fqsen": "\\Flow\\ETL\\IO\\Extractor\\SequenceExtractor\u003A\u003AreportInferenceTo\u0028\u0029",
+            "name": "reportInferenceTo",
+            "summary": "",
+            "url": "classes/Flow-ETL-IO-Extractor-SequenceExtractor.html#method_reportInferenceTo"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Extractor\\SequenceExtractor\u003A\u003Aschema\u0028\u0029",
             "name": "schema",
@@ -14783,7 +15088,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Inference\\Sniffer\u003A\u003Asniff\u0028\u0029",
             "name": "sniff",
-            "summary": "",
+            "summary": "Reports\u0020the\u0020observed\u0020rows\u0020through\u0020\u0024progress\u0020in\u0020Progress\u003A\u003AROWS_PER_CALL\u0020chunks\u003B\u0020they\u0020are\u0020never\u0020rows\u0020read.",
             "url": "classes/Flow-ETL-IO-Inference-Sniffer.html#method_sniff"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Inference\\Sniffer\u003A\u003Aparts\u0028\u0029",
@@ -14803,7 +15108,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Inference\\Sniffs\u003A\u003Asniff\u0028\u0029",
             "name": "sniff",
-            "summary": "Whole\u002Dunit\u0020sniffs\u0020for\u0020everyRow\u0028\u0029\u003A\u0020units\u00200..\u0024units\u002D1,\u0020every\u0020unit\u0020sniffed\u0020with\u0020budget\u0020\u002D1,\u0020Samples\u0020in\u0020unit\u0020order.",
+            "summary": "Whole\u002Dunit\u0020sniffs\u0020for\u0020everyRow\u0028\u0029\u003A\u0020units\u00200..\u0024units\u002D1,\u0020each\u0020sniffed\u0020with\u0020a\u0020null\u0020budget,\u0020Samples\u0020in\u0020unit\u0020order.",
             "url": "classes/Flow-ETL-IO-Inference-Sniffs.html#method_sniff"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Inference\\TypeFloor",
@@ -14858,7 +15163,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Loader\\Closure",
             "name": "Closure",
-            "summary": "Loaders\u0020implementing\u0020this\u0020adapter\u0020will\u0020be\u0020additionally\u0020notified\nby\u0020the\u0020pipeline\u0020about\u0020the\u0020last\u0020set\u0020of\u0020Rows\u0020processed\u0020by\u0020the\u0020pipeline.",
+            "summary": "",
             "url": "classes/Flow-ETL-IO-Loader-Closure.html"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Loader\\Closure\u003A\u003Aclosure\u0028\u0029",
@@ -14891,6 +15196,11 @@ Search.appendIndex(
             "summary": "The\u0020job\u0020commit\u0020of\u0020a\u0020write\u0020as\u0020\u0024tasks\u0020tasks\u0020of\u0020run\u0020\u0024run\u003B\u0020null\u0020when\u0020the\u0020save\u0020mode\u0020does\u0020not\u0020admit\u0020the\u0020destination.",
             "url": "classes/Flow-ETL-IO-Loader-File-FileCommit.html#method_admitted"
         },                {
+            "fqsen": "\\Flow\\ETL\\IO\\Loader\\File\\FileCommit\u003A\u003AlocationOf\u0028\u0029",
+            "name": "locationOf",
+            "summary": "The\u0020directory\u0020the\u0020files\u0020of\u0020\u0024destination\u0020land\u0020in\u003A\u0020the\u0020static\u0020part\u0020of\u0020a\u0020pattern,\u0020the\u0020parent\u0020of\u0020a\u0020plain\u0020file.",
+            "url": "classes/Flow-ETL-IO-Loader-File-FileCommit.html#method_locationOf"
+        },                {
             "fqsen": "\\Flow\\ETL\\IO\\Loader\\File\\FileCommit\u003A\u003Aadmit\u0028\u0029",
             "name": "admit",
             "summary": "The\u0020save\u0020mode\u0027s\u0020decision\u0020over\u0020the\u0020whole\u0020destination\u003B\u0020a\u0020write\u0020that\u0020is\u0020not\u0020admitted\u0020writes\u0020nothing.",
@@ -14905,6 +15215,11 @@ Search.appendIndex(
             "name": "commit",
             "summary": "Every\u0020file\u0020tasks\u0020\u0024tasks\u0020staged\u0020moves\u0020to\u0020its\u0020place\u0020under\u0020the\u0020root\u0020in\u0020task\u002Dindex\u0020order,\u0020then\u0020Overwrite\u0020removes\nthe\u0020stale\u0020files\u0020the\u0020moved\u0020ones\u0020replace,\u0020and\u0020the\u0020temporary\u0020output\u0020goes.\u0020A\u0020move\u0020that\u0020fails\u0020leaves\u0020the\u0020old\u0020files\nin\u0020place\u003A\u0020a\u0020failed\u0020commit\u0020duplicates,\u0020it\u0020never\u0020loses.\u0020A\u0020task\u0020whose\u0020result\u0020never\u0020arrived\u0020commits\u0020nothing.",
             "url": "classes/Flow-ETL-IO-Loader-File-FileCommit.html#method_commit"
+        },                {
+            "fqsen": "\\Flow\\ETL\\IO\\Loader\\File\\FileCommit\u003A\u003Alocation\u0028\u0029",
+            "name": "location",
+            "summary": "",
+            "url": "classes/Flow-ETL-IO-Loader-File-FileCommit.html#method_location"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Loader\\File\\FileCommit\u003A\u003Aopen\u0028\u0029",
             "name": "open",
@@ -15786,15 +16101,35 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_sort"
         },                {
+            "fqsen": "\\Flow\\ETL\\Kernels\\Sort\\ExternalSort\u003A\u003Acounted\u0028\u0029",
+            "name": "counted",
+            "summary": "",
+            "url": "classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_counted"
+        },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\Sort\\ExternalSort\u003A\u003AfirstRows\u0028\u0029",
             "name": "firstRows",
             "summary": "",
             "url": "classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_firstRows"
         },                {
+            "fqsen": "\\Flow\\ETL\\Kernels\\Sort\\ExternalSort\u003A\u003AfanIn\u0028\u0029",
+            "name": "fanIn",
+            "summary": "",
+            "url": "classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_fanIn"
+        },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\Sort\\ExternalSort\u003A\u003Areduce\u0028\u0029",
             "name": "reduce",
             "summary": "",
             "url": "classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_reduce"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Kernels\\Sort\\ExternalSort\u003A\u003Aruns\u0028\u0029",
+            "name": "runs",
+            "summary": "",
+            "url": "classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_runs"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Kernels\\Sort\\ExternalSort\u003A\u003Afitting\u0028\u0029",
+            "name": "fitting",
+            "summary": "",
+            "url": "classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_fitting"
         },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\Sort\\ExternalSort\u003A\u003Asorted\u0028\u0029",
             "name": "sorted",
@@ -15815,11 +16150,6 @@ Search.appendIndex(
             "name": "merge",
             "summary": "",
             "url": "classes/Flow-ETL-Kernels-Sort-ExternalSort.html#property_merge"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Kernels\\Sort\\ExternalSort\u003A\u003A\u0024memoryLimit",
-            "name": "memoryLimit",
-            "summary": "",
-            "url": "classes/Flow-ETL-Kernels-Sort-ExternalSort.html#property_memoryLimit"
         },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\Sort\\ExternalSort\u003A\u003A\u0024mergeFanIn",
             "name": "mergeFanIn",
@@ -16541,6 +16871,11 @@ Search.appendIndex(
             "summary": "coPartitioned\u0020on\u0020the\u0020equality\u0020keys\u003B\u0020null\u0020for\u0020a\u0020non\u002Dequality\u0020join,\u0020or\u0020while\u0020either\u0020side\u0020is\u0020unbound.",
             "url": "classes/Flow-ETL-Operators-Join-HashJoin.html#method_distribution"
         },                {
+            "fqsen": "\\Flow\\ETL\\Operators\\Join\\HashJoin\u003A\u003Ajoined\u0028\u0029",
+            "name": "joined",
+            "summary": "Joins\u0020two\u0020whole\u0020sides\u0020and\u0020ends\u0020the\u0020join\u0027s\u0020stage\u0020at\u0020the\u0020end\u0020or\u0020after\u0020a\u0020STOP,\u0020which\u0020reaches\u0020the\u0020probe\u0020side.",
+            "url": "classes/Flow-ETL-Operators-Join-HashJoin.html#method_joined"
+        },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Join\\HashJoin\u003A\u003Ajoiner\u0028\u0029",
             "name": "joiner",
             "summary": "The\u0020pair\u0020kernel\u0020of\u0020this\u0020join\u003A\u0020matches\u0020one\u0020left\u0020and\u0020one\u0020right\u0020stream\u0020already\u0020split\u0020by\u0020key.",
@@ -17020,6 +17355,11 @@ Search.appendIndex(
             "name": "final",
             "summary": "",
             "url": "classes/Flow-ETL-Operators-Processor-Distribution.html#property_final"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Operators\\Processor\\Distribution\u003A\u003A\u0024progress",
+            "name": "progress",
+            "summary": "",
+            "url": "classes/Flow-ETL-Operators-Processor-Distribution.html#property_progress"
         },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Processor\\ExpandingProcessor",
             "name": "ExpandingProcessor",
@@ -21166,6 +21506,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Planning-Physical-NodeTranslator.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Planning\\Physical\\NodeTranslator\u003A\u003AjoinSubject\u0028\u0029",
+            "name": "joinSubject",
+            "summary": "",
+            "url": "classes/Flow-ETL-Planning-Physical-NodeTranslator.html#method_joinSubject"
+        },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Physical\\NodeTranslator\u003A\u003Asteps\u0028\u0029",
             "name": "steps",
             "summary": "Called\u0020once\u0020per\u0020plan,\u0020so\u0020a\u0020step\u0020Flow\u0020constructs\u0020here\u0020is\u0020rebuilt\u0020every\u0020run\u0020and\u0020a\u0020second\u0020run\u0020never\u0020sees\u0020the\nstate\u0020the\u0020first\u0020left\u0020behind.\u0020An\u0020instance\u0020the\u0020USER\u0020constructed\u0020\u002D\u0020a\u0020Loader,\u0020or\u0020a\u0020Transformer\u0020handed\u0020to\ntransform\u0028\u0029\/rows\u0028\u0029\u0020\u002D\u0020is\u0020theirs\u003A\u0020it\u0020is\u0020handed\u0020back\u0020as\u0020it\u0020is,\u0020never\u0020reset.",
@@ -21251,6 +21596,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Planning-Physical-Pipeline.html#property_steps"
         },                {
+            "fqsen": "\\Flow\\ETL\\Planning\\Physical\\Pipeline\u003A\u003A\u0024read",
+            "name": "read",
+            "summary": "",
+            "url": "classes/Flow-ETL-Planning-Physical-Pipeline.html#property_read"
+        },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Physical\\PipelineSteps",
             "name": "PipelineSteps",
             "summary": "",
@@ -21286,6 +21636,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Planning-Physical-PipelineSteps.html#property_breaker"
         },                {
+            "fqsen": "\\Flow\\ETL\\Planning\\Physical\\PipelineSteps\u003A\u003A\u0024stages",
+            "name": "stages",
+            "summary": "",
+            "url": "classes/Flow-ETL-Planning-Physical-PipelineSteps.html#property_stages"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Planning\\Physical\\PipelineSteps\u003A\u003A\u0024writes",
+            "name": "writes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Planning-Physical-PipelineSteps.html#property_writes"
+        },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Physical\\PlannedNode",
             "name": "PlannedNode",
             "summary": "",
@@ -21320,6 +21680,51 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Planning\\Physical\\PlannedNodes\u003A\u003Ahosts\u0028\u0029",
+            "name": "hosts",
+            "summary": "",
+            "url": "classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_hosts"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Planning\\Physical\\PlannedNodes\u003A\u003AhostedBy\u0028\u0029",
+            "name": "hostedBy",
+            "summary": "",
+            "url": "classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_hostedBy"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Planning\\Physical\\PlannedNodes\u003A\u003AplanWrite\u0028\u0029",
+            "name": "planWrite",
+            "summary": "Every\u0020stage\u0020is\u0020built\u0020in\u0020the\u0020order\u0020the\u0020plan\u0020is\u0020walked,\u0020which\u0020is\u0020the\u0020order\u0020a\u0020heartbeat\u0020lists\u0020them\u0020in.",
+            "url": "classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_planWrite"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Planning\\Physical\\PlannedNodes\u003A\u003Awrites\u0028\u0029",
+            "name": "writes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_writes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Planning\\Physical\\PlannedNodes\u003A\u003AplanJoinEach\u0028\u0029",
+            "name": "planJoinEach",
+            "summary": "",
+            "url": "classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_planJoinEach"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Planning\\Physical\\PlannedNodes\u003A\u003Astages\u0028\u0029",
+            "name": "stages",
+            "summary": "",
+            "url": "classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_stages"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Planning\\Physical\\PlannedNodes\u003A\u003Ajoined\u0028\u0029",
+            "name": "joined",
+            "summary": "The\u0020nodes\u0020of\u0020a\u0020frame\u0020joined\u0020into\u0020this\u0020plan\u0020are\u0020planned\u0020apart,\u0020their\u0020stages\u0020with\u0020this\u0020plan\u0027s.",
+            "url": "classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_joined"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Planning\\Physical\\PlannedNodes\u003A\u003AplanRead\u0028\u0029",
+            "name": "planRead",
+            "summary": "",
+            "url": "classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_planRead"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Planning\\Physical\\PlannedNodes\u003A\u003AreadStageOf\u0028\u0029",
+            "name": "readStageOf",
+            "summary": "",
+            "url": "classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_readStageOf"
         },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Physical\\PlannedNodes\u003A\u003Aadd\u0028\u0029",
             "name": "add",
@@ -21380,6 +21785,11 @@ Search.appendIndex(
             "name": "pipelines",
             "summary": "The\u0020spine\u0027s\u0020pipelines,\u0020cut\u0020at\u0020every\u0020breaker,\u0020with\u0020every\u0020write\u0020attached\u0020to\u0020the\u0020spine\u0020node\u0020it\u0020reads.",
             "url": "classes/Flow-ETL-Planning-Physical-Planner.html#method_pipelines"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Planning\\Physical\\Planner\u003A\u003AspineNodes\u0028\u0029",
+            "name": "spineNodes",
+            "summary": "The\u0020spine\u0027s\u0020nodes,\u0020root\u0020first.",
+            "url": "classes/Flow-ETL-Planning-Physical-Planner.html#method_spineNodes"
         },                {
             "fqsen": "\\Flow\\ETL\\Planning\\Physical\\Planner\u003A\u003Acut\u0028\u0029",
             "name": "cut",
@@ -21531,6 +21941,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Runtime-Config.html#method_backend"
         },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Config\u003A\u003Aheartbeat\u0028\u0029",
+            "name": "heartbeat",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Config.html#method_heartbeat"
+        },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Config\u003A\u003Alauncher\u0028\u0029",
             "name": "launcher",
             "summary": "Runs\u0020every\u0020read\u0020of\u0020a\u0020SplittableExtractor\u0020in\u0020this\u0020run\u003A\u0020one\u0020launcher\u0020serves\u0020the\u0020whole\u0020run.\u0020Null\u003A\u0020every\u0020read\u0020runs\u0020in\nthis\u0020process.",
@@ -21565,6 +21980,11 @@ Search.appendIndex(
             "name": "planner",
             "summary": "",
             "url": "classes/Flow-ETL-Runtime-Config.html#method_planner"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Config\u003A\u003Aprogress\u0028\u0029",
+            "name": "progress",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Config.html#method_progress"
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Config\u003A\u003ArandomValueGenerator\u0028\u0029",
             "name": "randomValueGenerator",
@@ -21921,6 +22341,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Runtime-Executor-Executor.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\Executor\u003A\u003Aplan\u0028\u0029",
+            "name": "plan",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-Executor.html#method_plan"
+        },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\Executor\u003A\u003Aexecute\u0028\u0029",
             "name": "execute",
             "summary": "Plans\u0020and\u0020runs\u0020a\u0020whole\u0020plan\u0020inside\u0020one\u0020DataFrame\u0020span\u0020of\u0020\u0024context\u003A\u0020a\u0020planning\u0020failure\u0020closes\u0020the\u0020span\u0020as\u0020failed.",
@@ -22141,6 +22566,16 @@ Search.appendIndex(
             "summary": "A\u0020NestedLoader\u0020forwards\u0020discard\u0028\u0029\u0020to\u0020its\u0020writes,\u0020so\u0020each\u0020step\u0020is\u0020ended\u0020directly\u0020\u002D\u0020there\u0020is\u0020no\u0020user\u002Dsupplied\nwrapper\u0020left\u0020to\u0020distrust.",
             "url": "classes/Flow-ETL-Runtime-Executor-StepRunner.html#method_endLoaders"
         },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\StepRunner\u003A\u003Astarted\u0028\u0029",
+            "name": "started",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-StepRunner.html#method_started"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\StepRunner\u003A\u003Aunwind\u0028\u0029",
+            "name": "unwind",
+            "summary": "Ends\u0020\u0024input\u0020as\u0020failed\u003A\u0020it\u0020must\u0020be\u0020the\u0020root\u0020of\u0020its\u0020\u0060yield\u0020from\u0060\u0020chain,\u0020as\u0020a\u0020throw\u0028\u0029\u0020into\u0020a\u0020delegate\u0020is\u0020lost.",
+            "url": "classes/Flow-ETL-Runtime-Executor-StepRunner.html#method_unwind"
+        },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\StepTelemetry",
             "name": "StepTelemetry",
             "summary": "",
@@ -22256,6 +22691,296 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Runtime-FlowContext.html#property_config"
         },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\Heartbeat",
+            "name": "Heartbeat",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-Heartbeat.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\Heartbeat\u003A\u003Abeat\u0028\u0029",
+            "name": "beat",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-Heartbeat.html#method_beat"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatFailure",
+            "name": "HeartbeatFailure",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatFailure.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatFailure\u003A\u003Astop",
+            "name": "stop",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatFailure.html#enumcase_stop"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatFailure\u003A\u003Alog",
+            "name": "log",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatFailure.html#enumcase_log"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatStage",
+            "name": "HeartbeatStage",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatStage.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatStage\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatStage.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatStage\u003A\u003AfromDescription\u0028\u0029",
+            "name": "fromDescription",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatStage.html#method_fromDescription"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatStage\u003A\u003Aadvanced\u0028\u0029",
+            "name": "advanced",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatStage.html#method_advanced"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatStage\u003A\u003Abusy\u0028\u0029",
+            "name": "busy",
+            "summary": "Checks\u0020for\u0020a\u0020due\u0020beat\u0020and\u0020counts\u0020nothing.",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatStage.html#method_busy"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatStage\u003A\u003AcountsIn\u0028\u0029",
+            "name": "countsIn",
+            "summary": "Counts\u0020in\u0020\u0024unit\u0020from\u0020now\u0020on\u003B\u0020the\u0020count\u0020starts\u0020again\u0020at\u00200.\u0020A\u0020call\u0020with\u0020the\u0020current\u0020unit\u0020does\u0020nothing.",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatStage.html#method_countsIn"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatStage\u003A\u003Adescribe\u0028\u0029",
+            "name": "describe",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatStage.html#method_describe"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatStage\u003A\u003Adone\u0028\u0029",
+            "name": "done",
+            "summary": "Ends\u0020this\u0020object\u0027s\u0020part\u0020of\u0020its\u0020stage\u003B\u0020a\u0020later\u0020call\u0020opens\u0020it\u0020again.",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatStage.html#method_done"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatStage\u003A\u003Aended\u0028\u0029",
+            "name": "ended",
+            "summary": "Folds\u0020the\u0020totals\u0020like\u0020reported\u0028\u0029,\u0020and\u0020never\u0020calls\u0020a\u0020heartbeat.",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatStage.html#method_ended"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatStage\u003A\u003Aread\u0028\u0029",
+            "name": "read",
+            "summary": "Rows\u0020read\u0020from\u0020the\u0020source\u003B\u0020no\u0020beat,\u0020the\u0020reader\u0020of\u0020the\u0020source\u0020beats.",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatStage.html#method_read"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatStage\u003A\u003Areported\u0028\u0029",
+            "name": "reported",
+            "summary": "The\u0020receiving\u0020stage\u0020stamps\u0020start\u0020and\u0020end\u0020with\u0020its\u0020own\u0020clock,\u0020because\u0020the\u0020reporter\u0027s\u0020clock\u0020is\u0020another\u0020process\u0027s.",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatStage.html#method_reported"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatStage\u003A\u003AreportsEverySeconds\u0028\u0029",
+            "name": "reportsEverySeconds",
+            "summary": "null\u003A\u0020nobody\u0020listens,\u0020so\u0020a\u0020reporter\u0020sends\u0020nothing.",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatStage.html#method_reportsEverySeconds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatThrottle",
+            "name": "HeartbeatThrottle",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatThrottle.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatThrottle\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatThrottle.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatThrottle\u003A\u003AreportingToParent\u0028\u0029",
+            "name": "reportingToParent",
+            "summary": "A\u0020run\u0020that\u0020a\u0020worker\u0020step\u0020starts\u0020adds\u0020to\u0020what\u0020the\u0020worker\u0020counted,\u0020because\u0020the\u0020parent\u0020folds\u0020the\u0020worker\u0027s\u0020totals.",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatThrottle.html#method_reportingToParent"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatThrottle\u003A\u003Acompleted\u0028\u0029",
+            "name": "completed",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatThrottle.html#method_completed"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatThrottle\u003A\u003AeverySeconds\u0028\u0029",
+            "name": "everySeconds",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatThrottle.html#method_everySeconds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatThrottle\u003A\u003Afinished\u0028\u0029",
+            "name": "finished",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatThrottle.html#method_finished"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatThrottle\u003A\u003AothersReported\u0028\u0029",
+            "name": "othersReported",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatThrottle.html#method_othersReported"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatThrottle\u003A\u003Areading\u0028\u0029",
+            "name": "reading",
+            "summary": "No\u0020beat\u0020here\u003A\u0020the\u0020reader\u0020of\u0020the\u0020batches\u0020beats,\u0020outside\u0020the\u0020source\u0027s\u0020failure\u0020path.",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatThrottle.html#method_reading"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatThrottle\u003A\u003AreadStage\u0028\u0029",
+            "name": "readStage",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatThrottle.html#method_readStage"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatThrottle\u003A\u003ArowsRead\u0028\u0029",
+            "name": "rowsRead",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatThrottle.html#method_rowsRead"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatThrottle\u003A\u003Astage\u0028\u0029",
+            "name": "stage",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatThrottle.html#method_stage"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatThrottle\u003A\u003AstageAdvanced\u0028\u0029",
+            "name": "stageAdvanced",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatThrottle.html#method_stageAdvanced"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatThrottle\u003A\u003AstageRead\u0028\u0029",
+            "name": "stageRead",
+            "summary": "Rows\u0020read\u0020from\u0020the\u0020source\u003A\u0020counted,\u0020never\u0020a\u0020beat,\u0020because\u0020the\u0020reader\u0020beats\u0020outside\u0020the\u0020source\u0027s\u0020failure\u0020path.",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatThrottle.html#method_stageRead"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatThrottle\u003A\u003AstageCountsIn\u0028\u0029",
+            "name": "stageCountsIn",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatThrottle.html#method_stageCountsIn"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatThrottle\u003A\u003AstageClosed\u0028\u0029",
+            "name": "stageClosed",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatThrottle.html#method_stageClosed"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatThrottle\u003A\u003AstageOpened\u0028\u0029",
+            "name": "stageOpened",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatThrottle.html#method_stageOpened"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatThrottle\u003A\u003Aplanned\u0028\u0029",
+            "name": "planned",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatThrottle.html#method_planned"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatThrottle\u003A\u003Aunread\u0028\u0029",
+            "name": "unread",
+            "summary": "An\u0020abandoned\u0020read\u0027s\u0020rows\u003A\u0020whoever\u0020reads\u0020them\u0020again\u0020counts\u0020them.",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatThrottle.html#method_unread"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatThrottle\u003A\u003Astarted\u0028\u0029",
+            "name": "started",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatThrottle.html#method_started"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatThrottle\u003A\u003Astopped\u0028\u0029",
+            "name": "stopped",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatThrottle.html#method_stopped"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatThrottle\u003A\u003Abusy\u0028\u0029",
+            "name": "busy",
+            "summary": "This\u0020process\u0020is\u0020working,\u0020also\u0020where\u0020no\u0020stage\u0020counts\u003A\u0020progress\u0020for\u0020idleSeconds,\u0020and\u0020a\u0020beat\u0020when\u0020one\u0020is\u0020due.",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatThrottle.html#method_busy"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatThrottle\u003A\u003AbeatWhenDue\u0028\u0029",
+            "name": "beatWhenDue",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatThrottle.html#method_beatWhenDue"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\HeartbeatThrottle\u003A\u003AbeatNow\u0028\u0029",
+            "name": "beatNow",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-HeartbeatThrottle.html#method_beatNow"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\Pulse",
+            "name": "Pulse",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-Pulse.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\Pulse\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-Pulse.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\Pulse\u003A\u003A\u0024beat",
+            "name": "beat",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-Pulse.html#property_beat"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\Pulse\u003A\u003A\u0024elapsedSeconds",
+            "name": "elapsedSeconds",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-Pulse.html#property_elapsedSeconds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\Pulse\u003A\u003A\u0024rowsRead",
+            "name": "rowsRead",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-Pulse.html#property_rowsRead"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\Pulse\u003A\u003A\u0024stages",
+            "name": "stages",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-Pulse.html#property_stages"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\Pulse\u003A\u003A\u0024memoryBytes",
+            "name": "memoryBytes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-Pulse.html#property_memoryBytes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\Pulse\u003A\u003A\u0024peakMemoryBytes",
+            "name": "peakMemoryBytes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-Pulse.html#property_peakMemoryBytes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\Pulse\u003A\u003A\u0024idleSeconds",
+            "name": "idleSeconds",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-Pulse.html#property_idleSeconds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\ScheduledHeartbeat",
+            "name": "ScheduledHeartbeat",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-ScheduledHeartbeat.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\ScheduledHeartbeat\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-ScheduledHeartbeat.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\ScheduledHeartbeat\u003A\u003Abeat\u0028\u0029",
+            "name": "beat",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-ScheduledHeartbeat.html#method_beat"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\ScheduledHeartbeat\u003A\u003AnextBeat\u0028\u0029",
+            "name": "nextBeat",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-ScheduledHeartbeat.html#method_nextBeat"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\ScheduledHeartbeat\u003A\u003AnextBeatAt\u0028\u0029",
+            "name": "nextBeatAt",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-ScheduledHeartbeat.html#method_nextBeatAt"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\ScheduledHeartbeat\u003A\u003Astart\u0028\u0029",
+            "name": "start",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-ScheduledHeartbeat.html#method_start"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\ScheduledHeartbeat\u003A\u003A\u0024heartbeat",
+            "name": "heartbeat",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-ScheduledHeartbeat.html#property_heartbeat"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\ScheduledHeartbeat\u003A\u003A\u0024everySeconds",
+            "name": "everySeconds",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-ScheduledHeartbeat.html#property_everySeconds"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat\\ScheduledHeartbeat\u003A\u003A\u0024onFailure",
+            "name": "onFailure",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Heartbeat-ScheduledHeartbeat.html#property_onFailure"
+        },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Launcher\\Launch",
             "name": "Launch",
             "summary": "",
@@ -22290,31 +23015,6 @@ Search.appendIndex(
             "name": "read",
             "summary": "Decides\u0020before\u0020the\u0020first\u0020batch\u0020whether\u0020launching\u0020the\u0020head\u0020of\u0020\u0024plan\u0027s\u0020chain\u0020pays\u003B\u0020null\u0020when\u0020it\u0020does\u0020not\u0020and\u0020the\nexecutor\u0020reads\u0020\u0024source.\u0020Otherwise\u0020the\u0020launch\u003A\u0020its\u0020rows\u0020are\u0020identical\u0020to\u0020the\u0020launched\u0020steps\u0020run\u0020over\u0020the\u0020source\u0027s\nown\u0020scan\u0020of\u0020\u0024criteria,\u0020with\u0020the\u0020source\u0027s\u0020rows\u0020and\u0020the\u0020workers\u0027\u0020peaks\u0020counted\u0020into\u0020\u0024counts.",
             "url": "classes/Flow-ETL-Runtime-Launcher-Launcher.html#method_read"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Runtime\\MemoryLimit",
-            "name": "MemoryLimit",
-            "summary": "Compared\u0020with\u0020process\u0020usage\u003B\u0020FLOW_MAX_MEMORY,\u0020else\u002070\u0025\u0020of\u0020memory_limit,\u0020else\u00201\u0020GiB.",
-            "url": "classes/Flow-ETL-Runtime-MemoryLimit.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Runtime\\MemoryLimit\u003A\u003Adefault\u0028\u0029",
-            "name": "default",
-            "summary": "",
-            "url": "classes/Flow-ETL-Runtime-MemoryLimit.html#method_default"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Runtime\\MemoryLimit\u003A\u003APERCENTAGE_OF_MEMORY_LIMIT",
-            "name": "PERCENTAGE_OF_MEMORY_LIMIT",
-            "summary": "",
-            "url": "classes/Flow-ETL-Runtime-MemoryLimit.html#constant_PERCENTAGE_OF_MEMORY_LIMIT"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Runtime\\MemoryLimit\u003A\u003AENV",
-            "name": "ENV",
-            "summary": "",
-            "url": "classes/Flow-ETL-Runtime-MemoryLimit.html#constant_ENV"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Runtime\\MemoryLimit\u003A\u003AWITHOUT_MEMORY_LIMIT_GB",
-            "name": "WITHOUT_MEMORY_LIMIT_GB",
-            "summary": "",
-            "url": "classes/Flow-ETL-Runtime-MemoryLimit.html#constant_WITHOUT_MEMORY_LIMIT_GB"
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Processes",
             "name": "Processes",
@@ -23796,11 +24496,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Storage-SpillingRowsStorage.html#property_disk"
         },                {
-            "fqsen": "\\Flow\\ETL\\Storage\\SpillingRowsStorage\u003A\u003A\u0024memoryLimit",
-            "name": "memoryLimit",
-            "summary": "",
-            "url": "classes/Flow-ETL-Storage-SpillingRowsStorage.html#property_memoryLimit"
-        },                {
             "fqsen": "\\Flow\\ETL\\Values\\BatchSize",
             "name": "BatchSize",
             "summary": "",
@@ -23971,6 +24666,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Values-Column-AdaptiveBackend.html#method_sort"
         },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\AdaptiveBackend\u003A\u003AsortWorkingBytes\u0028\u0029",
+            "name": "sortWorkingBytes",
+            "summary": "Bytes\u0020sort\u0028\u0024rows,\u0020\u0024columns\u0029\u0020allocates\u0020on\u0020top\u0020of\u0020\u0024rows,\u0020at\u0020its\u0020peak.",
+            "url": "classes/Flow-ETL-Values-Column-AdaptiveBackend.html#method_sortWorkingBytes"
+        },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\AdaptiveBackend\u003A\u003AgroupedTotals\u0028\u0029",
             "name": "groupedTotals",
             "summary": "",
@@ -23995,6 +24695,16 @@ Search.appendIndex(
             "name": "allocatedBytes",
             "summary": "Bytes\u0020this\u0020backend\u0020holds\u0020outside\u0020PHP\u0027s\u0020memory\u0020manager\u0020\u0028invisible\u0020to\u0020memory_get_usage\u0028\u0029\u0020and\u0020memory_limit\u0029.",
             "url": "classes/Flow-ETL-Values-Column-AdaptiveBackend.html#method_allocatedBytes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\AdaptiveBackend\u003A\u003AallocatedPeakBytes\u0028\u0029",
+            "name": "allocatedPeakBytes",
+            "summary": "The\u0020highest\u0020allocatedBytes\u0028\u0029\u0020since\u0020the\u0020last\u0020resetAllocatedPeak\u0028\u0029.",
+            "url": "classes/Flow-ETL-Values-Column-AdaptiveBackend.html#method_allocatedPeakBytes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\AdaptiveBackend\u003A\u003AresetAllocatedPeak\u0028\u0029",
+            "name": "resetAllocatedPeak",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-AdaptiveBackend.html#method_resetAllocatedPeak"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Backend",
             "name": "Backend",
@@ -24066,6 +24776,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Values-Column-Backend.html#method_sort"
         },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\Backend\u003A\u003AsortWorkingBytes\u0028\u0029",
+            "name": "sortWorkingBytes",
+            "summary": "Bytes\u0020sort\u0028\u0024rows,\u0020\u0024columns\u0029\u0020allocates\u0020on\u0020top\u0020of\u0020\u0024rows,\u0020at\u0020its\u0020peak.",
+            "url": "classes/Flow-ETL-Values-Column-Backend.html#method_sortWorkingBytes"
+        },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Backend\u003A\u003AgroupedTotals\u0028\u0029",
             "name": "groupedTotals",
             "summary": "",
@@ -24090,6 +24805,16 @@ Search.appendIndex(
             "name": "allocatedBytes",
             "summary": "Bytes\u0020this\u0020backend\u0020holds\u0020outside\u0020PHP\u0027s\u0020memory\u0020manager\u0020\u0028invisible\u0020to\u0020memory_get_usage\u0028\u0029\u0020and\u0020memory_limit\u0029.",
             "url": "classes/Flow-ETL-Values-Column-Backend.html#method_allocatedBytes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\Backend\u003A\u003AallocatedPeakBytes\u0028\u0029",
+            "name": "allocatedPeakBytes",
+            "summary": "The\u0020highest\u0020allocatedBytes\u0028\u0029\u0020since\u0020the\u0020last\u0020resetAllocatedPeak\u0028\u0029.",
+            "url": "classes/Flow-ETL-Values-Column-Backend.html#method_allocatedPeakBytes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\Backend\u003A\u003AresetAllocatedPeak\u0028\u0029",
+            "name": "resetAllocatedPeak",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-Backend.html#method_resetAllocatedPeak"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Column",
             "name": "Column",
@@ -25416,6 +26141,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Values-Column-PhpBackend.html#method_sort"
         },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\PhpBackend\u003A\u003AsortWorkingBytes\u0028\u0029",
+            "name": "sortWorkingBytes",
+            "summary": "Bytes\u0020sort\u0028\u0024rows,\u0020\u0024columns\u0029\u0020allocates\u0020on\u0020top\u0020of\u0020\u0024rows,\u0020at\u0020its\u0020peak.",
+            "url": "classes/Flow-ETL-Values-Column-PhpBackend.html#method_sortWorkingBytes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\PhpBackend\u003A\u003AgatheredBytes\u0028\u0029",
+            "name": "gatheredBytes",
+            "summary": "Bytes\u0020take\u0028\u0029\u0020allocates\u0020for\u0020a\u0020copy\u0020of\u0020\u0024column,\u0020at\u0020its\u0020peak.",
+            "url": "classes/Flow-ETL-Values-Column-PhpBackend.html#method_gatheredBytes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\PhpBackend\u003A\u003AorderedBytes\u0028\u0029",
+            "name": "orderedBytes",
+            "summary": "Bytes\u0020RowOrder\u0020allocates\u0020to\u0020sort\u0020by\u0020\u0024column\u003A\u0020its\u0020key\u0020and\u0020its\u0020share\u0020of\u0020the\u0020permutation,\u0020at\u0020their\u0020peak.",
+            "url": "classes/Flow-ETL-Values-Column-PhpBackend.html#method_orderedBytes"
+        },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\PhpBackend\u003A\u003AgroupedTotals\u0028\u0029",
             "name": "groupedTotals",
             "summary": "",
@@ -25440,6 +26180,16 @@ Search.appendIndex(
             "name": "allocatedBytes",
             "summary": "Bytes\u0020this\u0020backend\u0020holds\u0020outside\u0020PHP\u0027s\u0020memory\u0020manager\u0020\u0028invisible\u0020to\u0020memory_get_usage\u0028\u0029\u0020and\u0020memory_limit\u0029.",
             "url": "classes/Flow-ETL-Values-Column-PhpBackend.html#method_allocatedBytes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\PhpBackend\u003A\u003AallocatedPeakBytes\u0028\u0029",
+            "name": "allocatedPeakBytes",
+            "summary": "The\u0020highest\u0020allocatedBytes\u0028\u0029\u0020since\u0020the\u0020last\u0020resetAllocatedPeak\u0028\u0029.",
+            "url": "classes/Flow-ETL-Values-Column-PhpBackend.html#method_allocatedPeakBytes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\PhpBackend\u003A\u003AresetAllocatedPeak\u0028\u0029",
+            "name": "resetAllocatedPeak",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-PhpBackend.html#method_resetAllocatedPeak"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Physical\\DatePhysical",
             "name": "DatePhysical",
@@ -26343,7 +27093,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Memory\\BoundedRead\u003A\u003Aread\u0028\u0029",
             "name": "read",
-            "summary": "Reads\u0020\u0024rows\u0020while\u0020the\u0020process\u0020stays\u0020under\u0020the\u0020limit\u003B\u0020\u0024rows\u0020is\u0020left\u0020at\u0020the\u0020first\u0020batch\u0020not\u0020read.",
+            "summary": "Reads\u0020\u0024rows\u0020while\u0020the\u0020operation\u0020stays\u0020under\u0020its\u0020budget\u003B\u0020\u0024rows\u0020is\u0020left\u0020at\u0020the\u0020first\u0020batch\u0020not\u0020read.",
             "url": "classes/Flow-ETL-Values-Memory-BoundedRead.html#method_read"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Memory\\Consumption",
@@ -26406,6 +27156,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Values-Memory-MemoryBudget.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Memory\\MemoryBudget\u003A\u003Aof\u0028\u0029",
+            "name": "of",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Memory-MemoryBudget.html#method_of"
+        },                {
             "fqsen": "\\Flow\\ETL\\Values\\Memory\\MemoryBudget\u003A\u003Aexceeded\u0028\u0029",
             "name": "exceeded",
             "summary": "",
@@ -26416,15 +27171,75 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Values-Memory-MemoryBudget.html#method_exceededWith"
         },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Memory\\MemoryBudget\u003A\u003Aremaining\u0028\u0029",
+            "name": "remaining",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Memory-MemoryBudget.html#method_remaining"
+        },                {
             "fqsen": "\\Flow\\ETL\\Values\\Memory\\MemoryBudget\u003A\u003Areleased\u0028\u0029",
             "name": "released",
-            "summary": "After\u0020a\u0020spill\u0020freed\u0020its\u0020buffer\u003A\u0020hands\u0020the\u0020memory\u0020PHP\u0020keeps\u0020cached\u0020back\u0020to\u0020the\u0020OS.",
+            "summary": "After\u0020a\u0020spill\u0020freed\u0020its\u0020buffer\u003A\u0020growth\u0020is\u0020measured\u0020from\u0020here.",
             "url": "classes/Flow-ETL-Values-Memory-MemoryBudget.html#method_released"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Memory\\MemoryBudget\u003A\u003AcrossesCapWith\u0028\u0029",
+            "name": "crossesCapWith",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Memory-MemoryBudget.html#method_crossesCapWith"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Memory\\MemoryBudget\u003A\u003Afloor\u0028\u0029",
+            "name": "floor",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Memory-MemoryBudget.html#method_floor"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Memory\\MemoryBudget\u003A\u003AFLOOR_CAP_BYTES",
+            "name": "FLOOR_CAP_BYTES",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Memory-MemoryBudget.html#constant_FLOOR_CAP_BYTES"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Memory\\MemoryBudget\u003A\u003AFLOOR_DIVISOR",
+            "name": "FLOOR_DIVISOR",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Memory-MemoryBudget.html#constant_FLOOR_DIVISOR"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Memory\\MemoryBudget\u003A\u003A\u0024limit",
             "name": "limit",
             "summary": "",
             "url": "classes/Flow-ETL-Values-Memory-MemoryBudget.html#property_limit"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Memory\\MemoryBudget\u003A\u003A\u0024processCap",
+            "name": "processCap",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Memory-MemoryBudget.html#property_processCap"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Memory\\MemoryLimit",
+            "name": "MemoryLimit",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Memory-MemoryLimit.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Memory\\MemoryLimit\u003A\u003Adefault\u0028\u0029",
+            "name": "default",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Memory-MemoryLimit.html#method_default"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Memory\\MemoryLimit\u003A\u003AprocessCap\u0028\u0029",
+            "name": "processCap",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Memory-MemoryLimit.html#method_processCap"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Memory\\MemoryLimit\u003A\u003APERCENTAGE_OF_MEMORY_LIMIT",
+            "name": "PERCENTAGE_OF_MEMORY_LIMIT",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Memory-MemoryLimit.html#constant_PERCENTAGE_OF_MEMORY_LIMIT"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Memory\\MemoryLimit\u003A\u003AENV",
+            "name": "ENV",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Memory-MemoryLimit.html#constant_ENV"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Memory\\MemoryLimit\u003A\u003AWITHOUT_MEMORY_LIMIT_GB",
+            "name": "WITHOUT_MEMORY_LIMIT_GB",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Memory-MemoryLimit.html#constant_WITHOUT_MEMORY_LIMIT_GB"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Memory\\Unit",
             "name": "Unit",
@@ -29330,6 +30145,11 @@ Search.appendIndex(
             "name": "Executor",
             "summary": "",
             "url": "namespaces/flow-etl-runtime-executor.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Heartbeat",
+            "name": "Heartbeat",
+            "summary": "",
+            "url": "namespaces/flow-etl-runtime-heartbeat.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Launcher",
             "name": "Launcher",

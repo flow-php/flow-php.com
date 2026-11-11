@@ -163,7 +163,7 @@
         "@lezer/highlight": "/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js",
         "/assets/wasm/mago/mago_wasm_bg.js": "/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js",
         "crelt": "/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js",
-        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-2e8376fcf75350e645437c7d620fb2e0.js",
+        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-77a0b5286d9193903a419f70217f76a7.js",
         "@fontsource-variable/cabin/index.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2F%40fontsource-variable%2Fcabin%2Findex.min-2fd942a10b44e40a5f63d90a3479e0ee.css%22%7D%29%29",
         "prismjs/themes/prism.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2Fprismjs%2Fthemes%2Fprism.min-1698e178d1bb208a059f63cb8dcc0517.css%22%7D%29%29",
         "prismjs/themes/prism-okaidia.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2Fprismjs%2Fthemes%2Fprism-okaidia.min-08069b61612f4d092d8705c78d4e814b.css%22%7D%29%29",
@@ -261,7 +261,7 @@
 <link rel="modulepreload" href="/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js">
 <link rel="modulepreload" href="/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js">
 <link rel="modulepreload" href="/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js">
-<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-2e8376fcf75350e645437c7d620fb2e0.js">
+<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-77a0b5286d9193903a419f70217f76a7.js">
 <script type="module">import 'app';</script>
     </head>
 <body class="scroll-smooth bg-[#e8eef7] text-slate-900 dark:bg-black dark:text-white" data-environment="prod">
@@ -1118,6 +1118,13 @@
         HttpFoundation Telemetry
     </a>
 </li>
+            <li>        <a href="/documentation/components/bridges/symfony-console-bridge"
+       class="block rounded-md px-2.5 py-1.5 text-sm transition-colors no-underline border-l-2
+              border-transparent text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-white/70 dark:hover:text-white dark:hover:bg-white/[0.04]"
+       >
+        Console Bridge
+    </a>
+</li>
         </ul>
     </div>
 
@@ -1535,6 +1542,17 @@
 <li><a href="#1-flow-phpetl---transformation-is-invokable-and-every-dataframe-method-has-a-pipe-step-printrows-and-withcolumn-changed">1) flow-php/etl - Transformation is invokable and every DataFrame method has a pipe step; print_rows() and WithColumn changed</a></li>
 <li><a href="#2-flow-phpsymfony-filesystem-bundle---each-mount-is-a-service-fstabbuilder-is-removed">2) flow-php/symfony-filesystem-bundle - each mount is a service; FstabBuilder is removed</a></li>
 <li><a href="#3-flow-phppostgresql---schema-objects-store-and-inherit-their-schema-extensions-belong-to-the-catalog">3) flow-php/postgresql - schema objects store and inherit their schema, extensions belong to the catalog</a></li>
+<li><a href="#4-flow-phpetl---memory-units-are-binary-1024">4) flow-php/etl - memory units are binary (1024)</a></li>
+<li><a href="#5-flow-phpetl---frameaccumulating-computes-every-frame-of-a-partition-in-one-call">5) flow-php/etl - FrameAccumulating computes every frame of a partition in one call</a></li>
+<li><a href="#6-flow-phpetl---window-functions-take-a-progress">6) flow-php/etl - window functions take a Progress</a></li>
+<li><a href="#7-flow-phpcli-----config-returns-a-configbuilder">7) flow-php/cli - --config returns a ConfigBuilder</a></li>
+<li><a href="#8-flow-phpcli-flow-phpsymfony-telemetry-bundle-flow-phpsymfony-postgresql-bundle-flow-phpparquet-viewer---symfonyconsole-lower-bound-raised">8) flow-php/cli, flow-php/symfony-telemetry-bundle, flow-php/symfony-postgresql-bundle, flow-php/parquet-viewer - symfony/console lower bound raised</a></li>
+<li><a href="#9-flow-phpetl---inference-takes-a-progress">9) flow-php/etl - inference takes a Progress</a></li>
+<li><a href="#10-flow-phpetl---memory-limits-count-the-memory-an-operation-adds">10) flow-php/etl - memory limits count the memory an operation adds</a></li>
+<li><a href="#11-flow-phpetl---a-failed-run-ends-its-sources-first">11) flow-php/etl - a failed run ends its sources first</a></li>
+<li><a href="#12-flow-phpetl-and-the-file-adapters---a-write-that-ends-reports-the-files-it-writes">12) flow-php/etl and the file adapters - a write that ends reports the files it writes</a></li>
+<li><a href="#13-flow-phpetl---distributionordered-takes-the-stage-of-the-step-it-splits">13) flow-php/etl - Distribution::ordered() takes the stage of the step it splits</a></li>
+<li><a href="#14-flow-phpetl---dataframeschema-runs-the-heartbeat">14) flow-php/etl - DataFrame::schema() runs the heartbeat</a></li>
 </ul>
 </li>
 <li><a href="#upgrading-from-046x-to-047x">Upgrading from 0.46.x to 0.47.x</a>
@@ -2054,6 +2072,368 @@ specific version to ensure a smooth upgrade process.</p>
 <tr>
 <td><code>TableDiff::__construct(...)</code>, <code>TableComparator::compare($source, $target)</code></td>
 <td>trailing <code>bool $dropIfExists = false</code></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="4-flow-phpetl---memory-units-are-binary-1024" href="#4-flow-phpetl---memory-units-are-binary-1024" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>4) <code>flow-php/etl</code> - memory units are binary (1024)</h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Unit::fromKb()</code>, <code>fromMb()</code>, <code>fromGb()</code> multiply by 1000</td>
+<td>multiply by 1024. <code>Unit::fromMb(64)</code> is 67 108 864 bytes</td>
+</tr>
+<tr>
+<td><code>Unit::inKb()</code>, <code>inMb()</code>, <code>inGb()</code> divide by 1000</td>
+<td>divide by 1024</td>
+</tr>
+<tr>
+<td><code>Unit::fromString('128M')</code> is 128 000 000 bytes</td>
+<td>134 217 728 bytes</td>
+</tr>
+<tr>
+<td><code>Unit::fromString('1GB')</code> is 1 000 bytes, <code>'500B'</code> is 500 000 bytes</td>
+<td>1 073 741 824 bytes and 500 bytes. <code>K/KB</code>, <code>M/MB</code>, <code>G/GB</code> are read in any case</td>
+</tr>
+<tr>
+<td><code>Unit::fromString('10TB')</code>, <code>'1.5G'</code> or <code>'M'</code> return a value</td>
+<td>throw <code>InvalidArgumentException</code></td>
+</tr>
+<tr>
+<td><code>hash_join()</code> broadcast limit defaults to 10 000 000 bytes</td>
+<td>10 485 760 bytes</td>
+</tr>
+<tr>
+<td><code>MemoryLimit::default()</code> is 1 000 000 000 bytes for a <code>memory_limit</code> of <code>-1</code></td>
+<td>1 073 741 824 bytes</td>
+</tr>
+<tr>
+<td><code>explain()</code> prints <code>Memory: 64 MB</code></td>
+<td><code>Memory: 64 MiB</code>, the same number</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="5-flow-phpetl---frameaccumulating-computes-every-frame-of-a-partition-in-one-call" href="#5-flow-phpetl---frameaccumulating-computes-every-frame-of-a-partition-in-one-call" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>5) <code>flow-php/etl</code> - <code>FrameAccumulating</code> computes every frame of a partition in one call</h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>FrameAccumulating::accumulator(): AggregatingFunction</code></td>
+<td><code>FrameAccumulating::frameValues(Rows $partition, array $bounds, Backend $backend, Progress $progress): array</code></td>
+</tr>
+<tr>
+<td><code>Sum::accumulator()</code>, <code>Average::accumulator()</code>, <code>Count::accumulator()</code></td>
+<td>removed</td>
+</tr>
+</tbody>
+</table>
+<p>A custom <code>FrameAccumulating</code> gets one <code>[start, end]</code> pair per row of the sorted partition, <code>[1, 0]</code> for an empty frame,
+and returns one value per pair.</p>
+<h3><a id="6-flow-phpetl---window-functions-take-a-progress" href="#6-flow-phpetl---window-functions-take-a-progress" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>6) <code>flow-php/etl</code> - window functions take a <code>Progress</code></h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>WindowFunction::values(Rows $partition, Backend $backend): array</code></td>
+<td><code>WindowFunction::values(Rows $partition, Backend $backend, Progress $progress): array</code></td>
+</tr>
+<tr>
+<td><code>FrameAccumulation::values(FrameAccumulating $function, Rows $partition, Backend $backend): array</code></td>
+<td><code>FrameAccumulation::values(FrameAccumulating $function, Rows $partition, Backend $backend, Progress $progress): array</code></td>
+</tr>
+<tr>
+<td>-</td>
+<td><code>NumericTotal::frames(array $values, array $bounds, bool $exact, Progress $progress): array</code></td>
+</tr>
+</tbody>
+</table>
+<p>A custom window function can call <code>$progress-&gt;advanced($rows)</code> once per partition. The call is optional.</p>
+<h3><a id="7-flow-phpcli-----config-returns-a-configbuilder" href="#7-flow-phpcli-----config-returns-a-configbuilder" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>7) <code>flow-php/cli</code> - <code>--config</code> returns a <code>ConfigBuilder</code></h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>return config_builder()-&gt;id('x')-&gt;build();</code></td>
+<td><code>return config_builder()-&gt;id('x');</code></td>
+</tr>
+<tr>
+<td><code>ConfigOption::get(): Config</code></td>
+<td><code>ConfigOption::get(): ConfigBuilder</code></td>
+</tr>
+<tr>
+<td><code>Flow\CLI\Loader\ProgressBarLoader</code></td>
+<td>removed, the commands use <code>console_heartbeat()</code> from <code>flow-php/symfony-console-bridge</code></td>
+</tr>
+<tr>
+<td><code>Flow\CLI\Style\FlowStyle::clear()</code></td>
+<td>removed</td>
+</tr>
+<tr>
+<td><code>file:analyze</code> progress bar on stdout</td>
+<td><code>tasks</code> on stderr, <code>log</code> lines off a terminal, also <code>file:convert</code>, <code>file:rows:count</code></td>
+</tr>
+<tr>
+<td><code>Heap Peak 40.9 MB</code> in the <code>file:analyze</code> and <code>pipeline:run</code> report</td>
+<td><code>Heap Peak 40.9 MiB</code>, the same for every memory row</td>
+</tr>
+<tr>
+<td><code>flow pipeline:run --config .flow.php pipeline.php</code></td>
+<td><code>flow pipeline:run pipeline.php</code>, the pipeline file configures its own frame</td>
+</tr>
+<tr>
+<td><code>--config</code> on <code>db:table:list</code>, <code>db:table:schema</code>, <code>schema:format</code></td>
+<td>removed, these commands never used it</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="8-flow-phpcli-flow-phpsymfony-telemetry-bundle-flow-phpsymfony-postgresql-bundle-flow-phpparquet-viewer---symfonyconsole-lower-bound-raised" href="#8-flow-phpcli-flow-phpsymfony-telemetry-bundle-flow-phpsymfony-postgresql-bundle-flow-phpparquet-viewer---symfonyconsole-lower-bound-raised" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>8) <code>flow-php/cli</code>, <code>flow-php/symfony-telemetry-bundle</code>, <code>flow-php/symfony-postgresql-bundle</code>, <code>flow-php/parquet-viewer</code> - <code>symfony/console</code> lower bound raised</h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&quot;symfony/console&quot;: &quot;^6.4 || ^7.4 || ^8.0&quot;</code></td>
+<td><code>&quot;symfony/console&quot;: &quot;^6.4.34 || ^7.4.6 || ^8.0.6&quot;</code></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="9-flow-phpetl---inference-takes-a-progress" href="#9-flow-phpetl---inference-takes-a-progress" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>9) <code>flow-php/etl</code> - inference takes a <code>Progress</code></h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>interface InfersSchema</code></td>
+<td><code>interface InfersSchema</code> with <code>reportInferenceTo(Progress $progress): void</code></td>
+</tr>
+<tr>
+<td><code>SchemaInferrer::infer(Sniffer $sniffer): Inferred</code></td>
+<td><code>SchemaInferrer::infer(Sniffer $sniffer, Progress $progress): Inferred</code></td>
+</tr>
+<tr>
+<td><code>Sniffer::sniff(int $unit, ?int $rowBudget): Sample</code></td>
+<td><code>Sniffer::sniff(int $unit, ?int $rowBudget, Progress $progress): Sample</code></td>
+</tr>
+<tr>
+<td><code>Sniffs::sniff(Sniffer $sniffer, int $units): ?array</code></td>
+<td><code>Sniffs::sniff(Sniffer $sniffer, int $units, Progress $progress): ?array</code></td>
+</tr>
+<tr>
+<td><code>ColumnTypes::sniff(array $names, iterable $rows, ?int $rowBudget, TypeNarrower $typer): self</code></td>
+<td><code>ColumnTypes::sniff(array $names, iterable $rows, ?int $rowBudget, TypeNarrower $typer, Progress $progress): self</code></td>
+</tr>
+<tr>
+<td><code>CSVOpenSource::sniff(array $names, ?int $rowBudget, TypeNarrower $typer): ColumnTypes</code></td>
+<td><code>CSVOpenSource::sniff(array $names, ?int $rowBudget, TypeNarrower $typer, Progress $progress): ColumnTypes</code></td>
+</tr>
+<tr>
+<td><code>flow_php</code> built for <code>FLOW_PHP_ABI</code> 2</td>
+<td>rebuild <code>flow_php</code>: <code>FLOW_PHP_ABI</code> / <code>FlowPhpExtension::ABI</code> 3, an older build is refused</td>
+</tr>
+</tbody>
+</table>
+<p>A custom <code>InfersSchema</code> extractor adds <code>reportInferenceTo()</code>, keeps the <code>Progress</code> it gets (a <code>VoidProgress</code> until then)
+and passes it to <code>SchemaInferrer::infer()</code>. A custom <code>Sniffer</code> or <code>CSVOpenSource</code> passes <code>$progress</code> to
+<code>ColumnTypes::sniff()</code>, or calls <code>advanced()</code> every <code>Progress::ROWS_PER_CALL</code> observed rows. A custom <code>Sniffs</code> hands
+<code>$progress</code> to the sniffs it runs.</p>
+<h3><a id="10-flow-phpetl---memory-limits-count-the-memory-an-operation-adds" href="#10-flow-phpetl---memory-limits-count-the-memory-an-operation-adds" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>10) <code>flow-php/etl</code> - memory limits count the memory an operation adds</h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>memoryLimit()</code> compared with the process memory</td>
+<td>compared with the memory the operation itself added; each live operation gets its own limit</td>
+</tr>
+<tr>
+<td><code>FLOW_MAX_MEMORY</code>: the default limit, compared with the process memory</td>
+<td>the default per-operation limit and, with a finite <code>memory_limit</code>, the process cap</td>
+</tr>
+<tr>
+<td>-</td>
+<td>with a finite <code>memory_limit</code>, the process over 70% of it (or <code>FLOW_MAX_MEMORY</code>) also spills, after the operation added <code>min(128 MiB, cap / 16)</code></td>
+</tr>
+<tr>
+<td><code>MemoryBudget::exceeded()</code> / <code>exceededWith()</code> compare the process memory with the limit</td>
+<td>compare the memory added since the budget started or since <code>released()</code> with the limit, and the process with the cap</td>
+</tr>
+<tr>
+<td><code>MemoryBudget::released()</code> calls <code>gc_mem_caches()</code></td>
+<td>only moves the baseline</td>
+</tr>
+<tr>
+<td><code>Flow\ETL\Runtime\MemoryLimit</code></td>
+<td><code>Flow\ETL\Values\Memory\MemoryLimit</code>, plus <code>processCap(): ?Unit</code></td>
+</tr>
+<tr>
+<td><code>MemoryLimit::default()</code> takes any <code>FLOW_MAX_MEMORY</code></td>
+<td>throws <code>InvalidArgumentException</code> for a value above a finite <code>memory_limit</code>, so the config build fails</td>
+</tr>
+<tr>
+<td><code>new MemoryBudget(Backend, Unit)</code></td>
+<td><code>new MemoryBudget(Backend, Unit $limit, ?Unit $processCap)</code> or <code>MemoryBudget::of(Backend, Unit)</code></td>
+</tr>
+<tr>
+<td><code>BucketingConfig::spilling(Backend)</code></td>
+<td><code>spilling(Backend, MemoryBudget)</code></td>
+</tr>
+<tr>
+<td><code>new SpillingRowsStorage(RowsStorage, Unit, Backend, BatchSize)</code>, <code>::$memoryLimit</code></td>
+<td><code>(RowsStorage, MemoryBudget, Backend, BatchSize)</code>, no <code>$memoryLimit</code></td>
+</tr>
+<tr>
+<td><code>new BoundedRead(Unit, Backend)</code></td>
+<td><code>new BoundedRead(MemoryBudget)</code></td>
+</tr>
+<tr>
+<td><code>new ExternalSort(array, Buckets, Buckets, RandomValueGenerator, Unit $memoryLimit, ...)</code>, <code>::$memoryLimit</code></td>
+<td>no <code>$memoryLimit</code>: the limit comes from the <code>MemoryBudget</code> passed to <code>sort()</code></td>
+</tr>
+<tr>
+<td><code>ExternalSort::sort(Generator, Backend, ?int)</code></td>
+<td><code>sort(Generator, Backend, MemoryBudget, ?int)</code></td>
+</tr>
+<tr>
+<td>-</td>
+<td>with a finite <code>memory_limit</code>, a sort whose working memory would pass the cap sorts and spills in runs that fit</td>
+</tr>
+<tr>
+<td><code>Backend</code> implementations</td>
+<td>implement <code>sortWorkingBytes(Rows $rows, array $columns): int</code></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="11-flow-phpetl---a-failed-run-ends-its-sources-first" href="#11-flow-phpetl---a-failed-run-ends-its-sources-first" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>11) <code>flow-php/etl</code> - a failed run ends its sources first</h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a failed run destroyed the generator of a source</td>
+<td>the failure is thrown at the <code>yield</code> of the source</td>
+</tr>
+<tr>
+<td>a <code>finally</code> around the <code>yield</code> ran late, after the caller's <code>catch</code></td>
+<td>it runs before the failure gets to the caller</td>
+</tr>
+<tr>
+<td>a <code>catch (Throwable)</code> around the <code>yield</code> saw only the source's failure</td>
+<td>it also gets the failures of later steps</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="12-flow-phpetl-and-the-file-adapters---a-write-that-ends-reports-the-files-it-writes" href="#12-flow-phpetl-and-the-file-adapters---a-write-that-ends-reports-the-files-it-writes" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>12) <code>flow-php/etl</code> and the file adapters - a write that ends reports the files it writes</h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Closure::closure(): void</code></td>
+<td><code>closure(Progress $progress): void</code></td>
+</tr>
+<tr>
+<td><code>FileWrite::closure(): void</code></td>
+<td><code>closure(Progress $progress): void</code></td>
+</tr>
+<tr>
+<td><code>FileCommit::commit(array $tasks): void</code></td>
+<td><code>commit(array $tasks, Progress $progress): void</code></td>
+</tr>
+<tr>
+<td><code>WorkbookManager::close(): void</code></td>
+<td><code>close(Progress $progress): void</code></td>
+</tr>
+</tbody>
+</table>
+<p>A custom <code>Closure</code> loader:</p>
+<p>Before:</p>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">public function closure(): void
+{
+    $this-&gt;client-&gt;flush();
+}
+</code></pre>
+<p>After:</p>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">use Flow\ETL\Foundation\Progress;
+
+public function closure(Progress $progress): void
+{
+    $this-&gt;client-&gt;flush();
+    $progress-&gt;busy();
+}
+</code></pre>
+<p><code>advanced(1)</code> counts a file that became visible at its target, <code>busy()</code> reports any other blocking call.</p>
+<p>Code that calls <code>FileCommit::commit()</code> outside a run passes <code>new VoidProgress()</code>.</p>
+<h3><a id="13-flow-phpetl---distributionordered-takes-the-stage-of-the-step-it-splits" href="#13-flow-phpetl---distributionordered-takes-the-stage-of-the-step-it-splits" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>13) <code>flow-php/etl</code> - <code>Distribution::ordered()</code> takes the stage of the step it splits</h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Distribution::ordered(array $order)</code></td>
+<td><code>Distribution::ordered(array $order, Progress $progress)</code></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="14-flow-phpetl---dataframeschema-runs-the-heartbeat" href="#14-flow-phpetl---dataframeschema-runs-the-heartbeat" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>14) <code>flow-php/etl</code> - <code>DataFrame::schema()</code> runs the heartbeat</h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DataFrame::schema()</code> never beats</td>
+<td>it beats during schema inference and once at its end</td>
+</tr>
+<tr>
+<td>a heartbeat failure never leaves <code>schema()</code></td>
+<td>a heartbeat that fails with <code>HeartbeatFailure::stop</code> throws its exception out of <code>schema()</code></td>
 </tr>
 </tbody>
 </table>
@@ -16395,6 +16775,13 @@ query that cannot run as a subquery (multi-statement, data-modifying CTE, <code>
               border-transparent text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-white/70 dark:hover:text-white dark:hover:bg-white/[0.04]"
        >
         HttpFoundation Telemetry
+    </a>
+</li>
+            <li>        <a href="/documentation/components/bridges/symfony-console-bridge"
+       class="block rounded-md px-2.5 py-1.5 text-sm transition-colors no-underline border-l-2
+              border-transparent text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-white/70 dark:hover:text-white dark:hover:bg-white/[0.04]"
+       >
+        Console Bridge
     </a>
 </li>
         </ul>

@@ -129,7 +129,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php"><a href="files/src-core-etl-src-flow-etl-planning-physical-plannednodes.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php">PlannedNodes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -176,9 +176,53 @@ schema refusal.</p>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_hostedBy">hostedBy()</a>
+    <span>
+                                &nbsp;: array&lt;int, <abbr title="array{\Flow\ETL\Planning\Logical\Node\Write, bool}">Write, bool}</abbr>&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_hosts">hosts()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_joined">joined()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>The nodes of a frame joined into this plan are planned apart, their stages with this plan&#039;s.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_of">of()</a>
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Planning-Physical-PlannedNode.html"><abbr title="\Flow\ETL\Planning\Physical\PlannedNode">PlannedNode</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_planJoinEach">planJoinEach()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_planRead">planRead()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_planWrite">planWrite()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Every stage is built in the order the plan is walked, which is the order a heartbeat lists them in.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_readStageOf">readStageOf()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a>|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -196,12 +240,24 @@ schema refusal.</p>
 <dd>Keeps the first refusal.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_stages">stages()</a>
+    <span>
+                                &nbsp;: <abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;<a href="classes/Flow-ETL-IO-Loader.html"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr></a>|<a href="classes/Flow-ETL-Operators-Transformer.html"><abbr title="\Flow\ETL\Operators\Transformer">Transformer</abbr></a>, <a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a>&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_steps">steps()</a>
     <span>
                                 &nbsp;: array&lt;int, <a href="classes/Flow-ETL-Planning-Physical-JoinStep.html"><abbr title="\Flow\ETL\Planning\Physical\JoinStep">JoinStep</abbr></a>|<a href="classes/Flow-ETL-IO-Loader.html"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr></a>|<a href="classes/Flow-ETL-Operators-Processor.html"><abbr title="\Flow\ETL\Operators\Processor">Processor</abbr></a>|<a href="classes/Flow-ETL-Operators-Transformer.html"><abbr title="\Flow\ETL\Operators\Transformer">Transformer</abbr></a>&gt;    </span>
 </dt>
 <dd>The steps a pipeline runs for $node: the bound ones, or the raw ones when any node of the plan refused a
 schema - a refusal is plan-wide, so every node answers the same way.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_writes">writes()</a>
+    <span>
+                                &nbsp;: <abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;<a href="classes/Flow-ETL-IO-Loader.html"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr></a>, <a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a>&gt;    </span>
+</dt>
 
     </dl>
 
@@ -231,20 +287,30 @@ schema - a refusal is plan-wide, so every node answers the same way.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php"><a href="files/src-core-etl-src-flow-etl-planning-physical-plannednodes.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php">PlannedNodes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Foundation-ProgressStages.html"><abbr title="\Flow\ETL\Foundation\ProgressStages">ProgressStages</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stages</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Foundation-VoidProgress.html"><abbr title="\Flow\ETL\Foundation\VoidProgress">VoidProgress</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$stages</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Foundation-ProgressStages.html"><abbr title="\Flow\ETL\Foundation\ProgressStages">ProgressStages</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-ETL-Foundation-VoidProgress.html"><abbr title="\Flow\ETL\Foundation\VoidProgress">VoidProgress</abbr></a>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
 
         
@@ -265,7 +331,7 @@ schema - a refusal is plan-wide, so every node answers the same way.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php"><a href="files/src-core-etl-src-flow-etl-planning-physical-plannednodes.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php">PlannedNodes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">166</span>
 
     </aside>
 
@@ -320,7 +386,7 @@ schema - a refusal is plan-wide, so every node answers the same way.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php"><a href="files/src-core-etl-src-flow-etl-planning-physical-plannednodes.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php">PlannedNodes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">173</span>
 
     </aside>
 
@@ -360,6 +426,151 @@ schema - a refusal is plan-wide, so every node answers the same way.</dd>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_hostedBy">
+        hostedBy()
+        <a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_hostedBy" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php"><a href="files/src-core-etl-src-flow-etl-planning-physical-plannednodes.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php">PlannedNodes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">85</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hostedBy</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Logical-Node.html"><abbr title="\Flow\ETL\Planning\Logical\Node">Node</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$host</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <abbr title="array{\Flow\ETL\Planning\Logical\Node\Write, bool}">Write, bool}</abbr>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$host</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Planning-Logical-Node.html"><abbr title="\Flow\ETL\Planning\Logical\Node">Node</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, <abbr title="array{\Flow\ETL\Planning\Logical\Node\Write, bool}">Write, bool}</abbr>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_hosts">
+        hosts()
+        <a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_hosts" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php"><a href="files/src-core-etl-src-flow-etl-planning-physical-plannednodes.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php">PlannedNodes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">77</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hosts</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Logical-Node.html"><abbr title="\Flow\ETL\Planning\Logical\Node">Node</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$host</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Logical-Node-Write.html"><abbr title="\Flow\ETL\Planning\Logical\Node\Write">Write</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$write</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$planHere</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$host</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Planning-Logical-Node.html"><abbr title="\Flow\ETL\Planning\Logical\Node">Node</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$write</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Planning-Logical-Node-Write.html"><abbr title="\Flow\ETL\Planning\Logical\Node\Write">Write</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$planHere</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_joined">
+        joined()
+        <a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_joined" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php"><a href="files/src-core-etl-src-flow-etl-planning-physical-plannednodes.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php">PlannedNodes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">139</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The nodes of a frame joined into this plan are planned apart, their stages with this plan&#039;s.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">joined</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_of">
         of()
         <a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_of" class="headerlink"><i class="fas fa-link"></i></a>
@@ -368,7 +579,7 @@ schema - a refusal is plan-wide, so every node answers the same way.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php"><a href="files/src-core-etl-src-flow-etl-planning-physical-plannednodes.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php">PlannedNodes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">181</span>
 
     </aside>
 
@@ -424,6 +635,194 @@ schema - a refusal is plan-wide, so every node answers the same way.</dd>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_planJoinEach">
+        planJoinEach()
+        <a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_planJoinEach" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php"><a href="files/src-core-etl-src-flow-etl-planning-physical-plannednodes.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php">PlannedNodes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">123</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">planJoinEach</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Operators-Transformer.html"><abbr title="\Flow\ETL\Operators\Transformer">Transformer</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$step</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$subject</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$step</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Operators-Transformer.html"><abbr title="\Flow\ETL\Operators\Transformer">Transformer</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$subject</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_planRead">
+        planRead()
+        <a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_planRead" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php"><a href="files/src-core-etl-src-flow-etl-planning-physical-plannednodes.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php">PlannedNodes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">149</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">planRead</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Logical-Node-Read.html"><abbr title="\Flow\ETL\Planning\Logical\Node\Read">Read</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$read</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$read</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Planning-Logical-Node-Read.html"><abbr title="\Flow\ETL\Planning\Logical\Node\Read">Read</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_planWrite">
+        planWrite()
+        <a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_planWrite" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php"><a href="files/src-core-etl-src-flow-etl-planning-physical-plannednodes.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php">PlannedNodes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">93</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Every stage is built in the order the plan is walked, which is the order a heartbeat lists them in.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">planWrite</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-IO-Loader.html"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$loader</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$loader</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-IO-Loader.html"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_readStageOf">
+        readStageOf()
+        <a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_readStageOf" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php"><a href="files/src-core-etl-src-flow-etl-planning-physical-plannednodes.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php">PlannedNodes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">161</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">readStageOf</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Logical-Node-Read.html"><abbr title="\Flow\ETL\Planning\Logical\Node\Read">Read</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$read</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$read</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Planning-Logical-Node-Read.html"><abbr title="\Flow\ETL\Planning\Logical\Node\Read">Read</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a>|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_refusal">
         refusal()
         <a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_refusal" class="headerlink"><i class="fas fa-link"></i></a>
@@ -432,7 +831,7 @@ schema - a refusal is plan-wide, so every node answers the same way.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php"><a href="files/src-core-etl-src-flow-etl-planning-physical-plannednodes.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php">PlannedNodes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">199</span>
 
     </aside>
 
@@ -471,7 +870,7 @@ schema - a refusal is plan-wide, so every node answers the same way.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php"><a href="files/src-core-etl-src-flow-etl-planning-physical-plannednodes.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php">PlannedNodes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">191</span>
 
     </aside>
 
@@ -508,6 +907,44 @@ schema - a refusal is plan-wide, so every node answers the same way.</dd>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_stages">
+        stages()
+        <a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_stages" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php"><a href="files/src-core-etl-src-flow-etl-planning-physical-plannednodes.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php">PlannedNodes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">131</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">stages</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;<a href="classes/Flow-ETL-IO-Loader.html"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr></a>|<a href="classes/Flow-ETL-Operators-Transformer.html"><abbr title="\Flow\ETL\Operators\Transformer">Transformer</abbr></a>, <a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;<a href="classes/Flow-ETL-IO-Loader.html"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr></a>|<a href="classes/Flow-ETL-Operators-Transformer.html"><abbr title="\Flow\ETL\Operators\Transformer">Transformer</abbr></a>, <a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_steps">
         steps()
         <a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_steps" class="headerlink"><i class="fas fa-link"></i></a>
@@ -516,7 +953,7 @@ schema - a refusal is plan-wide, so every node answers the same way.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php"><a href="files/src-core-etl-src-flow-etl-planning-physical-plannednodes.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php">PlannedNodes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">212</span>
 
     </aside>
 
@@ -568,6 +1005,44 @@ schema - a refusal is plan-wide, so every node answers the same way.</p>
             </section>
 
 </article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_writes">
+        writes()
+        <a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_writes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php"><a href="files/src-core-etl-src-flow-etl-planning-physical-plannednodes.html"><abbr title="src/core/etl/src/Flow/ETL/Planning/Physical/PlannedNodes.php">PlannedNodes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">118</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">writes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;<a href="classes/Flow-ETL-IO-Loader.html"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr></a>, <a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\SplObjectStorage">SplObjectStorage</abbr>&lt;<a href="classes/Flow-ETL-IO-Loader.html"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr></a>, <a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a>&gt;</span>
+            </section>
+
+</article>
             </section>
 
         
@@ -593,10 +1068,19 @@ schema - a refusal is plan-wide, so every node answers the same way.</p>
                                             <li class=""><a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_add">add()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_has">has()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_hostedBy">hostedBy()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_hosts">hosts()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_joined">joined()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_of">of()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_planJoinEach">planJoinEach()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_planRead">planRead()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_planWrite">planWrite()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_readStageOf">readStageOf()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_refusal">refusal()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_refuse">refuse()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_stages">stages()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_steps">steps()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Planning-Physical-PlannedNodes.html#method_writes">writes()</a></li>
                                     </ul>
             </li>
                     </ul>

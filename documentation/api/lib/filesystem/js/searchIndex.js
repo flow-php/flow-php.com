@@ -1481,6 +1481,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Path.html#method_isPattern"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Path\u003A\u003Alocation\u0028\u0029",
+            "name": "location",
+            "summary": "The\u0020uri\u0020without\u0020user,\u0020password,\u0020port,\u0020query\u0020and\u0020fragment,\u0020safe\u0020to\u0020print.",
+            "url": "classes/Flow-Filesystem-Path.html#method_location"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Path\u003A\u003Amatches\u0028\u0029",
             "name": "matches",
             "summary": "",

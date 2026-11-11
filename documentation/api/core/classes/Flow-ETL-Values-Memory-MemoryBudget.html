@@ -129,7 +129,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php"><a href="files/src-core-etl-src-flow-etl-values-memory-memorybudget.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php">MemoryBudget.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
     </aside>
 
@@ -146,6 +146,25 @@
 
 
 
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#constant_FLOOR_CAP_BYTES">FLOOR_CAP_BYTES</a>
+    <span>
+        &nbsp;: int&nbsp;= 134217728                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#constant_FLOOR_DIVISOR">FLOOR_DIVISOR</a>
+    <span>
+        &nbsp;: int&nbsp;= 16                            </span>
+</dt>
+
+    </dl>
 
 
 <h4 id="toc-properties">
@@ -158,6 +177,12 @@
     <a class="" href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#property_limit">$limit</a>
     <span>
                         &nbsp;: <a href="classes/Flow-ETL-Values-Memory-Unit.html"><abbr title="\Flow\ETL\Values\Memory\Unit">Unit</abbr></a>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#property_processCap">$processCap</a>
+    <span>
+                        &nbsp;: <a href="classes/Flow-ETL-Values-Memory-Unit.html"><abbr title="\Flow\ETL\Values\Memory\Unit">Unit</abbr></a>|null            </span>
 </dt>
 
     </dl>
@@ -175,6 +200,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#method_crossesCapWith">crossesCapWith()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#method_exceeded">exceeded()</a>
     <span>
                                 &nbsp;: bool    </span>
@@ -187,17 +218,102 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#method_floor">floor()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#method_of">of()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#method_released">released()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>After a spill freed its buffer: hands the memory PHP keeps cached back to the OS.</dd>
+<dd>After a spill freed its buffer: growth is measured from here.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#method_remaining">remaining()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
 
     </dl>
 
 
 
         
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_FLOOR_CAP_BYTES">
+        FLOOR_CAP_BYTES
+        <a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#constant_FLOOR_CAP_BYTES" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php"><a href="files/src-core-etl-src-flow-etl-values-memory-memorybudget.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php">MemoryBudget.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">14</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">FLOOR_CAP_BYTES</span>
+    = <span class="phpdocumentor-signature__default-value">134217728</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_FLOOR_DIVISOR">
+        FLOOR_DIVISOR
+        <a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#constant_FLOOR_DIVISOR" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php"><a href="files/src-core-etl-src-flow-etl-values-memory-memorybudget.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php">MemoryBudget.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">16</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">FLOOR_DIVISOR</span>
+    = <span class="phpdocumentor-signature__default-value">16</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+            </section>
 
         
     <section class="phpdocumentor-properties">
@@ -223,7 +339,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php"><a href="files/src-core-etl-src-flow-etl-values-memory-memorybudget.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php">MemoryBudget.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -233,6 +349,43 @@
         <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__type"><a href="classes/Flow-ETL-Values-Memory-Unit.html"><abbr title="\Flow\ETL\Values\Memory\Unit">Unit</abbr></a></span>
     <span class="phpdocumentor-signature__name">$limit</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                -read-only                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_processCap">
+        $processCap
+        <a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#property_processCap" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php"><a href="files/src-core-etl-src-flow-etl-values-memory-memorybudget.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php">MemoryBudget.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">25</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Flow-ETL-Values-Memory-Unit.html"><abbr title="\Flow\ETL\Values\Memory\Unit">Unit</abbr></a>|null</span>
+    <span class="phpdocumentor-signature__name">$processCap</span>
     </code>
 
     
@@ -265,14 +418,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php"><a href="files/src-core-etl-src-flow-etl-values-memory-memorybudget.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php">MemoryBudget.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Column-Backend.html"><abbr title="\Flow\ETL\Values\Column\Backend">Backend</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$backend</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Memory-Unit.html"><abbr title="\Flow\ETL\Values\Memory\Unit">Unit</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Column-Backend.html"><abbr title="\Flow\ETL\Values\Column\Backend">Backend</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$backend</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Memory-Unit.html"><abbr title="\Flow\ETL\Values\Memory\Unit">Unit</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Memory-Unit.html"><abbr title="\Flow\ETL\Values\Memory\Unit">Unit</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$processCap</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -294,6 +447,13 @@
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$processCap</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Memory-Unit.html"><abbr title="\Flow\ETL\Values\Memory\Unit">Unit</abbr></a>|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
             </dl>
 
     
@@ -301,6 +461,54 @@
         
     
     
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_crossesCapWith">
+        crossesCapWith()
+        <a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#method_crossesCapWith" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php"><a href="files/src-core-etl-src-flow-etl-values-memory-memorybudget.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php">MemoryBudget.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">70</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">crossesCapWith</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bytes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$bytes</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -316,7 +524,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php"><a href="files/src-core-etl-src-flow-etl-values-memory-memorybudget.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php">MemoryBudget.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -354,7 +562,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php"><a href="files/src-core-etl-src-flow-etl-values-memory-memorybudget.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php">MemoryBudget.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -394,6 +602,99 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_floor">
+        floor()
+        <a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#method_floor" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php"><a href="files/src-core-etl-src-flow-etl-values-memory-memorybudget.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php">MemoryBudget.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">78</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">floor</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_of">
+        of()
+        <a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#method_of" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php"><a href="files/src-core-etl-src-flow-etl-values-memory-memorybudget.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php">MemoryBudget.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">33</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">of</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Column-Backend.html"><abbr title="\Flow\ETL\Values\Column\Backend">Backend</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$backend</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Memory-Unit.html"><abbr title="\Flow\ETL\Values\Memory\Unit">Unit</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$backend</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Column-Backend.html"><abbr title="\Flow\ETL\Values\Column\Backend">Backend</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$limit</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Memory-Unit.html"><abbr title="\Flow\ETL\Values\Memory\Unit">Unit</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_released">
         released()
         <a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#method_released" class="headerlink"><i class="fas fa-link"></i></a>
@@ -402,11 +703,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php"><a href="files/src-core-etl-src-flow-etl-values-memory-memorybudget.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php">MemoryBudget.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">After a spill freed its buffer: hands the memory PHP keeps cached back to the OS.</p>
+        <p class="phpdocumentor-summary">After a spill freed its buffer: growth is measured from here.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -423,6 +724,44 @@
     
     
 </article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_remaining">
+        remaining()
+        <a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#method_remaining" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php"><a href="files/src-core-etl-src-flow-etl-values-memory-memorybudget.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Memory/MemoryBudget.php">MemoryBudget.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">56</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">remaining</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
+</article>
             </section>
 
         
@@ -437,15 +776,24 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#toc-constants">Constants</a></li>
                                                             <li><a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#toc-properties">Properties</a></li>
                                                             <li><a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#constant_FLOOR_CAP_BYTES">FLOOR_CAP_BYTES</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#constant_FLOOR_DIVISOR">FLOOR_DIVISOR</a></li>
+                                            </ul>
+                </li>
             
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#property_limit">$limit</a></li>
+                                                    <li class=""><a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#property_processCap">$processCap</a></li>
                                             </ul>
                 </li>
             
@@ -453,9 +801,13 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#method_crossesCapWith">crossesCapWith()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#method_exceeded">exceeded()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#method_exceededWith">exceededWith()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#method_floor">floor()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#method_of">of()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#method_released">released()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html#method_remaining">remaining()</a></li>
                                     </ul>
             </li>
                     </ul>

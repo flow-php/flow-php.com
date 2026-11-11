@@ -128,7 +128,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Functions/NumericTotal.php"><a href="files/src-core-etl-src-flow-etl-functions-numerictotal.html"><abbr title="src/core/etl/src/Flow/ETL/Functions/NumericTotal.php">NumericTotal.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
@@ -186,6 +186,13 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Functions-NumericTotal.html#method_frames">frames()</a>
+    <span>
+                                &nbsp;: array{sums: list<null|float|int>, counts: list<int>}    </span>
+</dt>
+<dd>Per frame, the total aggregate() builds from that frame&#039;s rows.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Functions-NumericTotal.html#method_merge">merge()</a>
     <span>
                                 &nbsp;: void    </span>
@@ -239,7 +246,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Functions/NumericTotal.php"><a href="files/src-core-etl-src-flow-etl-functions-numerictotal.html"><abbr title="src/core/etl/src/Flow/ETL/Functions/NumericTotal.php">NumericTotal.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -281,7 +288,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Functions/NumericTotal.php"><a href="files/src-core-etl-src-flow-etl-functions-numerictotal.html"><abbr title="src/core/etl/src/Flow/ETL/Functions/NumericTotal.php">NumericTotal.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
@@ -325,7 +332,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Functions/NumericTotal.php"><a href="files/src-core-etl-src-flow-etl-functions-numerictotal.html"><abbr title="src/core/etl/src/Flow/ETL/Functions/NumericTotal.php">NumericTotal.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 
     </aside>
 
@@ -376,7 +383,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Functions/NumericTotal.php"><a href="files/src-core-etl-src-flow-etl-functions-numerictotal.html"><abbr title="src/core/etl/src/Flow/ETL/Functions/NumericTotal.php">NumericTotal.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">127</span>
 
     </aside>
 
@@ -404,6 +411,82 @@
         class="phpdocumentor-element
             -method
             -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_frames">
+        frames()
+        <a href="classes/Flow-ETL-Functions-NumericTotal.html#method_frames" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Functions/NumericTotal.php"><a href="files/src-core-etl-src-flow-etl-functions-numerictotal.html"><abbr title="src/core/etl/src/Flow/ETL/Functions/NumericTotal.php">NumericTotal.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">51</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Per frame, the total aggregate() builds from that frame&#039;s rows.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">frames</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, array{0: int, 1: int}&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bounds</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exact</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$progress</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{sums: list<null|float|int>, counts: list<int>}</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$values</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$bounds</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, array{0: int, 1: int}&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>inclusive indexes into $values; [1, 0] is an empty frame</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$exact</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$progress</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array{sums: list<null|float|int>, counts: list<int>}</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>one sum and one count per bound</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_merge">
@@ -414,7 +497,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Functions/NumericTotal.php"><a href="files/src-core-etl-src-flow-etl-functions-numerictotal.html"><abbr title="src/core/etl/src/Flow/ETL/Functions/NumericTotal.php">NumericTotal.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">86</span>
+    <span class="phpdocumentor-element-found-in__line">135</span>
 
     </aside>
 
@@ -458,7 +541,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Functions/NumericTotal.php"><a href="files/src-core-etl-src-flow-etl-functions-numerictotal.html"><abbr title="src/core/etl/src/Flow/ETL/Functions/NumericTotal.php">NumericTotal.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">106</span>
+    <span class="phpdocumentor-element-found-in__line">155</span>
 
     </aside>
 
@@ -496,7 +579,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Functions/NumericTotal.php"><a href="files/src-core-etl-src-flow-etl-functions-numerictotal.html"><abbr title="src/core/etl/src/Flow/ETL/Functions/NumericTotal.php">NumericTotal.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -534,7 +617,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Functions/NumericTotal.php"><a href="files/src-core-etl-src-flow-etl-functions-numerictotal.html"><abbr title="src/core/etl/src/Flow/ETL/Functions/NumericTotal.php">NumericTotal.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">163</span>
 
     </aside>
 
@@ -590,6 +673,7 @@
                                             <li class=""><a href="classes/Flow-ETL-Functions-NumericTotal.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Functions-NumericTotal.html#method_aggregate">aggregate()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Functions-NumericTotal.html#method_count">count()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Functions-NumericTotal.html#method_frames">frames()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Functions-NumericTotal.html#method_merge">merge()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Functions-NumericTotal.html#method_partial">partial()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Functions-NumericTotal.html#method_partialType">partialType()</a></li>

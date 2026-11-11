@@ -130,7 +130,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Loader/File/FileCommit.php"><a href="files/src-core-etl-src-flow-etl-io-loader-file-filecommit.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Loader/File/FileCommit.php">FileCommit.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -194,6 +194,19 @@ the stale files the moved ones replace, and the temporary output goes. A move th
 in place: a failed commit duplicates, it never loses. A task whose result never arrived commits nothing.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-IO-Loader-File-FileCommit.html#method_location">location()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-IO-Loader-File-FileCommit.html#method_locationOf">locationOf()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>The directory the files of $destination land in: the static part of a pattern, the parent of a plain file.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-IO-Loader-File-FileCommit.html#method_open">open()</a>
     <span>
                                 &nbsp;: <abbr title="\Flow\Filesystem\DestinationStream">DestinationStream</abbr>    </span>
@@ -235,7 +248,7 @@ files, in place otherwise (an Append beside an existing file gets the run in its
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Loader/File/FileCommit.php"><a href="files/src-core-etl-src-flow-etl-io-loader-file-filecommit.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Loader/File/FileCommit.php">FileCommit.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -335,7 +348,7 @@ a parallel one)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Loader/File/FileCommit.php"><a href="files/src-core-etl-src-flow-etl-io-loader-file-filecommit.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Loader/File/FileCommit.php">FileCommit.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">130</span>
+    <span class="phpdocumentor-element-found-in__line">145</span>
 
     </aside>
 
@@ -385,7 +398,7 @@ file and what it created in place. The first close failure is rethrown after.</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Loader/File/FileCommit.php"><a href="files/src-core-etl-src-flow-etl-io-loader-file-filecommit.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Loader/File/FileCommit.php">FileCommit.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">132</span>
 
     </aside>
 
@@ -450,7 +463,7 @@ file and what it created in place. The first close failure is rethrown after.</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Loader/File/FileCommit.php"><a href="files/src-core-etl-src-flow-etl-io-loader-file-filecommit.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Loader/File/FileCommit.php">FileCommit.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
@@ -550,7 +563,7 @@ file and what it created in place. The first close failure is rethrown after.</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Loader/File/FileCommit.php"><a href="files/src-core-etl-src-flow-etl-io-loader-file-filecommit.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Loader/File/FileCommit.php">FileCommit.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">162</span>
+    <span class="phpdocumentor-element-found-in__line">179</span>
 
     </aside>
 
@@ -560,12 +573,14 @@ in place: a failed commit duplicates, it never loses. A task whose result never 
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">commit</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, int&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tasks</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">commit</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, int&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tasks</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$progress</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>$progress counts each moved file and is busy after every other file operation.</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -576,6 +591,13 @@ in place: a failed commit duplicates, it never loses. A task whose result never 
                     <section class="phpdocumentor-description"><p>the indices of the tasks whose results arrived</p>
 </section>
 
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$progress</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
             </dd>
             </dl>
 
@@ -605,6 +627,93 @@ in place: a failed commit duplicates, it never loses. A task whose result never 
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_location">
+        location()
+        <a href="classes/Flow-ETL-IO-Loader-File-FileCommit.html#method_location" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Loader/File/FileCommit.php"><a href="files/src-core-etl-src-flow-etl-io-loader-file-filecommit.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Loader/File/FileCommit.php">FileCommit.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">216</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">location</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_locationOf">
+        locationOf()
+        <a href="classes/Flow-ETL-IO-Loader-File-FileCommit.html#method_locationOf" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Loader/File/FileCommit.php"><a href="files/src-core-etl-src-flow-etl-io-loader-file-filecommit.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Loader/File/FileCommit.php">FileCommit.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">115</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The directory the files of $destination land in: the static part of a pattern, the parent of a plain file.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">locationOf</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$destination</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$destination</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Filesystem\Path">Path</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_open">
         open()
         <a href="classes/Flow-ETL-IO-Loader-File-FileCommit.html#method_open" class="headerlink"><i class="fas fa-link"></i></a>
@@ -613,7 +722,7 @@ in place: a failed commit duplicates, it never loses. A task whose result never 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Loader/File/FileCommit.php"><a href="files/src-core-etl-src-flow-etl-io-loader-file-filecommit.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Loader/File/FileCommit.php">FileCommit.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">205</span>
+    <span class="phpdocumentor-element-found-in__line">229</span>
 
     </aside>
 
@@ -677,7 +786,7 @@ files, in place otherwise (an Append beside an existing file gets the run in its
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Loader/File/FileCommit.php"><a href="files/src-core-etl-src-flow-etl-io-loader-file-filecommit.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Loader/File/FileCommit.php">FileCommit.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">232</span>
+    <span class="phpdocumentor-element-found-in__line">256</span>
 
     </aside>
 
@@ -738,6 +847,8 @@ files, in place otherwise (an Append beside an existing file gets the run in its
                                             <li class=""><a href="classes/Flow-ETL-IO-Loader-File-FileCommit.html#method_admit">admit()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Loader-File-FileCommit.html#method_admitted">admitted()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Loader-File-FileCommit.html#method_commit">commit()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-IO-Loader-File-FileCommit.html#method_location">location()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-IO-Loader-File-FileCommit.html#method_locationOf">locationOf()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Loader-File-FileCommit.html#method_open">open()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Loader-File-FileCommit.html#method_task">task()</a></li>
                                     </ul>

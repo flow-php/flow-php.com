@@ -406,31 +406,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-CLI-Formatter-ValueFormatter.html#method_format"
         },                {
-            "fqsen": "\\Flow\\CLI\\Loader\\ProgressBarLoader",
-            "name": "ProgressBarLoader",
-            "summary": "",
-            "url": "classes/Flow-CLI-Loader-ProgressBarLoader.html"
-        },                {
-            "fqsen": "\\Flow\\CLI\\Loader\\ProgressBarLoader\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-CLI-Loader-ProgressBarLoader.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\CLI\\Loader\\ProgressBarLoader\u003A\u003Aload\u0028\u0029",
-            "name": "load",
-            "summary": "",
-            "url": "classes/Flow-CLI-Loader-ProgressBarLoader.html#method_load"
-        },                {
-            "fqsen": "\\Flow\\CLI\\Loader\\ProgressBarLoader\u003A\u003AfromDescription\u0028\u0029",
-            "name": "fromDescription",
-            "summary": "",
-            "url": "classes/Flow-CLI-Loader-ProgressBarLoader.html#method_fromDescription"
-        },                {
-            "fqsen": "\\Flow\\CLI\\Loader\\ProgressBarLoader\u003A\u003Adescribe\u0028\u0029",
-            "name": "describe",
-            "summary": "",
-            "url": "classes/Flow-CLI-Loader-ProgressBarLoader.html#method_describe"
-        },                {
             "fqsen": "\\Flow\\CLI\\Options\\ConfigOption",
             "name": "ConfigOption",
             "summary": "",
@@ -746,11 +721,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-CLI-Style-FlowStyle.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\CLI\\Style\\FlowStyle\u003A\u003Aclear\u0028\u0029",
-            "name": "clear",
-            "summary": "",
-            "url": "classes/Flow-CLI-Style-FlowStyle.html#method_clear"
-        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
@@ -785,11 +755,6 @@ Search.appendIndex(
             "name": "Formatter",
             "summary": "",
             "url": "namespaces/flow-cli-formatter.html"
-        },                {
-            "fqsen": "\\Flow\\CLI\\Loader",
-            "name": "Loader",
-            "summary": "",
-            "url": "namespaces/flow-cli-loader.html"
         },                {
             "fqsen": "\\Flow\\CLI\\Options",
             "name": "Options",

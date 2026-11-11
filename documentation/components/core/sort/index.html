@@ -163,7 +163,7 @@
         "@lezer/highlight": "/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js",
         "/assets/wasm/mago/mago_wasm_bg.js": "/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js",
         "crelt": "/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js",
-        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-2e8376fcf75350e645437c7d620fb2e0.js",
+        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-77a0b5286d9193903a419f70217f76a7.js",
         "@fontsource-variable/cabin/index.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2F%40fontsource-variable%2Fcabin%2Findex.min-2fd942a10b44e40a5f63d90a3479e0ee.css%22%7D%29%29",
         "prismjs/themes/prism.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2Fprismjs%2Fthemes%2Fprism.min-1698e178d1bb208a059f63cb8dcc0517.css%22%7D%29%29",
         "prismjs/themes/prism-okaidia.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2Fprismjs%2Fthemes%2Fprism-okaidia.min-08069b61612f4d092d8705c78d4e814b.css%22%7D%29%29",
@@ -261,7 +261,7 @@
 <link rel="modulepreload" href="/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js">
 <link rel="modulepreload" href="/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js">
 <link rel="modulepreload" href="/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js">
-<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-2e8376fcf75350e645437c7d620fb2e0.js">
+<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-77a0b5286d9193903a419f70217f76a7.js">
 <script type="module">import 'app';</script>
     </head>
 <body class="scroll-smooth bg-[#e8eef7] text-slate-900 dark:bg-black dark:text-white" data-environment="prod">
@@ -1118,6 +1118,13 @@
         HttpFoundation Telemetry
     </a>
 </li>
+            <li>        <a href="/documentation/components/bridges/symfony-console-bridge"
+       class="block rounded-md px-2.5 py-1.5 text-sm transition-colors no-underline border-l-2
+              border-transparent text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-white/70 dark:hover:text-white dark:hover:bg-white/[0.04]"
+       >
+        Console Bridge
+    </a>
+</li>
         </ul>
     </div>
 
@@ -1559,13 +1566,10 @@ data_frame()
 <h2><a id="sort-algorithm" href="#sort-algorithm" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Sort Algorithm</h2>
 <p>Configure the sort algorithm through <code>config_builder()-&gt;sort()</code>. All options are on the builder of the algorithm:</p>
 <ul>
-<li><code>external_sort()</code>: the default. It sorts in memory while the buffered rows stay under its memory limit. After the
-limit, it spills each sorted run as a bucket through a <code>RowsStorage</code>.
-<a href="/documentation/components/core/join">Join</a> and
-<a href="/documentation/components/core/group-by">group by</a> use the same abstraction. Then it k-way merges the runs back
-into one sorted stream. The default memory limit is <code>FLOW_MAX_MEMORY</code>. Without it, the limit is 70% of the
-<code>memory_limit</code> of PHP, or 1 GB for a <code>memory_limit</code> of <code>-1</code>. The limit applies to the full process, so a sort and a
-join in one pipeline stay under it together.</li>
+<li><code>external_sort()</code>: the default. It sorts in memory while it stays under its <a href="#memory-limit">memory limit</a>. After the
+limit, it spills each sorted run as a bucket through a <code>RowsStorage</code>. <a href="/documentation/components/core/join">Join</a>
+and <a href="/documentation/components/core/group-by">group by</a> use the same abstraction. Then it k-way merges the runs
+back into one sorted stream.</li>
 <li><code>memory_sort()</code>: buffers the full dataset and sorts it in one pass. It is the fastest, but everything must fit in
 RAM. It has no options.</li>
 </ul>
@@ -1607,8 +1611,8 @@ data_frame(
     config_builder()
         -&gt;sort(
             external_sort()
-                -&gt;memoryLimit(Unit::fromMb(256))  // process memory past which sorted runs are spilled
-                -&gt;bucketsCount(100)               // how many runs are merged at once (merge fan-in)
+                -&gt;memoryLimit(Unit::fromMb(256))  // memory the sort adds before sorted runs are spilled
+                -&gt;bucketsCount(100)               // the most runs merged at once (at least 2); under a tight memory limit the merge opens fewer
                 -&gt;batchSize(1000)                 // rows per output batch
         )
 )
@@ -1621,6 +1625,20 @@ the sorted runs and the runs that the merge writes.</p>
 <p><code>sortBy()</code> followed by <code>limit(n)</code> keeps only the top <code>n</code> rows while it reads. After the same memory limit, it gives
 the rows that it kept and the rest of the stream to the external sort. The merge of the external sort stops after <code>n</code>
 rows.</p>
+<h2><a id="memory-limit" href="#memory-limit" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Memory limit</h2>
+<p><code>memoryLimit()</code> counts only the memory an operation adds after it starts: a sort, group by or repartition after its
+first input batch, a join when it begins. Each live operation gets its own limit. The limit and the process cap
+compare live memory, <code>memory_get_usage()</code> plus native backend bytes.</p>
+<ul>
+<li>The default is <code>FLOW_MAX_MEMORY</code>, else 70% of the <code>memory_limit</code> of PHP, or 1 GiB for a <code>memory_limit</code> of <code>-1</code>.</li>
+<li>With a finite <code>memory_limit</code>, the process cap is 70% of it, or <code>FLOW_MAX_MEMORY</code>. A <code>FLOW_MAX_MEMORY</code> above
+<code>memory_limit</code> throws when the config is built.</li>
+<li>A process over its cap also makes the operation spill once it added <code>min(128 MiB, cap / 16)</code>, and each sorted run
+then takes up to that floor instead of one batch. Close to <code>memory_limit</code>, that floor can still pass it.</li>
+<li>A sort that would take the process past the cap spills in smaller runs.</li>
+<li>With <code>memory_limit = -1</code> there is no process cap, so k operations running at once can use k x the limit. Set a finite
+<code>memory_limit</code>, or a lower <code>memoryLimit()</code>, to bound it.</li>
+</ul>
 <h2><a id="overriding-the-algorithm-for-one-sort" href="#overriding-the-algorithm-for-one-sort" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Overriding the algorithm for one sort</h2>
 <p><code>sortBy()</code> takes an optional second argument. One sort can therefore use a different algorithm than the
 configuration. All other steps in the pipeline keep the configured default:</p>
@@ -1966,6 +1984,13 @@ data_frame()
               border-transparent text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-white/70 dark:hover:text-white dark:hover:bg-white/[0.04]"
        >
         HttpFoundation Telemetry
+    </a>
+</li>
+            <li>        <a href="/documentation/components/bridges/symfony-console-bridge"
+       class="block rounded-md px-2.5 py-1.5 text-sm transition-colors no-underline border-l-2
+              border-transparent text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-white/70 dark:hover:text-white dark:hover:bg-white/[0.04]"
+       >
+        Console Bridge
     </a>
 </li>
         </ul>

@@ -118,7 +118,7 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <a href="classes/Flow-ETL-IO-Extractor.html"><abbr title="\Flow\ETL\IO\Extractor">Extractor</abbr></a>,                             <a href="classes/Flow-ETL-IO-Extractor-Refreshable.html"><abbr title="\Flow\ETL\IO\Extractor\Refreshable">Refreshable</abbr></a>                    </span>
+                            <a href="classes/Flow-ETL-IO-Extractor.html"><abbr title="\Flow\ETL\IO\Extractor">Extractor</abbr></a>,                             <a href="classes/Flow-ETL-IO-Extractor-Refreshable.html"><abbr title="\Flow\ETL\IO\Extractor\Refreshable">Refreshable</abbr></a>,                             <a href="classes/Flow-ETL-IO-Extractor-InfersSchema.html"><abbr title="\Flow\ETL\IO\Extractor\InfersSchema">InfersSchema</abbr></a>                    </span>
     
     </h2>
 
@@ -132,7 +132,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/ChainExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-chainextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/ChainExtractor.php">ChainExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
@@ -150,7 +150,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Extractor.html"><abbr title="\Flow\ETL\IO\Extractor">Extractor</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Extractor-Refreshable.html"><abbr title="\Flow\ETL\IO\Extractor\Refreshable">Refreshable</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Extractor.html"><abbr title="\Flow\ETL\IO\Extractor">Extractor</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Extractor-Refreshable.html"><abbr title="\Flow\ETL\IO\Extractor\Refreshable">Refreshable</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Extractor-InfersSchema.html"><abbr title="\Flow\ETL\IO\Extractor\InfersSchema">InfersSchema</abbr></a></dt>    </dl>
 
 
 
@@ -181,6 +181,12 @@ extractor&#039;s own batchSize() rows; the size is chosen by the extractor and M
 batches. Consumers must not assume a minimum size, a constant size, or a non-empty batch.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-IO-Extractor-ChainExtractor.html#method_inferSchema">inferSchema()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-IO-Extractor-ChainExtractor.html#method_isRepeatable">isRepeatable()</a>
     <span>
                                 &nbsp;: bool    </span>
@@ -196,6 +202,12 @@ reads.</dd>
 </dt>
 <dd>Drops the listing and everything derived from it, so the next run lists the source again. A run calls it when
 it ends; a plan that does not run (explain(), schema()) keeps what it listed for the run that follows.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-IO-Extractor-ChainExtractor.html#method_reportInferenceTo">reportInferenceTo()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-IO-Extractor-ChainExtractor.html#method_schema">schema()</a>
@@ -251,7 +263,7 @@ instead of its own description, and values are cast to fit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/ChainExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-chainextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/ChainExtractor.php">ChainExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -295,7 +307,7 @@ instead of its own description, and values are cast to fit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/ChainExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-chainextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/ChainExtractor.php">ChainExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -345,6 +357,54 @@ batches. Consumers must not assume a minimum size, a constant size, or a non-emp
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_inferSchema">
+        inferSchema()
+        <a href="classes/Flow-ETL-IO-Extractor-ChainExtractor.html#method_inferSchema" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/ChainExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-chainextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/ChainExtractor.php">ChainExtractor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">79</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">inferSchema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-IO-Inference-SchemaInferenceBuilder.html"><abbr title="\Flow\ETL\IO\Inference\SchemaInferenceBuilder">SchemaInferenceBuilder</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$builder</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$builder</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-IO-Inference-SchemaInferenceBuilder.html"><abbr title="\Flow\ETL\IO\Inference\SchemaInferenceBuilder">SchemaInferenceBuilder</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_isRepeatable">
         isRepeatable()
         <a href="classes/Flow-ETL-IO-Extractor-ChainExtractor.html#method_isRepeatable" class="headerlink"><i class="fas fa-link"></i></a>
@@ -353,7 +413,7 @@ batches. Consumers must not assume a minimum size, a constant size, or a non-emp
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/ChainExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-chainextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/ChainExtractor.php">ChainExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -394,7 +454,7 @@ reads.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/ChainExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-chainextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/ChainExtractor.php">ChainExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -422,6 +482,50 @@ it ends; a plan that does not run (explain(), schema()) keeps what it listed for
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_reportInferenceTo">
+        reportInferenceTo()
+        <a href="classes/Flow-ETL-IO-Extractor-ChainExtractor.html#method_reportInferenceTo" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/ChainExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-chainextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/ChainExtractor.php">ChainExtractor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">90</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">reportInferenceTo</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$progress</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$progress</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_schema">
         schema()
         <a href="classes/Flow-ETL-IO-Extractor-ChainExtractor.html#method_schema" class="headerlink"><i class="fas fa-link"></i></a>
@@ -430,7 +534,7 @@ it ends; a plan that does not run (explain(), schema()) keeps what it listed for
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/ChainExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-chainextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/ChainExtractor.php">ChainExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
@@ -474,7 +578,7 @@ what it sniffs, as CSVExtractor and ArrayExtractor do.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/ChainExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-chainextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/ChainExtractor.php">ChainExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">118</span>
 
     </aside>
 
@@ -522,7 +626,7 @@ ANALYZE), never run the query.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Extractor/ChainExtractor.php"><a href="files/src-core-etl-src-flow-etl-io-extractor-chainextractor.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Extractor/ChainExtractor.php">ChainExtractor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">107</span>
+    <span class="phpdocumentor-element-found-in__line">129</span>
 
     </aside>
 
@@ -582,8 +686,10 @@ instead of its own description, and values are cast to fit.</p>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-IO-Extractor-ChainExtractor.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Extractor-ChainExtractor.html#method_extract">extract()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-IO-Extractor-ChainExtractor.html#method_inferSchema">inferSchema()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Extractor-ChainExtractor.html#method_isRepeatable">isRepeatable()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Extractor-ChainExtractor.html#method_refresh">refresh()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-IO-Extractor-ChainExtractor.html#method_reportInferenceTo">reportInferenceTo()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Extractor-ChainExtractor.html#method_schema">schema()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Extractor-ChainExtractor.html#method_statistics">statistics()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Extractor-ChainExtractor.html#method_withSchema">withSchema()</a></li>

@@ -134,7 +134,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php"><a href="files/src-core-etl-src-flow-etl-operators-join-hashjoin.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php">HashJoin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -233,6 +233,13 @@
 discovered from the rows that flow.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Operators-Join-HashJoin.html#method_joined">joined()</a>
+    <span>
+                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;null|<a href="classes/Flow-ETL-IO-Extractor-Signal.html"><abbr title="\Flow\ETL\IO\Extractor\Signal">Signal</abbr></a>, void&gt;    </span>
+</dt>
+<dd>Joins two whole sides and ends the join&#039;s stage at the end or after a STOP, which reaches the probe side.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Operators-Join-HashJoin.html#method_joiner">joiner()</a>
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Kernels-HashJoin-Joiner.html"><abbr title="\Flow\ETL\Kernels\HashJoin\Joiner">Joiner</abbr></a>    </span>
@@ -291,7 +298,7 @@ an empty right side still pads the right columns.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php"><a href="files/src-core-etl-src-flow-etl-operators-join-hashjoin.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php">HashJoin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -328,7 +335,7 @@ an empty right side still pads the right columns.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php"><a href="files/src-core-etl-src-flow-etl-operators-join-hashjoin.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php">HashJoin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -365,7 +372,7 @@ an empty right side still pads the right columns.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php"><a href="files/src-core-etl-src-flow-etl-operators-join-hashjoin.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php">HashJoin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -407,14 +414,14 @@ an empty right side still pads the right columns.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php"><a href="files/src-core-etl-src-flow-etl-operators-join-hashjoin.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php">HashJoin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Functions-Join-Expression.html"><abbr title="\Flow\ETL\Functions\Join\Expression">Expression</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$expression</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Join-JoinType.html"><abbr title="\Flow\ETL\Values\Join\JoinType">JoinType</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Operators-Join-HashJoinConfig.html"><abbr title="\Flow\ETL\Operators\Join\HashJoinConfig">HashJoinConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Foundation-RandomValueGenerator.html"><abbr title="\Flow\ETL\Foundation\RandomValueGenerator">RandomValueGenerator</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$random</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Schema.html"><abbr title="\Flow\ETL\Values\Schema">Schema</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$left</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Schema.html"><abbr title="\Flow\ETL\Values\Schema">Schema</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$declaredRight</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Functions-Join-Expression.html"><abbr title="\Flow\ETL\Functions\Join\Expression">Expression</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$expression</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Join-JoinType.html"><abbr title="\Flow\ETL\Values\Join\JoinType">JoinType</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Operators-Join-HashJoinConfig.html"><abbr title="\Flow\ETL\Operators\Join\HashJoinConfig">HashJoinConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Foundation-RandomValueGenerator.html"><abbr title="\Flow\ETL\Foundation\RandomValueGenerator">RandomValueGenerator</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$random</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Schema.html"><abbr title="\Flow\ETL\Values\Schema">Schema</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$left</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Schema.html"><abbr title="\Flow\ETL\Values\Schema">Schema</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$declaredRight</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$progress</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-ETL-Foundation-VoidProgress.html"><abbr title="\Flow\ETL\Foundation\VoidProgress">VoidProgress</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -466,6 +473,13 @@ an empty right side still pads the right columns.</dd>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$progress</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-ETL-Foundation-VoidProgress.html"><abbr title="\Flow\ETL\Foundation\VoidProgress">VoidProgress</abbr></a>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
             </dl>
 
     
@@ -488,7 +502,7 @@ an empty right side still pads the right columns.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php"><a href="files/src-core-etl-src-flow-etl-operators-join-hashjoin.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php">HashJoin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">144</span>
+    <span class="phpdocumentor-element-found-in__line">182</span>
 
     </aside>
 
@@ -543,7 +557,7 @@ an empty right side still pads the right columns.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php"><a href="files/src-core-etl-src-flow-etl-operators-join-hashjoin.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php">HashJoin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
@@ -586,7 +600,7 @@ an empty right side still pads the right columns.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php"><a href="files/src-core-etl-src-flow-etl-operators-join-hashjoin.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php">HashJoin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -625,7 +639,7 @@ an empty right side still pads the right columns.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php"><a href="files/src-core-etl-src-flow-etl-operators-join-hashjoin.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php">HashJoin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -680,7 +694,7 @@ an empty right side still pads the right columns.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php"><a href="files/src-core-etl-src-flow-etl-operators-join-hashjoin.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php">HashJoin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">161</span>
+    <span class="phpdocumentor-element-found-in__line">199</span>
 
     </aside>
 
@@ -736,6 +750,76 @@ discovered from the rows that flow.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_joined">
+        joined()
+        <a href="classes/Flow-ETL-Operators-Join-HashJoin.html#method_joined" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php"><a href="files/src-core-etl-src-flow-etl-operators-join-hashjoin.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php">HashJoin.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">130</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Joins two whole sides and ends the join&#039;s stage at the end or after a STOP, which reaches the probe side.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">joined</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Column-Backend.html"><abbr title="\Flow\ETL\Values\Column\Backend">Backend</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$backend</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Kernels-HashJoin-JoinSide.html"><abbr title="\Flow\ETL\Kernels\HashJoin\JoinSide">JoinSide</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$left</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Kernels-HashJoin-JoinSide.html"><abbr title="\Flow\ETL\Kernels\HashJoin\JoinSide">JoinSide</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$right</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$buildLeft</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;null|<a href="classes/Flow-ETL-IO-Extractor-Signal.html"><abbr title="\Flow\ETL\IO\Extractor\Signal">Signal</abbr></a>, void&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$backend</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Column-Backend.html"><abbr title="\Flow\ETL\Values\Column\Backend">Backend</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$left</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Kernels-HashJoin-JoinSide.html"><abbr title="\Flow\ETL\Kernels\HashJoin\JoinSide">JoinSide</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$right</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Kernels-HashJoin-JoinSide.html"><abbr title="\Flow\ETL\Kernels\HashJoin\JoinSide">JoinSide</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$buildLeft</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;null|<a href="classes/Flow-ETL-IO-Extractor-Signal.html"><abbr title="\Flow\ETL\IO\Extractor\Signal">Signal</abbr></a>, void&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_joiner">
         joiner()
         <a href="classes/Flow-ETL-Operators-Join-HashJoin.html#method_joiner" class="headerlink"><i class="fas fa-link"></i></a>
@@ -744,7 +828,7 @@ discovered from the rows that flow.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php"><a href="files/src-core-etl-src-flow-etl-operators-join-hashjoin.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php">HashJoin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">150</span>
 
     </aside>
 
@@ -793,7 +877,7 @@ discovered from the rows that flow.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php"><a href="files/src-core-etl-src-flow-etl-operators-join-hashjoin.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php">HashJoin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">166</span>
 
     </aside>
 
@@ -832,7 +916,7 @@ discovered from the rows that flow.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php"><a href="files/src-core-etl-src-flow-etl-operators-join-hashjoin.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php">HashJoin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">136</span>
+    <span class="phpdocumentor-element-found-in__line">174</span>
 
     </aside>
 
@@ -871,7 +955,7 @@ discovered from the rows that flow.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php"><a href="files/src-core-etl-src-flow-etl-operators-join-hashjoin.html"><abbr title="src/core/etl/src/Flow/ETL/Operators/Join/HashJoin.php">HashJoin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
     </aside>
 
@@ -944,6 +1028,7 @@ an empty right side still pads the right columns.</p>
                                             <li class=""><a href="classes/Flow-ETL-Operators-Join-HashJoin.html#method_distribution">distribution()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Operators-Join-HashJoin.html#method_fromDescription">fromDescription()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Operators-Join-HashJoin.html#method_join">join()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Operators-Join-HashJoin.html#method_joined">joined()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Operators-Join-HashJoin.html#method_joiner">joiner()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Operators-Join-HashJoin.html#method_leftSchema">leftSchema()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Operators-Join-HashJoin.html#method_rightSchema">rightSchema()</a></li>

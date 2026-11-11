@@ -163,7 +163,7 @@
         "@lezer/highlight": "/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js",
         "/assets/wasm/mago/mago_wasm_bg.js": "/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js",
         "crelt": "/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js",
-        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-2e8376fcf75350e645437c7d620fb2e0.js",
+        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-77a0b5286d9193903a419f70217f76a7.js",
         "@fontsource-variable/cabin/index.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2F%40fontsource-variable%2Fcabin%2Findex.min-2fd942a10b44e40a5f63d90a3479e0ee.css%22%7D%29%29",
         "prismjs/themes/prism.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2Fprismjs%2Fthemes%2Fprism.min-1698e178d1bb208a059f63cb8dcc0517.css%22%7D%29%29",
         "prismjs/themes/prism-okaidia.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2Fprismjs%2Fthemes%2Fprism-okaidia.min-08069b61612f4d092d8705c78d4e814b.css%22%7D%29%29",
@@ -261,7 +261,7 @@
 <link rel="modulepreload" href="/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js">
 <link rel="modulepreload" href="/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js">
 <link rel="modulepreload" href="/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js">
-<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-2e8376fcf75350e645437c7d620fb2e0.js">
+<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-77a0b5286d9193903a419f70217f76a7.js">
 <script type="module">import 'app';</script>
     </head>
 <body class="scroll-smooth bg-[#e8eef7] text-slate-900 dark:bg-black dark:text-white" data-environment="prod">
@@ -1118,6 +1118,13 @@
         HttpFoundation Telemetry
     </a>
 </li>
+            <li>        <a href="/documentation/components/bridges/symfony-console-bridge"
+       class="block rounded-md px-2.5 py-1.5 text-sm transition-colors no-underline border-l-2
+              border-transparent text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-white/70 dark:hover:text-white dark:hover:bg-white/[0.04]"
+       >
+        Console Bridge
+    </a>
+</li>
         </ul>
     </div>
 
@@ -1556,7 +1563,7 @@ each group:</p>
 </code></pre>
 <p><a href="/documentation/components/core/aggregations">Aggregations</a></p>
 <h2><a id="buckets-storage" href="#buckets-storage" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Buckets Storage</h2>
-<p>While the process stays under the memory limit, <code>groupBy()</code> aggregates in one pass and writes nothing. After the
+<p>While it stays under its memory limit, <code>groupBy()</code> aggregates in one pass and writes nothing. After the
 limit, it partitions the rest of the stream by the hashed grouping key into buckets of a <code>RowsStorage</code>.
 <a href="/documentation/components/core/sort">External sort</a> and <a href="/documentation/components/core/join">join</a> use the
 same abstraction. It aggregates each bucket separately, and merges the groups from before the limit into them. The
@@ -1566,15 +1573,16 @@ default storage is <code>FilesystemRowsStorage</code> (Floe files in the local c
 the configured algorithm:</p>
 <pre class="language-php" data-controller="syntax-highlight"><code class="language-php">-&gt;groupBy([ref('country')], hash_group_by()-&gt;storage(new MemoryRowsStorage()))
 </code></pre>
-<p>The algorithm is configured through <code>config_builder()-&gt;groupBy(hash_group_by())</code>. <code>memoryLimit()</code> defaults to the
-same limit as the join and the sort (<code>FLOW_MAX_MEMORY</code>, otherwise 70% of <code>memory_limit</code>):</p>
+<p>The algorithm is configured through <code>config_builder()-&gt;groupBy(hash_group_by())</code>. <code>memoryLimit()</code> counts only the
+memory the group by adds after its first input batch arrives.
+<a href="/documentation/components/core/sort#memory-limit">Memory limit</a> lists the defaults and the process cap:</p>
 <pre class="language-php" data-controller="syntax-highlight"><code class="language-php">&lt;?php
 
 data_frame(
     config_builder()
         -&gt;groupBy(
             hash_group_by()
-                -&gt;memoryLimit(Unit::fromMb(512))  // process memory past which buckets go to the storage
+                -&gt;memoryLimit(Unit::fromMb(512))  // memory the group by adds before buckets go to the storage
                 -&gt;bucketsCount(64)                // number of buckets (default 64)
                 -&gt;batchSize(1000)                 // rows per bucket frame and per batch read back (default 1000)
         )
@@ -1892,6 +1900,13 @@ apply <a href="/documentation/components/core/sort">sortBy</a> after the aggrega
               border-transparent text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-white/70 dark:hover:text-white dark:hover:bg-white/[0.04]"
        >
         HttpFoundation Telemetry
+    </a>
+</li>
+            <li>        <a href="/documentation/components/bridges/symfony-console-bridge"
+       class="block rounded-md px-2.5 py-1.5 text-sm transition-colors no-underline border-l-2
+              border-transparent text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-white/70 dark:hover:text-white dark:hover:bg-white/[0.04]"
+       >
+        Console Bridge
     </a>
 </li>
         </ul>

@@ -71,6 +71,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html#method_inferSchema"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetExtractor\u003A\u003AreportInferenceTo\u0028\u0029",
+            "name": "reportInferenceTo",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-GoogleSheet-IO-Extractor-GoogleSheetExtractor.html#method_reportInferenceTo"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\GoogleSheet\\IO\\Extractor\\GoogleSheetExtractor\u003A\u003Aschema\u0028\u0029",
             "name": "schema",
             "summary": "",

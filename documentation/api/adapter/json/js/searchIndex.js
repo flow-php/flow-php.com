@@ -121,6 +121,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method_inferSchema"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\IO\\Extractor\\JsonExtractor\u003A\u003AreportInferenceTo\u0028\u0029",
+            "name": "reportInferenceTo",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-JSON-IO-Extractor-JsonExtractor.html#method_reportInferenceTo"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\JSON\\IO\\Extractor\\JsonExtractor\u003A\u003Aschema\u0028\u0029",
             "name": "schema",
             "summary": "",

@@ -118,7 +118,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Inference/Sniffer.php"><a href="files/src-core-etl-src-flow-etl-io-inference-sniffer.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Inference/Sniffer.php">Sniffer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">7</span>
+    <span class="phpdocumentor-element-found-in__line">9</span>
 
     </aside>
 
@@ -178,6 +178,7 @@ samples merged in order are the unit&#039;s sample.</dd>
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-IO-Inference-Sample.html"><abbr title="\Flow\ETL\IO\Inference\Sample">Sample</abbr></a>    </span>
 </dt>
+<dd>Reports the observed rows through $progress in Progress::ROWS_PER_CALL chunks; they are never rows read.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-IO-Inference-Sniffer.html#method_units">units()</a>
@@ -214,7 +215,7 @@ samples merged in order are the unit&#039;s sample.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Inference/Sniffer.php"><a href="files/src-core-etl-src-flow-etl-io-inference-sniffer.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Inference/Sniffer.php">Sniffer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">12</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
@@ -266,7 +267,7 @@ samples merged in order are the unit&#039;s sample.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Inference/Sniffer.php"><a href="files/src-core-etl-src-flow-etl-io-inference-sniffer.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Inference/Sniffer.php">Sniffer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -301,7 +302,7 @@ samples merged in order are the unit&#039;s sample.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Inference/Sniffer.php"><a href="files/src-core-etl-src-flow-etl-io-inference-sniffer.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Inference/Sniffer.php">Sniffer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -343,7 +344,7 @@ samples merged in order are the unit&#039;s sample.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Inference/Sniffer.php"><a href="files/src-core-etl-src-flow-etl-io-inference-sniffer.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Inference/Sniffer.php">Sniffer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -402,14 +403,15 @@ samples merged in order are the unit&#039;s sample.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Inference/Sniffer.php"><a href="files/src-core-etl-src-flow-etl-io-inference-sniffer.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Inference/Sniffer.php">Sniffer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Reports the observed rows through $progress in Progress::ROWS_PER_CALL chunks; they are never rows read.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">sniff</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$unit</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">null|int<0, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowBudget</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-IO-Inference-Sample.html"><abbr title="\Flow\ETL\IO\Inference\Sample">Sample</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">sniff</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$unit</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">null|int<0, max>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowBudget</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$progress</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-IO-Inference-Sample.html"><abbr title="\Flow\ETL\IO\Inference\Sample">Sample</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -432,6 +434,13 @@ samples merged in order are the unit&#039;s sample.</p>
                     <section class="phpdocumentor-description"><p>rows to observe from this unit, 0 for none, null for every row</p>
 </section>
 
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$progress</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
             </dd>
             </dl>
 
@@ -459,7 +468,7 @@ samples merged in order are the unit&#039;s sample.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Inference/Sniffer.php"><a href="files/src-core-etl-src-flow-etl-io-inference-sniffer.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Inference/Sniffer.php">Sniffer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 

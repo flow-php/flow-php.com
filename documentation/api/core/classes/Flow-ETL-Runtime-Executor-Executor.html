@@ -200,6 +200,12 @@ head of the plan&#039;s chain; without one, or when the launch does not pay, the
 <dd>Merges every batch into one Rows. An empty result still carries the schema of the plan the generator returns,
 or an empty one when that plan cannot describe its rows.</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Runtime-Executor-Executor.html#method_plan">plan()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-Planning-Physical-PhysicalPlan.html"><abbr title="\Flow\ETL\Planning\Physical\PhysicalPlan">PhysicalPlan</abbr></a>    </span>
+</dt>
+
     </dl>
 
 
@@ -262,7 +268,7 @@ or an empty one when that plan cannot describe its rows.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/Executor.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-executor.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/Executor.php">Executor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -348,7 +354,7 @@ every launched worker</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/Executor.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-executor.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/Executor.php">Executor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">155</span>
+    <span class="phpdocumentor-element-found-in__line">178</span>
 
     </aside>
 
@@ -438,7 +444,7 @@ every launched worker</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/Executor.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-executor.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/Executor.php">Executor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">140</span>
+    <span class="phpdocumentor-element-found-in__line">163</span>
 
     </aside>
 
@@ -504,7 +510,7 @@ head of the plan&#039;s chain; without one, or when the launch does not pay, the
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/Executor.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-executor.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/Executor.php">Executor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -576,7 +582,7 @@ head of the plan&#039;s chain; without one, or when the launch does not pay, the
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/Executor.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-executor.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/Executor.php">Executor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">127</span>
 
     </aside>
 
@@ -621,6 +627,77 @@ or an empty one when that plan cannot describe its rows.</p>
             </section>
 
 </article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_plan">
+        plan()
+        <a href="classes/Flow-ETL-Runtime-Executor-Executor.html#method_plan" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Runtime/Executor/Executor.php"><a href="files/src-core-etl-src-flow-etl-runtime-executor-executor.html"><abbr title="src/core/etl/src/Flow/ETL/Runtime/Executor/Executor.php">Executor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">44</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">plan</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Planning-Logical-LogicalPlan.html"><abbr title="\Flow\ETL\Planning\Logical\LogicalPlan">LogicalPlan</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$logical</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Runtime-FlowContext.html"><abbr title="\Flow\ETL\Runtime\FlowContext">FlowContext</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Planning-Physical-PhysicalPlan.html"><abbr title="\Flow\ETL\Planning\Physical\PhysicalPlan">PhysicalPlan</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$logical</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Planning-Logical-LogicalPlan.html"><abbr title="\Flow\ETL\Planning\Logical\LogicalPlan">LogicalPlan</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$context</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Runtime-FlowContext.html"><abbr title="\Flow\ETL\Runtime\FlowContext">FlowContext</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_plan_tags">
+        Tags
+        <a href="classes/Flow-ETL-Runtime-Executor-Executor.html#method_plan_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Throwable">Throwable</abbr></span>
+                                                                                        <section class="phpdocumentor-description"><p>what a heartbeat failing with HeartbeatFailure::stop threw</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Planning-Physical-PhysicalPlan.html"><abbr title="\Flow\ETL\Planning\Physical\PhysicalPlan">PhysicalPlan</abbr></a></span>
+            </section>
+
+</article>
             </section>
 
         
@@ -649,6 +726,7 @@ or an empty one when that plan cannot describe its rows.</p>
                                             <li class=""><a href="classes/Flow-ETL-Runtime-Executor-Executor.html#method_executePlan">executePlan()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Runtime-Executor-Executor.html#method_fetch">fetch()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Runtime-Executor-Executor.html#method_merge">merge()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Runtime-Executor-Executor.html#method_plan">plan()</a></li>
                                     </ul>
             </li>
                     </ul>

@@ -118,7 +118,7 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <a href="classes/Flow-ETL-IO-Loader-Closure.html"><abbr title="\Flow\ETL\IO\Loader\Closure">Closure</abbr></a>,                             <a href="classes/Flow-ETL-IO-Loader-Discardable.html"><abbr title="\Flow\ETL\IO\Loader\Discardable">Discardable</abbr></a>,                             <a href="classes/Flow-ETL-IO-Loader-File-FileLoader.html"><abbr title="\Flow\ETL\IO\Loader\File\FileLoader">FileLoader</abbr></a>,                             <a href="classes/Flow-ETL-IO-Loader.html"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr></a>                    </span>
+                            <a href="classes/Flow-ETL-IO-Loader-Closure.html"><abbr title="\Flow\ETL\IO\Loader\Closure">Closure</abbr></a>,                             <a href="classes/Flow-ETL-IO-Loader-Discardable.html"><abbr title="\Flow\ETL\IO\Loader\Discardable">Discardable</abbr></a>,                             <a href="classes/Flow-ETL-IO-Loader-File-FileLoader.html"><abbr title="\Flow\ETL\IO\Loader\File\FileLoader">FileLoader</abbr></a>                    </span>
     
     </h2>
 
@@ -150,9 +150,8 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Loader-Closure.html"><abbr title="\Flow\ETL\IO\Loader\Closure">Closure</abbr></a></dt><dd>Loaders implementing this adapter will be additionally notified
-by the pipeline about the last set of Rows processed by the pipeline.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Loader-Discardable.html"><abbr title="\Flow\ETL\IO\Loader\Discardable">Discardable</abbr></a></dt><dd>Loaders implementing this adapter will be notified by the pipeline when a run ends without reaching its last set of
-Rows - it threw, or the caller walked away from the generator - and when their own closure() threw.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Loader-File-FileLoader.html"><abbr title="\Flow\ETL\IO\Loader\File\FileLoader">FileLoader</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Loader.html"><abbr title="\Flow\ETL\IO\Loader">Loader</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Loader-Closure.html"><abbr title="\Flow\ETL\IO\Loader\Closure">Closure</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Loader-Discardable.html"><abbr title="\Flow\ETL\IO\Loader\Discardable">Discardable</abbr></a></dt><dd>Loaders implementing this adapter will be notified by the pipeline when a run ends without reaching its last set of
+Rows - it threw, or the caller walked away from the generator - and when their own closure() threw.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Flow-ETL-IO-Loader-File-FileLoader.html"><abbr title="\Flow\ETL\IO\Loader\File\FileLoader">FileLoader</abbr></a></dt>    </dl>
 
 
 
@@ -348,13 +347,23 @@ Rows - it threw, or the caller walked away from the generator - and when their o
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">closure</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">closure</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$progress</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$progress</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Foundation-Progress.html"><abbr title="\Flow\ETL\Foundation\Progress">Progress</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
 
         

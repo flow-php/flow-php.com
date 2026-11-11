@@ -131,7 +131,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Memory/BoundedRead.php"><a href="files/src-core-etl-src-flow-etl-values-memory-boundedread.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Memory/BoundedRead.php">BoundedRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">10</span>
 
     </aside>
 
@@ -174,7 +174,7 @@
     <span>
                                 &nbsp;: <abbr title="array{list<\Flow\ETL\Values\Rows>, bool}">Rows>, bool}</abbr>    </span>
 </dt>
-<dd>Reads $rows while the process stays under the limit; $rows is left at the first batch not read.</dd>
+<dd>Reads $rows while the operation stays under its budget; $rows is left at the first batch not read.</dd>
 
     </dl>
 
@@ -204,14 +204,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Memory/BoundedRead.php"><a href="files/src-core-etl-src-flow-etl-values-memory-boundedread.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Memory/BoundedRead.php">BoundedRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Memory-Unit.html"><abbr title="\Flow\ETL\Values\Memory\Unit">Unit</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Column-Backend.html"><abbr title="\Flow\ETL\Values\Column\Backend">Backend</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$backend</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html"><abbr title="\Flow\ETL\Values\Memory\MemoryBudget">MemoryBudget</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$budget</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -220,15 +220,8 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$limit</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Memory-Unit.html"><abbr title="\Flow\ETL\Values\Memory\Unit">Unit</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$backend</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Column-Backend.html"><abbr title="\Flow\ETL\Values\Column\Backend">Backend</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$budget</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Memory-MemoryBudget.html"><abbr title="\Flow\ETL\Values\Memory\MemoryBudget">MemoryBudget</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -255,7 +248,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Memory/BoundedRead.php"><a href="files/src-core-etl-src-flow-etl-values-memory-boundedread.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Memory/BoundedRead.php">BoundedRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
@@ -314,11 +307,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Memory/BoundedRead.php"><a href="files/src-core-etl-src-flow-etl-values-memory-boundedread.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Memory/BoundedRead.php">BoundedRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Reads $rows while the process stays under the limit; $rows is left at the first batch not read.</p>
+        <p class="phpdocumentor-summary">Reads $rows while the operation stays under its budget; $rows is left at the first batch not read.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
