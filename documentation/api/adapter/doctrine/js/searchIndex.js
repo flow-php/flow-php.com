@@ -936,6 +936,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Adapter-Doctrine-IO-Loader-DbalLoader.html#method_fromDescription"
         },                {
+            "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\IO\\Loader\\DbalLoader\u003A\u003Acollection\u0028\u0029",
+            "name": "collection",
+            "summary": "",
+            "url": "classes/Flow-ETL-Adapter-Doctrine-IO-Loader-DbalLoader.html#method_collection"
+        },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Doctrine\\IO\\Loader\\DbalLoader\u003A\u003Adescribe\u0028\u0029",
             "name": "describe",
             "summary": "",

@@ -163,7 +163,7 @@
         "@lezer/highlight": "/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js",
         "/assets/wasm/mago/mago_wasm_bg.js": "/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js",
         "crelt": "/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js",
-        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-77a0b5286d9193903a419f70217f76a7.js",
+        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-9a3965b30fb88221491aa6059f3181ac.js",
         "@fontsource-variable/cabin/index.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2F%40fontsource-variable%2Fcabin%2Findex.min-2fd942a10b44e40a5f63d90a3479e0ee.css%22%7D%29%29",
         "prismjs/themes/prism.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2Fprismjs%2Fthemes%2Fprism.min-1698e178d1bb208a059f63cb8dcc0517.css%22%7D%29%29",
         "prismjs/themes/prism-okaidia.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2Fprismjs%2Fthemes%2Fprism-okaidia.min-08069b61612f4d092d8705c78d4e814b.css%22%7D%29%29",
@@ -261,7 +261,7 @@
 <link rel="modulepreload" href="/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js">
 <link rel="modulepreload" href="/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js">
 <link rel="modulepreload" href="/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js">
-<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-77a0b5286d9193903a419f70217f76a7.js">
+<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-9a3965b30fb88221491aa6059f3181ac.js">
 <script type="module">import 'app';</script>
     </head>
 <body class="scroll-smooth bg-[#e8eef7] text-slate-900 dark:bg-black dark:text-white" data-environment="prod">
@@ -1553,6 +1553,8 @@
 <li><a href="#12-flow-phpetl-and-the-file-adapters---a-write-that-ends-reports-the-files-it-writes">12) flow-php/etl and the file adapters - a write that ends reports the files it writes</a></li>
 <li><a href="#13-flow-phpetl---distributionordered-takes-the-stage-of-the-step-it-splits">13) flow-php/etl - Distribution::ordered() takes the stage of the step it splits</a></li>
 <li><a href="#14-flow-phpetl---dataframeschema-runs-the-heartbeat">14) flow-php/etl - DataFrame::schema() runs the heartbeat</a></li>
+<li><a href="#15-flow-phpetl---an-extractor-is-ended-on-a-stop-and-no-longer-receives-signalstop">15) flow-php/etl - an extractor is ended on a stop and no longer receives Signal::STOP</a></li>
+<li><a href="#16-flow-phpetl---processorprocess-returns-a-generator-that-has-not-run-past-its-first-yield">16) flow-php/etl - Processor::process() returns a generator that has not run past its first yield</a></li>
 </ul>
 </li>
 <li><a href="#upgrading-from-046x-to-047x">Upgrading from 0.46.x to 0.47.x</a>
@@ -2437,6 +2439,31 @@ public function closure(Progress $progress): void
 </tr>
 </tbody>
 </table>
+<h3><a id="15-flow-phpetl---an-extractor-is-ended-on-a-stop-and-no-longer-receives-signalstop" href="#15-flow-phpetl---an-extractor-is-ended-on-a-stop-and-no-longer-receives-signalstop" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>15) <code>flow-php/etl</code> - an extractor is ended on a stop and no longer receives <code>Signal::STOP</code></h3>
+<p>When a limit or the consumer stops a read, Flow ends the extractor's generator instead of sending it <code>Signal::STOP</code>.
+The generator runs its <code>finally</code>, and the code in its STOP branch does not run.</p>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>if ($signal === Signal::STOP) { $reader-&gt;close(); return; }</code></td>
+<td><code>try { ... } finally { $reader-&gt;close(); }</code></td>
+</tr>
+<tr>
+<td><code>if ($signal === Signal::STOP) { $inner-&gt;send(Signal::STOP); return; }</code></td>
+<td><code>if ($signal === Signal::STOP) { return; }</code></td>
+</tr>
+</tbody>
+</table>
+<p>A wrapping extractor delegates with <code>yield from</code> as its whole body, or returns on <code>Signal::STOP</code> without sending it on.</p>
+<h3><a id="16-flow-phpetl---processorprocess-returns-a-generator-that-has-not-run-past-its-first-yield" href="#16-flow-phpetl---processorprocess-returns-a-generator-that-has-not-run-past-its-first-yield" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>16) <code>flow-php/etl</code> - <code>Processor::process()</code> returns a generator that has not run past its first yield</h3>
+<p>Flow iterates a processor's generator with <code>foreach</code>. A <code>process()</code> that advances its generator past the first yield
+before it returns it fails with PHP's <code>Cannot rewind a generator that was already run</code>. Return the generator unstarted.</p>
 <hr />
 <h2><a id="upgrading-from-046x-to-047x" href="#upgrading-from-046x-to-047x" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Upgrading from 0.46.x to 0.47.x</h2>
 <h3><a id="1-flow-phptypes---leaf-types-are-no-longer-generic" href="#1-flow-phptypes---leaf-types-are-no-longer-generic" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>1) <code>flow-php/types</code> - leaf types are no longer generic</h3>

@@ -15171,6 +15171,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-IO-Loader-Closure.html#method_closure"
         },                {
+            "fqsen": "\\Flow\\ETL\\IO\\Loader\\Datastore\\DatastoreLoader",
+            "name": "DatastoreLoader",
+            "summary": "",
+            "url": "classes/Flow-ETL-IO-Loader-Datastore-DatastoreLoader.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\IO\\Loader\\Datastore\\DatastoreLoader\u003A\u003Acollection\u0028\u0029",
+            "name": "collection",
+            "summary": "",
+            "url": "classes/Flow-ETL-IO-Loader-Datastore-DatastoreLoader.html#method_collection"
+        },                {
             "fqsen": "\\Flow\\ETL\\IO\\Loader\\Discardable",
             "name": "Discardable",
             "summary": "Loaders\u0020implementing\u0020this\u0020adapter\u0020will\u0020be\u0020notified\u0020by\u0020the\u0020pipeline\u0020when\u0020a\u0020run\u0020ends\u0020without\u0020reaching\u0020its\u0020last\u0020set\u0020of\nRows\u0020\u002D\u0020it\u0020threw,\u0020or\u0020the\u0020caller\u0020walked\u0020away\u0020from\u0020the\u0020generator\u0020\u002D\u0020and\u0020when\u0020their\u0020own\u0020closure\u0028\u0029\u0020threw.",
@@ -22273,7 +22283,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\AdoptedBatches\u003A\u003Aof\u0028\u0029",
             "name": "of",
-            "summary": "Every\u0020batch\u0020of\u0020\u0024batches\u0020in\u0020the\u0020backend\u0027s\u0020storage,\u0020a\u0020corrupted\u0020record\u0020as\u0020it\u0020is,\u0020a\u0020stop\u0020forwarded\u0020to\u0020\u0024batches.",
+            "summary": "Every\u0020batch\u0020of\u0020\u0024batches\u0020in\u0020the\u0020backend\u0027s\u0020storage,\u0020a\u0020corrupted\u0020record\u0020as\u0020it\u0020is\u003B\u0020a\u0020stop\u0020ends\u0020\u0024batches.",
             "url": "classes/Flow-ETL-Runtime-Executor-AdoptedBatches.html#method_of"
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\BranchFiber",
@@ -30010,6 +30020,11 @@ Search.appendIndex(
             "name": "Loader",
             "summary": "",
             "url": "namespaces/flow-etl-io-loader.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\IO\\Loader\\Datastore",
+            "name": "Datastore",
+            "summary": "",
+            "url": "namespaces/flow-etl-io-loader-datastore.html"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Loader\\File",
             "name": "File",

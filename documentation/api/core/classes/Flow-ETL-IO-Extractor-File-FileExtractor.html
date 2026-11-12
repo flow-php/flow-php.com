@@ -262,9 +262,9 @@ batches. Consumers must not assume a minimum size, a constant size, or a non-emp
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p><code class="prettyprint">yield from</code> is allowed only as the whole body: it routes send() into the delegate, so the delegate sees
-Signal::STOP and this generator ends with it. A generator that does anything after delegating forwards with
-foreach + send().</p>
+        <section class="phpdocumentor-description"><p>A generator that wraps another either delegates with <code class="prettyprint">yield from</code> as its whole body, or returns on Signal::STOP
+without sending it on: the inner generator ends with it and runs its finally. Work that must happen when the
+read ends belongs in finally.</p>
 <p>$criteria is what the plan pushed into this read. A source returns only rows matching every one of
 $criteria-&gt;conjuncts; only a FileExtractor ever receives any. The limit and the path filter are hints: the plan
 still enforces the limit, and the predicate of every path filter is also one of the conjuncts or stays in a
