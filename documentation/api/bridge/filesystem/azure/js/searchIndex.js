@@ -281,6 +281,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-Azure-Options.html#method_blockSize"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\Options\u003A\u003AcopyPartSize\u0028\u0029",
+            "name": "copyPartSize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-Azure-Options.html#method_copyPartSize"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\Options\u003A\u003AfileFastPath\u0028\u0029",
             "name": "fileFastPath",
             "summary": "",
@@ -315,6 +320,11 @@ Search.appendIndex(
             "name": "withBlockSize",
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-Azure-Options.html#method_withBlockSize"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\Options\u003A\u003AwithCopyPartSize\u0028\u0029",
+            "name": "withCopyPartSize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-Azure-Options.html#method_withCopyPartSize"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\Options\u003A\u003AwithFileFastPath\u0028\u0029",
             "name": "withFileFastPath",

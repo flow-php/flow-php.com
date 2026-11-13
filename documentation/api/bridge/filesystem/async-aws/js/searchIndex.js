@@ -36,6 +36,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3DestinationStream.html#method_openBlank"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\AsyncAWSS3DestinationStream\u003A\u003AopenCopy\u0028\u0029",
+            "name": "openCopy",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-AsyncAWSS3DestinationStream.html#method_openCopy"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\AsyncAWSS3DestinationStream\u003A\u003AopenExclusive\u0028\u0029",
             "name": "openExclusive",
             "summary": "",
@@ -261,6 +266,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-filesystem-bridge-asyncaws-dsl.html#function_aws_s3_client"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\DSL\\aws_s3_filesystem_options\u0028\u0029",
+            "name": "aws_s3_filesystem_options",
+            "summary": "",
+            "url": "namespaces/flow-filesystem-bridge-asyncaws-dsl.html#function_aws_s3_filesystem_options"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\DSL\\aws_s3_filesystem\u0028\u0029",
             "name": "aws_s3_filesystem",
             "summary": "",
@@ -301,6 +311,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-Options.html#method_blockFactory"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\Options\u003A\u003AcopyPartSize\u0028\u0029",
+            "name": "copyPartSize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-Options.html#method_copyPartSize"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\Options\u003A\u003AfileFastPath\u0028\u0029",
             "name": "fileFastPath",
             "summary": "",
@@ -335,6 +350,11 @@ Search.appendIndex(
             "name": "withBlockSize",
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-Options.html#method_withBlockSize"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\Options\u003A\u003AwithCopyPartSize\u0028\u0029",
+            "name": "withCopyPartSize",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-AsyncAWS-Options.html#method_withCopyPartSize"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\AsyncAWS\\Options\u003A\u003AwithFileFastPath\u0028\u0029",
             "name": "withFileFastPath",

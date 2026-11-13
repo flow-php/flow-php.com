@@ -124,7 +124,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/filesystem/azure/src/Flow/Filesystem/Bridge/Azure/ConfiguredBlobService.php"><a href="files/src-bridge-filesystem-azure-src-flow-filesystem-bridge-azure-configuredblobservice.html"><abbr title="src/bridge/filesystem/azure/src/Flow/Filesystem/Bridge/Azure/ConfiguredBlobService.php">ConfiguredBlobService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -147,7 +147,12 @@
 
                                     </dd>
                             <dd class="phpdocumentor-tag-list__definition">
-                                                                                                            <section class="phpdocumentor-description"><p>BlobServiceConfiguration = array{account_name: string, container: string, shared_key: string, url: BlobServiceUrl}</p>
+                                                                                                            <section class="phpdocumentor-description"><p>HttpLimits = array{timeout: float|int, max_duration: float|int, max_retries: int}</p>
+</section>
+
+                                    </dd>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>BlobServiceConfiguration = array{account_name: string, container: string, shared_key: string, url: BlobServiceUrl, http: HttpLimits}</p>
 </section>
 
                                     </dd>
@@ -229,14 +234,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/filesystem/azure/src/Flow/Filesystem/Bridge/Azure/ConfiguredBlobService.php"><a href="files/src-bridge-filesystem-azure-src-flow-filesystem-bridge-azure-configuredblobservice.html"><abbr title="src/bridge/filesystem/azure/src/Flow/Filesystem/Bridge/Azure/ConfiguredBlobService.php">ConfiguredBlobService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$accountName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$container</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sharedKey</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Bridge\Azure\BlobServiceUrl">BlobServiceUrl</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">['azure' => ['host' => 'blob.core.windows.net']]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$accountName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$container</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sharedKey</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Filesystem\Bridge\Azure\BlobServiceUrl">BlobServiceUrl</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">['azure' => ['host' => 'blob.core.windows.net']]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$http</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -272,9 +277,32 @@
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$http</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>timeout, max_duration and max_retries</p>
+</section>
+
+            </dd>
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="method___construct_tags">
+        Tags
+        <a href="classes/Flow-Filesystem-Bridge-Azure-ConfiguredBlobService.html#method___construct_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Flow\Filesystem\Exception\InvalidArgumentException">InvalidArgumentException</abbr></span>
+                                                                                    
+                                    </dd>
+                        </dl>
 
         
     
@@ -294,7 +322,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/filesystem/azure/src/Flow/Filesystem/Bridge/Azure/ConfiguredBlobService.php"><a href="files/src-bridge-filesystem-azure-src-flow-filesystem-bridge-azure-configuredblobservice.html"><abbr title="src/bridge/filesystem/azure/src/Flow/Filesystem/Bridge/Azure/ConfiguredBlobService.php">ConfiguredBlobService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">157</span>
 
     </aside>
 
@@ -332,7 +360,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/filesystem/azure/src/Flow/Filesystem/Bridge/Azure/ConfiguredBlobService.php"><a href="files/src-bridge-filesystem-azure-src-flow-filesystem-bridge-azure-configuredblobservice.html"><abbr title="src/bridge/filesystem/azure/src/Flow/Filesystem/Bridge/Azure/ConfiguredBlobService.php">ConfiguredBlobService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">120</span>
 
     </aside>
 
@@ -352,7 +380,7 @@
                 : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>keys account_name, container, shared_key and optionally url</p>
+                    <section class="phpdocumentor-description"><p>keys account_name, container, shared_key and optionally url and http</p>
 </section>
 
             </dd>
@@ -396,7 +424,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/filesystem/azure/src/Flow/Filesystem/Bridge/Azure/ConfiguredBlobService.php"><a href="files/src-bridge-filesystem-azure-src-flow-filesystem-bridge-azure-configuredblobservice.html"><abbr title="src/bridge/filesystem/azure/src/Flow/Filesystem/Bridge/Azure/ConfiguredBlobService.php">ConfiguredBlobService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">191</span>
 
     </aside>
 

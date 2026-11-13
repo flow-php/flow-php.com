@@ -174,7 +174,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Filesystem-Bridge-AsyncAWS-LiveS3Client.html#method_normalize">normalize()</a>
     <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;|null    </span>
+                                &nbsp;: null|<abbr title="\Flow\Filesystem\Bridge\AsyncAWS\S3ClientConfiguration">S3ClientConfiguration</abbr>    </span>
 </dt>
 
     </dl>
@@ -294,7 +294,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|null</span></code>
+                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|<abbr title="\Flow\Filesystem\Bridge\AsyncAWS\S3ClientConfiguration">S3ClientConfiguration</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -307,7 +307,11 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|null</span>
+        <span class="phpdocumentor-signature__response_type">null|<abbr title="\Flow\Filesystem\Bridge\AsyncAWS\S3ClientConfiguration">S3ClientConfiguration</abbr></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>null for a live client that cannot be rebuilt elsewhere</p>
+</section>
+
             </section>
 
 </article>

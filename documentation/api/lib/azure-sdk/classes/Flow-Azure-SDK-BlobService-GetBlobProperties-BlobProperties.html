@@ -124,7 +124,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobService/GetBlobProperties/BlobProperties.php"><a href="files/src-lib-azure-sdk-src-flow-azure-sdk-blobservice-getblobproperties-blobproperties.html"><abbr title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobService/GetBlobProperties/BlobProperties.php">BlobProperties.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
@@ -157,15 +157,45 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_content">content()</a>
+    <a class="" href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_cacheControl">cacheControl()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: string|null    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_contentDisposition">contentDisposition()</a>
+    <span>
+                                &nbsp;: string|null    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_contentEncoding">contentEncoding()</a>
+    <span>
+                                &nbsp;: string|null    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_contentLanguage">contentLanguage()</a>
+    <span>
+                                &nbsp;: string|null    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_contentType">contentType()</a>
+    <span>
+                                &nbsp;: string|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_lastModifiedAt">lastModifiedAt()</a>
     <span>
                                 &nbsp;: <abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_metadata">metadata()</a>
+    <span>
+                                &nbsp;: array&lt;string, string&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -202,7 +232,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobService/GetBlobProperties/BlobProperties.php"><a href="files/src-lib-azure-sdk-src-flow-azure-sdk-blobservice-getblobproperties-blobproperties.html"><abbr title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobService/GetBlobProperties/BlobProperties.php">BlobProperties.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -238,22 +268,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_content">
-        content()
-        <a href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_content" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_cacheControl">
+        cacheControl()
+        <a href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_cacheControl" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobService/GetBlobProperties/BlobProperties.php"><a href="files/src-lib-azure-sdk-src-flow-azure-sdk-blobservice-getblobproperties-blobproperties.html"><abbr title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobService/GetBlobProperties/BlobProperties.php">BlobProperties.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">content</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">cacheControl</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -266,7 +296,159 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
+        <span class="phpdocumentor-signature__response_type">string|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_contentDisposition">
+        contentDisposition()
+        <a href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_contentDisposition" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobService/GetBlobProperties/BlobProperties.php"><a href="files/src-lib-azure-sdk-src-flow-azure-sdk-blobservice-getblobproperties-blobproperties.html"><abbr title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobService/GetBlobProperties/BlobProperties.php">BlobProperties.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">30</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">contentDisposition</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_contentEncoding">
+        contentEncoding()
+        <a href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_contentEncoding" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobService/GetBlobProperties/BlobProperties.php"><a href="files/src-lib-azure-sdk-src-flow-azure-sdk-blobservice-getblobproperties-blobproperties.html"><abbr title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobService/GetBlobProperties/BlobProperties.php">BlobProperties.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">35</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">contentEncoding</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_contentLanguage">
+        contentLanguage()
+        <a href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_contentLanguage" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobService/GetBlobProperties/BlobProperties.php"><a href="files/src-lib-azure-sdk-src-flow-azure-sdk-blobservice-getblobproperties-blobproperties.html"><abbr title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobService/GetBlobProperties/BlobProperties.php">BlobProperties.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">40</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">contentLanguage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_contentType">
+        contentType()
+        <a href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_contentType" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobService/GetBlobProperties/BlobProperties.php"><a href="files/src-lib-azure-sdk-src-flow-azure-sdk-blobservice-getblobproperties-blobproperties.html"><abbr title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobService/GetBlobProperties/BlobProperties.php">BlobProperties.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">45</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">contentType</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string|null</span>
             </section>
 
 </article>
@@ -284,7 +466,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobService/GetBlobProperties/BlobProperties.php"><a href="files/src-lib-azure-sdk-src-flow-azure-sdk-blobservice-getblobproperties-blobproperties.html"><abbr title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobService/GetBlobProperties/BlobProperties.php">BlobProperties.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -314,6 +496,44 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_metadata">
+        metadata()
+        <a href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_metadata" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobService/GetBlobProperties/BlobProperties.php"><a href="files/src-lib-azure-sdk-src-flow-azure-sdk-blobservice-getblobproperties-blobproperties.html"><abbr title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobService/GetBlobProperties/BlobProperties.php">BlobProperties.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">66</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">metadata</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, string&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string, string&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_size">
         size()
         <a href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_size" class="headerlink"><i class="fas fa-link"></i></a>
@@ -322,7 +542,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobService/GetBlobProperties/BlobProperties.php"><a href="files/src-lib-azure-sdk-src-flow-azure-sdk-blobservice-getblobproperties-blobproperties.html"><abbr title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobService/GetBlobProperties/BlobProperties.php">BlobProperties.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
@@ -369,8 +589,13 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_content">content()</a></li>
+                                            <li class=""><a href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_cacheControl">cacheControl()</a></li>
+                                            <li class=""><a href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_contentDisposition">contentDisposition()</a></li>
+                                            <li class=""><a href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_contentEncoding">contentEncoding()</a></li>
+                                            <li class=""><a href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_contentLanguage">contentLanguage()</a></li>
+                                            <li class=""><a href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_contentType">contentType()</a></li>
                                             <li class=""><a href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_lastModifiedAt">lastModifiedAt()</a></li>
+                                            <li class=""><a href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_metadata">metadata()</a></li>
                                             <li class=""><a href="classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_size">size()</a></li>
                                     </ul>
             </li>

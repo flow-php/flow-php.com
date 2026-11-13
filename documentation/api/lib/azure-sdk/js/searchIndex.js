@@ -16,6 +16,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Azure-SDK-AuthorizationFactory-SharedKeyFactory.html#method_for"
         },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\AuthorizationFactory\\SharedKeyFactory\u003A\u003AreadOnlySourceUrl\u0028\u0029",
+            "name": "readOnlySourceUrl",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-AuthorizationFactory-SharedKeyFactory.html#method_readOnlySourceUrl"
+        },                {
             "fqsen": "\\Flow\\Azure\\SDK\\AuthorizationFactory",
             "name": "AuthorizationFactory",
             "summary": "",
@@ -25,6 +30,11 @@ Search.appendIndex(
             "name": "for",
             "summary": "",
             "url": "classes/Flow-Azure-SDK-AuthorizationFactory.html#method_for"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\AuthorizationFactory\u003A\u003AreadOnlySourceUrl\u0028\u0029",
+            "name": "readOnlySourceUrl",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-AuthorizationFactory.html#method_readOnlySourceUrl"
         },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\BlockBlob\\Block",
             "name": "Block",
@@ -521,15 +531,40 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\GetBlobProperties\\BlobProperties\u003A\u003Acontent\u0028\u0029",
-            "name": "content",
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\GetBlobProperties\\BlobProperties\u003A\u003AcacheControl\u0028\u0029",
+            "name": "cacheControl",
             "summary": "",
-            "url": "classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_content"
+            "url": "classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_cacheControl"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\GetBlobProperties\\BlobProperties\u003A\u003AcontentDisposition\u0028\u0029",
+            "name": "contentDisposition",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_contentDisposition"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\GetBlobProperties\\BlobProperties\u003A\u003AcontentEncoding\u0028\u0029",
+            "name": "contentEncoding",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_contentEncoding"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\GetBlobProperties\\BlobProperties\u003A\u003AcontentLanguage\u0028\u0029",
+            "name": "contentLanguage",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_contentLanguage"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\GetBlobProperties\\BlobProperties\u003A\u003AcontentType\u0028\u0029",
+            "name": "contentType",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_contentType"
         },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\GetBlobProperties\\BlobProperties\u003A\u003AlastModifiedAt\u0028\u0029",
             "name": "lastModifiedAt",
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_lastModifiedAt"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\GetBlobProperties\\BlobProperties\u003A\u003Ametadata\u0028\u0029",
+            "name": "metadata",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-GetBlobProperties-BlobProperties.html#method_metadata"
         },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\GetBlobProperties\\BlobProperties\u003A\u003Asize\u0028\u0029",
             "name": "size",
@@ -1021,10 +1056,35 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobService-PutBlockBlobBlockList-PutBlockBlobBlockListOptions.html#method_toURIParameters"
         },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\PutBlockBlobBlockList\\PutBlockBlobBlockListOptions\u003A\u003AwithCacheControl\u0028\u0029",
+            "name": "withCacheControl",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-PutBlockBlobBlockList-PutBlockBlobBlockListOptions.html#method_withCacheControl"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\PutBlockBlobBlockList\\PutBlockBlobBlockListOptions\u003A\u003AwithContentDisposition\u0028\u0029",
+            "name": "withContentDisposition",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-PutBlockBlobBlockList-PutBlockBlobBlockListOptions.html#method_withContentDisposition"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\PutBlockBlobBlockList\\PutBlockBlobBlockListOptions\u003A\u003AwithContentEncoding\u0028\u0029",
+            "name": "withContentEncoding",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-PutBlockBlobBlockList-PutBlockBlobBlockListOptions.html#method_withContentEncoding"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\PutBlockBlobBlockList\\PutBlockBlobBlockListOptions\u003A\u003AwithContentLanguage\u0028\u0029",
+            "name": "withContentLanguage",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-PutBlockBlobBlockList-PutBlockBlobBlockListOptions.html#method_withContentLanguage"
+        },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\PutBlockBlobBlockList\\PutBlockBlobBlockListOptions\u003A\u003AwithContentLength\u0028\u0029",
             "name": "withContentLength",
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobService-PutBlockBlobBlockList-PutBlockBlobBlockListOptions.html#method_withContentLength"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\PutBlockBlobBlockList\\PutBlockBlobBlockListOptions\u003A\u003AwithContentType\u0028\u0029",
+            "name": "withContentType",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-PutBlockBlobBlockList-PutBlockBlobBlockListOptions.html#method_withContentType"
         },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\PutBlockBlobBlockList\\PutBlockBlobBlockListOptions\u003A\u003AwithEncryption\u0028\u0029",
             "name": "withEncryption",
@@ -1035,6 +1095,11 @@ Search.appendIndex(
             "name": "withIfNoneMatch",
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobService-PutBlockBlobBlockList-PutBlockBlobBlockListOptions.html#method_withIfNoneMatch"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\PutBlockBlobBlockList\\PutBlockBlobBlockListOptions\u003A\u003AwithMetadata\u0028\u0029",
+            "name": "withMetadata",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-PutBlockBlobBlockList-PutBlockBlobBlockListOptions.html#method_withMetadata"
         },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\PutBlockBlobBlockList\\PutBlockBlobBlockListOptions\u003A\u003AwithRequestId\u0028\u0029",
             "name": "withRequestId",
@@ -1166,6 +1231,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobService.html#method_putBlockBlobBlock"
         },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\u003A\u003AputBlockBlobBlockFromBlob\u0028\u0029",
+            "name": "putBlockBlobBlockFromBlob",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService.html#method_putBlockBlobBlockFromBlob"
+        },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\u003A\u003AputBlockBlobBlockList\u0028\u0029",
             "name": "putBlockBlobBlockList",
             "summary": "",
@@ -1235,6 +1305,11 @@ Search.appendIndex(
             "name": "putBlockBlobBlock",
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobServiceInterface.html#method_putBlockBlobBlock"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobServiceInterface\u003A\u003AputBlockBlobBlockFromBlob\u0028\u0029",
+            "name": "putBlockBlobBlockFromBlob",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobServiceInterface.html#method_putBlockBlobBlockFromBlob"
         },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobServiceInterface\u003A\u003AputBlockBlobBlockList\u0028\u0029",
             "name": "putBlockBlobBlockList",
@@ -1340,6 +1415,11 @@ Search.appendIndex(
             "name": "get",
             "summary": "",
             "url": "classes/Flow-Azure-SDK-HttpFactory.html#method_get"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\HttpFactory\u003A\u003Ahead\u0028\u0029",
+            "name": "head",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-HttpFactory.html#method_head"
         },                {
             "fqsen": "\\Flow\\Azure\\SDK\\HttpFactory\u003A\u003Apost\u0028\u0029",
             "name": "post",
