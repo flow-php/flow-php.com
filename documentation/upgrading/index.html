@@ -163,7 +163,7 @@
         "@codemirror/language": "/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js",
         "@lezer/highlight": "/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js",
         "crelt": "/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js",
-        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-0bbbe9406281635405027e646ad4ab47.js",
+        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-bbf970fa2f43c6b87b110c4e541b313a.js",
         "@fontsource-variable/cabin/index.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2F%40fontsource-variable%2Fcabin%2Findex.min-2fd942a10b44e40a5f63d90a3479e0ee.css%22%7D%29%29",
         "prismjs/themes/prism.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2Fprismjs%2Fthemes%2Fprism.min-1698e178d1bb208a059f63cb8dcc0517.css%22%7D%29%29",
         "prismjs/themes/prism-okaidia.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2Fprismjs%2Fthemes%2Fprism-okaidia.min-08069b61612f4d092d8705c78d4e814b.css%22%7D%29%29",
@@ -261,7 +261,7 @@
 <link rel="modulepreload" href="/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js">
 <link rel="modulepreload" href="/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js">
 <link rel="modulepreload" href="/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js">
-<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-0bbbe9406281635405027e646ad4ab47.js">
+<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-bbf970fa2f43c6b87b110c4e541b313a.js">
 <script type="module">import 'app';</script>
     </head>
 <body class="scroll-smooth bg-[#e8eef7] text-slate-900 dark:bg-black dark:text-white" data-environment="prod">
@@ -1558,6 +1558,7 @@
 <li><a href="#17-flow-phpfilesystem-async-aws-bridge---the-client-has-http-limits-mv-and-appends-copy-in-ranged-parts">17) flow-php/filesystem-async-aws-bridge - the client has HTTP limits, mv() and appends copy in ranged parts</a></li>
 <li><a href="#18-flow-phpfilesystem-azure-bridge---the-blob-service-has-http-limits-and-retries">18) flow-php/filesystem-azure-bridge - the blob service has HTTP limits and retries</a></li>
 <li><a href="#19-flow-phpazure-sdk-and-flow-phpfilesystem-azure-bridge---mv-copies-synchronously-from-a-signed-source">19) flow-php/azure-sdk and flow-php/filesystem-azure-bridge - mv() copies synchronously from a signed source</a></li>
+<li><a href="#20-flow-phppostgresql---connection-string-values-are-quoted">20) flow-php/postgresql - connection string values are quoted</a></li>
 </ul>
 </li>
 <li><a href="#upgrading-from-046x-to-047x">Upgrading from 0.46.x to 0.47.x</a>
@@ -2568,6 +2569,19 @@ before it returns it fails with PHP's <code>Cannot rewind a generator that was a
 </tr>
 </tbody>
 </table>
+<h3><a id="20-flow-phppostgresql---connection-string-values-are-quoted" href="#20-flow-phppostgresql---connection-string-values-are-quoted" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>20) <code>flow-php/postgresql</code> - connection string values are quoted</h3>
+<p><code>ConnectionParameters::toString()</code> quotes a value that is empty or holds whitespace, <code>'</code> or <code>\</code>. A libpq
+<code>options</code> value that escapes spaces with a backslash no longer works. <code>ConnectionParameters::fromString()</code> and
+<code>pgsql_connection()</code> now read the string by the libpq rules: a backslash escapes the next character, and a keyword
+without <code>=</code> or an unterminated quote throws <code>InvalidArgumentException</code>.</p>
+<p>Before:</p>
+<pre class="language-plain" data-controller="syntax-highlight"><code class="language-plain">postgresql://user:pass@localhost/app?options=-cstatement_timeout%3D30s%5C%20-clock_timeout%3D10s
+</code></pre>
+<p>After:</p>
+<pre class="language-plain" data-controller="syntax-highlight"><code class="language-plain">postgresql://user:pass@localhost/app?options=-c%20statement_timeout%3D30s%20-c%20lock_timeout%3D10s
+</code></pre>
+<p>Or <code>withSessionSettings(['statement_timeout' =&gt; '30s', 'lock_timeout' =&gt; '10s'])</code>, or <code>session_settings</code> in the
+Symfony bundle.</p>
 <hr />
 <h2><a id="upgrading-from-046x-to-047x" href="#upgrading-from-046x-to-047x" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Upgrading from 0.46.x to 0.47.x</h2>
 <h3><a id="1-flow-phptypes---leaf-types-are-no-longer-generic" href="#1-flow-phptypes---leaf-types-are-no-longer-generic" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>1) <code>flow-php/types</code> - leaf types are no longer generic</h3>

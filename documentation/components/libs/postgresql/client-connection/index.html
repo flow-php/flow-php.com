@@ -163,7 +163,7 @@
         "@codemirror/language": "/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js",
         "@lezer/highlight": "/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js",
         "crelt": "/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js",
-        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-0bbbe9406281635405027e646ad4ab47.js",
+        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-bbf970fa2f43c6b87b110c4e541b313a.js",
         "@fontsource-variable/cabin/index.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2F%40fontsource-variable%2Fcabin%2Findex.min-2fd942a10b44e40a5f63d90a3479e0ee.css%22%7D%29%29",
         "prismjs/themes/prism.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2Fprismjs%2Fthemes%2Fprism.min-1698e178d1bb208a059f63cb8dcc0517.css%22%7D%29%29",
         "prismjs/themes/prism-okaidia.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2Fprismjs%2Fthemes%2Fprism-okaidia.min-08069b61612f4d092d8705c78d4e814b.css%22%7D%29%29",
@@ -261,7 +261,7 @@
 <link rel="modulepreload" href="/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js">
 <link rel="modulepreload" href="/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js">
 <link rel="modulepreload" href="/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js">
-<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-0bbbe9406281635405027e646ad4ab47.js">
+<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-bbf970fa2f43c6b87b110c4e541b313a.js">
 <script type="module">import 'app';</script>
     </head>
 <body class="scroll-smooth bg-[#e8eef7] text-slate-900 dark:bg-black dark:text-white" data-environment="prod">
@@ -1546,6 +1546,11 @@
 <li><a href="#database-suffix">Database Suffix</a></li>
 </ul>
 </li>
+<li><a href="#session-settings">Session Settings</a>
+<ul>
+<li><a href="#pgbouncer">PgBouncer</a></li>
+</ul>
+</li>
 <li><a href="#connection-lifecycle">Connection Lifecycle</a>
 <ul>
 <li><a href="#checking-connection-status">Checking Connection Status</a></li>
@@ -1575,6 +1580,13 @@ $client = pgsql_client(
 $client = pgsql_client(
     pgsql_connection('host=/var/run/postgresql dbname=mydb user=postgres')
 );
+</code></pre>
+<p>Put a value with spaces, quotes or backslashes in single quotes:</p>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+
+use function Flow\PostgreSql\DSL\pgsql_connection;
+
+$params = pgsql_connection("host=localhost dbname=mydb password='my secret'");
 </code></pre>
 <h2><a id="dsn-url" href="#dsn-url" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>DSN URL</h2>
 <p>Parse the standard PostgreSQL DSN format that environment variables often use:</p>
@@ -1661,6 +1673,27 @@ $params = (new DsnParser())-&gt;parse('postgresql://user:pass@localhost:5432/myd
 </code></pre>
 <p>With <code>withDatabase()</code>, apply the override first. The suffix is then appended to the overridden name
 (<code>withDatabase('other')-&gt;withDatabaseSuffix('_test')</code> ⇒ <code>other_test</code>).</p>
+<h2><a id="session-settings" href="#session-settings" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Session Settings</h2>
+<pre class="language-php" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+
+use function Flow\PostgreSql\DSL\{pgsql_client, pgsql_connection_dsn};
+
+$client = pgsql_client(
+    pgsql_connection_dsn('postgresql://user:pass@localhost:5432/mydb')
+        -&gt;withSessionSettings([
+            'statement_timeout' =&gt; '30s',
+            'lock_timeout' =&gt; '10s',
+            'idle_in_transaction_session_timeout' =&gt; '60s',
+        ])
+);
+</code></pre>
+<p>Each pair goes to the server as <code>-c name=value</code> in the libpq <code>options</code> key, after a value that is already there. A
+name holds letters, digits, <code>_</code> and <code>.</code>. The client escapes spaces and backslashes in the value.</p>
+<h3><a id="pgbouncer" href="#pgbouncer" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>PgBouncer</h3>
+<p>PgBouncer rejects a connection that sends startup parameters that it does not track. With
+<a rel="noopener noreferrer" target="_blank" href="https://www.pgbouncer.org/config.html#ignore_startup_parameters"><code>ignore_startup_parameters</code></a> it drops them, so the
+server does not apply the settings. Behind PgBouncer, set them with <code>SET</code> after you connect, or on the role with
+<code>ALTER ROLE ... SET</code>.</p>
 <h2><a id="connection-lifecycle" href="#connection-lifecycle" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Connection Lifecycle</h2>
 <h3><a id="checking-connection-status" href="#checking-connection-status" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Checking Connection Status</h3>
 <pre class="language-php" data-controller="syntax-highlight"><code class="language-php">&lt;?php
@@ -1728,6 +1761,7 @@ $client-&gt;close();
 </tr>
 </tbody>
 </table>
+<p><code>ConnectionParameters::OPTION_KEYS</code> lists the libpq keys that a DSN query string and the Symfony bundle accept.</p>
 <p>For the full list of libpq connection parameters, read
 the <a rel="noopener noreferrer" target="_blank" href="https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-PARAMKEYWORDS">PostgreSQL documentation</a>.</p>
 

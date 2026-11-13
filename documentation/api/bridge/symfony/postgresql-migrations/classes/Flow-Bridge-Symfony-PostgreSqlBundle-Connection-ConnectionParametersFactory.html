@@ -122,7 +122,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Connection/ConnectionParametersFactory.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-connection-connectionparametersfactory.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Connection/ConnectionParametersFactory.php">ConnectionParametersFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">10</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -130,6 +130,21 @@
 
 
 
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Flow-Bridge-Symfony-PostgreSqlBundle-Connection-ConnectionParametersFactory.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">type</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>ConnectionOverrides = array{dbname?: ?string, host?: ?string, port?: ?int, user?: ?string, password?: ?string, dbname_suffix?: string, options?: array&lt;string, bool|float|int|string|null&gt;, session_settings?: array&lt;string, bool|float|int|string|null&gt;}</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
     
     
@@ -182,14 +197,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Connection/ConnectionParametersFactory.php"><a href="files/src-bridge-symfony-postgresql-bundle-src-flow-bridge-symfony-postgresqlbundle-connection-connectionparametersfactory.html"><abbr title="src/bridge/symfony/postgresql-bundle/src/Flow/Bridge/Symfony/PostgreSqlBundle/Connection/ConnectionParametersFactory.php">ConnectionParametersFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Client\DsnParser">DsnParser</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parser</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dsn</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array{dbname?: ?string, host?: ?string, port?: ?int, user?: ?string, password?: ?string, dbname_suffix?: string}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$overrides</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\PostgreSql\Client\ConnectionParameters">ConnectionParameters</abbr></span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Client\DsnParser">DsnParser</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parser</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dsn</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\Bridge\Symfony\PostgreSqlBundle\Connection\ConnectionOverrides">ConnectionOverrides</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$overrides</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Flow\PostgreSql\Client\ConnectionParameters">ConnectionParameters</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -213,7 +228,7 @@
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$overrides</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array{dbname?: ?string, host?: ?string, port?: ?int, user?: ?string, password?: ?string, dbname_suffix?: string}</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\Bridge\Symfony\PostgreSqlBundle\Connection\ConnectionOverrides">ConnectionOverrides</abbr></span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
