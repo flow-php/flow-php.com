@@ -127,7 +127,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-InjectInto.html"><abbr title="\Flow\ETL\Adapter\Http\IO\Extractor\Pagination\InjectInto">InjectInto</abbr></a></dt>        <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-ETL-Adapter-Http-IO-Extractor-ResponseType.html"><abbr title="\Flow\ETL\Adapter\Http\IO\Extractor\ResponseType">ResponseType</abbr></a></dt></dl>
+            <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-InjectInto.html"><abbr title="\Flow\ETL\Adapter\Http\IO\Extractor\Pagination\InjectInto">InjectInto</abbr></a></dt>        <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-SensitiveHeaders.html"><abbr title="\Flow\ETL\Adapter\Http\IO\Extractor\Pagination\SensitiveHeaders">SensitiveHeaders</abbr></a></dt>        <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Flow-ETL-Adapter-Http-IO-Extractor-ResponseType.html"><abbr title="\Flow\ETL\Adapter\Http\IO\Extractor\ResponseType">ResponseType</abbr></a></dt></dl>
 
 
 
@@ -553,7 +553,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">144</span>
+    <span class="phpdocumentor-element-found-in__line">147</span>
 
     </aside>
 
@@ -561,7 +561,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">http_pagination_next_url</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stop_on_client_error</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\IO\Extractor\Pagination\StopWhen">StopWhen</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stop_when</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Paginator.html"><abbr title="\Flow\ETL\Adapter\Http\IO\Extractor\Pagination\Paginator">Paginator</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">http_pagination_next_url</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stop_on_client_error</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\IO\Extractor\Pagination\StopWhen">StopWhen</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stop_when</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sensitive_headers</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Paginator.html"><abbr title="\Flow\ETL\Adapter\Http\IO\Extractor\Pagination\Paginator">Paginator</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -587,6 +587,15 @@
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$sensitive_headers</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|array&lt;string|int, string&gt;</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>headers removed when the next URL changes the host or goes from https to http, null for SensitiveHeaders::toArray()</p>
+</section>
+
+            </dd>
             </dl>
 
     
@@ -606,7 +615,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">159</span>
+    <span class="phpdocumentor-element-found-in__line">166</span>
 
     </aside>
 
@@ -614,7 +623,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">http_pagination_link_header</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rel</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'next'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stop_on_client_error</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\IO\Extractor\Pagination\StopWhen">StopWhen</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stop_when</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Paginator.html"><abbr title="\Flow\ETL\Adapter\Http\IO\Extractor\Pagination\Paginator">Paginator</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">http_pagination_link_header</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rel</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'next'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stop_on_client_error</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-StopWhen.html"><abbr title="\Flow\ETL\Adapter\Http\IO\Extractor\Pagination\StopWhen">StopWhen</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stop_when</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sensitive_headers</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Adapter-Http-IO-Extractor-Pagination-Paginator.html"><abbr title="\Flow\ETL\Adapter\Http\IO\Extractor\Pagination\Paginator">Paginator</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -640,6 +649,15 @@
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$sensitive_headers</span>
+                : <span class="phpdocumentor-argument-list__argument__type">null|array&lt;string|int, string&gt;</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>headers removed when the next URL changes the host or goes from https to http, null for SensitiveHeaders::toArray()</p>
+</section>
+
+            </dd>
             </dl>
 
     
@@ -659,7 +677,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">168</span>
+    <span class="phpdocumentor-element-found-in__line">180</span>
 
     </aside>
 
@@ -719,7 +737,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">184</span>
+    <span class="phpdocumentor-element-found-in__line">196</span>
 
     </aside>
 
@@ -758,7 +776,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">190</span>
+    <span class="phpdocumentor-element-found-in__line">202</span>
 
     </aside>
 
@@ -797,7 +815,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">196</span>
+    <span class="phpdocumentor-element-found-in__line">208</span>
 
     </aside>
 
@@ -843,7 +861,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">202</span>
+    <span class="phpdocumentor-element-found-in__line">214</span>
 
     </aside>
 
@@ -872,7 +890,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">208</span>
+    <span class="phpdocumentor-element-found-in__line">220</span>
 
     </aside>
 
@@ -911,7 +929,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">214</span>
+    <span class="phpdocumentor-element-found-in__line">226</span>
 
     </aside>
 
@@ -950,7 +968,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">220</span>
+    <span class="phpdocumentor-element-found-in__line">232</span>
 
     </aside>
 
@@ -989,7 +1007,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">226</span>
+    <span class="phpdocumentor-element-found-in__line">238</span>
 
     </aside>
 
@@ -1028,7 +1046,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">232</span>
+    <span class="phpdocumentor-element-found-in__line">244</span>
 
     </aside>
 
@@ -1067,7 +1085,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">238</span>
+    <span class="phpdocumentor-element-found-in__line">250</span>
 
     </aside>
 
@@ -1106,7 +1124,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">244</span>
+    <span class="phpdocumentor-element-found-in__line">256</span>
 
     </aside>
 
@@ -1145,7 +1163,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">250</span>
+    <span class="phpdocumentor-element-found-in__line">262</span>
 
     </aside>
 
@@ -1184,7 +1202,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php"><a href="files/src-adapter-etl-adapter-http-src-flow-etl-adapter-http-dsl-functions.html"><abbr title="src/adapter/etl-adapter-http/src/Flow/ETL/Adapter/Http/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">256</span>
+    <span class="phpdocumentor-element-found-in__line">268</span>
 
     </aside>
 
