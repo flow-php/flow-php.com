@@ -131,7 +131,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/HashJoin/JoinKeys.php"><a href="files/src-core-etl-src-flow-etl-kernels-hashjoin-joinkeys.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/HashJoin/JoinKeys.php">JoinKeys.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">12</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
@@ -156,6 +156,12 @@
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#property_exact">$exact</a>
+    <span>
+                        &nbsp;: bool            </span>
+</dt>
+
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#property_left">$left</a>
     <span>
@@ -183,11 +189,30 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#method_decides">decides()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>The keys alone decide the condition for $keys: exact, no null, every column type compared by physical.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#method_encoders">encoders()</a>
     <span>
                                 &nbsp;: <abbr title="array{\Flow\ETL\Values\Grouping\KeyEncoder, \Flow\ETL\Values\Grouping\KeyEncoder}">KeyEncoder}</abbr>    </span>
 </dt>
 <dd>One key encoder per side, both keying in types().</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#method_leftKeys">leftKeys()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#method_rightKeys">rightKeys()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>    </span>
+</dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#method_types">types()</a>
@@ -217,6 +242,43 @@ a pair without both schemas keys in its own types.</dd>
             -public
                                                                     "
 >
+    <h4 class="phpdocumentor-element__name" id="property_exact">
+        $exact
+        <a href="classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#property_exact" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/HashJoin/JoinKeys.php"><a href="files/src-core-etl-src-flow-etl-kernels-hashjoin-joinkeys.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/HashJoin/JoinKeys.php">JoinKeys.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">27</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$exact</span>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
     <h4 class="phpdocumentor-element__name" id="property_left">
         $left
         <a href="classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#property_left" class="headerlink"><i class="fas fa-link"></i></a>
@@ -227,7 +289,7 @@ a pair without both schemas keys in its own types.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/HashJoin/JoinKeys.php"><a href="files/src-core-etl-src-flow-etl-kernels-hashjoin-joinkeys.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/HashJoin/JoinKeys.php">JoinKeys.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -264,7 +326,7 @@ a pair without both schemas keys in its own types.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/HashJoin/JoinKeys.php"><a href="files/src-core-etl-src-flow-etl-kernels-hashjoin-joinkeys.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/HashJoin/JoinKeys.php">JoinKeys.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -306,14 +368,14 @@ a pair without both schemas keys in its own types.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/HashJoin/JoinKeys.php"><a href="files/src-core-etl-src-flow-etl-kernels-hashjoin-joinkeys.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/HashJoin/JoinKeys.php">JoinKeys.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$left</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$right</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$left</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$right</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exact</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -337,6 +399,15 @@ a pair without both schemas keys in its own types.</dd>
 </section>
 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$exact</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>the condition is only Equal comparisons, so rows whose keys are equal and not null meet it</p>
+</section>
+
+            </dd>
             </dl>
 
     
@@ -344,6 +415,55 @@ a pair without both schemas keys in its own types.</dd>
         
     
     
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_decides">
+        decides()
+        <a href="classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#method_decides" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/HashJoin/JoinKeys.php"><a href="files/src-core-etl-src-flow-etl-kernels-hashjoin-joinkeys.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/HashJoin/JoinKeys.php">JoinKeys.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">53</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The keys alone decide the condition for $keys: exact, no null, every column type compared by physical.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">decides</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$keys</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$keys</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -359,7 +479,7 @@ a pair without both schemas keys in its own types.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/HashJoin/JoinKeys.php"><a href="files/src-core-etl-src-flow-etl-kernels-hashjoin-joinkeys.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/HashJoin/JoinKeys.php">JoinKeys.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -407,6 +527,124 @@ a pair without both schemas keys in its own types.</dd>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_leftKeys">
+        leftKeys()
+        <a href="classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#method_leftKeys" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/HashJoin/JoinKeys.php"><a href="files/src-core-etl-src-flow-etl-kernels-hashjoin-joinkeys.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/HashJoin/JoinKeys.php">JoinKeys.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">35</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">leftKeys</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, <abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$types</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$rows</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$types</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, <abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>the left key columns of $rows, each cast to its type in $types, named &quot;0&quot;, &quot;1&quot;, … by position</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_rightKeys">
+        rightKeys()
+        <a href="classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#method_rightKeys" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/HashJoin/JoinKeys.php"><a href="files/src-core-etl-src-flow-etl-kernels-hashjoin-joinkeys.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/HashJoin/JoinKeys.php">JoinKeys.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">45</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">rightKeys</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, <abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$types</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$rows</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$types</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, <abbr title="\Flow\Types\Type">Type</abbr>&lt;string|int, mixed&gt;&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>the right key columns of $rows, each cast to its type in $types, named &quot;0&quot;, &quot;1&quot;, … by position</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_types">
         types()
         <a href="classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#method_types" class="headerlink"><i class="fas fa-link"></i></a>
@@ -415,7 +653,7 @@ a pair without both schemas keys in its own types.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/HashJoin/JoinKeys.php"><a href="files/src-core-etl-src-flow-etl-kernels-hashjoin-joinkeys.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/HashJoin/JoinKeys.php">JoinKeys.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
@@ -480,6 +718,7 @@ a pair without both schemas keys in its own types.</p>
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#property_exact">$exact</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#property_left">$left</a></li>
                                                     <li class=""><a href="classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#property_right">$right</a></li>
                                             </ul>
@@ -489,7 +728,10 @@ a pair without both schemas keys in its own types.</p>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#method_decides">decides()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#method_encoders">encoders()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#method_leftKeys">leftKeys()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#method_rightKeys">rightKeys()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#method_types">types()</a></li>
                                     </ul>
             </li>

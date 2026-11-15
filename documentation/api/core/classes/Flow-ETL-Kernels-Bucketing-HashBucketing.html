@@ -129,7 +129,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/Bucketing/HashBucketing.php"><a href="files/src-core-etl-src-flow-etl-kernels-bucketing-hashbucketing.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/Bucketing/HashBucketing.php">HashBucketing.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
@@ -166,7 +166,6 @@
     <span>
                                 &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Kernels-Bucketing-Bucket.html"><abbr title="\Flow\ETL\Kernels\Bucketing\Bucket">Bucket</abbr></a>&gt;    </span>
 </dt>
-<dd>Distinct keys only: KeyGrouping groups a batch&#039;s rows by key first, so xxh128 runs once per distinct key.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Kernels-Bucketing-HashBucketing.html#method_id">id()</a>
@@ -208,7 +207,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/Bucketing/HashBucketing.php"><a href="files/src-core-etl-src-flow-etl-kernels-bucketing-hashbucketing.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/Bucketing/HashBucketing.php">HashBucketing.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -285,15 +284,14 @@ shuffle, so a shuffled bucket's own spill spreads over other buckets</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/Bucketing/HashBucketing.php"><a href="files/src-core-etl-src-flow-etl-kernels-bucketing-hashbucketing.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/Bucketing/HashBucketing.php">HashBucketing.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Distinct keys only: KeyGrouping groups a batch&#039;s rows by key first, so xxh128 runs once per distinct key.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">bucketize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Storage-RowsStorage.html"><abbr title="\Flow\ETL\Storage\RowsStorage">RowsStorage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$storage</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|non-empty-string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$runId</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Kernels-Bucketing-Bucket.html"><abbr title="\Flow\ETL\Kernels\Bucketing\Bucket">Bucket</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">bucketize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Values-Rows.html"><abbr title="\Flow\ETL\Values\Rows">Rows</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Storage-RowsStorage.html"><abbr title="\Flow\ETL\Storage\RowsStorage">RowsStorage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$storage</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Column-Backend.html"><abbr title="\Flow\ETL\Values\Column\Backend">Backend</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$backend</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">null|non-empty-string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$runId</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/Flow-ETL-Kernels-Bucketing-Bucket.html"><abbr title="\Flow\ETL\Kernels\Bucketing\Bucket">Bucket</abbr></a>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -311,6 +309,13 @@ shuffle, so a shuffled bucket's own spill spreads over other buckets</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$storage</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Storage-RowsStorage.html"><abbr title="\Flow\ETL\Storage\RowsStorage">RowsStorage</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$backend</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Column-Backend.html"><abbr title="\Flow\ETL\Values\Column\Backend">Backend</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -351,7 +356,7 @@ in every process</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/Bucketing/HashBucketing.php"><a href="files/src-core-etl-src-flow-etl-kernels-bucketing-hashbucketing.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/Bucketing/HashBucketing.php">HashBucketing.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -413,7 +418,7 @@ in every process</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Kernels/Bucketing/HashBucketing.php"><a href="files/src-core-etl-src-flow-etl-kernels-bucketing-hashbucketing.html"><abbr title="src/core/etl/src/Flow/ETL/Kernels/Bucketing/HashBucketing.php">HashBucketing.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 

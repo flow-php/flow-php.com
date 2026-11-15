@@ -15783,7 +15783,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\Bucketing\\HashBucketing\u003A\u003Abucketize\u0028\u0029",
             "name": "bucketize",
-            "summary": "Distinct\u0020keys\u0020only\u003A\u0020KeyGrouping\u0020groups\u0020a\u0020batch\u0027s\u0020rows\u0020by\u0020key\u0020first,\u0020so\u0020xxh128\u0020runs\u0020once\u0020per\u0020distinct\u0020key.",
+            "summary": "",
             "url": "classes/Flow-ETL-Kernels-Bucketing-HashBucketing.html#method_bucketize"
         },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\Bucketing\\HashBucketing\u003A\u003Aid\u0028\u0029",
@@ -15976,6 +15976,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Kernels\\HashJoin\\JoinKeys\u003A\u003AleftKeys\u0028\u0029",
+            "name": "leftKeys",
+            "summary": "",
+            "url": "classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#method_leftKeys"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Kernels\\HashJoin\\JoinKeys\u003A\u003ArightKeys\u0028\u0029",
+            "name": "rightKeys",
+            "summary": "",
+            "url": "classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#method_rightKeys"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Kernels\\HashJoin\\JoinKeys\u003A\u003Adecides\u0028\u0029",
+            "name": "decides",
+            "summary": "The\u0020keys\u0020alone\u0020decide\u0020the\u0020condition\u0020for\u0020\u0024keys\u003A\u0020exact,\u0020no\u0020null,\u0020every\u0020column\u0020type\u0020compared\u0020by\u0020physical.",
+            "url": "classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#method_decides"
+        },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\HashJoin\\JoinKeys\u003A\u003Aencoders\u0028\u0029",
             "name": "encoders",
             "summary": "One\u0020key\u0020encoder\u0020per\u0020side,\u0020both\u0020keying\u0020in\u0020types\u0028\u0029.",
@@ -15995,6 +16010,11 @@ Search.appendIndex(
             "name": "right",
             "summary": "",
             "url": "classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#property_right"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Kernels\\HashJoin\\JoinKeys\u003A\u003A\u0024exact",
+            "name": "exact",
+            "summary": "",
+            "url": "classes/Flow-ETL-Kernels-HashJoin-JoinKeys.html#property_exact"
         },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\HashJoin\\JoinSide",
             "name": "JoinSide",
@@ -24696,6 +24716,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Values-Column-AdaptiveBackend.html#method_groupTable"
         },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\AdaptiveBackend\u003A\u003Apartition\u0028\u0029",
+            "name": "partition",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-AdaptiveBackend.html#method_partition"
+        },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\AdaptiveBackend\u003A\u003Aadopt\u0028\u0029",
             "name": "adopt",
             "summary": "The\u0020same\u0020values\u0020in\u0020this\u0020backend\u0027s\u0020storage\u003A\u0020\u0024column\u0020itself\u0020when\u0020this\u0020backend\u0020owns\u0020it,\u0020otherwise\u0020one\u0020copy\u0020through\nbuilder\u0028\u0024definition\u0029\u002D\u003EappendTake\u0028\u0029.\u0020For\u0020producers\u0020that\u0020build\u0020columns\u0020outside\u0020the\u0020configured\u0020backend.",
@@ -24805,6 +24830,11 @@ Search.appendIndex(
             "name": "groupTable",
             "summary": "",
             "url": "classes/Flow-ETL-Values-Column-Backend.html#method_groupTable"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\Backend\u003A\u003Apartition\u0028\u0029",
+            "name": "partition",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-Backend.html#method_partition"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Backend\u003A\u003Aadopt\u0028\u0029",
             "name": "adopt",
@@ -26181,6 +26211,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Values-Column-PhpBackend.html#method_groupTable"
         },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\PhpBackend\u003A\u003Apartition\u0028\u0029",
+            "name": "partition",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-PhpBackend.html#method_partition"
+        },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\PhpBackend\u003A\u003Aadopt\u0028\u0029",
             "name": "adopt",
             "summary": "The\u0020same\u0020values\u0020in\u0020this\u0020backend\u0027s\u0020storage\u003A\u0020\u0024column\u0020itself\u0020when\u0020this\u0020backend\u0020owns\u0020it,\u0020otherwise\u0020one\u0020copy\u0020through\nbuilder\u0028\u0024definition\u0029\u002D\u003EappendTake\u0028\u0029.\u0020For\u0020producers\u0020that\u0020build\u0020columns\u0020outside\u0020the\u0020configured\u0020backend.",
@@ -26996,6 +27031,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Values-Grouping-GroupTable.html#method_assign"
         },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Grouping\\GroupTable\u003A\u003Alookup\u0028\u0029",
+            "name": "lookup",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Grouping-GroupTable.html#method_lookup"
+        },                {
             "fqsen": "\\Flow\\ETL\\Values\\Grouping\\GroupTable\u003A\u003Acount\u0028\u0029",
             "name": "count",
             "summary": "",
@@ -27011,10 +27051,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Values-Grouping-KeyEncoder.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Grouping\\KeyEncoder\u003A\u003Acolumns\u0028\u0029",
+            "name": "columns",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Grouping-KeyEncoder.html#method_columns"
+        },                {
             "fqsen": "\\Flow\\ETL\\Values\\Grouping\\KeyEncoder\u003A\u003Aof\u0028\u0029",
             "name": "of",
             "summary": "",
             "url": "classes/Flow-ETL-Values-Grouping-KeyEncoder.html#method_of"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Grouping\\KeyEncoder\u003A\u003AofColumns\u0028\u0029",
+            "name": "ofColumns",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Grouping-KeyEncoder.html#method_ofColumns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Grouping\\KeyEncoder\u003A\u003AbucketOf\u0028\u0029",
+            "name": "bucketOf",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Grouping-KeyEncoder.html#method_bucketOf"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Grouping\\PhpGroupTable",
             "name": "PhpGroupTable",
@@ -27030,6 +27085,11 @@ Search.appendIndex(
             "name": "assign",
             "summary": "",
             "url": "classes/Flow-ETL-Values-Grouping-PhpGroupTable.html#method_assign"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Grouping\\PhpGroupTable\u003A\u003Alookup\u0028\u0029",
+            "name": "lookup",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Grouping-PhpGroupTable.html#method_lookup"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Grouping\\PhpGroupTable\u003A\u003Acount\u0028\u0029",
             "name": "count",
