@@ -134,7 +134,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -221,6 +221,13 @@ builder($definition)-&gt;appendTake(). For producers that build columns outside 
 <dd>$value is logical or raw and is cast once through the Definition exactly like ColumnBuilder::append().</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_contains">contains()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-Values-Column-Column.html"><abbr title="\Flow\ETL\Values\Column\Column">Column</abbr></a>    </span>
+</dt>
+<dd>Both columns hold strings and have the same count. A row is null where either side is null.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_decode">decode()</a>
     <span>
                                 &nbsp;: <a href="classes/Flow-ETL-Values-Column-Column.html"><abbr title="\Flow\ETL\Values\Column\Column">Column</abbr></a>    </span>
@@ -250,6 +257,13 @@ another row count, a buffer outside the area, a column whose buffers the backend
 <dd>$rows as one Floe BATCH frame body: the directory, then every column&#039;s buffers in schema order, each stored raw
 (prefix -1) or through $codec with its raw length as prefix when that is shorter, 8-byte padded. The exact bytes
 decodeFrame() reads back.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_endsWith">endsWith()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-Values-Column-Column.html"><abbr title="\Flow\ETL\Values\Column\Column">Column</abbr></a>    </span>
+</dt>
+<dd>Both columns hold strings and have the same count. A row is null where either side is null.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_fromDescription">fromDescription()</a>
@@ -320,6 +334,13 @@ decodeFrame() reads back.</dd>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_releaseFreedMemory">releaseFreedMemory()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Returns memory this backend has freed to the operating system.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_resetAllocatedPeak">resetAllocatedPeak()</a>
     <span>
                                 &nbsp;: void    </span>
@@ -337,6 +358,13 @@ decodeFrame() reads back.</dd>
                                 &nbsp;: int    </span>
 </dt>
 <dd>Bytes sort($rows, $columns) allocates on top of $rows, at its peak.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_startsWith">startsWith()</a>
+    <span>
+                                &nbsp;: <a href="classes/Flow-ETL-Values-Column-Column.html"><abbr title="\Flow\ETL\Values\Column\Column">Column</abbr></a>    </span>
+</dt>
+<dd>Both columns hold strings and have the same count. A row is null where either side is null.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_subtract">subtract()</a>
@@ -372,7 +400,7 @@ decodeFrame() reads back.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -406,7 +434,7 @@ decodeFrame() reads back.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">403</span>
+    <span class="phpdocumentor-element-found-in__line">406</span>
 
     </aside>
 
@@ -461,7 +489,7 @@ decodeFrame() reads back.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">671</span>
+    <span class="phpdocumentor-element-found-in__line">716</span>
 
     </aside>
 
@@ -518,7 +546,7 @@ builder($definition)-&gt;appendTake(). For producers that build columns outside 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">696</span>
+    <span class="phpdocumentor-element-found-in__line">741</span>
 
     </aside>
 
@@ -557,7 +585,7 @@ builder($definition)-&gt;appendTake(). For producers that build columns outside 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">701</span>
+    <span class="phpdocumentor-element-found-in__line">746</span>
 
     </aside>
 
@@ -596,7 +624,7 @@ builder($definition)-&gt;appendTake(). For producers that build columns outside 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 
@@ -646,7 +674,7 @@ builder($definition)-&gt;appendTake(). For producers that build columns outside 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">356</span>
+    <span class="phpdocumentor-element-found-in__line">359</span>
 
     </aside>
 
@@ -722,7 +750,7 @@ builder($definition)-&gt;appendTake(). For producers that build columns outside 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
     </aside>
 
@@ -777,6 +805,62 @@ builder($definition)-&gt;appendTake(). For producers that build columns outside 
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_contains">
+        contains()
+        <a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_contains" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">567</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Both columns hold strings and have the same count. A row is null where either side is null.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">contains</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Column-Column.html"><abbr title="\Flow\ETL\Values\Column\Column">Column</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$haystack</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Column-Column.html"><abbr title="\Flow\ETL\Values\Column\Column">Column</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$needle</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Values-Column-Column.html"><abbr title="\Flow\ETL\Values\Column\Column">Column</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$haystack</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Column-Column.html"><abbr title="\Flow\ETL\Values\Column\Column">Column</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$needle</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Column-Column.html"><abbr title="\Flow\ETL\Values\Column\Column">Column</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Values-Column-Column.html"><abbr title="\Flow\ETL\Values\Column\Column">Column</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_decode">
         decode()
         <a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_decode" class="headerlink"><i class="fas fa-link"></i></a>
@@ -785,7 +869,7 @@ builder($definition)-&gt;appendTake(). For producers that build columns outside 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">121</span>
+    <span class="phpdocumentor-element-found-in__line">124</span>
 
     </aside>
 
@@ -857,7 +941,7 @@ builder($definition)-&gt;appendTake(). For producers that build columns outside 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">140</span>
 
     </aside>
 
@@ -922,7 +1006,7 @@ another row count, a buffer outside the area, a column whose buffers the backend
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
@@ -964,7 +1048,7 @@ another row count, a buffer outside the area, a column whose buffers the backend
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">304</span>
+    <span class="phpdocumentor-element-found-in__line">307</span>
 
     </aside>
 
@@ -1012,6 +1096,62 @@ decodeFrame() reads back.</p>
         class="phpdocumentor-element
             -method
             -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_endsWith">
+        endsWith()
+        <a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_endsWith" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">553</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Both columns hold strings and have the same count. A row is null where either side is null.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">endsWith</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Column-Column.html"><abbr title="\Flow\ETL\Values\Column\Column">Column</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$haystack</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Column-Column.html"><abbr title="\Flow\ETL\Values\Column\Column">Column</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$needle</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Values-Column-Column.html"><abbr title="\Flow\ETL\Values\Column\Column">Column</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$haystack</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Column-Column.html"><abbr title="\Flow\ETL\Values\Column\Column">Column</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$needle</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Column-Column.html"><abbr title="\Flow\ETL\Values\Column\Column">Column</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Values-Column-Column.html"><abbr title="\Flow\ETL\Values\Column\Column">Column</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                     -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_fromDescription">
@@ -1022,7 +1162,7 @@ decodeFrame() reads back.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
@@ -1077,7 +1217,7 @@ decodeFrame() reads back.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">561</span>
+    <span class="phpdocumentor-element-found-in__line">606</span>
 
     </aside>
 
@@ -1126,7 +1266,7 @@ decodeFrame() reads back.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">620</span>
+    <span class="phpdocumentor-element-found-in__line">665</span>
 
     </aside>
 
@@ -1164,7 +1304,7 @@ decodeFrame() reads back.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">615</span>
+    <span class="phpdocumentor-element-found-in__line">660</span>
 
     </aside>
 
@@ -1202,7 +1342,7 @@ decodeFrame() reads back.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">625</span>
+    <span class="phpdocumentor-element-found-in__line">670</span>
 
     </aside>
 
@@ -1257,7 +1397,7 @@ decodeFrame() reads back.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">398</span>
+    <span class="phpdocumentor-element-found-in__line">401</span>
 
     </aside>
 
@@ -1305,7 +1445,7 @@ decodeFrame() reads back.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">393</span>
+    <span class="phpdocumentor-element-found-in__line">396</span>
 
     </aside>
 
@@ -1353,7 +1493,7 @@ decodeFrame() reads back.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">496</span>
+    <span class="phpdocumentor-element-found-in__line">499</span>
 
     </aside>
 
@@ -1408,7 +1548,7 @@ decodeFrame() reads back.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">465</span>
+    <span class="phpdocumentor-element-found-in__line">468</span>
 
     </aside>
 
@@ -1463,7 +1603,7 @@ decodeFrame() reads back.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">582</span>
+    <span class="phpdocumentor-element-found-in__line">627</span>
 
     </aside>
 
@@ -1512,7 +1652,7 @@ decodeFrame() reads back.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">630</span>
+    <span class="phpdocumentor-element-found-in__line">675</span>
 
     </aside>
 
@@ -1579,6 +1719,41 @@ decodeFrame() reads back.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_releaseFreedMemory">
+        releaseFreedMemory()
+        <a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_releaseFreedMemory" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">753</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns memory this backend has freed to the operating system.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">releaseFreedMemory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_resetAllocatedPeak">
         resetAllocatedPeak()
         <a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_resetAllocatedPeak" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1587,7 +1762,7 @@ decodeFrame() reads back.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">706</span>
+    <span class="phpdocumentor-element-found-in__line">751</span>
 
     </aside>
 
@@ -1621,7 +1796,7 @@ decodeFrame() reads back.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">536</span>
+    <span class="phpdocumentor-element-found-in__line">581</span>
 
     </aside>
 
@@ -1676,7 +1851,7 @@ decodeFrame() reads back.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">543</span>
+    <span class="phpdocumentor-element-found-in__line">588</span>
 
     </aside>
 
@@ -1724,6 +1899,62 @@ decodeFrame() reads back.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_startsWith">
+        startsWith()
+        <a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_startsWith" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">539</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Both columns hold strings and have the same count. A row is null where either side is null.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">startsWith</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Column-Column.html"><abbr title="\Flow\ETL\Values\Column\Column">Column</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$haystack</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Values-Column-Column.html"><abbr title="\Flow\ETL\Values\Column\Column">Column</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$needle</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Values-Column-Column.html"><abbr title="\Flow\ETL\Values\Column\Column">Column</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$haystack</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Column-Column.html"><abbr title="\Flow\ETL\Values\Column\Column">Column</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$needle</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Values-Column-Column.html"><abbr title="\Flow\ETL\Values\Column\Column">Column</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Values-Column-Column.html"><abbr title="\Flow\ETL\Values\Column\Column">Column</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_subtract">
         subtract()
         <a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_subtract" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1732,7 +1963,7 @@ decodeFrame() reads back.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php"><a href="files/src-core-etl-src-flow-etl-values-column-phpbackend.html"><abbr title="src/core/etl/src/Flow/ETL/Values/Column/PhpBackend.php">PhpBackend.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">434</span>
+    <span class="phpdocumentor-element-found-in__line">437</span>
 
     </aside>
 
@@ -1803,10 +2034,12 @@ decodeFrame() reads back.</p>
                                             <li class=""><a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_builder">builder()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_compare">compare()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_constant">constant()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_contains">contains()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_decode">decode()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_decodeFrame">decodeFrame()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_describe">describe()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_encodeFrame">encodeFrame()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_endsWith">endsWith()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_fromDescription">fromDescription()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_gatheredBytes">gatheredBytes()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_groupedCounts">groupedCounts()</a></li>
@@ -1818,9 +2051,11 @@ decodeFrame() reads back.</p>
                                             <li class=""><a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_multiply">multiply()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_orderedBytes">orderedBytes()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_partition">partition()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_releaseFreedMemory">releaseFreedMemory()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_resetAllocatedPeak">resetAllocatedPeak()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_sort">sort()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_sortWorkingBytes">sortWorkingBytes()</a></li>
+                                            <li class=""><a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_startsWith">startsWith()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-Values-Column-PhpBackend.html#method_subtract">subtract()</a></li>
                                     </ul>
             </li>

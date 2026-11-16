@@ -3041,6 +3041,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Foundation-Describe-Rebuild.html#method_progress"
         },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Describe\\Rebuild\u003A\u003A\u0024memoryShare",
+            "name": "memoryShare",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-Describe-Rebuild.html#property_memoryShare"
+        },                {
             "fqsen": "\\Flow\\ETL\\Foundation\\Exception\\ColumnMismatchException",
             "name": "ColumnMismatchException",
             "summary": "",
@@ -8756,6 +8761,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Functions-Parameter.html#method_arraysOf"
         },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\Parameter\u003A\u003AtypesOf\u0028\u0029",
+            "name": "typesOf",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-Parameter.html#method_typesOf"
+        },                {
             "fqsen": "\\Flow\\ETL\\Functions\\Parameter\u003A\u003AasBooleans\u0028\u0029",
             "name": "asBooleans",
             "summary": "",
@@ -8780,6 +8790,11 @@ Search.appendIndex(
             "name": "asIntegerColumn",
             "summary": "",
             "url": "classes/Flow-ETL-Functions-Parameter.html#method_asIntegerColumn"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\Parameter\u003A\u003AasStringColumn\u0028\u0029",
+            "name": "asStringColumn",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-Parameter.html#method_asStringColumn"
         },                {
             "fqsen": "\\Flow\\ETL\\Functions\\Parameter\u003A\u003AasNumberColumn\u0028\u0029",
             "name": "asNumberColumn",
@@ -16146,6 +16161,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_fanIn"
         },                {
+            "fqsen": "\\Flow\\ETL\\Kernels\\Sort\\ExternalSort\u003A\u003A\u0024merge",
+            "name": "merge",
+            "summary": "",
+            "url": "classes/Flow-ETL-Kernels-Sort-ExternalSort.html#property_merge"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Kernels\\Sort\\ExternalSort\u003A\u003Acoalesced\u0028\u0029",
+            "name": "coalesced",
+            "summary": "",
+            "url": "classes/Flow-ETL-Kernels-Sort-ExternalSort.html#method_coalesced"
+        },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\Sort\\ExternalSort\u003A\u003Areduce\u0028\u0029",
             "name": "reduce",
             "summary": "",
@@ -16171,15 +16196,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Kernels-Sort-ExternalSort.html#property_spill"
         },                {
+            "fqsen": "\\Flow\\ETL\\Kernels\\Sort\\ExternalSort\u003A\u003AMERGE_CURSOR_ROWS",
+            "name": "MERGE_CURSOR_ROWS",
+            "summary": "",
+            "url": "classes/Flow-ETL-Kernels-Sort-ExternalSort.html#constant_MERGE_CURSOR_ROWS"
+        },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\Sort\\ExternalSort\u003A\u003A\u0024columns",
             "name": "columns",
             "summary": "",
             "url": "classes/Flow-ETL-Kernels-Sort-ExternalSort.html#property_columns"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Kernels\\Sort\\ExternalSort\u003A\u003A\u0024merge",
-            "name": "merge",
-            "summary": "",
-            "url": "classes/Flow-ETL-Kernels-Sort-ExternalSort.html#property_merge"
         },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\Sort\\ExternalSort\u003A\u003A\u0024mergeFanIn",
             "name": "mergeFanIn",
@@ -17391,6 +17416,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Operators-Processor-Distribution.html#property_progress"
         },                {
+            "fqsen": "\\Flow\\ETL\\Operators\\Processor\\Distribution\u003A\u003A\u0024sort",
+            "name": "sort",
+            "summary": "",
+            "url": "classes/Flow-ETL-Operators-Processor-Distribution.html#property_sort"
+        },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Processor\\ExpandingProcessor",
             "name": "ExpandingProcessor",
             "summary": "",
@@ -17476,10 +17506,20 @@ Search.appendIndex(
             "summary": "Process\u0020a\u0020stream\u0020of\u0020Rows\u0020and\u0020return\u0020a\u0020new\u0020stream.",
             "url": "classes/Flow-ETL-Operators-Processor-GroupByAggregationProcessor.html#method_process"
         },                {
+            "fqsen": "\\Flow\\ETL\\Operators\\Processor\\GroupByAggregationProcessor\u003A\u003AearlierByBucket\u0028\u0029",
+            "name": "earlierByBucket",
+            "summary": "",
+            "url": "classes/Flow-ETL-Operators-Processor-GroupByAggregationProcessor.html#method_earlierByBucket"
+        },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Processor\\GroupByAggregationProcessor\u003A\u003Aspilled\u0028\u0029",
             "name": "spilled",
             "summary": "",
             "url": "classes/Flow-ETL-Operators-Processor-GroupByAggregationProcessor.html#method_spilled"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Operators\\Processor\\GroupByAggregationProcessor\u003A\u003AEARLIER_KEYS_CHUNK",
+            "name": "EARLIER_KEYS_CHUNK",
+            "summary": "",
+            "url": "classes/Flow-ETL-Operators-Processor-GroupByAggregationProcessor.html#constant_EARLIER_KEYS_CHUNK"
         },                {
             "fqsen": "\\Flow\\ETL\\Operators\\Processor\\GroupByAggregationProcessor\u003A\u003A\u0024groupBy",
             "name": "groupBy",
@@ -24691,6 +24731,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Values-Column-AdaptiveBackend.html#method_modulo"
         },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\AdaptiveBackend\u003A\u003AstartsWith\u0028\u0029",
+            "name": "startsWith",
+            "summary": "Both\u0020columns\u0020hold\u0020strings\u0020and\u0020have\u0020the\u0020same\u0020count.\u0020A\u0020row\u0020is\u0020null\u0020where\u0020either\u0020side\u0020is\u0020null.",
+            "url": "classes/Flow-ETL-Values-Column-AdaptiveBackend.html#method_startsWith"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\AdaptiveBackend\u003A\u003AendsWith\u0028\u0029",
+            "name": "endsWith",
+            "summary": "Both\u0020columns\u0020hold\u0020strings\u0020and\u0020have\u0020the\u0020same\u0020count.\u0020A\u0020row\u0020is\u0020null\u0020where\u0020either\u0020side\u0020is\u0020null.",
+            "url": "classes/Flow-ETL-Values-Column-AdaptiveBackend.html#method_endsWith"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\AdaptiveBackend\u003A\u003Acontains\u0028\u0029",
+            "name": "contains",
+            "summary": "Both\u0020columns\u0020hold\u0020strings\u0020and\u0020have\u0020the\u0020same\u0020count.\u0020A\u0020row\u0020is\u0020null\u0020where\u0020either\u0020side\u0020is\u0020null.",
+            "url": "classes/Flow-ETL-Values-Column-AdaptiveBackend.html#method_contains"
+        },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\AdaptiveBackend\u003A\u003Asort\u0028\u0029",
             "name": "sort",
             "summary": "",
@@ -24740,6 +24795,11 @@ Search.appendIndex(
             "name": "resetAllocatedPeak",
             "summary": "",
             "url": "classes/Flow-ETL-Values-Column-AdaptiveBackend.html#method_resetAllocatedPeak"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\AdaptiveBackend\u003A\u003AreleaseFreedMemory\u0028\u0029",
+            "name": "releaseFreedMemory",
+            "summary": "Returns\u0020memory\u0020this\u0020backend\u0020has\u0020freed\u0020to\u0020the\u0020operating\u0020system.",
+            "url": "classes/Flow-ETL-Values-Column-AdaptiveBackend.html#method_releaseFreedMemory"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Backend",
             "name": "Backend",
@@ -24806,6 +24866,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Values-Column-Backend.html#method_modulo"
         },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\Backend\u003A\u003AstartsWith\u0028\u0029",
+            "name": "startsWith",
+            "summary": "Both\u0020columns\u0020hold\u0020strings\u0020and\u0020have\u0020the\u0020same\u0020count.\u0020A\u0020row\u0020is\u0020null\u0020where\u0020either\u0020side\u0020is\u0020null.",
+            "url": "classes/Flow-ETL-Values-Column-Backend.html#method_startsWith"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\Backend\u003A\u003AendsWith\u0028\u0029",
+            "name": "endsWith",
+            "summary": "Both\u0020columns\u0020hold\u0020strings\u0020and\u0020have\u0020the\u0020same\u0020count.\u0020A\u0020row\u0020is\u0020null\u0020where\u0020either\u0020side\u0020is\u0020null.",
+            "url": "classes/Flow-ETL-Values-Column-Backend.html#method_endsWith"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\Backend\u003A\u003Acontains\u0028\u0029",
+            "name": "contains",
+            "summary": "Both\u0020columns\u0020hold\u0020strings\u0020and\u0020have\u0020the\u0020same\u0020count.\u0020A\u0020row\u0020is\u0020null\u0020where\u0020either\u0020side\u0020is\u0020null.",
+            "url": "classes/Flow-ETL-Values-Column-Backend.html#method_contains"
+        },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Backend\u003A\u003Asort\u0028\u0029",
             "name": "sort",
             "summary": "",
@@ -24855,6 +24930,11 @@ Search.appendIndex(
             "name": "resetAllocatedPeak",
             "summary": "",
             "url": "classes/Flow-ETL-Values-Column-Backend.html#method_resetAllocatedPeak"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\Backend\u003A\u003AreleaseFreedMemory\u0028\u0029",
+            "name": "releaseFreedMemory",
+            "summary": "Returns\u0020memory\u0020this\u0020backend\u0020has\u0020freed\u0020to\u0020the\u0020operating\u0020system.",
+            "url": "classes/Flow-ETL-Values-Column-Backend.html#method_releaseFreedMemory"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Column",
             "name": "Column",
@@ -26176,6 +26256,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Values-Column-PhpBackend.html#method_modulo"
         },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\PhpBackend\u003A\u003AstartsWith\u0028\u0029",
+            "name": "startsWith",
+            "summary": "Both\u0020columns\u0020hold\u0020strings\u0020and\u0020have\u0020the\u0020same\u0020count.\u0020A\u0020row\u0020is\u0020null\u0020where\u0020either\u0020side\u0020is\u0020null.",
+            "url": "classes/Flow-ETL-Values-Column-PhpBackend.html#method_startsWith"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\PhpBackend\u003A\u003AendsWith\u0028\u0029",
+            "name": "endsWith",
+            "summary": "Both\u0020columns\u0020hold\u0020strings\u0020and\u0020have\u0020the\u0020same\u0020count.\u0020A\u0020row\u0020is\u0020null\u0020where\u0020either\u0020side\u0020is\u0020null.",
+            "url": "classes/Flow-ETL-Values-Column-PhpBackend.html#method_endsWith"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\PhpBackend\u003A\u003Acontains\u0028\u0029",
+            "name": "contains",
+            "summary": "Both\u0020columns\u0020hold\u0020strings\u0020and\u0020have\u0020the\u0020same\u0020count.\u0020A\u0020row\u0020is\u0020null\u0020where\u0020either\u0020side\u0020is\u0020null.",
+            "url": "classes/Flow-ETL-Values-Column-PhpBackend.html#method_contains"
+        },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\PhpBackend\u003A\u003Asort\u0028\u0029",
             "name": "sort",
             "summary": "",
@@ -26235,6 +26330,11 @@ Search.appendIndex(
             "name": "resetAllocatedPeak",
             "summary": "",
             "url": "classes/Flow-ETL-Values-Column-PhpBackend.html#method_resetAllocatedPeak"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\PhpBackend\u003A\u003AreleaseFreedMemory\u0028\u0029",
+            "name": "releaseFreedMemory",
+            "summary": "Returns\u0020memory\u0020this\u0020backend\u0020has\u0020freed\u0020to\u0020the\u0020operating\u0020system.",
+            "url": "classes/Flow-ETL-Values-Column-PhpBackend.html#method_releaseFreedMemory"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Physical\\DatePhysical",
             "name": "DatePhysical",
