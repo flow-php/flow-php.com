@@ -1546,10 +1546,10 @@
 </li>
 <li><a href="#usage">Usage</a></li>
 <li><a href="#csv-and-json-writers">CSV and JSON writers</a></li>
-<li><a href="#parquet">Parquet</a></li></ul></div></div>
+<li><a href="#parquet">Parquet</a></li>
+<li><a href="#memory-returned-to-the-system">Memory returned to the system</a></li></ul></div></div>
 <p>This extension is the native column backend of Flow. It uses <a rel="noopener noreferrer" target="_blank" href="https://github.com/extphprs/ext-php-rs">ext-php-rs</a>
-to read and write CSV and JSON natively in Rust. It reads and writes Parquet through the
-<a href="/documentation/components/extensions/arrow-ext">arrow extension</a>. The pure-PHP implementations in <code>flow-php/etl</code>
+to read and write CSV, JSON and Parquet natively in Rust. The pure-PHP implementations in <code>flow-php/etl</code>
 are the canonical reference for the behaviour, and they work without the extension. The extension only makes Flow
 faster.</p>
 <h2><a id="loading-the-extension" href="#loading-the-extension" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Loading the Extension</h2>
@@ -1681,10 +1681,9 @@ natively with the flags <code>JSON_THROW_ON_ERROR</code>, <code>JSON_UNESCAPED_S
 <code>JSON_PRESERVE_ZERO_FRACTION</code>. With a different flag (<code>JSON_PRETTY_PRINT</code>, ...), they write through PHP.</p>
 <p><code>RustCSVEncoder</code> / <code>RustJsonEncoder</code> hold the PHP encoder that renders the PHP columns.</p>
 <h2><a id="parquet" href="#parquet" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Parquet</h2>
-<p>When this extension and the <a href="/documentation/components/extensions/arrow-ext">arrow extension</a> are both loaded,
-<code>from_parquet()</code> and <code>to_parquet()</code> without an <code>engine:</code> read and write native columns. arrow-ext reads and writes the
-file. Its batches go into <code>RustColumn</code>s (and back) through the Arrow C Data Interface. There is no copy and no PHP
-value for each cell.</p>
+<p>This extension has its own Parquet engine, <code>Flow\ETL\Adapter\Parquet\IO\Engine\FlowPhpParquetEngine</code>. Without an
+<code>engine:</code>, <code>from_parquet()</code> and <code>to_parquet()</code> use it, and the batches are native columns. The memory limit of a run
+counts the bytes of the engine, because one allocator holds them. No other extension is needed.</p>
 <table>
 <thead>
 <tr>
@@ -1694,20 +1693,20 @@ value for each cell.</p>
 </thead>
 <tbody>
 <tr>
+<td>flow_php</td>
+<td><code>FlowPhpParquetEngine</code>, native columns</td>
+</tr>
+<tr>
 <td>flow_php, arrow</td>
-<td>native columns through the Arrow C Data Interface</td>
+<td><code>FlowPhpParquetEngine</code>, native columns</td>
 </tr>
 <tr>
 <td>arrow</td>
-<td><code>RustParquetEngine</code> (arrow-ext), PHP values</td>
-</tr>
-<tr>
-<td>flow_php</td>
-<td><code>PhpParquetEngine</code>, and <code>RustBackend</code> adopts the values into native columns</td>
+<td><code>PhpParquetEngine</code>, PHP values</td>
 </tr>
 <tr>
 <td>neither</td>
-<td><code>PhpParquetEngine</code></td>
+<td><code>PhpParquetEngine</code>, PHP values</td>
 </tr>
 </tbody>
 </table>
@@ -1730,12 +1729,17 @@ df()
     -&gt;run();
 </code></pre>
 <p>A schema type can store a different arrow type than the type that the file column reads as. The read refuses such a
-type before the first batch. <code>RustBackend::allocatedBytes()</code> counts the imported batches while they live. It does not
-count the read buffers of arrow-ext: the projected column chunks of a row group and the decode buffers. A
-<code>MemoryBudget</code> therefore does not see them. Read and write refusals are the <code>Flow\Parquet\Exception\*</code> of arrow-ext,
-as with <code>RustParquetEngine</code>.</p>
-<p><code>RustParquetOpenSource</code> reads through <code>Flow\Arrow\Parquet\RustBatchReader</code> of arrow-ext. <code>RustParquetFileWriter</code> writes
-through <code>Flow\Parquet\Engine\RustParquetFileWriter</code> of arrow-ext.</p>
+type before the first batch. Read and write refusals are the <code>Flow\Parquet\Exception\*</code> that
+<a href="/documentation/components/extensions/arrow-ext">arrow-ext</a> also throws: both extensions build the same engine code.
+With <code>engine: new RustParquetEngine()</code>, arrow-ext reads the file, the columns are built from PHP values, and a memory
+limit does not count the bytes of arrow-ext.</p>
+<h2><a id="memory-returned-to-the-system" href="#memory-returned-to-the-system" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Memory returned to the system</h2>
+<p>When the extension loads on Linux with glibc, it fixes the mmap threshold of the process at 128 KiB. glibc otherwise
+raises the threshold as large blocks are freed, and the freed buffers stay on the heap. With a fixed threshold, a sort
+holds what its memory limit counts. The threshold applies to the whole process. To keep your own value, set it in the
+environment:</p>
+<pre class="language-bash" data-controller="syntax-highlight"><code class="language-bash">MALLOC_MMAP_THRESHOLD_=262144 php your_script.php
+</code></pre>
 
 
             <p class="!mt-12 !mb-8 text-sm text-slate-500 dark:text-white/55" data-pagefind-ignore>

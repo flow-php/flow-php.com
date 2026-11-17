@@ -1560,6 +1560,8 @@
 <li><a href="#19-flow-phpazure-sdk-and-flow-phpfilesystem-azure-bridge---mv-copies-synchronously-from-a-signed-source">19) flow-php/azure-sdk and flow-php/filesystem-azure-bridge - mv() copies synchronously from a signed source</a></li>
 <li><a href="#20-flow-phppostgresql---connection-string-values-are-quoted">20) flow-php/postgresql - connection string values are quoted</a></li>
 <li><a href="#21-flow-phpetl---the-default-memory-limit-is-4-gib-externalsortreduce-takes-streams">21) flow-php/etl - the default memory limit is 4 GiB, ExternalSort::reduce() takes streams</a></li>
+<li><a href="#22-flow-phpetl-adapter-parquet-and-flow-phpflow-php-ext---with-flowphp-parquet-has-its-own-engine">22) flow-php/etl-adapter-parquet and flow-php/flow-php-ext - with flow_php, Parquet has its own engine</a></li>
+<li><a href="#23-flow-phparrow-ext---the-arrow-c-data-classes-are-removed">23) flow-php/arrow-ext - the Arrow C data classes are removed</a></li>
 </ul>
 </li>
 <li><a href="#upgrading-from-046x-to-047x">Upgrading from 0.46.x to 0.47.x</a>
@@ -2599,6 +2601,74 @@ Symfony bundle.</p>
 <tr>
 <td><code>ExternalSort::reduce(list&lt;BucketRun&gt;, KWayMerge, int, ?int)</code></td>
 <td><code>reduce(list&lt;Generator&lt;Rows&gt;&gt;, KWayMerge, int, ?int)</code>, removes no run</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="22-flow-phpetl-adapter-parquet-and-flow-phpflow-php-ext---with-flowphp-parquet-has-its-own-engine" href="#22-flow-phpetl-adapter-parquet-and-flow-phpflow-php-ext---with-flowphp-parquet-has-its-own-engine" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>22) <code>flow-php/etl-adapter-parquet</code> and <code>flow-php/flow-php-ext</code> - with <code>flow_php</code>, Parquet has its own engine</h3>
+<p>With <code>flow_php</code>, the memory limit of a run counts the Parquet bytes. With <code>arrow</code> alone, ETL reads and writes on the
+PHP engine.</p>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>no <code>engine:</code> is <code>AdaptiveParquetEngine</code>: <code>RustParquetEngine</code> when <code>arrow</code> is loaded</td>
+<td><code>FlowPhpParquetEngine</code> when <code>flow_php</code> is loaded, else <code>PhpParquetEngine</code></td>
+</tr>
+<tr>
+<td><code>arrow</code> alone: ETL reads and writes on <code>RustParquetEngine</code></td>
+<td><code>PhpParquetEngine</code>. Pass <code>engine: new RustParquetEngine()</code> to keep <code>arrow</code>. A memory limit does not count its bytes</td>
+</tr>
+<tr>
+<td>both loaded, <code>engine: new RustParquetEngine()</code>: batches into native columns through the Arrow C data interface</td>
+<td>PHP values from <code>arrow</code>, adopted by the backend</td>
+</tr>
+<tr>
+<td><code>RustParquetOpenSource::__construct(RustParquetFileReader $file)</code></td>
+<td><code>__construct(FlowPhpParquetFileReader $file)</code></td>
+</tr>
+<tr>
+<td><code>RustParquetFileWriter::__construct(Flow\Parquet\Engine\RustParquetFileWriter $writer, ...)</code></td>
+<td><code>__construct(FlowPhpParquetFileWriter $writer, ...)</code></td>
+</tr>
+<tr>
+<td><code>Flow\ETL\Values\Column\RustColumnsBatch</code></td>
+<td>removed</td>
+</tr>
+<tr>
+<td>a worker of an extension engine needs the codec extensions</td>
+<td>it needs that extension (<code>flow_php</code> or <code>arrow</code>) and no codec extension</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="23-flow-phparrow-ext---the-arrow-c-data-classes-are-removed" href="#23-flow-phparrow-ext---the-arrow-c-data-classes-are-removed" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>23) <code>flow-php/arrow-ext</code> - the Arrow C data classes are removed</h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Flow\Arrow\Parquet\RustBatchReader</code>, <code>Flow\Arrow\RustParquetBatch</code>, <code>Flow\Arrow\RustArrowSchema</code></td>
+<td>removed. ETL reads through the <code>flow_php</code> engine. <code>flow-php/parquet</code> reads with <code>readColumns()</code> / <code>readStoredColumns()</code></td>
+</tr>
+<tr>
+<td><code>RustParquetFileWriter::writeArrowBatch()</code></td>
+<td>removed. Use <code>writeColumns()</code> / <code>writeStoredColumns()</code></td>
+</tr>
+<tr>
+<td><code>RustBackend::allocatedBytes()</code> adds <code>Flow\Arrow\allocated_bytes()</code></td>
+<td>it counts the bytes of <code>flow_php</code> only, which hold the Parquet bytes of the <code>flow_php</code> engine. <code>Flow\Arrow\allocated_bytes()</code> stays for the bytes of <code>arrow</code></td>
+</tr>
+<tr>
+<td><code>FLOW_ARROW_ABI</code> 2</td>
+<td>3: build <code>arrow</code> from the release of <code>flow-php/parquet</code></td>
 </tr>
 </tbody>
 </table>

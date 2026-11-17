@@ -1603,12 +1603,12 @@ that Flow detects and uses automatically:</p>
 <tr>
 <td><code>flow_php</code></td>
 <td><a href="/documentation/components/extensions/flow-php-ext">flow-php/flow-php-ext</a></td>
-<td><code>AdaptiveBackend</code> picks <code>RustBackend</code> (<a href="/documentation/components/core/column-backend">Column Backend</a>). CSV and JSON are read and written in Rust. With <code>arrow</code>, Parquet batches go between the extensions without PHP values</td>
+<td><code>AdaptiveBackend</code> picks <code>RustBackend</code> (<a href="/documentation/components/core/column-backend">Column Backend</a>). CSV, JSON and Parquet are read and written in Rust, and the memory limit of a run counts the Parquet bytes</td>
 </tr>
 <tr>
 <td><code>arrow</code></td>
 <td><a href="/documentation/components/extensions/arrow-ext">flow-php/arrow-ext</a></td>
-<td><code>AdaptiveParquetEngine</code> picks the <code>RustParquetEngine</code> of arrow-ext, so Parquet files are decoded and encoded in Rust</td>
+<td><code>AdaptiveParquetEngine</code> picks the <code>RustParquetEngine</code> of arrow-ext for <code>flow-php/parquet</code> used directly. ETL uses it only with an explicit <code>engine:</code></td>
 </tr>
 <tr>
 <td><code>pg_query</code></td>

@@ -1553,9 +1553,10 @@
 </ul>
 <h2><a id="optional-extensions" href="#optional-extensions" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Optional Extensions</h2>
 <ul>
-<li><a href="/documentation/installation/packages/arrow-ext">arrow-ext</a>: parquet files are decoded and encoded in Rust.</li>
-<li><a href="/documentation/installation/packages/flow-php-ext">flow_php</a>: if arrow-ext is also loaded, batches go between
-the extensions without PHP values.</li>
+<li><a href="/documentation/installation/packages/flow-php-ext">flow_php</a>: Parquet files are read and written in Rust, and the
+memory limit of a run counts their bytes. No other extension is needed.</li>
+<li><a href="/documentation/installation/packages/arrow-ext">arrow-ext</a>: for <code>flow-php/parquet</code> used directly, or as an explicit
+<code>engine: new RustParquetEngine()</code>. A memory limit does not count its bytes.</li>
 </ul>
 <p>The adapter conflicts with <code>ext-arrow &lt;0.45</code> and <code>ext-flow_php &lt;0.45</code>.</p>
 

@@ -1552,7 +1552,6 @@
 <li><a href="#usage">Usage</a>
 <ul>
 <li><a href="#classes">Classes</a></li>
-<li><a href="#arrow-c-data-interface">Arrow C Data Interface</a></li>
 <li><a href="#native-memory">Native memory</a></li>
 </ul>
 </li>
@@ -1590,7 +1589,6 @@ analytics use widely.</p>
 <li>Nested types: LIST, STRUCT, MAP (arbitrarily nested)</li>
 <li>Compression codecs: UNCOMPRESSED, SNAPPY, GZIP, ZSTD, LZ4_RAW, BROTLI</li>
 <li>Column projection, offset and limit, from one read of the footer</li>
-<li>Batches that go to other extensions through the <a rel="noopener noreferrer" target="_blank" href="https://arrow.apache.org/docs/format/CDataInterface.html">Arrow C Data Interface</a></li>
 </ul>
 <h2><a id="requirements" href="#requirements" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Requirements</h2>
 <ul>
@@ -1624,7 +1622,6 @@ $writer = new Writer();
 <h3><a id="classes" href="#classes" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Classes</h3>
 <pre class="language-php" data-controller="syntax-highlight"><code class="language-php">&lt;?php
 
-use Flow\Arrow\Parquet\RustBatchReader;
 use Flow\Parquet\Engine\{RustParquetFileReader, RustParquetFileWriter};
 use Flow\Parquet\Engine\Arrow\{OptionsConverter, SchemaConverter};
 use Flow\Parquet\Options;
@@ -1659,25 +1656,16 @@ $writer = new RustParquetFileWriter(                      // Flow\Parquet\Parque
 $writer-&gt;writeBatch([['id' =&gt; 1, 'name' =&gt; 'a']]);   // an array or any Traversable of rows
 $writer-&gt;writeColumns(['id' =&gt; [2, 3], 'name' =&gt; ['b', null]]);
 $writer-&gt;close();                              // footer, then the stream closed
-
-$batches = new RustBatchReader($file, ['id', 'name'], 1_000, $plan); // batch size, rows to read
-$batches-&gt;schema();                            // Flow\Arrow\RustArrowSchema
-$batches-&gt;next();                              // Flow\Arrow\RustParquetBatch, null after the last
 </code></pre>
 <p>Refusals are the same <code>Flow\Parquet\Exception\*</code> that the PHP engine throws. An exception from the stream comes out
 unchanged.</p>
-<h3><a id="arrow-c-data-interface" href="#arrow-c-data-interface" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Arrow C Data Interface</h3>
-<p><code>RustParquetBatch</code> (<code>RustBatchReader::next()</code>) carries one struct array: <code>arrowSchemaAddress()</code> (<code>FFI_ArrowSchema*</code>) and
-<code>arrowArrayAddress()</code> (<code>FFI_ArrowArray*</code>). The consumer is another extension. It reads the schema by reference and
-moves the array out. <code>RustParquetFileWriter::writeArrowBatch()</code> takes the same pair from a final internal class of
-any extension that has both methods. The children of the array match the writer columns by name. Userland code cannot
-make either class: the classes are final, and their constructors throw.</p>
 <h3><a id="native-memory" href="#native-memory" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Native memory</h3>
 <pre class="language-php" data-controller="syntax-highlight"><code class="language-php">&lt;?php
 
 \Flow\Arrow\allocated_bytes(); // int, the bytes the extension holds outside PHP's memory manager in this process
 </code></pre>
-<p><code>flow_php</code> adds these bytes to <code>RustBackend::allocatedBytes()</code>, so a memory limit counts them.</p>
+<p>A memory limit of Flow ETL does not count these bytes. Flow ETL reads and writes Parquet with the engine of
+<a href="/documentation/components/extensions/flow-php-ext"><code>flow_php</code></a>, whose bytes the limit counts.</p>
 <h2><a id="development" href="#development" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Development</h2>
 <h3><a id="build-commands" href="#build-commands" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Build Commands</h3>
 <pre class="language-bash" data-controller="syntax-highlight"><code class="language-bash">make build    # Build the extension

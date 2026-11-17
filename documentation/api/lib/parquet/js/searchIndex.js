@@ -1308,7 +1308,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\ReadPlanConverter\u003A\u003AtoExtension\u0028\u0029",
             "name": "toExtension",
-            "summary": "Called\u0020by\u0020name\u0020from\u0020arrow\u002Dext\u0020RustBatchReader\u003A\u003A__construct\u0028\u0029\u0020and\u0020RustColumnsReader\u003A\u003A__construct\u0028\u0029,\u0020pinned\u0020by\nphpt\u0020055.",
+            "summary": "Called\u0020by\u0020name\u0020from\u0020arrow\u002Dext\u0020RustColumnsReader\u003A\u003A__construct\u0028\u0029,\u0020pinned\u0020by\u0020phpt\u0020055.",
             "url": "classes/Flow-Parquet-Engine-Arrow-ReadPlanConverter.html#method_toExtension"
         },                {
             "fqsen": "\\Flow\\Parquet\\Engine\\Arrow\\ReadPlanConverter\u003A\u003Aall\u0028\u0029",

@@ -63,7 +63,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\ConfiguredParquetEngine\u003A\u003ACODECS",
             "name": "CODECS",
-            "summary": "The\u0020codec\u0020extensions\u0020a\u0020file\u0020may\u0020need\u003A\u0020a\u0020worker\u0020loads\u0020the\u0020ones\u0020the\u0020parent\u0020reads\u0020with.",
+            "summary": "The\u0020codec\u0020extensions\u0020a\u0020file\u0020may\u0020need\u0020with\u0020a\u0020PHP\u0020engine\u003A\u0020a\u0020worker\u0020loads\u0020the\u0020ones\u0020the\u0020parent\u0020reads\u0020with.",
             "url": "classes/Flow-ETL-Adapter-Parquet-IO-ConfiguredParquetEngine.html#constant_CODECS"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Parquet\\IO\\Extractor\\ParquetExtractor",
