@@ -17,6 +17,12 @@
             <description>Filter and projection pushdown, corrupted records, immutable DataFrame and native sort and group by kernels.</description>
             <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
         </item>        <item>
+            <title>Flow PHP - Release 0.45.0</title>
+            <link>https://flow-php.com/blog/2026-10-04/flow-php-release-0450</link>
+            <guid isPermaLink="true">https://flow-php.com/blog/2026-10-04/flow-php-release-0450</guid>
+            <description>Columnar memory layout with a configurable column backend, a query planner with an optimizer and source statistics.</description>
+            <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
+        </item>        <item>
             <title>Performance Optimizations</title>
             <link>https://flow-php.com/blog/2026-07-23/performance-optimizations</link>
             <guid isPermaLink="true">https://flow-php.com/blog/2026-07-23/performance-optimizations</guid>
