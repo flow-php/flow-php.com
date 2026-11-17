@@ -4,7 +4,19 @@
         <link>https://flow-php.com/blog</link>
         <atom:link href="https://flow-php.com/rss.xml" rel="self" type="application/rss+xml"/>
         <description>Articles, releases and guides from the Flow PHP data processing framework.</description>
-        <language>en</language>        <lastBuildDate>Thu, 23 Jul 2026 00:00:00 +0000</lastBuildDate>        <item>
+        <language>en</language>        <lastBuildDate>Tue, 17 Nov 2026 00:00:00 +0000</lastBuildDate>        <item>
+            <title>Flow PHP - Release 0.48.0</title>
+            <link>https://flow-php.com/blog/2026-11-17/flow-php-release-0480</link>
+            <guid isPermaLink="true">https://flow-php.com/blog/2026-11-17/flow-php-release-0480</guid>
+            <description>Flow Pulse Protocol, Parquet engine in flow_php, memory budgets, pipe operator and a public benchmarks page.</description>
+            <pubDate>Tue, 17 Nov 2026 00:00:00 +0000</pubDate>
+        </item>        <item>
+            <title>Flow PHP - Release 0.47.0</title>
+            <link>https://flow-php.com/blog/2026-11-02/flow-php-release-0470</link>
+            <guid isPermaLink="true">https://flow-php.com/blog/2026-11-02/flow-php-release-0470</guid>
+            <description>Filter and projection pushdown, corrupted records, immutable DataFrame and native sort and group by kernels.</description>
+            <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+        </item>        <item>
             <title>Performance Optimizations</title>
             <link>https://flow-php.com/blog/2026-07-23/performance-optimizations</link>
             <guid isPermaLink="true">https://flow-php.com/blog/2026-07-23/performance-optimizations</guid>
