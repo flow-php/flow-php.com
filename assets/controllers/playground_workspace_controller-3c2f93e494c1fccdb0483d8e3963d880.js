@@ -1,0 +1,285 @@
+import { Controller } from "@hotwired/stimulus"
+
+export default class extends Controller {
+    static outlets = ["wasm", "code-editor", "playground"]
+    static targets = ["tree", "dropdown", "emptyState"]
+    static values = {
+        rootPath: { type: String, default: '/workspace' },
+        folderIcon: String,
+        fileIcon: String
+    }
+
+    #selectedFile = null
+    #treeRendered = false
+    #boundRefreshTree = null
+
+    connect() {
+        this.#boundRefreshTree = () => this.refreshTree()
+
+        this.element.addEventListener('wasm:file-created', this.#boundRefreshTree)
+        this.element.addEventListener('wasm:file-deleted', this.#boundRefreshTree)
+        this.element.addEventListener('wasm:file-updated', this.#boundRefreshTree)
+        this.element.addEventListener('playground-upload:file-uploaded', this.#boundRefreshTree)
+        this.element.addEventListener('playground-upload:files-cleared', this.#boundRefreshTree)
+    }
+
+    disconnect() {
+        if (this.#boundRefreshTree) {
+            this.element.removeEventListener('wasm:file-created', this.#boundRefreshTree)
+            this.element.removeEventListener('wasm:file-deleted', this.#boundRefreshTree)
+            this.element.removeEventListener('wasm:file-updated', this.#boundRefreshTree)
+            this.element.removeEventListener('playground-upload:file-uploaded', this.#boundRefreshTree)
+            this.element.removeEventListener('playground-upload:files-cleared', this.#boundRefreshTree)
+        }
+    }
+
+    onActionStarted() {
+        if (this.hasTreeTarget) {
+            this.treeTarget.classList.add('disabled')
+        }
+    }
+
+    onActionFinished() {
+        if (this.hasTreeTarget) {
+            this.treeTarget.classList.remove('disabled')
+        }
+    }
+
+    async refreshTree() {
+        await this.playgroundOutlet.onLoad()
+
+        if (!this.hasWasmOutlet) {
+            return
+        }
+
+        const result = await this.wasmOutlet.listFiles(this.rootPathValue, true)
+
+        if (!result.success) {
+            this.#showEmptyState()
+            return
+        }
+
+        const files = result.files || []
+        const workspaceFiles = files
+            .filter(file => file.path.startsWith(this.rootPathValue))
+            .map(file => ({
+                ...file,
+                path: file.path.substring(this.rootPathValue.length) || '/'
+            }))
+
+        const tree = this.#buildFileTree(workspaceFiles)
+        this.#renderTree(tree)
+
+        const fileCount = workspaceFiles.filter(f => f.type === 'file').length
+
+        this.dispatch('refreshed', { detail: { fileCount }, bubbles: true })
+    }
+
+    isLoaded() {
+        return this.#treeRendered
+    }
+
+    async onLoad() {
+        await this.playgroundOutlet.onLoad()
+
+        if (this.#treeRendered) {
+            return Promise.resolve()
+        }
+
+        return new Promise(resolve => {
+            this.element.addEventListener('workspace:tree-rendered', resolve, { once: true })
+        })
+    }
+
+    #renderTree(tree) {
+        if (!this.hasTreeTarget) {
+            return
+        }
+
+        const fileCount = this.#countFiles(tree)
+
+        if (fileCount === 0) {
+            this.#showEmptyState()
+            return
+        }
+
+        this.treeTarget.replaceChildren(this.#renderFileTree(tree))
+        this.#populateDropdown(tree)
+        this.#treeRendered = true
+
+        if (this.hasEmptyStateTarget) {
+            this.emptyStateTarget.style.display = 'none'
+        }
+
+        const folderCount = this.#countFolders(tree)
+        this.dispatch('tree-rendered', { detail: { fileCount, folderCount }, bubbles: true })
+    }
+
+    #buildFileTree(files) {
+        const tree = {}
+
+        for (const file of files) {
+            const parts = file.path.split('/').filter(p => p)
+            let current = tree
+
+            for (let i = 0; i < parts.length; i++) {
+                const part = parts[i]
+                const isLast = i === parts.length - 1
+
+                if (!current[part]) {
+                    current[part] = {
+                        name: part,
+                        path: isLast ? file.path : parts.slice(0, i + 1).join('/'),
+                        type: isLast ? file.type : 'directory',
+                        children: {}
+                    }
+                }
+
+                if (!isLast) {
+                    current = current[part].children
+                }
+            }
+        }
+
+        return tree
+    }
+
+    #renderFileTree(tree, level = 0) {
+        const list = document.createElement('ul')
+        list.className = 'file-tree'
+
+        const entries = Object.values(tree).sort((a, b) => {
+            if (a.type === 'directory' && b.type !== 'directory') return -1
+            if (a.type !== 'directory' && b.type === 'directory') return 1
+            return a.name.localeCompare(b.name)
+        })
+
+        for (const entry of entries) {
+            const isDirectory = entry.type === 'directory'
+
+            const item = document.createElement('li')
+            item.className = isDirectory ? 'file-tree-item directory' : 'file-tree-item file clickable'
+            item.style.paddingLeft = `${level * 16}px`
+
+            if (!isDirectory) {
+                item.dataset.action = 'click->playground-tabs#openFile'
+                item.dataset.filePath = entry.path
+            }
+
+            const icon = document.createElement('img')
+            icon.src = isDirectory ? this.folderIconValue : this.fileIconValue
+            icon.className = 'icon'
+            icon.width = 16
+            icon.height = 16
+            icon.alt = ''
+
+            const name = document.createElement('span')
+            name.textContent = entry.name
+
+            item.append(icon, name)
+            list.append(item)
+
+            if (isDirectory && entry.children && Object.keys(entry.children).length > 0) {
+                list.append(this.#renderFileTree(entry.children, level + 1))
+            }
+        }
+
+        return list
+    }
+
+    #updateSelectedState() {
+        if (!this.hasTreeTarget) {
+            return
+        }
+
+        const items = this.treeTarget.querySelectorAll('.file-tree-item.file')
+
+        items.forEach(item => {
+            const itemPath = item.dataset.filePath
+
+            if (itemPath === this.#selectedFile) {
+                item.classList.add('selected')
+            } else {
+                item.classList.remove('selected')
+            }
+        })
+    }
+
+    #showEmptyState() {
+        if (this.hasTreeTarget) {
+            this.treeTarget.innerHTML = ''
+        }
+
+        if (this.hasEmptyStateTarget) {
+            this.emptyStateTarget.style.display = 'block'
+        }
+    }
+
+    #countFiles(tree) {
+        let count = 0
+
+        for (const entry of Object.values(tree)) {
+            if (entry.type === 'file') {
+                count++
+            } else if (entry.children) {
+                count += this.#countFiles(entry.children)
+            }
+        }
+
+        return count
+    }
+
+    #countFolders(tree) {
+        let count = 0
+
+        for (const entry of Object.values(tree)) {
+            if (entry.type === 'directory') {
+                count++
+
+                if (entry.children) {
+                    count += this.#countFolders(entry.children)
+                }
+            }
+        }
+
+        return count
+    }
+
+    #populateDropdown(tree) {
+        if (!this.hasDropdownTarget) {
+            return
+        }
+
+        const files = this.#collectFiles(tree)
+
+        this.dropdownTarget.innerHTML = '<option value="">Select a file...</option>'
+        this.dropdownTarget.innerHTML += '<option value="/code.php">code.php</option>'
+
+        for (const file of files) {
+            const option = document.createElement('option')
+            option.value = file.path
+            option.textContent = file.path
+            this.dropdownTarget.appendChild(option)
+        }
+    }
+
+    #collectFiles(tree, prefix = '') {
+        const files = []
+
+        const entries = Object.values(tree).sort((a, b) => {
+            if (a.type === 'directory' && b.type !== 'directory') return -1
+            if (a.type !== 'directory' && b.type === 'directory') return 1
+            return a.name.localeCompare(b.name)
+        })
+
+        for (const entry of entries) {
+            if (entry.type === 'directory' && entry.children) {
+                files.push(...this.#collectFiles(entry.children, `${prefix}/${entry.name}`))
+            } else if (entry.type === 'file') {
+                files.push({ path: entry.path, name: entry.name })
+            }
+        }
+
+        return files
+    }
+}
