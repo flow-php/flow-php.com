@@ -281,6 +281,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-Azure-Options.html#method_blockSize"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\Options\u003A\u003AbulkDelete\u0028\u0029",
+            "name": "bulkDelete",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-Azure-Options.html#method_bulkDelete"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\Options\u003A\u003AcopyPartSize\u0028\u0029",
             "name": "copyPartSize",
             "summary": "",
@@ -320,6 +325,11 @@ Search.appendIndex(
             "name": "withBlockSize",
             "summary": "",
             "url": "classes/Flow-Filesystem-Bridge-Azure-Options.html#method_withBlockSize"
+        },                {
+            "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\Options\u003A\u003AwithBulkDelete\u0028\u0029",
+            "name": "withBulkDelete",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Bridge-Azure-Options.html#method_withBulkDelete"
         },                {
             "fqsen": "\\Flow\\Filesystem\\Bridge\\Azure\\Options\u003A\u003AwithCopyPartSize\u0028\u0029",
             "name": "withCopyPartSize",

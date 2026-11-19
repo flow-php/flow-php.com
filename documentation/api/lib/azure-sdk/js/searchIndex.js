@@ -356,6 +356,56 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobService-DeleteBlob-DeleteType.html#enumcase_PERMANENT"
         },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\DeleteBlobs\\DeleteBlobsOptions",
+            "name": "DeleteBlobsOptions",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-DeleteBlobs-DeleteBlobsOptions.html"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\DeleteBlobs\\DeleteBlobsOptions\u003A\u003AtoHeaders\u0028\u0029",
+            "name": "toHeaders",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-DeleteBlobs-DeleteBlobsOptions.html#method_toHeaders"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\DeleteBlobs\\DeleteBlobsOptions\u003A\u003AtoSubrequestHeaders\u0028\u0029",
+            "name": "toSubrequestHeaders",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-DeleteBlobs-DeleteBlobsOptions.html#method_toSubrequestHeaders"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\DeleteBlobs\\DeleteBlobsOptions\u003A\u003AtoURIParameters\u0028\u0029",
+            "name": "toURIParameters",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-DeleteBlobs-DeleteBlobsOptions.html#method_toURIParameters"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\DeleteBlobs\\DeleteBlobsOptions\u003A\u003AwithDeleteSnapshots\u0028\u0029",
+            "name": "withDeleteSnapshots",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-DeleteBlobs-DeleteBlobsOptions.html#method_withDeleteSnapshots"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\DeleteBlobs\\DeleteBlobsOptions\u003A\u003AwithRequestId\u0028\u0029",
+            "name": "withRequestId",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-DeleteBlobs-DeleteBlobsOptions.html#method_withRequestId"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\DeleteBlobs\\DeleteBlobsOptions\u003A\u003AwithTimeoutSeconds\u0028\u0029",
+            "name": "withTimeoutSeconds",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-DeleteBlobs-DeleteBlobsOptions.html#method_withTimeoutSeconds"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\DeleteBlobs\\DeleteBlobsOptions\u003A\u003AwithVersion\u0028\u0029",
+            "name": "withVersion",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-DeleteBlobs-DeleteBlobsOptions.html#method_withVersion"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\DeleteBlobs\\DeleteBlobsOptions\u003A\u003AuserAgentHeader\u0028\u0029",
+            "name": "userAgentHeader",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-DeleteBlobs-DeleteBlobsOptions.html#method_userAgentHeader"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\DeleteBlobs\\DeleteBlobsOptions\u003A\u003AwithUserAgent\u0028\u0029",
+            "name": "withUserAgent",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService-DeleteBlobs-DeleteBlobsOptions.html#method_withUserAgent"
+        },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\DeleteContainer\\DeleteContainerOptions",
             "name": "DeleteContainerOptions",
             "summary": "",
@@ -1191,6 +1241,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobService.html#method_deleteBlob"
         },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\u003A\u003AdeleteBlobs\u0028\u0029",
+            "name": "deleteBlobs",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobService.html#method_deleteBlobs"
+        },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\u003A\u003AdeleteContainer\u0028\u0029",
             "name": "deleteContainer",
             "summary": "",
@@ -1265,6 +1320,11 @@ Search.appendIndex(
             "name": "deleteBlob",
             "summary": "",
             "url": "classes/Flow-Azure-SDK-BlobServiceInterface.html#method_deleteBlob"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobServiceInterface\u003A\u003AdeleteBlobs\u0028\u0029",
+            "name": "deleteBlobs",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-BlobServiceInterface.html#method_deleteBlobs"
         },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobServiceInterface\u003A\u003AdeleteContainer\u0028\u0029",
             "name": "deleteContainer",
@@ -1385,6 +1445,11 @@ Search.appendIndex(
             "name": "response",
             "summary": "",
             "url": "classes/Flow-Azure-SDK-Exception-AzureException.html#property_response"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\Exception\\AzureException\u003A\u003A\u0024failedRequests",
+            "name": "failedRequests",
+            "summary": "",
+            "url": "classes/Flow-Azure-SDK-Exception-AzureException.html#property_failedRequests"
         },                {
             "fqsen": "\\Flow\\Azure\\SDK\\Exception\\Exception",
             "name": "Exception",
@@ -1540,6 +1605,11 @@ Search.appendIndex(
             "name": "DeleteBlob",
             "summary": "",
             "url": "namespaces/flow-azure-sdk-blobservice-deleteblob.html"
+        },                {
+            "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\DeleteBlobs",
+            "name": "DeleteBlobs",
+            "summary": "",
+            "url": "namespaces/flow-azure-sdk-blobservice-deleteblobs.html"
         },                {
             "fqsen": "\\Flow\\Azure\\SDK\\BlobService\\DeleteContainer",
             "name": "DeleteContainer",

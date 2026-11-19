@@ -155,7 +155,7 @@
         "crelt": "/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js",
         "@codemirror/language": "/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js",
         "@lezer/highlight": "/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js",
-        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-d4428c800e558c799a39b483d23ae55f.js",
+        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-cc939b2de79df26e780fb7a0275c887c.js",
         "/assets/codemirror/php_analysis.js": "/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js",
         "/assets/wasm/mago/mago_wasm_bg.js": "/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js",
         "@fontsource-variable/cabin/index.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2F%40fontsource-variable%2Fcabin%2Findex.min-2fd942a10b44e40a5f63d90a3479e0ee.css%22%7D%29%29",
@@ -254,7 +254,7 @@
 <link rel="modulepreload" href="/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js">
 <link rel="modulepreload" href="/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js">
 <link rel="modulepreload" href="/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js">
-<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-d4428c800e558c799a39b483d23ae55f.js">
+<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-cc939b2de79df26e780fb7a0275c887c.js">
 <link rel="modulepreload" href="/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js">
 <link rel="modulepreload" href="/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js">
 <script type="module">import 'app';</script>
@@ -1866,7 +1866,7 @@ value. To add a new type, register your own factory. See <a href="#custom-filesy
           client_service_id: app.async_aws_s3_client
 </code></pre></div>
 <p>Mode B: inline client configuration:</p>
-<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-5eb15e5abf44" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-yaml" id="code-5eb15e5abf44" data-controller="syntax-highlight"><code class="language-yaml">flow_filesystem:
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-da2bc5f8ee55" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-yaml" id="code-da2bc5f8ee55" data-controller="syntax-highlight"><code class="language-yaml">flow_filesystem:
   fstabs:
     default:
       filesystems:
@@ -1889,6 +1889,7 @@ value. To add a new type, register your own factory. See <a href="#custom-filesy
               max_retries: 1
           options:
             block_size: 6291456
+            bulk_delete: true          # false: 1 DeleteObject per key, for stores without DeleteObjects
             copy_part_size: 268435456  # mv() above this size copies in ranged parts
 </code></pre></div>
 <p><code>client.http</code> cannot be combined with <code>http_client_service_id</code> or <code>logger_service_id</code>.</p>
@@ -1909,7 +1910,7 @@ discovery from the environment still works.</p>
           client_service_id: app.azure_blob_service
 </code></pre></div>
 <p>Mode B: inline client configuration (shared key auth):</p>
-<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-fca98a7169dd" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-yaml" id="code-fca98a7169dd" data-controller="syntax-highlight"><code class="language-yaml">flow_filesystem:
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-1491d34e8992" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-yaml" id="code-1491d34e8992" data-controller="syntax-highlight"><code class="language-yaml">flow_filesystem:
   fstabs:
     default:
       filesystems:
@@ -1934,6 +1935,7 @@ discovery from the environment still works.</p>
               max_retries: 1
           options:
             block_size: 4194304
+            bulk_delete: true          # false: 1 Delete Blob per blob instead of Blob Batch
             copy_part_size: 268435456  # mv() above this size copies in ranged blocks
             list_blob_max_results: 100
 </code></pre></div>

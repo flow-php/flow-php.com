@@ -110,7 +110,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php"><a href="files/src-lib-azure-sdk-src-flow-azure-sdk-blobserviceinterface.html"><abbr title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php">BlobServiceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -144,6 +144,12 @@
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-Azure-SDK-BlobServiceInterface.html#method_deleteBlob">deleteBlob()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-Azure-SDK-BlobServiceInterface.html#method_deleteBlobs">deleteBlobs()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
@@ -243,7 +249,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php"><a href="files/src-lib-azure-sdk-src-flow-azure-sdk-blobserviceinterface.html"><abbr title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php">BlobServiceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -301,7 +307,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php"><a href="files/src-lib-azure-sdk-src-flow-azure-sdk-blobserviceinterface.html"><abbr title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php">BlobServiceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -344,6 +350,81 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_deleteBlobs">
+        deleteBlobs()
+        <a href="classes/Flow-Azure-SDK-BlobServiceInterface.html#method_deleteBlobs" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php"><a href="files/src-lib-azure-sdk-src-flow-azure-sdk-blobserviceinterface.html"><abbr title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php">BlobServiceInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">44</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">deleteBlobs</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$blobs</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-Azure-SDK-BlobService-DeleteBlobs-DeleteBlobsOptions.html"><abbr title="\Flow\Azure\SDK\BlobService\DeleteBlobs\DeleteBlobsOptions">DeleteBlobsOptions</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new <a href="classes/Flow-Azure-SDK-BlobService-DeleteBlobs-DeleteBlobsOptions.html"><abbr title="\Flow\Azure\SDK\BlobService\DeleteBlobs\DeleteBlobsOptions">DeleteBlobsOptions</abbr></a>()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$blobs</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, string&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>at most 256, all in the configured container</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$options</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-Azure-SDK-BlobService-DeleteBlobs-DeleteBlobsOptions.html"><abbr title="\Flow\Azure\SDK\BlobService\DeleteBlobs\DeleteBlobsOptions">DeleteBlobsOptions</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">new <a href="classes/Flow-Azure-SDK-BlobService-DeleteBlobs-DeleteBlobsOptions.html"><abbr title="\Flow\Azure\SDK\BlobService\DeleteBlobs\DeleteBlobsOptions">DeleteBlobsOptions</abbr></a>()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_deleteBlobs_tags">
+        Tags
+        <a href="classes/Flow-Azure-SDK-BlobServiceInterface.html#method_deleteBlobs_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-Azure-SDK-Exception-AzureException.html"><abbr title="\Flow\Azure\SDK\Exception\AzureException">AzureException</abbr></a></span>
+                                                                                    
+                                    </dd>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Psr\Http\Client\ClientExceptionInterface">ClientExceptionInterface</abbr></span>
+                                                                                    
+                                    </dd>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-Azure-SDK-Exception-InvalidArgumentException.html"><abbr title="\Flow\Azure\SDK\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></span>
+                                                                                    
+                                    </dd>
+                        </dl>
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_deleteContainer">
         deleteContainer()
         <a href="classes/Flow-Azure-SDK-BlobServiceInterface.html#method_deleteContainer" class="headerlink"><i class="fas fa-link"></i></a>
@@ -352,7 +433,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php"><a href="files/src-lib-azure-sdk-src-flow-azure-sdk-blobserviceinterface.html"><abbr title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php">BlobServiceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -396,7 +477,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php"><a href="files/src-lib-azure-sdk-src-flow-azure-sdk-blobserviceinterface.html"><abbr title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php">BlobServiceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -451,7 +532,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php"><a href="files/src-lib-azure-sdk-src-flow-azure-sdk-blobserviceinterface.html"><abbr title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php">BlobServiceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -506,7 +587,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php"><a href="files/src-lib-azure-sdk-src-flow-azure-sdk-blobserviceinterface.html"><abbr title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php">BlobServiceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -561,7 +642,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php"><a href="files/src-lib-azure-sdk-src-flow-azure-sdk-blobserviceinterface.html"><abbr title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php">BlobServiceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -609,7 +690,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php"><a href="files/src-lib-azure-sdk-src-flow-azure-sdk-blobserviceinterface.html"><abbr title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php">BlobServiceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -657,7 +738,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php"><a href="files/src-lib-azure-sdk-src-flow-azure-sdk-blobserviceinterface.html"><abbr title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php">BlobServiceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -722,7 +803,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php"><a href="files/src-lib-azure-sdk-src-flow-azure-sdk-blobserviceinterface.html"><abbr title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php">BlobServiceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -794,7 +875,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php"><a href="files/src-lib-azure-sdk-src-flow-azure-sdk-blobserviceinterface.html"><abbr title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php">BlobServiceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
@@ -873,7 +954,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php"><a href="files/src-lib-azure-sdk-src-flow-azure-sdk-blobserviceinterface.html"><abbr title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php">BlobServiceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">86</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
@@ -938,7 +1019,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php"><a href="files/src-lib-azure-sdk-src-flow-azure-sdk-blobserviceinterface.html"><abbr title="src/lib/azure-sdk/src/Flow/Azure/SDK/BlobServiceInterface.php">BlobServiceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
@@ -991,6 +1072,7 @@
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/Flow-Azure-SDK-BlobServiceInterface.html#method_copyBlob">copyBlob()</a></li>
                                                     <li class=""><a href="classes/Flow-Azure-SDK-BlobServiceInterface.html#method_deleteBlob">deleteBlob()</a></li>
+                                                    <li class=""><a href="classes/Flow-Azure-SDK-BlobServiceInterface.html#method_deleteBlobs">deleteBlobs()</a></li>
                                                     <li class=""><a href="classes/Flow-Azure-SDK-BlobServiceInterface.html#method_deleteContainer">deleteContainer()</a></li>
                                                     <li class=""><a href="classes/Flow-Azure-SDK-BlobServiceInterface.html#method_getBlob">getBlob()</a></li>
                                                     <li class=""><a href="classes/Flow-Azure-SDK-BlobServiceInterface.html#method_getBlobProperties">getBlobProperties()</a></li>
