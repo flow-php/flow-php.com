@@ -155,7 +155,7 @@
         "crelt": "/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js",
         "@codemirror/language": "/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js",
         "@lezer/highlight": "/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js",
-        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-cc939b2de79df26e780fb7a0275c887c.js",
+        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-49fcf08356e7c5ccf5589cb9d746b7a2.js",
         "/assets/codemirror/php_analysis.js": "/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js",
         "/assets/wasm/mago/mago_wasm_bg.js": "/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js",
         "@fontsource-variable/cabin/index.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2F%40fontsource-variable%2Fcabin%2Findex.min-2fd942a10b44e40a5f63d90a3479e0ee.css%22%7D%29%29",
@@ -254,7 +254,7 @@
 <link rel="modulepreload" href="/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js">
 <link rel="modulepreload" href="/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js">
 <link rel="modulepreload" href="/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js">
-<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-cc939b2de79df26e780fb7a0275c887c.js">
+<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-49fcf08356e7c5ccf5589cb9d746b7a2.js">
 <link rel="modulepreload" href="/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js">
 <link rel="modulepreload" href="/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js">
 <script type="module">import 'app';</script>
@@ -1750,14 +1750,38 @@ $isUtility = pg_query_is_utility_stmt('SELECT * FROM users');
 </tbody>
 </table>
 <h3><a id="pgquerydeparseopts-parameters" href="#pgquerydeparseopts-parameters" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>pg_query_deparse_opts Parameters</h3>
-<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-dca8ca5eaacd" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-dca8ca5eaacd" data-controller="syntax-highlight"><code class="language-php">pg_query_deparse_opts(
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-c718db77b3f4" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-c718db77b3f4" data-controller="syntax-highlight"><code class="language-php">pg_query_deparse_opts(
     string $protobuf,           // Protobuf AST from pg_query_parse_protobuf()
     bool $pretty_print = false, // Enable pretty printing
     int $indent_size = 4,       // Spaces per indentation level
     int $max_line_length = 80,  // Maximum line length before wrapping
     bool $trailing_newline = false,    // Add trailing newline
-    bool $commas_start_of_line = false // Place commas at line start
+    bool $commas_start_of_line = false, // Place commas at line start
+    ?string $comments_from = null       // Source SQL whose comments the output keeps
 ): string
+</code></pre></div>
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-4cdae0425347" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-4cdae0425347" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+
+$sql = "SELECT a, -- the a column
+  b
+/* block comment
+   two lines */
+FROM t
+WHERE x = $1 -- trailing
+  AND y IN (1, 2);";
+
+echo pg_query_deparse_opts(pg_query_parse_protobuf($sql), true, 2, 80, false, false, $sql);
+// SELECT
+//   a,
+//   -- the a column
+//   b
+// FROM t
+// WHERE
+//   /* block comment
+//    two lines */
+//   x = $1
+//   AND -- trailing
+//   y IN (1, 2)
 </code></pre></div>
 <h2><a id="error-handling" href="#error-handling" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Error Handling</h2>
 <p>On a parse error, the extension throws <code>RuntimeException</code>:</p>

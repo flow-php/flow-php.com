@@ -155,7 +155,7 @@
         "crelt": "/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js",
         "@codemirror/language": "/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js",
         "@lezer/highlight": "/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js",
-        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-cc939b2de79df26e780fb7a0275c887c.js",
+        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-49fcf08356e7c5ccf5589cb9d746b7a2.js",
         "/assets/codemirror/php_analysis.js": "/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js",
         "/assets/wasm/mago/mago_wasm_bg.js": "/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js",
         "@fontsource-variable/cabin/index.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2F%40fontsource-variable%2Fcabin%2Findex.min-2fd942a10b44e40a5f63d90a3479e0ee.css%22%7D%29%29",
@@ -254,7 +254,7 @@
 <link rel="modulepreload" href="/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js">
 <link rel="modulepreload" href="/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js">
 <link rel="modulepreload" href="/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js">
-<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-cc939b2de79df26e780fb7a0275c887c.js">
+<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-49fcf08356e7c5ccf5589cb9d746b7a2.js">
 <link rel="modulepreload" href="/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js">
 <link rel="modulepreload" href="/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js">
 <script type="module">import 'app';</script>
@@ -1781,7 +1781,7 @@ $summary = sql_summary('SELECT * FROM users WHERE id = 1');
 </code></pre></div>
 <h3><a id="deparsing-ast-to-sql" href="#deparsing-ast-to-sql" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Deparsing (AST to SQL)</h3>
 <p>Convert a parsed query back to SQL, with optional pretty-printing:</p>
-<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-1c9433d6ecf1" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-1c9433d6ecf1" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-96dcbd5cbe7a" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-96dcbd5cbe7a" data-controller="syntax-highlight"><code class="language-php">&lt;?php
 
 use function Flow\PostgreSql\DSL\{sql_parse, sql_deparse, sql_deparse_options, sql_format};
 
@@ -1810,6 +1810,12 @@ $sql = sql_deparse($query, sql_deparse_options()
 
 // Shorthand: parse and format in one step
 $formatted = sql_format('SELECT id,name FROM users WHERE active=true');
+
+// Comments are removed by default
+$formatted = sql_format("SELECT id, -- primary key\n name FROM users");
+
+// Keep the comments of the input
+$formatted = sql_format("SELECT id, -- primary key\n name FROM users", sql_deparse_options()-&gt;preserveComments());
 </code></pre></div>
 <h4><a id="deparseoptions" href="#deparseoptions" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>DeparseOptions</h4>
 <table>
@@ -1844,6 +1850,11 @@ $formatted = sql_format('SELECT id,name FROM users WHERE active=true');
 <tr>
 <td><code>commasStartOfLine(bool)</code></td>
 <td>Place commas at start of lines</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>preserveComments(bool)</code></td>
+<td>Keep the comments of the parsed SQL</td>
 <td><code>false</code></td>
 </tr>
 </tbody>
@@ -2428,12 +2439,12 @@ catalog_comparator()-&gt;compare($current, $target, dropIfExists: true);
 <hr />
 <h2><a id="reference" href="#reference" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Reference</h2>
 <h3><a id="exception-handling" href="#exception-handling" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Exception Handling</h3>
-<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-11f08d99253e" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-11f08d99253e" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-4e0f8b0c4d2d" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-4e0f8b0c4d2d" data-controller="syntax-highlight"><code class="language-php">&lt;?php
 
 use Flow\PostgreSql\AST\Transformers\{OffsetPaginationConfig, OffsetPaginationModifier};
-use Flow\PostgreSql\Exception\{ParserException, ExtensionNotLoadedException, PaginationException};
+use Flow\PostgreSql\Exception\{ParserException, ExtensionNotLoadedException, ExtensionOutdatedException, PaginationException};
 
-use function Flow\PostgreSql\DSL\sql_parse;
+use function Flow\PostgreSql\DSL\{sql_deparse_options, sql_format, sql_parse};
 
 try {
     $query = sql_parse('INVALID SQL');
@@ -2441,6 +2452,12 @@ try {
     // pg_query extension is not loaded
 } catch (ParserException $e) {
     echo "Parse error: " . $e-&gt;getMessage();
+}
+
+try {
+    $sql = sql_format("SELECT 1 -- one\n", sql_deparse_options()-&gt;preserveComments());
+} catch (ExtensionOutdatedException $e) {
+    // pg_query extension is older than 0.49 and cannot keep comments
 }
 
 try {
