@@ -155,7 +155,7 @@
         "crelt": "/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js",
         "@codemirror/language": "/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js",
         "@lezer/highlight": "/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js",
-        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-49fcf08356e7c5ccf5589cb9d746b7a2.js",
+        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-d2cc16650e09d46aed0891010ca40f09.js",
         "/assets/codemirror/php_analysis.js": "/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js",
         "/assets/wasm/mago/mago_wasm_bg.js": "/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js",
         "@fontsource-variable/cabin/index.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2F%40fontsource-variable%2Fcabin%2Findex.min-2fd942a10b44e40a5f63d90a3479e0ee.css%22%7D%29%29",
@@ -254,7 +254,7 @@
 <link rel="modulepreload" href="/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js">
 <link rel="modulepreload" href="/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js">
 <link rel="modulepreload" href="/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js">
-<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-49fcf08356e7c5ccf5589cb9d746b7a2.js">
+<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-d2cc16650e09d46aed0891010ca40f09.js">
 <link rel="modulepreload" href="/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js">
 <link rel="modulepreload" href="/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js">
 <script type="module">import 'app';</script>
@@ -1560,6 +1560,7 @@
 <li><a href="#multi-row-insert">Multi-Row Insert</a></li>
 <li><a href="#insert-with-default-values">Insert with Default Values</a></li>
 <li><a href="#insert--select">INSERT ... SELECT</a></li>
+<li><a href="#insert-with-cte">Insert with CTE</a></li>
 <li><a href="#upsert-on-conflict">Upsert (ON CONFLICT)</a>
 <ul>
 <li><a href="#on-conflict-do-nothing">ON CONFLICT DO NOTHING</a></li>
@@ -1670,6 +1671,22 @@ $query = insert()
 echo $query-&gt;toSql();
 // INSERT INTO users (name, email) SELECT name, email FROM archived_users
 </code></pre></div>
+<h2><a id="insert-with-cte" href="#insert-with-cte" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Insert with CTE</h2>
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-01e576a0cb11" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-01e576a0cb11" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+
+use function Flow\PostgreSql\DSL\{with, cte, delete, select, col, table, eq, literal};
+
+$query = with(
+    cte('removed', delete()-&gt;from('children')-&gt;where(eq(col('parent_id'), literal(1)))-&gt;returning(col('id')))
+)
+    -&gt;insert()
+    -&gt;into('audit')
+    -&gt;columns('id')
+    -&gt;select(select(col('id'))-&gt;from(table('removed')));
+
+echo $query-&gt;toSql();
+// WITH removed AS (DELETE FROM children WHERE parent_id = 1 RETURNING id) INSERT INTO audit (id) SELECT id FROM removed
+</code></pre></div>
 <h2><a id="upsert-on-conflict" href="#upsert-on-conflict" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Upsert (ON CONFLICT)</h2>
 <h3><a id="on-conflict-do-nothing" href="#on-conflict-do-nothing" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>ON CONFLICT DO NOTHING</h3>
 <div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-c9f7ecbb757a" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-c9f7ecbb757a" data-controller="syntax-highlight"><code class="language-php">&lt;?php
@@ -1770,7 +1787,7 @@ echo $query-&gt;toSql();
 // INSERT INTO users (email, name, active) VALUES ('john@example.com', 'John', true) ON CONFLICT (email) DO UPDATE SET name = 'Updated John' WHERE users.active = true
 </code></pre></div>
 <h2><a id="returning-clause" href="#returning-clause" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>RETURNING Clause</h2>
-<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-d889ea74051b" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-d889ea74051b" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-14d268800932" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-14d268800932" data-controller="syntax-highlight"><code class="language-php">&lt;?php
 
 use function Flow\PostgreSql\DSL\{insert, literal, col};
 
@@ -1793,6 +1810,17 @@ $query = insert()
 
 echo $query-&gt;toSql();
 // INSERT INTO users (name) VALUES ('John') RETURNING *
+
+// Rename the NEW row alias
+$query = insert()
+    -&gt;into('children')
+    -&gt;columns('id', 'parent_id')
+    -&gt;values(literal(12), literal(1))
+    -&gt;returningAliases(new: 'n')
+    -&gt;returning(col('id', 'n'));
+
+echo $query-&gt;toSql();
+// INSERT INTO children (id, parent_id) VALUES (12, 1) RETURNING WITH (NEW AS n) n.id
 </code></pre></div>
 <h2><a id="schema-qualified-tables" href="#schema-qualified-tables" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Schema-Qualified Tables</h2>
 <div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-8a2cf29a3dc2" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-8a2cf29a3dc2" data-controller="syntax-highlight"><code class="language-php">&lt;?php

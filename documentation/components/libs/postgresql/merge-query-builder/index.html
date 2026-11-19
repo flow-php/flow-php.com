@@ -155,7 +155,7 @@
         "crelt": "/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js",
         "@codemirror/language": "/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js",
         "@lezer/highlight": "/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js",
-        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-49fcf08356e7c5ccf5589cb9d746b7a2.js",
+        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-d2cc16650e09d46aed0891010ca40f09.js",
         "/assets/codemirror/php_analysis.js": "/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js",
         "/assets/wasm/mago/mago_wasm_bg.js": "/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js",
         "@fontsource-variable/cabin/index.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2F%40fontsource-variable%2Fcabin%2Findex.min-2fd942a10b44e40a5f63d90a3479e0ee.css%22%7D%29%29",
@@ -254,7 +254,7 @@
 <link rel="modulepreload" href="/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js">
 <link rel="modulepreload" href="/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js">
 <link rel="modulepreload" href="/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js">
-<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-49fcf08356e7c5ccf5589cb9d746b7a2.js">
+<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-d2cc16650e09d46aed0891010ca40f09.js">
 <link rel="modulepreload" href="/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js">
 <link rel="modulepreload" href="/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js">
 <script type="module">import 'app';</script>
@@ -1566,6 +1566,7 @@
 <li><a href="#merge-with-cte-with-clause">Merge with CTE (WITH Clause)</a></li>
 <li><a href="#merge-with-parameters">Merge with Parameters</a></li>
 <li><a href="#when-not-matched-by-source">WHEN NOT MATCHED BY SOURCE</a></li>
+<li><a href="#merge-with-returning">Merge with RETURNING</a></li>
 <li><a href="#schema-qualified-tables">Schema-Qualified Tables</a></li>
 <li><a href="#dsl-functions">DSL Functions</a></li></ul></div></div>
 <p>The Merge Query Builder has a fluent, type-safe interface that builds PostgreSQL MERGE queries. MERGE (also known as &quot;upsert&quot; in some contexts) does INSERT, UPDATE, or DELETE operations in one statement. The operation depends on whether rows of a source table and a target table match.</p>
@@ -1765,6 +1766,22 @@ $query = merge('target', 't')
 
 echo $query-&gt;toSql();
 // MERGE INTO target t USING source s ON t.id = s.id WHEN NOT MATCHED BY SOURCE THEN DELETE
+</code></pre></div>
+<h2><a id="merge-with-returning" href="#merge-with-returning" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Merge with RETURNING</h2>
+<p><code>merge_action()</code> returns <code>INSERT</code>, <code>UPDATE</code> or <code>DELETE</code> for each row. <code>returningAll()</code> writes <code>RETURNING *</code>.</p>
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-542da2d5fcd8" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-542da2d5fcd8" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+
+use function Flow\PostgreSql\DSL\{merge, merge_action, col, eq};
+
+$query = merge('children', 'c')
+    -&gt;using('parents', 'p')
+    -&gt;on(eq(col('parent_id', 'c'), col('id', 'p')))
+    -&gt;whenMatched()
+    -&gt;thenDelete()
+    -&gt;returning(merge_action(), col('id', 'c'));
+
+echo $query-&gt;toSql();
+// MERGE INTO children c USING parents p ON c.parent_id = p.id WHEN MATCHED THEN DELETE RETURNING merge_action() , c.id
 </code></pre></div>
 <h2><a id="schema-qualified-tables" href="#schema-qualified-tables" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Schema-Qualified Tables</h2>
 <div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-56d9f4b146a6" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-56d9f4b146a6" data-controller="syntax-highlight"><code class="language-php">&lt;?php

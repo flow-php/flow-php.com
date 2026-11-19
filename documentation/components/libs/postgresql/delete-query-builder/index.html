@@ -155,7 +155,7 @@
         "crelt": "/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js",
         "@codemirror/language": "/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js",
         "@lezer/highlight": "/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js",
-        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-49fcf08356e7c5ccf5589cb9d746b7a2.js",
+        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-d2cc16650e09d46aed0891010ca40f09.js",
         "/assets/codemirror/php_analysis.js": "/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js",
         "/assets/wasm/mago/mago_wasm_bg.js": "/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js",
         "@fontsource-variable/cabin/index.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2F%40fontsource-variable%2Fcabin%2Findex.min-2fd942a10b44e40a5f63d90a3479e0ee.css%22%7D%29%29",
@@ -254,7 +254,7 @@
 <link rel="modulepreload" href="/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js">
 <link rel="modulepreload" href="/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js">
 <link rel="modulepreload" href="/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js">
-<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-49fcf08356e7c5ccf5589cb9d746b7a2.js">
+<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-d2cc16650e09d46aed0891010ca40f09.js">
 <link rel="modulepreload" href="/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js">
 <link rel="modulepreload" href="/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js">
 <script type="module">import 'app';</script>
@@ -1560,6 +1560,7 @@
 <li><a href="#delete-with-table-alias">Delete with Table Alias</a></li>
 <li><a href="#delete-with-using-clause-join-like">Delete with USING Clause (Join-like)</a></li>
 <li><a href="#delete-with-subquery-in-where">Delete with Subquery in WHERE</a></li>
+<li><a href="#delete-with-cte-with-clause">Delete with CTE (WITH Clause)</a></li>
 <li><a href="#returning-clause">RETURNING Clause</a></li>
 <li><a href="#complex-where-conditions">Complex WHERE Conditions</a></li></ul></div></div>
 <p>The Delete Query Builder provides a fluent, type-safe interface for constructing PostgreSQL DELETE queries. It supports simple deletes, deletes with USING clause (join-like behavior), complex WHERE conditions, and RETURNING clauses.</p>
@@ -1634,8 +1635,29 @@ $query = delete()
 echo $query-&gt;toSql();
 // DELETE FROM users WHERE id = ANY (SELECT user_id FROM inactive_users)
 </code></pre></div>
+<h2><a id="delete-with-cte-with-clause" href="#delete-with-cte-with-clause" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Delete with CTE (WITH Clause)</h2>
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-6c900188dc2f" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-6c900188dc2f" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+
+use function Flow\PostgreSql\DSL\{with, cte, delete, select, col, table, eq, literal, in_subquery};
+
+$query = with(
+    cte('removed_parents', select(col('id'))-&gt;from(table('parents'))-&gt;where(eq(col('archived'), literal(true)))),
+    cte(
+        'removed_children',
+        delete()
+            -&gt;from('children')
+            -&gt;where(in_subquery(col('parent_id'), select(col('id'))-&gt;from(table('removed_parents'))))
+    )
+)
+    -&gt;delete()
+    -&gt;from('parents')
+    -&gt;where(in_subquery(col('id'), select(col('id'))-&gt;from(table('removed_parents'))));
+
+echo $query-&gt;toSql();
+// WITH removed_parents AS (SELECT id FROM parents WHERE archived = true), removed_children AS (DELETE FROM children WHERE parent_id IN (SELECT id FROM removed_parents)) DELETE FROM parents WHERE id IN (SELECT id FROM removed_parents)
+</code></pre></div>
 <h2><a id="returning-clause" href="#returning-clause" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>RETURNING Clause</h2>
-<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-fa487fb9a7a0" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-fa487fb9a7a0" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-9cb095150fa4" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-9cb095150fa4" data-controller="syntax-highlight"><code class="language-php">&lt;?php
 
 use function Flow\PostgreSql\DSL\{delete, col, eq, literal};
 
@@ -1656,6 +1678,16 @@ $query = delete()
 
 echo $query-&gt;toSql();
 // DELETE FROM users WHERE id = 1 RETURNING *
+
+// Rename the OLD row alias
+$query = delete()
+    -&gt;from('children')
+    -&gt;where(eq(col('id'), literal(10)))
+    -&gt;returningAliases(old: 'o')
+    -&gt;returning(col('id', 'o'));
+
+echo $query-&gt;toSql();
+// DELETE FROM children WHERE id = 10 RETURNING WITH (OLD AS o) o.id
 </code></pre></div>
 <h2><a id="complex-where-conditions" href="#complex-where-conditions" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Complex WHERE Conditions</h2>
 <div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-bbff06f9c313" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-bbff06f9c313" data-controller="syntax-highlight"><code class="language-php">&lt;?php

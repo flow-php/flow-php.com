@@ -155,7 +155,7 @@
         "crelt": "/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js",
         "@codemirror/language": "/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js",
         "@lezer/highlight": "/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js",
-        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-49fcf08356e7c5ccf5589cb9d746b7a2.js",
+        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-d2cc16650e09d46aed0891010ca40f09.js",
         "/assets/codemirror/php_analysis.js": "/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js",
         "/assets/wasm/mago/mago_wasm_bg.js": "/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js",
         "@fontsource-variable/cabin/index.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2F%40fontsource-variable%2Fcabin%2Findex.min-2fd942a10b44e40a5f63d90a3479e0ee.css%22%7D%29%29",
@@ -254,7 +254,7 @@
 <link rel="modulepreload" href="/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js">
 <link rel="modulepreload" href="/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js">
 <link rel="modulepreload" href="/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js">
-<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-49fcf08356e7c5ccf5589cb9d746b7a2.js">
+<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-d2cc16650e09d46aed0891010ca40f09.js">
 <link rel="modulepreload" href="/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js">
 <link rel="modulepreload" href="/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js">
 <script type="module">import 'app';</script>
@@ -1562,13 +1562,14 @@
 <li><a href="#update-with-from-clause-join-like">Update with FROM Clause (Join-like)</a></li>
 <li><a href="#update-with-subquery-in-set">Update with Subquery in SET</a></li>
 <li><a href="#update-column-with-another-column">Update Column with Another Column</a></li>
+<li><a href="#update-with-cte">Update with CTE</a></li>
 <li><a href="#returning-clause">RETURNING Clause</a></li>
 <li><a href="#complex-where-conditions">Complex WHERE Conditions</a></li></ul></div></div>
 <p>The Update Query Builder provides a fluent, type-safe interface for constructing PostgreSQL UPDATE queries. It supports simple updates, updates with FROM clause (join-like behavior), complex WHERE conditions, and RETURNING clauses.</p>
 <h2><a id="simple-update" href="#simple-update" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Simple Update</h2>
-<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-eea9f651e492" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-eea9f651e492" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-81ebfaa1f7c2" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-81ebfaa1f7c2" data-controller="syntax-highlight"><code class="language-php">&lt;?php
 
-use function Flow\PostgreSql\DSL\{update, literal, col, eq, literal};
+use function Flow\PostgreSql\DSL\{update, literal, col, eq};
 
 $query = update()
     -&gt;update('users')
@@ -1593,9 +1594,9 @@ echo $query-&gt;toSql();
 // UPDATE users SET name = $1 WHERE id = $2
 </code></pre></div>
 <h2><a id="multiple-set-clauses" href="#multiple-set-clauses" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Multiple SET Clauses</h2>
-<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-e938532c31bb" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-e938532c31bb" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-12a485081028" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-12a485081028" data-controller="syntax-highlight"><code class="language-php">&lt;?php
 
-use function Flow\PostgreSql\DSL\{update, literal, col, eq, literal};
+use function Flow\PostgreSql\DSL\{update, literal, col, eq};
 
 // Chained set() calls
 $query = update()
@@ -1620,9 +1621,9 @@ echo $query-&gt;toSql();
 // UPDATE users SET name = 'John', email = 'john@example.com' WHERE id = 1
 </code></pre></div>
 <h2><a id="update-with-table-alias" href="#update-with-table-alias" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Update with Table Alias</h2>
-<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-8ab75ddcdd49" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-8ab75ddcdd49" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-1d6c29806422" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-1d6c29806422" data-controller="syntax-highlight"><code class="language-php">&lt;?php
 
-use function Flow\PostgreSql\DSL\{update, literal, col, eq, literal};
+use function Flow\PostgreSql\DSL\{update, literal, col, eq};
 
 $query = update()
     -&gt;update('users', 'u')
@@ -1680,10 +1681,26 @@ $query = update()
 echo $query-&gt;toSql();
 // UPDATE products SET price = original_price WHERE id = 1
 </code></pre></div>
-<h2><a id="returning-clause" href="#returning-clause" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>RETURNING Clause</h2>
-<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-c7f5f389c23d" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-c7f5f389c23d" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+<h2><a id="update-with-cte" href="#update-with-cte" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Update with CTE</h2>
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-8eebcf793673" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-8eebcf793673" data-controller="syntax-highlight"><code class="language-php">&lt;?php
 
-use function Flow\PostgreSql\DSL\{update, literal, col, eq, literal};
+use function Flow\PostgreSql\DSL\{with, cte, delete, select, col, table, eq, literal, in_subquery};
+
+$query = with(
+    cte('moved', delete()-&gt;from('children')-&gt;where(eq(col('parent_id'), literal(1)))-&gt;returning(col('id')))
+)
+    -&gt;update()
+    -&gt;update('audit')
+    -&gt;set('note', literal('moved'))
+    -&gt;where(in_subquery(col('id'), select(col('id'))-&gt;from(table('moved'))));
+
+echo $query-&gt;toSql();
+// WITH moved AS (DELETE FROM children WHERE parent_id = 1 RETURNING id) UPDATE audit SET note = 'moved' WHERE id IN (SELECT id FROM moved)
+</code></pre></div>
+<h2><a id="returning-clause" href="#returning-clause" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>RETURNING Clause</h2>
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-6c7de71f9af4" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-6c7de71f9af4" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+
+use function Flow\PostgreSql\DSL\{update, literal, col, eq};
 
 // Return specific columns
 $query = update()
@@ -1704,6 +1721,17 @@ $query = update()
 
 echo $query-&gt;toSql();
 // UPDATE users SET name = 'John' WHERE id = 1 RETURNING *
+
+// Old and new values through renamed aliases
+$query = update()
+    -&gt;update('children')
+    -&gt;set('parent_id', literal(2))
+    -&gt;where(eq(col('id'), literal(10)))
+    -&gt;returningAliases(old: 'o', new: 'n')
+    -&gt;returning(col('parent_id', 'o'), col('parent_id', 'n'));
+
+echo $query-&gt;toSql();
+// UPDATE children SET parent_id = 2 WHERE id = 10 RETURNING WITH (OLD AS o, NEW AS n) o.parent_id, n.parent_id
 </code></pre></div>
 <h2><a id="complex-where-conditions" href="#complex-where-conditions" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Complex WHERE Conditions</h2>
 <div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-e0abc959a60a" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-e0abc959a60a" data-controller="syntax-highlight"><code class="language-php">&lt;?php
