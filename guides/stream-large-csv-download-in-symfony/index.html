@@ -588,7 +588,7 @@
         </nav>
 
         <p class="mt-2 mb-6 text-sm text-slate-500 dark:text-white/55" data-pagefind-ignore>
-            Last updated <time datetime="2026-11-18">Nov 18, 2026</time>
+            Last updated <time datetime="2026-11-20">Nov 20, 2026</time>
         </p>
 
         <article id="documentation-page" class="min-w-0" data-pagefind-body>
@@ -838,36 +838,34 @@ We didn't touch the query, and we didn't write a loop.</p>
 <tbody>
 <tr>
 <td>CSV</td>
-<td>91Mb, 3.7s</td>
-<td>20Mb, 6.5s</td>
-<td>20Mb, 4.5s</td>
+<td>91Mb, 3.2s</td>
+<td>20Mb, 5.8s</td>
+<td>18Mb, 3.5s</td>
 </tr>
 <tr>
 <td>JSON</td>
-<td>91Mb, 4.5s</td>
-<td>20Mb, 6.7s</td>
-<td>20Mb, 4.2s</td>
+<td>91Mb, 4.1s</td>
+<td>20Mb, 5.9s</td>
+<td>18Mb, 3.5s</td>
 </tr>
 <tr>
 <td>XML</td>
-<td>91Mb, 4.9s</td>
-<td>20Mb, 7.0s</td>
-<td>20Mb, 5.3s</td>
+<td>91Mb, 4.5s</td>
+<td>20Mb, 5.9s</td>
+<td>20Mb, 4.5s</td>
 </tr>
 <tr>
 <td>Parquet</td>
 <td>-</td>
-<td>42Mb, 10.2s</td>
-<td>20Mb, 4.4s</td>
+<td>42Mb, 8.6s</td>
+<td>20Mb, 3.5s</td>
 </tr>
 </tbody>
 </table>
-<p>With the extension Flow is as fast as the controllers written by hand for JSON, and close to them for CSV and XML. Without it they are faster.
+<p>With the extension Flow is faster than the controller written by hand for JSON, as fast for XML, and close to it for CSV. Without it they are faster.
 But they are three different pieces of code, and their memory grows with the table.
-The Flow controller is one piece of code with one line changed, and with half of the orders or with all of them it takes the same 20Mb.</p>
-<blockquote>
-<p>Flow is slower here than it should be. The keyset reader does more work for every row than it needs to, and there is an open issue for it: <a rel="noopener noreferrer" target="_blank" href="https://github.com/flow-php/flow/issues/2748">flow-php/flow#2748</a>.</p>
-</blockquote>
+The Flow controller is one piece of code with one line changed.
+With half of the orders or with all of them it never takes more than 20Mb.</p>
 <p><a href="/documentation/components/extensions/flow-php-ext">flow_php</a> is an optional PHP extension. The controller stays the same, without a single change.</p>
 
         </article>
@@ -914,7 +912,7 @@ The Flow controller is one piece of code with one line changed, and with half of
         </p>
     </section>
 
-    <script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Export a large CSV file in PHP: stream the download in Symfony","description":"A Symfony StreamedResponse still loads the whole query result and runs out of memory. How to stream a million rows as CSV, JSON, XML or Parquet in 20Mb.","datePublished":"2026-11-18","dateModified":"2026-11-18","mainEntityOfPage":"https://flow-php.com/guides/stream-large-csv-download-in-symfony"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Guides","item":"https://flow-php.com/guides"},{"@type":"ListItem","position":2,"name":"Export a large CSV file in PHP: stream the download in Symfony","item":"https://flow-php.com/guides/stream-large-csv-download-in-symfony"}]}]</script>
+    <script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Export a large CSV file in PHP: stream the download in Symfony","description":"A Symfony StreamedResponse still loads the whole query result and runs out of memory. How to stream a million rows as CSV, JSON, XML or Parquet in 20Mb.","datePublished":"2026-11-18","dateModified":"2026-11-20","mainEntityOfPage":"https://flow-php.com/guides/stream-large-csv-download-in-symfony"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Guides","item":"https://flow-php.com/guides"},{"@type":"ListItem","position":2,"name":"Export a large CSV file in PHP: stream the download in Symfony","item":"https://flow-php.com/guides/stream-large-csv-download-in-symfony"}]}]</script>
 
             </main>
 
