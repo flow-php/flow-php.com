@@ -155,7 +155,7 @@
         "crelt": "/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js",
         "@codemirror/language": "/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js",
         "@lezer/highlight": "/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js",
-        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-d2cc16650e09d46aed0891010ca40f09.js",
+        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-ffaeca87daa4f5d514d4b14aab33ec0a.js",
         "/assets/codemirror/php_analysis.js": "/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js",
         "/assets/wasm/mago/mago_wasm_bg.js": "/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js",
         "@fontsource-variable/cabin/index.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2F%40fontsource-variable%2Fcabin%2Findex.min-2fd942a10b44e40a5f63d90a3479e0ee.css%22%7D%29%29",
@@ -254,7 +254,7 @@
 <link rel="modulepreload" href="/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js">
 <link rel="modulepreload" href="/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js">
 <link rel="modulepreload" href="/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js">
-<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-d2cc16650e09d46aed0891010ca40f09.js">
+<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-ffaeca87daa4f5d514d4b14aab33ec0a.js">
 <link rel="modulepreload" href="/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js">
 <link rel="modulepreload" href="/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js">
 <script type="module">import 'app';</script>
@@ -816,6 +816,12 @@
               border-orange-100 bg-slate-100 text-slate-900 font-medium dark:bg-white/[0.06] dark:text-white"
             aria-current="page">
         Partitioning    </a>
+</li>
+            <li>        <a href="/documentation/components/core/hashing"
+              class="block rounded-md px-2.5 py-1.5 text-sm transition-colors no-underline border-l-2
+              border-transparent text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-white/70 dark:hover:text-white dark:hover:bg-white/[0.04]"
+            >
+        Hashing    </a>
 </li>
             <li>        <a href="/documentation/components/core/statistics"
               class="block rounded-md px-2.5 py-1.5 text-sm transition-colors no-underline border-l-2
@@ -1493,6 +1499,12 @@
             aria-current="page">
         Partitioning    </a>
 </li>
+            <li>        <a href="/documentation/components/core/hashing"
+              class="block rounded-md px-2.5 py-1.5 text-sm transition-colors no-underline border-l-2
+              border-transparent text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-white/70 dark:hover:text-white dark:hover:bg-white/[0.04]"
+            >
+        Hashing    </a>
+</li>
             <li>        <a href="/documentation/components/core/statistics"
               class="block rounded-md px-2.5 py-1.5 text-sm transition-colors no-underline border-l-2
               border-transparent text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-white/70 dark:hover:text-white dark:hover:bg-white/[0.04]"
@@ -1564,7 +1576,12 @@
 </li>
 <li><a href="#the-part-placeholder">The {part} placeholder</a></li>
 <li><a href="#choosing-partition-columns">Choosing Partition Columns</a></li>
-<li><a href="#partition-values">Partition Values</a></li>
+<li><a href="#partition-values">Partition Values</a>
+<ul>
+<li><a href="#null-and-empty-values">Null and Empty Values</a></li>
+<li><a href="#datetime-values">Datetime Values</a></li>
+</ul>
+</li>
 <li><a href="#save-modes-with-partitioning">Save Modes with Partitioning</a>
 <ul>
 <li><a href="#overwrite">Overwrite</a></li>
@@ -1711,8 +1728,52 @@ It makes one very small partition for each row.</p>
 <td><code>1.0E-9</code></td>
 <td><code>x=1.0e-9</code></td>
 </tr>
+<tr>
+<td><code>string</code></td>
+<td><code>null</code></td>
+<td><code>country=__HIVE_DEFAULT_PARTITION__</code></td>
+</tr>
+<tr>
+<td><code>string</code></td>
+<td><code>''</code></td>
+<td><code>country=</code></td>
+</tr>
 </tbody>
 </table>
+<h3><a id="null-and-empty-values" href="#null-and-empty-values" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Null and Empty Values</h3>
+<p>A null value goes to the directory <code>__HIVE_DEFAULT_PARTITION__</code>, the name that Hive, Spark and DuckDB use. An empty
+string goes to a directory with no value. A read gives both back:</p>
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-ab2cfcc164df" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-ab2cfcc164df" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+
+use function Flow\ETL\Adapter\Parquet\{from_parquet, to_parquet};
+use function Flow\ETL\DSL\{data_frame, from_array, int_schema, overwrite, partition_by, schema, str_schema};
+
+$users = schema(int_schema('id'), str_schema('country', nullable: true));
+
+data_frame()
+    -&gt;read(from_array([
+        ['id' =&gt; 1, 'country' =&gt; 'PL'],
+        ['id' =&gt; 2, 'country' =&gt; null],
+        ['id' =&gt; 3, 'country' =&gt; ''],
+    ])-&gt;withSchema($users))
+    -&gt;write(to_parquet(__DIR__ . '/users/users.parquet')
+        -&gt;partitionBy(partition_by('country'))
+        -&gt;saveMode(overwrite()))
+    -&gt;run();
+
+// users/country=PL
+// users/country=__HIVE_DEFAULT_PARTITION__
+// users/country=
+
+data_frame()-&gt;read(from_parquet(__DIR__ . '/users/**/*.parquet'))-&gt;fetch();
+
+// id | country
+//  1 | PL
+//  2 | null
+//  3 | ''
+</code></pre></div>
+<p>A string value <code>__HIVE_DEFAULT_PARTITION__</code> reads back as null.</p>
+<h3><a id="datetime-values" href="#datetime-values" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Datetime Values</h3>
 <p>A <code>datetime</code> column makes one directory for each distinct value. For one directory for each day, partition by a <code>date</code>:</p>
 <div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-22499edc7f61" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-22499edc7f61" data-controller="syntax-highlight"><code class="language-php">&lt;?php
 

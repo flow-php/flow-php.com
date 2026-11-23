@@ -155,7 +155,7 @@
         "crelt": "/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js",
         "@codemirror/language": "/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js",
         "@lezer/highlight": "/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js",
-        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-d2cc16650e09d46aed0891010ca40f09.js",
+        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-ffaeca87daa4f5d514d4b14aab33ec0a.js",
         "/assets/codemirror/php_analysis.js": "/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js",
         "/assets/wasm/mago/mago_wasm_bg.js": "/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js",
         "@fontsource-variable/cabin/index.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2F%40fontsource-variable%2Fcabin%2Findex.min-2fd942a10b44e40a5f63d90a3479e0ee.css%22%7D%29%29",
@@ -254,7 +254,7 @@
 <link rel="modulepreload" href="/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js">
 <link rel="modulepreload" href="/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js">
 <link rel="modulepreload" href="/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js">
-<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-d2cc16650e09d46aed0891010ca40f09.js">
+<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-ffaeca87daa4f5d514d4b14aab33ec0a.js">
 <link rel="modulepreload" href="/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js">
 <link rel="modulepreload" href="/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js">
 <script type="module">import 'app';</script>
@@ -816,6 +816,12 @@
               border-transparent text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-white/70 dark:hover:text-white dark:hover:bg-white/[0.04]"
             >
         Partitioning    </a>
+</li>
+            <li>        <a href="/documentation/components/core/hashing"
+              class="block rounded-md px-2.5 py-1.5 text-sm transition-colors no-underline border-l-2
+              border-transparent text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-white/70 dark:hover:text-white dark:hover:bg-white/[0.04]"
+            >
+        Hashing    </a>
 </li>
             <li>        <a href="/documentation/components/core/statistics"
               class="block rounded-md px-2.5 py-1.5 text-sm transition-colors no-underline border-l-2
@@ -1493,6 +1499,12 @@
             >
         Partitioning    </a>
 </li>
+            <li>        <a href="/documentation/components/core/hashing"
+              class="block rounded-md px-2.5 py-1.5 text-sm transition-colors no-underline border-l-2
+              border-transparent text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-white/70 dark:hover:text-white dark:hover:bg-white/[0.04]"
+            >
+        Hashing    </a>
+</li>
             <li>        <a href="/documentation/components/core/statistics"
               class="block rounded-md px-2.5 py-1.5 text-sm transition-colors no-underline border-l-2
               border-transparent text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-white/70 dark:hover:text-white dark:hover:bg-white/[0.04]"
@@ -1559,6 +1571,11 @@
 <li><a href="#1-flow-phppostgresql---cte-and-cte-lose-the-recursive-argument">1) flow-php/postgresql - cte() and CTE lose the recursive argument</a></li>
 <li><a href="#2-flow-phppostgresql---the-dsl-returning--returningall-and-the-static-returningclause-factories-are-removed">2) flow-php/postgresql - the DSL returning() / returning_all() and the static ReturningClause factories are removed</a></li>
 <li><a href="#3-flow-phppostgresql----returning-with-no-expressions-throws">3) flow-php/postgresql - -&gt;returning() with no expressions throws</a></li>
+<li><a href="#4-flow-phpetl---a-detached-xml-element-is-stored-by-its-canonical-markup">4) flow-php/etl - a detached xml element is stored by its canonical markup</a></li>
+<li><a href="#5-flow-phpetl---nativephphash-is-renamed-to-phpalgorithm-and-hash-takes-an-algorithm-name">5) flow-php/etl - NativePHPHash is renamed to PhpAlgorithm, and hash() takes an algorithm name</a></li>
+<li><a href="#6-flow-phpetl---backend-has-two-new-methods-and-the-flowphp-abi-is-4">6) flow-php/etl - Backend has two new methods, and the flow_php ABI is 4</a></li>
+<li><a href="#7-flow-phpetl---group-join-distinct-and-bucket-keys-have-the-declared-type-of-their-column">7) flow-php/etl - group, join, distinct and bucket keys have the declared type of their column</a></li>
+<li><a href="#8-flow-phpfilesystem---an-empty-string-is-a-valid-partition-value">8) flow-php/filesystem - an empty string is a valid partition value</a></li>
 </ul>
 </li>
 <li><a href="#upgrading-from-047x-to-048x">Upgrading from 0.47.x to 0.48.x</a>
@@ -1956,6 +1973,129 @@ specific version to ensure a smooth upgrade process.</p>
 </tbody>
 </table>
 <p>Applies to the delete, update, insert and merge builders.</p>
+<h3><a id="4-flow-phpetl---a-detached-xml-element-is-stored-by-its-canonical-markup" href="#4-flow-phpetl---a-detached-xml-element-is-stored-by-its-canonical-markup" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>4) <code>flow-php/etl</code> - a detached xml element is stored by its canonical markup</h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a detached xml element is stored as <code>saveXML()</code>, <code>&lt;a/&gt;</code></td>
+<td>stored as its C14N markup, <code>&lt;a&gt;&lt;/a&gt;</code></td>
+</tr>
+<tr>
+<td>an xml element with no owner document throws in <code>toPhysical()</code></td>
+<td>stored as its C14N markup</td>
+</tr>
+</tbody>
+</table>
+<p>Floe files and caches written by 0.45 to 0.48 keep the raw form of a detached xml element. Flow compares, hashes and
+writes such a value in that raw form. Write the file again with this version to store the C14N markup.</p>
+<h3><a id="5-flow-phpetl---nativephphash-is-renamed-to-phpalgorithm-and-hash-takes-an-algorithm-name" href="#5-flow-phpetl---nativephphash-is-renamed-to-phpalgorithm-and-hash-takes-an-algorithm-name" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>5) <code>flow-php/etl</code> - <code>NativePHPHash</code> is renamed to <code>PhpAlgorithm</code>, and <code>hash()</code> takes an algorithm name</h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Flow\ETL\Kernels\Hash\NativePHPHash</code></td>
+<td><code>Flow\ETL\Kernels\Hash\PhpAlgorithm</code></td>
+</tr>
+<tr>
+<td><code>hash(ref('email'), new NativePHPHash('sha256'))</code></td>
+<td><code>hash(ref('email'), 'sha256')</code></td>
+</tr>
+<tr>
+<td><code>ref('email')-&gt;hash(new NativePHPHash('xxh64', options: ['seed' =&gt; 7]))</code></td>
+<td><code>ref('email')-&gt;hash(hash_algorithm('xxh64', options: ['seed' =&gt; 7]))</code></td>
+</tr>
+</tbody>
+</table>
+<p>Catch <code>Flow\ETL\Foundation\Exception\InvalidArgumentException</code> instead of <code>\InvalidArgumentException</code> for an unknown algorithm name.</p>
+<h3><a id="6-flow-phpetl---backend-has-two-new-methods-and-the-flowphp-abi-is-4" href="#6-flow-phpetl---backend-has-two-new-methods-and-the-flowphp-abi-is-4" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>6) <code>flow-php/etl</code> - <code>Backend</code> has two new methods, and the flow_php ABI is 4</h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-</td>
+<td><code>Backend::rowHashes(array $columns, int $count): Column</code></td>
+</tr>
+<tr>
+<td>-</td>
+<td><code>Backend::groupedMultisetHashes(MultisetHashAlgorithm $algorithm): GroupedMultisetHashes</code></td>
+</tr>
+<tr>
+<td><code>FLOW_PHP_ABI</code> 3</td>
+<td><code>FLOW_PHP_ABI</code> 4</td>
+</tr>
+</tbody>
+</table>
+<p>A custom <code>Backend</code> must implement the two methods. Update or rebuild the flow_php extension together with the library.</p>
+<h3><a id="7-flow-phpetl---group-join-distinct-and-bucket-keys-have-the-declared-type-of-their-column" href="#7-flow-phpetl---group-join-distinct-and-bucket-keys-have-the-declared-type-of-their-column" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>7) <code>flow-php/etl</code> - group, join, distinct and bucket keys have the declared type of their column</h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a datetime batch under a date key column groups by instant</td>
+<td>it is cast to the date first and groups by day</td>
+</tr>
+<tr>
+<td>an xml value under a string key column keys by its stored document</td>
+<td>it keys by the text that the string cast gives</td>
+</tr>
+<tr>
+<td>int <code>1</code> and float <code>1.0</code> under a float key column are two keys</td>
+<td>one key</td>
+</tr>
+<tr>
+<td>a join with an undeclared left schema buckets the right side first</td>
+<td>it reads the first left batch first, so both sides key in one type</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="8-flow-phpfilesystem---an-empty-string-is-a-valid-partition-value" href="#8-flow-phpfilesystem---an-empty-string-is-a-valid-partition-value" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>8) <code>flow-php/filesystem</code> - an empty string is a valid partition value</h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>new Partition('country', '')</code> throws</td>
+<td>it is the partition <code>country</code> with the value <code>''</code></td>
+</tr>
+<tr>
+<td><code>Partition::fromSegment('country=')</code> is null</td>
+<td>it is the partition <code>country</code> with the value <code>''</code></td>
+</tr>
+<tr>
+<td>a partitioned write refuses an empty value</td>
+<td>it writes the folder <code>country=</code></td>
+</tr>
+<tr>
+<td>a read ignores a folder <code>country=</code></td>
+<td>it reads it as the partition column <code>country</code></td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h2><a id="upgrading-from-047x-to-048x" href="#upgrading-from-047x-to-048x" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Upgrading from 0.47.x to 0.48.x</h2>
 <h3><a id="1-flow-phpetl---transformation-is-invokable-and-every-dataframe-method-has-a-pipe-step-printrows-and-withcolumn-changed" href="#1-flow-phpetl---transformation-is-invokable-and-every-dataframe-method-has-a-pipe-step-printrows-and-withcolumn-changed" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>1) <code>flow-php/etl</code> - <code>Transformation</code> is invokable and every DataFrame method has a pipe step; <code>print_rows()</code> and <code>WithColumn</code> changed</h3>

@@ -826,6 +826,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Filesystem-Partition.html#method_fromUri"
         },                {
+            "fqsen": "\\Flow\\Filesystem\\Partition\u003A\u003AassertPartitionable\u0028\u0029",
+            "name": "assertPartitionable",
+            "summary": "",
+            "url": "classes/Flow-Filesystem-Partition.html#method_assertPartitionable"
+        },                {
             "fqsen": "\\Flow\\Filesystem\\Partition\u003A\u003AfromValue\u0028\u0029",
             "name": "fromValue",
             "summary": "",

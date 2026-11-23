@@ -1856,6 +1856,16 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_hash"
         },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\hash_algorithm\u0028\u0029",
+            "name": "hash_algorithm",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_hash_algorithm"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\row_hash\u0028\u0029",
+            "name": "row_hash",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_row_hash"
+        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\cast\u0028\u0029",
             "name": "cast",
             "summary": "",
@@ -1880,6 +1890,11 @@ Search.appendIndex(
             "name": "count",
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_count"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\multiset_hash\u0028\u0029",
+            "name": "multiset_hash",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_multiset_hash"
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\call\u0028\u0029",
             "name": "call",
@@ -8466,6 +8481,121 @@ Search.appendIndex(
             "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Functions-Multiply.html#method_eval"
         },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\MultisetHash",
+            "name": "MultisetHash",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-MultisetHash.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\MultisetHash\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-MultisetHash.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\MultisetHash\u003A\u003AfromDescription\u0028\u0029",
+            "name": "fromDescription",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-MultisetHash.html#method_fromDescription"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\MultisetHash\u003A\u003Adescribe\u0028\u0029",
+            "name": "describe",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-MultisetHash.html#method_describe"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\MultisetHash\u003A\u003Aaggregate\u0028\u0029",
+            "name": "aggregate",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-MultisetHash.html#method_aggregate"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\MultisetHash\u003A\u003Amerge\u0028\u0029",
+            "name": "merge",
+            "summary": "Folds\u0020a\u0020partial\u0028\u0029\u0020of\u0020another\u0020instance\u0020into\u0020this\u0020one\u003B\u0020that\u0020instance\u0020aggregated\u0020rows\u0020that\u0020come\u0020after\u0020this\none\u0027s\u0020\u0028merge\u0028\u0029\u0027s\u0020contract\u0029.",
+            "url": "classes/Flow-ETL-Functions-MultisetHash.html#method_merge"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\MultisetHash\u003A\u003Apartial\u0028\u0029",
+            "name": "partial",
+            "summary": "This\u0020aggregator\u0027s\u0020state\u0020as\u0020plain\u0020values\u0020of\u0020partialType\u0028\u0029\u003B\u0020an\u0020aggregator\u0020that\u0020saw\u0020no\u0020row\u0020returns\u0020its\u0020initial\nstate.",
+            "url": "classes/Flow-ETL-Functions-MultisetHash.html#method_partial"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\MultisetHash\u003A\u003ApartialType\u0028\u0029",
+            "name": "partialType",
+            "summary": "The\u0020structure\u0020partial\u0028\u0029\u0020returns\u003B\u0020valid\u0020once\u0020the\u0020aggregator\u0020is\u0020resolved\u0020\u0028Aggregators\u003A\u003Aresolved\u0028\u0029\u0029.",
+            "url": "classes/Flow-ETL-Functions-MultisetHash.html#method_partialType"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\MultisetHash\u003A\u003Agrouped\u0028\u0029",
+            "name": "grouped",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-MultisetHash.html#method_grouped"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\MultisetHash\u003A\u003Achildren\u0028\u0029",
+            "name": "children",
+            "summary": "Every\u0020operand\u0020of\u0020this\u0020node\u0020that\u0020is\u0020an\u0020expression,\u0020in\u0020constructor\u0020order.",
+            "url": "classes/Flow-ETL-Functions-MultisetHash.html#method_children"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\MultisetHash\u003A\u003Adeterministic\u0028\u0029",
+            "name": "deterministic",
+            "summary": "True\u0020when\u0020this\u0020node\u0020and\u0020every\u0020node\u0020in\u0020children\u0028\u0029\u0020produce\u0020the\u0020same\u0020value\u0020for\u0020the\u0020same\u0020input\u0020row.",
+            "url": "classes/Flow-ETL-Functions-MultisetHash.html#method_deterministic"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\MultisetHash\u003A\u003Aresolved\u0028\u0029",
+            "name": "resolved",
+            "summary": "True\u0020when\u0020this\u0020node\u0020and\u0020every\u0020node\u0020in\u0020children\u0028\u0029\u0020can\u0020answer\u0020returns\u0028\u0029.",
+            "url": "classes/Flow-ETL-Functions-MultisetHash.html#method_resolved"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\MultisetHash\u003A\u003AwithChildren\u0028\u0029",
+            "name": "withChildren",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
+            "url": "classes/Flow-ETL-Functions-MultisetHash.html#method_withChildren"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\MultisetHash\u003A\u003AoutputName\u0028\u0029",
+            "name": "outputName",
+            "summary": "Decided\u0020in\u0020the\u0020constructor,\u0020never\u0020mutated.",
+            "url": "classes/Flow-ETL-Functions-MultisetHash.html#method_outputName"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\MultisetHash\u003A\u003Areferences\u0028\u0029",
+            "name": "references",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-MultisetHash.html#method_references"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\MultisetHash\u003A\u003Areturns\u0028\u0029",
+            "name": "returns",
+            "summary": "An\u0020OptionalType\u0020return\u0020declares\u0020the\u0020produced\u0020column\u0020nullable\u003B\u0020there\u0020is\u0020no\u0020nullable\u0028\u0029\u0020peer.",
+            "url": "classes/Flow-ETL-Functions-MultisetHash.html#method_returns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\MultisetHash\u003A\u003Avalue\u0028\u0029",
+            "name": "value",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-MultisetHash.html#method_value"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\MultisetHashesByGroup",
+            "name": "MultisetHashesByGroup",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-MultisetHashesByGroup.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\MultisetHashesByGroup\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-MultisetHashesByGroup.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\MultisetHashesByGroup\u003A\u003AaggregateGroups\u0028\u0029",
+            "name": "aggregateGroups",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-MultisetHashesByGroup.html#method_aggregateGroups"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\MultisetHashesByGroup\u003A\u003AgroupValues\u0028\u0029",
+            "name": "groupValues",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-MultisetHashesByGroup.html#method_groupValues"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\MultisetHashesByGroup\u003A\u003Apartials\u0028\u0029",
+            "name": "partials",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-MultisetHashesByGroup.html#method_partials"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\MultisetHashesByGroup\u003A\u003AabsorbEarlier\u0028\u0029",
+            "name": "absorbEarlier",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-MultisetHashesByGroup.html#method_absorbEarlier"
+        },                {
             "fqsen": "\\Flow\\ETL\\Functions\\Not",
             "name": "Not",
             "summary": "",
@@ -9805,6 +9935,46 @@ Search.appendIndex(
             "name": "eval",
             "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
             "url": "classes/Flow-ETL-Functions-Round.html#method_eval"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\RowHash",
+            "name": "RowHash",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-RowHash.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\RowHash\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-RowHash.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\RowHash\u003A\u003AfromDescription\u0028\u0029",
+            "name": "fromDescription",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-RowHash.html#method_fromDescription"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\RowHash\u003A\u003Adescribe\u0028\u0029",
+            "name": "describe",
+            "summary": "",
+            "url": "classes/Flow-ETL-Functions-RowHash.html#method_describe"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\RowHash\u003A\u003Achildren\u0028\u0029",
+            "name": "children",
+            "summary": "Every\u0020operand\u0020of\u0020this\u0020node\u0020that\u0020is\u0020an\u0020expression,\u0020in\u0020constructor\u0020order.",
+            "url": "classes/Flow-ETL-Functions-RowHash.html#method_children"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\RowHash\u003A\u003AwithChildren\u0028\u0029",
+            "name": "withChildren",
+            "summary": "A\u0020copy\u0020of\u0020this\u0020node\u0020with\u0020\u0024children\u0020in\u0020place\u0020of\u0020children\u0028\u0029\u003A\u0020same\u0020count,\u0020same\u0020order,\u0020same\nper\u002Delement\u0020narrowing.\u0020Never\u0020mutates\u0020\u0024this.",
+            "url": "classes/Flow-ETL-Functions-RowHash.html#method_withChildren"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\RowHash\u003A\u003Areturns\u0028\u0029",
+            "name": "returns",
+            "summary": "The\u0020type\u0020of\u0020the\u0020column\u0020this\u0020function\u0020produces,\u0020before\u0020any\u0020row\u0020is\u0020read.",
+            "url": "classes/Flow-ETL-Functions-RowHash.html#method_returns"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Functions\\RowHash\u003A\u003Aeval\u0028\u0029",
+            "name": "eval",
+            "summary": "One\u0020column\u0020of\u0020\u0024rows\u002D\u003Ecount\u0028\u0029\u0020values,\u0020of\u0020returns\u0028\u0029\u0027s\u0020type\u0020\u0028nullable\u0029,\u0020same\u0020row\u0020order.",
+            "url": "classes/Flow-ETL-Functions-RowHash.html#method_eval"
         },                {
             "fqsen": "\\Flow\\ETL\\Functions\\RowNumber",
             "name": "RowNumber",
@@ -15856,30 +16026,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Kernels-Hash-Algorithm.html#method_hash"
         },                {
-            "fqsen": "\\Flow\\ETL\\Kernels\\Hash\\NativePHPHash",
-            "name": "NativePHPHash",
+            "fqsen": "\\Flow\\ETL\\Kernels\\Hash\\PhpAlgorithm",
+            "name": "PhpAlgorithm",
             "summary": "",
-            "url": "classes/Flow-ETL-Kernels-Hash-NativePHPHash.html"
+            "url": "classes/Flow-ETL-Kernels-Hash-PhpAlgorithm.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Kernels\\Hash\\NativePHPHash\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Kernels\\Hash\\PhpAlgorithm\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Flow-ETL-Kernels-Hash-NativePHPHash.html#method___construct"
+            "url": "classes/Flow-ETL-Kernels-Hash-PhpAlgorithm.html#method___construct"
         },                {
-            "fqsen": "\\Flow\\ETL\\Kernels\\Hash\\NativePHPHash\u003A\u003AfromDescription\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Kernels\\Hash\\PhpAlgorithm\u003A\u003AfromDescription\u0028\u0029",
             "name": "fromDescription",
             "summary": "",
-            "url": "classes/Flow-ETL-Kernels-Hash-NativePHPHash.html#method_fromDescription"
+            "url": "classes/Flow-ETL-Kernels-Hash-PhpAlgorithm.html#method_fromDescription"
         },                {
-            "fqsen": "\\Flow\\ETL\\Kernels\\Hash\\NativePHPHash\u003A\u003Adescribe\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Kernels\\Hash\\PhpAlgorithm\u003A\u003Adescribe\u0028\u0029",
             "name": "describe",
             "summary": "",
-            "url": "classes/Flow-ETL-Kernels-Hash-NativePHPHash.html#method_describe"
+            "url": "classes/Flow-ETL-Kernels-Hash-PhpAlgorithm.html#method_describe"
         },                {
-            "fqsen": "\\Flow\\ETL\\Kernels\\Hash\\NativePHPHash\u003A\u003Ahash\u0028\u0029",
+            "fqsen": "\\Flow\\ETL\\Kernels\\Hash\\PhpAlgorithm\u003A\u003Ahash\u0028\u0029",
             "name": "hash",
             "summary": "",
-            "url": "classes/Flow-ETL-Kernels-Hash-NativePHPHash.html#method_hash"
+            "url": "classes/Flow-ETL-Kernels-Hash-PhpAlgorithm.html#method_hash"
         },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\Hash\\PlainText",
             "name": "PlainText",
@@ -21956,6 +22126,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Runtime-Analyze.html#method_withColumnStatistics"
         },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Analyze\u003A\u003AnewOutputHasher\u0028\u0029",
+            "name": "newOutputHasher",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Analyze.html#method_newOutputHasher"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Analyze\u003A\u003AwithDatasetHash\u0028\u0029",
+            "name": "withDatasetHash",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Analyze.html#method_withDatasetHash"
+        },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Analyze\u003A\u003AwithSchema\u0028\u0029",
             "name": "withSchema",
             "summary": "",
@@ -22496,6 +22676,61 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Runtime-Executor-OfferedFailure.html#method_forget"
         },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\OutputHasher",
+            "name": "OutputHasher",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-OutputHasher.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\OutputHasher\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-OutputHasher.html#method_add"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\OutputHasher\u003A\u003Aabsorb\u0028\u0029",
+            "name": "absorb",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-OutputHasher.html#method_absorb"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\OutputHasher\u003A\u003Ahash\u0028\u0029",
+            "name": "hash",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-OutputHasher.html#method_hash"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\PartitionedOutputHasher",
+            "name": "PartitionedOutputHasher",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-PartitionedOutputHasher.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\PartitionedOutputHasher\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-PartitionedOutputHasher.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\PartitionedOutputHasher\u003A\u003AfromDescription\u0028\u0029",
+            "name": "fromDescription",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-PartitionedOutputHasher.html#method_fromDescription"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\PartitionedOutputHasher\u003A\u003Adescribe\u0028\u0029",
+            "name": "describe",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-PartitionedOutputHasher.html#method_describe"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\PartitionedOutputHasher\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-PartitionedOutputHasher.html#method_add"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\PartitionedOutputHasher\u003A\u003Aabsorb\u0028\u0029",
+            "name": "absorb",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-PartitionedOutputHasher.html#method_absorb"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\PartitionedOutputHasher\u003A\u003Ahash\u0028\u0029",
+            "name": "hash",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-PartitionedOutputHasher.html#method_hash"
+        },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\RunCounts",
             "name": "RunCounts",
             "summary": "",
@@ -22525,6 +22760,26 @@ Search.appendIndex(
             "name": "absorbWorkers",
             "summary": "Takes\u0020over\u0020the\u0020worker\u0020peaks\u0020\u0024other\u0020saw\u0020and\u0020none\u0020of\u0020its\u0020reads\u003A\u0020an\u0020abandoned\u0020attempt\u0027s\u0020workers\u0020used\u0020that\u0020memory,\nwhile\u0020its\u0020source\u0020is\u0020read\u0020again.",
             "url": "classes/Flow-ETL-Runtime-Executor-RunCounts.html#method_absorbWorkers"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\RunCounts\u003A\u003AoutputHasher\u0028\u0029",
+            "name": "outputHasher",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-RunCounts.html#method_outputHasher"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\RunCounts\u003A\u003AhashOutput\u0028\u0029",
+            "name": "hashOutput",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-RunCounts.html#method_hashOutput"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\RunCounts\u003A\u003AabsorbOutputHash\u0028\u0029",
+            "name": "absorbOutputHash",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-RunCounts.html#method_absorbOutputHash"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\RunCounts\u003A\u003AoutputHash\u0028\u0029",
+            "name": "outputHash",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-RunCounts.html#method_outputHash"
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\RunCounts\u003A\u003Aworker\u0028\u0029",
             "name": "worker",
@@ -22690,6 +22945,41 @@ Search.appendIndex(
             "name": "discard",
             "summary": "No\u0020transaction\u003A\u0020nothing\u0020is\u0020written\u0020on\u0020a\u0020dead\u0020run.",
             "url": "classes/Flow-ETL-Runtime-Executor-TransactionLoader.html#method_discard"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\WholeOutputHasher",
+            "name": "WholeOutputHasher",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-WholeOutputHasher.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\WholeOutputHasher\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-WholeOutputHasher.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\WholeOutputHasher\u003A\u003AfromDescription\u0028\u0029",
+            "name": "fromDescription",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-WholeOutputHasher.html#method_fromDescription"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\WholeOutputHasher\u003A\u003Adescribe\u0028\u0029",
+            "name": "describe",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-WholeOutputHasher.html#method_describe"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\WholeOutputHasher\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-WholeOutputHasher.html#method_add"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\WholeOutputHasher\u003A\u003Aabsorb\u0028\u0029",
+            "name": "absorb",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-WholeOutputHasher.html#method_absorb"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\WholeOutputHasher\u003A\u003Ahash\u0028\u0029",
+            "name": "hash",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Executor-WholeOutputHasher.html#method_hash"
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Executor\\WriteLoaderFactory",
             "name": "WriteLoaderFactory",
@@ -23086,6 +23376,116 @@ Search.appendIndex(
             "summary": "Decides\u0020before\u0020the\u0020first\u0020batch\u0020whether\u0020launching\u0020the\u0020head\u0020of\u0020\u0024plan\u0027s\u0020chain\u0020pays\u003B\u0020null\u0020when\u0020it\u0020does\u0020not\u0020and\u0020the\nexecutor\u0020reads\u0020\u0024source.\u0020Otherwise\u0020the\u0020launch\u003A\u0020its\u0020rows\u0020are\u0020identical\u0020to\u0020the\u0020launched\u0020steps\u0020run\u0020over\u0020the\u0020source\u0027s\nown\u0020scan\u0020of\u0020\u0024criteria,\u0020with\u0020the\u0020source\u0027s\u0020rows\u0020and\u0020the\u0020workers\u0027\u0020peaks\u0020counted\u0020into\u0020\u0024counts.",
             "url": "classes/Flow-ETL-Runtime-Launcher-Launcher.html#method_read"
         },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\DatasetHash",
+            "name": "DatasetHash",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-DatasetHash.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\DatasetHash\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-DatasetHash.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\DatasetHash\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-DatasetHash.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\DatasetHash\u003A\u003Aplus\u0028\u0029",
+            "name": "plus",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-DatasetHash.html#method_plus"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\DatasetHash\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-DatasetHash.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\DatasetHash\u003A\u003A\u0024total",
+            "name": "total",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-DatasetHash.html#property_total"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\DatasetHash\u003A\u003A\u0024partitions",
+            "name": "partitions",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-DatasetHash.html#property_partitions"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\DatasetHash\u003A\u003A\u0024algorithm",
+            "name": "algorithm",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-DatasetHash.html#property_algorithm"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Hash",
+            "name": "Hash",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-Hash.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Hash\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-Hash.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Hash\u003A\u003Aempty\u0028\u0029",
+            "name": "empty",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-Hash.html#method_empty"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Hash\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-Hash.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Hash\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-Hash.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Hash\u003A\u003Aplus\u0028\u0029",
+            "name": "plus",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-Hash.html#method_plus"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Hash\u003A\u003A\u0024rows",
+            "name": "rows",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-Hash.html#property_rows"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Hash\u003A\u003A\u0024value",
+            "name": "value",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-Hash.html#property_value"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\PartitionHash",
+            "name": "PartitionHash",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-PartitionHash.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\PartitionHash\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-PartitionHash.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\PartitionHash\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-PartitionHash.html#method_fromArray"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\PartitionHash\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-PartitionHash.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\PartitionHash\u003A\u003A\u0024partitions",
+            "name": "partitions",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-PartitionHash.html#property_partitions"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\PartitionHash\u003A\u003A\u0024hash",
+            "name": "hash",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-PartitionHash.html#property_hash"
+        },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Processes",
             "name": "Processes",
             "summary": "",
@@ -23135,6 +23535,11 @@ Search.appendIndex(
             "name": "normalize",
             "summary": "The\u0020JSON\u0020form\u0020for\u0020CI\u003A\u0020the\u0020same\u0020values\u0020as\u0020the\u0020typed\u0020getters,\u0020memory\u0020in\u0020bytes.",
             "url": "classes/Flow-ETL-Runtime-Metrics-Report.html#method_normalize"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Report\u003A\u003AdatasetHash\u0028\u0029",
+            "name": "datasetHash",
+            "summary": "",
+            "url": "classes/Flow-ETL-Runtime-Metrics-Report.html#method_datasetHash"
         },                {
             "fqsen": "\\Flow\\ETL\\Runtime\\Metrics\\Report\u003A\u003Asources\u0028\u0029",
             "name": "sources",
@@ -24766,6 +25171,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Values-Column-AdaptiveBackend.html#method_groupedCounts"
         },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\AdaptiveBackend\u003A\u003ArowHashes\u0028\u0029",
+            "name": "rowHashes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-AdaptiveBackend.html#method_rowHashes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\AdaptiveBackend\u003A\u003AgroupedMultisetHashes\u0028\u0029",
+            "name": "groupedMultisetHashes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-AdaptiveBackend.html#method_groupedMultisetHashes"
+        },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\AdaptiveBackend\u003A\u003AgroupTable\u0028\u0029",
             "name": "groupTable",
             "summary": "",
@@ -24901,6 +25316,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Values-Column-Backend.html#method_groupedCounts"
         },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\Backend\u003A\u003ArowHashes\u0028\u0029",
+            "name": "rowHashes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-Backend.html#method_rowHashes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\Backend\u003A\u003AgroupedMultisetHashes\u0028\u0029",
+            "name": "groupedMultisetHashes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-Backend.html#method_groupedMultisetHashes"
+        },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Backend\u003A\u003AgroupTable\u0028\u0029",
             "name": "groupTable",
             "summary": "",
@@ -24935,6 +25360,26 @@ Search.appendIndex(
             "name": "releaseFreedMemory",
             "summary": "Returns\u0020memory\u0020this\u0020backend\u0020has\u0020freed\u0020to\u0020the\u0020operating\u0020system.",
             "url": "classes/Flow-ETL-Values-Column-Backend.html#method_releaseFreedMemory"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\CanonicalEncoding",
+            "name": "CanonicalEncoding",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-CanonicalEncoding.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\CanonicalEncoding\u003A\u003Aordered\u0028\u0029",
+            "name": "ordered",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-CanonicalEncoding.html#method_ordered"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\CanonicalEncoding\u003A\u003Anamed\u0028\u0029",
+            "name": "named",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-CanonicalEncoding.html#method_named"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\CanonicalEncoding\u003A\u003ANULL",
+            "name": "NULL",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-CanonicalEncoding.html#constant_NULL"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Column",
             "name": "Column",
@@ -25216,6 +25661,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Values-Column-GroupedCounts.html#method_absorbEarlier"
         },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\GroupedMultisetHashes",
+            "name": "GroupedMultisetHashes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-GroupedMultisetHashes.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\GroupedMultisetHashes\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-GroupedMultisetHashes.html#method_add"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\GroupedMultisetHashes\u003A\u003Ahashes\u0028\u0029",
+            "name": "hashes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-GroupedMultisetHashes.html#method_hashes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\GroupedMultisetHashes\u003A\u003AabsorbEarlier\u0028\u0029",
+            "name": "absorbEarlier",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-GroupedMultisetHashes.html#method_absorbEarlier"
+        },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\GroupedTotals",
             "name": "GroupedTotals",
             "summary": "",
@@ -25445,6 +25910,76 @@ Search.appendIndex(
             "name": "nulls",
             "summary": "",
             "url": "classes/Flow-ETL-Values-Column-Layout-Validity.html#method_nulls"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\MultisetDigest",
+            "name": "MultisetDigest",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-MultisetDigest.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\MultisetDigest\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-MultisetDigest.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\MultisetDigest\u003A\u003Aempty\u0028\u0029",
+            "name": "empty",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-MultisetDigest.html#method_empty"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\MultisetDigest\u003A\u003AfromHex\u0028\u0029",
+            "name": "fromHex",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-MultisetDigest.html#method_fromHex"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\MultisetDigest\u003A\u003AofHalfSums\u0028\u0029",
+            "name": "ofHalfSums",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-MultisetDigest.html#method_ofHalfSums"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\MultisetDigest\u003A\u003Aplus\u0028\u0029",
+            "name": "plus",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-MultisetDigest.html#method_plus"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\MultisetDigest\u003A\u003Ahex\u0028\u0029",
+            "name": "hex",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-MultisetDigest.html#method_hex"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\MultisetDigest\u003A\u003A\u0024low",
+            "name": "low",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-MultisetDigest.html#property_low"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\MultisetDigest\u003A\u003A\u0024high",
+            "name": "high",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-MultisetDigest.html#property_high"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\MultisetHashAlgorithm",
+            "name": "MultisetHashAlgorithm",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-MultisetHashAlgorithm.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\MultisetHashAlgorithm\u003A\u003Anamed\u0028\u0029",
+            "name": "named",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-MultisetHashAlgorithm.html#method_named"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\MultisetHashAlgorithm\u003A\u003Amd5",
+            "name": "md5",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-MultisetHashAlgorithm.html#enumcase_md5"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\MultisetHashAlgorithm\u003A\u003Asha256",
+            "name": "sha256",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-MultisetHashAlgorithm.html#enumcase_sha256"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\MultisetHashAlgorithm\u003A\u003Axxh128",
+            "name": "xxh128",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-MultisetHashAlgorithm.html#enumcase_xxh128"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Php\\CastingColumnBuilder",
             "name": "CastingColumnBuilder",
@@ -25921,6 +26456,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Values-Column-Php-PhpGroupedCounts.html#method_absorbEarlier"
         },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\Php\\PhpGroupedMultisetHashes",
+            "name": "PhpGroupedMultisetHashes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-Php-PhpGroupedMultisetHashes.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\Php\\PhpGroupedMultisetHashes\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-Php-PhpGroupedMultisetHashes.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\Php\\PhpGroupedMultisetHashes\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-Php-PhpGroupedMultisetHashes.html#method_add"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\Php\\PhpGroupedMultisetHashes\u003A\u003Ahashes\u0028\u0029",
+            "name": "hashes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-Php-PhpGroupedMultisetHashes.html#method_hashes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\Php\\PhpGroupedMultisetHashes\u003A\u003AabsorbEarlier\u0028\u0029",
+            "name": "absorbEarlier",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-Php-PhpGroupedMultisetHashes.html#method_absorbEarlier"
+        },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Php\\PhpGroupedTotals",
             "name": "PhpGroupedTotals",
             "summary": "",
@@ -26301,6 +26861,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Values-Column-PhpBackend.html#method_groupedCounts"
         },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\PhpBackend\u003A\u003ArowHashes\u0028\u0029",
+            "name": "rowHashes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-PhpBackend.html#method_rowHashes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\PhpBackend\u003A\u003AgroupedMultisetHashes\u0028\u0029",
+            "name": "groupedMultisetHashes",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Column-PhpBackend.html#method_groupedMultisetHashes"
+        },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\PhpBackend\u003A\u003AgroupTable\u0028\u0029",
             "name": "groupTable",
             "summary": "",
@@ -26398,7 +26968,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Physical\\ElementPosition",
             "name": "ElementPosition",
-            "summary": "Format\u003A\u0020\u0022\\x01\u003Cpath\u003E\\0\u003Cmarkup\u0020length\u003E\\0\u003Celement\u003E\u003Cowner\u0020document\u003E\u0022\u003B\u0020older\u0020builds\u0020wrote\u0020legacy\u0020forms.",
+            "summary": "Format\u003A\u0020\u0022\\x01\u003Cpath\u003E\\0\u003Cmarkup\u0020length\u003E\\0\u003Celement\u003E\u003Cowner\u0020document\u003E\u0022.",
             "url": "classes/Flow-ETL-Values-Column-Physical-ElementPosition.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Physical\\ElementPosition\u003A\u003Apath\u0028\u0029",
@@ -27143,7 +27713,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Grouping\\KeyEncoder",
             "name": "KeyEncoder",
-            "summary": "Equal\u0020keys\u0020exactly\u0020when\u0020ComparableValues\u003A\u003Aequality\u0028\u0029\u0020holds\u003B\u0020every\u0020value\u0020is\u0020type\u002Dtagged.",
+            "summary": "",
             "url": "classes/Flow-ETL-Values-Grouping-KeyEncoder.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Grouping\\KeyEncoder\u003A\u003A__construct\u0028\u0029",
