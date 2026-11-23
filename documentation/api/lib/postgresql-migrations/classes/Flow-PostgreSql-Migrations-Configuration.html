@@ -203,6 +203,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Flow-PostgreSql-Migrations-Configuration.html#property_mode">$mode</a>
+    <span>
+                        &nbsp;: <a href="classes/Flow-PostgreSql-Migrations-MigrationMode.html"><abbr title="\Flow\PostgreSql\Migrations\MigrationMode">MigrationMode</abbr></a>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Flow-PostgreSql-Migrations-Configuration.html#property_rollbackFileName">$rollbackFileName</a>
     <span>
                         &nbsp;: string            </span>
@@ -593,6 +599,43 @@
             -public
                                                                     "
 >
+    <h4 class="phpdocumentor-element__name" id="property_mode">
+        $mode
+        <a href="classes/Flow-PostgreSql-Migrations-Configuration.html#property_mode" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Configuration.php"><a href="files/src-lib-postgresql-src-flow-postgresql-migrations-configuration.html"><abbr title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Configuration.php">Configuration.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">30</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Flow-PostgreSql-Migrations-MigrationMode.html"><abbr title="\Flow\PostgreSql\Migrations\MigrationMode">MigrationMode</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$mode</span>
+     = <span class="phpdocumentor-signature__default-value">MigrationMode::ALL_PENDING</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
     <h4 class="phpdocumentor-element__name" id="property_rollbackFileName">
         $rollbackFileName
         <a href="classes/Flow-PostgreSql-Migrations-Configuration.html#property_rollbackFileName" class="headerlink"><i class="fas fa-link"></i></a>
@@ -763,7 +806,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Client\Client">Client</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Schema\CatalogProvider">CatalogProvider</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$targetCatalogProvider</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$migrationsDirectory</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$migrationsNamespace</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'flow_migrations'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableSchema</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'public'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$migrationFileName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'migration.php'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rollbackFileName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'rollback.php'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$allOrNothing</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$generateRollback</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Schema\Exclusion\ExclusionPolicy">ExclusionPolicy</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exclusionPolicy</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dropIfExists</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Client\Client">Client</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Schema\CatalogProvider">CatalogProvider</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$targetCatalogProvider</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$migrationsDirectory</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$migrationsNamespace</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'flow_migrations'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableSchema</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'public'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$migrationFileName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'migration.php'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rollbackFileName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'rollback.php'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$allOrNothing</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$generateRollback</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\PostgreSql\Schema\Exclusion\ExclusionPolicy">ExclusionPolicy</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exclusionPolicy</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dropIfExists</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-PostgreSql-Migrations-MigrationMode.html"><abbr title="\Flow\PostgreSql\Migrations\MigrationMode">MigrationMode</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-PostgreSql-Migrations-MigrationMode.html#enumcase_ALL_PENDING"><abbr title="\Flow\PostgreSql\Migrations\MigrationMode::ALL_PENDING">MigrationMode::ALL_PENDING</abbr></a></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -862,6 +905,13 @@
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$mode</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-PostgreSql-Migrations-MigrationMode.html"><abbr title="\Flow\PostgreSql\Migrations\MigrationMode">MigrationMode</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value"><a href="classes/Flow-PostgreSql-Migrations-MigrationMode.html#enumcase_ALL_PENDING"><abbr title="\Flow\PostgreSql\Migrations\MigrationMode::ALL_PENDING">MigrationMode::ALL_PENDING</abbr></a></span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
             </dl>
 
     
@@ -901,6 +951,7 @@
                                                     <li class=""><a href="classes/Flow-PostgreSql-Migrations-Configuration.html#property_migrationFileName">$migrationFileName</a></li>
                                                     <li class=""><a href="classes/Flow-PostgreSql-Migrations-Configuration.html#property_migrationsDirectory">$migrationsDirectory</a></li>
                                                     <li class=""><a href="classes/Flow-PostgreSql-Migrations-Configuration.html#property_migrationsNamespace">$migrationsNamespace</a></li>
+                                                    <li class=""><a href="classes/Flow-PostgreSql-Migrations-Configuration.html#property_mode">$mode</a></li>
                                                     <li class=""><a href="classes/Flow-PostgreSql-Migrations-Configuration.html#property_rollbackFileName">$rollbackFileName</a></li>
                                                     <li class=""><a href="classes/Flow-PostgreSql-Migrations-Configuration.html#property_tableName">$tableName</a></li>
                                                     <li class=""><a href="classes/Flow-PostgreSql-Migrations-Configuration.html#property_tableSchema">$tableSchema</a></li>

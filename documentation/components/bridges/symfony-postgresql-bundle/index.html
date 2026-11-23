@@ -1584,6 +1584,7 @@ schema migrations, schema diffs against a catalog, and optional telemetry for qu
 <li><a href="#web-profiler">Web Profiler</a></li>
 <li><a href="#migrations">Migrations</a>
 <ul>
+<li><a href="#mode">mode</a></li>
 <li><a href="#dropifexists">drop_if_exists</a></li>
 <li><a href="#accessing-the-service-container-in-a-migration">Accessing the service container in a migration</a></li>
 <li><a href="#passing-custom-attributes-via-configuration">Passing custom attributes via configuration</a></li>
@@ -1841,7 +1842,7 @@ panel, set <code>profiler.migrations: false</code>:</p>
 <p>Migrations are configured at the top level, not per connection. They always run against one connection. To choose
 that connection, set <code>connection</code>. If you do not set it, the bundle uses the default (first) connection. Every
 migration command operates on that connection. There is no connection override per command.</p>
-<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-938e6159cae8" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-yaml" id="code-938e6159cae8" data-controller="syntax-highlight"><code class="language-yaml">flow_postgresql:
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-9f988d16a6fe" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-yaml" id="code-9f988d16a6fe" data-controller="syntax-highlight"><code class="language-yaml">flow_postgresql:
   connections:
     default:
       dsn: '%env(DATABASE_URL)%'
@@ -1858,7 +1859,16 @@ migration command operates on that connection. There is no connection override p
     all_or_nothing: false                          # Wrap all migrations in a single transaction
     generate_rollback: true                        # Generate rollback files automatically
     drop_if_exists: false                          # Emit IF EXISTS on diff-generated DROP statements
+    mode: all_pending                              # Which pending migrations migrate runs: all_pending or strict_order
 </code></pre></div>
+<h4><a id="mode" href="#mode" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a><code>mode</code></h4>
+<p>When two branches each add a migration and the older version deploys second, that pending migration is older than
+the latest executed migration.</p>
+<ul>
+<li><code>all_pending</code> (default): <code>flow:migrations:migrate</code> runs every pending migration up to the target, in version order.</li>
+<li><code>strict_order</code>: <code>flow:migrations:migrate</code> stops with an error and exit code 1. It runs no migration. Run the older
+version with <code>flow:migrations:execute</code>, or set the mode to <code>all_pending</code>.</li>
+</ul>
 <h4><a id="dropifexists" href="#dropifexists" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a><code>drop_if_exists</code></h4>
 <p>To add <code>IF EXISTS</code> to every <code>DROP</code> that the diff generates, set <code>drop_if_exists: true</code>. Use it for convergence
 migrations, that is, migrations that run against both fresh and legacy databases. The default is <code>false</code>, so a

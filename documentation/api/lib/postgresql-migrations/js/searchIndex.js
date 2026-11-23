@@ -76,6 +76,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-PostgreSql-Migrations-Configuration.html#property_attributes"
         },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\Configuration\u003A\u003A\u0024mode",
+            "name": "mode",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-Configuration.html#property_mode"
+        },                {
             "fqsen": "\\Flow\\PostgreSql\\Migrations\\Direction",
             "name": "Direction",
             "summary": "",
@@ -145,6 +150,11 @@ Search.appendIndex(
             "name": "noChangesDetected",
             "summary": "",
             "url": "classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_noChangesDetected"
+        },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\Exception\\MigrationException\u003A\u003AoutOfOrder\u0028\u0029",
+            "name": "outOfOrder",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_outOfOrder"
         },                {
             "fqsen": "\\Flow\\PostgreSql\\Migrations\\Exception\\MigrationException\u003A\u003AversionNotFound\u0028\u0029",
             "name": "versionNotFound",
@@ -310,6 +320,21 @@ Search.appendIndex(
             "name": "attributes",
             "summary": "",
             "url": "classes/Flow-PostgreSql-Migrations-MigrationContext.html#property_attributes"
+        },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\MigrationMode",
+            "name": "MigrationMode",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-MigrationMode.html"
+        },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\MigrationMode\u003A\u003AALL_PENDING",
+            "name": "ALL_PENDING",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-MigrationMode.html#enumcase_ALL_PENDING"
+        },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\MigrationMode\u003A\u003ASTRICT_ORDER",
+            "name": "STRICT_ORDER",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-MigrationMode.html#enumcase_STRICT_ORDER"
         },                {
             "fqsen": "\\Flow\\PostgreSql\\Migrations\\MigrationPlan",
             "name": "MigrationPlan",
