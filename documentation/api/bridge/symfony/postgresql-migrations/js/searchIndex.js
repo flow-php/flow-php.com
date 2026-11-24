@@ -251,6 +251,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Generator-TwigMigrationGenerator.html#method_generateSchemaMigration"
         },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Lock\\SymfonyMigrationLock",
+            "name": "SymfonyMigrationLock",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Lock-SymfonyMigrationLock.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Lock\\SymfonyMigrationLock\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Lock-SymfonyMigrationLock.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Lock\\SymfonyMigrationLock\u003A\u003Aacquire\u0028\u0029",
+            "name": "acquire",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Lock-SymfonyMigrationLock.html#method_acquire"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Lock\\SymfonyMigrationLock\u003A\u003Arelease\u0028\u0029",
+            "name": "release",
+            "summary": "",
+            "url": "classes/Flow-Bridge-Symfony-PostgreSqlBundle-Lock-SymfonyMigrationLock.html#method_release"
+        },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Messenger\\FlowPostgreSqlTransportFactory",
             "name": "FlowPostgreSqlTransportFactory",
             "summary": "",
@@ -820,6 +840,11 @@ Search.appendIndex(
             "name": "Generator",
             "summary": "",
             "url": "namespaces/flow-bridge-symfony-postgresqlbundle-generator.html"
+        },                {
+            "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Lock",
+            "name": "Lock",
+            "summary": "",
+            "url": "namespaces/flow-bridge-symfony-postgresqlbundle-lock.html"
         },                {
             "fqsen": "\\Flow\\Bridge\\Symfony\\PostgreSqlBundle\\Messenger",
             "name": "Messenger",

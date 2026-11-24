@@ -11,6 +11,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-PostgreSql-Migrations-Configuration.html#method___construct"
         },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\Configuration\u003A\u003A\u0024lock",
+            "name": "lock",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-Configuration.html#property_lock"
+        },                {
             "fqsen": "\\Flow\\PostgreSql\\Migrations\\Configuration\u003A\u003A\u0024client",
             "name": "client",
             "summary": "",
@@ -101,6 +106,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html"
         },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\Exception\\MigrationException\u003A\u003AadvisoryLockNotHeld\u0028\u0029",
+            "name": "advisoryLockNotHeld",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_advisoryLockNotHeld"
+        },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\Exception\\MigrationException\u003A\u003AalreadyExecuted\u0028\u0029",
+            "name": "alreadyExecuted",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_alreadyExecuted"
+        },                {
             "fqsen": "\\Flow\\PostgreSql\\Migrations\\Exception\\MigrationException\u003A\u003AattributeNotFound\u0028\u0029",
             "name": "attributeNotFound",
             "summary": "",
@@ -136,6 +151,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_irreversibleMigration"
         },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\Exception\\MigrationException\u003A\u003AlockExpired\u0028\u0029",
+            "name": "lockExpired",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_lockExpired"
+        },                {
             "fqsen": "\\Flow\\PostgreSql\\Migrations\\Exception\\MigrationException\u003A\u003AmigrationFailed\u0028\u0029",
             "name": "migrationFailed",
             "summary": "",
@@ -151,6 +171,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_noChangesDetected"
         },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\Exception\\MigrationException\u003A\u003AnotExecuted\u0028\u0029",
+            "name": "notExecuted",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_notExecuted"
+        },                {
             "fqsen": "\\Flow\\PostgreSql\\Migrations\\Exception\\MigrationException\u003A\u003AoutOfOrder\u0028\u0029",
             "name": "outOfOrder",
             "summary": "",
@@ -160,6 +185,16 @@ Search.appendIndex(
             "name": "versionNotFound",
             "summary": "",
             "url": "classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_versionNotFound"
+        },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\Exception\\MigrationLockedException",
+            "name": "MigrationLockedException",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-Exception-MigrationLockedException.html"
+        },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\Exception\\MigrationLockedException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-Exception-MigrationLockedException.html#method___construct"
         },                {
             "fqsen": "\\Flow\\PostgreSql\\Migrations\\ExecutedMigration",
             "name": "ExecutedMigration",
@@ -275,6 +310,56 @@ Search.appendIndex(
             "name": "generateSchemaMigration",
             "summary": "",
             "url": "classes/Flow-PostgreSql-Migrations-Generator-MigrationGenerator.html#method_generateSchemaMigration"
+        },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\Lock\\AdvisoryMigrationLock",
+            "name": "AdvisoryMigrationLock",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-Lock-AdvisoryMigrationLock.html"
+        },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\Lock\\AdvisoryMigrationLock\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-Lock-AdvisoryMigrationLock.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\Lock\\AdvisoryMigrationLock\u003A\u003Aacquire\u0028\u0029",
+            "name": "acquire",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-Lock-AdvisoryMigrationLock.html#method_acquire"
+        },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\Lock\\AdvisoryMigrationLock\u003A\u003Arelease\u0028\u0029",
+            "name": "release",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-Lock-AdvisoryMigrationLock.html#method_release"
+        },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\Lock\\MigrationLock",
+            "name": "MigrationLock",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-Lock-MigrationLock.html"
+        },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\Lock\\MigrationLock\u003A\u003Aacquire\u0028\u0029",
+            "name": "acquire",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-Lock-MigrationLock.html#method_acquire"
+        },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\Lock\\MigrationLock\u003A\u003Arelease\u0028\u0029",
+            "name": "release",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-Lock-MigrationLock.html#method_release"
+        },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\Lock\\NoMigrationLock",
+            "name": "NoMigrationLock",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-Lock-NoMigrationLock.html"
+        },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\Lock\\NoMigrationLock\u003A\u003Aacquire\u0028\u0029",
+            "name": "acquire",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-Lock-NoMigrationLock.html#method_acquire"
+        },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\Lock\\NoMigrationLock\u003A\u003Arelease\u0028\u0029",
+            "name": "release",
+            "summary": "",
+            "url": "classes/Flow-PostgreSql-Migrations-Lock-NoMigrationLock.html#method_release"
         },                {
             "fqsen": "\\Flow\\PostgreSql\\Migrations\\Migration",
             "name": "Migration",
@@ -930,6 +1015,11 @@ Search.appendIndex(
             "name": "Generator",
             "summary": "",
             "url": "namespaces/flow-postgresql-migrations-generator.html"
+        },                {
+            "fqsen": "\\Flow\\PostgreSql\\Migrations\\Lock",
+            "name": "Lock",
+            "summary": "",
+            "url": "namespaces/flow-postgresql-migrations-lock.html"
         },                {
             "fqsen": "\\Flow\\PostgreSql\\Migrations\\Repository",
             "name": "Repository",

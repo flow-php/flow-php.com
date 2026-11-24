@@ -150,6 +150,18 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_advisoryLockNotHeld">advisoryLockNotHeld()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_alreadyExecuted">alreadyExecuted()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_attributeNotFound">attributeNotFound()</a>
     <span>
                                 &nbsp;: self    </span>
@@ -192,6 +204,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_lockExpired">lockExpired()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_migrationFailed">migrationFailed()</a>
     <span>
                                 &nbsp;: self    </span>
@@ -205,6 +223,12 @@
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_noChangesDetected">noChangesDetected()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_notExecuted">notExecuted()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
@@ -241,6 +265,102 @@
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_advisoryLockNotHeld">
+        advisoryLockNotHeld()
+        <a href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_advisoryLockNotHeld" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php"><a href="files/src-lib-postgresql-src-flow-postgresql-migrations-exception-migrationexception.html"><abbr title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php">MigrationException.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">17</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">advisoryLockNotHeld</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$name</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_alreadyExecuted">
+        alreadyExecuted()
+        <a href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_alreadyExecuted" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php"><a href="files/src-lib-postgresql-src-flow-postgresql-migrations-exception-migrationexception.html"><abbr title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php">MigrationException.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">25</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">alreadyExecuted</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-PostgreSql-Migrations-Version.html"><abbr title="\Flow\PostgreSql\Migrations\Version">Version</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$version</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-PostgreSql-Migrations-Version.html"><abbr title="\Flow\PostgreSql\Migrations\Version">Version</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_attributeNotFound">
         attributeNotFound()
         <a href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_attributeNotFound" class="headerlink"><i class="fas fa-link"></i></a>
@@ -249,7 +369,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php"><a href="files/src-lib-postgresql-src-flow-postgresql-migrations-exception-migrationexception.html"><abbr title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php">MigrationException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -297,7 +417,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php"><a href="files/src-lib-postgresql-src-flow-postgresql-migrations-exception-migrationexception.html"><abbr title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php">MigrationException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -345,7 +465,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php"><a href="files/src-lib-postgresql-src-flow-postgresql-migrations-exception-migrationexception.html"><abbr title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php">MigrationException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -393,7 +513,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php"><a href="files/src-lib-postgresql-src-flow-postgresql-migrations-exception-migrationexception.html"><abbr title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php">MigrationException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -441,7 +561,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php"><a href="files/src-lib-postgresql-src-flow-postgresql-migrations-exception-migrationexception.html"><abbr title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php">MigrationException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -489,7 +609,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php"><a href="files/src-lib-postgresql-src-flow-postgresql-migrations-exception-migrationexception.html"><abbr title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php">MigrationException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
@@ -537,7 +657,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php"><a href="files/src-lib-postgresql-src-flow-postgresql-migrations-exception-migrationexception.html"><abbr title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php">MigrationException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -577,6 +697,54 @@
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_lockExpired">
+        lockExpired()
+        <a href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_lockExpired" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php"><a href="files/src-lib-postgresql-src-flow-postgresql-migrations-exception-migrationexception.html"><abbr title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php">MigrationException.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">75</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">lockExpired</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$name</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_migrationFailed">
         migrationFailed()
         <a href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_migrationFailed" class="headerlink"><i class="fas fa-link"></i></a>
@@ -585,7 +753,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php"><a href="files/src-lib-postgresql-src-flow-postgresql-migrations-exception-migrationexception.html"><abbr title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php">MigrationException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">83</span>
 
     </aside>
 
@@ -640,7 +808,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php"><a href="files/src-lib-postgresql-src-flow-postgresql-migrations-exception-migrationexception.html"><abbr title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php">MigrationException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
@@ -688,7 +856,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php"><a href="files/src-lib-postgresql-src-flow-postgresql-migrations-exception-migrationexception.html"><abbr title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php">MigrationException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">93</span>
 
     </aside>
 
@@ -718,6 +886,54 @@
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_notExecuted">
+        notExecuted()
+        <a href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_notExecuted" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php"><a href="files/src-lib-postgresql-src-flow-postgresql-migrations-exception-migrationexception.html"><abbr title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php">MigrationException.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">98</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">notExecuted</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-PostgreSql-Migrations-Version.html"><abbr title="\Flow\PostgreSql\Migrations\Version">Version</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$version</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-PostgreSql-Migrations-Version.html"><abbr title="\Flow\PostgreSql\Migrations\Version">Version</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_outOfOrder">
         outOfOrder()
         <a href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_outOfOrder" class="headerlink"><i class="fas fa-link"></i></a>
@@ -726,7 +942,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php"><a href="files/src-lib-postgresql-src-flow-postgresql-migrations-exception-migrationexception.html"><abbr title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php">MigrationException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
@@ -781,7 +997,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php"><a href="files/src-lib-postgresql-src-flow-postgresql-migrations-exception-migrationexception.html"><abbr title="src/lib/postgresql/src/Flow/PostgreSql/Migrations/Exception/MigrationException.php">MigrationException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">112</span>
 
     </aside>
 
@@ -837,6 +1053,8 @@
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_advisoryLockNotHeld">advisoryLockNotHeld()</a></li>
+                                            <li class=""><a href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_alreadyExecuted">alreadyExecuted()</a></li>
                                             <li class=""><a href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_attributeNotFound">attributeNotFound()</a></li>
                                             <li class=""><a href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_configurationFileNotFound">configurationFileNotFound()</a></li>
                                             <li class=""><a href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_invalidConfigurationFile">invalidConfigurationFile()</a></li>
@@ -844,9 +1062,11 @@
                                             <li class=""><a href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_invalidRollback">invalidRollback()</a></li>
                                             <li class=""><a href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_invalidVersionFormat">invalidVersionFormat()</a></li>
                                             <li class=""><a href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_irreversibleMigration">irreversibleMigration()</a></li>
+                                            <li class=""><a href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_lockExpired">lockExpired()</a></li>
                                             <li class=""><a href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_migrationFailed">migrationFailed()</a></li>
                                             <li class=""><a href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_missingMigrationFile">missingMigrationFile()</a></li>
                                             <li class=""><a href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_noChangesDetected">noChangesDetected()</a></li>
+                                            <li class=""><a href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_notExecuted">notExecuted()</a></li>
                                             <li class=""><a href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_outOfOrder">outOfOrder()</a></li>
                                             <li class=""><a href="classes/Flow-PostgreSql-Migrations-Exception-MigrationException.html#method_versionNotFound">versionNotFound()</a></li>
                                     </ul>
