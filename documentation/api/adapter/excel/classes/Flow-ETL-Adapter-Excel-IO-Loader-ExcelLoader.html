@@ -127,7 +127,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Loader/ExcelLoader.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-io-loader-excelloader.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Loader/ExcelLoader.php">ExcelLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -322,7 +322,7 @@ holding one cannot be shipped to a worker.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Loader/ExcelLoader.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-io-loader-excelloader.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Loader/ExcelLoader.php">ExcelLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
@@ -472,7 +472,7 @@ holding one cannot be shipped to a worker.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Loader/ExcelLoader.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-io-loader-excelloader.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Loader/ExcelLoader.php">ExcelLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">158</span>
+    <span class="phpdocumentor-element-found-in__line">159</span>
 
     </aside>
 
@@ -584,7 +584,7 @@ holding one cannot be shipped to a worker.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Loader/ExcelLoader.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-io-loader-excelloader.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Loader/ExcelLoader.php">ExcelLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">121</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
     </aside>
 
@@ -738,14 +738,14 @@ holding one cannot be shipped to a worker.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Loader/ExcelLoader.php"><a href="files/src-adapter-etl-adapter-excel-src-flow-etl-adapter-excel-io-loader-excelloader.html"><abbr title="src/adapter/etl-adapter-excel/src/Flow/ETL/Adapter/Excel/IO/Loader/ExcelLoader.php">ExcelLoader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">187</span>
+    <span class="phpdocumentor-element-found-in__line">188</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">partitionBy</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Flow\ETL\IO\Loader\Partitioning">Partitioning</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$partitioning</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+                    <span class="phpdocumentor-signature__name">partitionBy</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;|string|<abbr title="\Flow\ETL\Functions\Reference\Reference">Reference</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$writeColumns</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -754,9 +754,16 @@ holding one cannot be shipped to a worker.</p>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$partitioning</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Flow\ETL\IO\Loader\Partitioning">Partitioning</abbr></span>
+                <span class="phpdocumentor-argument-list__argument__name">$columns</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;|string|<abbr title="\Flow\ETL\Functions\Reference\Reference">Reference</abbr></span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$writeColumns</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>

@@ -155,7 +155,7 @@
         "crelt": "/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js",
         "@codemirror/language": "/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js",
         "@lezer/highlight": "/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js",
-        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-b8f6492f23a2072b44f7c2578778bcb3.js",
+        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-b7043f15c2d0e24ee8660982ec65a479.js",
         "/assets/codemirror/php_analysis.js": "/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js",
         "/assets/wasm/mago/mago_wasm_bg.js": "/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js",
         "@fontsource-variable/cabin/index.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2F%40fontsource-variable%2Fcabin%2Findex.min-2fd942a10b44e40a5f63d90a3479e0ee.css%22%7D%29%29",
@@ -254,7 +254,7 @@
 <link rel="modulepreload" href="/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js">
 <link rel="modulepreload" href="/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js">
 <link rel="modulepreload" href="/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js">
-<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-b8f6492f23a2072b44f7c2578778bcb3.js">
+<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-b7043f15c2d0e24ee8660982ec65a479.js">
 <link rel="modulepreload" href="/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js">
 <link rel="modulepreload" href="/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js">
 <script type="module">import 'app';</script>
@@ -1582,8 +1582,7 @@ Date: 2026-03-02</p>
 <hr />
 <p>Several Flow PHP methods accept multiple arguments, and at least one argument is required. Examples:</p>
 <ul>
-<li><code>DataFrame::partitionBy()</code></li>
-<li><code>Rows::partitionBy()</code></li>
+<li><code>DataFrame::repartition()</code></li>
 <li><code>Window::partitionBy()</code></li>
 <li>Type comparison methods</li>
 </ul>
@@ -1602,6 +1601,13 @@ Date: 2026-03-02</p>
 </code></pre></div>
 <p>Not:</p>
 <div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-5d801d4c4f84" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-5d801d4c4f84" data-controller="syntax-highlight"><code class="language-php">public function method(Type ...$args) : ReturnType
+</code></pre></div>
+<p>PHP does not allow a parameter after a variadic parameter. If a method needs another parameter after the list, the
+list is a <code>non-empty-list</code> array, and static analysis rejects an empty list:</p>
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-e8b09aea55d9" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-e8b09aea55d9" data-controller="syntax-highlight"><code class="language-php">/**
+ * @param non-empty-list&lt;Reference|string&gt;|Reference|string $columns
+ */
+public function partitionBy(array|string|Reference $columns, bool $writeColumns = false) : static
 </code></pre></div>
 <h2><a id="pros--cons" href="#pros--cons" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Pros &amp; Cons</h2>
 <hr />

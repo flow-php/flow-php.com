@@ -2361,11 +2361,6 @@ Search.appendIndex(
             "summary": "Reads\u0020the\u0020pivot\u0020column\u0020once\u0020at\u0020build\u0020time\u0020and\u0020turns\u0020what\u0020it\u0020finds\u0020into\u0020declared\u0020values.\u0020Refuses\u0020a\nsource\u0020that\u0020cannot\u0020be\u0020read\u0020twice.",
             "url": "namespaces/flow-etl-dsl.html#function_discover_pivot_values"
         },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\partition_by\u0028\u0029",
-            "name": "partition_by",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_partition_by"
-        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\partition_types\u0028\u0029",
             "name": "partition_types",
             "summary": "",
@@ -15625,6 +15620,11 @@ Search.appendIndex(
             "name": "route",
             "summary": "",
             "url": "classes/Flow-ETL-IO-Loader-File-PartitionRouter.html#method_route"
+        },                {
+            "fqsen": "\\Flow\\ETL\\IO\\Loader\\File\\PartitionRouter\u003A\u003A\u0024partitioning",
+            "name": "partitioning",
+            "summary": "",
+            "url": "classes/Flow-ETL-IO-Loader-File-PartitionRouter.html#property_partitioning"
         },                {
             "fqsen": "\\Flow\\ETL\\IO\\Loader\\MemoryLoader",
             "name": "MemoryLoader",

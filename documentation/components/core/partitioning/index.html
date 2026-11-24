@@ -155,7 +155,7 @@
         "crelt": "/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js",
         "@codemirror/language": "/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js",
         "@lezer/highlight": "/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js",
-        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-b8f6492f23a2072b44f7c2578778bcb3.js",
+        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-b7043f15c2d0e24ee8660982ec65a479.js",
         "/assets/codemirror/php_analysis.js": "/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js",
         "/assets/wasm/mago/mago_wasm_bg.js": "/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js",
         "@fontsource-variable/cabin/index.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2F%40fontsource-variable%2Fcabin%2Findex.min-2fd942a10b44e40a5f63d90a3479e0ee.css%22%7D%29%29",
@@ -254,7 +254,7 @@
 <link rel="modulepreload" href="/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js">
 <link rel="modulepreload" href="/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js">
 <link rel="modulepreload" href="/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js">
-<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-b8f6492f23a2072b44f7c2578778bcb3.js">
+<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-b7043f15c2d0e24ee8660982ec65a479.js">
 <link rel="modulepreload" href="/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js">
 <link rel="modulepreload" href="/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js">
 <script type="module">import 'app';</script>
@@ -1601,10 +1601,10 @@
 does not need.</p>
 <p>You declare partitioning on the loader, not on the DataFrame.</p>
 <h2><a id="basic-partitioning" href="#basic-partitioning" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Basic Partitioning</h2>
-<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-e463328020f0" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-e463328020f0" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-d435a41913fa" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-d435a41913fa" data-controller="syntax-highlight"><code class="language-php">&lt;?php
 
 use function Flow\ETL\Adapter\CSV\to_csv;
-use function Flow\ETL\DSL\{data_frame, from_array, overwrite, partition_by, ref};
+use function Flow\ETL\DSL\{data_frame, from_array, overwrite, ref};
 
 data_frame()
     -&gt;read(from_array([
@@ -1613,7 +1613,7 @@ data_frame()
         ['date' =&gt; '2024-01-02', 'department' =&gt; 'sales', 'amount' =&gt; 150],
     ]))
     -&gt;write(to_csv(__DIR__ . '/output/sales.csv')
-        -&gt;partitionBy(partition_by(ref('date')))
+        -&gt;partitionBy(ref('date'))
         -&gt;saveMode(overwrite()))
     -&gt;run();
 </code></pre></div>
@@ -1625,10 +1625,10 @@ data_frame()
 </code></pre></div>
 <h2><a id="multi-column-partitioning" href="#multi-column-partitioning" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Multi-Column Partitioning</h2>
 <p>Each column adds a nesting level.</p>
-<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-db46bd357c07" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-db46bd357c07" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-8804fe1a3afe" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-8804fe1a3afe" data-controller="syntax-highlight"><code class="language-php">&lt;?php
 
 use function Flow\ETL\Adapter\CSV\to_csv;
-use function Flow\ETL\DSL\{data_frame, from_array, overwrite, partition_by, ref};
+use function Flow\ETL\DSL\{data_frame, from_array, overwrite, ref};
 
 data_frame()
     -&gt;read(from_array([
@@ -1636,7 +1636,7 @@ data_frame()
         ['date' =&gt; '2024-01-01', 'department' =&gt; 'marketing', 'amount' =&gt; 200],
     ]))
     -&gt;write(to_csv(__DIR__ . '/output/sales.csv')
-        -&gt;partitionBy(partition_by(ref('date'), ref('department')))
+        -&gt;partitionBy([ref('date'), ref('department')])
         -&gt;saveMode(overwrite()))
     -&gt;run();
 </code></pre></div>
@@ -1650,10 +1650,10 @@ data_frame()
 <h2><a id="partition-placeholders" href="#partition-placeholders" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Partition Placeholders</h2>
 <p>A <code>{column}</code> placeholder in the destination path puts that partition into the file name. It does not make a
 directory for it.</p>
-<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-8dda759d060d" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-8dda759d060d" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-4b57c9439d0d" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-4b57c9439d0d" data-controller="syntax-highlight"><code class="language-php">&lt;?php
 
 use function Flow\ETL\Adapter\CSV\to_csv;
-use function Flow\ETL\DSL\{data_frame, from_array, overwrite, partition_by, ref};
+use function Flow\ETL\DSL\{data_frame, from_array, overwrite, ref};
 
 data_frame()
     -&gt;read(from_array([
@@ -1661,7 +1661,7 @@ data_frame()
         ['date' =&gt; '2024-01-01', 'department' =&gt; 'marketing', 'amount' =&gt; 200],
     ]))
     -&gt;write(to_csv(__DIR__ . '/output/{department}.csv')
-        -&gt;partitionBy(partition_by(ref('date'), ref('department')))
+        -&gt;partitionBy([ref('date'), ref('department')])
         -&gt;saveMode(overwrite()))
     -&gt;run();
 </code></pre></div>
@@ -1743,10 +1743,10 @@ It makes one very small partition for each row.</p>
 <h3><a id="null-and-empty-values" href="#null-and-empty-values" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Null and Empty Values</h3>
 <p>A null value goes to the directory <code>__HIVE_DEFAULT_PARTITION__</code>, the name that Hive, Spark and DuckDB use. An empty
 string goes to a directory with no value. A read gives both back:</p>
-<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-ab2cfcc164df" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-ab2cfcc164df" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-36a4e9bc9965" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-36a4e9bc9965" data-controller="syntax-highlight"><code class="language-php">&lt;?php
 
 use function Flow\ETL\Adapter\Parquet\{from_parquet, to_parquet};
-use function Flow\ETL\DSL\{data_frame, from_array, int_schema, overwrite, partition_by, schema, str_schema};
+use function Flow\ETL\DSL\{data_frame, from_array, int_schema, overwrite, schema, str_schema};
 
 $users = schema(int_schema('id'), str_schema('country', nullable: true));
 
@@ -1757,7 +1757,7 @@ data_frame()
         ['id' =&gt; 3, 'country' =&gt; ''],
     ])-&gt;withSchema($users))
     -&gt;write(to_parquet(__DIR__ . '/users/users.parquet')
-        -&gt;partitionBy(partition_by('country'))
+        -&gt;partitionBy('country')
         -&gt;saveMode(overwrite()))
     -&gt;run();
 
@@ -1775,10 +1775,10 @@ data_frame()-&gt;read(from_parquet(__DIR__ . '/users/**/*.parquet'))-&gt;fetch()
 <p>A string value <code>__HIVE_DEFAULT_PARTITION__</code> reads back as null.</p>
 <h3><a id="datetime-values" href="#datetime-values" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Datetime Values</h3>
 <p>A <code>datetime</code> column makes one directory for each distinct value. For one directory for each day, partition by a <code>date</code>:</p>
-<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-22499edc7f61" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-22499edc7f61" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-fcf76c18498e" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-fcf76c18498e" data-controller="syntax-highlight"><code class="language-php">&lt;?php
 
 use function Flow\ETL\Adapter\Parquet\to_parquet;
-use function Flow\ETL\DSL\{data_frame, from_array, overwrite, partition_by, ref};
+use function Flow\ETL\DSL\{data_frame, from_array, overwrite, ref};
 use function Flow\Types\DSL\type_date;
 
 data_frame()
@@ -1788,7 +1788,7 @@ data_frame()
     ]))
     -&gt;withColumn('day', ref('created_at')-&gt;cast(type_date()))
     -&gt;write(to_parquet(__DIR__ . '/output/events.parquet')
-        -&gt;partitionBy(partition_by('day'))
+        -&gt;partitionBy('day')
         -&gt;saveMode(overwrite()))
     -&gt;run();
 </code></pre></div>
@@ -1799,10 +1799,10 @@ data_frame()
 <h2><a id="save-modes-with-partitioning" href="#save-modes-with-partitioning" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Save Modes with Partitioning</h2>
 <p>The save mode controls what happens to partition directories that exist.</p>
 <h3><a id="overwrite" href="#overwrite" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Overwrite</h3>
-<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-da299212ddaf" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-da299212ddaf" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-71fd06aee7ea" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-71fd06aee7ea" data-controller="syntax-highlight"><code class="language-php">&lt;?php
 
 use function Flow\ETL\Adapter\CSV\to_csv;
-use function Flow\ETL\DSL\{data_frame, from_array, overwrite, partition_by, ref};
+use function Flow\ETL\DSL\{data_frame, from_array, overwrite, ref};
 
 data_frame()
     -&gt;read(from_array([
@@ -1810,7 +1810,7 @@ data_frame()
         ['date' =&gt; '2024-01-02', 'amount' =&gt; 200],
     ]))
     -&gt;write(to_csv(__DIR__ . '/output/sales.csv')
-        -&gt;partitionBy(partition_by(ref('date')))
+        -&gt;partitionBy(ref('date'))
         -&gt;saveMode(overwrite()))
     -&gt;run();
 </code></pre></div>
@@ -1819,43 +1819,43 @@ dataset stay.</p>
 <p>Do not write to the same partition two times with <code>overwrite()</code>. The second write deletes the first. Use <code>append()</code>,
 or merge the data before the write.</p>
 <h3><a id="append" href="#append" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Append</h3>
-<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-33d068c56423" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-33d068c56423" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-b24e6db12ff9" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-b24e6db12ff9" data-controller="syntax-highlight"><code class="language-php">&lt;?php
 
 use function Flow\ETL\Adapter\CSV\to_csv;
-use function Flow\ETL\DSL\{append, data_frame, from_array, partition_by, ref};
+use function Flow\ETL\DSL\{append, data_frame, from_array, ref};
 
 data_frame()
     -&gt;read(from_array([['date' =&gt; '2024-01-01', 'amount' =&gt; 100]]))
     -&gt;write(to_csv(__DIR__ . '/output/sales.csv')
-        -&gt;partitionBy(partition_by(ref('date')))
+        -&gt;partitionBy(ref('date'))
         -&gt;saveMode(append()))
     -&gt;run();
 </code></pre></div>
 <p>Adds files named after the run (<code>sales-&lt;run&gt;.csv</code>). Each run adds more files.</p>
 <h3><a id="ignore" href="#ignore" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Ignore</h3>
-<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-ac0f43829a65" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-ac0f43829a65" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-c149aa1b0c22" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-c149aa1b0c22" data-controller="syntax-highlight"><code class="language-php">&lt;?php
 
 use function Flow\ETL\Adapter\CSV\to_csv;
-use function Flow\ETL\DSL\{data_frame, from_array, ignore, partition_by, ref};
+use function Flow\ETL\DSL\{data_frame, from_array, ignore, ref};
 
 data_frame()
     -&gt;read(from_array([['date' =&gt; '2024-01-01', 'amount' =&gt; 100]]))
     -&gt;write(to_csv(__DIR__ . '/output/sales.csv')
-        -&gt;partitionBy(partition_by(ref('date')))
+        -&gt;partitionBy(ref('date'))
         -&gt;saveMode(ignore()))
     -&gt;run();
 </code></pre></div>
 <p>If the partition directory exists, the write is skipped. There is no error.</p>
 <h3><a id="exception-if-exists-default" href="#exception-if-exists-default" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Exception If Exists (Default)</h3>
-<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-a4240c88f4dd" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-a4240c88f4dd" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-087f7c840b50" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-087f7c840b50" data-controller="syntax-highlight"><code class="language-php">&lt;?php
 
 use function Flow\ETL\Adapter\CSV\to_csv;
-use function Flow\ETL\DSL\{data_frame, from_array, partition_by, ref};
+use function Flow\ETL\DSL\{data_frame, from_array, ref};
 
 data_frame()
     -&gt;read(from_array([['date' =&gt; '2024-01-01', 'amount' =&gt; 100]]))
     -&gt;write(to_csv(__DIR__ . '/output/sales.csv')
-        -&gt;partitionBy(partition_by(ref('date'))))
+        -&gt;partitionBy(ref('date')))
     -&gt;run();
 </code></pre></div>
 <p>If a partition path exists, the write throws.</p>
@@ -1872,7 +1872,7 @@ data_frame()
 </code></pre></div>
 <p>Partition values from the path become regular columns. If the schema does not declare a partition column, Flow
 appends it as a string column. To read it as another type, declare it (<code>int_schema('date')</code>). A file can also hold
-the partition column (<code>partition_by(...)-&gt;writeColumns()</code>). Then the file schema (Parquet, Floe) gives the type. A
+the partition column (<code>-&gt;partitionBy(..., writeColumns: true)</code>). Then the file schema (Parquet, Floe) gives the type. A
 <code>filter(ref('date')-&gt;between(lit($from), lit($to)))</code> with <code>DateTimeImmutable</code> bounds then prunes. Pruning skips the
 files that cannot match. Flow casts string bounds (<code>lit('2026-10-02')</code>) to the <code>date</code> / <code>datetime</code> type of the
 column, so they prune too.</p>

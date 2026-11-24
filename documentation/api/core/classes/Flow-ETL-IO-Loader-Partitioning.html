@@ -132,7 +132,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Loader/Partitioning.php"><a href="files/src-core-etl-src-flow-etl-io-loader-partitioning.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Loader/Partitioning.php">Partitioning.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
@@ -201,13 +201,6 @@
                                 &nbsp;: array{by: list<string>, write_columns: bool}    </span>
 </dt>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Flow-ETL-IO-Loader-Partitioning.html#method_writeColumns">writeColumns()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-<dd>Keep the partition columns in the file body as well as in the path. Off by default.</dd>
-
     </dl>
 
 
@@ -238,7 +231,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Loader/Partitioning.php"><a href="files/src-core-etl-src-flow-etl-io-loader-partitioning.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Loader/Partitioning.php">Partitioning.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
@@ -275,7 +268,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Loader/Partitioning.php"><a href="files/src-core-etl-src-flow-etl-io-loader-partitioning.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Loader/Partitioning.php">Partitioning.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -317,14 +310,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Loader/Partitioning.php"><a href="files/src-core-etl-src-flow-etl-io-loader-partitioning.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Loader/Partitioning.php">Partitioning.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">by</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string|<a href="classes/Flow-ETL-Functions-Reference-Reference.html"><abbr title="\Flow\ETL\Functions\Reference\Reference">Reference</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$column</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string|<a href="classes/Flow-ETL-Functions-Reference-Reference.html"><abbr title="\Flow\ETL\Functions\Reference\Reference">Reference</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$columns</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">by</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, <a href="classes/Flow-ETL-Functions-Reference-Reference.html"><abbr title="\Flow\ETL\Functions\Reference\Reference">Reference</abbr></a>|string&gt;|<a href="classes/Flow-ETL-Functions-Reference-Reference.html"><abbr title="\Flow\ETL\Functions\Reference\Reference">Reference</abbr></a>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$writeColumns</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -333,22 +326,40 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$column</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string|<a href="classes/Flow-ETL-Functions-Reference-Reference.html"><abbr title="\Flow\ETL\Functions\Reference\Reference">Reference</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$columns</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, <a href="classes/Flow-ETL-Functions-Reference-Reference.html"><abbr title="\Flow\ETL\Functions\Reference\Reference">Reference</abbr></a>|string&gt;|<a href="classes/Flow-ETL-Functions-Reference-Reference.html"><abbr title="\Flow\ETL\Functions\Reference\Reference">Reference</abbr></a>|string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$columns</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string|<a href="classes/Flow-ETL-Functions-Reference-Reference.html"><abbr title="\Flow\ETL\Functions\Reference\Reference">Reference</abbr></a></span>
-                            </dt>
+                <span class="phpdocumentor-argument-list__argument__name">$writeColumns</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>keep the partition columns in the file body as well as in the path</p>
+</section>
+
             </dd>
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="method_by_tags">
+        Tags
+        <a href="classes/Flow-ETL-IO-Loader-Partitioning.html#method_by_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Flow-ETL-Foundation-Exception-InvalidArgumentException.html"><abbr title="\Flow\ETL\Foundation\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></span>
+                                                                                        <section class="phpdocumentor-description"><p>when $columns is an empty list</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
         
     
@@ -372,7 +383,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Loader/Partitioning.php"><a href="files/src-core-etl-src-flow-etl-io-loader-partitioning.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Loader/Partitioning.php">Partitioning.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -422,7 +433,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Loader/Partitioning.php"><a href="files/src-core-etl-src-flow-etl-io-loader-partitioning.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Loader/Partitioning.php">Partitioning.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -460,7 +471,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Loader/Partitioning.php"><a href="files/src-core-etl-src-flow-etl-io-loader-partitioning.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Loader/Partitioning.php">Partitioning.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -481,55 +492,6 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array{by: list<string>, write_columns: bool}</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_writeColumns">
-        writeColumns()
-        <a href="classes/Flow-ETL-IO-Loader-Partitioning.html#method_writeColumns" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/IO/Loader/Partitioning.php"><a href="files/src-core-etl-src-flow-etl-io-loader-partitioning.html"><abbr title="src/core/etl/src/Flow/ETL/IO/Loader/Partitioning.php">Partitioning.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">55</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Keep the partition columns in the file body as well as in the path. Off by default.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">writeColumns</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$writeColumns</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$writeColumns</span>
-                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">true</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
             </section>
 
 </article>
@@ -567,7 +529,6 @@
                                             <li class=""><a href="classes/Flow-ETL-IO-Loader-Partitioning.html#method_fromArray">fromArray()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Loader-Partitioning.html#method_none">none()</a></li>
                                             <li class=""><a href="classes/Flow-ETL-IO-Loader-Partitioning.html#method_normalize">normalize()</a></li>
-                                            <li class=""><a href="classes/Flow-ETL-IO-Loader-Partitioning.html#method_writeColumns">writeColumns()</a></li>
                                     </ul>
             </li>
                     </ul>

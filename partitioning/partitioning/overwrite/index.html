@@ -155,7 +155,7 @@
         "crelt": "/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js",
         "@codemirror/language": "/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js",
         "@lezer/highlight": "/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js",
-        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-b8f6492f23a2072b44f7c2578778bcb3.js",
+        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-b7043f15c2d0e24ee8660982ec65a479.js",
         "/assets/codemirror/php_analysis.js": "/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js",
         "/assets/wasm/mago/mago_wasm_bg.js": "/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js",
         "@fontsource-variable/cabin/index.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2F%40fontsource-variable%2Fcabin%2Findex.min-2fd942a10b44e40a5f63d90a3479e0ee.css%22%7D%29%29",
@@ -254,7 +254,7 @@
 <link rel="modulepreload" href="/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js">
 <link rel="modulepreload" href="/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js">
 <link rel="modulepreload" href="/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js">
-<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-b8f6492f23a2072b44f7c2578778bcb3.js">
+<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-b7043f15c2d0e24ee8660982ec65a479.js">
 <link rel="modulepreload" href="/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js">
 <link rel="modulepreload" href="/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js">
 <script type="module">import 'app';</script>
@@ -837,7 +837,7 @@
                              class="card overflow-auto"
                             data-controller="all-links-external"
                     >
-                        <p><code>partitionBy(partition_by(...))</code> on a file loader writes one directory per value, in the Hive
+                        <p><code>partitionBy(...)</code> on a file loader writes one directory per value, in the Hive
 <code>column=value</code> layout. The partition columns move into the path:</p>
 <div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-2245febab976" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-plain" id="code-2245febab976" data-controller="syntax-highlight"><code class="language-plain">output/color=blue/sku=PRODUCT01/products.csv
 output/color=blue/sku=PRODUCT02/products.csv
@@ -848,7 +848,7 @@ output/color=red/sku=PRODUCT01/products.csv
 output/color=red/sku=PRODUCT02/products.csv
 output/color=red/sku=PRODUCT03/products.csv
 </code></pre></div>
-<p>The save mode decides what happens when a partition file already exists.</p>
+<p>If a partition file already exists, the save mode decides what happens.</p>
 <hr />
 <p><code>overwrite()</code> replaces every file inside each partition the frame writes to. Partitions the frame
 does not touch stay as they are.</p>
@@ -877,7 +877,7 @@ does not touch stay as they are.</p>
 declare(strict_types=1);
 
 use function Flow\ETL\Adapter\CSV\{from_csv, to_csv};
-use function Flow\ETL\DSL\{data_frame, from_array, overwrite, partition_by, ref, to_output};
+use function Flow\ETL\DSL\{data_frame, from_array, overwrite, ref, to_output};
 
 require __DIR__ . &#039;/vendor/autoload.php&#039;;
 
@@ -894,7 +894,7 @@ data_frame()
             [&#039;id&#039; =&gt; 8, &#039;color&#039; =&gt; &#039;blue&#039;, &#039;sku&#039; =&gt; &#039;PRODUCT02&#039;],
         ]
     ))
-    -&gt;write(to_csv(__DIR__ . &#039;/output/products.csv&#039;)-&gt;saveMode(overwrite())-&gt;partitionBy(partition_by(ref(&#039;color&#039;), ref(&#039;sku&#039;))))
+    -&gt;write(to_csv(__DIR__ . &#039;/output/products.csv&#039;)-&gt;saveMode(overwrite())-&gt;partitionBy([ref(&#039;color&#039;), ref(&#039;sku&#039;)]))
     -&gt;run();
 
 // the directory layout is the lesson, so read the partitions back and show them

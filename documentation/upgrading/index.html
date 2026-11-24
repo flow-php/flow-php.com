@@ -155,7 +155,7 @@
         "crelt": "/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js",
         "@codemirror/language": "/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js",
         "@lezer/highlight": "/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js",
-        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-b8f6492f23a2072b44f7c2578778bcb3.js",
+        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-b7043f15c2d0e24ee8660982ec65a479.js",
         "/assets/codemirror/php_analysis.js": "/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js",
         "/assets/wasm/mago/mago_wasm_bg.js": "/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js",
         "@fontsource-variable/cabin/index.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2F%40fontsource-variable%2Fcabin%2Findex.min-2fd942a10b44e40a5f63d90a3479e0ee.css%22%7D%29%29",
@@ -254,7 +254,7 @@
 <link rel="modulepreload" href="/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js">
 <link rel="modulepreload" href="/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js">
 <link rel="modulepreload" href="/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js">
-<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-b8f6492f23a2072b44f7c2578778bcb3.js">
+<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-b7043f15c2d0e24ee8660982ec65a479.js">
 <link rel="modulepreload" href="/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js">
 <link rel="modulepreload" href="/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js">
 <script type="module">import 'app';</script>
@@ -1578,6 +1578,7 @@
 <li><a href="#8-flow-phpfilesystem---an-empty-string-is-a-valid-partition-value">8) flow-php/filesystem - an empty string is a valid partition value</a></li>
 <li><a href="#9-flow-phppostgresql---migratorexecuteversion-checks-the-state-of-the-version">9) flow-php/postgresql - Migrator::executeVersion() checks the state of the version</a></li>
 <li><a href="#10-flow-phpetl---schema-metadata-is-kept-in-key-order-and-the-order-of-a-list-in-metadata-counts">10) flow-php/etl - schema metadata is kept in key order, and the order of a list in metadata counts</a></li>
+<li><a href="#11-flow-phpetl-and-the-file-adapters---partitionby-takes-the-columns-partitionby-is-removed">11) flow-php/etl and the file adapters - partitionBy() takes the columns, partition_by() is removed</a></li>
 </ul>
 </li>
 <li><a href="#upgrading-from-047x-to-048x">Upgrading from 0.47.x to 0.48.x</a>
@@ -2155,6 +2156,51 @@ writes such a value in that raw form. Write the file again with this version to 
 </tr>
 </tbody>
 </table>
+<h3><a id="11-flow-phpetl-and-the-file-adapters---partitionby-takes-the-columns-partitionby-is-removed" href="#11-flow-phpetl-and-the-file-adapters---partitionby-takes-the-columns-partitionby-is-removed" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>11) <code>flow-php/etl</code> and the file adapters - <code>partitionBy()</code> takes the columns, <code>partition_by()</code> is removed</h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-&gt;partitionBy(partition_by('date'))</code></td>
+<td><code>-&gt;partitionBy('date')</code></td>
+</tr>
+<tr>
+<td><code>-&gt;partitionBy(partition_by('date', ref('country')))</code></td>
+<td><code>-&gt;partitionBy(['date', ref('country')])</code></td>
+</tr>
+<tr>
+<td><code>-&gt;partitionBy(partition_by('date')-&gt;writeColumns())</code></td>
+<td><code>-&gt;partitionBy('date', writeColumns: true)</code></td>
+</tr>
+<tr>
+<td><code>partition_by()</code></td>
+<td>removed</td>
+</tr>
+<tr>
+<td><code>FileLoader::partitionBy(Partitioning $partitioning): static</code></td>
+<td><code>partitionBy(array|string|Reference $columns, bool $writeColumns = false): static</code></td>
+</tr>
+<tr>
+<td><code>Partitioning::by('date', 'country')-&gt;writeColumns()</code></td>
+<td><code>Partitioning::by(['date', 'country'], writeColumns: true)</code></td>
+</tr>
+<tr>
+<td><code>-&gt;partitionBy(...)</code> with no column is a PHP error</td>
+<td><code>-&gt;partitionBy([])</code> throws <code>InvalidArgumentException</code></td>
+</tr>
+</tbody>
+</table>
+<p>Before:</p>
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-316356c1c86d" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-316356c1c86d" data-controller="syntax-highlight"><code class="language-php">to_parquet($path)-&gt;partitionBy(partition_by('date', 'country')-&gt;writeColumns());
+</code></pre></div>
+<p>After:</p>
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-87cedc6e6edb" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-87cedc6e6edb" data-controller="syntax-highlight"><code class="language-php">to_parquet($path)-&gt;partitionBy(['date', 'country'], writeColumns: true);
+</code></pre></div>
 <hr />
 <h2><a id="upgrading-from-047x-to-048x" href="#upgrading-from-047x-to-048x" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Upgrading from 0.47.x to 0.48.x</h2>
 <h3><a id="1-flow-phpetl---transformation-is-invokable-and-every-dataframe-method-has-a-pipe-step-printrows-and-withcolumn-changed" href="#1-flow-phpetl---transformation-is-invokable-and-every-dataframe-method-has-a-pipe-step-printrows-and-withcolumn-changed" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>1) <code>flow-php/etl</code> - <code>Transformation</code> is invokable and every DataFrame method has a pipe step; <code>print_rows()</code> and <code>WithColumn</code> changed</h3>
