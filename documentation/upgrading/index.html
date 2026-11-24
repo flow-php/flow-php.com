@@ -155,7 +155,7 @@
         "crelt": "/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js",
         "@codemirror/language": "/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js",
         "@lezer/highlight": "/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js",
-        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-ffaeca87daa4f5d514d4b14aab33ec0a.js",
+        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-b8f6492f23a2072b44f7c2578778bcb3.js",
         "/assets/codemirror/php_analysis.js": "/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js",
         "/assets/wasm/mago/mago_wasm_bg.js": "/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js",
         "@fontsource-variable/cabin/index.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2F%40fontsource-variable%2Fcabin%2Findex.min-2fd942a10b44e40a5f63d90a3479e0ee.css%22%7D%29%29",
@@ -254,7 +254,7 @@
 <link rel="modulepreload" href="/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js">
 <link rel="modulepreload" href="/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js">
 <link rel="modulepreload" href="/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js">
-<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-ffaeca87daa4f5d514d4b14aab33ec0a.js">
+<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-b8f6492f23a2072b44f7c2578778bcb3.js">
 <link rel="modulepreload" href="/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js">
 <link rel="modulepreload" href="/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js">
 <script type="module">import 'app';</script>
@@ -1572,11 +1572,12 @@
 <li><a href="#2-flow-phppostgresql---the-dsl-returning--returningall-and-the-static-returningclause-factories-are-removed">2) flow-php/postgresql - the DSL returning() / returning_all() and the static ReturningClause factories are removed</a></li>
 <li><a href="#3-flow-phppostgresql----returning-with-no-expressions-throws">3) flow-php/postgresql - -&gt;returning() with no expressions throws</a></li>
 <li><a href="#4-flow-phpetl---a-detached-xml-element-is-stored-by-its-canonical-markup">4) flow-php/etl - a detached xml element is stored by its canonical markup</a></li>
-<li><a href="#5-flow-phpetl---nativephphash-is-renamed-to-phpalgorithm-and-hash-takes-an-algorithm-name">5) flow-php/etl - NativePHPHash is renamed to PhpAlgorithm, and hash() takes an algorithm name</a></li>
-<li><a href="#6-flow-phpetl---backend-has-two-new-methods-and-the-flowphp-abi-is-4">6) flow-php/etl - Backend has two new methods, and the flow_php ABI is 4</a></li>
+<li><a href="#5-flow-phpetl---nativephphash-algorithm-and-plaintext-are-replaced-by-the-enum-hashalgorithm-and-hash-takes-it">5) flow-php/etl - NativePHPHash, Algorithm and PlainText are replaced by the enum HashAlgorithm, and hash() takes it</a></li>
+<li><a href="#6-flow-phpetl---the-flowphp-abi-is-4">6) flow-php/etl - the flow_php ABI is 4</a></li>
 <li><a href="#7-flow-phpetl---group-join-distinct-and-bucket-keys-have-the-declared-type-of-their-column">7) flow-php/etl - group, join, distinct and bucket keys have the declared type of their column</a></li>
 <li><a href="#8-flow-phpfilesystem---an-empty-string-is-a-valid-partition-value">8) flow-php/filesystem - an empty string is a valid partition value</a></li>
 <li><a href="#9-flow-phppostgresql---migratorexecuteversion-checks-the-state-of-the-version">9) flow-php/postgresql - Migrator::executeVersion() checks the state of the version</a></li>
+<li><a href="#10-flow-phpetl---schema-metadata-is-kept-in-key-order-and-the-order-of-a-list-in-metadata-counts">10) flow-php/etl - schema metadata is kept in key order, and the order of a list in metadata counts</a></li>
 </ul>
 </li>
 <li><a href="#upgrading-from-047x-to-048x">Upgrading from 0.47.x to 0.48.x</a>
@@ -1995,7 +1996,7 @@ specific version to ensure a smooth upgrade process.</p>
 </table>
 <p>Floe files and caches written by 0.45 to 0.48 keep the raw form of a detached xml element. Flow compares, hashes and
 writes such a value in that raw form. Write the file again with this version to store the C14N markup.</p>
-<h3><a id="5-flow-phpetl---nativephphash-is-renamed-to-phpalgorithm-and-hash-takes-an-algorithm-name" href="#5-flow-phpetl---nativephphash-is-renamed-to-phpalgorithm-and-hash-takes-an-algorithm-name" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>5) <code>flow-php/etl</code> - <code>NativePHPHash</code> is renamed to <code>PhpAlgorithm</code>, and <code>hash()</code> takes an algorithm name</h3>
+<h3><a id="5-flow-phpetl---nativephphash-algorithm-and-plaintext-are-replaced-by-the-enum-hashalgorithm-and-hash-takes-it" href="#5-flow-phpetl---nativephphash-algorithm-and-plaintext-are-replaced-by-the-enum-hashalgorithm-and-hash-takes-it" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>5) <code>flow-php/etl</code> - <code>NativePHPHash</code>, <code>Algorithm</code> and <code>PlainText</code> are replaced by the enum <code>HashAlgorithm</code>, and <code>hash()</code> takes it</h3>
 <table>
 <thead>
 <tr>
@@ -2006,20 +2007,35 @@ writes such a value in that raw form. Write the file again with this version to 
 <tbody>
 <tr>
 <td><code>Flow\ETL\Kernels\Hash\NativePHPHash</code></td>
-<td><code>Flow\ETL\Kernels\Hash\PhpAlgorithm</code></td>
+<td><code>Flow\ETL\Foundation\Hash\HashAlgorithm</code> (<code>md5</code>, <code>sha256</code>, <code>xxh128</code>)</td>
 </tr>
 <tr>
 <td><code>hash(ref('email'), new NativePHPHash('sha256'))</code></td>
-<td><code>hash(ref('email'), 'sha256')</code></td>
+<td><code>hash(ref('email'), HashAlgorithm::sha256)</code></td>
 </tr>
 <tr>
-<td><code>ref('email')-&gt;hash(new NativePHPHash('xxh64', options: ['seed' =&gt; 7]))</code></td>
-<td><code>ref('email')-&gt;hash(hash_algorithm('xxh64', options: ['seed' =&gt; 7]))</code></td>
+<td><code>new NativePHPHash('sha512')</code>, <code>xxh64</code>, any other <code>hash_algos()</code> name</td>
+<td>not available, hash the value in PHP outside the pipeline</td>
+</tr>
+<tr>
+<td><code>new NativePHPHash('xxh64', options: ['seed' =&gt; 7])</code></td>
+<td>not available, seeds and options are removed</td>
+</tr>
+<tr>
+<td><code>new NativePHPHash('sha256', binary: true)</code></td>
+<td><code>hex2bin()</code> of the hex result</td>
+</tr>
+<tr>
+<td><code>Flow\ETL\Kernels\Hash\PlainText</code></td>
+<td>removed, use the value itself</td>
+</tr>
+<tr>
+<td>a custom class that implements <code>Flow\ETL\Kernels\Hash\Algorithm</code></td>
+<td>removed, <code>hash()</code> takes only <code>HashAlgorithm</code></td>
 </tr>
 </tbody>
 </table>
-<p>Catch <code>Flow\ETL\Foundation\Exception\InvalidArgumentException</code> instead of <code>\InvalidArgumentException</code> for an unknown algorithm name.</p>
-<h3><a id="6-flow-phpetl---backend-has-two-new-methods-and-the-flowphp-abi-is-4" href="#6-flow-phpetl---backend-has-two-new-methods-and-the-flowphp-abi-is-4" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>6) <code>flow-php/etl</code> - <code>Backend</code> has two new methods, and the flow_php ABI is 4</h3>
+<h3><a id="6-flow-phpetl---the-flowphp-abi-is-4" href="#6-flow-phpetl---the-flowphp-abi-is-4" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>6) <code>flow-php/etl</code> - the flow_php ABI is 4</h3>
 <table>
 <thead>
 <tr>
@@ -2029,20 +2045,12 @@ writes such a value in that raw form. Write the file again with this version to 
 </thead>
 <tbody>
 <tr>
-<td>-</td>
-<td><code>Backend::rowHashes(array $columns, int $count): Column</code></td>
-</tr>
-<tr>
-<td>-</td>
-<td><code>Backend::groupedMultisetHashes(MultisetHashAlgorithm $algorithm): GroupedMultisetHashes</code></td>
-</tr>
-<tr>
 <td><code>FLOW_PHP_ABI</code> 3</td>
 <td><code>FLOW_PHP_ABI</code> 4</td>
 </tr>
 </tbody>
 </table>
-<p>A custom <code>Backend</code> must implement the two methods. Update or rebuild the flow_php extension together with the library.</p>
+<p>Update or rebuild the flow_php extension together with the library.</p>
 <h3><a id="7-flow-phpetl---group-join-distinct-and-bucket-keys-have-the-declared-type-of-their-column" href="#7-flow-phpetl---group-join-distinct-and-bucket-keys-have-the-declared-type-of-their-column" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>7) <code>flow-php/etl</code> - group, join, distinct and bucket keys have the declared type of their column</h3>
 <table>
 <thead>
@@ -2113,6 +2121,37 @@ writes such a value in that raw form. Write the file again with this version to 
 <tr>
 <td><code>DOWN</code> on a version that is not executed ran the rollback</td>
 <td>throws <code>MigrationException</code> and runs nothing</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="10-flow-phpetl---schema-metadata-is-kept-in-key-order-and-the-order-of-a-list-in-metadata-counts" href="#10-flow-phpetl---schema-metadata-is-kept-in-key-order-and-the-order-of-a-list-in-metadata-counts" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>10) <code>flow-php/etl</code> - schema metadata is kept in key order, and the order of a list in metadata counts</h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Metadata::normalize()</code> returns the keys in insertion order</td>
+<td>returns them sorted by key at every depth, and lists keep their order</td>
+</tr>
+<tr>
+<td><code>isSame()</code> and <code>Metadata::isEqual()</code> treat <code>['a', 'b']</code> and <code>['b', 'a']</code> as equal</td>
+<td>they differ</td>
+</tr>
+<tr>
+<td>a Floe append with the same metadata in another key order throws</td>
+<td>it appends</td>
+</tr>
+<tr>
+<td><code>Metadata::add()</code> and <code>merge()</code> renumber a numeric key, <code>with('5', 'x')-&gt;add('k', 'v')</code> has the key <code>0</code></td>
+<td>they keep <code>'5'</code></td>
+</tr>
+<tr>
+<td><code>Flow\ETL\Foundation\ArrayComparison\{ArrayComparison, ArraySortByKey}</code></td>
+<td>removed</td>
 </tr>
 </tbody>
 </table>

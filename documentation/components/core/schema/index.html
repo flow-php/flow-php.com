@@ -155,7 +155,7 @@
         "crelt": "/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js",
         "@codemirror/language": "/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js",
         "@lezer/highlight": "/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js",
-        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-ffaeca87daa4f5d514d4b14aab33ec0a.js",
+        "/assets/codemirror/completions/flow-api.js": "/assets/codemirror/completions/flow-api-b8f6492f23a2072b44f7c2578778bcb3.js",
         "/assets/codemirror/php_analysis.js": "/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js",
         "/assets/wasm/mago/mago_wasm_bg.js": "/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js",
         "@fontsource-variable/cabin/index.min.css": "data:application/javascript,document.head.appendChild%28Object.assign%28document.createElement%28%22link%22%29%2C%7Brel%3A%22stylesheet%22%2Chref%3A%22%2Fassets%2Fvendor%2F%40fontsource-variable%2Fcabin%2Findex.min-2fd942a10b44e40a5f63d90a3479e0ee.css%22%7D%29%29",
@@ -254,7 +254,7 @@
 <link rel="modulepreload" href="/assets/vendor/crelt/crelt.index-00278a0ffe00bf241d9e5c0b01771c6d.js">
 <link rel="modulepreload" href="/assets/vendor/@codemirror/language/language.index-5d962260bc873cbff962cdd5eaea2c91.js">
 <link rel="modulepreload" href="/assets/vendor/@lezer/highlight/highlight.index-518f9214c86b5ad34b5282fd3648198e.js">
-<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-ffaeca87daa4f5d514d4b14aab33ec0a.js">
+<link rel="modulepreload" href="/assets/codemirror/completions/flow-api-b8f6492f23a2072b44f7c2578778bcb3.js">
 <link rel="modulepreload" href="/assets/codemirror/php_analysis-d14f22ef25449facdcbd60f91cff2c92.js">
 <link rel="modulepreload" href="/assets/wasm/mago/mago_wasm_bg-6d96d5585954bc6ab8e3e55b5d0b3846.js">
 <script type="module">import 'app';</script>
@@ -1580,7 +1580,8 @@
 <li><a href="#inferring-types-from-an-array">Inferring Types from an Array</a></li>
 <li><a href="#schema-validation-strategies">Schema Validation Strategies</a></li>
 <li><a href="#basic-schema-matching">Basic Schema Matching</a></li>
-<li><a href="#schema-validation-with-selective-strategy">Schema Validation with Selective Strategy</a></li></ul></div></div>
+<li><a href="#schema-validation-with-selective-strategy">Schema Validation with Selective Strategy</a></li>
+<li><a href="#schema-fingerprint">Schema Fingerprint</a></li></ul></div></div>
 <p>A schema defines the structure of DataFrame data and the rules that the data must follow. It gives type safety, data
 validation and metadata to your pipelines.</p>
 <h2><a id="understanding-schema-components" href="#understanding-schema-components" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Understanding Schema Components</h2>
@@ -1995,6 +1996,68 @@ data_frame()
     -&gt;write(to_output())
     -&gt;run();
 </code></pre></div>
+<h2><a id="schema-fingerprint" href="#schema-fingerprint" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Schema Fingerprint</h2>
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-6b1e60dedbc7" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-6b1e60dedbc7" data-controller="syntax-highlight"><code class="language-php">&lt;?php
+
+use function Flow\ETL\DSL\{int_schema, schema, schema_fingerprint_options, schema_metadata, str_schema};
+
+$schema = schema(
+    int_schema('id'),
+    str_schema('email', metadata: schema_metadata(['pii' =&gt; true, 'description' =&gt; 'Login'])),
+);
+
+$schema-&gt;fingerprint()-&gt;toString();                                                     // xxh128, metadata excluded
+$schema-&gt;fingerprint(schema_fingerprint_options()-&gt;withMetadataKeys('pii'))-&gt;toString(); // only "pii" counts
+</code></pre></div>
+<p>Detect schema drift between runs. <code>$storedFingerprint</code> is the value that your previous run saved:</p>
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-01781fd6d20c" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-01781fd6d20c" data-controller="syntax-highlight"><code class="language-php">$current = data_frame()-&gt;read(from_csv('orders.csv'))-&gt;schema()-&gt;fingerprint()-&gt;toString();
+
+if ($current !== $storedFingerprint) {
+    // the source changed: column added, renamed, reordered, retyped or nullability changed
+}
+</code></pre></div>
+<p>The same <code>toString()</code> value works as a cache key for anything derived from a schema.</p>
+<p>Store the fingerprint next to written data and compare it on read:</p>
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-723ecdc7210c" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-723ecdc7210c" data-controller="syntax-highlight"><code class="language-php">$storedFingerprint = $schema-&gt;fingerprint()-&gt;toString();   // on write, saved next to the data
+
+if ($expected-&gt;fingerprint()-&gt;toString() !== $storedFingerprint) {   // on read
+    throw new RuntimeException('File was written with a different schema');
+}
+</code></pre></div>
+<p>Compare two schemas in one process:</p>
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-49ac4318892c" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-49ac4318892c" data-controller="syntax-highlight"><code class="language-php">$expected-&gt;fingerprint()-&gt;equals($given-&gt;fingerprint());
+</code></pre></div>
+<p>Print a mismatch with <code>canonical()</code>:</p>
+<div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-17c19beee3bc" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-17c19beee3bc" data-controller="syntax-highlight"><code class="language-php">echo schema(int_schema('id'), str_schema('email'))-&gt;fingerprint()-&gt;canonical(), PHP_EOL;
+echo schema(int_schema('id'), str_schema('email', nullable: true))-&gt;fingerprint()-&gt;canonical(), PHP_EOL;
+// {"version":"v1","options":{"metadata_keys":[]},"columns":[{"ref":"id","type":{"type":"integer"},"nullable":false},{"ref":"email","type":{"type":"string"},"nullable":false}]}
+// {"version":"v1","options":{"metadata_keys":[]},"columns":[{"ref":"id","type":{"type":"integer"},"nullable":false},{"ref":"email","type":{"type":"string"},"nullable":true}]}
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Same schema right now, metadata included?</td>
+<td><code>$a-&gt;isSame($b)</code></td>
+</tr>
+<tr>
+<td>Same identity, stored and compared later?</td>
+<td><code>fingerprint()</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Identity: column names (bytes), order, types with all parameters, nullability. Metadata only for the selected
+keys. Enum columns compare the class name, not the cases.</li>
+<li>Options only add to identity. Ignoring order or nullability is a comparison, not a fingerprint.</li>
+<li>If an untrusted party can write schemas, use <code>$schema-&gt;fingerprint()-&gt;hash(HashAlgorithm::sha256)</code>. xxh128 is
+stable on every platform, but it is not collision-safe against an attacker.</li>
+</ul>
 
 
             <p class="!mt-12 !mb-8 text-sm text-slate-500 dark:text-white/55" data-pagefind-ignore>

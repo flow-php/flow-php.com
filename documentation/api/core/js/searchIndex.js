@@ -1856,11 +1856,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_hash"
         },                {
-            "fqsen": "\\Flow\\ETL\\DSL\\hash_algorithm\u0028\u0029",
-            "name": "hash_algorithm",
-            "summary": "",
-            "url": "namespaces/flow-etl-dsl.html#function_hash_algorithm"
-        },                {
             "fqsen": "\\Flow\\ETL\\DSL\\row_hash\u0028\u0029",
             "name": "row_hash",
             "summary": "",
@@ -2185,6 +2180,11 @@ Search.appendIndex(
             "name": "schema_metadata",
             "summary": "",
             "url": "namespaces/flow-etl-dsl.html#function_schema_metadata"
+        },                {
+            "fqsen": "\\Flow\\ETL\\DSL\\schema_fingerprint_options\u0028\u0029",
+            "name": "schema_fingerprint_options",
+            "summary": "",
+            "url": "namespaces/flow-etl-dsl.html#function_schema_fingerprint_options"
         },                {
             "fqsen": "\\Flow\\ETL\\DSL\\int_schema\u0028\u0029",
             "name": "int_schema",
@@ -2555,31 +2555,6 @@ Search.appendIndex(
             "name": "read",
             "summary": "",
             "url": "classes/Flow-ETL-Flow.html#method_read"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Foundation\\ArrayComparison\\ArrayComparison",
-            "name": "ArrayComparison",
-            "summary": "",
-            "url": "classes/Flow-ETL-Foundation-ArrayComparison-ArrayComparison.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Foundation\\ArrayComparison\\ArrayComparison\u003A\u003Acompare\u0028\u0029",
-            "name": "compare",
-            "summary": "",
-            "url": "classes/Flow-ETL-Foundation-ArrayComparison-ArrayComparison.html#method_compare"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Foundation\\ArrayComparison\\ArrayComparison\u003A\u003Aequals\u0028\u0029",
-            "name": "equals",
-            "summary": "",
-            "url": "classes/Flow-ETL-Foundation-ArrayComparison-ArrayComparison.html#method_equals"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Foundation\\ArrayComparison\\ArraySortByKey",
-            "name": "ArraySortByKey",
-            "summary": "",
-            "url": "classes/Flow-ETL-Foundation-ArrayComparison-ArraySortByKey.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Foundation\\ArrayComparison\\ArraySortByKey\u003A\u003A__invoke\u0028\u0029",
-            "name": "__invoke",
-            "summary": "",
-            "url": "classes/Flow-ETL-Foundation-ArrayComparison-ArraySortByKey.html#method___invoke"
         },                {
             "fqsen": "\\Flow\\ETL\\Foundation\\Calculator\\Calculator",
             "name": "Calculator",
@@ -3565,6 +3540,31 @@ Search.appendIndex(
             "name": "version",
             "summary": "",
             "url": "classes/Flow-ETL-Foundation-FlowPhpExtension.html#property_version"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Hash\\HashAlgorithm",
+            "name": "HashAlgorithm",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-Hash-HashAlgorithm.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Hash\\HashAlgorithm\u003A\u003Anamed\u0028\u0029",
+            "name": "named",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-Hash-HashAlgorithm.html#method_named"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Hash\\HashAlgorithm\u003A\u003Amd5",
+            "name": "md5",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-Hash-HashAlgorithm.html#enumcase_md5"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Hash\\HashAlgorithm\u003A\u003Asha256",
+            "name": "sha256",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-Hash-HashAlgorithm.html#enumcase_sha256"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Hash\\HashAlgorithm\u003A\u003Axxh128",
+            "name": "xxh128",
+            "summary": "",
+            "url": "classes/Flow-ETL-Foundation-Hash-HashAlgorithm.html#enumcase_xxh128"
         },                {
             "fqsen": "\\Flow\\ETL\\Foundation\\NativePHPRandomValueGenerator",
             "name": "NativePHPRandomValueGenerator",
@@ -16016,61 +16016,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Kernels-Bucketing-SeenKeys.html#method_count"
         },                {
-            "fqsen": "\\Flow\\ETL\\Kernels\\Hash\\Algorithm",
-            "name": "Algorithm",
-            "summary": "",
-            "url": "classes/Flow-ETL-Kernels-Hash-Algorithm.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Kernels\\Hash\\Algorithm\u003A\u003Ahash\u0028\u0029",
-            "name": "hash",
-            "summary": "",
-            "url": "classes/Flow-ETL-Kernels-Hash-Algorithm.html#method_hash"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Kernels\\Hash\\PhpAlgorithm",
-            "name": "PhpAlgorithm",
-            "summary": "",
-            "url": "classes/Flow-ETL-Kernels-Hash-PhpAlgorithm.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Kernels\\Hash\\PhpAlgorithm\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Flow-ETL-Kernels-Hash-PhpAlgorithm.html#method___construct"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Kernels\\Hash\\PhpAlgorithm\u003A\u003AfromDescription\u0028\u0029",
-            "name": "fromDescription",
-            "summary": "",
-            "url": "classes/Flow-ETL-Kernels-Hash-PhpAlgorithm.html#method_fromDescription"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Kernels\\Hash\\PhpAlgorithm\u003A\u003Adescribe\u0028\u0029",
-            "name": "describe",
-            "summary": "",
-            "url": "classes/Flow-ETL-Kernels-Hash-PhpAlgorithm.html#method_describe"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Kernels\\Hash\\PhpAlgorithm\u003A\u003Ahash\u0028\u0029",
-            "name": "hash",
-            "summary": "",
-            "url": "classes/Flow-ETL-Kernels-Hash-PhpAlgorithm.html#method_hash"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Kernels\\Hash\\PlainText",
-            "name": "PlainText",
-            "summary": "",
-            "url": "classes/Flow-ETL-Kernels-Hash-PlainText.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Kernels\\Hash\\PlainText\u003A\u003AfromDescription\u0028\u0029",
-            "name": "fromDescription",
-            "summary": "",
-            "url": "classes/Flow-ETL-Kernels-Hash-PlainText.html#method_fromDescription"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Kernels\\Hash\\PlainText\u003A\u003Adescribe\u0028\u0029",
-            "name": "describe",
-            "summary": "",
-            "url": "classes/Flow-ETL-Kernels-Hash-PlainText.html#method_describe"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Kernels\\Hash\\PlainText\u003A\u003Ahash\u0028\u0029",
-            "name": "hash",
-            "summary": "",
-            "url": "classes/Flow-ETL-Kernels-Hash-PlainText.html#method_hash"
-        },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\HashJoin\\BuildSide",
             "name": "BuildSide",
             "summary": "",
@@ -25176,6 +25121,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Values-Column-AdaptiveBackend.html#method_rowHashes"
         },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\AdaptiveBackend\u003A\u003Ahash\u0028\u0029",
+            "name": "hash",
+            "summary": "\u0024strings\u0020holds\u0020strings\u003B\u0020a\u0020null\u0020row\u0020stays\u0020null.\u0020One\u0020lowercase\u0020hex\u0020digest\u0020per\u0020row,\u0020the\u0020full\u0020digest.",
+            "url": "classes/Flow-ETL-Values-Column-AdaptiveBackend.html#method_hash"
+        },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\AdaptiveBackend\u003A\u003AgroupedMultisetHashes\u0028\u0029",
             "name": "groupedMultisetHashes",
             "summary": "",
@@ -25320,6 +25270,11 @@ Search.appendIndex(
             "name": "rowHashes",
             "summary": "",
             "url": "classes/Flow-ETL-Values-Column-Backend.html#method_rowHashes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\Backend\u003A\u003Ahash\u0028\u0029",
+            "name": "hash",
+            "summary": "\u0024strings\u0020holds\u0020strings\u003B\u0020a\u0020null\u0020row\u0020stays\u0020null.\u0020One\u0020lowercase\u0020hex\u0020digest\u0020per\u0020row,\u0020the\u0020full\u0020digest.",
+            "url": "classes/Flow-ETL-Values-Column-Backend.html#method_hash"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Backend\u003A\u003AgroupedMultisetHashes\u0028\u0029",
             "name": "groupedMultisetHashes",
@@ -25955,31 +25910,6 @@ Search.appendIndex(
             "name": "high",
             "summary": "",
             "url": "classes/Flow-ETL-Values-Column-MultisetDigest.html#property_high"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Values\\Column\\MultisetHashAlgorithm",
-            "name": "MultisetHashAlgorithm",
-            "summary": "",
-            "url": "classes/Flow-ETL-Values-Column-MultisetHashAlgorithm.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Values\\Column\\MultisetHashAlgorithm\u003A\u003Anamed\u0028\u0029",
-            "name": "named",
-            "summary": "",
-            "url": "classes/Flow-ETL-Values-Column-MultisetHashAlgorithm.html#method_named"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Values\\Column\\MultisetHashAlgorithm\u003A\u003Amd5",
-            "name": "md5",
-            "summary": "",
-            "url": "classes/Flow-ETL-Values-Column-MultisetHashAlgorithm.html#enumcase_md5"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Values\\Column\\MultisetHashAlgorithm\u003A\u003Asha256",
-            "name": "sha256",
-            "summary": "",
-            "url": "classes/Flow-ETL-Values-Column-MultisetHashAlgorithm.html#enumcase_sha256"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Values\\Column\\MultisetHashAlgorithm\u003A\u003Axxh128",
-            "name": "xxh128",
-            "summary": "",
-            "url": "classes/Flow-ETL-Values-Column-MultisetHashAlgorithm.html#enumcase_xxh128"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\Php\\CastingColumnBuilder",
             "name": "CastingColumnBuilder",
@@ -26865,6 +26795,11 @@ Search.appendIndex(
             "name": "rowHashes",
             "summary": "",
             "url": "classes/Flow-ETL-Values-Column-PhpBackend.html#method_rowHashes"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Column\\PhpBackend\u003A\u003Ahash\u0028\u0029",
+            "name": "hash",
+            "summary": "\u0024strings\u0020holds\u0020strings\u003B\u0020a\u0020null\u0020row\u0020stays\u0020null.\u0020One\u0020lowercase\u0020hex\u0020digest\u0020per\u0020row,\u0020the\u0020full\u0020digest.",
+            "url": "classes/Flow-ETL-Values-Column-PhpBackend.html#method_hash"
         },                {
             "fqsen": "\\Flow\\ETL\\Values\\Column\\PhpBackend\u003A\u003AgroupedMultisetHashes\u0028\u0029",
             "name": "groupedMultisetHashes",
@@ -29891,6 +29826,56 @@ Search.appendIndex(
             "summary": "The\u0020definition\u0020a\u0020column\u0020of\u0020\u0024type\u0020has\u003A\u0020one\u0020of\u0020the\u002019\u0020Flow\u0020definitions,\u0020or\u0020a\u0020refusal.",
             "url": "classes/Flow-ETL-Values-Schema-Definitions.html#method_of"
         },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Schema\\Fingerprint",
+            "name": "Fingerprint",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Schema-Fingerprint.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Schema\\Fingerprint\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Schema-Fingerprint.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Schema\\Fingerprint\u003A\u003Acanonical\u0028\u0029",
+            "name": "canonical",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Schema-Fingerprint.html#method_canonical"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Schema\\Fingerprint\u003A\u003Aequals\u0028\u0029",
+            "name": "equals",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Schema-Fingerprint.html#method_equals"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Schema\\Fingerprint\u003A\u003Ahash\u0028\u0029",
+            "name": "hash",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Schema-Fingerprint.html#method_hash"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Schema\\Fingerprint\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Schema-Fingerprint.html#method_toString"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Schema\\FingerprintOptions",
+            "name": "FingerprintOptions",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Schema-FingerprintOptions.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Schema\\FingerprintOptions\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Schema-FingerprintOptions.html#method___construct"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Schema\\FingerprintOptions\u003A\u003AwithMetadataKeys\u0028\u0029",
+            "name": "withMetadataKeys",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Schema-FingerprintOptions.html#method_withMetadataKeys"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Schema\\FingerprintOptions\u003A\u003A\u0024metadataKeys",
+            "name": "metadataKeys",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Schema-FingerprintOptions.html#property_metadataKeys"
+        },                {
             "fqsen": "\\Flow\\ETL\\Values\\Schema\\Metadata",
             "name": "Metadata",
             "summary": "",
@@ -30236,6 +30221,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Flow-ETL-Values-Schema.html#method_definitions"
         },                {
+            "fqsen": "\\Flow\\ETL\\Values\\Schema\u003A\u003Afingerprint\u0028\u0029",
+            "name": "fingerprint",
+            "summary": "",
+            "url": "classes/Flow-ETL-Values-Schema.html#method_fingerprint"
+        },                {
             "fqsen": "\\Flow\\ETL\\Values\\Schema\u003A\u003AfindDefinition\u0028\u0029",
             "name": "findDefinition",
             "summary": "",
@@ -30561,11 +30551,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/flow.html"
         },                {
-            "fqsen": "\\Flow\\ETL\\Foundation\\ArrayComparison",
-            "name": "ArrayComparison",
-            "summary": "",
-            "url": "namespaces/flow-etl-foundation-arraycomparison.html"
-        },                {
             "fqsen": "\\Flow\\ETL\\Foundation\\Calculator",
             "name": "Calculator",
             "summary": "",
@@ -30595,6 +30580,11 @@ Search.appendIndex(
             "name": "Foundation",
             "summary": "",
             "url": "namespaces/flow-etl-foundation.html"
+        },                {
+            "fqsen": "\\Flow\\ETL\\Foundation\\Hash",
+            "name": "Hash",
+            "summary": "",
+            "url": "namespaces/flow-etl-foundation-hash.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Foundation\\Telemetry",
             "name": "Telemetry",
@@ -30775,11 +30765,6 @@ Search.appendIndex(
             "name": "Kernels",
             "summary": "",
             "url": "namespaces/flow-etl-kernels.html"
-        },                {
-            "fqsen": "\\Flow\\ETL\\Kernels\\Hash",
-            "name": "Hash",
-            "summary": "",
-            "url": "namespaces/flow-etl-kernels-hash.html"
         },                {
             "fqsen": "\\Flow\\ETL\\Kernels\\HashJoin",
             "name": "HashJoin",

@@ -4955,7 +4955,7 @@ algorithm for this operation and skips any automatic choice</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1179</span>
+    <span class="phpdocumentor-element-found-in__line">1176</span>
 
     </aside>
 
@@ -4963,7 +4963,7 @@ algorithm for this operation and skips any automatic choice</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">hash</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Kernels-Hash-Algorithm.html"><abbr title="\Flow\ETL\Kernels\Hash\Algorithm">Algorithm</abbr></a>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$algorithm</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'xxh128'</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Functions-Hash.html"><abbr title="\Flow\ETL\Functions\Hash">Hash</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">hash</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Flow-ETL-Foundation-Hash-HashAlgorithm.html"><abbr title="\Flow\ETL\Foundation\Hash\HashAlgorithm">HashAlgorithm</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$algorithm</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><a href="classes/Flow-ETL-Foundation-Hash-HashAlgorithm.html#enumcase_xxh128"><abbr title="\Flow\ETL\Foundation\Hash\HashAlgorithm::xxh128">HashAlgorithm::xxh128</abbr></a></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Functions-Hash.html"><abbr title="\Flow\ETL\Functions\Hash">Hash</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -4977,12 +4977,10 @@ algorithm for this operation and skips any automatic choice</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$algorithm</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Kernels-Hash-Algorithm.html"><abbr title="\Flow\ETL\Kernels\Hash\Algorithm">Algorithm</abbr></a>|string</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">'xxh128'</span>            </dt>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Flow-ETL-Foundation-Hash-HashAlgorithm.html"><abbr title="\Flow\ETL\Foundation\Hash\HashAlgorithm">HashAlgorithm</abbr></a></span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value"><a href="classes/Flow-ETL-Foundation-Hash-HashAlgorithm.html#enumcase_xxh128"><abbr title="\Flow\ETL\Foundation\Hash\HashAlgorithm::xxh128">HashAlgorithm::xxh128</abbr></a></span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>a hash_algos() name, or an Algorithm such as hash_algorithm('xxh64', options: [...])</p>
-</section>
-
+                
             </dd>
             </dl>
 
@@ -4995,61 +4993,6 @@ algorithm for this operation and skips any automatic choice</p>
 
 </article>
                     <article class="phpdocumentor-element -function - ">
-    <h4 class="phpdocumentor-element__name" id="function_hash_algorithm">
-        hash_algorithm()
-        <a href="namespaces/flow-etl-dsl.html#function_hash_algorithm" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1188</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">hash_algorithm</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'xxh128'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$binary</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Kernels-Hash-Algorithm.html"><abbr title="\Flow\ETL\Kernels\Hash\Algorithm">Algorithm</abbr></a></span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$name</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">'xxh128'</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$binary</span>
-                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">false</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$options</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>the options of PHP's hash(), for example ['seed' =&gt; 7]</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Kernels-Hash-Algorithm.html"><abbr title="\Flow\ETL\Kernels\Hash\Algorithm">Algorithm</abbr></a></span>
-            </section>
-
-</article>
-                    <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_row_hash">
         row_hash()
         <a href="namespaces/flow-etl-dsl.html#function_row_hash" class="headerlink"><i class="fas fa-link"></i></a>
@@ -5058,7 +5001,7 @@ algorithm for this operation and skips any automatic choice</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1194</span>
+    <span class="phpdocumentor-element-found-in__line">1182</span>
 
     </aside>
 
@@ -5104,7 +5047,7 @@ algorithm for this operation and skips any automatic choice</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1203</span>
+    <span class="phpdocumentor-element-found-in__line">1191</span>
 
     </aside>
 
@@ -5150,7 +5093,7 @@ algorithm for this operation and skips any automatic choice</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1209</span>
+    <span class="phpdocumentor-element-found-in__line">1197</span>
 
     </aside>
 
@@ -5189,7 +5132,7 @@ algorithm for this operation and skips any automatic choice</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1215</span>
+    <span class="phpdocumentor-element-found-in__line">1203</span>
 
     </aside>
 
@@ -5228,7 +5171,7 @@ algorithm for this operation and skips any automatic choice</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1221</span>
+    <span class="phpdocumentor-element-found-in__line">1209</span>
 
     </aside>
 
@@ -5267,7 +5210,7 @@ algorithm for this operation and skips any automatic choice</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1227</span>
+    <span class="phpdocumentor-element-found-in__line">1215</span>
 
     </aside>
 
@@ -5306,7 +5249,7 @@ algorithm for this operation and skips any automatic choice</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1233</span>
+    <span class="phpdocumentor-element-found-in__line">1221</span>
 
     </aside>
 
@@ -5345,7 +5288,7 @@ algorithm for this operation and skips any automatic choice</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1245</span>
+    <span class="phpdocumentor-element-found-in__line">1233</span>
 
     </aside>
 
@@ -5399,7 +5342,7 @@ algorithm for this operation and skips any automatic choice</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1272</span>
+    <span class="phpdocumentor-element-found-in__line">1260</span>
 
     </aside>
 
@@ -5461,7 +5404,7 @@ algorithm for this operation and skips any automatic choice</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1302</span>
+    <span class="phpdocumentor-element-found-in__line">1290</span>
 
     </aside>
 
@@ -5528,7 +5471,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1308</span>
+    <span class="phpdocumentor-element-found-in__line">1296</span>
 
     </aside>
 
@@ -5567,7 +5510,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1314</span>
+    <span class="phpdocumentor-element-found-in__line">1302</span>
 
     </aside>
 
@@ -5596,7 +5539,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1320</span>
+    <span class="phpdocumentor-element-found-in__line">1308</span>
 
     </aside>
 
@@ -5635,7 +5578,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1326</span>
+    <span class="phpdocumentor-element-found-in__line">1314</span>
 
     </aside>
 
@@ -5674,7 +5617,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1332</span>
+    <span class="phpdocumentor-element-found-in__line">1320</span>
 
     </aside>
 
@@ -5713,7 +5656,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1338</span>
+    <span class="phpdocumentor-element-found-in__line">1326</span>
 
     </aside>
 
@@ -5752,7 +5695,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1344</span>
+    <span class="phpdocumentor-element-found-in__line">1332</span>
 
     </aside>
 
@@ -5791,7 +5734,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1350</span>
+    <span class="phpdocumentor-element-found-in__line">1338</span>
 
     </aside>
 
@@ -5830,7 +5773,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1356</span>
+    <span class="phpdocumentor-element-found-in__line">1344</span>
 
     </aside>
 
@@ -5869,7 +5812,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1362</span>
+    <span class="phpdocumentor-element-found-in__line">1350</span>
 
     </aside>
 
@@ -5908,7 +5851,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1368</span>
+    <span class="phpdocumentor-element-found-in__line">1356</span>
 
     </aside>
 
@@ -5954,7 +5897,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1374</span>
+    <span class="phpdocumentor-element-found-in__line">1362</span>
 
     </aside>
 
@@ -5983,7 +5926,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1380</span>
+    <span class="phpdocumentor-element-found-in__line">1368</span>
 
     </aside>
 
@@ -6012,7 +5955,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1386</span>
+    <span class="phpdocumentor-element-found-in__line">1374</span>
 
     </aside>
 
@@ -6041,7 +5984,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1392</span>
+    <span class="phpdocumentor-element-found-in__line">1380</span>
 
     </aside>
 
@@ -6101,7 +6044,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1402</span>
+    <span class="phpdocumentor-element-found-in__line">1390</span>
 
     </aside>
 
@@ -6161,7 +6104,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1412</span>
+    <span class="phpdocumentor-element-found-in__line">1400</span>
 
     </aside>
 
@@ -6221,7 +6164,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1422</span>
+    <span class="phpdocumentor-element-found-in__line">1410</span>
 
     </aside>
 
@@ -6281,7 +6224,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1432</span>
+    <span class="phpdocumentor-element-found-in__line">1420</span>
 
     </aside>
 
@@ -6341,7 +6284,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1442</span>
+    <span class="phpdocumentor-element-found-in__line">1430</span>
 
     </aside>
 
@@ -6387,7 +6330,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1448</span>
+    <span class="phpdocumentor-element-found-in__line">1436</span>
 
     </aside>
 
@@ -6440,7 +6383,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1457</span>
+    <span class="phpdocumentor-element-found-in__line">1445</span>
 
     </aside>
 
@@ -6493,7 +6436,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1466</span>
+    <span class="phpdocumentor-element-found-in__line">1454</span>
 
     </aside>
 
@@ -6553,7 +6496,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1479</span>
+    <span class="phpdocumentor-element-found-in__line">1467</span>
 
     </aside>
 
@@ -6606,7 +6549,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1487</span>
+    <span class="phpdocumentor-element-found-in__line">1475</span>
 
     </aside>
 
@@ -6635,7 +6578,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1493</span>
+    <span class="phpdocumentor-element-found-in__line">1481</span>
 
     </aside>
 
@@ -6664,7 +6607,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1499</span>
+    <span class="phpdocumentor-element-found-in__line">1487</span>
 
     </aside>
 
@@ -6693,7 +6636,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1505</span>
+    <span class="phpdocumentor-element-found-in__line">1493</span>
 
     </aside>
 
@@ -6753,7 +6696,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1515</span>
+    <span class="phpdocumentor-element-found-in__line">1503</span>
 
     </aside>
 
@@ -6792,7 +6735,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1521</span>
+    <span class="phpdocumentor-element-found-in__line">1509</span>
 
     </aside>
 
@@ -6831,7 +6774,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1527</span>
+    <span class="phpdocumentor-element-found-in__line">1515</span>
 
     </aside>
 
@@ -6870,7 +6813,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1533</span>
+    <span class="phpdocumentor-element-found-in__line">1521</span>
 
     </aside>
 
@@ -6923,7 +6866,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1539</span>
+    <span class="phpdocumentor-element-found-in__line">1527</span>
 
     </aside>
 
@@ -6962,7 +6905,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1545</span>
+    <span class="phpdocumentor-element-found-in__line">1533</span>
 
     </aside>
 
@@ -6991,7 +6934,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1551</span>
+    <span class="phpdocumentor-element-found-in__line">1539</span>
 
     </aside>
 
@@ -7020,7 +6963,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1557</span>
+    <span class="phpdocumentor-element-found-in__line">1545</span>
 
     </aside>
 
@@ -7059,7 +7002,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1563</span>
+    <span class="phpdocumentor-element-found-in__line">1551</span>
 
     </aside>
 
@@ -7088,7 +7031,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1569</span>
+    <span class="phpdocumentor-element-found-in__line">1557</span>
 
     </aside>
 
@@ -7127,7 +7070,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1575</span>
+    <span class="phpdocumentor-element-found-in__line">1563</span>
 
     </aside>
 
@@ -7156,7 +7099,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1581</span>
+    <span class="phpdocumentor-element-found-in__line">1569</span>
 
     </aside>
 
@@ -7202,7 +7145,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1587</span>
+    <span class="phpdocumentor-element-found-in__line">1575</span>
 
     </aside>
 
@@ -7241,7 +7184,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1593</span>
+    <span class="phpdocumentor-element-found-in__line">1581</span>
 
     </aside>
 
@@ -7280,7 +7223,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1599</span>
+    <span class="phpdocumentor-element-found-in__line">1587</span>
 
     </aside>
 
@@ -7319,7 +7262,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1605</span>
+    <span class="phpdocumentor-element-found-in__line">1593</span>
 
     </aside>
 
@@ -7358,7 +7301,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1611</span>
+    <span class="phpdocumentor-element-found-in__line">1599</span>
 
     </aside>
 
@@ -7387,7 +7330,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1622</span>
+    <span class="phpdocumentor-element-found-in__line">1610</span>
 
     </aside>
 
@@ -7426,7 +7369,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1631</span>
+    <span class="phpdocumentor-element-found-in__line">1619</span>
 
     </aside>
 
@@ -7472,7 +7415,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1640</span>
+    <span class="phpdocumentor-element-found-in__line">1628</span>
 
     </aside>
 
@@ -7525,7 +7468,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1652</span>
+    <span class="phpdocumentor-element-found-in__line">1640</span>
 
     </aside>
 
@@ -7571,7 +7514,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1662</span>
+    <span class="phpdocumentor-element-found-in__line">1650</span>
 
     </aside>
 
@@ -7624,7 +7567,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1671</span>
+    <span class="phpdocumentor-element-found-in__line">1659</span>
 
     </aside>
 
@@ -7653,7 +7596,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1677</span>
+    <span class="phpdocumentor-element-found-in__line">1665</span>
 
     </aside>
 
@@ -7682,7 +7625,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1683</span>
+    <span class="phpdocumentor-element-found-in__line">1671</span>
 
     </aside>
 
@@ -7711,7 +7654,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1692</span>
+    <span class="phpdocumentor-element-found-in__line">1680</span>
 
     </aside>
 
@@ -7750,7 +7693,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1705</span>
+    <span class="phpdocumentor-element-found-in__line">1693</span>
 
     </aside>
 
@@ -7758,14 +7701,14 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">schema_metadata</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Values-Schema-Metadata.html"><abbr title="\Flow\ETL\Values\Schema\Metadata">Metadata</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">schema_metadata</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">array&lt;string, array&lt;string|int, mixed&gt;|bool|float|int|string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Values-Schema-Metadata.html"><abbr title="\Flow\ETL\Values\Schema\Metadata">Metadata</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$metadata</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, array&lt;string|int, bool|float|int|string&gt;|bool|float|int|string&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, array&lt;string|int, mixed&gt;|bool|float|int|string&gt;</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -7781,6 +7724,35 @@ duplicateRow(), aggregate(), over() and onEach().</p>
 
 </article>
                     <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_schema_fingerprint_options">
+        schema_fingerprint_options()
+        <a href="namespaces/flow-etl-dsl.html#function_schema_fingerprint_options" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1699</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">schema_fingerprint_options</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Values-Schema-FingerprintOptions.html"><abbr title="\Flow\ETL\Values\Schema\FingerprintOptions">FingerprintOptions</abbr></a></span></code>
+
+    
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Flow-ETL-Values-Schema-FingerprintOptions.html"><abbr title="\Flow\ETL\Values\Schema\FingerprintOptions">FingerprintOptions</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_int_schema">
         int_schema()
         <a href="namespaces/flow-etl-dsl.html#function_int_schema" class="headerlink"><i class="fas fa-link"></i></a>
@@ -7789,7 +7761,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1714</span>
+    <span class="phpdocumentor-element-found-in__line">1708</span>
 
     </aside>
 
@@ -7843,7 +7815,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1720</span>
+    <span class="phpdocumentor-element-found-in__line">1714</span>
 
     </aside>
 
@@ -7896,7 +7868,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1729</span>
+    <span class="phpdocumentor-element-found-in__line">1723</span>
 
     </aside>
 
@@ -7950,7 +7922,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1735</span>
+    <span class="phpdocumentor-element-found-in__line">1729</span>
 
     </aside>
 
@@ -8003,7 +7975,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1741</span>
+    <span class="phpdocumentor-element-found-in__line">1735</span>
 
     </aside>
 
@@ -8056,7 +8028,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1747</span>
+    <span class="phpdocumentor-element-found-in__line">1741</span>
 
     </aside>
 
@@ -8109,7 +8081,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1761</span>
+    <span class="phpdocumentor-element-found-in__line">1755</span>
 
     </aside>
 
@@ -8185,7 +8157,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1775</span>
+    <span class="phpdocumentor-element-found-in__line">1769</span>
 
     </aside>
 
@@ -8258,7 +8230,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1793</span>
+    <span class="phpdocumentor-element-found-in__line">1787</span>
 
     </aside>
 
@@ -8331,7 +8303,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1799</span>
+    <span class="phpdocumentor-element-found-in__line">1793</span>
 
     </aside>
 
@@ -8377,7 +8349,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1805</span>
+    <span class="phpdocumentor-element-found-in__line">1799</span>
 
     </aside>
 
@@ -8437,7 +8409,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1815</span>
+    <span class="phpdocumentor-element-found-in__line">1809</span>
 
     </aside>
 
@@ -8490,7 +8462,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1821</span>
+    <span class="phpdocumentor-element-found-in__line">1815</span>
 
     </aside>
 
@@ -8543,7 +8515,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1827</span>
+    <span class="phpdocumentor-element-found-in__line">1821</span>
 
     </aside>
 
@@ -8596,7 +8568,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1833</span>
+    <span class="phpdocumentor-element-found-in__line">1827</span>
 
     </aside>
 
@@ -8649,7 +8621,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1839</span>
+    <span class="phpdocumentor-element-found-in__line">1833</span>
 
     </aside>
 
@@ -8702,7 +8674,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1845</span>
+    <span class="phpdocumentor-element-found-in__line">1839</span>
 
     </aside>
 
@@ -8755,7 +8727,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1851</span>
+    <span class="phpdocumentor-element-found-in__line">1845</span>
 
     </aside>
 
@@ -8808,7 +8780,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1864</span>
+    <span class="phpdocumentor-element-found-in__line">1858</span>
 
     </aside>
 
@@ -8881,7 +8853,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1875</span>
+    <span class="phpdocumentor-element-found-in__line">1869</span>
 
     </aside>
 
@@ -8934,7 +8906,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1881</span>
+    <span class="phpdocumentor-element-found-in__line">1875</span>
 
     </aside>
 
@@ -8987,7 +8959,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1894</span>
+    <span class="phpdocumentor-element-found-in__line">1888</span>
 
     </aside>
 
@@ -9027,7 +8999,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1907</span>
+    <span class="phpdocumentor-element-found-in__line">1901</span>
 
     </aside>
 
@@ -9088,7 +9060,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1917</span>
+    <span class="phpdocumentor-element-found-in__line">1911</span>
 
     </aside>
 
@@ -9117,7 +9089,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1923</span>
+    <span class="phpdocumentor-element-found-in__line">1917</span>
 
     </aside>
 
@@ -9156,7 +9128,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1929</span>
+    <span class="phpdocumentor-element-found-in__line">1923</span>
 
     </aside>
 
@@ -9195,7 +9167,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1935</span>
+    <span class="phpdocumentor-element-found-in__line">1929</span>
 
     </aside>
 
@@ -9224,7 +9196,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1941</span>
+    <span class="phpdocumentor-element-found-in__line">1935</span>
 
     </aside>
 
@@ -9253,7 +9225,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1947</span>
+    <span class="phpdocumentor-element-found-in__line">1941</span>
 
     </aside>
 
@@ -9282,7 +9254,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1953</span>
+    <span class="phpdocumentor-element-found-in__line">1947</span>
 
     </aside>
 
@@ -9311,7 +9283,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1959</span>
+    <span class="phpdocumentor-element-found-in__line">1953</span>
 
     </aside>
 
@@ -9340,7 +9312,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1965</span>
+    <span class="phpdocumentor-element-found-in__line">1959</span>
 
     </aside>
 
@@ -9369,7 +9341,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1971</span>
+    <span class="phpdocumentor-element-found-in__line">1965</span>
 
     </aside>
 
@@ -9398,7 +9370,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1980</span>
+    <span class="phpdocumentor-element-found-in__line">1974</span>
 
     </aside>
 
@@ -9438,7 +9410,7 @@ duplicateRow(), aggregate(), over() and onEach().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1990</span>
+    <span class="phpdocumentor-element-found-in__line">1984</span>
 
     </aside>
 
@@ -9479,7 +9451,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1996</span>
+    <span class="phpdocumentor-element-found-in__line">1990</span>
 
     </aside>
 
@@ -9525,7 +9497,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2005</span>
+    <span class="phpdocumentor-element-found-in__line">1999</span>
 
     </aside>
 
@@ -9566,7 +9538,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2015</span>
+    <span class="phpdocumentor-element-found-in__line">2009</span>
 
     </aside>
 
@@ -9596,7 +9568,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2021</span>
+    <span class="phpdocumentor-element-found-in__line">2015</span>
 
     </aside>
 
@@ -9625,7 +9597,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2030</span>
+    <span class="phpdocumentor-element-found-in__line">2024</span>
 
     </aside>
 
@@ -9655,7 +9627,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2036</span>
+    <span class="phpdocumentor-element-found-in__line">2030</span>
 
     </aside>
 
@@ -9684,7 +9656,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2045</span>
+    <span class="phpdocumentor-element-found-in__line">2039</span>
 
     </aside>
 
@@ -9714,7 +9686,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2051</span>
+    <span class="phpdocumentor-element-found-in__line">2045</span>
 
     </aside>
 
@@ -9743,7 +9715,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2060</span>
+    <span class="phpdocumentor-element-found-in__line">2054</span>
 
     </aside>
 
@@ -9773,7 +9745,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2066</span>
+    <span class="phpdocumentor-element-found-in__line">2060</span>
 
     </aside>
 
@@ -9802,7 +9774,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2072</span>
+    <span class="phpdocumentor-element-found-in__line">2066</span>
 
     </aside>
 
@@ -9855,7 +9827,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2078</span>
+    <span class="phpdocumentor-element-found-in__line">2072</span>
 
     </aside>
 
@@ -9901,7 +9873,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2084</span>
+    <span class="phpdocumentor-element-found-in__line">2078</span>
 
     </aside>
 
@@ -9947,7 +9919,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2090</span>
+    <span class="phpdocumentor-element-found-in__line">2084</span>
 
     </aside>
 
@@ -9993,7 +9965,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2096</span>
+    <span class="phpdocumentor-element-found-in__line">2090</span>
 
     </aside>
 
@@ -10039,7 +10011,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2105</span>
+    <span class="phpdocumentor-element-found-in__line">2099</span>
 
     </aside>
 
@@ -10085,7 +10057,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2113</span>
+    <span class="phpdocumentor-element-found-in__line">2107</span>
 
     </aside>
 
@@ -10124,7 +10096,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2122</span>
+    <span class="phpdocumentor-element-found-in__line">2116</span>
 
     </aside>
 
@@ -10170,7 +10142,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2133</span>
+    <span class="phpdocumentor-element-found-in__line">2127</span>
 
     </aside>
 
@@ -10216,7 +10188,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2144</span>
+    <span class="phpdocumentor-element-found-in__line">2138</span>
 
     </aside>
 
@@ -10262,7 +10234,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2154</span>
+    <span class="phpdocumentor-element-found-in__line">2148</span>
 
     </aside>
 
@@ -10308,7 +10280,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2188</span>
+    <span class="phpdocumentor-element-found-in__line">2182</span>
 
     </aside>
 
@@ -10354,7 +10326,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2196</span>
+    <span class="phpdocumentor-element-found-in__line">2190</span>
 
     </aside>
 
@@ -10407,7 +10379,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2205</span>
+    <span class="phpdocumentor-element-found-in__line">2199</span>
 
     </aside>
 
@@ -10453,7 +10425,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2213</span>
+    <span class="phpdocumentor-element-found-in__line">2207</span>
 
     </aside>
 
@@ -10492,7 +10464,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2230</span>
+    <span class="phpdocumentor-element-found-in__line">2224</span>
 
     </aside>
 
@@ -10531,7 +10503,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2247</span>
+    <span class="phpdocumentor-element-found-in__line">2241</span>
 
     </aside>
 
@@ -10570,7 +10542,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2267</span>
+    <span class="phpdocumentor-element-found-in__line">2261</span>
 
     </aside>
 
@@ -10616,7 +10588,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2273</span>
+    <span class="phpdocumentor-element-found-in__line">2267</span>
 
     </aside>
 
@@ -10662,7 +10634,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2279</span>
+    <span class="phpdocumentor-element-found-in__line">2273</span>
 
     </aside>
 
@@ -10708,7 +10680,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2287</span>
+    <span class="phpdocumentor-element-found-in__line">2281</span>
 
     </aside>
 
@@ -10737,7 +10709,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2296</span>
+    <span class="phpdocumentor-element-found-in__line">2290</span>
 
     </aside>
 
@@ -10783,7 +10755,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2302</span>
+    <span class="phpdocumentor-element-found-in__line">2296</span>
 
     </aside>
 
@@ -10829,7 +10801,7 @@ source that cannot be read twice.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/core/etl/src/Flow/ETL/DSL/functions.php"><a href="files/src-core-etl-src-flow-etl-dsl-functions.html"><abbr title="src/core/etl/src/Flow/ETL/DSL/functions.php">functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2308</span>
+    <span class="phpdocumentor-element-found-in__line">2302</span>
 
     </aside>
 
@@ -10986,7 +10958,6 @@ source that cannot be read twice.</p>
                                                     <li class=""><a href="namespaces/flow-etl-dsl.html#function_greatest">greatest()</a></li>
                                                     <li class=""><a href="namespaces/flow-etl-dsl.html#function_group_by">group_by()</a></li>
                                                     <li class=""><a href="namespaces/flow-etl-dsl.html#function_hash">hash()</a></li>
-                                                    <li class=""><a href="namespaces/flow-etl-dsl.html#function_hash_algorithm">hash_algorithm()</a></li>
                                                     <li class=""><a href="namespaces/flow-etl-dsl.html#function_hash_group_by">hash_group_by()</a></li>
                                                     <li class=""><a href="namespaces/flow-etl-dsl.html#function_hash_join">hash_join()</a></li>
                                                     <li class=""><a href="namespaces/flow-etl-dsl.html#function_hash_repartition">hash_repartition()</a></li>
@@ -11063,6 +11034,7 @@ source that cannot be read twice.</p>
                                                     <li class=""><a href="namespaces/flow-etl-dsl.html#function_save_mode_overwrite">save_mode_overwrite()</a></li>
                                                     <li class=""><a href="namespaces/flow-etl-dsl.html#function_schema">schema()</a></li>
                                                     <li class=""><a href="namespaces/flow-etl-dsl.html#function_schema_evolving_validator">schema_evolving_validator()</a></li>
+                                                    <li class=""><a href="namespaces/flow-etl-dsl.html#function_schema_fingerprint_options">schema_fingerprint_options()</a></li>
                                                     <li class=""><a href="namespaces/flow-etl-dsl.html#function_schema_from_json">schema_from_json()</a></li>
                                                     <li class=""><a href="namespaces/flow-etl-dsl.html#function_schema_metadata">schema_metadata()</a></li>
                                                     <li class=""><a href="namespaces/flow-etl-dsl.html#function_schema_selective_validator">schema_selective_validator()</a></li>
