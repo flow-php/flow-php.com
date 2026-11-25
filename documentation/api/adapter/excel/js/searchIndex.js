@@ -418,7 +418,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\IO\\Extractor\\Sheet\\XlsxSheetRows\u003A\u003Avalues\u0028\u0029",
             "name": "values",
-            "summary": "Each\u0020non\u002Dempty\u0020row\u0027s\u0020cell\u0020values\u0020by\u0020column\u0020index,\u0020as\u0020OpenSpout\u0027s\u0020RowIterator\u0020yields\u0020them\u0020with\u0020the\u0020default\noptions\u0020Flow\u0020opens\u0020every\u0020workbook\u0020with\u003A\u0020a\u0020row\u0020is\u0020padded\u0020to\u0020its\u0020spans,\u0020else\u0020to\u0020the\u0020sheet\u0027s\u0020dimension,\u0020and\u0020a\nsheet\u0020that\u0020declares\u0020no\u0020dimension\u0020gets\u0020the\u0020gaps\u0020below\u0020its\u0020cell\u0020count\u0020filled.\u0020Keyed\u0020by\u0020the\u0020row\u0027s\u00201\u002Dbased\u0020number.",
+            "summary": "Each\u0020non\u002Dempty\u0020row\u0027s\u0020cell\u0020values\u0020by\u0020column\u0020index,\u0020as\u0020OpenSpout\u0027s\u0020RowIterator\u0020yields\u0020them\u0020with\u0020the\u0020default\noptions\u0020Flow\u0020opens\u0020every\u0020workbook\u0020with\u003A\u0020a\u0020row\u0020is\u0020padded\u0020to\u0020the\u0020sheet\u0027s\u0020dimension,\u0020else\u0020to\u0020its\u0020spans,\u0020and\u0020a\nsheet\u0020that\u0020declares\u0020no\u0020dimension\u0020gets\u0020the\u0020gaps\u0020below\u0020its\u0020cell\u0020count\u0020filled.\u0020Keyed\u0020by\u0020the\u0020row\u0027s\u00201\u002Dbased\u0020number.",
             "url": "classes/Flow-ETL-Adapter-Excel-IO-Extractor-Sheet-XlsxSheetRows.html#method_values"
         },                {
             "fqsen": "\\Flow\\ETL\\Adapter\\Excel\\IO\\Extractor\\WorkbookReader",
