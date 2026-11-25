@@ -1579,6 +1579,8 @@
 <li><a href="#9-flow-phppostgresql---migratorexecuteversion-checks-the-state-of-the-version">9) flow-php/postgresql - Migrator::executeVersion() checks the state of the version</a></li>
 <li><a href="#10-flow-phpetl---schema-metadata-is-kept-in-key-order-and-the-order-of-a-list-in-metadata-counts">10) flow-php/etl - schema metadata is kept in key order, and the order of a list in metadata counts</a></li>
 <li><a href="#11-flow-phpetl-and-the-file-adapters---partitionby-takes-the-columns-partitionby-is-removed">11) flow-php/etl and the file adapters - partitionBy() takes the columns, partition_by() is removed</a></li>
+<li><a href="#12-flow-phptelemetry---serviceattributenamespace-is-renamed-to-servicenamespace">12) flow-php/telemetry - ServiceAttribute::NAMESPACE is renamed to SERVICE_NAMESPACE</a></li>
+<li><a href="#13-flow-phptypes-and-flow-phpetl---form-feed-padded-text-is-trimmed-on-every-php-version">13) flow-php/types and flow-php/etl - form-feed padded text is trimmed on every PHP version</a></li>
 </ul>
 </li>
 <li><a href="#upgrading-from-047x-to-048x">Upgrading from 0.47.x to 0.48.x</a>
@@ -2201,6 +2203,44 @@ writes such a value in that raw form. Write the file again with this version to 
 <p>After:</p>
 <div class="relative"><button class="absolute top-3 right-3 inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 [&amp;.copied]:before:content-['Copied!'] before:absolute before:-translate-x-20 dark:border-white/10 dark:bg-black/60 dark:hover:bg-black/80 dark:text-white" data-controller="clipboard" data-clipboard-kind-value="documentation" data-clipboard-target="#code-87cedc6e6edb" aria-label="Copy code"><img src="/assets/images/icons/copy-989b160d0097e8acebf8e18e3d2838c6.svg" alt="" width="16" height="16" class="dark:invert-0 invert" /></button><pre class="language-php" id="code-87cedc6e6edb" data-controller="syntax-highlight"><code class="language-php">to_parquet($path)-&gt;partitionBy(['date', 'country'], writeColumns: true);
 </code></pre></div>
+<h3><a id="12-flow-phptelemetry---serviceattributenamespace-is-renamed-to-servicenamespace" href="#12-flow-phptelemetry---serviceattributenamespace-is-renamed-to-servicenamespace" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>12) <code>flow-php/telemetry</code> - <code>ServiceAttribute::NAMESPACE</code> is renamed to <code>SERVICE_NAMESPACE</code></h3>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ServiceAttribute::NAMESPACE</code></td>
+<td><code>ServiceAttribute::SERVICE_NAMESPACE</code></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="13-flow-phptypes-and-flow-phpetl---form-feed-padded-text-is-trimmed-on-every-php-version" href="#13-flow-phptypes-and-flow-phpetl---form-feed-padded-text-is-trimmed-on-every-php-version" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>13) <code>flow-php/types</code> and <code>flow-php/etl</code> - form-feed padded text is trimmed on every PHP version</h3>
+<table>
+<thead>
+<tr>
+<th>Before (PHP 8.3 to 8.5)</th>
+<th>After (every PHP version)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>type_integer()-&gt;cast(&quot;\f1&quot;)</code> throws</td>
+<td>gives <code>1</code></td>
+</tr>
+<tr>
+<td><code>type_positive_integer()-&gt;cast(&quot;\f1&quot;)</code> throws</td>
+<td>gives <code>1</code></td>
+</tr>
+<tr>
+<td>a header cell <code>&quot;\fid&quot;</code> is named <code>&quot;\fid&quot;</code></td>
+<td>is named <code>id</code></td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h2><a id="upgrading-from-047x-to-048x" href="#upgrading-from-047x-to-048x" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>Upgrading from 0.47.x to 0.48.x</h2>
 <h3><a id="1-flow-phpetl---transformation-is-invokable-and-every-dataframe-method-has-a-pipe-step-printrows-and-withcolumn-changed" href="#1-flow-phpetl---transformation-is-invokable-and-every-dataframe-method-has-a-pipe-step-printrows-and-withcolumn-changed" class="mr-2" aria-hidden="true" tabindex="-1" title="Permalink">#</a>1) <code>flow-php/etl</code> - <code>Transformation</code> is invokable and every DataFrame method has a pipe step; <code>print_rows()</code> and <code>WithColumn</code> changed</h3>

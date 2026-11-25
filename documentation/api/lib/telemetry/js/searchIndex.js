@@ -4066,10 +4066,10 @@ Search.appendIndex(
             "summary": "Logical\u0020name\u0020of\u0020the\u0020service.",
             "url": "classes/Flow-Telemetry-Resource-Attribute-ServiceAttribute.html#enumcase_NAME"
         },                {
-            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ServiceAttribute\u003A\u003ANAMESPACE",
-            "name": "NAMESPACE",
+            "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ServiceAttribute\u003A\u003ASERVICE_NAMESPACE",
+            "name": "SERVICE_NAMESPACE",
             "summary": "A\u0020namespace\u0020for\u0020service.name.",
-            "url": "classes/Flow-Telemetry-Resource-Attribute-ServiceAttribute.html#enumcase_NAMESPACE"
+            "url": "classes/Flow-Telemetry-Resource-Attribute-ServiceAttribute.html#enumcase_SERVICE_NAMESPACE"
         },                {
             "fqsen": "\\Flow\\Telemetry\\Resource\\Attribute\\ServiceAttribute\u003A\u003AVERSION",
             "name": "VERSION",
