@@ -209,6 +209,6 @@
     "wasm\/mago\/mago_wasm_bg.wasm": "\/assets\/wasm\/mago\/mago_wasm_bg-ee314eafed51022d6428a8373f065d48.wasm",
     "wasm\/php.js": "\/assets\/wasm\/php-85ff8debb932d325bd3da1b1b62fa8e9.js",
     "wasm\/php.wasm": "\/assets\/wasm\/php-afa265774ae19f9e1a3e771bbbc1e692.wasm",
-    "wasm\/tools\/flow.phar": "\/assets\/wasm\/tools\/flow-c4334ed97cc9875497ea84c3eec29d57.phar",
+    "wasm\/tools\/flow.phar": "\/assets\/wasm\/tools\/flow-12007bdad7f6f93779f4babde08a3f2b.phar",
     "wasm\/vendor\/autoload.php.wasm": "\/assets\/wasm\/vendor\/autoload.php-901f7714ee4a437fea3a9d6638722933.wasm"
 }
